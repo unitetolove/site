@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Social Housing Waitlist Data — Day-One Paper</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="canonical" href="https://unitetolove.ca/dayone/social-housing-waitlist-data.html">
+</head>
+<body>
+<header class="site-header">
+<div class="header-inner">
+<a class="wordmark-link" href="/index.html">The Library</a>
+<nav class="primary-nav" aria-label="Primary">
+<ul>
+<li><a href="/index.html">Home</a></li>
+<li><a href="/map/">Map</a></li>
+<li><a href="/library.html">Library</a></li>
+<li><a href="/questions/">Questions</a></li>
+<li><a href="/vision.html">Vision</a></li>
+<li><a href="/who.html">Who</a></li>
+<li><a href="/how-this-was-made.html">How</a></li>
+<li><a href="/how-we-verify.html">How we verify</a></li>
+<li><a href="/corrections.html">Corrections</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<nav class="crumbs"><a href="../library.html">&larr; Index</a></nav>
+<div class="library-banner" role="note">This is a living research library. Claims carry verification statuses. A documented set of about 234 findings, where a derived page carries a source's claim without its original hedge, is known and queued for remediation, so read any affected line alongside its source backgrounder and check <a href="/corrections.html">the corrections log</a> for status. Found a mistake? <a href="/corrections.html">Let us know</a>.</div>
+<h1>Social Housing Waitlist Data — Day-One Paper</h1>
+<div class="meta"><span class="badge">DRAFT</span> Date: 2026-07-13 &middot; File: <code>research/dayone/social-housing-waitlist-data.md</code></div>
+<p>DRAFT v1.1 — L-PLATFORM layer · File: <code>research/dayone/social-housing-waitlist-data.md</code> · Date: 2026-07-13 Built only from: <code>research/backgrounders/social-housing-waitlist-data.md</code> and <code>research/cards/social-housing-waitlist-data.md</code>. No claim in this document goes beyond what those two files already establish. Trust classes: INHERITED + NEW, as carried from the backgrounder/cards; see those documents for full citations.</p>
+<p><em>Toronto already paid for the answers — this work reads it all, integrates it, and shows the work, including the uncertainties.</em></p>
+<h2>The case</h2>
+<p>Toronto's centralized waiting list for subsidized housing grew from 81,664 households in 2020 to 105,115 at the end of 2025 — up 29% in five years, confirmed directly against the City's own live reporting page, not a stale copy [backgrounder, "The trend"]. As of the most current published quarter, Q1 2026, the number sits at 104,851 — still growing. In 2025 alone, 21,538 new applications came in against just 2,838 households actually housed: roughly 7.6 applying for every 1 who gets in, a 2.7% annual exit rate against a list of over 105,000 [backgrounder, "Comparison to the supply pipeline"]. The list isn't shrinking. It's growing faster than the city is housing people off it.</p>
+<h2>What the number actually means — and where the last version of this story mislabeled it</h2>
+<p>This library's own prior work reported "92,965 people on the waiting list" in 2024, quoting the CBC. That figure was mislabeled, not wrong: 92,965 is numerically accurate, but it's the third-quarter 2024 total of households/applications, not people — it conflates a household count with a person count. Add up the City's own breakdown — 33,145 households without dependents, 23,659 with dependents, 36,161 seniors — and it comes to precisely 92,965 [backgrounder, Trap 1]. One application can represent more than one person, so the real number of people waiting is higher than every figure here, not lower — and this already led one round of reporting to understate the problem by describing a household count as a person count.</p>
+<p>Two more things get conflated that shouldn't be. "New applications," "households housed," and "total active waiting list" are three different numbers measuring three different things, and the City changed its own counting rules in 2026, folding "reactivated" applications into the active total and renaming "Cancelled Applications" to "Removed from Waiting List" with a specific new definition [backgrounder, Trap 2]. And this is the <em>centralized</em> RGI list — Access to Housing's single intake system — not every waitlist a Toronto resident might be on; a co-op's own internal list, or a portable rent benefit, is separate, and this file does not claim to have sorted out how one of those (the Canada-Ontario Housing Benefit) relates to the centralized numbers [backgrounder, Trap 3].</p>
+<h2>The honest catch</h2>
+<p>The queue itself isn't simple seniority anymore. Since 2022, Council has run half the units in larger buildings through a lottery and half to whoever's waited longest, with seven priority categories — led by survivors of domestic abuse and trafficking — skipping the line entirely. That's a real reform, adopted to fix a system where, as recently as 2019, the City's own Auditor General found 95% of applicants were housed strictly first-come-first-served, with waits exceeding ten years [backgrounder, "Wait times, who gets housed, and by what rule"]. But in the most current quarter with real numbers (Q1 2026), the ordinary general queue — not any priority category — still produced the single largest group housed: 306 of 750. Whether the lottery reform is fully running yet, or still a plan on paper, isn't confirmed as of this writing. Two honest reads are possible, and this file picks neither: the reform hasn't shifted outcomes much yet, or it's working exactly as a 50/50 design should.</p>
+<h2>Two places to start</h2>
+<p><strong>Publish the numbers the City already has, in a form that can be checked.</strong> The City compiles all of this every quarter already — it just publishes it as an HTML page with footnotes, not as a dataset anyone can pull and diff against last quarter. A structured, versioned release, with every methodology change dated and every column's unit spelled out, would have caught the "92,965 people" mislabeling — a household count conflated with a person count — before it got repeated. Low cost: the City already tracks similar shelter data on the same page — a publishing decision, not a new program [card RC-SHWD-01].</p>
+<p><strong>Make new housing funding report against people actually housed, not just units promised.</strong> The 2019 Auditor General already showed part of the fix doesn't need new construction: better use of existing vacant units alone would house an estimated 2,200 more people and recover $7 million a year now lost. New provincial or federal money for social housing supply in Toronto should have to show its effect on the "Housed" number the City already publishes quarterly — not just how many units it claims to have funded [card RC-SHWD-02].</p>
+<h2>What's not yet settled</h2>
+<p>Whether the lottery/portal reform is actually running today, or still on paper, is unconfirmed — flagged, not guessed at. Whether "Access to Housing" and its older name, "Housing Connections," name the same function is unresolved from secondary sources alone. Neither recommendation above is costed beyond an order-of-magnitude range anchored to a comparator, not a program-specific dollar figure, and no current funding program was confirmed as the actual target of the second recommendation's reporting condition.</p>
+<p>⚠️ VERIFY: all figures above trace to <code>research/backgrounders/social-housing-waitlist-data.md</code> and <code>research/cards/social-housing-waitlist-data.md</code> — read those for full sourcing, quote-context blocks on newly discovered claims, and the complete uncertainty list before this document is used publicly.</p>
+<footer class="site-footer">
+<nav aria-label="Footer">
+<ul>
+<li><a href="/index.html">Home</a></li>
+<li><a href="/map/">Map</a></li>
+<li><a href="/library.html">Library</a></li>
+<li><a href="/questions/">Questions</a></li>
+<li><a href="/vision.html">Vision</a></li>
+<li><a href="/who.html">Who</a></li>
+<li><a href="/how-this-was-made.html">How this was made</a></li>
+<li><a href="/how-we-verify.html">How we verify</a></li>
+<li><a href="/corrections.html">Corrections &amp; improvements</a></li>
+</ul>
+</nav>
+<p><a class="improve-mail" href="mailto:unknownsoldier@unitetolove.ca?subject=Improvement%3A&amp;body=Page%20link%20%28paste%20it%20here%29%3A%0A%0AWhat%20I%20noticed%20or%20suggest%3A%0A">&#9999;&#65039; Suggest an improvement</a> &mdash; corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+<script>(function(){var s='Improvement: '+location.pathname;var b='Page link: '+location.href+'\n\nWhat I noticed or suggest:\n\nCredit me as (optional):\n';var h='mailto:unknownsoldier@unitetolove.ca?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);var l=document.querySelectorAll('a.improve-mail');for(var i=0;i<l.length;i++){l[i].href=h;}})();</script>
+<p>This site is built with AI assistance &mdash; every claim carries a receipt regardless of who drafted it. Read how: <a href="/how-this-was-made.html">How this was made</a>.</p>
+</footer>
+</body>
+</html>

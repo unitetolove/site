@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join the conversation &mdash; uniteTOlove</title>
+<meta name="description" content="Thirty seconds if that's all you have — a name and a way to reach you moves a public number. Tell us your interests, your skills, and how you want to help. Everything past the first two lines is optional.">
+<link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://unitetolove.ca/join.html">
+<style>
+/* Page-local form styling — style.css has no form rules yet; kept inline on purpose. */
+.join-form fieldset {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.9rem 1.1rem 1.1rem;
+  margin: 1.4rem 0;
+}
+.join-form legend { font-weight: 700; padding: 0 0.4rem; }
+.join-form .field-label { display: block; font-weight: 600; font-size: 0.95em; margin-top: 0.75rem; }
+.join-form .hint { font-weight: 400; color: var(--muted); font-size: 0.88em; }
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0.3rem;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--fg);
+  font: inherit;
+  line-height: 1.4;
+}
+.join-form textarea { min-height: 5.5rem; resize: vertical; }
+.join-form .check-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
+  gap: 0.35rem 1.25rem;
+  margin-top: 0.6rem;
+}
+.join-form .check, .join-form .check-grid label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-weight: 400;
+  margin: 0.2rem 0;
+}
+.join-form .check input, .join-form .check-grid input { margin-top: 0.3em; flex: none; }
+.join-form .inline-field { margin: 0.15rem 0 0.35rem 1.9rem; }
+.join-form .inline-field input { margin-top: 0; }
+.join-form button[type="submit"] {
+  font: inherit;
+  font-weight: 700;
+  padding: 0.55rem 1.4rem;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  background: var(--accent);
+  color: var(--bg);
+  cursor: pointer;
+}
+.join-form button[type="submit"]:hover { filter: brightness(1.1); }
+.courier-note {
+  font-size: 0.9em;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  padding: 0.5rem 0.8rem;
+  margin: 0.9rem 0 0;
+}
+#sent-note {
+  margin-top: 0.9rem;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  padding: 0.6rem 0.9rem;
+  font-weight: 600;
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark-link" href="index.html">unite<span class="to">TO</span>love<span class="tld">.ca</span></a>
+    <nav class="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li><li><a href="projects/index.html">Projects</a></li>
+        <li><a href="vision.html">The full vision</a></li>
+        <li><a href="programs/index.html">Programs</a></li>
+        <li><a href="questions/index.html">Questions</a></li>
+        <li><a href="who.html">Who</a></li><li><a href="run/index.html">Run</a></li>
+        <li><a href="how-this-was-made.html">How this was made</a></li><li><a href="how-we-verify.html">How we verify</a></li>
+        <li><a href="corrections.html">Corrections</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<nav class="crumbs"><a href="index.html">Home</a> / Join the conversation</nav>
+
+<main id="main">
+  <h1>Join the conversation.</h1>
+
+  <p>Thirty seconds if that&rsquo;s all you have. A name and a way to reach you moves a public
+  number &mdash; that&rsquo;s the whole first ask, and it&rsquo;s enough. Everything else below
+  is optional &mdash; and wanted.</p>
+
+  <form id="join-form" class="join-form" novalidate="">
+    <fieldset>
+      <legend>The thirty seconds</legend>
+      <label class="field-label" for="f-name">Name <span class="hint">(required &mdash; any name you choose)</span>
+        <input type="text" id="f-name" name="name" autocomplete="name" required>
+      </label>
+      <label class="field-label" for="f-email">Email <span class="hint">(required &mdash; how we reach you)</span>
+        <input type="email" id="f-email" name="email" autocomplete="email" required>
+      </label>
+      <label class="field-label" for="f-phone">Phone <span class="hint">(optional)</span>
+        <input type="tel" id="f-phone" name="phone" autocomplete="tel">
+      </label>
+      <label class="field-label" for="f-area">Neighbourhood, ward, or the first three characters of your postal code <span class="hint">(optional &mdash; it lets Toronto&rsquo;s own number lead the count)</span>
+        <input type="text" id="f-area" name="area">
+      </label>
+      <label class="check"><input type="checkbox" id="f-novote" value="yes">
+        <span>I can&rsquo;t vote here &mdash; count me anyway. <span class="hint">Residents, newcomers,
+        students, the diaspora: the ballot is one door into this, not the definition of it.</span></span>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>What you care about <span class="hint">(optional &mdash; tick anything)</span></legend>
+      <div class="check-grid">
+        <label><input type="checkbox" name="interest" value="housing"> housing</label>
+        <label><input type="checkbox" name="interest" value="transit"> transit</label>
+        <label><input type="checkbox" name="interest" value="food security"> food security</label>
+        <label><input type="checkbox" name="interest" value="health"> health</label>
+        <label><input type="checkbox" name="interest" value="newcomers"> newcomers</label>
+        <label><input type="checkbox" name="interest" value="climate"> climate</label>
+        <label><input type="checkbox" name="interest" value="safety"> safety</label>
+        <label><input type="checkbox" name="interest" value="arts &amp; joy"> arts &amp; joy</label>
+        <label><input type="checkbox" name="interest" value="schools"> schools</label>
+        <label><input type="checkbox" name="interest" value="small business"> small business</label>
+        <label><input type="checkbox" name="interest" value="democracy itself"> democracy itself</label>
+        <label><input type="checkbox" name="interest" value="everything"> everything</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>How you want to help <span class="hint">(optional &mdash; every next step stays optional too)</span></legend>
+      <div class="check-grid">
+        <label><input type="checkbox" name="help" value="sign me up, that's it (the count)"> sign me up, that&rsquo;s it (the count)</label>
+        <label><input type="checkbox" name="help" value="volunteer time"> volunteer time</label>
+        <label><input type="checkbox" name="help" value="offer expert review"> offer expert review</label>
+        <label><input type="checkbox" name="help" value="submit research or ideas"> submit research or ideas</label>
+        <label><input type="checkbox" name="help" value="host a gathering"> host a gathering</label>
+        <label><input type="checkbox" name="help" value="translate"> translate</label>
+        <label><input type="checkbox" name="help" value="poster my neighbourhood"> poster my neighbourhood</label>
+        <label><input type="checkbox" name="help" value="tech &amp; building"> tech &amp; building</label>
+        <label><input type="checkbox" name="help" value="organize my building or block"> organize my building/block</label>
+        <label><input type="checkbox" name="help" value="volunteer on a campaign"> volunteer on a campaign</label>
+        <label><input type="checkbox" name="help" value="I'm considering running"> I&rsquo;m considering running</label>
+        <label><input type="checkbox" name="help" value="other"> other</label>
+      </div>
+      <label class="field-label" for="f-expert-field">If you ticked expert review &mdash; name your field <span class="hint">(optional)</span>
+        <input type="text" id="f-expert-field" name="expertfield">
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Who you are <span class="hint">(all optional)</span></legend>
+      <label class="field-label" for="f-skills">Skills &amp; background
+        <span class="hint">&mdash; your trade, your training, your superpower; a line or a CV</span>
+        <textarea id="f-skills" name="skills"></textarea>
+      </label>
+      <label class="field-label" for="f-links">Links <span class="hint">&mdash; LinkedIn / CV / portfolio / socials</span>
+        <input type="text" id="f-links" name="links">
+      </label>
+      <label class="field-label" for="f-org">Organization <span class="hint">&mdash; if you&rsquo;re part of a group that should be on our map</span>
+        <input type="text" id="f-org" name="org">
+      </label>
+      <label class="field-label" for="f-else">Anything else
+        <textarea id="f-else" name="anythingelse"></textarea>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Consent</legend>
+      <label class="check"><input type="checkbox" id="f-consent" required>
+        <span><strong>Reach me about what I wrote here</strong> (required) &mdash; a human reply
+        about this note, nothing more.</span>
+      </label>
+      <label class="check"><input type="checkbox" id="f-news">
+        <span><strong>Occasional news</strong> (optional) &mdash; gathering announcements, the
+        count going live. Rare, and only the moments.</span>
+      </label>
+      <p class="hint">Unsubscribe anytime, one click. Your details are never sold or shared, there
+      are no dues, and no donations are ever asked for &mdash; here or anywhere on this site.</p>
+      <p class="hint">Under 18? Welcome &mdash; please have a parent or guardian send this for you,
+      from their own email. That&rsquo;s the whole rule, and you can withdraw anytime.</p>
+    </fieldset>
+
+    <button type="submit">Send it &mdash; join the conversation</button>
+
+    <p class="courier-note">For now, your email app is the courier &mdash; pressing
+    <strong>Send</strong> is what submits. Direct submission is being built.</p>
+
+    <p id="sent-note" hidden>Your email app should now be open with everything you wrote.
+    Press Send there and it&rsquo;s on its way to a human.</p>
+
+    <noscript><p class="courier-note">JavaScript is off in your browser, so the button above
+    can&rsquo;t compose the email for you &mdash; no problem: write to
+    <a href="mailto:unknownsoldier@unitetolove.ca?subject=Joining%20the%20conversation">unknownsoldier@unitetolove.ca</a>
+    with your name, how to reach you, and anything else from this page you&rsquo;d like us to
+    know. Same door, same welcome.</p></noscript>
+  </form>
+
+  <script>
+  (function () {
+    "use strict";
+    var form = document.getElementById("join-form");
+    if (!form) { return; }
+    form.removeAttribute("novalidate");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      function val(id) {
+        var el = document.getElementById(id);
+        return el && el.value ? el.value.trim() : "";
+      }
+      function isChecked(id) {
+        var el = document.getElementById(id);
+        return !!(el && el.checked);
+      }
+      function checkedList(groupName) {
+        var boxes = form.querySelectorAll('input[name="' + groupName + '"]:checked');
+        var out = [];
+        for (var i = 0; i < boxes.length; i++) { out.push(boxes[i].value); }
+        return out.join(", ");
+      }
+      var lines = [];
+      function add(label, value) { if (value) { lines.push(label + ": " + value); } }
+      var name = val("f-name");
+      add("Name", name);
+      add("Email", val("f-email"));
+      add("Phone", val("f-phone"));
+      add("Neighbourhood / ward / postal FSA", val("f-area"));
+      if (isChecked("f-novote")) { lines.push("I can't vote here - count me anyway: yes"); }
+      add("Interests", checkedList("interest"));
+      add("How I want to help", checkedList("help"));
+      add("Expert field", val("f-expert-field"));
+      add("Skills & background", val("f-skills"));
+      add("Links", val("f-links"));
+      add("Organization", val("f-org"));
+      add("Anything else", val("f-else"));
+      lines.push("");
+      lines.push("Consent - reach me about what I wrote here: yes");
+      lines.push("Consent - occasional news: " + (isChecked("f-news") ? "yes" : "no"));
+      var subject = "Joining the conversation" + (name ? " - " + name : "");
+      var href = "mailto:unknownsoldier@unitetolove.ca?subject=" +
+        encodeURIComponent(subject) + "&body=" + encodeURIComponent(lines.join("\n"));
+      var note = document.getElementById("sent-note");
+      if (note) { note.hidden = false; }
+      window.location.href = href;
+    });
+  })();
+  </script>
+
+  <h2>Three things, plainly</h2>
+  <p><strong>What happens next:</strong> a human reads it &mdash; every note &mdash; and you get
+  a receipt about what your note became, not a newsletter.</p>
+  <p><strong>What we never do:</strong> sell or share your details, ask for dues or donations, or
+  take foreign money. Ever.</p>
+  <p><strong>The public count:</strong> the number of people who&rsquo;ve joined goes live on the
+  homepage once the first few dozen are in &mdash; until then it&rsquo;s held, honestly, at zero.
+  No fake numbers, here or anywhere.</p>
+
+  <p>&mdash; The Unknown Soldier &middot; uniteTOlove &middot; Toronto</p>
+</main>
+
+<footer class="site-footer">
+  <nav aria-label="Footer">
+    <ul>
+      <li><a href="projects/index.html">Projects</a></li><li><a href="programs/index.html">Programs</a></li>
+      <li><a href="questions/index.html">Questions</a></li>
+      <li><a href="who.html">Who is the Unknown Soldier</a></li><li><a href="run/index.html">Run</a></li>
+      <li><a href="how-this-was-made.html">How this was made</a></li><li><a href="how-we-verify.html">How we verify</a></li>
+      <li><a href="corrections.html">Corrections &amp; improvements</a></li>
+    </ul>
+  </nav>
+  <p>The Unknown Soldier &middot; uniteTOlove &middot; Toronto</p>
+  <p class="ethic">Post only where you have the right to post.</p>
+  <p>This site is built with AI assistance &mdash; every claim carries a receipt regardless of who
+  drafted it. Read how: <a href="how-this-was-made.html">How this was made</a>.</p>
+  <p>No donations are asked for anywhere on this site. Contact:
+  <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a> &mdash;
+  corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+</footer>
+</body>
+</html>
