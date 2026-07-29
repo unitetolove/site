@@ -118,6 +118,7 @@ footer.site-footer { margin-top: 3rem; color: var(--muted); font-size: 0.82em; b
 .claim-popover .claim-status { margin: 0 0 0.4rem; font-size: 0.9em; color: var(--muted); }
 .claim-popover .claim-text { margin: 0 0 0.4rem; }
 .claim-popover .claim-source { margin: 0; font-size: 0.9em; }
+.claim-popover .claim-status-code { margin: 0.4rem 0 0; font-size: 0.8em; color: var(--muted); }
 .incompleteness-tag {
   display: inline-block;
   font-size: 0.85em;
