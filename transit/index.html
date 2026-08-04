@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why can't Toronto move? — uniteTOlove</title>
+<meta name="description" content="Toronto's transit, measured directly: 55 days of the TTC's own live GPS data, 1.89 million trips, every claim receipt-backed. What's broken, who has fixed it elsewhere, who decides, who pays.">
+<link rel="stylesheet" href="../style.css">
+<link rel="canonical" href="https://unitetolove.ca/transit/index.html">
+<style>
+.report-status { border: 1px solid var(--border); border-left: 4px solid var(--accent);
+  padding: 0.7rem 1rem; border-radius: 4px; font-size: 0.95rem; margin: 1.25rem 0; }
+blockquote.poster { border-left: none; margin: 2rem 0.5rem; padding: 0.25rem 1rem;
+  font-size: 1.25rem; line-height: 1.4; font-weight: 600; text-align: center; }
+blockquote.poster .receipt-note { display: block; margin-top: 0.5rem; font-size: 0.82rem;
+  font-weight: 400; color: var(--muted); }
+.share-block { border: 1px solid var(--border); border-radius: 6px; background: var(--code-bg);
+  padding: 1rem 1.25rem; margin: 1.5rem 0; }
+.share-block .share-label { font-size: 0.82rem; letter-spacing: 0.04em; text-transform: uppercase;
+  color: var(--muted); margin: 0 0 0.5rem; }
+.toc-part { margin: 1rem 0 1.5rem; }
+.toc-part h3 { margin: 1.25rem 0 0.25rem; }
+.toc-part ol { margin: 0.25rem 0 0 1.25rem; padding: 0; }
+.toc-part ol li { margin: 0.2rem 0; }
+.check-strip { border-top: 3px double var(--border); margin-top: 2.5rem; padding-top: 0.75rem; }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark-link" href="../index.html">unite<span class="to">TO</span>love<span class="tld">.ca</span></a>
+    <nav class="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="../index.html">Home</a></li><li><a href="../projects/index.html">Projects</a></li>
+        <li><a href="../vision.html">The full vision</a></li>
+        <li><a href="../programs/index.html">Programs</a></li>
+        <li><a href="../questions/index.html">Questions</a></li>
+        <li><a href="../research-agenda.html">Research agenda</a></li>
+        <li><a href="../who.html">Who</a></li><li><a href="../run/index.html">Run</a></li>
+        <li><a href="../how-this-was-made.html">How this was made</a></li><li><a href="../how-we-verify.html">How we verify</a></li>
+        <li><a href="../corrections.html">Corrections</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<nav class="crumbs"><a href="../index.html">Home</a> / Why can't Toronto move?</nav>
+
+<main id="main">
+  <h1>Why can't Toronto move?</h1>
+  <p class="deck">&hellip;and what would it take to give Toronto the world's best transit and beat
+  congestion: what's actually broken, who has fixed this elsewhere, who decides, who pays?</p>
+
+  <div class="report-status">
+    <strong>How to read this page:</strong> the summary below is the whole case, one page long.
+    Every claim in it is backed by a checked receipt &mdash; a source, a date, a quote &mdash; or
+    measured by us directly from 55 days of the TTC's own live GPS data, 1.89 million trips'
+    worth. <a href="receipts.html"><strong>Check our work &rarr;</strong></a> Figures get
+    re-checked by October 28, 2026, or sooner if the facts move.
+  </div>
+
+  <p class="lede">Toronto's transit is stuck because the money that used to run it collapsed after the pandemic and
+never came back, the one structural fix that works everywhere else &mdash; redesigning the network around
+fast, frequent, protected routes &mdash; has never been attempted here, and most of the remaining power to
+change either one now sits with a province that has not matched the authority it has taken with the
+money to use it; the cheapest, fastest wins are entirely within the City's own control today, and
+pairing them with the funding and pricing tools every world-class system relies on is what the
+evidence says it would actually take to make Toronto move.</p>
+
+  <blockquote class="poster">&ldquo;Toronto subsidizes riders less than Ottawa, York, or Durham &mdash; the crisis is scale, not
+generosity.&rdquo;
+    <span class="receipt-note">Receipt: FAO 2024 tables, re-derived to the cent &mdash; $4.43 per trip vs $9.59, $9.63, $11.89.</span>
+  </blockquote>
+
+  <h2>The whole case, one page</h2>
+
+  <p><strong>Toronto's transit is broken in a specific, measurable way &mdash; and this project measured it
+directly.</strong> Over 55 days this summer, we pulled the TTC's own live GPS data &mdash; not a press release,
+the actual location of every bus and streetcar, checked against schedule, 1.89 million trips'
+worth &mdash; and computed the real numbers ourselves. TTC local buses &mdash; roughly seven of every eight bus trips
+in the city &mdash; average 17.2 km/h. Streetcars average 10.7 km/h,
+and the busiest streetcar route in Toronto, the 504 King, crawls at 10.0 km/h &mdash; the slowest of any
+network in a 2024 international academic survey. Only about one trip in five arrives close enough
+to its scheduled time to be genuinely useful to someone waiting at a stop; applying the TTC's own,
+far looser definition to the very same data roughly doubles that number &mdash; which is how official
+reporting can look fine while riders wait (&rarr; <code>RT_DATA_REPORT_v3.md</code>; first-party, methods and
+code on disk).</p>
+
+  <p><strong>The money side is just as broken, and longer-standing.</strong> Before the pandemic, rider fares
+covered about two-thirds of what it costs to run the TTC &mdash; one of the least-subsidized major
+systems in North America. By 2022 that had collapsed to 35.9%, and it has not recovered.
+Separately, the system has a $37.3-billion gap between what it says it needs to spend on repairs
+and renewal over the next 15 years and what any government has actually committed (&rarr; FAO 2024;
+TTC Board capital figures).</p>
+
+  <blockquote class="poster">&ldquo;Give a streetcar its own lane and its on-time rate roughly doubles &mdash; on the TTC's own
+standard.&rdquo;
+    <span class="receipt-note">Receipt: our own measurement &mdash; on the TTC's &minus;1/+5 standard, dedicated-lane streetcars run 42&ndash;62% on-time vs 23&ndash;34% in mixed traffic. <a href="ch03-the-slow-motion-collapse.html">Chapter 3</a>.</span>
+  </blockquote>
+
+  <p><strong>Why.</strong> Toronto cancelled its expressway network in 1971 and has built essentially no new
+expressway capacity inside its borders since &mdash; and it has never priced the road space it has, so
+growth simply piles onto a fixed network. Surface transit shares those same clogged streets, so it
+has gotten slower exactly as more people need it: the TTC's own Board record shows scheduled bus
+speeds falling from 20 km/h in 2013 to 17.2 km/h in 2024. Slower, less reliable transit pushes
+people who have a choice toward driving, which adds to the congestion transit is stuck in &mdash; a
+self-reinforcing spiral, not a one-time problem (&rarr; <code>CONGESTION_ROOT_CAUSES.md</code>; TTC2.13).</p>
+
+  <p><strong>What the world's best do.</strong> No single trick explains why Zurich, Singapore, Vienna, Hong Kong,
+London, or Copenhagen work well. Each combines: frequent service treated as a network-design
+decision, not an afterthought; a maintenance culture that treats every second of delay as a defect
+to fix; fare systems that never punish riders for changing routes; a funding source outside the
+farebox that cannot be raided for other priorities; and, in Hong Kong's case, letting the transit
+agency profit from the land value its own stations create. None of these are exotic &mdash; they are
+documented, replicable choices (&rarr; <code>WORLD_BEST_PLAYBOOK.md</code>).</p>
+
+  <blockquote class="poster">&ldquo;Vancouver's buses run faster and more reliably than Toronto's &mdash; on every measure we
+tested.&rdquo;
+    <span class="receipt-note">Receipt: our own 55-day, identical-method comparison &mdash; 17.2 vs 19.6 km/h; 40.9% vs 55.8% on-time on the same standard. The structural caveat (Vancouver's buses feed a SkyTrain spine) travels with this claim: <a href="ch03-the-slow-motion-collapse.html">Chapter 3</a>.</span>
+  </blockquote>
+
+  <p><strong>The fix, in the order Toronto can actually do it.</strong> <em>Now</em> &mdash; things the City and TTC Board can do
+without anyone else's permission: reform the TTC's own governing board (a City by-law &mdash; Municipal
+Code Chapter 279 &mdash; not a provincial law); finally run the comprehensive network redesign Toronto
+has never attempted, which grew ridership 4&ndash;11% in cost-neutral peer redesigns and 17&ndash;25% where
+paired with new investment; build out transit signal priority and dedicated bus and streetcar
+lanes; enforce the priority street Toronto already has &mdash; on King Street, a University of Toronto
+study counted roughly 6,800 illegal car movements a day and found more than 99.7% went unticketed;
+and start archiving the real-time data before it disappears. <em>Next</em> &mdash; needs the province's
+cooperation: protect the regional fare-integration program, and get clarity on how the new
+provincial fare law (Bill 98) will set TTC fares going forward. <em>Later</em> &mdash; needs new law: pricing
+road use, which two separate provincial statutes currently ban, and a dedicated funding source of the kind every
+world-class system relies on &mdash; Toronto has a menu of realistic options, ranked by legal
+feasibility and yield in this package's funding chapter (&rarr; <code>MASTER_SYNTHESIS.md</code> &sect;3).</p>
+
+  <p><strong>Who decides, who pays.</strong> Nearly every high-value lever in this diagnosis needs a different
+government's sign-off. The City and TTC Board fully control board reform, network redesign, and
+priority lanes. Fares and regional integration now sit with the Ontario Minister of
+Transportation, under a law that received Royal Assent on June 2, 2026. Road pricing needs the
+Ontario Legislature to reverse two separate laws &mdash; one passed in 2006 and hardened in 2025, one
+passed in 2024. No level of government currently has both the authority and the money to fix this
+alone (&rarr; <code>GOVERNANCE_POLITICAL_ECONOMY.md</code>).</p>
+
+  <blockquote class="poster">&ldquo;Toronto has funded less than a third of what it says its transit system needs.&rdquo;
+    <span class="receipt-note">Receipt: $16.7B funded of $54.0B in 15-year identified need &mdash; verbatim match on re-fetch. <a href="ch01-the-money-problem.html">Chapter 1</a>.</span>
+  </blockquote>
+
+  <p><strong>What one year all-out could do.</strong> The corpus does not model a single combined &ldquo;one year,
+everything at once&rdquo; scenario &mdash; that composite is new synthesis work, built in this package's
+closing chapter with its assumptions shown. What the evidence does show is that the fastest
+City-controlled fixes &mdash; signal priority and camera-enforced transit lanes &mdash; carry documented
+timelines of under three years to first benefit. A genuinely all-out year means starting all of
+them at once, not one at a time &mdash; the corpus shows what each piece can do; the closing chapter
+models, honestly, what starting them together would and would not add up to within a year.</p>
+
+  <div class="share-block">
+    <p class="share-label">The case in one paragraph &mdash; if you only share one thing, share this</p>
+    <p>Toronto's transit system runs on a funding model that broke in 2020 and has not recovered: riders'
+fares once covered about two-thirds of what it costs to run the TTC; by 2022 that had fallen to
+35.9%, and the system carries a $37.3-billion gap between what it says it needs over the next 15
+years and what any government has actually funded (&rarr; FAO 2024 / TTC Board figures &mdash; CONFIRMED). The
+visible result is a surface network that has been getting slower for over a decade &mdash; the TTC's own
+Board record puts scheduled bus speeds at 20 km/h in 2013 and 17.2 in 2024, and this project's own
+55-day, 1.89-million-trip analysis of the TTC's real-time GPS data independently measures local
+buses at 17.2 km/h and streetcars at 10.7 km/h, with the busiest streetcar line in the city
+crawling at 10.0 km/h &mdash; and finds that giving a route its own dedicated lane roughly doubles its
+on-time rate on the TTC's own standard (&rarr; <code>RT_DATA_REPORT_v3.md</code> &mdash; first-party, recomputed).
+Cities that have fixed this &mdash; Zurich's timed transfers, Singapore's contract-enforced service
+standards, London's ring-fenced congestion-charge revenue, Houston's cost-neutral network
+redesign &mdash; show the fixes are documented and replicable, not exotic (&rarr; <code>WORLD_BEST_PLAYBOOK.md</code>).
+Toronto has never attempted the single highest-leverage one, a comprehensive network redesign, and
+several of the cheapest, fastest fixes &mdash; signal priority, dedicated lanes, board reform &mdash; need no
+one's permission but the City's own (&rarr; <code>NETWORK_REDESIGN.md</code>, <code>GOVERNANCE_CAPACITY.md</code>). But the
+two tools every peer city relies on most &mdash; a dedicated funding stream and the power to price road
+use &mdash; are both currently closed to Toronto by provincial law, and the power that is opening
+(fare-setting, under 2026's Bill 98) is moving toward the province faster than the money is
+following it (&rarr; <code>PRICING_DEMAND_FRONTIER.md</code>, <code>GOVERNANCE_POLITICAL_ECONOMY.md</code>). The prize, per
+the world's best systems studied here, is not speculative: it is a known, costed, sequenced
+program &mdash; Toronto's task is political and financial will, not invention.</p>
+  </div>
+
+  <h2>Read the whole thing</h2>
+  <p>Twenty-one chapters and five appendices sit behind this page. Every chapter ends with its own
+  receipts; figures still in the re-verification queue are marked &#9888;&#65039; honestly in the text
+  rather than hidden.</p>
+
+  <div class="toc-part">
+    <h3>Part 0 &mdash; Framing</h3>
+    <ol start="0">
+      <li value="0"><a href="ch00-why-cant-toronto-move.html">Why Can't Toronto Move</a></li>
+    </ol>
+    <h3>Part I &mdash; What's broken</h3>
+    <ol>
+      <li value="1"><a href="ch01-the-money-problem.html">The Money Problem</a></li>
+      <li value="2"><a href="ch02-why-the-roads-are-full.html">Why the Roads Are Full</a></li>
+      <li value="3"><a href="ch03-the-slow-motion-collapse.html">The Slow-Motion Collapse</a> &mdash; the first-party measurement chapter</li>
+      <li value="4"><a href="ch04-the-fleet-the-signals-the-backlog.html">The Fleet, the Signals, the Backlog</a></li>
+      <li value="5"><a href="ch05-riding-while-toronto.html">Riding While Toronto</a></li>
+    </ol>
+    <h3>Part II &mdash; Who has fixed this elsewhere</h3>
+    <ol>
+      <li value="6"><a href="ch06-the-worlds-best-playbook.html">The World's Best Playbook</a></li>
+      <li value="7"><a href="ch07-the-turnarounds.html">The Turnarounds</a></li>
+      <li value="8"><a href="ch08-the-roi-ranking.html">The ROI Ranking</a></li>
+      <li value="9"><a href="ch09-the-redesign-toronto-never-tried.html">The Redesign Toronto Never Tried</a></li>
+    </ol>
+    <h3>Part III &mdash; Who decides</h3>
+    <ol>
+      <li value="10"><a href="ch10-the-governance-maze.html">The Governance Maze</a></li>
+      <li value="11"><a href="ch11-the-one-lever-toronto-still-controls.html">The One Lever Toronto Still Controls</a></li>
+      <li value="12"><a href="ch12-bill-98-and-the-migration-of-power.html">Bill 98 and the Migration of Power</a> &mdash; developing; updates when the regulations land</li>
+      <li value="13"><a href="ch13-coalitions-that-won-elsewhere.html">Coalitions That Won Elsewhere</a></li>
+    </ol>
+    <h3>Part IV &mdash; Who pays</h3>
+    <ol>
+      <li value="14"><a href="ch14-the-funding-menu.html">The Funding Menu</a></li>
+      <li value="15"><a href="ch15-the-pricing-question.html">The Pricing Question</a></li>
+      <li value="16"><a href="ch16-land-use-the-slowest-lever.html">Land Use, the Slowest Lever</a></li>
+      <li value="17"><a href="ch17-the-regional-fragmentation-problem.html">The Regional Fragmentation Problem</a></li>
+    </ol>
+    <h3>Part V &mdash; The fix</h3>
+    <ol>
+      <li value="18"><a href="ch18-now-next-later-the-program.html">Now, Next, Later &mdash; The Program</a></li>
+      <li value="19"><a href="ch19-what-honest-measurement-looks-like.html">What Honest Measurement Looks Like</a></li>
+      <li value="20"><a href="ch20-what-one-year-could-do.html">What One Year Could Do</a></li>
+    </ol>
+    <h3>Appendices</h3>
+    <ol>
+      <li value="1"><a href="a1-fares-equity-who-gets-left-behind.html">Fares, Equity, and Who Gets Left Behind</a></li>
+      <li value="2"><a href="a2-curb-space-and-the-last-mile.html">Curb Space and the Last Mile</a></li>
+      <li value="3"><a href="a3-the-workforce-and-the-union.html">The Workforce and the Union</a></li>
+      <li value="4"><a href="a4-climate-and-resilience.html">Climate and Resilience</a></li>
+      <li value="5"><a href="a5-technology-data-and-the-av-question.html">Technology, Data, and the AV Question</a></li>
+      <li value="6"><a href="a6-further-reading.html">Further Reading: the best books and resources</a></li>
+    </ol>
+  </div>
+
+  <section class="check-strip">
+    <h2>Check our work</h2>
+    <p>This report's difference is not its opinions &mdash; it's the receipts. We measured the system
+    ourselves from the TTC's own live data, re-checked every load-bearing claim against its
+    original source, attacked our own numbers with a hostile journalist's and a fact-checker's
+    eyes before publishing, and kept the record of all of it.</p>
+    <ul class="leaf-list">
+      <li><a href="receipts.html"><strong>Check our work</strong></a> &mdash; the claim-by-claim
+      receipts behind the summary above, what we measured first-hand, and what's still in the
+      re-verification queue.</li>
+      <li><a href="../how-we-verify.html">How we verify</a> &mdash; the standing method every page
+      on this site follows.</li>
+      <li><a href="../corrections.html">Corrections &amp; improvements</a> &mdash; found an error?
+      It gets fixed and logged publicly.</li>
+    </ul>
+    <p>This report is one question from our <a href="../research-agenda.html">open research
+    agenda</a> &mdash; tell us what the next one should be.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <nav aria-label="Footer">
+    <ul>
+      <li><a href="../projects/index.html">Projects</a></li><li><a href="../programs/index.html">Programs</a></li>
+      <li><a href="../questions/index.html">Questions</a></li><li><a href="../research-agenda.html">Research agenda</a></li>
+      <li><a href="../who.html">Who is the Unknown Soldier</a></li><li><a href="../run/index.html">Run</a></li>
+      <li><a href="../how-this-was-made.html">How this was made</a></li><li><a href="../how-we-verify.html">How we verify</a></li>
+      <li><a href="../corrections.html">Corrections &amp; improvements</a></li>
+    </ul>
+  </nav>
+  <p>The Unknown Soldier &middot; uniteTOlove &middot; Toronto</p>
+  <p class="ethic">Post only where you have the right to post.</p>
+  <p>This site is built with AI assistance &mdash; every claim carries a receipt regardless of who
+  drafted it. Read how: <a href="../how-this-was-made.html">How this was made</a>.</p>
+  <p>No donations are asked for anywhere on this site. Contact:
+  <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a> &mdash;
+  corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+</footer>
+</body>
+</html>

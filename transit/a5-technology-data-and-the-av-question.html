@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Technology, Data, and the AV Question — Why can’t Toronto move? — uniteTOlove</title>
+<meta name="description" content="A chapter of “Why can’t Toronto move?” — uniteTOlove’s receipt-backed report on Toronto transit and congestion.">
+<link rel="stylesheet" href="../style.css">
+<link rel="canonical" href="https://unitetolove.ca/transit/a5-technology-data-and-the-av-question.html">
+
+<style>
+.report-kicker { color: var(--muted); font-size: 0.9rem; letter-spacing: 0.04em;
+  text-transform: uppercase; margin-bottom: 0.2rem; }
+.chapter-status { border: 1px solid var(--border); border-left: 4px solid var(--accent);
+  padding: 0.6rem 0.9rem; border-radius: 4px; font-size: 0.92rem; color: var(--muted);
+  margin: 1rem 0 1.5rem; }
+section.receipts { border-top: 3px double var(--border); margin-top: 2.5rem; padding-top: 0.5rem; }
+section.receipts h2 { border-bottom: none; }
+section.receipts ul { font-size: 0.92rem; }
+nav.chapter-pager { display: flex; justify-content: space-between; gap: 1rem;
+  border-top: 1px solid var(--border); margin-top: 2.5rem; padding-top: 1rem; }
+table { border-collapse: collapse; margin: 1rem 0; width: 100%; font-size: 0.92rem; }
+th, td { border: 1px solid var(--border); padding: 0.4rem 0.6rem; text-align: left;
+  vertical-align: top; }
+th { background: var(--code-bg); }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark-link" href="../index.html">unite<span class="to">TO</span>love<span class="tld">.ca</span></a>
+    <nav class="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="../index.html">Home</a></li><li><a href="../projects/index.html">Projects</a></li>
+        <li><a href="../vision.html">The full vision</a></li>
+        <li><a href="../programs/index.html">Programs</a></li>
+        <li><a href="../questions/index.html">Questions</a></li>
+        <li><a href="../research-agenda.html">Research agenda</a></li>
+        <li><a href="../who.html">Who</a></li><li><a href="../run/index.html">Run</a></li>
+        <li><a href="../how-this-was-made.html">How this was made</a></li><li><a href="../how-we-verify.html">How we verify</a></li>
+        <li><a href="../corrections.html">Corrections</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<nav class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Why can’t Toronto move?</a> / Technology, Data, and the AV Question</nav>
+
+<main id="main">
+  <p class="report-kicker">Appendix · Appendix A5</p>
+  <h1>Technology, Data, and the AV Question</h1>
+<p class="chapter-status">Working chapter of <a href="index.html"><em>Why can&rsquo;t Toronto move?</em></a> &mdash; the report&rsquo;s <a href="index.html">summary page</a> uses only claims that passed our receipt check. Figures below marked &#9888;&#65039; are still in the re-verification queue, labelled honestly rather than hidden. How that works: <a href="receipts.html">check our work</a>.</p>
+<p><strong>Toronto already runs some genuinely world-class transit technology — and is nowhere close to ready for autonomous vehicles on its streets, a gap the province's own regulatory clock is about to make harder to ignore.</strong></p>
+<p>Start with what's actually working. Miovision, a Kitchener-founded company, has run computer-vision traffic monitoring at 94 Toronto intersections since 2017, and now serves customers in 63 countries — a homegrown Canadian success story hiding in plain sight inside the City's own traffic-signal network. PRESTO, live across 11 regional agencies since 2009, delivers the kind of account-based, cross-agency fare interoperability that took cities like New York and London years longer to build, and the province's One Fare program on top of it has already produced tens of millions of free transfers. TTC's Line 1 has run Alstom's Urbalis communications-based train control since 2022, a 25% capacity gain; Line 2's equivalent, a $407.7-million Hitachi contract, was awarded in July 2026.</p>
+<p>Set against that, the gaps are just as real and mostly unglamorous. TTC shows no public evidence of the kind of AI-assisted scheduling and dispatch platforms — Optibus, Swiftly, and similar tools — that peer agencies use to push on-time performance into the high 90s; no systematic predictive-maintenance program, against an industry benchmark of 25–35% lower maintenance costs and 45–62% fewer unplanned breakdowns elsewhere; and no continuous operational digital twin for network planning. None of these gaps are exotic technology problems. They're procurement and deployment decisions Toronto hasn't yet made, and the underlying data foundation — GTFS-Realtime data, but not the stop-level automatic-passenger-count data that would let anyone independently verify route-level crowding — needs to be closed before any of the fancier tools would even produce trustworthy results. ⚠️ Vendor case-study figures cited across this technology catalogue (Optibus's 97–98% on-time results, Spare Labs' 42% microtransit cost reduction, and similar claims) are vendor- and case-study-sourced, not independently audited, and should be read as directional evidence of what's achievable, not guaranteed Toronto outcomes.</p>
+<p>The autonomous-vehicle picture is where honesty matters most, because the gap between what's ready and what isn't is easy to blur. Toronto already runs one form of automation at real scale and with real success: the Ontario Line under construction will operate fully driverless trains on an exclusive, grade-separated guideway, the same automation family already running in Paris, London, and Singapore, and Line 1's CBTC system has operated safely since 2022. That's genuine institutional capability. It does not transfer to road-based autonomous vehicles, which face a categorically harder problem — shared, unpredictable, weather-exposed streets with pedestrians and winter driving conditions that current AV sensor technology still struggles with; a 2026 climatic-chamber study found LiDAR performance degrading measurably under controlled snowfall, and a separate study found lane-detection accuracy dropping roughly 40% in snow.</p>
+<p>Ontario's general AV Pilot Program, the regulatory pathway Waymo has reportedly begun engaging ahead of a possible Toronto application, is set to sunset on October 13, 2027, and the province was required to complete an evaluation of the pilot's results before January 1, 2026 — an evaluation whose outcome isn't publicly available as of this writing. That's a real deadline bearing down regardless of how ready Toronto feels. The Mayor's office has reportedly signalled that any AV approval would need a no-job-loss commitment for affected workers as a precondition, not a mitigation added afterward — consistent with the labour-transition principle this book applies to automation generally. Toronto's most concrete current AV experience isn't passenger transit at all: a Magna delivery-robot pilot running since 2025 has already surfaced the governance gaps a passenger AV program would also hit, including a city councillor's unresolved concern that the robots' cameras could transmit facial images to databases outside Canada, at a pilot the City itself had no approval role over. The Sidewalk Labs/Quayside failure taught Toronto a hard lesson about vendor-led data governance a decade ago; the Open Mobility Foundation's current curb-and-mobility-data standards exist specifically to prevent a repeat, and the honest recommendation is to apply that standard to Toronto's live pilots now, before the next one launches, not after.</p>
+<hr>
+<section class="receipts">
+<h2>Receipts</h2>
+<p>Source: <code>TOOLS_TECH_CATALOG.md</code> (Categories 1–12, gaps-analysis table; Miovision, PRESTO, and CBTC deployment status) and <code>TECH_DATA_FRONTIER.md</code> §§1–3 (AV readiness assessment, Ontario's two AV regulatory tracks and the October 13, 2027 sunset date, Magna delivery-robot pilot, winter-performance research, Sidewalk Labs/Quayside precedent and Open Mobility Foundation standards). ⚠️ Vendor case-study performance figures (Optibus, Swiftly, Spare Labs, and similar) are sourced from vendor and case-study material, not independently audited, per the source catalogue's own verification notes.</p>
+</section>
+
+  <nav class="chapter-pager" aria-label="Chapter navigation">
+    <a href="a4-climate-and-resilience.html">&larr; Appendix A4</a>
+    <a href="index.html">All chapters</a>
+    <a href="a6-further-reading.html">Appendix A6 &rarr;</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <nav aria-label="Footer">
+    <ul>
+      <li><a href="../projects/index.html">Projects</a></li><li><a href="../programs/index.html">Programs</a></li>
+      <li><a href="../questions/index.html">Questions</a></li><li><a href="../research-agenda.html">Research agenda</a></li>
+      <li><a href="../who.html">Who is the Unknown Soldier</a></li><li><a href="../run/index.html">Run</a></li>
+      <li><a href="../how-this-was-made.html">How this was made</a></li><li><a href="../how-we-verify.html">How we verify</a></li>
+      <li><a href="../corrections.html">Corrections &amp; improvements</a></li>
+    </ul>
+  </nav>
+  <p>The Unknown Soldier &middot; uniteTOlove &middot; Toronto</p>
+  <p class="ethic">Post only where you have the right to post.</p>
+  <p>This site is built with AI assistance &mdash; every claim carries a receipt regardless of who
+  drafted it. Read how: <a href="../how-this-was-made.html">How this was made</a>.</p>
+  <p>No donations are asked for anywhere on this site. Contact:
+  <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a> &mdash;
+  corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+</footer>
+</body>
+</html>

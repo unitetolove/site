@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Slow-Motion Collapse — Why can’t Toronto move? — uniteTOlove</title>
+<meta name="description" content="A chapter of “Why can’t Toronto move?” — uniteTOlove’s receipt-backed report on Toronto transit and congestion.">
+<link rel="stylesheet" href="../style.css">
+<link rel="canonical" href="https://unitetolove.ca/transit/ch03-the-slow-motion-collapse.html">
+
+<style>
+.report-kicker { color: var(--muted); font-size: 0.9rem; letter-spacing: 0.04em;
+  text-transform: uppercase; margin-bottom: 0.2rem; }
+.chapter-status { border: 1px solid var(--border); border-left: 4px solid var(--accent);
+  padding: 0.6rem 0.9rem; border-radius: 4px; font-size: 0.92rem; color: var(--muted);
+  margin: 1rem 0 1.5rem; }
+section.receipts { border-top: 3px double var(--border); margin-top: 2.5rem; padding-top: 0.5rem; }
+section.receipts h2 { border-bottom: none; }
+section.receipts ul { font-size: 0.92rem; }
+nav.chapter-pager { display: flex; justify-content: space-between; gap: 1rem;
+  border-top: 1px solid var(--border); margin-top: 2.5rem; padding-top: 1rem; }
+table { border-collapse: collapse; margin: 1rem 0; width: 100%; font-size: 0.92rem; }
+th, td { border: 1px solid var(--border); padding: 0.4rem 0.6rem; text-align: left;
+  vertical-align: top; }
+th { background: var(--code-bg); }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark-link" href="../index.html">unite<span class="to">TO</span>love<span class="tld">.ca</span></a>
+    <nav class="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="../index.html">Home</a></li><li><a href="../projects/index.html">Projects</a></li>
+        <li><a href="../vision.html">The full vision</a></li>
+        <li><a href="../programs/index.html">Programs</a></li>
+        <li><a href="../questions/index.html">Questions</a></li>
+        <li><a href="../research-agenda.html">Research agenda</a></li>
+        <li><a href="../who.html">Who</a></li><li><a href="../run/index.html">Run</a></li>
+        <li><a href="../how-this-was-made.html">How this was made</a></li><li><a href="../how-we-verify.html">How we verify</a></li>
+        <li><a href="../corrections.html">Corrections</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<nav class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Why can’t Toronto move?</a> / The Slow-Motion Collapse</nav>
+
+<main id="main">
+  <p class="report-kicker">Part I — What’s broken · Chapter 3</p>
+  <h1>The Slow-Motion Collapse</h1>
+<p class="chapter-status">Working chapter of <a href="index.html"><em>Why can&rsquo;t Toronto move?</em></a> &mdash; the report&rsquo;s <a href="index.html">summary page</a> uses only claims that passed our receipt check. Figures below marked &#9888;&#65039; are still in the re-verification queue, labelled honestly rather than hidden. How that works: <a href="receipts.html">check our work</a>.</p>
+<p><strong>Toronto's surface transit has been getting slower and less predictable for over a decade, and this project measured exactly how much — first-party, methods and code on disk — by pulling 55 days of the TTC's own live GPS data and computing the real numbers from scratch.</strong></p>
+<p>The TTC's own Board record already showed the trend: scheduled bus speeds fell from 20 km/h in 2013 to 17.2 km/h in 2024, a decline the agency's own transit-management staff described to their Board as urgent enough to warrant a dedicated report. This project did not stop at citing that figure. Over 55 summer days, we captured the TTC's real-time GPS feed — the actual, second-by-second position of every bus and streetcar in the system, checked against its published schedule — across 1.89 million trips and 50.5 million individual stop-level observations, and computed speed and reliability independently, the same way the TTC's own systems would, from raw actual-versus-scheduled arrivals. The result is not a re-statement of the TTC's number. It is an independent confirmation of it, built from the ground up, with the underlying dataset and analysis code kept on disk for anyone who wants to check the work.</p>
+<p><strong>The headline finding: Toronto's surface network is slow, and slowest exactly where the most riders depend on it.</strong> Local buses — which carry the great majority of all bus trips in the city — average 17.2 km/h, a figure that matches the TTC's own reported number almost to the decimal. Streetcars average 10.7 km/h, a full 40% slower than local buses, on some of the highest-demand downtown corridors in the city. The busiest surface route in Toronto, the 504 King streetcar, runs at 10.0 km/h — jogging speed, not driving speed — and the slowest of any network measured in a 2024 international academic survey of streetcar systems. And the slow point of the day is not what most people would guess: speeds bottom out at midday, between 11 a.m. and 1 p.m. — buses fall to 14.7 km/h, streetcars to 9.5 — not during the traditional rush hour. That points at all-day congestion, curb activity, and dwell time at stops as the real drag on the system, not a narrower "rush hour problem" that a single peak-period fix could solve.</p>
+<p><strong>Reliability is worse than the official numbers suggest, and the gap between "on time" and "reliable" is itself the finding.</strong> Measured on a tight, rider-useful standard — arriving no more than 30 seconds early or 2 minutes late — only about one trip in five (20.7%) hits the mark. Apply the TTC's own, considerably looser definition of on-time (one minute early to five minutes late) to that same underlying data, and the number roughly doubles, to 39.6%. Neither number is wrong; they are measuring different things, and that gap is the point. A rider standing at a stop experiences the tight standard — did the vehicle show up close enough to when it was supposed to for the schedule to be useful — while an agency's internal reporting can look considerably healthier under a looser one. The failures split into two distinct patterns worth naming separately: some routes run chronically early, leaving riders behind before they even arrive at the stop; others run chronically late. Both look identical on an aggregate "on-time" statistic, and both are real problems experienced very differently by the people waiting.</p>
+<p><strong>The single clearest, most actionable finding in the entire measurement: give a route its own lane, and reliability improves dramatically.</strong> Group Toronto's streetcar routes by whether they run in a dedicated right-of-way — a lane cars cannot enter — or in mixed traffic with cars, and the difference is stark. On the TTC's own on-time standard, dedicated-right-of-way streetcars (510 Spadina, 512 St Clair, 509 Harbourfront) run on time 42 to 62% of trips; streetcars sharing the street with cars (504 King, 505 Dundas, 506 Carlton, 501 Queen) manage only 23 to 34% — roughly double the reliability, on the same standard, for routes with their own lane. On the wider ±5-minute standard the gap narrows to a still-substantial 15-to-25 percentage points (about 68–79% versus 50–60%). A related, non-obvious finding: streetcars already board passengers through every door, which is usually the single biggest lever for speeding up a bus route — and they are still the slowest, least reliable mode on the network. That tells us boarding policy is not the constraint for streetcars. Separation from car traffic is.</p>
+<p><strong>A direct comparison against Vancouver shows Toronto's disadvantage is real, but partly structural.</strong> Using an identical measurement pipeline over the same 55 days, Vancouver's TransLink buses run faster and more punctually than Toronto's on every measure tested: 19.6 km/h versus Toronto's 17.2, and 55.8% versus 40.9% on the shared on-time standard. The honest caveat, carried alongside every use of this comparison: Vancouver's buses feed a SkyTrain rapid-transit spine and run more suburban, express-oriented service, while Toronto's buses and streetcars carry more of the dense downtown core in mixed traffic. This is not evidence that TTC could simply match Vancouver through better operations alone — it's evidence that Toronto's surface network is doing work, unassisted, that Vancouver's network assigns to a grade-separated rail line. That reinforces the case, developed later in this book, for building the kind of rapid-transit trunk that lets buses do what buses do best.</p>
+<p><strong>What this measurement cannot do, said plainly.</strong> The data covers 55 days in one summer — long enough to measure the system honestly, not long enough to say anything about winter, about seasonality, or about a multi-year trend on its own. The underlying GPS feed records a vehicle's position roughly every 60 seconds and captures 70–80% of expected stops, which makes system-wide averages reliable but individual-stop figures approximate. "Terminal" performance, cited throughout this chapter and elsewhere in this book, means the last stop actually observed for a trip — not always the literal end of the route. None of these limitations change the shape of the findings; they are the honest boundaries around how far this particular dataset can speak, and they are carried forward wherever this data is cited.</p>
+<section class="receipts">
+<h2>Receipts</h2>
+<ul><li><code>RT_DATA_REPORT_v3.md</code> (first-party, methods and code on disk) — the 55-day, 1.89-million-trip, 50.5-million-observation GTFS-Realtime analysis underlying every measured figure in this chapter: local-bus/streetcar/504 King speeds; the optimal-vs-TTC-standard on-time comparison; the dedicated-right-of-way reliability comparison; the Toronto-vs-Vancouver comparison; and the honest limitations (55 summer days; ~60-second recording interval; ~70–80% stop completeness; "terminal" defined as last observed stop).</li>
+<li><code>TTC_PROBLEM_ATLAS.md</code> §7 — the 20 km/h (2013) → 17.2 km/h (2024) scheduled-speed decline, cited to TTC Board item TTC2.13, "An Urgent Need to Improve Bus and Streetcar Travel Time and Reliability" (adopted 2025-02-24) — a citation corrected in this report's verification pass.</li>
+<li><code>CONGESTION_ROOT_CAUSES.md</code>, root cause 4 — the self-reinforcing cycle between slow surface transit and mode shift toward driving.</li>
+<li>Precision forms applied per the report's sealed claim ledger: "local buses" (not "all buses") for the 17.2 km/h figure; the right-of-way "doubling" pinned to the TTC's −1/+5 on-time standard (42–62% vs. 23–34%), with the ±5-minute comparison stated separately as a 15–25-point lift; "slowest of any network in a 2024 international academic survey" (not an unqualified "slowest in the world") for the 504 King comparison.</li></ul>
+</section>
+
+  <nav class="chapter-pager" aria-label="Chapter navigation">
+    <a href="ch02-why-the-roads-are-full.html">&larr; Chapter 2</a>
+    <a href="index.html">All chapters</a>
+    <a href="ch04-the-fleet-the-signals-the-backlog.html">Chapter 4 &rarr;</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <nav aria-label="Footer">
+    <ul>
+      <li><a href="../projects/index.html">Projects</a></li><li><a href="../programs/index.html">Programs</a></li>
+      <li><a href="../questions/index.html">Questions</a></li><li><a href="../research-agenda.html">Research agenda</a></li>
+      <li><a href="../who.html">Who is the Unknown Soldier</a></li><li><a href="../run/index.html">Run</a></li>
+      <li><a href="../how-this-was-made.html">How this was made</a></li><li><a href="../how-we-verify.html">How we verify</a></li>
+      <li><a href="../corrections.html">Corrections &amp; improvements</a></li>
+    </ul>
+  </nav>
+  <p>The Unknown Soldier &middot; uniteTOlove &middot; Toronto</p>
+  <p class="ethic">Post only where you have the right to post.</p>
+  <p>This site is built with AI assistance &mdash; every claim carries a receipt regardless of who
+  drafted it. Read how: <a href="../how-this-was-made.html">How this was made</a>.</p>
+  <p>No donations are asked for anywhere on this site. Contact:
+  <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a> &mdash;
+  corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+</footer>
+</body>
+</html>

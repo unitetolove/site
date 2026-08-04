@@ -1,0 +1,16 @@
+<!-- STAGED, UNLINKED. Not part of site nav; not included by any live template. -->
+<!-- Fleet-wide "Suggest an improvement" participation snippet, per D-123(4)/D-130(4):
+     reuses the ALREADY-SHIPPED mailto pattern (unknownsoldier@unitetolove.ca) — no new
+     vendor, no new form/identity surface. See research/listening/PARTICIPATION_MODEL_BUILD_v0.1.md
+     for the full spec (placement guidance, triage discipline, non-goals). This fragment is
+     the ready-to-paste block only; it is not wired into any page this session. -->
+<a class="participate-mail" href="mailto:unknownsoldier@unitetolove.ca?subject=Improvement%3A&amp;body=Page%20link%20%28paste%20it%20here%29%3A%0A%0AWhat%20I%20noticed%20or%20suggest%3A%0A">&#9999;&#65039; Suggest an improvement</a>
+<script>(function(){
+  var isFT = document.body && document.body.getAttribute('data-ft-id');
+  var src = isFT ? ('FT-' + isFT) : location.pathname;
+  var s = 'Improvement: ' + src;
+  var b = 'Page link: ' + location.href + '\n\nWhat I noticed or suggest:\n\nCredit me as (optional):\n';
+  var h = 'mailto:unknownsoldier@unitetolove.ca?subject=' + encodeURIComponent(s) + '&body=' + encodeURIComponent(b);
+  var l = document.querySelectorAll('a.participate-mail');
+  for (var i = 0; i < l.length; i++) { l[i].href = h; }
+})();</script>

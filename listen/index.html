@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Listening Project — uniteTOlove</title>
+<meta name="description" content="Tell us your vision for Toronto, what you know, or what you've lived through — by writing, by voice, or by video, through channels that already exist. Nothing about a testimony is recorded until you've chosen how it can be used.">
+<link rel="stylesheet" href="../style.css">
+<link rel="canonical" href="https://unitetolove.ca/listen/index.html">
+<style>
+/* Page-local notice styling — style.css has no notice-box rules yet; kept inline on purpose,
+   matching the pattern already used on join.html. */
+.notice-box {
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+}
+.notice-box p:first-child { margin-top: 0; }
+.notice-box p:last-child { margin-bottom: 0; }
+.send-links { list-style: none; padding: 0; margin: 0.75rem 0; }
+.send-links li { margin: 0.4rem 0; }
+/* Declaration sign-online form — same pattern as site/join.html's .join-form, kept page-local
+   for the same reason join.html's own block is inline (style.css has no form rules yet). */
+.sign-form fieldset {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.9rem 1.1rem 1.1rem;
+  margin: 1.1rem 0;
+}
+.sign-form legend { font-weight: 700; padding: 0 0.4rem; }
+.sign-form .field-label { display: block; font-weight: 600; font-size: 0.95em; margin-top: 0.75rem; }
+.sign-form .hint { font-weight: 400; color: var(--muted); font-size: 0.88em; }
+.sign-form input[type="text"],
+.sign-form input[type="email"] {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0.3rem;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--fg);
+  font: inherit;
+  line-height: 1.4;
+}
+.sign-form .check {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-weight: 400;
+  margin: 0.5rem 0;
+}
+.sign-form .check input { margin-top: 0.3em; flex: none; }
+.sign-form .inline-field { margin: 0.4rem 0 0.35rem 1.9rem; }
+.sign-form .inline-field input { margin-top: 0; }
+.sign-form .cf-turnstile { margin: 0.9rem 0; }
+.sign-form button[type="submit"] {
+  font: inherit;
+  font-weight: 700;
+  padding: 0.55rem 1.4rem;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  background: var(--accent);
+  color: var(--bg);
+  cursor: pointer;
+}
+.sign-form button[type="submit"]:hover { filter: brightness(1.1); }
+.sign-form button[type="submit"]:disabled { opacity: 0.6; cursor: default; }
+#sign-status {
+  margin-top: 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.6rem 0.9rem;
+  font-weight: 600;
+}
+#sign-status.ok { border-color: var(--accent); }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark-link" href="../index.html">unite<span class="to">TO</span>love<span class="tld">.ca</span></a>
+    <nav class="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="../index.html">Home</a></li><li><a href="../projects/index.html">Projects</a></li>
+        <li><a href="../vision.html">The full vision</a></li>
+        <li><a href="../programs/index.html">Programs</a></li>
+        <li><a href="../questions/index.html">Questions</a></li>
+        <li><a href="../who.html">Who</a></li><li><a href="../run/index.html">Run</a></li>
+        <li><a href="../how-this-was-made.html">How this was made</a></li><li><a href="../how-we-verify.html">How we verify</a></li>
+        <li><a href="../corrections.html">Corrections</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<nav class="crumbs"><a href="../index.html">Home</a> / The Listening Project</nav>
+
+<main id="main">
+  <h1>The Listening Project</h1>
+
+  <p class="lede">Toronto&rsquo;s future shouldn&rsquo;t be one person&rsquo;s idea of it. This
+  page is where anyone can add to it &mdash; a vision, something you know, or something
+  that&rsquo;s happened to you or someone you know. Every way to send something below works
+  today, through channels that already exist &mdash; email, a voice memo, a link to a video you
+  control. Nothing new to sign up for, nothing to install.</p>
+
+  <h2>Three things you can tell us</h2>
+  <div class="card-grid">
+    <a class="card" href="#vision">
+      <h3>Your vision</h3>
+      <p>What you want Toronto to become &mdash; a sentence or a page, however you&rsquo;d say it.</p>
+    </a>
+    <a class="card" href="#know">
+      <h3>What you know</h3>
+      <p>A problem you&rsquo;ve seen up close, or an idea you think would actually work.</p>
+    </a>
+    <a class="card" href="#witness">
+      <h3>What&rsquo;s happened</h3>
+      <p>Something you&rsquo;ve lived through, or watched happen to someone else, in this
+      city&rsquo;s systems.</p>
+    </a>
+  </div>
+
+  <h2 id="vision">Your vision for Toronto</h2>
+  <p>What would you want this city to become, if it actually worked for everyone in it?
+  Big or small, a dream or a fix &mdash; write it however you&rsquo;d say it out loud.</p>
+  <ul class="send-links">
+    <li><strong>Write it:</strong>
+    <a href="mailto:unknownsoldier@unitetolove.ca?subject=My%20vision%20for%20Toronto&amp;body=What%20I%27d%20want%20Toronto%20to%20become%3A%0A%0A%0ACredit%20me%20as%20%28optional%2C%20or%20say%20%22anonymous%22%29%3A%0A"><strong>&#9993;&#65039; unknownsoldier@unitetolove.ca</strong></a>
+    &mdash; opens an email with a short template. Delete it and write your own words if you&rsquo;d
+    rather.</li>
+    <li><strong>Say it:</strong> record a voice memo on your phone and attach it to the same
+    email.</li>
+    <li><strong>Show it:</strong> record a short video, put it somewhere you already control
+    (an unlisted YouTube link, a Google Drive or Dropbox link, anything you can share), and paste
+    the link into the same email. We don&rsquo;t need you to upload anything to us directly.</li>
+  </ul>
+
+  <h2 id="know">What you know</h2>
+  <p>Maybe you&rsquo;ve worked in a system that&rsquo;s broken, or seen a fix somewhere else that
+  actually works, or have a professional&rsquo;s eye on a problem the rest of us only guess at.
+  This is where that goes.</p>
+  <ul class="send-links">
+    <li><strong>Write it:</strong>
+    <a href="mailto:unknownsoldier@unitetolove.ca?subject=What%20I%20know&amp;body=My%20field%20or%20experience%20%28optional%29%3A%0A%0AWhat%20I%20know%2C%20or%20what%20I%20think%20would%20actually%20work%3A%0A%0A%0ACredit%20me%20as%20%28optional%2C%20or%20say%20%22anonymous%22%29%3A%0A"><strong>&#9993;&#65039; unknownsoldier@unitetolove.ca</strong></a>
+    &mdash; same address, its own template.</li>
+    <li><strong>Say it:</strong> a voice memo, attached, works exactly as well as writing it out.</li>
+    <li><strong>Show it:</strong> same as above &mdash; a link to a video you control, pasted into
+    the email, rather than an upload.</li>
+  </ul>
+
+  <h2 id="witness">What&rsquo;s happened</h2>
+
+  <p>If what you want to tell us is about something that happened to you, or to someone you
+  know &mdash; a way this city&rsquo;s systems failed someone &mdash; read this part first. It
+  works differently from the two sections above, on purpose.</p>
+
+  <div class="notice-box">
+    <p><strong>Nothing is recorded or kept until you&rsquo;ve told us how it can be used.</strong>
+    Right now, all we&rsquo;re asking for is a way to reach you. Please don&rsquo;t write your
+    story into an email yet &mdash; a real person will reach out first, talk it through with you,
+    and only then, if you want to go further, record anything.</p>
+    <p>When that conversation happens, you get to choose two separate things, independently, and
+    either answer is fine: <strong>first</strong>, how much of what you say &mdash; if any of it
+    &mdash; can ever be shared publicly, and in what form; <strong>second</strong>, whether what
+    you tell us can ever be used in an actual complaint to an official body, like a city
+    watchdog. Sharing it publicly is a different question from sharing it with the authorities
+    &mdash; you can say yes to one and no to the other, in either direction, and that&rsquo;s
+    entirely your call.</p>
+    <p>If you ever do record something with us: it&rsquo;s turned into text by a program that
+    runs on our own machines &mdash; never sent to ChatGPT, Google, or any other outside AI
+    company, ever, for any reason.</p>
+    <p>You can change your mind about any of this later, including after today.</p>
+  </div>
+
+  <p>To start, just tell us how to reach you:</p>
+  <ul class="send-links">
+    <li><strong>Write it:</strong>
+    <a href="mailto:unknownsoldier@unitetolove.ca?subject=I%27d%20like%20to%20talk%20to%20the%20Listening%20Project&amp;body=How%20to%20reach%20me%20%28phone%20and%2For%20email%29%3A%0A%0ABest%20time%20to%20reach%20me%3A%0A%0AWhat%20part%20of%20the%20city%20I%27m%20in%20%28optional%29%3A%0A%0A%28Please%20don%27t%20write%20your%20story%20here%20yet%20%E2%80%94%20someone%20will%20reach%20out%20first%2C%20and%20nothing%20is%20recorded%20until%20you%27ve%20told%20us%20how%20it%20can%20be%20used.%29%0A"><strong>&#9993;&#65039; unknownsoldier@unitetolove.ca</strong></a>
+    &mdash; just a way to reach you and a good time to call.</li>
+    <li><strong>Say it:</strong> a short voice memo saying the same &mdash; a way to reach you
+    &mdash; works too.</li>
+  </ul>
+
+  <p><strong>If you need to talk to someone right now</strong>, whether or not you talk to us at
+  all: Toronto Community Crisis Service / 211 Ontario &mdash; dial <strong>211</strong>.
+  Distress Centres of Greater Toronto &mdash; <strong>416-408-4357</strong>. Canada&rsquo;s 988
+  Suicide Crisis Helpline &mdash; call or text <strong>988</strong>.</p>
+
+  <h2>What happens to what you send</h2>
+  <p>Everything gets <strong>read</strong> by a person &mdash; nothing sits in an unwatched
+  inbox. What we can&rsquo;t honestly promise is a personal reply to every single message; at the
+  scale we hope this reaches, that&rsquo;s not a promise we can keep, so we won&rsquo;t make it.
+  What we do promise instead: what people are telling us shows up <strong>in the open,
+  regularly, as an aggregate</strong> &mdash; counts, themes, what changed because of it &mdash;
+  the same radical-transparency standard the rest of this site holds itself to. Being heard
+  should be demonstrable, not just claimed.</p>
+
+  <h2 id="declaration">Sign the declaration</h2>
+  <p>This is the declaration, in full &mdash; the declaration of August 1, 2026. This exact
+  wording is what you sign, online or on paper.</p>
+
+  <div class="notice-box" aria-labelledby="declaration-heading">
+    <h3 id="declaration-heading" style="margin-top:0; border:none; padding:0;">The Declaration
+    &mdash; Toronto&rsquo;s shelter and homelessness system</h3>
+    <p><strong>We, the undersigned, live in Toronto. Some of us have slept in its shelters. All
+    of us pay for them.</strong></p>
+    <p>Here is what the public record already shows:</p>
+    <ul>
+      <li>A shelter bed costs Toronto <strong>$49,640 a year</strong>, as reported by the
+      city&rsquo;s Auditor General. Housing First support &mdash; an actual home, with help &mdash;
+      costs <strong>$20,367</strong>, and <strong>$6,311</strong> after the savings it creates.</li>
+      <li>In winter 2023-24, Toronto lost <strong>12,742 shelter bed-nights to process rules</strong>
+      &mdash; while an average of <strong>174 or more people a night</strong> called for a bed and
+      went unmatched. That is the city&rsquo;s own audit.</li>
+      <li>A single adult without a home gets <strong>$343 a month</strong> &mdash; Ontario
+      Works&rsquo; shelter allowance only exists once you already have a home to pay for. That is
+      <strong>13 cents of every poverty-line dollar</strong>.</li>
+      <li>This year, federal homelessness funding for Toronto was cut <strong>68%</strong>.</li>
+      <li>None of this is a mystery. Toronto&rsquo;s homelessness is the product of <strong>five
+      specific policy failures, most built in a single 1990s window</strong> &mdash; which means it
+      can be unbuilt by policy too.</li>
+      <li>Scotland put <strong>2,154 people straight into homes; 83% are still housed.</strong>
+      The model works when governments actually fund it.</li>
+    </ul>
+    <p>And here is what the record cannot show, but we can: <strong>we have lived this system,
+    worked inside it, and listened at its doors.</strong> What we have seen and heard does not
+    match what the public is told. That testimony is being gathered, with consent and care, and
+    it will be heard.</p>
+    <p><strong>Therefore we demand, of every level of government and every officer with the power
+    to act:</strong></p>
+    <ol>
+      <li><strong>A full, independent investigation of the homelessness-serving system &mdash;
+      the system as a whole, and each and every component, supplier, agency, and organization
+      within it.</strong> We accuse no one. We demand the investigation that would let the truth
+      accuse or acquit &mdash; by the officers who exist for exactly this: the city&rsquo;s
+      Auditor General, Ombudsman Toronto, the Ontario Ombudsman, the Federal Housing Advocate.</li>
+      <li><strong>Full financial transparency.</strong> Every public dollar that enters this
+      system, traceable to what it bought, published where any resident can read it.</li>
+      <li><strong>Reform to what the evidence already proves:</strong> a system that houses people
+      instead of warehousing them &mdash; because the record above shows housing people costs
+      <em>less</em> than what we are doing now.</li>
+      <li><strong>A public answer.</strong> Not a statement &mdash; a response, on the record, to
+      each of these demands.</li>
+    </ol>
+    <p><strong>Sign if you&rsquo;re with us. And if this system has touched you &mdash; file.</strong>
+    A complaint with your name and a file number is a voice that cannot be averaged away. We will
+    show you how, and help every step we lawfully can.</p>
+    <p class="placeholder-note">Every figure above carries a primary-source receipt; the full
+    receipts publish with this project&rsquo;s research pages.</p>
+  </div>
+
+  <p><strong>Sign online:</strong></p>
+
+  <form id="sign-form" class="sign-form" novalidate="">
+    <fieldset>
+      <legend>Sign the declaration above</legend>
+      <label class="field-label" for="s-name">Name <span class="hint">(required &mdash; any name you choose)</span>
+        <input type="text" id="s-name" name="name" autocomplete="name" required>
+      </label>
+      <label class="field-label" for="s-email">Email <span class="hint">(required &mdash; how we verify one signature per person)</span>
+        <input type="email" id="s-email" name="email" autocomplete="email" required>
+      </label>
+      <label class="field-label" for="s-area">Neighbourhood, ward, or the first three characters of your postal code <span class="hint">(optional &mdash; lets Toronto&rsquo;s own number lead the count)</span>
+        <input type="text" id="s-area" name="area">
+      </label>
+      <label class="check"><input type="checkbox" id="s-under18">
+        <span>I&rsquo;m under 18 <span class="hint">(a parent or guardian signs for you &mdash; enter their email below)</span></span>
+      </label>
+      <div class="inline-field" id="s-parent-wrap" hidden>
+        <label class="field-label" for="s-parent-email">Parent or guardian&rsquo;s email <span class="hint">(required if you&rsquo;re under 18)</span>
+          <input type="email" id="s-parent-email" name="parent_email" autocomplete="email">
+        </label>
+      </div>
+      <label class="check"><input type="checkbox" id="s-consent" required>
+        <span><strong>I am signing this declaration, as written above</strong> (required) &mdash;
+        version of August 1, 2026.</span>
+      </label>
+      <p class="hint">Your name and email are held for this signature record only &mdash; never
+      sold or shared, never published as a list. Unsubscribe or ask us to delete your record
+      anytime at <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a>.</p>
+
+      <div class="cf-turnstile" data-sitekey="0x4AAAAAAEGWIsWFdt-RRBsx"></div>
+
+      <button type="submit">Sign the declaration</button>
+    </fieldset>
+
+    <div id="sign-status" role="status" aria-live="polite" hidden tabindex="-1"></div>
+
+    <noscript><p class="courier-note">JavaScript is off in your browser, so this form
+    can&rsquo;t submit here &mdash; no problem: write to
+    <a href="mailto:unknownsoldier@unitetolove.ca?subject=I%27m%20signing%20the%20declaration&amp;body=I%27m%20signing%20the%20declaration%20of%20August%201%2C%202026%2C%20as%20written%20at%20unitetolove.ca%2Flisten.%0A%0AName%3A%0AEmail%3A%0ANeighbourhood%2Fward%20(optional)%3A">unknownsoldier@unitetolove.ca</a>
+    with your name and email, saying you&rsquo;re signing the declaration &mdash; or use the
+    printable sheet below.</p></noscript>
+  </form>
+
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script>
+  (function () {
+    "use strict";
+    var form = document.getElementById("sign-form");
+    if (!form) { return; }
+    form.removeAttribute("novalidate");
+
+    var under18 = document.getElementById("s-under18");
+    var parentWrap = document.getElementById("s-parent-wrap");
+    var parentEmail = document.getElementById("s-parent-email");
+    under18.addEventListener("change", function () {
+      parentWrap.hidden = !under18.checked;
+      if (under18.checked) { parentEmail.setAttribute("required", "required"); }
+      else { parentEmail.removeAttribute("required"); parentEmail.value = ""; }
+    });
+
+    var status = document.getElementById("sign-status");
+    function showStatus(message, ok) {
+      status.textContent = message;
+      status.hidden = false;
+      status.className = ok ? "ok" : "";
+      status.focus();
+    }
+
+    // Relative path assumes join-signup-worker is routed at this path on the same origin as the
+    // site (unitetolove.ca) once deployed -- see tools/join_signup_worker/README.md for the
+    // still-open Cloudflare deploy steps (D1, Turnstile secret, wrangler deploy, route wiring).
+    var API_ENDPOINT = "/api/join";
+    var DECLARATION_VERSION = "2026-08-01";
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      status.hidden = true;
+
+      var name = document.getElementById("s-name").value.trim();
+      var email = document.getElementById("s-email").value.trim();
+      var area = document.getElementById("s-area").value.trim();
+      var isUnder18 = under18.checked;
+      var parentEmailVal = parentEmail.value.trim();
+
+      if (!name || !email) {
+        showStatus("Please fill in your name and email.", false);
+        return;
+      }
+      if (isUnder18 && !parentEmailVal) {
+        showStatus("Please enter a parent or guardian's email.", false);
+        return;
+      }
+      if (!document.getElementById("s-consent").checked) {
+        showStatus("Please check the box confirming you're signing the declaration.", false);
+        return;
+      }
+      var turnstileField = form.querySelector('[name="cf-turnstile-response"]');
+      var turnstileToken = turnstileField ? turnstileField.value : "";
+      if (!turnstileToken) {
+        showStatus("Please complete the verification widget above, then try again.", false);
+        return;
+      }
+
+      var nowIso = new Date().toISOString();
+      var payload = {
+        name: name,
+        email: email,
+        postal_fsa_or_ward: area || undefined,
+        under_18_flag: isUnder18,
+        parent_email: isUnder18 ? parentEmailVal : undefined,
+        consent_flags: "declaration_signature",
+        consent_timestamp: nowIso,
+        consent_source_page: window.location.href,
+        declaration_signed_at: nowIso,
+        declaration_version: DECLARATION_VERSION,
+        turnstile_token: turnstileToken,
+      };
+
+      var submitBtn = form.querySelector('button[type="submit"]');
+      submitBtn.disabled = true;
+
+      fetch(API_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      })
+        .then(function (res) {
+          return res.json().catch(function () { return {}; }).then(function (data) {
+            return { ok: res.ok, status: res.status, data: data };
+          });
+        })
+        .then(function (result) {
+          submitBtn.disabled = false;
+          if (result.ok) {
+            form.querySelector("fieldset").hidden = true;
+            showStatus("Thank you — your signature is recorded. Your name and email are never published or shared as a list.", true);
+          } else if (result.status === 403) {
+            showStatus("Verification failed — please try again.", false);
+            if (window.turnstile) { window.turnstile.reset(); }
+          } else if (result.status === 400) {
+            showStatus((result.data && result.data.error) || "Please check the form and try again.", false);
+          } else {
+            showStatus("Something went wrong on our end — please try again, or write to unknownsoldier@unitetolove.ca and we'll add your signature by hand.", false);
+          }
+        })
+        .catch(function () {
+          submitBtn.disabled = false;
+          showStatus("Couldn't reach the signature server — please write to unknownsoldier@unitetolove.ca and we'll add your signature by hand, or use the printable sheet below.", false);
+        });
+    });
+  })();
+  </script>
+
+  <p><strong>Sign in person:</strong> paper sign-up will be available at gatherings and events
+  around the city, and the <a href="sign-sheet.html">printable signature sheet</a> works today
+  &mdash; print it, sign it, and mail or hand it to a collector. If you&rsquo;d like to help
+  collect signatures in person, tell us that too.</p>
+
+  <p>&mdash; The Unknown Soldier &middot; uniteTOlove &middot; Toronto</p>
+</main>
+
+<footer class="site-footer">
+  <nav aria-label="Footer">
+    <ul>
+      <li><a href="../projects/index.html">Projects</a></li><li><a href="../programs/index.html">Programs</a></li>
+      <li><a href="../questions/index.html">Questions</a></li><li><a href="../run/index.html">Run</a></li>
+      <li><a href="../who.html">Who is the Unknown Soldier</a></li>
+      <li><a href="../how-this-was-made.html">How this was made</a></li><li><a href="../how-we-verify.html">How we verify</a></li>
+      <li><a href="../corrections.html">Corrections &amp; improvements</a></li>
+    </ul>
+  </nav>
+  <p>The Unknown Soldier &middot; uniteTOlove &middot; Toronto</p>
+  <p class="ethic">Post only where you have the right to post.</p>
+  <p>This site is built with AI assistance &mdash; every claim carries a receipt regardless of who
+  drafted it. Read how: <a href="../how-this-was-made.html">How this was made</a>.</p>
+  <p>No donations are asked for anywhere on this site. Contact:
+  <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a> &mdash;
+  corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+</footer>
+</body>
+</html>

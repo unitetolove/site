@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Honest Measurement Looks Like — Why can’t Toronto move? — uniteTOlove</title>
+<meta name="description" content="A chapter of “Why can’t Toronto move?” — uniteTOlove’s receipt-backed report on Toronto transit and congestion.">
+<link rel="stylesheet" href="../style.css">
+<link rel="canonical" href="https://unitetolove.ca/transit/ch19-what-honest-measurement-looks-like.html">
+
+<style>
+.report-kicker { color: var(--muted); font-size: 0.9rem; letter-spacing: 0.04em;
+  text-transform: uppercase; margin-bottom: 0.2rem; }
+.chapter-status { border: 1px solid var(--border); border-left: 4px solid var(--accent);
+  padding: 0.6rem 0.9rem; border-radius: 4px; font-size: 0.92rem; color: var(--muted);
+  margin: 1rem 0 1.5rem; }
+section.receipts { border-top: 3px double var(--border); margin-top: 2.5rem; padding-top: 0.5rem; }
+section.receipts h2 { border-bottom: none; }
+section.receipts ul { font-size: 0.92rem; }
+nav.chapter-pager { display: flex; justify-content: space-between; gap: 1rem;
+  border-top: 1px solid var(--border); margin-top: 2.5rem; padding-top: 1rem; }
+table { border-collapse: collapse; margin: 1rem 0; width: 100%; font-size: 0.92rem; }
+th, td { border: 1px solid var(--border); padding: 0.4rem 0.6rem; text-align: left;
+  vertical-align: top; }
+th { background: var(--code-bg); }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark-link" href="../index.html">unite<span class="to">TO</span>love<span class="tld">.ca</span></a>
+    <nav class="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="../index.html">Home</a></li><li><a href="../projects/index.html">Projects</a></li>
+        <li><a href="../vision.html">The full vision</a></li>
+        <li><a href="../programs/index.html">Programs</a></li>
+        <li><a href="../questions/index.html">Questions</a></li>
+        <li><a href="../research-agenda.html">Research agenda</a></li>
+        <li><a href="../who.html">Who</a></li><li><a href="../run/index.html">Run</a></li>
+        <li><a href="../how-this-was-made.html">How this was made</a></li><li><a href="../how-we-verify.html">How we verify</a></li>
+        <li><a href="../corrections.html">Corrections</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<nav class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Why can’t Toronto move?</a> / What Honest Measurement Looks Like</nav>
+
+<main id="main">
+  <p class="report-kicker">Part V — The fix · Chapter 19</p>
+  <h1>What Honest Measurement Looks Like</h1>
+<p class="chapter-status">Working chapter of <a href="index.html"><em>Why can&rsquo;t Toronto move?</em></a> &mdash; the report&rsquo;s <a href="index.html">summary page</a> uses only claims that passed our receipt check. Figures below marked &#9888;&#65039; are still in the re-verification queue, labelled honestly rather than hidden. How that works: <a href="receipts.html">check our work</a>.</p>
+<p><strong>On the very same TTC data, on-time performance reads 20.7% or 39.6% depending only on which definition you use — and the gap between those two numbers is the whole case for a scoreboard that can't be gamed.</strong></p>
+<p>Toronto doesn't lack an accountability instrument for its transit system's performance — the TTC publishes a monthly CEO's Report with real strengths: it states missed targets in plain running text, not just a red cell in a table, and it reports safety metrics that got worse with the same visibility as ones that improved. What Toronto lacks is a definition of "on time" rigorous enough that a good number actually means something, and a public habit of running the same honest check every month regardless of whether that month was good.</p>
+<p>This project's own 55-day analysis of TTC's real-time GPS data, covering 1.89 million trips, put a number on exactly how much the definition matters. Run the identical dataset, the identical buses, the identical 55 days, through three different on-time windows, and the on-time rate moves from 20.7% to 39.6% to 71.1% — purely by widening the tolerance. Under the tight, rider-useful standard (no more than 30 seconds early, no more than 2 minutes late), barely one trip in five counts as genuinely on time. Under the TTC's own official standard (one minute early to five minutes late), that same data reads as roughly two trips in five. Under a looser ±5-minute band that no agency should use as a headline, seven in ten trips pass. None of the three descriptions is false. Only one of them is useful to someone standing at a stop.</p>
+<p>The optimal standard exposes something the looser windows hide entirely: early-running. A bus that leaves a stop before its scheduled time strands a waiting rider exactly as surely as a late one does, but both the TTC's own standard and the ±5-minute band are generous enough toward early departures that this failure mode barely registers. On route 119 Torbarrie, more than 30 seconds early on 92% of trips; on 503 Kingston Road, 86%. A single on-time percentage can't see this kind of failure — it can only be seen by reporting early-running and lateness as two separate numbers, which is exactly what this project's data shows Toronto currently doesn't do.</p>
+<p>A second finding sharpens the point further: measurement location matters almost as much as tolerance. The arrival-based figure this project computed at the last observed stop (39.6% under the TTC-standard window) sits well below the roughly 75% bus on-time performance the TTC's own CEO's Report states for what should be a comparable standard — a gap most plausibly explained by the TTC measuring departure punctuality at terminals rather than arrival, and by the roughly 60-second resolution of the public data feed. The direction of that gap matters less than what it proves: two defensible ways of applying "the same" standard can land 35 points apart. Publish the standard's name without the measurement point, and the number is not yet meaningful.</p>
+<p>None of this is uniquely a TTC problem — it's the generic failure mode of transit-agency self-reporting everywhere. New York's MTA quietly redefined its headline wait-time metric around 2018 after Wait Assessment proved too permissive; London's TfL now reports a journey-time metric and Excess Wait Time specifically because a simple on-time percentage is trivially gamed; no agency surveyed for this project — not TTC, not San Francisco Muni, not the UK's national rail standard, not Chicago's CTA — publishes a standard as rigorous as the one this project's own data demonstrates is buildable from TTC's existing GPS feed today.</p>
+<p>The fix this project's research proposes is not a new dataset — it's a set of publishing rules applied to data TTC and the City already collect. Lock in the rigorous, rider-centric on-time window as the headline number, not a lenient one chosen because it looks better. Report the exact tolerance and the exact measurement point — terminal or all stops, arrival or departure — every single cycle, because both move the number as much as the window does. Split early-running from lateness as two permanent, separate lines, not one blended figure. Whenever a metric's definition changes, publish what the new number would have been under the old definition for at least a full trailing year, so a redefinition can never quietly launder a bad result. And treat design promises and delivered operations as two different scores, the way the international Bus Rapid Transit Standard already does, so a corridor's paper design can't stand in for what riders actually experience once it opens.</p>
+<p>Toronto already has real transparency habits worth keeping — TTC's practice of naming a missed target in prose, not just colour-coding it, is genuinely uncommon and should survive any redesign. What's missing is a single number that means the same thing every month, defined tightly enough that improving the number requires improving the service, not just loosening the definition.</p>
+<p>⚠️ The on-time figures above come from this project's own exploratory GTFS-Realtime computation — first-party, reproducible from raw TTC stop-level data, and independently cross-validated in several ways (its bus-speed figure matches TTC's own separately reported number) — but not yet re-verified end-to-end by an outside party. They should be read as this project's best current evidence, not as an official TTC statistic.</p>
+<hr>
+<section class="receipts">
+<h2>Receipts</h2>
+<p>Source: <code>MEASUREMENT_SCOREBOARD.md</code> (Parts 1–2: design rules and proposed metric table, §1.9) and <code>RT_DATA_REPORT_v3.0.md</code> §3 ("On-time performance — it depends enormously on the standard"). On-time figures (20.7% optimal / 39.6% TTC-standard / 71.1% ±5min, terminal measurement; early-running rates for routes 119 Torbarrie and 503 Kingston Road) are this project's own 55-day, 1.89-million-trip GTFS-Realtime computation, carried with the report's own evidentiary label: our own computation, not yet independently re-verified by a second party. ⚠️ carried forward accordingly. Note: the measurement report circulates under two filenames (<code>RT_DATA_REPORT_v3.md</code> and <code>RT_DATA_REPORT_v3.0.md</code>); this chapter cites the latter, and they appear to be the same document.</p>
+</section>
+
+  <nav class="chapter-pager" aria-label="Chapter navigation">
+    <a href="ch18-now-next-later-the-program.html">&larr; Chapter 18</a>
+    <a href="index.html">All chapters</a>
+    <a href="ch20-what-one-year-could-do.html">Chapter 20 &rarr;</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <nav aria-label="Footer">
+    <ul>
+      <li><a href="../projects/index.html">Projects</a></li><li><a href="../programs/index.html">Programs</a></li>
+      <li><a href="../questions/index.html">Questions</a></li><li><a href="../research-agenda.html">Research agenda</a></li>
+      <li><a href="../who.html">Who is the Unknown Soldier</a></li><li><a href="../run/index.html">Run</a></li>
+      <li><a href="../how-this-was-made.html">How this was made</a></li><li><a href="../how-we-verify.html">How we verify</a></li>
+      <li><a href="../corrections.html">Corrections &amp; improvements</a></li>
+    </ul>
+  </nav>
+  <p>The Unknown Soldier &middot; uniteTOlove &middot; Toronto</p>
+  <p class="ethic">Post only where you have the right to post.</p>
+  <p>This site is built with AI assistance &mdash; every claim carries a receipt regardless of who
+  drafted it. Read how: <a href="../how-this-was-made.html">How this was made</a>.</p>
+  <p>No donations are asked for anywhere on this site. Contact:
+  <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a> &mdash;
+  corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+</footer>
+</body>
+</html>
