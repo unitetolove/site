@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harvest Intake (dark) — uniteTOlove</title>
+<meta name="description" content="Deploy-dark harvest intake — not linked from any live page, not open to the public. See tools/harvest_intake_worker/README.md.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="../style.css">
+<style>
+/* Page-local form styling, same pattern as ../join.html and ../listen/index.html. */
+.harvest-form fieldset {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.9rem 1.1rem 1.1rem;
+  margin: 1.2rem 0;
+}
+.harvest-form legend { font-weight: 700; padding: 0 0.4rem; }
+.harvest-form .field-label { display: block; font-weight: 600; font-size: 0.95em; margin-top: 0.75rem; }
+.harvest-form .hint { font-weight: 400; color: var(--muted); font-size: 0.88em; }
+.harvest-form input[type="text"],
+.harvest-form input[type="email"],
+.harvest-form input[type="number"],
+.harvest-form select,
+.harvest-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0.3rem;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--fg);
+  font: inherit;
+  line-height: 1.4;
+}
+.harvest-form textarea { min-height: 4.5rem; resize: vertical; }
+.harvest-form button[type="submit"], .harvest-form button.secondary {
+  font: inherit;
+  font-weight: 700;
+  padding: 0.55rem 1.4rem;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  background: var(--accent);
+  color: var(--bg);
+  cursor: pointer;
+  margin-top: 0.6rem;
+}
+.harvest-form button.secondary { background: var(--bg); color: var(--accent); }
+.harvest-form .cf-turnstile { margin: 0.9rem 0; }
+.mode-toggle { display: flex; gap: 0.6rem; margin: 1rem 0; }
+.mode-toggle button { flex: 1; padding: 0.6rem; border: 1px solid var(--border); border-radius: 6px; background: var(--bg); color: var(--fg); cursor: pointer; font: inherit; }
+.mode-toggle button[aria-pressed="true"] { border-color: var(--accent); font-weight: 700; }
+.dark-banner {
+  border: 1px solid var(--accent);
+  border-left: 4px solid var(--accent);
+  border-radius: 6px;
+  padding: 0.7rem 1rem;
+  margin: 1rem 0 1.4rem;
+  font-weight: 600;
+}
+.deeper-door { border: 1px dashed var(--border); border-radius: 6px; padding: 0.7rem 1rem; margin-top: 1rem; }
+.deeper-door[open] { padding-bottom: 1rem; }
+#room-loop, #room-setup-done { display: none; }
+#room-loop.active { display: block; }
+#entry-count-note { font-weight: 600; margin: 0.5rem 0; }
+#status, #room-status { margin-top: 0.9rem; border: 1px solid var(--accent); border-radius: 6px; padding: 0.6rem 0.9rem; font-weight: 600; }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark-link" href="../index.html">unite<span class="to">TO</span>love<span class="tld">.ca</span></a>
+    <nav class="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../harvest.html">The Harvest (public page)</a></li>
+        <li><a href="../kits/">Kits</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<nav class="crumbs"><a href="../index.html">Home</a> / <a href="../harvest.html">The Harvest</a> / Intake (dark)</nav>
+
+<main id="main">
+<h1>Harvest Intake — dark build</h1>
+
+<div class="dark-banner">
+  This page is not linked from anywhere on the live site, is marked <code>noindex</code>, and its
+  backend is not deployed. Nothing submitted here reaches anyone until a named data custodian
+  holds the store — same promise as <a href="../harvest.html">the public Harvest page</a>. It
+  exists so the intake flow can be reviewed end-to-end before that flip. See
+  <code>tools/harvest_intake_worker/README.md</code>.
+</div>
+
+<p class="hint">Never collected, anywhere on this page: a nominee's contact info, attendee names,
+a full street address, a full postal code. Cross-streets only, FSA only.</p>
+
+<div class="mode-toggle" role="group" aria-label="Choose entry mode">
+  <button type="button" id="mode-solo" aria-pressed="true">Add your own line</button>
+  <button type="button" id="mode-room" aria-pressed="false">I'm entering a room's harvest</button>
+</div>
+
+<!-- ===================== SOLO MODE ===================== -->
+<section id="solo-section">
+  <form id="solo-form" class="harvest-form" novalidate="">
+    <fieldset>
+      <legend>The thirty seconds</legend>
+      <label class="field-label" for="solo-vision-short">Vision one-liner <span class="hint">(optional — "Toronto in 2030 should ___", ≤280 characters)</span>
+        <input type="text" id="solo-vision-short" maxlength="280">
+      </label>
+      <label class="field-label" for="solo-vision-long" id="solo-vision-long-label" hidden>Say more <span class="hint">(optional, ≤200 words)</span>
+        <textarea id="solo-vision-long" hidden></textarea>
+      </label>
+      <label class="field-label" for="solo-complaint">What's broken? <span class="hint">(optional)</span>
+        <textarea id="solo-complaint"></textarea>
+      </label>
+      <label class="field-label" for="solo-cross-streets">Nearest cross-streets <span class="hint">(optional — e.g. "Danforth &amp; Main", never a street number or full address)</span>
+        <input type="text" id="solo-cross-streets">
+      </label>
+      <label class="field-label" for="solo-nomination">A neighbourhood superhero — what do they do? <span class="hint">(optional)</span>
+        <textarea id="solo-nomination"></textarea>
+      </label>
+      <label class="field-label" for="solo-nomination-area">Their neighbourhood or ward <span class="hint">(optional — never their address)</span>
+        <input type="text" id="solo-nomination-area">
+      </label>
+      <label class="field-label" for="solo-fsa">Your FSA or ward <span class="hint">(optional — first three characters of your postal code, never the whole thing)</span>
+        <input type="text" id="solo-fsa" maxlength="10">
+      </label>
+      <label class="field-label" for="solo-email">Email <span class="hint">(optional — send me a receipt for this submission)</span>
+        <input type="email" id="solo-email">
+      </label>
+    </fieldset>
+
+    <details class="deeper-door">
+      <summary><strong>I have more than a line.</strong> <span class="hint">Expert opinion, a research report, or a longer futures statement — none of this counts toward the conversation counter; it publishes as its own "contributions" line.</span></summary>
+      <label class="field-label" for="solo-contrib-class">What kind of contribution?
+        <select id="solo-contrib-class">
+          <option value="">— none —</option>
+          <option value="expert_opinion">Expert opinion</option>
+          <option value="research_report">Research report</option>
+          <option value="futures_statement">A longer futures statement (≤1000 words)</option>
+        </select>
+      </label>
+      <label class="field-label" for="solo-contrib-body">The contribution itself
+        <textarea id="solo-contrib-body"></textarea>
+      </label>
+      <label class="field-label" for="solo-contrib-links">Links <span class="hint">(URL to the work — required for a research report; LinkedIn/CV/publication as volunteered for expert opinion)</span>
+        <input type="text" id="solo-contrib-links">
+      </label>
+      <label class="field-label" for="solo-contrib-scope">Offered scope / horizon <span class="hint">(expert opinion: review, interview, or authorship — futures statement: 2030, 2040, or a lifetime)</span>
+        <input type="text" id="solo-contrib-scope">
+      </label>
+      <label class="field-label" for="solo-contrib-email">Email <span class="hint">(required for expert opinion, so we can follow up; optional otherwise)</span>
+        <input type="email" id="solo-contrib-email">
+      </label>
+      <label class="field-label" for="solo-contrib-credit">Credit preference <span class="hint">(how you'd like to be credited, if your input is used)</span>
+        <input type="text" id="solo-contrib-credit">
+      </label>
+    </details>
+
+    <div class="cf-turnstile" data-sitekey="0x4AAAAAAEIODD0kvwUXoq18"></div>
+
+    <button type="submit">Send it</button>
+    <p id="solo-status" role="status" aria-live="polite" hidden></p>
+    <noscript><p class="hint">JavaScript is off, so this form can't submit here — the paper harvest sheet works today, see the kits.</p></noscript>
+  </form>
+</section>
+
+<!-- ===================== ROOM MODE ===================== -->
+<section id="room-section" hidden>
+  <form id="room-setup-form" class="harvest-form" novalidate="">
+    <fieldset>
+      <legend>Set up the room</legend>
+      <label class="field-label" for="room-kit-type">Kit type
+        <select id="room-kit-type" required>
+          <option value="dinner">Dinner</option>
+          <option value="after_service">After-service</option>
+          <option value="block_circle">Block circle</option>
+          <option value="story_evening">Story evening</option>
+          <option value="debate">Debate</option>
+          <option value="assembly">Assembly</option>
+          <option value="classroom">Classroom</option>
+          <option value="other">Other</option>
+        </select>
+      </label>
+      <label class="field-label" for="room-headcount">Headcount <span class="hint">(a number, never a name list)</span>
+        <input type="number" id="room-headcount" min="1" step="1" required>
+      </label>
+      <label class="field-label" for="room-source">How is this being entered?
+        <select id="room-source">
+          <option value="online">Live, right now</option>
+          <option value="paper_photographed">From a photographed paper sheet</option>
+          <option value="paper_typed_later">Typing up paper sheets later</option>
+        </select>
+      </label>
+      <label class="field-label" for="room-host-email" id="room-host-email-label" hidden>Host/teacher contact email <span class="hint">(classroom mode only — never a student's; no receipt is sent to students)</span>
+        <input type="email" id="room-host-email">
+      </label>
+      <p class="hint" id="classroom-note" hidden><strong>Classroom mode:</strong> the submitter-email
+      field will not appear on entry screens below — no code path can write a student email, by
+      design (enforced by the backend, not just this page).</p>
+
+      <div class="cf-turnstile" data-sitekey="0x4AAAAAAEIODD0kvwUXoq18"></div>
+
+      <button type="submit">Start the room</button>
+      <p id="room-setup-status" role="status" aria-live="polite" hidden></p>
+    </fieldset>
+  </form>
+
+  <div id="room-loop">
+    <p id="entry-count-note"></p>
+    <p class="hint">Photographed a paper sheet? <input type="file" id="room-photo-input" accept="image/*"> <button type="button" class="secondary" id="room-photo-upload">Attach photo</button></p>
+
+    <form id="room-entry-form" class="harvest-form" novalidate="">
+      <fieldset>
+        <legend>One sheet-line</legend>
+        <label class="field-label" for="entry-vision-short">Vision one-liner <span class="hint">(optional, ≤280 characters)</span>
+          <input type="text" id="entry-vision-short" maxlength="280">
+        </label>
+        <label class="field-label" for="entry-complaint">What's broken? <span class="hint">(optional)</span>
+          <textarea id="entry-complaint"></textarea>
+        </label>
+        <label class="field-label" for="entry-cross-streets">Nearest cross-streets <span class="hint">(optional — e.g. "Danforth &amp; Main")</span>
+          <input type="text" id="entry-cross-streets">
+        </label>
+        <label class="field-label" for="entry-nomination">A neighbourhood superhero — what do they do? <span class="hint">(optional)</span>
+          <textarea id="entry-nomination"></textarea>
+        </label>
+        <label class="field-label" for="entry-nomination-area">Their neighbourhood or ward <span class="hint">(optional)</span>
+          <input type="text" id="entry-nomination-area">
+        </label>
+        <label class="field-label" for="entry-fsa">FSA or ward <span class="hint">(optional)</span>
+          <input type="text" id="entry-fsa" maxlength="10">
+        </label>
+        <label class="field-label" for="entry-email" id="entry-email-label" hidden>Email <span class="hint">(send a receipt)</span>
+          <input type="email" id="entry-email">
+        </label>
+        <label class="field-label" for="entry-futures" id="entry-futures-label" hidden>Futures statement <span class="hint">(classroom's natural assignment shape — "Toronto when you're 30" — ≤1000 words)</span>
+          <textarea id="entry-futures"></textarea>
+        </label>
+      </fieldset>
+      <button type="submit">Save this line, next</button>
+      <button type="button" class="secondary" id="room-done">Done with this room</button>
+      <p id="entry-status" role="status" aria-live="polite" hidden></p>
+    </form>
+  </div>
+</section>
+
+<h2>Delete your own submission</h2>
+<p class="hint">Every submission returns a delete token in the confirmation. Paste it here to
+remove exactly that submission — nothing else.</p>
+<form id="delete-form" class="harvest-form" novalidate="">
+  <label class="field-label" for="delete-token">Delete token
+    <input type="text" id="delete-token">
+  </label>
+  <button type="submit">Delete this submission</button>
+  <p id="delete-status" role="status" aria-live="polite" hidden></p>
+</form>
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script>
+(function () {
+  "use strict";
+
+  // Relative paths assume harvest-intake-worker is routed at /harvest/* on the same origin —
+  // see tools/harvest_intake_worker/README.md for the still-open deploy steps (D1, R2,
+  // Turnstile secret, wrangler deploy). This page is not linked from anywhere live; it exists
+  // to prove the flow end-to-end before the custodian flip.
+  var SUBMIT_ENDPOINT = "/harvest/submit";
+  var ROOM_ENDPOINT = "/harvest/room";
+  var DELETE_ENDPOINT = "/harvest/delete";
+
+  function turnstileToken(form) {
+    var field = form.querySelector('[name="cf-turnstile-response"]');
+    return field ? field.value : "";
+  }
+
+  function showStatus(el, message, ok) {
+    el.textContent = message;
+    el.hidden = false;
+    el.className = ok ? "ok" : "";
+  }
+
+  function val(id) {
+    var el = document.getElementById(id);
+    return el && el.value ? el.value.trim() : "";
+  }
+
+  // ---- mode toggle ----
+  var soloBtn = document.getElementById("mode-solo");
+  var roomBtn = document.getElementById("mode-room");
+  var soloSection = document.getElementById("solo-section");
+  var roomSection = document.getElementById("room-section");
+  soloBtn.addEventListener("click", function () {
+    soloSection.hidden = false; roomSection.hidden = true;
+    soloBtn.setAttribute("aria-pressed", "true"); roomBtn.setAttribute("aria-pressed", "false");
+  });
+  roomBtn.addEventListener("click", function () {
+    soloSection.hidden = true; roomSection.hidden = false;
+    soloBtn.setAttribute("aria-pressed", "false"); roomBtn.setAttribute("aria-pressed", "true");
+  });
+
+  // ---- vision_long reveal after vision_short is filled (spec §2 UI sequencing) ----
+  var visionShort = document.getElementById("solo-vision-short");
+  var visionLongLabel = document.getElementById("solo-vision-long-label");
+  var visionLong = document.getElementById("solo-vision-long");
+  visionShort.addEventListener("input", function () {
+    var show = visionShort.value.trim().length > 0;
+    visionLongLabel.hidden = !show;
+    visionLong.hidden = !show;
+  });
+
+  function buildContribution(prefix) {
+    var cls = val(prefix + "-contrib-class");
+    if (!cls) { return undefined; }
+    var contribution = { class: cls };
+    var body = val(prefix + "-contrib-body");
+    var links = val(prefix + "-contrib-links");
+    var scope = val(prefix + "-contrib-scope");
+    var email = val(prefix + "-contrib-email");
+    var credit = val(prefix + "-contrib-credit");
+    if (body) { contribution.body = body; }
+    if (links) { contribution.links = links; }
+    if (scope) { contribution.scope = scope; }
+    if (email) { contribution.email = email; }
+    if (credit) { contribution.credit_preference = credit; }
+    return contribution;
+  }
+
+  // ---- solo submit ----
+  var soloForm = document.getElementById("solo-form");
+  soloForm.removeAttribute("novalidate");
+  soloForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var status = document.getElementById("solo-status");
+    var token = turnstileToken(soloForm);
+    if (!token) { showStatus(status, "Please complete the verification widget above.", false); return; }
+
+    var payload = {
+      vision_short: val("solo-vision-short") || undefined,
+      vision_long: val("solo-vision-long") || undefined,
+      complaint_text: val("solo-complaint") || undefined,
+      complaint_cross_streets: val("solo-cross-streets") || undefined,
+      nomination_text: val("solo-nomination") || undefined,
+      nomination_area: val("solo-nomination-area") || undefined,
+      fsa_or_ward: val("solo-fsa") || undefined,
+      submitter_email: val("solo-email") || undefined,
+      contribution: buildContribution("solo"),
+      source_page: window.location.pathname,
+      turnstile_token: token,
+    };
+
+    var btn = soloForm.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    fetch(SUBMIT_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) })
+      .then(function (res) { return res.json().catch(function () { return {}; }).then(function (data) { return { ok: res.ok, status: res.status, data: data }; }); })
+      .then(function (result) {
+        btn.disabled = false;
+        if (result.ok) {
+          showStatus(status, "Thank you — received. Your delete token, if you ever want this removed: " + result.data.id + " / " + result.data.delete_token, true);
+          soloForm.reset();
+        } else if (result.status === 403) {
+          showStatus(status, "Verification failed — please try again.", false);
+          if (window.turnstile) { window.turnstile.reset(); }
+        } else {
+          showStatus(status, (result.data && (result.data.copy || result.data.error)) || "Please check the form and try again.", false);
+        }
+      })
+      .catch(function () { btn.disabled = false; showStatus(status, "Couldn't reach the server.", false); });
+  });
+
+  // ---- room setup ----
+  var roomState = { id: null, sessionToken: null, entryCount: 0, classroom: false };
+  var roomSetupForm = document.getElementById("room-setup-form");
+  roomSetupForm.removeAttribute("novalidate");
+
+  var kitTypeSelect = document.getElementById("room-kit-type");
+  kitTypeSelect.addEventListener("change", function () {
+    var isClassroom = kitTypeSelect.value === "classroom";
+    document.getElementById("room-host-email-label").hidden = !isClassroom;
+    document.getElementById("classroom-note").hidden = !isClassroom;
+  });
+
+  roomSetupForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var status = document.getElementById("room-setup-status");
+    var token = turnstileToken(roomSetupForm);
+    if (!token) { showStatus(status, "Please complete the verification widget above.", false); return; }
+
+    var payload = {
+      kit_type: kitTypeSelect.value,
+      headcount: parseInt(val("room-headcount"), 10),
+      source: val("room-source") || "online",
+      host_email: val("room-host-email") || undefined,
+      source_page: window.location.pathname,
+      turnstile_token: token,
+    };
+
+    fetch(ROOM_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) })
+      .then(function (res) { return res.json().catch(function () { return {}; }).then(function (data) { return { ok: res.ok, status: res.status, data: data }; }); })
+      .then(function (result) {
+        if (result.ok) {
+          roomState.id = result.data.room_id;
+          roomState.sessionToken = result.data.session_token;
+          roomState.entryCount = 0;
+          roomState.classroom = kitTypeSelect.value === "classroom";
+          document.getElementById("entry-email-label").hidden = roomState.classroom;
+          document.getElementById("entry-futures-label").hidden = !roomState.classroom;
+          document.getElementById("room-loop").className = "active";
+          roomSetupForm.hidden = true;
+          updateEntryCount();
+        } else {
+          showStatus(status, (result.data && result.data.error) || "Could not start the room.", false);
+          if (window.turnstile) { window.turnstile.reset(); }
+        }
+      })
+      .catch(function () { showStatus(status, "Couldn't reach the server.", false); });
+  });
+
+  function updateEntryCount() {
+    document.getElementById("entry-count-note").textContent = "Entries saved this session: " + roomState.entryCount;
+  }
+
+  // ---- room repeat-entry loop ----
+  var entryForm = document.getElementById("room-entry-form");
+  entryForm.removeAttribute("novalidate");
+  entryForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var status = document.getElementById("entry-status");
+    var payload = {
+      vision_short: val("entry-vision-short") || undefined,
+      complaint_text: val("entry-complaint") || undefined,
+      complaint_cross_streets: val("entry-cross-streets") || undefined,
+      nomination_text: val("entry-nomination") || undefined,
+      nomination_area: val("entry-nomination-area") || undefined,
+      fsa_or_ward: val("entry-fsa") || undefined,
+      session_token: roomState.sessionToken,
+      source_page: window.location.pathname,
+    };
+    if (!roomState.classroom) {
+      payload.submitter_email = val("entry-email") || undefined;
+    }
+    if (roomState.classroom) {
+      var futures = val("entry-futures");
+      if (futures) { payload.contribution = { class: "futures_statement", body: futures }; }
+    }
+
+    fetch(ROOM_ENDPOINT + "/" + roomState.id + "/entry", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) })
+      .then(function (res) { return res.json().catch(function () { return {}; }).then(function (data) { return { ok: res.ok, status: res.status, data: data }; }); })
+      .then(function (result) {
+        if (result.ok) {
+          roomState.entryCount += 1;
+          updateEntryCount();
+          showStatus(status, "Saved. Next line, whenever ready.", true);
+          entryForm.reset();
+        } else {
+          showStatus(status, (result.data && (result.data.copy || result.data.error)) || "Please check this line and try again.", false);
+        }
+      })
+      .catch(function () { showStatus(status, "Couldn't reach the server.", false); });
+  });
+
+  document.getElementById("room-done").addEventListener("click", function () {
+    document.getElementById("room-loop").className = "";
+    roomSetupForm.hidden = false;
+    roomSetupForm.reset();
+    document.getElementById("room-setup-status").hidden = true;
+  });
+
+  document.getElementById("room-photo-upload").addEventListener("click", function () {
+    var input = document.getElementById("room-photo-input");
+    var status = document.getElementById("entry-status");
+    if (!roomState.id || !input.files || !input.files[0]) {
+      showStatus(status, "Start a room and choose a photo first.", false);
+      return;
+    }
+    fetch(ROOM_ENDPOINT + "/" + roomState.id + "/photo", {
+      method: "POST",
+      headers: { "X-Harvest-Session-Token": roomState.sessionToken, "Content-Type": input.files[0].type || "application/octet-stream" },
+      body: input.files[0],
+    })
+      .then(function (res) { return res.json().catch(function () { return {}; }); })
+      .then(function () { showStatus(status, "Photo attached — a private ops artifact, purged at the next export cycle.", true); })
+      .catch(function () { showStatus(status, "Couldn't attach the photo.", false); });
+  });
+
+  // ---- self-serve delete ----
+  var deleteForm = document.getElementById("delete-form");
+  deleteForm.removeAttribute("novalidate");
+  deleteForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var status = document.getElementById("delete-status");
+    var token = val("delete-token");
+    if (!token) { showStatus(status, "Paste a delete token first.", false); return; }
+    fetch(DELETE_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ delete_token: token }) })
+      .then(function (res) { return res.json().catch(function () { return {}; }).then(function (data) { return { ok: res.ok, data: data }; }); })
+      .then(function (result) {
+        if (result.ok) { showStatus(status, "Deleted.", true); deleteForm.reset(); }
+        else { showStatus(status, "Not found — check the token.", false); }
+      })
+      .catch(function () { showStatus(status, "Couldn't reach the server.", false); });
+  });
+})();
+</script>
+
+</main>
+</body>
+</html>

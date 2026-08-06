@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>The pilot conversation — uniteTOlove</title>
+<meta name="description" content="A nine-day trial run of an open conversation about what Toronto in 2030 should be. Small on purpose.">
+<link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://unitetolove.ca/pilot-conversation">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark-link" href="index.html">unite<span class="to">TO</span>love<span class="tld">.ca</span></a>
+    <nav class="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="vision.html">The full vision</a></li>
+        <li><a href="map/">The Map</a></li><li><a href="projects/index.html">Projects</a></li>
+        <li><a href="programs/index.html">Programs</a></li>
+        <li><a href="questions/index.html">Questions</a></li>
+        <li><a href="who.html">Who</a></li><li><a href="run/index.html">Run</a></li>
+        <li><a href="how-this-was-made.html">How this was made</a></li><li><a href="how-we-verify.html">How we verify</a></li>
+        <li><a href="corrections.html">Corrections</a></li>
+      <li><a href="gov-atlas/index.html">Gov Atlas</a></li></ul>
+    </nav>
+  </div>
+</header>
+
+<nav class="crumbs"><a href="index.html">Home</a> / The pilot conversation</nav>
+
+<main id="main">
+
+<h1>Toronto in 2030 should ___</h1>
+
+<p class="lede"><strong>This is a trial run, and it is small on purpose.</strong> For nine days
+&mdash; Saturday 15 August to Sunday 23 August 2026 &mdash; anyone can say what they think
+Toronto in 2030 should be, agree or disagree with what other people said, and add statements of
+their own. At the end, we publish what the city agreed and disagreed about, and we publish how
+the thing was built.</p>
+
+<p class="meta">Open 15&ndash;23 August 2026 &middot; a pilot, not a launch &middot; nothing to
+join, no sign-up, no email asked for</p>
+
+<h2>How it works, in four lines</h2>
+
+<ol>
+<li><strong>You read a statement</strong> &mdash; one sentence about the city &mdash; and press
+agree, disagree, or pass. Then the next one.</li>
+<li><strong>You can add your own statements.</strong> This is the part that matters. The
+starting set is only a floor.</li>
+<li><strong>Everything anyone writes is read by a person before it appears.</strong> Nothing is
+published automatically. <a href="pilot-moderation-rules.html">The rules that person
+follows are published here</a> &mdash; all five reasons a statement can be rejected, and what to
+do if you think we got it wrong.</li>
+<li><strong>Nobody debates anybody.</strong> There are no replies and no comment threads. You
+vote alone, on your own screen, which is the whole reason this produces a map instead of an
+argument.</li>
+</ol>
+
+<h2>The conversation</h2>
+
+<!-- ==================================================================
+     OPERATOR: four spots to fill on this page, three distinct values.
+     Every one is marked with a placeholder starting REPLACE - and this
+     comment deliberately does not spell those placeholders out, so a
+     find-and-replace only touches the real ones.
+     Full instructions: OPERATOR_SETUP_WALK.md §5. In short:
+       1. The page-id and site-id placeholders on the div below  <-
+          from the embed snippet Polis gives you in the admin
+          "distribute" tab. Paste ITS values; do not retype them.
+       2. The conversation-url placeholder in the two fallback links
+          further down (same value twice)  <- the plain participation
+          link from the same tab.
+     The script beneath the div is the invited-lane wiring. It reads a
+     token from ?k= in the address bar and hands it to Polis as an xid.
+     Do not remove it and do not move it above the div.
+     ================================================================== -->
+<div class="polis" id="polis-embed"
+     data-page_id="REPLACE-PAGE-ID"
+     data-site_id="REPLACE-SITE-ID"></div>
+
+<p id="lane-note" class="meta" hidden>You are using your personal link, so your votes are counted
+in the invited lane. We do not know who you are &mdash; the link carries a random code, not your
+name.</p>
+
+<script>
+(function () {
+  // Invited lane: a single-use code arrives as ?k=<code>. Strictly validated,
+  // then handed to Polis as an xid so one person's votes can be told apart from
+  // another's without anyone learning who either person is. No code = open lane.
+  var m = /[?&]k=([A-Za-z0-9_-]{8,64})(?:&|$)/.exec(window.location.search);
+  var el = document.getElementById('polis-embed');
+  if (m && el) {
+    el.setAttribute('data-xid', m[1]);
+    var note = document.getElementById('lane-note');
+    if (note) { note.hidden = false; }
+  }
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://pol.is/embed.js';
+  document.head.appendChild(s);
+})();
+</script>
+
+<noscript>
+<p><strong>The conversation needs JavaScript to load here.</strong> You can open it directly
+instead: <a href="REPLACE-CONVERSATION-URL">open the conversation in a new tab</a>. Note that the
+direct link cannot carry a personal code, so it counts in the open lane.</p>
+</noscript>
+
+<p class="meta">Trouble loading it above? <a href="REPLACE-CONVERSATION-URL">Open the conversation
+directly</a> &mdash; though if you were sent a personal link, the direct route counts you in the
+open lane instead, so tell us at
+<a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a> if this page
+won't load for you.</p>
+
+<h2>Where the starting statements came from</h2>
+
+<p><strong>We wrote them. All thirty.</strong> Every starting statement was written by the people
+behind uniteTOlove from material already published on this site &mdash; nothing from private
+notes, nothing from unpublished drafts. We deliberately included statements we expect people to
+disagree with, including some we do not ourselves believe, because a starting set everyone agrees
+with produces a fake consensus and teaches nobody anything.</p>
+
+<p>The full account &mdash; which published page each statement was composed from, why there are
+no participants' words in the starting set yet, and what we will and will not claim about the
+results &mdash; is here: <a href="pilot-statement-sources.html">where the starting statements came
+from</a>.</p>
+
+<h2>Two ways in, counted separately</h2>
+
+<p>Some people were sent a <strong>personal link</strong> &mdash; through a conversation kit room,
+or because they had already signed up. If you got one, use it rather than this page's plain
+address. Everyone else uses this page as it is, which is open to anyone.</p>
+
+<p><strong>What the personal link actually does, precisely.</strong> It carries a random code.
+Nothing else &mdash; not your name, not your email, not anything derived from them. The code lets
+us tell one person's votes apart from another's, so a hundred votes from a hundred people can be
+distinguished from a hundred votes from one determined person. <strong>We keep no record of who
+was given which code</strong>, which means that even we cannot work backwards from a code to a
+person. That is a design choice, and it is the reason we can offer this lane at all.</p>
+
+<p><strong>What it is not.</strong> It is not identity verification. We have not checked anyone's
+ID, address, or eligibility, and we will not describe this lane as "verified" in the results. All
+it establishes is that the person was invited through a room or a list rather than finding the
+open link.</p>
+
+<p>These are two separate lanes and <strong>we report them as two separate lines</strong>. We will
+never quietly merge them and present the total as though everyone had been invited. If the open
+lane shows signs of being gamed, we will say so in the results rather than deleting the awkward
+numbers.</p>
+
+<h2>What this is honest about</h2>
+
+<ul>
+<li><strong>It is small.</strong> We expect somewhere between a few dozen and a few hundred
+people, drawn from conversation kit rooms and people who have already signed up. A thin room will
+be reported as a thin room. This pilot is testing whether the machinery works, not making a claim
+about what Toronto thinks.</li>
+<li><strong>The tool is called Polis.</strong> It is free, open-source, and has been used by
+governments and civic groups around the world &mdash; Taiwan's government used it at national
+scale, and an American county ran a version of this with about 8,000 residents in 2025. We are
+naming it plainly because you are about to use it, and hiding what you are about to use would be
+the dishonest option. It is run by its makers, not by us; your votes sit on their servers, not
+ours, and we do not receive your name or email through it because it never asks for them.</li>
+<li><strong>We will not claim Toronto has N camps.</strong> Software like this draws groups of
+people who voted similarly. Those groupings are an illustration &mdash; run the same data again
+and they can come out differently. What does not change is how many people agreed with each
+statement, so <strong>that</strong> is what we will publish as the finding. We set that rule
+before opening the conversation, not after seeing what it said.</li>
+<li><strong>This page collects nothing.</strong> No sign-up form, no email capture, no counter, no
+analytics, and no third-party trackers of any kind on this page &mdash; unusually for this site,
+we left our own visit counting off here too, because a page where you are about to say what you
+think should not be measuring you. The only script on the page reads the random code out of your
+address bar and hands it to the conversation; it stores nothing and sends nothing anywhere else.
+Whatever the conversation itself collects is described in its own privacy terms, on its own
+site.</li>
+<li><strong>Nobody is running this on anyone's behalf.</strong> No organization convenes this
+conversation. It is an instrument, published for whoever wants to use it.</li>
+</ul>
+
+<h2>What gets published afterwards</h2>
+
+<p>Within roughly a week of the conversation closing, we publish:</p>
+
+<ul>
+<li><strong>The agreement rates</strong> &mdash; how many people agreed with each statement,
+including within groups that voted differently from each other. Statements that divided people
+get published as prominently as statements that united them.</li>
+<li><strong>The moderation log</strong> &mdash; how many statements were published, how many were
+rejected, and for which of the five reasons. Including any rejections we later reversed.</li>
+<li><strong>How many people took part, in each lane, separately</strong> &mdash; and the days
+nobody cleared the queue, if there were any.</li>
+<li><strong>What went wrong.</strong> This is a trial run. Its most useful output is the list of
+things that did not work.</li>
+</ul>
+
+<p>Want to run a conversation of your own, on paper, in a room? &rarr;
+<a href="kits/">the kits</a>. Want to send in a vision, a complaint, or a nomination outside
+this pilot? &rarr; <a href="harvest.html">the harvest</a>.</p>
+
+</main>
+
+  <footer class="site-footer">
+  <nav aria-label="Footer">
+    <ul>
+      <li><a href="map/">The Map</a></li><li><a href="projects/index.html">Projects</a></li>
+      <li><a href="programs/index.html">Programs</a></li>
+      <li><a href="questions/index.html">Questions</a></li>
+      <li><a href="who.html">Who is the Unknown Soldier</a></li><li><a href="run/index.html">Run</a></li>
+      <li><a href="how-this-was-made.html">How this was made</a></li><li><a href="how-we-verify.html">How we verify</a></li>
+      <li><a href="corrections.html">Corrections &amp; improvements</a></li>
+    <li><a href="gov-atlas/index.html">Gov Atlas</a></li></ul>
+  </nav>
+  <p>The Unknown Soldier &middot; uniteTOlove &middot; Toronto</p>
+  <p class="ethic">Post only where you have the right to post.</p>
+  <p>This site is built with AI assistance &mdash; every claim carries a receipt regardless of who
+  drafted it. Read how: <a href="how-this-was-made.html">How this was made</a>.</p>
+  <p>No donations are asked for anywhere on this site. Contact:
+  <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a> &mdash;
+  corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GOV-ATLAS — staged registry render</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site-header">
+<div class="header-inner">
+<a class="wordmark-link" href="index.html">GOV-ATLAS <span class="tld">staged</span></a>
+<nav class="primary-nav" aria-label="Primary">
+<ul>
+<li><a href="index.html">Index</a></li>
+<li><a href="az.html">A-Z</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<nav class="crumbs">Index</nav>
+<div class="library-banner" role="note">STAGED &mdash; not linked from the live site; nav wiring and the live publish word are operator-gated. This page is mechanically generated from the GOV-ATLAS registry (<code>research/atlas/government_orgs.csv</code> + <code>research/atlas/government_documents.csv</code>); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis. Regenerate: <code>tools/gov_atlas_site_gen.py</code>.</div>
+<h1>GOV-ATLAS</h1>
+<p>A registry of 785 government and broader-public-sector organizations (federal,
+Ontario, and municipal/BPS across the Toronto region and comparator cities), each with its
+published endpoint surfaces and a 8211-row historical document shelf spanning annual
+reports, financial statements, and strategic plans. Built for candidates, journalists, and
+other independent actors: the registry is the product; brief-writing analysis is a trailing,
+optional layer that exists for some organizations and not others (see each org page's own
+&quot;Analysis pending&quot; note where it doesn't).</p>
+<p>Tier 1 (mandate touches the 39-issue map): 339 &middot; Tier 2: 446 &middot;
+organizations with zero document-shelf rows so far: 81 &middot; organizations that
+have been through a full discovery-verification pass: 40 of 785
+(<code>SWEEP_LEDGER.csv</code>).</p>
+<p>Document shelf, 8211 rows total: 7788 archived &middot; 150 staged
+(captured, pull pending) &middot; 12 pending (cataloged, not yet staged) &middot;
+<strong>261 missing</strong> (year searched, no copy found &mdash; a disclosure-gap
+finding in its own right, not a data hole).</p>
+
+
+<h2>By level</h2>
+<table>
+<thead><tr><th>Level</th><th>Organizations</th></tr></thead>
+<tbody>
+<tr><td><a href="levels/federal.html">Federal</a></td><td>307</td></tr>
+<tr><td><a href="levels/provincial-on.html">Provincial — Ontario</a></td><td>269</td></tr>
+<tr><td><a href="levels/bps-hospital.html">Broader public sector — Hospitals</a></td><td>15</td></tr>
+<tr><td><a href="levels/bps-school-board.html">Broader public sector — School boards</a></td><td>4</td></tr>
+<tr><td><a href="levels/municipal-toronto.html">Municipal — Toronto</a></td><td>109</td></tr>
+<tr><td><a href="levels/municipal-ajax.html">Municipal — Ajax</a></td><td>2</td></tr>
+<tr><td><a href="levels/municipal-aurora.html">Municipal — Aurora</a></td><td>2</td></tr>
+<tr><td><a href="levels/municipal-brampton.html">Municipal — Brampton</a></td><td>3</td></tr>
+<tr><td><a href="levels/municipal-brock.html">Municipal — Brock</a></td><td>2</td></tr>
+<tr><td><a href="levels/municipal-burlington.html">Municipal — Burlington</a></td><td>3</td></tr>
+<tr><td><a href="levels/municipal-caledon.html">Municipal — Caledon</a></td><td>2</td></tr>
+<tr><td><a href="levels/municipal-clarington.html">Municipal — Clarington</a></td><td>2</td></tr>
+<tr><td><a href="levels/municipal-durham.html">Municipal — Durham</a></td><td>6</td></tr>
+<tr><td><a href="levels/municipal-east-gwillimbury.html">Municipal — East Gwillimbury</a></td><td>2</td></tr>
+<tr><td><a href="levels/municipal-georgina.html">Municipal — Georgina</a></td><td>2</td></tr>
+<tr><td><a href="levels/municipal-halton.html">Municipal — Halton</a></td><td>5</td></tr>
+<tr><td><a href="levels/municipal-halton-hills.html">Municipal — Halton Hills</a></td><td>3</td></tr>
+<tr><td><a href="levels/municipal-king.html">Municipal — King</a></td><td>2</td></tr>
+<tr><td><a href="levels/municipal-markham.html">Municipal — Markham</a></td><td>5</td></tr>
+<tr><td><a href="levels/municipal-milton.html">Municipal — Milton</a></td><td>3</td></tr>
+<tr><td><a href="levels/municipal-mississauga.html">Municipal — Mississauga</a></td><td>2</td></tr>
+<tr><td><a href="levels/municipal-newmarket.html">Municipal — Newmarket</a></td><td>3</td></tr>
+<tr><td><a href="levels/municipal-oakville.html">Municipal — Oakville</a></td><td>3</td></tr>
+<tr><td><a href="levels/municipal-oshawa.html">Municipal — Oshawa</a></td><td>3</td></tr>
+<tr><td><a href="levels/municipal-peel.html">Municipal — Peel</a></td><td>5</td></tr>
+<tr><td><a href="levels/municipal-pickering.html">Municipal — Pickering</a></td><td>2</td></tr>
+<tr><td><a href="levels/municipal-richmond-hill.html">Municipal — Richmond Hill</a></td><td>2</td></tr>
+<tr><td><a href="levels/municipal-scugog.html">Municipal — Scugog</a></td><td>2</td></tr>
+<tr><td><a href="levels/municipal-uxbridge.html">Municipal — Uxbridge</a></td><td>2</td></tr>
+<tr><td><a href="levels/municipal-vaughan.html">Municipal — Vaughan</a></td><td>2</td></tr>
+<tr><td><a href="levels/municipal-whitby.html">Municipal — Whitby</a></td><td>3</td></tr>
+<tr><td><a href="levels/municipal-whitchurch-stouffville.html">Municipal — Whitchurch Stouffville</a></td><td>2</td></tr>
+<tr><td><a href="levels/municipal-york.html">Municipal — York</a></td><td>6</td></tr>
+</tbody>
+</table>
+
+<h2>Every organization</h2>
+<p><a href="az.html">A-Z index, all 785 organizations</a></p>
+
+<footer class="site-footer">
+<p>The Unknown Soldier &middot; GOV-ATLAS &middot; staged, unpublished</p>
+<p>Generated 2026-08-06 by <code>tools/gov_atlas_site_gen.py</code> from the registry
+CSVs. Not analysis; asserts nothing beyond the registry rows shown on each page.</p>
+</footer>
+</body>
+</html>
