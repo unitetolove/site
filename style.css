@@ -260,3 +260,95 @@ li.rung .status {
 }
 .this-week p:first-child { margin-top: 0; }
 .this-week p:last-child { margin-bottom: 0; }
+
+/* ------------------------------------------------------------------ *
+ * Sitewide chrome — 2026-08-06 site-integration pass.
+ * One nav system on every page; source of truth is tools/site_nav.py.
+ * ------------------------------------------------------------------ */
+
+/* Skip link: 632 pages carried the markup with no rule for it, so it rendered
+   as a visible link above the masthead. Standard visually-hidden-until-focus. */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--bg);
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 0 0 4px 0;
+  padding: 0.5rem 0.9rem;
+  z-index: 100;
+}
+.skip-link:focus {
+  left: 0;
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Current door */
+nav.primary-nav a[aria-current="page"] { color: var(--fg); font-weight: 600; }
+
+/* Sub-site secondary nav (gov-atlas Index / A-Z), inside the header band */
+nav.section-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  max-width: 52rem;
+  margin: 0.45rem auto 0;
+  padding: 0;
+  font-size: 0.86rem;
+}
+nav.section-nav a { color: var(--muted); text-decoration: none; }
+nav.section-nav a:hover { color: var(--accent); }
+
+/* Footer directory */
+footer.site-footer .footer-cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 1rem 1.5rem;
+  margin: 0.75rem 0 1.25rem;
+}
+footer.site-footer .footer-col h2 {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--fg);
+  border-bottom: 0;
+  margin: 0 0 0.4rem;
+  padding: 0;
+}
+footer.site-footer .footer-cols ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+footer.site-footer .footer-cols li { margin-bottom: 0.22rem; }
+
+/* "More on this issue" / "Explained simply" — orphan-walk door blocks */
+nav.related-nav {
+  margin: 2.5rem 0 1rem;
+  padding: 0.9rem 1.1rem;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+}
+nav.related-nav h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 0;
+  margin: 0 0 0.45rem;
+  padding: 0;
+  color: var(--muted);
+}
+nav.related-nav ul { list-style: none; margin: 0; padding: 0; }
+nav.related-nav li { margin-bottom: 0.25rem; }
+
+/* Human sitemap */
+nav.sitemap h2 { font-size: 1.02rem; margin-top: 1.8rem; }
+nav.sitemap ul { columns: 2; column-gap: 2rem; padding-left: 1.1rem; }
+nav.sitemap li { break-inside: avoid; margin-bottom: 0.2rem; }
+@media (max-width: 34rem) {
+  nav.sitemap ul { columns: 1; }
+}
