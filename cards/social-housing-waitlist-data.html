@@ -6,7 +6,6 @@
 <title>Social Housing Waitlist Data — Recommendation Cards</title>
 <link rel="stylesheet" href="../style.css">
 <link rel="canonical" href="https://unitetolove.ca/cards/social-housing-waitlist-data.html">
-<script defer src="../assets/analytics.js"></script>
 </head>
 <body>
 <header class="site-header">
@@ -23,80 +22,81 @@
 <li><a href="/how-this-was-made.html">How</a></li>
 <li><a href="/how-we-verify.html">How we verify</a></li>
 <li><a href="/corrections.html">Corrections</a></li>
-<li><a href="/gov-atlas/index.html">Gov Atlas</a></li></ul>
+</ul>
 </nav>
 </div>
 </header>
 <nav class="crumbs"><a href="../library.html">&larr; Index</a></nav>
 <div class="library-banner" role="note">This is a living research library. Claims carry verification statuses. A documented set of about 234 findings, where a derived page carries a source's claim without its original hedge, is known and queued for remediation, so read any affected line alongside its source backgrounder and check <a href="/corrections.html">the corrections log</a> for status. Found a mistake? <a href="/corrections.html">Let us know</a>.</div>
-<h1>Social Housing Waitlist Data — Recommendation Cards</h1>
+<h1 id="social-housing-waitlist-data-recommendation-cards">Social Housing Waitlist Data — Recommendation Cards</h1>
 <div class="meta"><span class="badge">DRAFT — v1.1, 2026-07-13</span> File: <code>research/cards/social-housing-waitlist-data.md</code></div>
 <p>File: <code>research/cards/social-housing-waitlist-data.md</code> · Status: <strong>DRAFT — v1.1, 2026-07-13</strong> Leaf slug: <code>social-housing-waitlist-data</code> · Backgrounder: <code>research/backgrounders/social-housing-waitlist-data.md</code> Two cards in this file, per this library's internal drafting template. Trust classes noted per card. Costing follows the ratified order-of-magnitude + named-comparator bar (no fake-precise line items).</p>
+<p><em>FIX-6 note (W1b cards audit, 2026-08-06): headings and self-referencing anchors normalized from "Card 1"/"Card 2" to the card-ID form (RC-SHWD-01/02) so the <code>File:</code> anchors resolve. No inbound repo references to the old <code>#card-1</code>/<code>#card-2</code> anchors were found.</em></p>
 <p>---</p>
-<h2>Card 1: Standardized, Machine-Readable Quarterly Waitlist Reporting</h2>
-<p>Card id: RC-SHWD-01 · File: <code>research/cards/social-housing-waitlist-data.md#card-1</code> · Status: <strong>DRAFT</strong> Issue slug: <code>social-housing-waitlist-data</code> · Backgrounder: <code>social-housing-waitlist-data</code> Trust class: <strong>NEW-LOAD-BEARING</strong> (built from this session's direct primary-source fetch) · Date: 2026-07-13</p>
-<h3>Problem</h3>
+<h2 id="rc-shwd-01">RC-SHWD-01 — Standardized, Machine-Readable Quarterly Waitlist Reporting</h2>
+<p>Card id: RC-SHWD-01 · File: <code>research/cards/social-housing-waitlist-data.md#rc-shwd-01</code> · Status: <strong>DRAFT</strong> Issue slug: <code>social-housing-waitlist-data</code> · Backgrounder: <code>social-housing-waitlist-data</code> Trust class: <strong>NEW-LOAD-BEARING</strong> (built from this session's direct primary-source fetch) · Date: 2026-07-13</p>
+<h3 id="problem">Problem</h3>
 <p>The City's own centralized-waitlist reporting has changed its counting rules at least twice in recent years — a 2026 revision that moved reactivated applications into the Total Active Waiting List and renamed "Cancelled Applications" to "Removed from Waiting List," on top of the pre-existing "New/reactivated" combined line used through 2024 (backgrounder, "What the number counts, and what it does not," Trap 2). Combined with a widely repeated press description of the figure as counting "people" when the City's own table defines it as households/applications (backgrounder, Trap 1), this produces exactly the kind of terminology confusion documented at length in this leaf's own promoted source (this library's prior synthesis document (Social Housing Waitlist Data)) — a document whose entire reason for existing was untangling a mislabeled figure that had already propagated into at least six other library documents. The report is published as an HTML page with year-tabbed tables and footnoted methodology changes, not as a structured dataset a journalist, researcher, or councillor's office could pull programmatically and diff against prior quarters.</p>
-<h3>Action</h3>
+<h3 id="action">Action</h3>
 <p>The City publishes the Social Housing Waiting List Reports as a versioned, machine-readable dataset (CSV/JSON via the Toronto Open Data portal) alongside the existing HTML page, with (a) a fixed, explicitly documented unit for every column (households/applications, never "people," unless a genuine person-count field is added separately), and (b) every methodology change (like the 2026 reactivated-applications revision) recorded as a dataset-level changelog entry with an effective-quarter tag, rather than only as a footnote on the current year's table.</p>
-<h3>Jurisdiction split</h3>
+<h3 id="jurisdiction-split">Jurisdiction split</h3>
 <ul><li><strong>City does:</strong> publishing its own already-compiled quarterly figures in a structured format, and documenting its own methodology changes with effective dates, is entirely within existing City of Toronto Open Data and Housing Secretariat authority — no other order of government needs to act for this specific card.</li><li><strong>City demands of Province:</strong> empty bucket — this action requires no provincial action.</li><li><strong>City demands of Feds:</strong> empty bucket — this action requires no federal action.</li></ul>
-<h3>Cost</h3>
+<h3 id="cost">Cost</h3>
 <p>Order-of-magnitude: low-to-mid five figures CAD as a one-time build cost, anchored to the City's own general practice of publishing existing internal reporting datasets through its Open Data portal (e.g., the Shelter System Flow Data and Daily Shelter &amp; Overnight Service Usage series already listed alongside this waitlist report on the same City reports index) — this is a data-publishing exercise on figures the City already compiles quarterly for its own HTML page, not a new data-collection program, so the marginal cost is closer to "publish what you already have" than "build a new system." No independent third-party unit-cost source was found for this specific dataset; the range is anchored to the comparator of the City's existing, already-running Open Data housing/shelter series rather than to a cited dollar figure.</p>
-<h3>Funding path</h3>
+<h3 id="funding-path">Funding path</h3>
 <p>Existing Toronto Open Data / Housing Secretariat operating budget — this is a publishing-format change to data the City already produces, not a new program requiring a new funding line.</p>
-<h3>Who benefits, and how</h3>
+<h3 id="who-benefits-and-how">Who benefits, and how</h3>
 <p>Researchers, journalists, and council offices, via the ability to diff quarter-over-quarter figures and detect methodology seams (like the 2026 reactivation change) at the moment they occur rather than reconstructing them after the fact, as this leaf's own promoted documents had to do across several past library documents [INHERITED, this library's prior synthesis document (..) Part 3's propagation-fix table]. Applicants and advocacy organizations, via a public, versioned record of exactly what "on the waiting list" has meant at each point in time.</p>
-<h3>Who bears the cost, and how</h3>
+<h3 id="who-bears-the-cost-and-how">Who bears the cost, and how</h3>
 <p>City taxpayers city-wide, via the Open Data/Housing Secretariat operating budget; City staff, via the one-time work of formatting and documenting the changelog (an opportunity cost against other reporting-team priorities).</p>
-<h3>Who benefits from the status quo</h3>
+<h3 id="who-benefits-from-the-status-quo">Who benefits from the status quo</h3>
 <p>No beneficiary identified in the backing backgrounder's Cui Bono table — <code>social-housing-waitlist-data.md</code>'s Cui Bono section reports 0 ESTABLISHED/REPORTED entities, since this leaf's subject (waitlist measurement/reporting integrity) is not a contracted-service or procurement relationship.</p>
-<h3>Financial ROI</h3>
+<h3 id="financial-roi">Financial ROI</h3>
 <p>No direct fiscal-savings case is asserted here — this is a transparency/data-quality action, not a service-delivery change. Indirect cost avoidance is plausible (fewer future corrections needed across derivative documents, as happened in this leaf's own history) but not quantified; flagged as directional only, not costed.</p>
-<h3>Economic ROI</h3>
+<h3 id="economic-roi">Economic ROI</h3>
 <p>Range: Not directly modeled for this specific dataset-publication action; genuinely broad open-government-data economic literature exists but is not sized to this narrow a scope. Research commissioned by the UK's Open Data Institute finds open public-sector data assets generate roughly 0.5% of GDP more economic value per year than closed/paid equivalents, and San Francisco is reported to have saved roughly USD 1 million per year after opening real-time transit data — both real, named examples of open-data value, but neither prices a single housing-waitlist dataset conversion specifically, and both are macro or single-case examples from other data domains (transit operations, national-level GDP effects), not social-housing waitlist reporting. Comparator source: Open Data Institute (ODI), "The economic value of open versus paid data" — https://theodi.org/insights/reports/research-the-economic-value-of-open-versus-paid-data/; San Francisco real-time transit open-data cost-savings example (cited via secondary open-data-outcomes literature, original SFMTA source not independently re-verified this pass). Methodology caveat: both are borrowed from a different scope (macro cross-sector GDP estimates; a single transit-operations case) rather than a study of housing-waitlist data publication specifically — named as context for what open-data value generally looks like, not adopted as a sized estimate for this card. Confidence: low — the general "open data has real economic value" pattern is well-documented, but no comparator prices this specific, narrow dataset-conversion action, so this remains closer to "not yet estimable" than a genuine range.</p>
-<h3>Social ROI</h3>
+<h3 id="social-roi">Social ROI</h3>
 <p>Directly traceable to a documented failure mode in this leaf's own evidence base: a terminology error (households mislabeled as "people") propagated across at least six prior library documents before being caught and corrected [INHERITED, this library's prior synthesis document (..) Part 3]. Structured, versioned publication with explicit units and a changelog is a direct mitigation for exactly that failure mode recurring elsewhere (news coverage, advocacy materials, other researchers' work), for the same population of downstream readers.</p>
-<h3>Environmental ROI</h3>
+<h3 id="environmental-roi">Environmental ROI</h3>
 <p>Range: Genuinely environmentally neutral. This is a data-publication-format change to figures the City already compiles — it has no construction, land-use, or physical-infrastructure component and therefore no direct emissions, land-use, water, or waste footprint. The marginal server/hosting footprint of an additional Open Data portal dataset is not separately quantified by any source located this pass but is negligible relative to any action in this leaf's other cards. Comparator source: none needed to support a neutral finding. Confidence: high — a data-format publication change has no plausible direct environmental pathway to assess.</p>
-<h3>Evidence</h3>
+<h3 id="evidence">Evidence</h3>
 <ul><li>Backgrounder §"What the number counts, and what it does not" (Traps 1 &amp; 2) · NEW/INHERITED, cited above · households-vs-people and methodology-seam facts</li><li>this library's prior synthesis document (Social Housing Waitlist Data) Part 3 · INHERITED · propagation-fix table showing the terminology error's spread across six prior documents</li><li>City of Toronto, Social Housing Waiting List Reports (live page structure) · NEW, fetched 2026-07-13 · HTML-only, year-tabbed, footnote-only methodology disclosure</li></ul>
-<h3>Confidence &amp; uncertainties</h3>
+<h3 id="confidence-uncertainties">Confidence &amp; uncertainties</h3>
 <p>Medium-high confidence in the problem statement (directly evidenced by this leaf's own documented terminology-error history); lower confidence in the specific cost estimate, which is anchored to a general comparator (the City's existing Open Data housing/shelter series) rather than a cited unit cost for this specific dataset. No named Open Data program manager or existing City commitment to do this was found this session — this is a card proposing an action, not describing one already underway.</p>
-<h3>Status</h3>
+<h3 id="status">Status</h3>
 <p>DRAFT — blocked on: Lane R fairness/legal pass; a second, independently sourced cost comparator; confirmation of whether Toronto Open Data already has an intake process for exactly this kind of dataset-conversion request.</p>
 <p>---</p>
-<h2>Card 2: Tie Provincial/Federal RGI Supply-Expansion Funding to Waitlist Throughput, Not Just Unit Counts</h2>
-<p>Card id: RC-SHWD-02 · File: <code>research/cards/social-housing-waitlist-data.md#card-2</code> · Status: <strong>DRAFT</strong> Issue slug: <code>social-housing-waitlist-data</code> · Backgrounder: <code>social-housing-waitlist-data</code> Trust class: <strong>INHERITED</strong> (cost/throughput facts) + <strong>NEW-LOAD-BEARING</strong> (2019 vacancy-loss figures) · Date: 2026-07-13</p>
-<h3>Problem</h3>
+<h2 id="rc-shwd-02">RC-SHWD-02 — Tie Provincial/Federal RGI Supply-Expansion Funding to Waitlist Throughput, Not Just Unit Counts</h2>
+<p>Card id: RC-SHWD-02 · File: <code>research/cards/social-housing-waitlist-data.md#rc-shwd-02</code> · Status: <strong>DRAFT</strong> Issue slug: <code>social-housing-waitlist-data</code> · Backgrounder: <code>social-housing-waitlist-data</code> Trust class: <strong>INHERITED</strong> (cost/throughput facts) + <strong>NEW-LOAD-BEARING</strong> (2019 vacancy-loss figures) · Date: 2026-07-13</p>
+<h3 id="problem-2">Problem</h3>
 <p>Toronto's centralized RGI waitlist grew from 81,664 to 105,115 households between 2020 and 2025 (+29%), while 2025 saw 21,538 new applications against only 2,838 households actually housed — an inflow-to-housed ratio of roughly 7.6 to 1 and a 2.7% annual exit-to-housing rate [INHERITED, backgrounder "Comparison to the supply pipeline"]. Separately, the City's own 2019 Auditor General report found housing-unit underuse was itself part of the bottleneck, independent of new-unit supply: "$7 million in vacancy losses" and an estimated 2,200 additional people housable through better use of already-existing stock, without building a single new unit [NEW, Toronto Auditor General, "Opening Doors to Stable Housing," June 21 2019, fetched 2026-07-13]. This card addresses the specific gap between "units funded/built" and "people actually moved off the list," not the general housing-supply-affordability question this leaf hands off elsewhere.</p>
-<h3>Action</h3>
+<h3 id="action-2">Action</h3>
 <p>Any new provincial or federal capital/operating funding commitment tied to RGI/social-housing supply expansion in Toronto includes a throughput reporting requirement — the funded program must publish its contribution to the City's own existing "Housed" quarterly metric (already tracked and published, per the backgrounder) and its effect, if any, on existing vacancy/turnover inefficiencies like those the 2019 Auditor General report identified — rather than being reported solely as a unit-count or dollar-committed figure with no link back to the waitlist's own throughput data.</p>
-<h3>Jurisdiction split</h3>
+<h3 id="jurisdiction-split-2">Jurisdiction split</h3>
 <ul><li><strong>City does:</strong> report its own existing "Housed" and vacancy-related metrics disaggregated by funding source, wherever a specific provincial/federal program can be attributed — a reporting-linkage exercise on data the City already collects.</li><li><strong>City demands of Province:</strong> condition new provincial RGI/social-housing capital or operating funding commitments in Toronto on this throughput-linked reporting, rather than unit-count-only reporting.</li><li><strong>City demands of Feds:</strong> same conditioning demand applied to federal programs operating in Toronto (e.g., any successor to federal rapid-housing-style capital streams) — named generically here since no specific current federal program's Toronto RGI commitments were confirmed this session.</li></ul>
-<h3>Cost</h3>
+<h3 id="cost-2">Cost</h3>
 <p>No new capital cost is proposed by this card itself — it is a reporting-linkage condition attached to funding decisions that would occur regardless. The administrative cost of adding a throughput-reporting requirement is order-of-magnitude low (a reporting-template addition to existing funding-agreement administration), anchored to the same comparator as Card 1: the City already tracks and publishes the "Housed" metric quarterly, so the marginal cost is attribution/tagging, not new data collection.</p>
-<h3>Funding path</h3>
+<h3 id="funding-path-2">Funding path</h3>
 <p>No new funding mechanism required for the reporting condition itself; it would be attached as a term within whatever provincial/federal capital or operating funding path is already being used or negotiated for RGI supply expansion in Toronto (funding path for the underlying supply expansion itself is out of scope for this card — see <code>housing-supply-affordability</code>).</p>
-<h3>Who benefits, and how</h3>
+<h3 id="who-benefits-and-how-2">Who benefits, and how</h3>
 <p>Applicants on the centralized waitlist, via funding decisions that can be evaluated against whether they actually move people into housing (the metric this leaf's evidence shows is currently growing far more slowly than the list itself), not just against how many units were nominally funded. Council and oversight bodies (the City's own Auditor General has already done exactly this kind of throughput/vacancy analysis once, in 2019), via a standing reporting linkage rather than a one-off audit.</p>
-<h3>Who bears the cost, and how</h3>
+<h3 id="who-bears-the-cost-and-how-2">Who bears the cost, and how</h3>
 <p>Funding-program administrators (provincial and federal), via the modest added administrative burden of throughput-linked reporting; City staff, via the work of attributing "Housed" outcomes to specific funding sources where more than one program contributes to the same building or intake.</p>
-<h3>Who benefits from the status quo</h3>
+<h3 id="who-benefits-from-the-status-quo-2">Who benefits from the status quo</h3>
 <p>No beneficiary identified in the backing backgrounder's Cui Bono table — <code>social-housing-waitlist-data.md</code>'s Cui Bono section reports 0 ESTABLISHED/REPORTED entities relevant to funding-throughput reporting conditions specifically.</p>
-<h3>Financial ROI</h3>
+<h3 id="financial-roi-2">Financial ROI</h3>
 <p>Not separately costed here — this card does not itself spend money, it conditions reporting on money already being spent or proposed. Indirect fiscal case: the 2019 Auditor General finding that a 50% improvement in unit-utilization would house 2,200 more people without new construction cost implies real cost-avoidance potential if throughput-linked reporting surfaces similar utilization gaps in newly funded supply — but this is not independently modeled or quantified for present-day dollar terms, flagged as directional only.</p>
-<h3>Economic ROI</h3>
+<h3 id="economic-roi-2">Economic ROI</h3>
 <p>Range: Not directly modeled — this card conditions reporting attached to funding decisions that occur regardless; it does not itself allocate capital, so it has no first-order local-spending or employment effect distinct from whatever underlying supply-expansion funding it attaches to (which this card explicitly treats as out of scope, per Funding path above). The indirect economic case rests on the 2019 Auditor General finding, cited in this card's own Problem section, that improved unit-utilization could house an estimated 2,200 additional people without new construction — a real, City-sourced figure, but one describing a utilization-efficiency gain, not an economic-growth/employment multiplier, and not independently re-modeled here for a dollar figure. Comparator source: the card's own already-cited Toronto Auditor General 2019 report, "Opening Doors to Stable Housing" (June 21, 2019) — used here only as evidence of a utilization-efficiency gap, not as an economic-impact study; no separate third-party economic-impact study of throughput-linked funding conditions (as a reporting mechanism) was located this pass, and this is a genuinely novel proposed mechanism per this card's own Confidence &amp; uncertainties section, so no existing program evaluates it directly. Confidence: low — the underlying utilization-gap fact is well-sourced, but this card's own proposed mechanism (conditioning funding on throughput reporting) has no existing program evaluation to anchor an economic-ROI range to; stated as not yet estimable rather than inferred from the utilization figure.</p>
-<h3>Social ROI</h3>
+<h3 id="social-roi-2">Social ROI</h3>
 <p>The 7.6:1 inflow-to-housed ratio and 2.7% annual exit rate [INHERITED] describe a system where the number of new units funded is not, by itself, informative about how much faster people actually get housed. Throughput-linked reporting is the mechanism by which that gap becomes visible to the public and to Council on an ongoing basis, rather than requiring a dedicated Auditor General special report (as happened once, in 2019) to surface it.</p>
-<h3>Environmental ROI</h3>
+<h3 id="environmental-roi-2">Environmental ROI</h3>
 <p>Range: Genuinely environmentally neutral for the reporting-condition mechanism itself. This card attaches a reporting requirement to funding decisions rather than making a capital or construction decision itself — it has no direct emissions, land-use, water, or waste footprint of its own, distinct from whatever underlying RGI-supply-expansion construction it conditions (which is explicitly out of scope for this card, per Funding path above, and would carry its own separate environmental profile depending on build method — see this leaf's sibling shelter-capital cards for the general modular-construction embodied-carbon literature). Comparator source: none needed to support a neutral finding for the reporting mechanism itself. Confidence: high on the reporting condition's own lack of direct footprint; the underlying funded construction it attaches to is a separate question this card does not resolve.</p>
-<h3>Evidence</h3>
+<h3 id="evidence-2">Evidence</h3>
 <ul><li>Backgrounder §"Comparison to the supply pipeline" · INHERITED, this library's inherited source document (social housing waitlist growth) · 2025 inflow/housed/exit-rate figures</li><li>Backgrounder §"Wait times, who gets housed, and by what rule" · NEW, Toronto Auditor General 2019, fetched 2026-07-13 · vacancy-loss and utilization-gap figures</li></ul>
-<h3>Confidence &amp; uncertainties</h3>
+<h3 id="confidence-uncertainties-2">Confidence &amp; uncertainties</h3>
 <p>Medium confidence: the throughput-gap problem statement is well-evidenced directly from primary City data; the specific "condition funding on throughput reporting" mechanism is this card's own proposed design, not something already documented as adopted or even proposed by any government body this session — flagged as this card's own synthesis, not a cited existing policy. No specific current provincial or federal RGI-supply funding program for Toronto was independently confirmed this session; the funding-path section names the mechanism generically rather than a specific program, and that gap should be closed before this card moves past DRAFT.</p>
-<h3>Status</h3>
+<h3 id="status-2">Status</h3>
 <p>DRAFT — blocked on: naming the specific current provincial/federal program(s) this condition would actually attach to; Lane R fairness/legal pass; confirmation of whether any funding agreement already contains a comparable throughput clause.</p>
 <footer class="site-footer">
 <nav aria-label="Footer">
@@ -110,7 +110,7 @@
 <li><a href="/how-this-was-made.html">How this was made</a></li>
 <li><a href="/how-we-verify.html">How we verify</a></li>
 <li><a href="/corrections.html">Corrections &amp; improvements</a></li>
-<li><a href="/gov-atlas/index.html">Gov Atlas</a></li></ul>
+</ul>
 </nav>
 <p><a class="improve-mail" href="mailto:unknownsoldier@unitetolove.ca?subject=Improvement%3A&amp;body=Page%20link%20%28paste%20it%20here%29%3A%0A%0AWhat%20I%20noticed%20or%20suggest%3A%0A">&#9999;&#65039; Suggest an improvement</a> &mdash; corrections, improvements, ideas, resources, and offers of help all welcome.</p>
 <script>(function(){var s='Improvement: '+location.pathname;var b='Page link: '+location.href+'\n\nWhat I noticed or suggest:\n\nCredit me as (optional):\n';var h='mailto:unknownsoldier@unitetolove.ca?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);var l=document.querySelectorAll('a.improve-mail');for(var i=0;i<l.length;i++){l[i].href=h;}})();</script>
