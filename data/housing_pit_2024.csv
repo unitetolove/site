@@ -1,0 +1,16 @@
+sgc_code,geo_name,geo_level,period,metric,value,unit,source_res_id,retrieved_date,notes
+,Guelph-Wellington Service Manager,CD,2024-10-23,pit_homeless_count,335,count,RES-130000,2026-07-12,Joint Service Manager area (County of Wellington + City of Guelph); no single sgc_code
+3520005,Toronto,CSD,2024-10,pit_homeless_count,15400,count,RES-130001,2026-07-12,2024 Street Needs Assessment; some derivative reporting cites 15418
+3506008,Ottawa,CSD,2024-10-23,pit_homeless_count,2952,count,RES-80151,2026-07-13,Count date range 2024-10-23 to 2024-10-24; using start date
+3521,Peel Region,CD,2024-11-13,pit_homeless_count,2799,count,RES-130003,2026-07-12,"1674 excluding asylum claimants; asylum-claimant count not stated in source (agent-derived by subtraction, not sourced)"
+3519,York Region,CD,2024-11-26,pit_homeless_count,878,count,RES-130002,2026-07-12,Count date range 2024-11-26 to 2024-11-27; using start date
+3518,Durham Region,CD,2024-11-18,pit_homeless_count,1345,count,RES-130004,2026-07-12,Count date range 2024-11-18 to 2024-11-19; using start date; source from escribemeetings.com (known bot-blocking domain)
+3524,Halton Region,CD,2024,pit_homeless_count,343,count,RES-130005,2026-07-12,Breakdown: 121 shelter + 137 transitional + 61 unsheltered + 24 couch surfing; exact count date not stated in source
+3530,Waterloo Region,CD,2024-10-22,pit_homeless_count,2371,count,RES-130006,2026-07-12,Source from escribemeetings.com (known bot-blocking domain)
+3525005,Hamilton,CSD,2024-11-04,pit_homeless_count,1216,count,RES-130007,2026-07-12,Point in Time Connection Results
+3526,Niagara Region,CD,2024-10-22,pit_homeless_count,701,count,RES-130008,2026-07-12,
+3543,Simcoe County,CD,2024-10-08,pit_homeless_count,1080,count,RES-130009,2026-07-12,Corrected from prior search-verified 607 figure; primary source is CAEH Everyone Counts 2024 report
+3537,Essex County,CD,2024-10-24,pit_homeless_count,672,count,RES-130010,2026-07-13,Service: Windsor-Essex; not council-endorsed per city council minutes (2025-07-28); tier=1-search-verified (CBC article)
+3539,Middlesex County,CD,2024,pit_homeless_count,1025,count,RES-130011,2026-07-12,Service: London-Middlesex; London portion only; Middlesex County rural figure not separately confirmed; exact count date unconfirmed
+3510,Frontenac County,CD,2024-11-19,pit_homeless_count,483,count,RES-130012,2026-07-12,Service: Kingston-Frontenac-Lennox & Addington; count date range 2024-11-19 to 2024-11-20; using start date
+3553005,Greater Sudbury,CSD,2024-10-08,pit_homeless_count,505,count,RES-130013,2026-07-12,

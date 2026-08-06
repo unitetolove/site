@@ -1,0 +1,1226 @@
+sgc_code,geo_name,geo_level,period,metric,value,unit,source_res_id,retrieved_date
+3501,"Stormont, Dundas and Glengarry",CD,2001,population_estimate,115298,count,RES-130031,2026-07-12
+3501,"Stormont, Dundas and Glengarry",CD,2002,population_estimate,115647,count,RES-130031,2026-07-12
+3501,"Stormont, Dundas and Glengarry",CD,2003,population_estimate,116291,count,RES-130031,2026-07-12
+3501,"Stormont, Dundas and Glengarry",CD,2004,population_estimate,116393,count,RES-130031,2026-07-12
+3501,"Stormont, Dundas and Glengarry",CD,2005,population_estimate,115971,count,RES-130031,2026-07-12
+3501,"Stormont, Dundas and Glengarry",CD,2006,population_estimate,115612,count,RES-130031,2026-07-12
+3501,"Stormont, Dundas and Glengarry",CD,2007,population_estimate,115399,count,RES-130031,2026-07-12
+3501,"Stormont, Dundas and Glengarry",CD,2008,population_estimate,115342,count,RES-130031,2026-07-12
+3501,"Stormont, Dundas and Glengarry",CD,2009,population_estimate,115286,count,RES-130031,2026-07-12
+3501,"Stormont, Dundas and Glengarry",CD,2010,population_estimate,115479,count,RES-130031,2026-07-12
+3501,"Stormont, Dundas and Glengarry",CD,2011,population_estimate,115576,count,RES-130031,2026-07-12
+3501,"Stormont, Dundas and Glengarry",CD,2012,population_estimate,115872,count,RES-130031,2026-07-12
+3501,"Stormont, Dundas and Glengarry",CD,2013,population_estimate,115795,count,RES-130031,2026-07-12
+3501,"Stormont, Dundas and Glengarry",CD,2014,population_estimate,115864,count,RES-130031,2026-07-12
+3501,"Stormont, Dundas and Glengarry",CD,2015,population_estimate,116100,count,RES-130031,2026-07-12
+3501,"Stormont, Dundas and Glengarry",CD,2016,population_estimate,116436,count,RES-130031,2026-07-12
+3501,"Stormont, Dundas and Glengarry",CD,2017,population_estimate,116991,count,RES-130031,2026-07-12
+3501,"Stormont, Dundas and Glengarry",CD,2018,population_estimate,117838,count,RES-130031,2026-07-12
+3501,"Stormont, Dundas and Glengarry",CD,2019,population_estimate,118953,count,RES-130031,2026-07-12
+3501,"Stormont, Dundas and Glengarry",CD,2020,population_estimate,119951,count,RES-130031,2026-07-12
+3501,"Stormont, Dundas and Glengarry",CD,2021,population_estimate,121127,count,RES-130031,2026-07-12
+3501,"Stormont, Dundas and Glengarry",CD,2022,population_estimate,122679,count,RES-130031,2026-07-12
+3501,"Stormont, Dundas and Glengarry",CD,2023,population_estimate,125193,count,RES-130031,2026-07-12
+3501,"Stormont, Dundas and Glengarry",CD,2024,population_estimate,127336,count,RES-130031,2026-07-12
+3501,"Stormont, Dundas and Glengarry",CD,2025,population_estimate,128617,count,RES-130031,2026-07-12
+3502,Prescott and Russell,CD,2001,population_estimate,79452,count,RES-130031,2026-07-12
+3502,Prescott and Russell,CD,2002,population_estimate,80313,count,RES-130031,2026-07-12
+3502,Prescott and Russell,CD,2003,population_estimate,81426,count,RES-130031,2026-07-12
+3502,Prescott and Russell,CD,2004,population_estimate,82175,count,RES-130031,2026-07-12
+3502,Prescott and Russell,CD,2005,population_estimate,82724,count,RES-130031,2026-07-12
+3502,Prescott and Russell,CD,2006,population_estimate,83146,count,RES-130031,2026-07-12
+3502,Prescott and Russell,CD,2007,population_estimate,83809,count,RES-130031,2026-07-12
+3502,Prescott and Russell,CD,2008,population_estimate,84695,count,RES-130031,2026-07-12
+3502,Prescott and Russell,CD,2009,population_estimate,85334,count,RES-130031,2026-07-12
+3502,Prescott and Russell,CD,2010,population_estimate,86706,count,RES-130031,2026-07-12
+3502,Prescott and Russell,CD,2011,population_estimate,87775,count,RES-130031,2026-07-12
+3502,Prescott and Russell,CD,2012,population_estimate,88963,count,RES-130031,2026-07-12
+3502,Prescott and Russell,CD,2013,population_estimate,89650,count,RES-130031,2026-07-12
+3502,Prescott and Russell,CD,2014,population_estimate,90344,count,RES-130031,2026-07-12
+3502,Prescott and Russell,CD,2015,population_estimate,90989,count,RES-130031,2026-07-12
+3502,Prescott and Russell,CD,2016,population_estimate,91696,count,RES-130031,2026-07-12
+3502,Prescott and Russell,CD,2017,population_estimate,92547,count,RES-130031,2026-07-12
+3502,Prescott and Russell,CD,2018,population_estimate,93775,count,RES-130031,2026-07-12
+3502,Prescott and Russell,CD,2019,population_estimate,95493,count,RES-130031,2026-07-12
+3502,Prescott and Russell,CD,2020,population_estimate,97375,count,RES-130031,2026-07-12
+3502,Prescott and Russell,CD,2021,population_estimate,99503,count,RES-130031,2026-07-12
+3502,Prescott and Russell,CD,2022,population_estimate,101844,count,RES-130031,2026-07-12
+3502,Prescott and Russell,CD,2023,population_estimate,103813,count,RES-130031,2026-07-12
+3502,Prescott and Russell,CD,2024,population_estimate,106114,count,RES-130031,2026-07-12
+3502,Prescott and Russell,CD,2025,population_estimate,109142,count,RES-130031,2026-07-12
+3506,Ottawa,CD,2001,population_estimate,806911,count,RES-130031,2026-07-12
+3506,Ottawa,CD,2002,population_estimate,818340,count,RES-130031,2026-07-12
+3506,Ottawa,CD,2003,population_estimate,827171,count,RES-130031,2026-07-12
+3506,Ottawa,CD,2004,population_estimate,832697,count,RES-130031,2026-07-12
+3506,Ottawa,CD,2005,population_estimate,838624,count,RES-130031,2026-07-12
+3506,Ottawa,CD,2006,population_estimate,846129,count,RES-130031,2026-07-12
+3506,Ottawa,CD,2007,population_estimate,855764,count,RES-130031,2026-07-12
+3506,Ottawa,CD,2008,population_estimate,869259,count,RES-130031,2026-07-12
+3506,Ottawa,CD,2009,population_estimate,883755,count,RES-130031,2026-07-12
+3506,Ottawa,CD,2010,population_estimate,898924,count,RES-130031,2026-07-12
+3506,Ottawa,CD,2011,population_estimate,912356,count,RES-130031,2026-07-12
+3506,Ottawa,CD,2012,population_estimate,922564,count,RES-130031,2026-07-12
+3506,Ottawa,CD,2013,population_estimate,932118,count,RES-130031,2026-07-12
+3506,Ottawa,CD,2014,population_estimate,941129,count,RES-130031,2026-07-12
+3506,Ottawa,CD,2015,population_estimate,949360,count,RES-130031,2026-07-12
+3506,Ottawa,CD,2016,population_estimate,964965,count,RES-130031,2026-07-12
+3506,Ottawa,CD,2017,population_estimate,985994,count,RES-130031,2026-07-12
+3506,Ottawa,CD,2018,population_estimate,1008849,count,RES-130031,2026-07-12
+3506,Ottawa,CD,2019,population_estimate,1031510,count,RES-130031,2026-07-12
+3506,Ottawa,CD,2020,population_estimate,1052089,count,RES-130031,2026-07-12
+3506,Ottawa,CD,2021,population_estimate,1062174,count,RES-130031,2026-07-12
+3506,Ottawa,CD,2022,population_estimate,1083498,count,RES-130031,2026-07-12
+3506,Ottawa,CD,2023,population_estimate,1116097,count,RES-130031,2026-07-12
+3506,Ottawa,CD,2024,population_estimate,1157503,count,RES-130031,2026-07-12
+3506,Ottawa,CD,2025,population_estimate,1188114,count,RES-130031,2026-07-12
+3507,Leeds and Grenville,CD,2001,population_estimate,100358,count,RES-130031,2026-07-12
+3507,Leeds and Grenville,CD,2002,population_estimate,100863,count,RES-130031,2026-07-12
+3507,Leeds and Grenville,CD,2003,population_estimate,101586,count,RES-130031,2026-07-12
+3507,Leeds and Grenville,CD,2004,population_estimate,101888,count,RES-130031,2026-07-12
+3507,Leeds and Grenville,CD,2005,population_estimate,102199,count,RES-130031,2026-07-12
+3507,Leeds and Grenville,CD,2006,population_estimate,102377,count,RES-130031,2026-07-12
+3507,Leeds and Grenville,CD,2007,population_estimate,102218,count,RES-130031,2026-07-12
+3507,Leeds and Grenville,CD,2008,population_estimate,102091,count,RES-130031,2026-07-12
+3507,Leeds and Grenville,CD,2009,population_estimate,101677,count,RES-130031,2026-07-12
+3507,Leeds and Grenville,CD,2010,population_estimate,101845,count,RES-130031,2026-07-12
+3507,Leeds and Grenville,CD,2011,population_estimate,101737,count,RES-130031,2026-07-12
+3507,Leeds and Grenville,CD,2012,population_estimate,102109,count,RES-130031,2026-07-12
+3507,Leeds and Grenville,CD,2013,population_estimate,102155,count,RES-130031,2026-07-12
+3507,Leeds and Grenville,CD,2014,population_estimate,102177,count,RES-130031,2026-07-12
+3507,Leeds and Grenville,CD,2015,population_estimate,102348,count,RES-130031,2026-07-12
+3507,Leeds and Grenville,CD,2016,population_estimate,102931,count,RES-130031,2026-07-12
+3507,Leeds and Grenville,CD,2017,population_estimate,103444,count,RES-130031,2026-07-12
+3507,Leeds and Grenville,CD,2018,population_estimate,104535,count,RES-130031,2026-07-12
+3507,Leeds and Grenville,CD,2019,population_estimate,105674,count,RES-130031,2026-07-12
+3507,Leeds and Grenville,CD,2020,population_estimate,106629,count,RES-130031,2026-07-12
+3507,Leeds and Grenville,CD,2021,population_estimate,107738,count,RES-130031,2026-07-12
+3507,Leeds and Grenville,CD,2022,population_estimate,109352,count,RES-130031,2026-07-12
+3507,Leeds and Grenville,CD,2023,population_estimate,109889,count,RES-130031,2026-07-12
+3507,Leeds and Grenville,CD,2024,population_estimate,110622,count,RES-130031,2026-07-12
+3507,Leeds and Grenville,CD,2025,population_estimate,111314,count,RES-130031,2026-07-12
+3509,Lanark,CD,2001,population_estimate,64957,count,RES-130031,2026-07-12
+3509,Lanark,CD,2002,population_estimate,65447,count,RES-130031,2026-07-12
+3509,Lanark,CD,2003,population_estimate,65752,count,RES-130031,2026-07-12
+3509,Lanark,CD,2004,population_estimate,65974,count,RES-130031,2026-07-12
+3509,Lanark,CD,2005,population_estimate,66053,count,RES-130031,2026-07-12
+3509,Lanark,CD,2006,population_estimate,65890,count,RES-130031,2026-07-12
+3509,Lanark,CD,2007,population_estimate,66057,count,RES-130031,2026-07-12
+3509,Lanark,CD,2008,population_estimate,66034,count,RES-130031,2026-07-12
+3509,Lanark,CD,2009,population_estimate,66268,count,RES-130031,2026-07-12
+3509,Lanark,CD,2010,population_estimate,66957,count,RES-130031,2026-07-12
+3509,Lanark,CD,2011,population_estimate,67258,count,RES-130031,2026-07-12
+3509,Lanark,CD,2012,population_estimate,67715,count,RES-130031,2026-07-12
+3509,Lanark,CD,2013,population_estimate,68221,count,RES-130031,2026-07-12
+3509,Lanark,CD,2014,population_estimate,68943,count,RES-130031,2026-07-12
+3509,Lanark,CD,2015,population_estimate,69511,count,RES-130031,2026-07-12
+3509,Lanark,CD,2016,population_estimate,70446,count,RES-130031,2026-07-12
+3509,Lanark,CD,2017,population_estimate,71404,count,RES-130031,2026-07-12
+3509,Lanark,CD,2018,population_estimate,72932,count,RES-130031,2026-07-12
+3509,Lanark,CD,2019,population_estimate,74743,count,RES-130031,2026-07-12
+3509,Lanark,CD,2020,population_estimate,76514,count,RES-130031,2026-07-12
+3509,Lanark,CD,2021,population_estimate,78669,count,RES-130031,2026-07-12
+3509,Lanark,CD,2022,population_estimate,80757,count,RES-130031,2026-07-12
+3509,Lanark,CD,2023,population_estimate,82087,count,RES-130031,2026-07-12
+3509,Lanark,CD,2024,population_estimate,83500,count,RES-130031,2026-07-12
+3509,Lanark,CD,2025,population_estimate,84820,count,RES-130031,2026-07-12
+3510,Frontenac,CD,2001,population_estimate,144149,count,RES-130031,2026-07-12
+3510,Frontenac,CD,2002,population_estimate,146302,count,RES-130031,2026-07-12
+3510,Frontenac,CD,2003,population_estimate,147886,count,RES-130031,2026-07-12
+3510,Frontenac,CD,2004,population_estimate,148773,count,RES-130031,2026-07-12
+3510,Frontenac,CD,2005,population_estimate,149001,count,RES-130031,2026-07-12
+3510,Frontenac,CD,2006,population_estimate,149290,count,RES-130031,2026-07-12
+3510,Frontenac,CD,2007,population_estimate,149488,count,RES-130031,2026-07-12
+3510,Frontenac,CD,2008,population_estimate,150551,count,RES-130031,2026-07-12
+3510,Frontenac,CD,2009,population_estimate,151966,count,RES-130031,2026-07-12
+3510,Frontenac,CD,2010,population_estimate,153091,count,RES-130031,2026-07-12
+3510,Frontenac,CD,2011,population_estimate,154154,count,RES-130031,2026-07-12
+3510,Frontenac,CD,2012,population_estimate,153658,count,RES-130031,2026-07-12
+3510,Frontenac,CD,2013,population_estimate,153301,count,RES-130031,2026-07-12
+3510,Frontenac,CD,2014,population_estimate,153384,count,RES-130031,2026-07-12
+3510,Frontenac,CD,2015,population_estimate,153629,count,RES-130031,2026-07-12
+3510,Frontenac,CD,2016,population_estimate,155072,count,RES-130031,2026-07-12
+3510,Frontenac,CD,2017,population_estimate,158784,count,RES-130031,2026-07-12
+3510,Frontenac,CD,2018,population_estimate,162520,count,RES-130031,2026-07-12
+3510,Frontenac,CD,2019,population_estimate,165019,count,RES-130031,2026-07-12
+3510,Frontenac,CD,2020,population_estimate,167045,count,RES-130031,2026-07-12
+3510,Frontenac,CD,2021,population_estimate,168477,count,RES-130031,2026-07-12
+3510,Frontenac,CD,2022,population_estimate,172684,count,RES-130031,2026-07-12
+3510,Frontenac,CD,2023,population_estimate,176656,count,RES-130031,2026-07-12
+3510,Frontenac,CD,2024,population_estimate,180351,count,RES-130031,2026-07-12
+3510,Frontenac,CD,2025,population_estimate,180952,count,RES-130031,2026-07-12
+3511,Lennox and Addington,CD,2001,population_estimate,40869,count,RES-130031,2026-07-12
+3511,Lennox and Addington,CD,2002,population_estimate,41057,count,RES-130031,2026-07-12
+3511,Lennox and Addington,CD,2003,population_estimate,41303,count,RES-130031,2026-07-12
+3511,Lennox and Addington,CD,2004,population_estimate,41510,count,RES-130031,2026-07-12
+3511,Lennox and Addington,CD,2005,population_estimate,41746,count,RES-130031,2026-07-12
+3511,Lennox and Addington,CD,2006,population_estimate,41839,count,RES-130031,2026-07-12
+3511,Lennox and Addington,CD,2007,population_estimate,41913,count,RES-130031,2026-07-12
+3511,Lennox and Addington,CD,2008,population_estimate,42178,count,RES-130031,2026-07-12
+3511,Lennox and Addington,CD,2009,population_estimate,42299,count,RES-130031,2026-07-12
+3511,Lennox and Addington,CD,2010,population_estimate,42722,count,RES-130031,2026-07-12
+3511,Lennox and Addington,CD,2011,population_estimate,42781,count,RES-130031,2026-07-12
+3511,Lennox and Addington,CD,2012,population_estimate,43532,count,RES-130031,2026-07-12
+3511,Lennox and Addington,CD,2013,population_estimate,43487,count,RES-130031,2026-07-12
+3511,Lennox and Addington,CD,2014,population_estimate,43682,count,RES-130031,2026-07-12
+3511,Lennox and Addington,CD,2015,population_estimate,43807,count,RES-130031,2026-07-12
+3511,Lennox and Addington,CD,2016,population_estimate,43923,count,RES-130031,2026-07-12
+3511,Lennox and Addington,CD,2017,population_estimate,44276,count,RES-130031,2026-07-12
+3511,Lennox and Addington,CD,2018,population_estimate,44777,count,RES-130031,2026-07-12
+3511,Lennox and Addington,CD,2019,population_estimate,45515,count,RES-130031,2026-07-12
+3511,Lennox and Addington,CD,2020,population_estimate,46112,count,RES-130031,2026-07-12
+3511,Lennox and Addington,CD,2021,population_estimate,46861,count,RES-130031,2026-07-12
+3511,Lennox and Addington,CD,2022,population_estimate,47460,count,RES-130031,2026-07-12
+3511,Lennox and Addington,CD,2023,population_estimate,48028,count,RES-130031,2026-07-12
+3511,Lennox and Addington,CD,2024,population_estimate,48528,count,RES-130031,2026-07-12
+3511,Lennox and Addington,CD,2025,population_estimate,49127,count,RES-130031,2026-07-12
+3512,Hastings,CD,2001,population_estimate,132251,count,RES-130031,2026-07-12
+3512,Hastings,CD,2002,population_estimate,133468,count,RES-130031,2026-07-12
+3512,Hastings,CD,2003,population_estimate,133957,count,RES-130031,2026-07-12
+3512,Hastings,CD,2004,population_estimate,135108,count,RES-130031,2026-07-12
+3512,Hastings,CD,2005,population_estimate,135982,count,RES-130031,2026-07-12
+3512,Hastings,CD,2006,population_estimate,136625,count,RES-130031,2026-07-12
+3512,Hastings,CD,2007,population_estimate,137448,count,RES-130031,2026-07-12
+3512,Hastings,CD,2008,population_estimate,137867,count,RES-130031,2026-07-12
+3512,Hastings,CD,2009,population_estimate,137938,count,RES-130031,2026-07-12
+3512,Hastings,CD,2010,population_estimate,138134,count,RES-130031,2026-07-12
+3512,Hastings,CD,2011,population_estimate,138347,count,RES-130031,2026-07-12
+3512,Hastings,CD,2012,population_estimate,138332,count,RES-130031,2026-07-12
+3512,Hastings,CD,2013,population_estimate,138394,count,RES-130031,2026-07-12
+3512,Hastings,CD,2014,population_estimate,138382,count,RES-130031,2026-07-12
+3512,Hastings,CD,2015,population_estimate,138806,count,RES-130031,2026-07-12
+3512,Hastings,CD,2016,population_estimate,140189,count,RES-130031,2026-07-12
+3512,Hastings,CD,2017,population_estimate,142421,count,RES-130031,2026-07-12
+3512,Hastings,CD,2018,population_estimate,144910,count,RES-130031,2026-07-12
+3512,Hastings,CD,2019,population_estimate,147112,count,RES-130031,2026-07-12
+3512,Hastings,CD,2020,population_estimate,149447,count,RES-130031,2026-07-12
+3512,Hastings,CD,2021,population_estimate,151277,count,RES-130031,2026-07-12
+3512,Hastings,CD,2022,population_estimate,154988,count,RES-130031,2026-07-12
+3512,Hastings,CD,2023,population_estimate,157547,count,RES-130031,2026-07-12
+3512,Hastings,CD,2024,population_estimate,160365,count,RES-130031,2026-07-12
+3512,Hastings,CD,2025,population_estimate,161833,count,RES-130031,2026-07-12
+3513,Prince Edward,CD,2001,population_estimate,25789,count,RES-130031,2026-07-12
+3513,Prince Edward,CD,2002,population_estimate,26068,count,RES-130031,2026-07-12
+3513,Prince Edward,CD,2003,population_estimate,26131,count,RES-130031,2026-07-12
+3513,Prince Edward,CD,2004,population_estimate,26221,count,RES-130031,2026-07-12
+3513,Prince Edward,CD,2005,population_estimate,26313,count,RES-130031,2026-07-12
+3513,Prince Edward,CD,2006,population_estimate,26097,count,RES-130031,2026-07-12
+3513,Prince Edward,CD,2007,population_estimate,25850,count,RES-130031,2026-07-12
+3513,Prince Edward,CD,2008,population_estimate,25768,count,RES-130031,2026-07-12
+3513,Prince Edward,CD,2009,population_estimate,25796,count,RES-130031,2026-07-12
+3513,Prince Edward,CD,2010,population_estimate,25791,count,RES-130031,2026-07-12
+3513,Prince Edward,CD,2011,population_estimate,25712,count,RES-130031,2026-07-12
+3513,Prince Edward,CD,2012,population_estimate,25466,count,RES-130031,2026-07-12
+3513,Prince Edward,CD,2013,population_estimate,25409,count,RES-130031,2026-07-12
+3513,Prince Edward,CD,2014,population_estimate,25272,count,RES-130031,2026-07-12
+3513,Prince Edward,CD,2015,population_estimate,25145,count,RES-130031,2026-07-12
+3513,Prince Edward,CD,2016,population_estimate,25179,count,RES-130031,2026-07-12
+3513,Prince Edward,CD,2017,population_estimate,25242,count,RES-130031,2026-07-12
+3513,Prince Edward,CD,2018,population_estimate,25392,count,RES-130031,2026-07-12
+3513,Prince Edward,CD,2019,population_estimate,25611,count,RES-130031,2026-07-12
+3513,Prince Edward,CD,2020,population_estimate,25891,count,RES-130031,2026-07-12
+3513,Prince Edward,CD,2021,population_estimate,26570,count,RES-130031,2026-07-12
+3513,Prince Edward,CD,2022,population_estimate,26757,count,RES-130031,2026-07-12
+3513,Prince Edward,CD,2023,population_estimate,26823,count,RES-130031,2026-07-12
+3513,Prince Edward,CD,2024,population_estimate,27146,count,RES-130031,2026-07-12
+3513,Prince Edward,CD,2025,population_estimate,27544,count,RES-130031,2026-07-12
+3514,Northumberland,CD,2001,population_estimate,80471,count,RES-130031,2026-07-12
+3514,Northumberland,CD,2002,population_estimate,81075,count,RES-130031,2026-07-12
+3514,Northumberland,CD,2003,population_estimate,81929,count,RES-130031,2026-07-12
+3514,Northumberland,CD,2004,population_estimate,82623,count,RES-130031,2026-07-12
+3514,Northumberland,CD,2005,population_estimate,83182,count,RES-130031,2026-07-12
+3514,Northumberland,CD,2006,population_estimate,83457,count,RES-130031,2026-07-12
+3514,Northumberland,CD,2007,population_estimate,83468,count,RES-130031,2026-07-12
+3514,Northumberland,CD,2008,population_estimate,83571,count,RES-130031,2026-07-12
+3514,Northumberland,CD,2009,population_estimate,83698,count,RES-130031,2026-07-12
+3514,Northumberland,CD,2010,population_estimate,83776,count,RES-130031,2026-07-12
+3514,Northumberland,CD,2011,population_estimate,84034,count,RES-130031,2026-07-12
+3514,Northumberland,CD,2012,population_estimate,84729,count,RES-130031,2026-07-12
+3514,Northumberland,CD,2013,population_estimate,85358,count,RES-130031,2026-07-12
+3514,Northumberland,CD,2014,population_estimate,85957,count,RES-130031,2026-07-12
+3514,Northumberland,CD,2015,population_estimate,86788,count,RES-130031,2026-07-12
+3514,Northumberland,CD,2016,population_estimate,87651,count,RES-130031,2026-07-12
+3514,Northumberland,CD,2017,population_estimate,89142,count,RES-130031,2026-07-12
+3514,Northumberland,CD,2018,population_estimate,90012,count,RES-130031,2026-07-12
+3514,Northumberland,CD,2019,population_estimate,90626,count,RES-130031,2026-07-12
+3514,Northumberland,CD,2020,population_estimate,91351,count,RES-130031,2026-07-12
+3514,Northumberland,CD,2021,population_estimate,92487,count,RES-130031,2026-07-12
+3514,Northumberland,CD,2022,population_estimate,94178,count,RES-130031,2026-07-12
+3514,Northumberland,CD,2023,population_estimate,95236,count,RES-130031,2026-07-12
+3514,Northumberland,CD,2024,population_estimate,96020,count,RES-130031,2026-07-12
+3514,Northumberland,CD,2025,population_estimate,96779,count,RES-130031,2026-07-12
+3515,Peterborough,CD,2001,population_estimate,130856,count,RES-130031,2026-07-12
+3515,Peterborough,CD,2002,population_estimate,132634,count,RES-130031,2026-07-12
+3515,Peterborough,CD,2003,population_estimate,134121,count,RES-130031,2026-07-12
+3515,Peterborough,CD,2004,population_estimate,135344,count,RES-130031,2026-07-12
+3515,Peterborough,CD,2005,population_estimate,136696,count,RES-130031,2026-07-12
+3515,Peterborough,CD,2006,population_estimate,137517,count,RES-130031,2026-07-12
+3515,Peterborough,CD,2007,population_estimate,137392,count,RES-130031,2026-07-12
+3515,Peterborough,CD,2008,population_estimate,137659,count,RES-130031,2026-07-12
+3515,Peterborough,CD,2009,population_estimate,137537,count,RES-130031,2026-07-12
+3515,Peterborough,CD,2010,population_estimate,138285,count,RES-130031,2026-07-12
+3515,Peterborough,CD,2011,population_estimate,138440,count,RES-130031,2026-07-12
+3515,Peterborough,CD,2012,population_estimate,138688,count,RES-130031,2026-07-12
+3515,Peterborough,CD,2013,population_estimate,139344,count,RES-130031,2026-07-12
+3515,Peterborough,CD,2014,population_estimate,139675,count,RES-130031,2026-07-12
+3515,Peterborough,CD,2015,population_estimate,140219,count,RES-130031,2026-07-12
+3515,Peterborough,CD,2016,population_estimate,142181,count,RES-130031,2026-07-12
+3515,Peterborough,CD,2017,population_estimate,145077,count,RES-130031,2026-07-12
+3515,Peterborough,CD,2018,population_estimate,148614,count,RES-130031,2026-07-12
+3515,Peterborough,CD,2019,population_estimate,150317,count,RES-130031,2026-07-12
+3515,Peterborough,CD,2020,population_estimate,151769,count,RES-130031,2026-07-12
+3515,Peterborough,CD,2021,population_estimate,153371,count,RES-130031,2026-07-12
+3515,Peterborough,CD,2022,population_estimate,156968,count,RES-130031,2026-07-12
+3515,Peterborough,CD,2023,population_estimate,161657,count,RES-130031,2026-07-12
+3515,Peterborough,CD,2024,population_estimate,168623,count,RES-130031,2026-07-12
+3515,Peterborough,CD,2025,population_estimate,169985,count,RES-130031,2026-07-12
+3516,Kawartha Lakes,CD,2001,population_estimate,71978,count,RES-130031,2026-07-12
+3516,Kawartha Lakes,CD,2002,population_estimate,72892,count,RES-130031,2026-07-12
+3516,Kawartha Lakes,CD,2003,population_estimate,74239,count,RES-130031,2026-07-12
+3516,Kawartha Lakes,CD,2004,population_estimate,75271,count,RES-130031,2026-07-12
+3516,Kawartha Lakes,CD,2005,population_estimate,76312,count,RES-130031,2026-07-12
+3516,Kawartha Lakes,CD,2006,population_estimate,76846,count,RES-130031,2026-07-12
+3516,Kawartha Lakes,CD,2007,population_estimate,76152,count,RES-130031,2026-07-12
+3516,Kawartha Lakes,CD,2008,population_estimate,75910,count,RES-130031,2026-07-12
+3516,Kawartha Lakes,CD,2009,population_estimate,75297,count,RES-130031,2026-07-12
+3516,Kawartha Lakes,CD,2010,population_estimate,75048,count,RES-130031,2026-07-12
+3516,Kawartha Lakes,CD,2011,population_estimate,74916,count,RES-130031,2026-07-12
+3516,Kawartha Lakes,CD,2012,population_estimate,75486,count,RES-130031,2026-07-12
+3516,Kawartha Lakes,CD,2013,population_estimate,75689,count,RES-130031,2026-07-12
+3516,Kawartha Lakes,CD,2014,population_estimate,75889,count,RES-130031,2026-07-12
+3516,Kawartha Lakes,CD,2015,population_estimate,76454,count,RES-130031,2026-07-12
+3516,Kawartha Lakes,CD,2016,population_estimate,77262,count,RES-130031,2026-07-12
+3516,Kawartha Lakes,CD,2017,population_estimate,78398,count,RES-130031,2026-07-12
+3516,Kawartha Lakes,CD,2018,population_estimate,79375,count,RES-130031,2026-07-12
+3516,Kawartha Lakes,CD,2019,population_estimate,80200,count,RES-130031,2026-07-12
+3516,Kawartha Lakes,CD,2020,population_estimate,81091,count,RES-130031,2026-07-12
+3516,Kawartha Lakes,CD,2021,population_estimate,82166,count,RES-130031,2026-07-12
+3516,Kawartha Lakes,CD,2022,population_estimate,83709,count,RES-130031,2026-07-12
+3516,Kawartha Lakes,CD,2023,population_estimate,84289,count,RES-130031,2026-07-12
+3516,Kawartha Lakes,CD,2024,population_estimate,84822,count,RES-130031,2026-07-12
+3516,Kawartha Lakes,CD,2025,population_estimate,85351,count,RES-130031,2026-07-12
+3518,Durham,CD,2001,population_estimate,527916,count,RES-130031,2026-07-12
+3518,Durham,CD,2002,population_estimate,538310,count,RES-130031,2026-07-12
+3518,Durham,CD,2003,population_estimate,550591,count,RES-130031,2026-07-12
+3518,Durham,CD,2004,population_estimate,562535,count,RES-130031,2026-07-12
+3518,Durham,CD,2005,population_estimate,573570,count,RES-130031,2026-07-12
+3518,Durham,CD,2006,population_estimate,584501,count,RES-130031,2026-07-12
+3518,Durham,CD,2007,population_estimate,594159,count,RES-130031,2026-07-12
+3518,Durham,CD,2008,population_estimate,603287,count,RES-130031,2026-07-12
+3518,Durham,CD,2009,population_estimate,610752,count,RES-130031,2026-07-12
+3518,Durham,CD,2010,population_estimate,619722,count,RES-130031,2026-07-12
+3518,Durham,CD,2011,population_estimate,626901,count,RES-130031,2026-07-12
+3518,Durham,CD,2012,population_estimate,634901,count,RES-130031,2026-07-12
+3518,Durham,CD,2013,population_estimate,642842,count,RES-130031,2026-07-12
+3518,Durham,CD,2014,population_estimate,649810,count,RES-130031,2026-07-12
+3518,Durham,CD,2015,population_estimate,657441,count,RES-130031,2026-07-12
+3518,Durham,CD,2016,population_estimate,666428,count,RES-130031,2026-07-12
+3518,Durham,CD,2017,population_estimate,675213,count,RES-130031,2026-07-12
+3518,Durham,CD,2018,population_estimate,685703,count,RES-130031,2026-07-12
+3518,Durham,CD,2019,population_estimate,698701,count,RES-130031,2026-07-12
+3518,Durham,CD,2020,population_estimate,713969,count,RES-130031,2026-07-12
+3518,Durham,CD,2021,population_estimate,727554,count,RES-130031,2026-07-12
+3518,Durham,CD,2022,population_estimate,745723,count,RES-130031,2026-07-12
+3518,Durham,CD,2023,population_estimate,767702,count,RES-130031,2026-07-12
+3518,Durham,CD,2024,population_estimate,792999,count,RES-130031,2026-07-12
+3518,Durham,CD,2025,population_estimate,810075,count,RES-130031,2026-07-12
+3519,York,CD,2001,population_estimate,763099,count,RES-130031,2026-07-12
+3519,York,CD,2002,population_estimate,807567,count,RES-130031,2026-07-12
+3519,York,CD,2003,population_estimate,844403,count,RES-130031,2026-07-12
+3519,York,CD,2004,population_estimate,877690,count,RES-130031,2026-07-12
+3519,York,CD,2005,population_estimate,904624,count,RES-130031,2026-07-12
+3519,York,CD,2006,population_estimate,932674,count,RES-130031,2026-07-12
+3519,York,CD,2007,population_estimate,963032,count,RES-130031,2026-07-12
+3519,York,CD,2008,population_estimate,991199,count,RES-130031,2026-07-12
+3519,York,CD,2009,population_estimate,1016868,count,RES-130031,2026-07-12
+3519,York,CD,2010,population_estimate,1044356,count,RES-130031,2026-07-12
+3519,York,CD,2011,population_estimate,1065813,count,RES-130031,2026-07-12
+3519,York,CD,2012,population_estimate,1086008,count,RES-130031,2026-07-12
+3519,York,CD,2013,population_estimate,1104992,count,RES-130031,2026-07-12
+3519,York,CD,2014,population_estimate,1120261,count,RES-130031,2026-07-12
+3519,York,CD,2015,population_estimate,1131221,count,RES-130031,2026-07-12
+3519,York,CD,2016,population_estimate,1144065,count,RES-130031,2026-07-12
+3519,York,CD,2017,population_estimate,1151540,count,RES-130031,2026-07-12
+3519,York,CD,2018,population_estimate,1167299,count,RES-130031,2026-07-12
+3519,York,CD,2019,population_estimate,1192424,count,RES-130031,2026-07-12
+3519,York,CD,2020,population_estimate,1211591,count,RES-130031,2026-07-12
+3519,York,CD,2021,population_estimate,1220989,count,RES-130031,2026-07-12
+3519,York,CD,2022,population_estimate,1230822,count,RES-130031,2026-07-12
+3519,York,CD,2023,population_estimate,1252318,count,RES-130031,2026-07-12
+3519,York,CD,2024,population_estimate,1288059,count,RES-130031,2026-07-12
+3519,York,CD,2025,population_estimate,1299177,count,RES-130031,2026-07-12
+3520,Toronto,CD,2001,population_estimate,2583704,count,RES-130031,2026-07-12
+3520,Toronto,CD,2002,population_estimate,2603655,count,RES-130031,2026-07-12
+3520,Toronto,CD,2003,population_estimate,2595755,count,RES-130031,2026-07-12
+3520,Toronto,CD,2004,population_estimate,2591737,count,RES-130031,2026-07-12
+3520,Toronto,CD,2005,population_estimate,2595326,count,RES-130031,2026-07-12
+3520,Toronto,CD,2006,population_estimate,2608715,count,RES-130031,2026-07-12
+3520,Toronto,CD,2007,population_estimate,2613670,count,RES-130031,2026-07-12
+3520,Toronto,CD,2008,population_estimate,2626790,count,RES-130031,2026-07-12
+3520,Toronto,CD,2009,population_estimate,2648782,count,RES-130031,2026-07-12
+3520,Toronto,CD,2010,population_estimate,2674738,count,RES-130031,2026-07-12
+3520,Toronto,CD,2011,population_estimate,2704692,count,RES-130031,2026-07-12
+3520,Toronto,CD,2012,population_estimate,2737041,count,RES-130031,2026-07-12
+3520,Toronto,CD,2013,population_estimate,2764175,count,RES-130031,2026-07-12
+3520,Toronto,CD,2014,population_estimate,2788656,count,RES-130031,2026-07-12
+3520,Toronto,CD,2015,population_estimate,2800240,count,RES-130031,2026-07-12
+3520,Toronto,CD,2016,population_estimate,2822610,count,RES-130031,2026-07-12
+3520,Toronto,CD,2017,population_estimate,2856557,count,RES-130031,2026-07-12
+3520,Toronto,CD,2018,population_estimate,2903971,count,RES-130031,2026-07-12
+3520,Toronto,CD,2019,population_estimate,2939364,count,RES-130031,2026-07-12
+3520,Toronto,CD,2020,population_estimate,2952366,count,RES-130031,2026-07-12
+3520,Toronto,CD,2021,population_estimate,2917666,count,RES-130031,2026-07-12
+3520,Toronto,CD,2022,population_estimate,2988742,count,RES-130031,2026-07-12
+3520,Toronto,CD,2023,population_estimate,3134010,count,RES-130031,2026-07-12
+3520,Toronto,CD,2024,population_estimate,3280417,count,RES-130031,2026-07-12
+3520,Toronto,CD,2025,population_estimate,3271830,count,RES-130031,2026-07-12
+3521,Peel,CD,2001,population_estimate,1032436,count,RES-130031,2026-07-12
+3521,Peel,CD,2002,population_estimate,1074527,count,RES-130031,2026-07-12
+3521,Peel,CD,2003,population_estimate,1110515,count,RES-130031,2026-07-12
+3521,Peel,CD,2004,population_estimate,1146905,count,RES-130031,2026-07-12
+3521,Peel,CD,2005,population_estimate,1182490,count,RES-130031,2026-07-12
+3521,Peel,CD,2006,population_estimate,1213467,count,RES-130031,2026-07-12
+3521,Peel,CD,2007,population_estimate,1244602,count,RES-130031,2026-07-12
+3521,Peel,CD,2008,population_estimate,1272212,count,RES-130031,2026-07-12
+3521,Peel,CD,2009,population_estimate,1294728,count,RES-130031,2026-07-12
+3521,Peel,CD,2010,population_estimate,1318227,count,RES-130031,2026-07-12
+3521,Peel,CD,2011,population_estimate,1339638,count,RES-130031,2026-07-12
+3521,Peel,CD,2012,population_estimate,1357028,count,RES-130031,2026-07-12
+3521,Peel,CD,2013,population_estimate,1374444,count,RES-130031,2026-07-12
+3521,Peel,CD,2014,population_estimate,1387350,count,RES-130031,2026-07-12
+3521,Peel,CD,2015,population_estimate,1400469,count,RES-130031,2026-07-12
+3521,Peel,CD,2016,population_estimate,1428097,count,RES-130031,2026-07-12
+3521,Peel,CD,2017,population_estimate,1451139,count,RES-130031,2026-07-12
+3521,Peel,CD,2018,population_estimate,1479096,count,RES-130031,2026-07-12
+3521,Peel,CD,2019,population_estimate,1510066,count,RES-130031,2026-07-12
+3521,Peel,CD,2020,population_estimate,1524742,count,RES-130031,2026-07-12
+3521,Peel,CD,2021,population_estimate,1514466,count,RES-130031,2026-07-12
+3521,Peel,CD,2022,population_estimate,1533610,count,RES-130031,2026-07-12
+3521,Peel,CD,2023,population_estimate,1592620,count,RES-130031,2026-07-12
+3521,Peel,CD,2024,population_estimate,1654764,count,RES-130031,2026-07-12
+3521,Peel,CD,2025,population_estimate,1632557,count,RES-130031,2026-07-12
+3522,Dufferin,CD,2001,population_estimate,53036,count,RES-130031,2026-07-12
+3522,Dufferin,CD,2002,population_estimate,53867,count,RES-130031,2026-07-12
+3522,Dufferin,CD,2003,population_estimate,54765,count,RES-130031,2026-07-12
+3522,Dufferin,CD,2004,population_estimate,55662,count,RES-130031,2026-07-12
+3522,Dufferin,CD,2005,population_estimate,56337,count,RES-130031,2026-07-12
+3522,Dufferin,CD,2006,population_estimate,56410,count,RES-130031,2026-07-12
+3522,Dufferin,CD,2007,population_estimate,56934,count,RES-130031,2026-07-12
+3522,Dufferin,CD,2008,population_estimate,57277,count,RES-130031,2026-07-12
+3522,Dufferin,CD,2009,population_estimate,57466,count,RES-130031,2026-07-12
+3522,Dufferin,CD,2010,population_estimate,57996,count,RES-130031,2026-07-12
+3522,Dufferin,CD,2011,population_estimate,58433,count,RES-130031,2026-07-12
+3522,Dufferin,CD,2012,population_estimate,58622,count,RES-130031,2026-07-12
+3522,Dufferin,CD,2013,population_estimate,59246,count,RES-130031,2026-07-12
+3522,Dufferin,CD,2014,population_estimate,60515,count,RES-130031,2026-07-12
+3522,Dufferin,CD,2015,population_estimate,62232,count,RES-130031,2026-07-12
+3522,Dufferin,CD,2016,population_estimate,63672,count,RES-130031,2026-07-12
+3522,Dufferin,CD,2017,population_estimate,65002,count,RES-130031,2026-07-12
+3522,Dufferin,CD,2018,population_estimate,66374,count,RES-130031,2026-07-12
+3522,Dufferin,CD,2019,population_estimate,67277,count,RES-130031,2026-07-12
+3522,Dufferin,CD,2020,population_estimate,68082,count,RES-130031,2026-07-12
+3522,Dufferin,CD,2021,population_estimate,69008,count,RES-130031,2026-07-12
+3522,Dufferin,CD,2022,population_estimate,70212,count,RES-130031,2026-07-12
+3522,Dufferin,CD,2023,population_estimate,71261,count,RES-130031,2026-07-12
+3522,Dufferin,CD,2024,population_estimate,72659,count,RES-130031,2026-07-12
+3522,Dufferin,CD,2025,population_estimate,73810,count,RES-130031,2026-07-12
+3523,Wellington,CD,2001,population_estimate,195010,count,RES-130031,2026-07-12
+3523,Wellington,CD,2002,population_estimate,197702,count,RES-130031,2026-07-12
+3523,Wellington,CD,2003,population_estimate,200249,count,RES-130031,2026-07-12
+3523,Wellington,CD,2004,population_estimate,203244,count,RES-130031,2026-07-12
+3523,Wellington,CD,2005,population_estimate,206493,count,RES-130031,2026-07-12
+3523,Wellington,CD,2006,population_estimate,208417,count,RES-130031,2026-07-12
+3523,Wellington,CD,2007,population_estimate,209094,count,RES-130031,2026-07-12
+3523,Wellington,CD,2008,population_estimate,210390,count,RES-130031,2026-07-12
+3523,Wellington,CD,2009,population_estimate,211518,count,RES-130031,2026-07-12
+3523,Wellington,CD,2010,population_estimate,213329,count,RES-130031,2026-07-12
+3523,Wellington,CD,2011,population_estimate,214788,count,RES-130031,2026-07-12
+3523,Wellington,CD,2012,population_estimate,217989,count,RES-130031,2026-07-12
+3523,Wellington,CD,2013,population_estimate,219999,count,RES-130031,2026-07-12
+3523,Wellington,CD,2014,population_estimate,222770,count,RES-130031,2026-07-12
+3523,Wellington,CD,2015,population_estimate,225532,count,RES-130031,2026-07-12
+3523,Wellington,CD,2016,population_estimate,229877,count,RES-130031,2026-07-12
+3523,Wellington,CD,2017,population_estimate,234405,count,RES-130031,2026-07-12
+3523,Wellington,CD,2018,population_estimate,239069,count,RES-130031,2026-07-12
+3523,Wellington,CD,2019,population_estimate,243274,count,RES-130031,2026-07-12
+3523,Wellington,CD,2020,population_estimate,247714,count,RES-130031,2026-07-12
+3523,Wellington,CD,2021,population_estimate,251427,count,RES-130031,2026-07-12
+3523,Wellington,CD,2022,population_estimate,256754,count,RES-130031,2026-07-12
+3523,Wellington,CD,2023,population_estimate,261189,count,RES-130031,2026-07-12
+3523,Wellington,CD,2024,population_estimate,265424,count,RES-130031,2026-07-12
+3523,Wellington,CD,2025,population_estimate,267650,count,RES-130031,2026-07-12
+3524,Halton,CD,2001,population_estimate,391020,count,RES-130031,2026-07-12
+3524,Halton,CD,2002,population_estimate,403494,count,RES-130031,2026-07-12
+3524,Halton,CD,2003,population_estimate,416116,count,RES-130031,2026-07-12
+3524,Halton,CD,2004,population_estimate,430848,count,RES-130031,2026-07-12
+3524,Halton,CD,2005,population_estimate,444775,count,RES-130031,2026-07-12
+3524,Halton,CD,2006,population_estimate,457899,count,RES-130031,2026-07-12
+3524,Halton,CD,2007,population_estimate,468275,count,RES-130031,2026-07-12
+3524,Halton,CD,2008,population_estimate,480537,count,RES-130031,2026-07-12
+3524,Halton,CD,2009,population_estimate,493942,count,RES-130031,2026-07-12
+3524,Halton,CD,2010,population_estimate,506770,count,RES-130031,2026-07-12
+3524,Halton,CD,2011,population_estimate,517330,count,RES-130031,2026-07-12
+3524,Halton,CD,2012,population_estimate,527692,count,RES-130031,2026-07-12
+3524,Halton,CD,2013,population_estimate,538074,count,RES-130031,2026-07-12
+3524,Halton,CD,2014,population_estimate,547104,count,RES-130031,2026-07-12
+3524,Halton,CD,2015,population_estimate,555248,count,RES-130031,2026-07-12
+3524,Halton,CD,2016,population_estimate,565533,count,RES-130031,2026-07-12
+3524,Halton,CD,2017,population_estimate,573874,count,RES-130031,2026-07-12
+3524,Halton,CD,2018,population_estimate,585724,count,RES-130031,2026-07-12
+3524,Halton,CD,2019,population_estimate,600639,count,RES-130031,2026-07-12
+3524,Halton,CD,2020,population_estimate,613398,count,RES-130031,2026-07-12
+3524,Halton,CD,2021,population_estimate,620420,count,RES-130031,2026-07-12
+3524,Halton,CD,2022,population_estimate,630537,count,RES-130031,2026-07-12
+3524,Halton,CD,2023,population_estimate,644391,count,RES-130031,2026-07-12
+3524,Halton,CD,2024,population_estimate,658986,count,RES-130031,2026-07-12
+3524,Halton,CD,2025,population_estimate,666454,count,RES-130031,2026-07-12
+3525,Hamilton,CD,2001,population_estimate,510228,count,RES-130031,2026-07-12
+3525,Hamilton,CD,2002,population_estimate,514981,count,RES-130031,2026-07-12
+3525,Hamilton,CD,2003,population_estimate,518778,count,RES-130031,2026-07-12
+3525,Hamilton,CD,2004,population_estimate,520935,count,RES-130031,2026-07-12
+3525,Hamilton,CD,2005,population_estimate,522334,count,RES-130031,2026-07-12
+3525,Hamilton,CD,2006,population_estimate,523786,count,RES-130031,2026-07-12
+3525,Hamilton,CD,2007,population_estimate,524348,count,RES-130031,2026-07-12
+3525,Hamilton,CD,2008,population_estimate,526302,count,RES-130031,2026-07-12
+3525,Hamilton,CD,2009,population_estimate,528871,count,RES-130031,2026-07-12
+3525,Hamilton,CD,2010,population_estimate,532435,count,RES-130031,2026-07-12
+3525,Hamilton,CD,2011,population_estimate,535438,count,RES-130031,2026-07-12
+3525,Hamilton,CD,2012,population_estimate,539092,count,RES-130031,2026-07-12
+3525,Hamilton,CD,2013,population_estimate,542680,count,RES-130031,2026-07-12
+3525,Hamilton,CD,2014,population_estimate,545703,count,RES-130031,2026-07-12
+3525,Hamilton,CD,2015,population_estimate,548384,count,RES-130031,2026-07-12
+3525,Hamilton,CD,2016,population_estimate,553623,count,RES-130031,2026-07-12
+3525,Hamilton,CD,2017,population_estimate,562009,count,RES-130031,2026-07-12
+3525,Hamilton,CD,2018,population_estimate,569481,count,RES-130031,2026-07-12
+3525,Hamilton,CD,2019,population_estimate,578790,count,RES-130031,2026-07-12
+3525,Hamilton,CD,2020,population_estimate,588282,count,RES-130031,2026-07-12
+3525,Hamilton,CD,2021,population_estimate,594074,count,RES-130031,2026-07-12
+3525,Hamilton,CD,2022,population_estimate,602649,count,RES-130031,2026-07-12
+3525,Hamilton,CD,2023,population_estimate,616383,count,RES-130031,2026-07-12
+3525,Hamilton,CD,2024,population_estimate,633239,count,RES-130031,2026-07-12
+3525,Hamilton,CD,2025,population_estimate,640465,count,RES-130031,2026-07-12
+3526,Niagara,CD,2001,population_estimate,427006,count,RES-130031,2026-07-12
+3526,Niagara,CD,2002,population_estimate,430492,count,RES-130031,2026-07-12
+3526,Niagara,CD,2003,population_estimate,433600,count,RES-130031,2026-07-12
+3526,Niagara,CD,2004,population_estimate,437364,count,RES-130031,2026-07-12
+3526,Niagara,CD,2005,population_estimate,440271,count,RES-130031,2026-07-12
+3526,Niagara,CD,2006,population_estimate,442481,count,RES-130031,2026-07-12
+3526,Niagara,CD,2007,population_estimate,441761,count,RES-130031,2026-07-12
+3526,Niagara,CD,2008,population_estimate,441148,count,RES-130031,2026-07-12
+3526,Niagara,CD,2009,population_estimate,441059,count,RES-130031,2026-07-12
+3526,Niagara,CD,2010,population_estimate,442085,count,RES-130031,2026-07-12
+3526,Niagara,CD,2011,population_estimate,443099,count,RES-130031,2026-07-12
+3526,Niagara,CD,2012,population_estimate,445844,count,RES-130031,2026-07-12
+3526,Niagara,CD,2013,population_estimate,447850,count,RES-130031,2026-07-12
+3526,Niagara,CD,2014,population_estimate,450656,count,RES-130031,2026-07-12
+3526,Niagara,CD,2015,population_estimate,454612,count,RES-130031,2026-07-12
+3526,Niagara,CD,2016,population_estimate,460651,count,RES-130031,2026-07-12
+3526,Niagara,CD,2017,population_estimate,468575,count,RES-130031,2026-07-12
+3526,Niagara,CD,2018,population_estimate,476622,count,RES-130031,2026-07-12
+3526,Niagara,CD,2019,population_estimate,484571,count,RES-130031,2026-07-12
+3526,Niagara,CD,2020,population_estimate,490443,count,RES-130031,2026-07-12
+3526,Niagara,CD,2021,population_estimate,497159,count,RES-130031,2026-07-12
+3526,Niagara,CD,2022,population_estimate,508956,count,RES-130031,2026-07-12
+3526,Niagara,CD,2023,population_estimate,524558,count,RES-130031,2026-07-12
+3526,Niagara,CD,2024,population_estimate,540611,count,RES-130031,2026-07-12
+3526,Niagara,CD,2025,population_estimate,551128,count,RES-130031,2026-07-12
+3528,Haldimand-Norfolk,CD,2001,population_estimate,109504,count,RES-130031,2026-07-12
+3528,Haldimand-Norfolk,CD,2002,population_estimate,110152,count,RES-130031,2026-07-12
+3528,Haldimand-Norfolk,CD,2003,population_estimate,110716,count,RES-130031,2026-07-12
+3528,Haldimand-Norfolk,CD,2004,population_estimate,111407,count,RES-130031,2026-07-12
+3528,Haldimand-Norfolk,CD,2005,population_estimate,111835,count,RES-130031,2026-07-12
+3528,Haldimand-Norfolk,CD,2006,population_estimate,112379,count,RES-130031,2026-07-12
+3528,Haldimand-Norfolk,CD,2007,population_estimate,112055,count,RES-130031,2026-07-12
+3528,Haldimand-Norfolk,CD,2008,population_estimate,112274,count,RES-130031,2026-07-12
+3528,Haldimand-Norfolk,CD,2009,population_estimate,112158,count,RES-130031,2026-07-12
+3528,Haldimand-Norfolk,CD,2010,population_estimate,112025,count,RES-130031,2026-07-12
+3528,Haldimand-Norfolk,CD,2011,population_estimate,111825,count,RES-130031,2026-07-12
+3528,Haldimand-Norfolk,CD,2012,population_estimate,111401,count,RES-130031,2026-07-12
+3528,Haldimand-Norfolk,CD,2013,population_estimate,111289,count,RES-130031,2026-07-12
+3528,Haldimand-Norfolk,CD,2014,population_estimate,111544,count,RES-130031,2026-07-12
+3528,Haldimand-Norfolk,CD,2015,population_estimate,112426,count,RES-130031,2026-07-12
+3528,Haldimand-Norfolk,CD,2016,population_estimate,113648,count,RES-130031,2026-07-12
+3528,Haldimand-Norfolk,CD,2017,population_estimate,114750,count,RES-130031,2026-07-12
+3528,Haldimand-Norfolk,CD,2018,population_estimate,117632,count,RES-130031,2026-07-12
+3528,Haldimand-Norfolk,CD,2019,population_estimate,119461,count,RES-130031,2026-07-12
+3528,Haldimand-Norfolk,CD,2020,population_estimate,120759,count,RES-130031,2026-07-12
+3528,Haldimand-Norfolk,CD,2021,population_estimate,122738,count,RES-130031,2026-07-12
+3528,Haldimand-Norfolk,CD,2022,population_estimate,125728,count,RES-130031,2026-07-12
+3528,Haldimand-Norfolk,CD,2023,population_estimate,128110,count,RES-130031,2026-07-12
+3528,Haldimand-Norfolk,CD,2024,population_estimate,130306,count,RES-130031,2026-07-12
+3528,Haldimand-Norfolk,CD,2025,population_estimate,133027,count,RES-130031,2026-07-12
+3529,Brant,CD,2001,population_estimate,128921,count,RES-130031,2026-07-12
+3529,Brant,CD,2002,population_estimate,130079,count,RES-130031,2026-07-12
+3529,Brant,CD,2003,population_estimate,131589,count,RES-130031,2026-07-12
+3529,Brant,CD,2004,population_estimate,133122,count,RES-130031,2026-07-12
+3529,Brant,CD,2005,population_estimate,134948,count,RES-130031,2026-07-12
+3529,Brant,CD,2006,population_estimate,135893,count,RES-130031,2026-07-12
+3529,Brant,CD,2007,population_estimate,136537,count,RES-130031,2026-07-12
+3529,Brant,CD,2008,population_estimate,137246,count,RES-130031,2026-07-12
+3529,Brant,CD,2009,population_estimate,138165,count,RES-130031,2026-07-12
+3529,Brant,CD,2010,population_estimate,138987,count,RES-130031,2026-07-12
+3529,Brant,CD,2011,population_estimate,139881,count,RES-130031,2026-07-12
+3529,Brant,CD,2012,population_estimate,140467,count,RES-130031,2026-07-12
+3529,Brant,CD,2013,population_estimate,141369,count,RES-130031,2026-07-12
+3529,Brant,CD,2014,population_estimate,142138,count,RES-130031,2026-07-12
+3529,Brant,CD,2015,population_estimate,143064,count,RES-130031,2026-07-12
+3529,Brant,CD,2016,population_estimate,144469,count,RES-130031,2026-07-12
+3529,Brant,CD,2017,population_estimate,146759,count,RES-130031,2026-07-12
+3529,Brant,CD,2018,population_estimate,148962,count,RES-130031,2026-07-12
+3529,Brant,CD,2019,population_estimate,151596,count,RES-130031,2026-07-12
+3529,Brant,CD,2020,population_estimate,154212,count,RES-130031,2026-07-12
+3529,Brant,CD,2021,population_estimate,157407,count,RES-130031,2026-07-12
+3529,Brant,CD,2022,population_estimate,162229,count,RES-130031,2026-07-12
+3529,Brant,CD,2023,population_estimate,168030,count,RES-130031,2026-07-12
+3529,Brant,CD,2024,population_estimate,174183,count,RES-130031,2026-07-12
+3529,Brant,CD,2025,population_estimate,177094,count,RES-130031,2026-07-12
+3530,Waterloo,CD,2001,population_estimate,456849,count,RES-130031,2026-07-12
+3530,Waterloo,CD,2002,population_estimate,465787,count,RES-130031,2026-07-12
+3530,Waterloo,CD,2003,population_estimate,473133,count,RES-130031,2026-07-12
+3530,Waterloo,CD,2004,population_estimate,482549,count,RES-130031,2026-07-12
+3530,Waterloo,CD,2005,population_estimate,491012,count,RES-130031,2026-07-12
+3530,Waterloo,CD,2006,population_estimate,498582,count,RES-130031,2026-07-12
+3530,Waterloo,CD,2007,population_estimate,503139,count,RES-130031,2026-07-12
+3530,Waterloo,CD,2008,population_estimate,508435,count,RES-130031,2026-07-12
+3530,Waterloo,CD,2009,population_estimate,512521,count,RES-130031,2026-07-12
+3530,Waterloo,CD,2010,population_estimate,518007,count,RES-130031,2026-07-12
+3530,Waterloo,CD,2011,population_estimate,523868,count,RES-130031,2026-07-12
+3530,Waterloo,CD,2012,population_estimate,529112,count,RES-130031,2026-07-12
+3530,Waterloo,CD,2013,population_estimate,533652,count,RES-130031,2026-07-12
+3530,Waterloo,CD,2014,population_estimate,537613,count,RES-130031,2026-07-12
+3530,Waterloo,CD,2015,population_estimate,542360,count,RES-130031,2026-07-12
+3530,Waterloo,CD,2016,population_estimate,553241,count,RES-130031,2026-07-12
+3530,Waterloo,CD,2017,population_estimate,565509,count,RES-130031,2026-07-12
+3530,Waterloo,CD,2018,population_estimate,580145,count,RES-130031,2026-07-12
+3530,Waterloo,CD,2019,population_estimate,594555,count,RES-130031,2026-07-12
+3530,Waterloo,CD,2020,population_estimate,606912,count,RES-130031,2026-07-12
+3530,Waterloo,CD,2021,population_estimate,614268,count,RES-130031,2026-07-12
+3530,Waterloo,CD,2022,population_estimate,639293,count,RES-130031,2026-07-12
+3530,Waterloo,CD,2023,population_estimate,675438,count,RES-130031,2026-07-12
+3530,Waterloo,CD,2024,population_estimate,709974,count,RES-130031,2026-07-12
+3530,Waterloo,CD,2025,population_estimate,711457,count,RES-130031,2026-07-12
+3531,Perth,CD,2001,population_estimate,76511,count,RES-130031,2026-07-12
+3531,Perth,CD,2002,population_estimate,76845,count,RES-130031,2026-07-12
+3531,Perth,CD,2003,population_estimate,77303,count,RES-130031,2026-07-12
+3531,Perth,CD,2004,population_estimate,77340,count,RES-130031,2026-07-12
+3531,Perth,CD,2005,population_estimate,77167,count,RES-130031,2026-07-12
+3531,Perth,CD,2006,population_estimate,77025,count,RES-130031,2026-07-12
+3531,Perth,CD,2007,population_estimate,76949,count,RES-130031,2026-07-12
+3531,Perth,CD,2008,population_estimate,76907,count,RES-130031,2026-07-12
+3531,Perth,CD,2009,population_estimate,77071,count,RES-130031,2026-07-12
+3531,Perth,CD,2010,population_estimate,77023,count,RES-130031,2026-07-12
+3531,Perth,CD,2011,population_estimate,77103,count,RES-130031,2026-07-12
+3531,Perth,CD,2012,population_estimate,77557,count,RES-130031,2026-07-12
+3531,Perth,CD,2013,population_estimate,77833,count,RES-130031,2026-07-12
+3531,Perth,CD,2014,population_estimate,78075,count,RES-130031,2026-07-12
+3531,Perth,CD,2015,population_estimate,78304,count,RES-130031,2026-07-12
+3531,Perth,CD,2016,population_estimate,78884,count,RES-130031,2026-07-12
+3531,Perth,CD,2017,population_estimate,79966,count,RES-130031,2026-07-12
+3531,Perth,CD,2018,population_estimate,81312,count,RES-130031,2026-07-12
+3531,Perth,CD,2019,population_estimate,82534,count,RES-130031,2026-07-12
+3531,Perth,CD,2020,population_estimate,83792,count,RES-130031,2026-07-12
+3531,Perth,CD,2021,population_estimate,85199,count,RES-130031,2026-07-12
+3531,Perth,CD,2022,population_estimate,86528,count,RES-130031,2026-07-12
+3531,Perth,CD,2023,population_estimate,87812,count,RES-130031,2026-07-12
+3531,Perth,CD,2024,population_estimate,89018,count,RES-130031,2026-07-12
+3531,Perth,CD,2025,population_estimate,90026,count,RES-130031,2026-07-12
+3532,Oxford,CD,2001,population_estimate,103191,count,RES-130031,2026-07-12
+3532,Oxford,CD,2002,population_estimate,103621,count,RES-130031,2026-07-12
+3532,Oxford,CD,2003,population_estimate,104435,count,RES-130031,2026-07-12
+3532,Oxford,CD,2004,population_estimate,105032,count,RES-130031,2026-07-12
+3532,Oxford,CD,2005,population_estimate,106023,count,RES-130031,2026-07-12
+3532,Oxford,CD,2006,population_estimate,106497,count,RES-130031,2026-07-12
+3532,Oxford,CD,2007,population_estimate,106370,count,RES-130031,2026-07-12
+3532,Oxford,CD,2008,population_estimate,106788,count,RES-130031,2026-07-12
+3532,Oxford,CD,2009,population_estimate,107064,count,RES-130031,2026-07-12
+3532,Oxford,CD,2010,population_estimate,107815,count,RES-130031,2026-07-12
+3532,Oxford,CD,2011,population_estimate,108653,count,RES-130031,2026-07-12
+3532,Oxford,CD,2012,population_estimate,110021,count,RES-130031,2026-07-12
+3532,Oxford,CD,2013,population_estimate,110648,count,RES-130031,2026-07-12
+3532,Oxford,CD,2014,population_estimate,111773,count,RES-130031,2026-07-12
+3532,Oxford,CD,2015,population_estimate,112446,count,RES-130031,2026-07-12
+3532,Oxford,CD,2016,population_estimate,114060,count,RES-130031,2026-07-12
+3532,Oxford,CD,2017,population_estimate,116319,count,RES-130031,2026-07-12
+3532,Oxford,CD,2018,population_estimate,118828,count,RES-130031,2026-07-12
+3532,Oxford,CD,2019,population_estimate,121212,count,RES-130031,2026-07-12
+3532,Oxford,CD,2020,population_estimate,123653,count,RES-130031,2026-07-12
+3532,Oxford,CD,2021,population_estimate,126731,count,RES-130031,2026-07-12
+3532,Oxford,CD,2022,population_estimate,129956,count,RES-130031,2026-07-12
+3532,Oxford,CD,2023,population_estimate,132975,count,RES-130031,2026-07-12
+3532,Oxford,CD,2024,population_estimate,136140,count,RES-130031,2026-07-12
+3532,Oxford,CD,2025,population_estimate,139345,count,RES-130031,2026-07-12
+3534,Elgin,CD,2001,population_estimate,84702,count,RES-130031,2026-07-12
+3534,Elgin,CD,2002,population_estimate,85203,count,RES-130031,2026-07-12
+3534,Elgin,CD,2003,population_estimate,85760,count,RES-130031,2026-07-12
+3534,Elgin,CD,2004,population_estimate,86760,count,RES-130031,2026-07-12
+3534,Elgin,CD,2005,population_estimate,87494,count,RES-130031,2026-07-12
+3534,Elgin,CD,2006,population_estimate,88567,count,RES-130031,2026-07-12
+3534,Elgin,CD,2007,population_estimate,89075,count,RES-130031,2026-07-12
+3534,Elgin,CD,2008,population_estimate,89267,count,RES-130031,2026-07-12
+3534,Elgin,CD,2009,population_estimate,89110,count,RES-130031,2026-07-12
+3534,Elgin,CD,2010,population_estimate,89506,count,RES-130031,2026-07-12
+3534,Elgin,CD,2011,population_estimate,89829,count,RES-130031,2026-07-12
+3534,Elgin,CD,2012,population_estimate,89994,count,RES-130031,2026-07-12
+3534,Elgin,CD,2013,population_estimate,90171,count,RES-130031,2026-07-12
+3534,Elgin,CD,2014,population_estimate,90340,count,RES-130031,2026-07-12
+3534,Elgin,CD,2015,population_estimate,90602,count,RES-130031,2026-07-12
+3534,Elgin,CD,2016,population_estimate,91382,count,RES-130031,2026-07-12
+3534,Elgin,CD,2017,population_estimate,92495,count,RES-130031,2026-07-12
+3534,Elgin,CD,2018,population_estimate,93731,count,RES-130031,2026-07-12
+3534,Elgin,CD,2019,population_estimate,95356,count,RES-130031,2026-07-12
+3534,Elgin,CD,2020,population_estimate,96829,count,RES-130031,2026-07-12
+3534,Elgin,CD,2021,population_estimate,98538,count,RES-130031,2026-07-12
+3534,Elgin,CD,2022,population_estimate,100427,count,RES-130031,2026-07-12
+3534,Elgin,CD,2023,population_estimate,102498,count,RES-130031,2026-07-12
+3534,Elgin,CD,2024,population_estimate,104432,count,RES-130031,2026-07-12
+3534,Elgin,CD,2025,population_estimate,106644,count,RES-130031,2026-07-12
+3536,Chatham-Kent,CD,2001,population_estimate,111892,count,RES-130031,2026-07-12
+3536,Chatham-Kent,CD,2002,population_estimate,111546,count,RES-130031,2026-07-12
+3536,Chatham-Kent,CD,2003,population_estimate,111670,count,RES-130031,2026-07-12
+3536,Chatham-Kent,CD,2004,population_estimate,111576,count,RES-130031,2026-07-12
+3536,Chatham-Kent,CD,2005,population_estimate,112188,count,RES-130031,2026-07-12
+3536,Chatham-Kent,CD,2006,population_estimate,112280,count,RES-130031,2026-07-12
+3536,Chatham-Kent,CD,2007,population_estimate,111088,count,RES-130031,2026-07-12
+3536,Chatham-Kent,CD,2008,population_estimate,109881,count,RES-130031,2026-07-12
+3536,Chatham-Kent,CD,2009,population_estimate,108705,count,RES-130031,2026-07-12
+3536,Chatham-Kent,CD,2010,population_estimate,107473,count,RES-130031,2026-07-12
+3536,Chatham-Kent,CD,2011,population_estimate,106613,count,RES-130031,2026-07-12
+3536,Chatham-Kent,CD,2012,population_estimate,105982,count,RES-130031,2026-07-12
+3536,Chatham-Kent,CD,2013,population_estimate,105477,count,RES-130031,2026-07-12
+3536,Chatham-Kent,CD,2014,population_estimate,105143,count,RES-130031,2026-07-12
+3536,Chatham-Kent,CD,2015,population_estimate,104511,count,RES-130031,2026-07-12
+3536,Chatham-Kent,CD,2016,population_estimate,104593,count,RES-130031,2026-07-12
+3536,Chatham-Kent,CD,2017,population_estimate,105191,count,RES-130031,2026-07-12
+3536,Chatham-Kent,CD,2018,population_estimate,105783,count,RES-130031,2026-07-12
+3536,Chatham-Kent,CD,2019,population_estimate,106261,count,RES-130031,2026-07-12
+3536,Chatham-Kent,CD,2020,population_estimate,107248,count,RES-130031,2026-07-12
+3536,Chatham-Kent,CD,2021,population_estimate,108266,count,RES-130031,2026-07-12
+3536,Chatham-Kent,CD,2022,population_estimate,109439,count,RES-130031,2026-07-12
+3536,Chatham-Kent,CD,2023,population_estimate,110470,count,RES-130031,2026-07-12
+3536,Chatham-Kent,CD,2024,population_estimate,111691,count,RES-130031,2026-07-12
+3536,Chatham-Kent,CD,2025,population_estimate,113070,count,RES-130031,2026-07-12
+3537,Essex,CD,2001,population_estimate,390758,count,RES-130031,2026-07-12
+3537,Essex,CD,2002,population_estimate,397718,count,RES-130031,2026-07-12
+3537,Essex,CD,2003,population_estimate,402059,count,RES-130031,2026-07-12
+3537,Essex,CD,2004,population_estimate,405577,count,RES-130031,2026-07-12
+3537,Essex,CD,2005,population_estimate,407884,count,RES-130031,2026-07-12
+3537,Essex,CD,2006,population_estimate,408787,count,RES-130031,2026-07-12
+3537,Essex,CD,2007,population_estimate,407309,count,RES-130031,2026-07-12
+3537,Essex,CD,2008,population_estimate,404397,count,RES-130031,2026-07-12
+3537,Essex,CD,2009,population_estimate,401322,count,RES-130031,2026-07-12
+3537,Essex,CD,2010,population_estimate,400136,count,RES-130031,2026-07-12
+3537,Essex,CD,2011,population_estimate,399693,count,RES-130031,2026-07-12
+3537,Essex,CD,2012,population_estimate,400841,count,RES-130031,2026-07-12
+3537,Essex,CD,2013,population_estimate,403913,count,RES-130031,2026-07-12
+3537,Essex,CD,2014,population_estimate,405229,count,RES-130031,2026-07-12
+3537,Essex,CD,2015,population_estimate,405905,count,RES-130031,2026-07-12
+3537,Essex,CD,2016,population_estimate,410996,count,RES-130031,2026-07-12
+3537,Essex,CD,2017,population_estimate,417046,count,RES-130031,2026-07-12
+3537,Essex,CD,2018,population_estimate,426723,count,RES-130031,2026-07-12
+3537,Essex,CD,2019,population_estimate,434247,count,RES-130031,2026-07-12
+3537,Essex,CD,2020,population_estimate,438724,count,RES-130031,2026-07-12
+3537,Essex,CD,2021,population_estimate,439914,count,RES-130031,2026-07-12
+3537,Essex,CD,2022,population_estimate,453666,count,RES-130031,2026-07-12
+3537,Essex,CD,2023,population_estimate,470108,count,RES-130031,2026-07-12
+3537,Essex,CD,2024,population_estimate,485140,count,RES-130031,2026-07-12
+3537,Essex,CD,2025,population_estimate,489176,count,RES-130031,2026-07-12
+3538,Lambton,CD,2001,population_estimate,131818,count,RES-130031,2026-07-12
+3538,Lambton,CD,2002,population_estimate,132311,count,RES-130031,2026-07-12
+3538,Lambton,CD,2003,population_estimate,132416,count,RES-130031,2026-07-12
+3538,Lambton,CD,2004,population_estimate,132487,count,RES-130031,2026-07-12
+3538,Lambton,CD,2005,population_estimate,132505,count,RES-130031,2026-07-12
+3538,Lambton,CD,2006,population_estimate,132498,count,RES-130031,2026-07-12
+3538,Lambton,CD,2007,population_estimate,132253,count,RES-130031,2026-07-12
+3538,Lambton,CD,2008,population_estimate,132019,count,RES-130031,2026-07-12
+3538,Lambton,CD,2009,population_estimate,131766,count,RES-130031,2026-07-12
+3538,Lambton,CD,2010,population_estimate,131534,count,RES-130031,2026-07-12
+3538,Lambton,CD,2011,population_estimate,131373,count,RES-130031,2026-07-12
+3538,Lambton,CD,2012,population_estimate,131158,count,RES-130031,2026-07-12
+3538,Lambton,CD,2013,population_estimate,130553,count,RES-130031,2026-07-12
+3538,Lambton,CD,2014,population_estimate,130197,count,RES-130031,2026-07-12
+3538,Lambton,CD,2015,population_estimate,129788,count,RES-130031,2026-07-12
+3538,Lambton,CD,2016,population_estimate,129859,count,RES-130031,2026-07-12
+3538,Lambton,CD,2017,population_estimate,130547,count,RES-130031,2026-07-12
+3538,Lambton,CD,2018,population_estimate,132262,count,RES-130031,2026-07-12
+3538,Lambton,CD,2019,population_estimate,133555,count,RES-130031,2026-07-12
+3538,Lambton,CD,2020,population_estimate,134221,count,RES-130031,2026-07-12
+3538,Lambton,CD,2021,population_estimate,134665,count,RES-130031,2026-07-12
+3538,Lambton,CD,2022,population_estimate,137776,count,RES-130031,2026-07-12
+3538,Lambton,CD,2023,population_estimate,140427,count,RES-130031,2026-07-12
+3538,Lambton,CD,2024,population_estimate,143155,count,RES-130031,2026-07-12
+3538,Lambton,CD,2025,population_estimate,143729,count,RES-130031,2026-07-12
+3539,Middlesex,CD,2001,population_estimate,422090,count,RES-130031,2026-07-12
+3539,Middlesex,CD,2002,population_estimate,426905,count,RES-130031,2026-07-12
+3539,Middlesex,CD,2003,population_estimate,430167,count,RES-130031,2026-07-12
+3539,Middlesex,CD,2004,population_estimate,433975,count,RES-130031,2026-07-12
+3539,Middlesex,CD,2005,population_estimate,437178,count,RES-130031,2026-07-12
+3539,Middlesex,CD,2006,population_estimate,440802,count,RES-130031,2026-07-12
+3539,Middlesex,CD,2007,population_estimate,442884,count,RES-130031,2026-07-12
+3539,Middlesex,CD,2008,population_estimate,445783,count,RES-130031,2026-07-12
+3539,Middlesex,CD,2009,population_estimate,447640,count,RES-130031,2026-07-12
+3539,Middlesex,CD,2010,population_estimate,450221,count,RES-130031,2026-07-12
+3539,Middlesex,CD,2011,population_estimate,452730,count,RES-130031,2026-07-12
+3539,Middlesex,CD,2012,population_estimate,456058,count,RES-130031,2026-07-12
+3539,Middlesex,CD,2013,population_estimate,458362,count,RES-130031,2026-07-12
+3539,Middlesex,CD,2014,population_estimate,461295,count,RES-130031,2026-07-12
+3539,Middlesex,CD,2015,population_estimate,464912,count,RES-130031,2026-07-12
+3539,Middlesex,CD,2016,population_estimate,472420,count,RES-130031,2026-07-12
+3539,Middlesex,CD,2017,population_estimate,484463,count,RES-130031,2026-07-12
+3539,Middlesex,CD,2018,population_estimate,497915,count,RES-130031,2026-07-12
+3539,Middlesex,CD,2019,population_estimate,508594,count,RES-130031,2026-07-12
+3539,Middlesex,CD,2020,population_estimate,517731,count,RES-130031,2026-07-12
+3539,Middlesex,CD,2021,population_estimate,525235,count,RES-130031,2026-07-12
+3539,Middlesex,CD,2022,population_estimate,543145,count,RES-130031,2026-07-12
+3539,Middlesex,CD,2023,population_estimate,562671,count,RES-130031,2026-07-12
+3539,Middlesex,CD,2024,population_estimate,580277,count,RES-130031,2026-07-12
+3539,Middlesex,CD,2025,population_estimate,584933,count,RES-130031,2026-07-12
+3540,Huron,CD,2001,population_estimate,61929,count,RES-130031,2026-07-12
+3540,Huron,CD,2002,population_estimate,61823,count,RES-130031,2026-07-12
+3540,Huron,CD,2003,population_estimate,61686,count,RES-130031,2026-07-12
+3540,Huron,CD,2004,population_estimate,61504,count,RES-130031,2026-07-12
+3540,Huron,CD,2005,population_estimate,61384,count,RES-130031,2026-07-12
+3540,Huron,CD,2006,population_estimate,61207,count,RES-130031,2026-07-12
+3540,Huron,CD,2007,population_estimate,60983,count,RES-130031,2026-07-12
+3540,Huron,CD,2008,population_estimate,60927,count,RES-130031,2026-07-12
+3540,Huron,CD,2009,population_estimate,60862,count,RES-130031,2026-07-12
+3540,Huron,CD,2010,population_estimate,60644,count,RES-130031,2026-07-12
+3540,Huron,CD,2011,population_estimate,60506,count,RES-130031,2026-07-12
+3540,Huron,CD,2012,population_estimate,59838,count,RES-130031,2026-07-12
+3540,Huron,CD,2013,population_estimate,60004,count,RES-130031,2026-07-12
+3540,Huron,CD,2014,population_estimate,60058,count,RES-130031,2026-07-12
+3540,Huron,CD,2015,population_estimate,60314,count,RES-130031,2026-07-12
+3540,Huron,CD,2016,population_estimate,60694,count,RES-130031,2026-07-12
+3540,Huron,CD,2017,population_estimate,60953,count,RES-130031,2026-07-12
+3540,Huron,CD,2018,population_estimate,61817,count,RES-130031,2026-07-12
+3540,Huron,CD,2019,population_estimate,62298,count,RES-130031,2026-07-12
+3540,Huron,CD,2020,population_estimate,62836,count,RES-130031,2026-07-12
+3540,Huron,CD,2021,population_estimate,63652,count,RES-130031,2026-07-12
+3540,Huron,CD,2022,population_estimate,64848,count,RES-130031,2026-07-12
+3540,Huron,CD,2023,population_estimate,65836,count,RES-130031,2026-07-12
+3540,Huron,CD,2024,population_estimate,66562,count,RES-130031,2026-07-12
+3540,Huron,CD,2025,population_estimate,67248,count,RES-130031,2026-07-12
+3541,Bruce,CD,2001,population_estimate,66324,count,RES-130031,2026-07-12
+3541,Bruce,CD,2002,population_estimate,66919,count,RES-130031,2026-07-12
+3541,Bruce,CD,2003,population_estimate,67298,count,RES-130031,2026-07-12
+3541,Bruce,CD,2004,population_estimate,67542,count,RES-130031,2026-07-12
+3541,Bruce,CD,2005,population_estimate,67216,count,RES-130031,2026-07-12
+3541,Bruce,CD,2006,population_estimate,67379,count,RES-130031,2026-07-12
+3541,Bruce,CD,2007,population_estimate,67297,count,RES-130031,2026-07-12
+3541,Bruce,CD,2008,population_estimate,67245,count,RES-130031,2026-07-12
+3541,Bruce,CD,2009,population_estimate,67131,count,RES-130031,2026-07-12
+3541,Bruce,CD,2010,population_estimate,67539,count,RES-130031,2026-07-12
+3541,Bruce,CD,2011,population_estimate,67731,count,RES-130031,2026-07-12
+3541,Bruce,CD,2012,population_estimate,68053,count,RES-130031,2026-07-12
+3541,Bruce,CD,2013,population_estimate,68370,count,RES-130031,2026-07-12
+3541,Bruce,CD,2014,population_estimate,68701,count,RES-130031,2026-07-12
+3541,Bruce,CD,2015,population_estimate,69171,count,RES-130031,2026-07-12
+3541,Bruce,CD,2016,population_estimate,69829,count,RES-130031,2026-07-12
+3541,Bruce,CD,2017,population_estimate,70926,count,RES-130031,2026-07-12
+3541,Bruce,CD,2018,population_estimate,72081,count,RES-130031,2026-07-12
+3541,Bruce,CD,2019,population_estimate,73271,count,RES-130031,2026-07-12
+3541,Bruce,CD,2020,population_estimate,74496,count,RES-130031,2026-07-12
+3541,Bruce,CD,2021,population_estimate,76231,count,RES-130031,2026-07-12
+3541,Bruce,CD,2022,population_estimate,77634,count,RES-130031,2026-07-12
+3541,Bruce,CD,2023,population_estimate,78580,count,RES-130031,2026-07-12
+3541,Bruce,CD,2024,population_estimate,79733,count,RES-130031,2026-07-12
+3541,Bruce,CD,2025,population_estimate,80773,count,RES-130031,2026-07-12
+3542,Grey,CD,2001,population_estimate,92540,count,RES-130031,2026-07-12
+3542,Grey,CD,2002,population_estimate,93207,count,RES-130031,2026-07-12
+3542,Grey,CD,2003,population_estimate,94095,count,RES-130031,2026-07-12
+3542,Grey,CD,2004,population_estimate,94632,count,RES-130031,2026-07-12
+3542,Grey,CD,2005,population_estimate,95073,count,RES-130031,2026-07-12
+3542,Grey,CD,2006,population_estimate,95328,count,RES-130031,2026-07-12
+3542,Grey,CD,2007,population_estimate,95166,count,RES-130031,2026-07-12
+3542,Grey,CD,2008,population_estimate,95189,count,RES-130031,2026-07-12
+3542,Grey,CD,2009,population_estimate,95037,count,RES-130031,2026-07-12
+3542,Grey,CD,2010,population_estimate,95086,count,RES-130031,2026-07-12
+3542,Grey,CD,2011,population_estimate,94722,count,RES-130031,2026-07-12
+3542,Grey,CD,2012,population_estimate,94816,count,RES-130031,2026-07-12
+3542,Grey,CD,2013,population_estimate,95047,count,RES-130031,2026-07-12
+3542,Grey,CD,2014,population_estimate,95049,count,RES-130031,2026-07-12
+3542,Grey,CD,2015,population_estimate,95256,count,RES-130031,2026-07-12
+3542,Grey,CD,2016,population_estimate,96188,count,RES-130031,2026-07-12
+3542,Grey,CD,2017,population_estimate,97846,count,RES-130031,2026-07-12
+3542,Grey,CD,2018,population_estimate,99384,count,RES-130031,2026-07-12
+3542,Grey,CD,2019,population_estimate,101047,count,RES-130031,2026-07-12
+3542,Grey,CD,2020,population_estimate,102653,count,RES-130031,2026-07-12
+3542,Grey,CD,2021,population_estimate,104693,count,RES-130031,2026-07-12
+3542,Grey,CD,2022,population_estimate,107702,count,RES-130031,2026-07-12
+3542,Grey,CD,2023,population_estimate,109790,count,RES-130031,2026-07-12
+3542,Grey,CD,2024,population_estimate,112153,count,RES-130031,2026-07-12
+3542,Grey,CD,2025,population_estimate,114545,count,RES-130031,2026-07-12
+3543,Simcoe,CD,2001,population_estimate,393001,count,RES-130031,2026-07-12
+3543,Simcoe,CD,2002,population_estimate,403752,count,RES-130031,2026-07-12
+3543,Simcoe,CD,2003,population_estimate,414353,count,RES-130031,2026-07-12
+3543,Simcoe,CD,2004,population_estimate,423736,count,RES-130031,2026-07-12
+3543,Simcoe,CD,2005,population_estimate,432332,count,RES-130031,2026-07-12
+3543,Simcoe,CD,2006,population_estimate,438487,count,RES-130031,2026-07-12
+3543,Simcoe,CD,2007,population_estimate,442259,count,RES-130031,2026-07-12
+3543,Simcoe,CD,2008,population_estimate,446409,count,RES-130031,2026-07-12
+3543,Simcoe,CD,2009,population_estimate,449849,count,RES-130031,2026-07-12
+3543,Simcoe,CD,2010,population_estimate,454524,count,RES-130031,2026-07-12
+3543,Simcoe,CD,2011,population_estimate,459039,count,RES-130031,2026-07-12
+3543,Simcoe,CD,2012,population_estimate,465553,count,RES-130031,2026-07-12
+3543,Simcoe,CD,2013,population_estimate,471675,count,RES-130031,2026-07-12
+3543,Simcoe,CD,2014,population_estimate,478121,count,RES-130031,2026-07-12
+3543,Simcoe,CD,2015,population_estimate,484712,count,RES-130031,2026-07-12
+3543,Simcoe,CD,2016,population_estimate,494775,count,RES-130031,2026-07-12
+3543,Simcoe,CD,2017,population_estimate,507773,count,RES-130031,2026-07-12
+3543,Simcoe,CD,2018,population_estimate,519617,count,RES-130031,2026-07-12
+3543,Simcoe,CD,2019,population_estimate,531861,count,RES-130031,2026-07-12
+3543,Simcoe,CD,2020,population_estimate,543457,count,RES-130031,2026-07-12
+3543,Simcoe,CD,2021,population_estimate,555784,count,RES-130031,2026-07-12
+3543,Simcoe,CD,2022,population_estimate,572440,count,RES-130031,2026-07-12
+3543,Simcoe,CD,2023,population_estimate,586303,count,RES-130031,2026-07-12
+3543,Simcoe,CD,2024,population_estimate,600733,count,RES-130031,2026-07-12
+3543,Simcoe,CD,2025,population_estimate,611297,count,RES-130031,2026-07-12
+3544,Muskoka,CD,2001,population_estimate,55428,count,RES-130031,2026-07-12
+3544,Muskoka,CD,2002,population_estimate,56371,count,RES-130031,2026-07-12
+3544,Muskoka,CD,2003,population_estimate,57481,count,RES-130031,2026-07-12
+3544,Muskoka,CD,2004,population_estimate,58215,count,RES-130031,2026-07-12
+3544,Muskoka,CD,2005,population_estimate,58968,count,RES-130031,2026-07-12
+3544,Muskoka,CD,2006,population_estimate,59548,count,RES-130031,2026-07-12
+3544,Muskoka,CD,2007,population_estimate,59799,count,RES-130031,2026-07-12
+3544,Muskoka,CD,2008,population_estimate,60259,count,RES-130031,2026-07-12
+3544,Muskoka,CD,2009,population_estimate,60634,count,RES-130031,2026-07-12
+3544,Muskoka,CD,2010,population_estimate,60898,count,RES-130031,2026-07-12
+3544,Muskoka,CD,2011,population_estimate,60983,count,RES-130031,2026-07-12
+3544,Muskoka,CD,2012,population_estimate,61218,count,RES-130031,2026-07-12
+3544,Muskoka,CD,2013,population_estimate,61444,count,RES-130031,2026-07-12
+3544,Muskoka,CD,2014,population_estimate,61594,count,RES-130031,2026-07-12
+3544,Muskoka,CD,2015,population_estimate,61604,count,RES-130031,2026-07-12
+3544,Muskoka,CD,2016,population_estimate,62372,count,RES-130031,2026-07-12
+3544,Muskoka,CD,2017,population_estimate,63865,count,RES-130031,2026-07-12
+3544,Muskoka,CD,2018,population_estimate,65274,count,RES-130031,2026-07-12
+3544,Muskoka,CD,2019,population_estimate,66621,count,RES-130031,2026-07-12
+3544,Muskoka,CD,2020,population_estimate,67716,count,RES-130031,2026-07-12
+3544,Muskoka,CD,2021,population_estimate,69394,count,RES-130031,2026-07-12
+3544,Muskoka,CD,2022,population_estimate,71380,count,RES-130031,2026-07-12
+3544,Muskoka,CD,2023,population_estimate,72361,count,RES-130031,2026-07-12
+3544,Muskoka,CD,2024,population_estimate,73128,count,RES-130031,2026-07-12
+3544,Muskoka,CD,2025,population_estimate,74073,count,RES-130031,2026-07-12
+3546,Haliburton,CD,2001,population_estimate,15641,count,RES-130031,2026-07-12
+3546,Haliburton,CD,2002,population_estimate,15901,count,RES-130031,2026-07-12
+3546,Haliburton,CD,2003,population_estimate,16211,count,RES-130031,2026-07-12
+3546,Haliburton,CD,2004,population_estimate,16321,count,RES-130031,2026-07-12
+3546,Haliburton,CD,2005,population_estimate,16443,count,RES-130031,2026-07-12
+3546,Haliburton,CD,2006,population_estimate,16538,count,RES-130031,2026-07-12
+3546,Haliburton,CD,2007,population_estimate,16673,count,RES-130031,2026-07-12
+3546,Haliburton,CD,2008,population_estimate,16893,count,RES-130031,2026-07-12
+3546,Haliburton,CD,2009,population_estimate,16950,count,RES-130031,2026-07-12
+3546,Haliburton,CD,2010,population_estimate,17095,count,RES-130031,2026-07-12
+3546,Haliburton,CD,2011,population_estimate,17330,count,RES-130031,2026-07-12
+3546,Haliburton,CD,2012,population_estimate,17703,count,RES-130031,2026-07-12
+3546,Haliburton,CD,2013,population_estimate,17815,count,RES-130031,2026-07-12
+3546,Haliburton,CD,2014,population_estimate,17993,count,RES-130031,2026-07-12
+3546,Haliburton,CD,2015,population_estimate,18148,count,RES-130031,2026-07-12
+3546,Haliburton,CD,2016,population_estimate,18375,count,RES-130031,2026-07-12
+3546,Haliburton,CD,2017,population_estimate,19077,count,RES-130031,2026-07-12
+3546,Haliburton,CD,2018,population_estimate,19570,count,RES-130031,2026-07-12
+3546,Haliburton,CD,2019,population_estimate,20009,count,RES-130031,2026-07-12
+3546,Haliburton,CD,2020,population_estimate,20469,count,RES-130031,2026-07-12
+3546,Haliburton,CD,2021,population_estimate,21252,count,RES-130031,2026-07-12
+3546,Haliburton,CD,2022,population_estimate,22134,count,RES-130031,2026-07-12
+3546,Haliburton,CD,2023,population_estimate,22684,count,RES-130031,2026-07-12
+3546,Haliburton,CD,2024,population_estimate,22930,count,RES-130031,2026-07-12
+3546,Haliburton,CD,2025,population_estimate,23228,count,RES-130031,2026-07-12
+3547,Renfrew,CD,2001,population_estimate,98829,count,RES-130031,2026-07-12
+3547,Renfrew,CD,2002,population_estimate,99133,count,RES-130031,2026-07-12
+3547,Renfrew,CD,2003,population_estimate,99780,count,RES-130031,2026-07-12
+3547,Renfrew,CD,2004,population_estimate,100353,count,RES-130031,2026-07-12
+3547,Renfrew,CD,2005,population_estimate,100491,count,RES-130031,2026-07-12
+3547,Renfrew,CD,2006,population_estimate,101032,count,RES-130031,2026-07-12
+3547,Renfrew,CD,2007,population_estimate,101823,count,RES-130031,2026-07-12
+3547,Renfrew,CD,2008,population_estimate,102497,count,RES-130031,2026-07-12
+3547,Renfrew,CD,2009,population_estimate,103025,count,RES-130031,2026-07-12
+3547,Renfrew,CD,2010,population_estimate,103484,count,RES-130031,2026-07-12
+3547,Renfrew,CD,2011,population_estimate,104048,count,RES-130031,2026-07-12
+3547,Renfrew,CD,2012,population_estimate,104435,count,RES-130031,2026-07-12
+3547,Renfrew,CD,2013,population_estimate,104614,count,RES-130031,2026-07-12
+3547,Renfrew,CD,2014,population_estimate,104909,count,RES-130031,2026-07-12
+3547,Renfrew,CD,2015,population_estimate,104882,count,RES-130031,2026-07-12
+3547,Renfrew,CD,2016,population_estimate,105147,count,RES-130031,2026-07-12
+3547,Renfrew,CD,2017,population_estimate,106076,count,RES-130031,2026-07-12
+3547,Renfrew,CD,2018,population_estimate,106898,count,RES-130031,2026-07-12
+3547,Renfrew,CD,2019,population_estimate,107949,count,RES-130031,2026-07-12
+3547,Renfrew,CD,2020,population_estimate,109060,count,RES-130031,2026-07-12
+3547,Renfrew,CD,2021,population_estimate,110568,count,RES-130031,2026-07-12
+3547,Renfrew,CD,2022,population_estimate,112010,count,RES-130031,2026-07-12
+3547,Renfrew,CD,2023,population_estimate,113308,count,RES-130031,2026-07-12
+3547,Renfrew,CD,2024,population_estimate,114276,count,RES-130031,2026-07-12
+3547,Renfrew,CD,2025,population_estimate,115329,count,RES-130031,2026-07-12
+3548,Nipissing,CD,2001,population_estimate,86292,count,RES-130031,2026-07-12
+3548,Nipissing,CD,2002,population_estimate,86560,count,RES-130031,2026-07-12
+3548,Nipissing,CD,2003,population_estimate,86671,count,RES-130031,2026-07-12
+3548,Nipissing,CD,2004,population_estimate,86744,count,RES-130031,2026-07-12
+3548,Nipissing,CD,2005,population_estimate,87266,count,RES-130031,2026-07-12
+3548,Nipissing,CD,2006,population_estimate,87382,count,RES-130031,2026-07-12
+3548,Nipissing,CD,2007,population_estimate,87134,count,RES-130031,2026-07-12
+3548,Nipissing,CD,2008,population_estimate,87025,count,RES-130031,2026-07-12
+3548,Nipissing,CD,2009,population_estimate,87026,count,RES-130031,2026-07-12
+3548,Nipissing,CD,2010,population_estimate,87346,count,RES-130031,2026-07-12
+3548,Nipissing,CD,2011,population_estimate,87442,count,RES-130031,2026-07-12
+3548,Nipissing,CD,2012,population_estimate,86992,count,RES-130031,2026-07-12
+3548,Nipissing,CD,2013,population_estimate,86543,count,RES-130031,2026-07-12
+3548,Nipissing,CD,2014,population_estimate,86238,count,RES-130031,2026-07-12
+3548,Nipissing,CD,2015,population_estimate,85780,count,RES-130031,2026-07-12
+3548,Nipissing,CD,2016,population_estimate,85385,count,RES-130031,2026-07-12
+3548,Nipissing,CD,2017,population_estimate,86285,count,RES-130031,2026-07-12
+3548,Nipissing,CD,2018,population_estimate,86568,count,RES-130031,2026-07-12
+3548,Nipissing,CD,2019,population_estimate,86815,count,RES-130031,2026-07-12
+3548,Nipissing,CD,2020,population_estimate,87208,count,RES-130031,2026-07-12
+3548,Nipissing,CD,2021,population_estimate,88006,count,RES-130031,2026-07-12
+3548,Nipissing,CD,2022,population_estimate,90883,count,RES-130031,2026-07-12
+3548,Nipissing,CD,2023,population_estimate,94422,count,RES-130031,2026-07-12
+3548,Nipissing,CD,2024,population_estimate,98802,count,RES-130031,2026-07-12
+3548,Nipissing,CD,2025,population_estimate,99155,count,RES-130031,2026-07-12
+3549,Parry Sound,CD,2001,population_estimate,41141,count,RES-130031,2026-07-12
+3549,Parry Sound,CD,2002,population_estimate,41431,count,RES-130031,2026-07-12
+3549,Parry Sound,CD,2003,population_estimate,41756,count,RES-130031,2026-07-12
+3549,Parry Sound,CD,2004,population_estimate,41914,count,RES-130031,2026-07-12
+3549,Parry Sound,CD,2005,population_estimate,42121,count,RES-130031,2026-07-12
+3549,Parry Sound,CD,2006,population_estimate,42302,count,RES-130031,2026-07-12
+3549,Parry Sound,CD,2007,population_estimate,42460,count,RES-130031,2026-07-12
+3549,Parry Sound,CD,2008,population_estimate,42802,count,RES-130031,2026-07-12
+3549,Parry Sound,CD,2009,population_estimate,42758,count,RES-130031,2026-07-12
+3549,Parry Sound,CD,2010,population_estimate,43015,count,RES-130031,2026-07-12
+3549,Parry Sound,CD,2011,population_estimate,43104,count,RES-130031,2026-07-12
+3549,Parry Sound,CD,2012,population_estimate,43254,count,RES-130031,2026-07-12
+3549,Parry Sound,CD,2013,population_estimate,43253,count,RES-130031,2026-07-12
+3549,Parry Sound,CD,2014,population_estimate,43247,count,RES-130031,2026-07-12
+3549,Parry Sound,CD,2015,population_estimate,43294,count,RES-130031,2026-07-12
+3549,Parry Sound,CD,2016,population_estimate,43836,count,RES-130031,2026-07-12
+3549,Parry Sound,CD,2017,population_estimate,44699,count,RES-130031,2026-07-12
+3549,Parry Sound,CD,2018,population_estimate,45764,count,RES-130031,2026-07-12
+3549,Parry Sound,CD,2019,population_estimate,46564,count,RES-130031,2026-07-12
+3549,Parry Sound,CD,2020,population_estimate,47401,count,RES-130031,2026-07-12
+3549,Parry Sound,CD,2021,population_estimate,48473,count,RES-130031,2026-07-12
+3549,Parry Sound,CD,2022,population_estimate,49479,count,RES-130031,2026-07-12
+3549,Parry Sound,CD,2023,population_estimate,50227,count,RES-130031,2026-07-12
+3549,Parry Sound,CD,2024,population_estimate,50453,count,RES-130031,2026-07-12
+3549,Parry Sound,CD,2025,population_estimate,50892,count,RES-130031,2026-07-12
+3551,Manitoulin,CD,2001,population_estimate,12649,count,RES-130031,2026-07-12
+3551,Manitoulin,CD,2002,population_estimate,12709,count,RES-130031,2026-07-12
+3551,Manitoulin,CD,2003,population_estimate,12738,count,RES-130031,2026-07-12
+3551,Manitoulin,CD,2004,population_estimate,12824,count,RES-130031,2026-07-12
+3551,Manitoulin,CD,2005,population_estimate,12832,count,RES-130031,2026-07-12
+3551,Manitoulin,CD,2006,population_estimate,12939,count,RES-130031,2026-07-12
+3551,Manitoulin,CD,2007,population_estimate,12977,count,RES-130031,2026-07-12
+3551,Manitoulin,CD,2008,population_estimate,13106,count,RES-130031,2026-07-12
+3551,Manitoulin,CD,2009,population_estimate,13129,count,RES-130031,2026-07-12
+3551,Manitoulin,CD,2010,population_estimate,13212,count,RES-130031,2026-07-12
+3551,Manitoulin,CD,2011,population_estimate,13263,count,RES-130031,2026-07-12
+3551,Manitoulin,CD,2012,population_estimate,13412,count,RES-130031,2026-07-12
+3551,Manitoulin,CD,2013,population_estimate,13511,count,RES-130031,2026-07-12
+3551,Manitoulin,CD,2014,population_estimate,13466,count,RES-130031,2026-07-12
+3551,Manitoulin,CD,2015,population_estimate,13428,count,RES-130031,2026-07-12
+3551,Manitoulin,CD,2016,population_estimate,13473,count,RES-130031,2026-07-12
+3551,Manitoulin,CD,2017,population_estimate,13584,count,RES-130031,2026-07-12
+3551,Manitoulin,CD,2018,population_estimate,13721,count,RES-130031,2026-07-12
+3551,Manitoulin,CD,2019,population_estimate,13911,count,RES-130031,2026-07-12
+3551,Manitoulin,CD,2020,population_estimate,14051,count,RES-130031,2026-07-12
+3551,Manitoulin,CD,2021,population_estimate,14424,count,RES-130031,2026-07-12
+3551,Manitoulin,CD,2022,population_estimate,14608,count,RES-130031,2026-07-12
+3551,Manitoulin,CD,2023,population_estimate,14755,count,RES-130031,2026-07-12
+3551,Manitoulin,CD,2024,population_estimate,14819,count,RES-130031,2026-07-12
+3551,Manitoulin,CD,2025,population_estimate,14872,count,RES-130031,2026-07-12
+3552,Sudbury,CD,2001,population_estimate,24106,count,RES-130031,2026-07-12
+3552,Sudbury,CD,2002,population_estimate,23787,count,RES-130031,2026-07-12
+3552,Sudbury,CD,2003,population_estimate,23434,count,RES-130031,2026-07-12
+3552,Sudbury,CD,2004,population_estimate,23064,count,RES-130031,2026-07-12
+3552,Sudbury,CD,2005,population_estimate,22601,count,RES-130031,2026-07-12
+3552,Sudbury,CD,2006,population_estimate,22433,count,RES-130031,2026-07-12
+3552,Sudbury,CD,2007,population_estimate,22308,count,RES-130031,2026-07-12
+3552,Sudbury,CD,2008,population_estimate,22229,count,RES-130031,2026-07-12
+3552,Sudbury,CD,2009,population_estimate,22077,count,RES-130031,2026-07-12
+3552,Sudbury,CD,2010,population_estimate,21928,count,RES-130031,2026-07-12
+3552,Sudbury,CD,2011,population_estimate,21614,count,RES-130031,2026-07-12
+3552,Sudbury,CD,2012,population_estimate,21716,count,RES-130031,2026-07-12
+3552,Sudbury,CD,2013,population_estimate,21806,count,RES-130031,2026-07-12
+3552,Sudbury,CD,2014,population_estimate,21802,count,RES-130031,2026-07-12
+3552,Sudbury,CD,2015,population_estimate,21929,count,RES-130031,2026-07-12
+3552,Sudbury,CD,2016,population_estimate,21945,count,RES-130031,2026-07-12
+3552,Sudbury,CD,2017,population_estimate,22021,count,RES-130031,2026-07-12
+3552,Sudbury,CD,2018,population_estimate,22179,count,RES-130031,2026-07-12
+3552,Sudbury,CD,2019,population_estimate,22415,count,RES-130031,2026-07-12
+3552,Sudbury,CD,2020,population_estimate,22658,count,RES-130031,2026-07-12
+3552,Sudbury,CD,2021,population_estimate,23147,count,RES-130031,2026-07-12
+3552,Sudbury,CD,2022,population_estimate,23684,count,RES-130031,2026-07-12
+3552,Sudbury,CD,2023,population_estimate,23905,count,RES-130031,2026-07-12
+3552,Sudbury,CD,2024,population_estimate,24070,count,RES-130031,2026-07-12
+3552,Sudbury,CD,2025,population_estimate,24243,count,RES-130031,2026-07-12
+3553,Greater Sudbury / Grand Sudbury,CD,2001,population_estimate,161175,count,RES-130031,2026-07-12
+3553,Greater Sudbury / Grand Sudbury,CD,2002,population_estimate,160850,count,RES-130031,2026-07-12
+3553,Greater Sudbury / Grand Sudbury,CD,2003,population_estimate,161303,count,RES-130031,2026-07-12
+3553,Greater Sudbury / Grand Sudbury,CD,2004,population_estimate,161781,count,RES-130031,2026-07-12
+3553,Greater Sudbury / Grand Sudbury,CD,2005,population_estimate,162516,count,RES-130031,2026-07-12
+3553,Greater Sudbury / Grand Sudbury,CD,2006,population_estimate,163824,count,RES-130031,2026-07-12
+3553,Greater Sudbury / Grand Sudbury,CD,2007,population_estimate,164357,count,RES-130031,2026-07-12
+3553,Greater Sudbury / Grand Sudbury,CD,2008,population_estimate,165144,count,RES-130031,2026-07-12
+3553,Greater Sudbury / Grand Sudbury,CD,2009,population_estimate,165308,count,RES-130031,2026-07-12
+3553,Greater Sudbury / Grand Sudbury,CD,2010,population_estimate,164887,count,RES-130031,2026-07-12
+3553,Greater Sudbury / Grand Sudbury,CD,2011,population_estimate,164883,count,RES-130031,2026-07-12
+3553,Greater Sudbury / Grand Sudbury,CD,2012,population_estimate,165448,count,RES-130031,2026-07-12
+3553,Greater Sudbury / Grand Sudbury,CD,2013,population_estimate,165879,count,RES-130031,2026-07-12
+3553,Greater Sudbury / Grand Sudbury,CD,2014,population_estimate,165710,count,RES-130031,2026-07-12
+3553,Greater Sudbury / Grand Sudbury,CD,2015,population_estimate,165753,count,RES-130031,2026-07-12
+3553,Greater Sudbury / Grand Sudbury,CD,2016,population_estimate,166223,count,RES-130031,2026-07-12
+3553,Greater Sudbury / Grand Sudbury,CD,2017,population_estimate,167333,count,RES-130031,2026-07-12
+3553,Greater Sudbury / Grand Sudbury,CD,2018,population_estimate,169677,count,RES-130031,2026-07-12
+3553,Greater Sudbury / Grand Sudbury,CD,2019,population_estimate,170962,count,RES-130031,2026-07-12
+3553,Greater Sudbury / Grand Sudbury,CD,2020,population_estimate,172101,count,RES-130031,2026-07-12
+3553,Greater Sudbury / Grand Sudbury,CD,2021,population_estimate,172785,count,RES-130031,2026-07-12
+3553,Greater Sudbury / Grand Sudbury,CD,2022,population_estimate,175325,count,RES-130031,2026-07-12
+3553,Greater Sudbury / Grand Sudbury,CD,2023,population_estimate,180160,count,RES-130031,2026-07-12
+3553,Greater Sudbury / Grand Sudbury,CD,2024,population_estimate,187285,count,RES-130031,2026-07-12
+3553,Greater Sudbury / Grand Sudbury,CD,2025,population_estimate,188645,count,RES-130031,2026-07-12
+3554,Timiskaming,CD,2001,population_estimate,35647,count,RES-130031,2026-07-12
+3554,Timiskaming,CD,2002,population_estimate,35049,count,RES-130031,2026-07-12
+3554,Timiskaming,CD,2003,population_estimate,34666,count,RES-130031,2026-07-12
+3554,Timiskaming,CD,2004,population_estimate,34679,count,RES-130031,2026-07-12
+3554,Timiskaming,CD,2005,population_estimate,34432,count,RES-130031,2026-07-12
+3554,Timiskaming,CD,2006,population_estimate,34256,count,RES-130031,2026-07-12
+3554,Timiskaming,CD,2007,population_estimate,34230,count,RES-130031,2026-07-12
+3554,Timiskaming,CD,2008,population_estimate,34125,count,RES-130031,2026-07-12
+3554,Timiskaming,CD,2009,population_estimate,33884,count,RES-130031,2026-07-12
+3554,Timiskaming,CD,2010,population_estimate,33876,count,RES-130031,2026-07-12
+3554,Timiskaming,CD,2011,population_estimate,33860,count,RES-130031,2026-07-12
+3554,Timiskaming,CD,2012,population_estimate,33751,count,RES-130031,2026-07-12
+3554,Timiskaming,CD,2013,population_estimate,33590,count,RES-130031,2026-07-12
+3554,Timiskaming,CD,2014,population_estimate,33434,count,RES-130031,2026-07-12
+3554,Timiskaming,CD,2015,population_estimate,33176,count,RES-130031,2026-07-12
+3554,Timiskaming,CD,2016,population_estimate,32919,count,RES-130031,2026-07-12
+3554,Timiskaming,CD,2017,population_estimate,32744,count,RES-130031,2026-07-12
+3554,Timiskaming,CD,2018,population_estimate,32594,count,RES-130031,2026-07-12
+3554,Timiskaming,CD,2019,population_estimate,32530,count,RES-130031,2026-07-12
+3554,Timiskaming,CD,2020,population_estimate,32461,count,RES-130031,2026-07-12
+3554,Timiskaming,CD,2021,population_estimate,32613,count,RES-130031,2026-07-12
+3554,Timiskaming,CD,2022,population_estimate,32925,count,RES-130031,2026-07-12
+3554,Timiskaming,CD,2023,population_estimate,33074,count,RES-130031,2026-07-12
+3554,Timiskaming,CD,2024,population_estimate,33298,count,RES-130031,2026-07-12
+3554,Timiskaming,CD,2025,population_estimate,33428,count,RES-130031,2026-07-12
+3556,Cochrane,CD,2001,population_estimate,89496,count,RES-130031,2026-07-12
+3556,Cochrane,CD,2002,population_estimate,88348,count,RES-130031,2026-07-12
+3556,Cochrane,CD,2003,population_estimate,87610,count,RES-130031,2026-07-12
+3556,Cochrane,CD,2004,population_estimate,87355,count,RES-130031,2026-07-12
+3556,Cochrane,CD,2005,population_estimate,87137,count,RES-130031,2026-07-12
+3556,Cochrane,CD,2006,population_estimate,86860,count,RES-130031,2026-07-12
+3556,Cochrane,CD,2007,population_estimate,86033,count,RES-130031,2026-07-12
+3556,Cochrane,CD,2008,population_estimate,85082,count,RES-130031,2026-07-12
+3556,Cochrane,CD,2009,population_estimate,84313,count,RES-130031,2026-07-12
+3556,Cochrane,CD,2010,population_estimate,83734,count,RES-130031,2026-07-12
+3556,Cochrane,CD,2011,population_estimate,83257,count,RES-130031,2026-07-12
+3556,Cochrane,CD,2012,population_estimate,82958,count,RES-130031,2026-07-12
+3556,Cochrane,CD,2013,population_estimate,82866,count,RES-130031,2026-07-12
+3556,Cochrane,CD,2014,population_estimate,82416,count,RES-130031,2026-07-12
+3556,Cochrane,CD,2015,population_estimate,81766,count,RES-130031,2026-07-12
+3556,Cochrane,CD,2016,population_estimate,81724,count,RES-130031,2026-07-12
+3556,Cochrane,CD,2017,population_estimate,81228,count,RES-130031,2026-07-12
+3556,Cochrane,CD,2018,population_estimate,80809,count,RES-130031,2026-07-12
+3556,Cochrane,CD,2019,population_estimate,81075,count,RES-130031,2026-07-12
+3556,Cochrane,CD,2020,population_estimate,80930,count,RES-130031,2026-07-12
+3556,Cochrane,CD,2021,population_estimate,80993,count,RES-130031,2026-07-12
+3556,Cochrane,CD,2022,population_estimate,81742,count,RES-130031,2026-07-12
+3556,Cochrane,CD,2023,population_estimate,83615,count,RES-130031,2026-07-12
+3556,Cochrane,CD,2024,population_estimate,85016,count,RES-130031,2026-07-12
+3556,Cochrane,CD,2025,population_estimate,85298,count,RES-130031,2026-07-12
+3557,Algoma,CD,2001,population_estimate,123779,count,RES-130031,2026-07-12
+3557,Algoma,CD,2002,population_estimate,122642,count,RES-130031,2026-07-12
+3557,Algoma,CD,2003,population_estimate,122068,count,RES-130031,2026-07-12
+3557,Algoma,CD,2004,population_estimate,121661,count,RES-130031,2026-07-12
+3557,Algoma,CD,2005,population_estimate,121546,count,RES-130031,2026-07-12
+3557,Algoma,CD,2006,population_estimate,121120,count,RES-130031,2026-07-12
+3557,Algoma,CD,2007,population_estimate,120958,count,RES-130031,2026-07-12
+3557,Algoma,CD,2008,population_estimate,120748,count,RES-130031,2026-07-12
+3557,Algoma,CD,2009,population_estimate,120047,count,RES-130031,2026-07-12
+3557,Algoma,CD,2010,population_estimate,119771,count,RES-130031,2026-07-12
+3557,Algoma,CD,2011,population_estimate,119352,count,RES-130031,2026-07-12
+3557,Algoma,CD,2012,population_estimate,118809,count,RES-130031,2026-07-12
+3557,Algoma,CD,2013,population_estimate,118481,count,RES-130031,2026-07-12
+3557,Algoma,CD,2014,population_estimate,117836,count,RES-130031,2026-07-12
+3557,Algoma,CD,2015,population_estimate,117585,count,RES-130031,2026-07-12
+3557,Algoma,CD,2016,population_estimate,117519,count,RES-130031,2026-07-12
+3557,Algoma,CD,2017,population_estimate,117348,count,RES-130031,2026-07-12
+3557,Algoma,CD,2018,population_estimate,117531,count,RES-130031,2026-07-12
+3557,Algoma,CD,2019,population_estimate,118336,count,RES-130031,2026-07-12
+3557,Algoma,CD,2020,population_estimate,118774,count,RES-130031,2026-07-12
+3557,Algoma,CD,2021,population_estimate,118658,count,RES-130031,2026-07-12
+3557,Algoma,CD,2022,population_estimate,121147,count,RES-130031,2026-07-12
+3557,Algoma,CD,2023,population_estimate,124429,count,RES-130031,2026-07-12
+3557,Algoma,CD,2024,population_estimate,127961,count,RES-130031,2026-07-12
+3557,Algoma,CD,2025,population_estimate,128138,count,RES-130031,2026-07-12
+3558,Thunder Bay,CD,2001,population_estimate,157101,count,RES-130031,2026-07-12
+3558,Thunder Bay,CD,2002,population_estimate,156491,count,RES-130031,2026-07-12
+3558,Thunder Bay,CD,2003,population_estimate,156494,count,RES-130031,2026-07-12
+3558,Thunder Bay,CD,2004,population_estimate,156131,count,RES-130031,2026-07-12
+3558,Thunder Bay,CD,2005,population_estimate,155402,count,RES-130031,2026-07-12
+3558,Thunder Bay,CD,2006,population_estimate,154123,count,RES-130031,2026-07-12
+3558,Thunder Bay,CD,2007,population_estimate,152270,count,RES-130031,2026-07-12
+3558,Thunder Bay,CD,2008,population_estimate,151312,count,RES-130031,2026-07-12
+3558,Thunder Bay,CD,2009,population_estimate,150596,count,RES-130031,2026-07-12
+3558,Thunder Bay,CD,2010,population_estimate,150288,count,RES-130031,2026-07-12
+3558,Thunder Bay,CD,2011,population_estimate,150037,count,RES-130031,2026-07-12
+3558,Thunder Bay,CD,2012,population_estimate,150230,count,RES-130031,2026-07-12
+3558,Thunder Bay,CD,2013,population_estimate,150321,count,RES-130031,2026-07-12
+3558,Thunder Bay,CD,2014,population_estimate,150279,count,RES-130031,2026-07-12
+3558,Thunder Bay,CD,2015,population_estimate,149834,count,RES-130031,2026-07-12
+3558,Thunder Bay,CD,2016,population_estimate,150012,count,RES-130031,2026-07-12
+3558,Thunder Bay,CD,2017,population_estimate,151018,count,RES-130031,2026-07-12
+3558,Thunder Bay,CD,2018,population_estimate,151845,count,RES-130031,2026-07-12
+3558,Thunder Bay,CD,2019,population_estimate,152872,count,RES-130031,2026-07-12
+3558,Thunder Bay,CD,2020,population_estimate,153267,count,RES-130031,2026-07-12
+3558,Thunder Bay,CD,2021,population_estimate,152541,count,RES-130031,2026-07-12
+3558,Thunder Bay,CD,2022,population_estimate,153653,count,RES-130031,2026-07-12
+3558,Thunder Bay,CD,2023,population_estimate,155542,count,RES-130031,2026-07-12
+3558,Thunder Bay,CD,2024,population_estimate,157589,count,RES-130031,2026-07-12
+3558,Thunder Bay,CD,2025,population_estimate,157958,count,RES-130031,2026-07-12
+3559,Rainy River,CD,2001,population_estimate,22859,count,RES-130031,2026-07-12
+3559,Rainy River,CD,2002,population_estimate,22618,count,RES-130031,2026-07-12
+3559,Rainy River,CD,2003,population_estimate,22473,count,RES-130031,2026-07-12
+3559,Rainy River,CD,2004,population_estimate,22331,count,RES-130031,2026-07-12
+3559,Rainy River,CD,2005,population_estimate,22211,count,RES-130031,2026-07-12
+3559,Rainy River,CD,2006,population_estimate,22169,count,RES-130031,2026-07-12
+3559,Rainy River,CD,2007,population_estimate,21830,count,RES-130031,2026-07-12
+3559,Rainy River,CD,2008,population_estimate,21533,count,RES-130031,2026-07-12
+3559,Rainy River,CD,2009,population_estimate,21129,count,RES-130031,2026-07-12
+3559,Rainy River,CD,2010,population_estimate,20916,count,RES-130031,2026-07-12
+3559,Rainy River,CD,2011,population_estimate,20824,count,RES-130031,2026-07-12
+3559,Rainy River,CD,2012,population_estimate,20591,count,RES-130031,2026-07-12
+3559,Rainy River,CD,2013,population_estimate,20500,count,RES-130031,2026-07-12
+3559,Rainy River,CD,2014,population_estimate,20512,count,RES-130031,2026-07-12
+3559,Rainy River,CD,2015,population_estimate,20395,count,RES-130031,2026-07-12
+3559,Rainy River,CD,2016,population_estimate,20493,count,RES-130031,2026-07-12
+3559,Rainy River,CD,2017,population_estimate,20396,count,RES-130031,2026-07-12
+3559,Rainy River,CD,2018,population_estimate,20350,count,RES-130031,2026-07-12
+3559,Rainy River,CD,2019,population_estimate,20213,count,RES-130031,2026-07-12
+3559,Rainy River,CD,2020,population_estimate,20107,count,RES-130031,2026-07-12
+3559,Rainy River,CD,2021,population_estimate,20162,count,RES-130031,2026-07-12
+3559,Rainy River,CD,2022,population_estimate,20153,count,RES-130031,2026-07-12
+3559,Rainy River,CD,2023,population_estimate,20120,count,RES-130031,2026-07-12
+3559,Rainy River,CD,2024,population_estimate,20155,count,RES-130031,2026-07-12
+3559,Rainy River,CD,2025,population_estimate,20123,count,RES-130031,2026-07-12
+3560,Kenora,CD,2001,population_estimate,66506,count,RES-130031,2026-07-12
+3560,Kenora,CD,2002,population_estimate,66953,count,RES-130031,2026-07-12
+3560,Kenora,CD,2003,population_estimate,67712,count,RES-130031,2026-07-12
+3560,Kenora,CD,2004,population_estimate,68132,count,RES-130031,2026-07-12
+3560,Kenora,CD,2005,population_estimate,68353,count,RES-130031,2026-07-12
+3560,Kenora,CD,2006,population_estimate,68541,count,RES-130031,2026-07-12
+3560,Kenora,CD,2007,population_estimate,68084,count,RES-130031,2026-07-12
+3560,Kenora,CD,2008,population_estimate,68235,count,RES-130031,2026-07-12
+3560,Kenora,CD,2009,population_estimate,68827,count,RES-130031,2026-07-12
+3560,Kenora,CD,2010,population_estimate,69095,count,RES-130031,2026-07-12
+3560,Kenora,CD,2011,population_estimate,69564,count,RES-130031,2026-07-12
+3560,Kenora,CD,2012,population_estimate,69665,count,RES-130031,2026-07-12
+3560,Kenora,CD,2013,population_estimate,69693,count,RES-130031,2026-07-12
+3560,Kenora,CD,2014,population_estimate,69528,count,RES-130031,2026-07-12
+3560,Kenora,CD,2015,population_estimate,69413,count,RES-130031,2026-07-12
+3560,Kenora,CD,2016,population_estimate,69552,count,RES-130031,2026-07-12
+3560,Kenora,CD,2017,population_estimate,70248,count,RES-130031,2026-07-12
+3560,Kenora,CD,2018,population_estimate,70906,count,RES-130031,2026-07-12
+3560,Kenora,CD,2019,population_estimate,71566,count,RES-130031,2026-07-12
+3560,Kenora,CD,2020,population_estimate,72234,count,RES-130031,2026-07-12
+3560,Kenora,CD,2021,population_estimate,72968,count,RES-130031,2026-07-12
+3560,Kenora,CD,2022,population_estimate,73023,count,RES-130031,2026-07-12
+3560,Kenora,CD,2023,population_estimate,73084,count,RES-130031,2026-07-12
+3560,Kenora,CD,2024,population_estimate,73430,count,RES-130031,2026-07-12
+3560,Kenora,CD,2025,population_estimate,73790,count,RES-130031,2026-07-12

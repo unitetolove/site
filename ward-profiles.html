@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ward Profiles — uniteTOlove</title>
+<meta name="description" content="One honest table for all 25 Toronto wards, built strictly from cited public data — 2021 Census figures per ward, sourced and dated, with real gaps named rather than papered over.">
+<link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://unitetolove.ca/ward-profiles.html">
+<meta property="og:title" content="Ward Profiles — uniteTOlove">
+<meta property="og:description" content="One honest table for all 25 Toronto wards, built strictly from cited public data — 2021 Census figures per ward, sourced and dated.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://unitetolove.ca/ward-profiles.html">
+<meta property="og:image" content="https://unitetolove.ca/assets/og/ward-profiles.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  .ward-table-wrap { overflow-x: auto; margin: 1rem 0; }
+  .ward-table-wrap table { width: 100%; min-width: 920px; margin: 0; }
+  .ward-table-wrap td, .ward-table-wrap th { padding: 0.35em 0.6em; text-align: right; white-space: nowrap; }
+  .ward-table-wrap td:first-child, .ward-table-wrap th:first-child,
+  .ward-table-wrap td:nth-child(2), .ward-table-wrap th:nth-child(2) { text-align: left; }
+  .totals-row td { border-top: 2px solid var(--code-bg, #ccc); font-weight: 600; }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark-link" href="index.html">unite<span class="to">TO</span>love<span class="tld">.ca</span></a>
+    <nav class="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li><li><a href="projects/index.html">Projects</a></li>
+        <li><a href="vision.html">The full vision</a></li>
+        <li><a href="programs/index.html">Programs</a></li>
+        <li><a href="questions/index.html">Questions</a></li>
+        <li><a href="who.html">Who</a></li><li><a href="run/index.html">Run</a></li>
+        <li><a href="how-this-was-made.html">How this was made</a></li><li><a href="how-we-verify.html">How we verify</a></li>
+        <li><a href="corrections.html">Corrections</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<nav class="crumbs"><a href="index.html">Home</a> / Ward Profiles</nav>
+
+<main id="main">
+  <h1>Ward Profiles</h1>
+
+  <p class="lede">One table, all 25 wards, built strictly from cited public datasets &mdash; no
+  estimates, no interpolation, and no ward gets a number it doesn&rsquo;t actually have on
+  record.</p>
+
+  <p>Looking for the 2026 race itself? See <a href="elections/wards/index.html">the election math
+  for each ward</a> &mdash; the 2022 baseline margin and the 2026 filed-candidate list, one card
+  per ward.</p>
+
+  <div class="deck">Real status: v1, live. What&rsquo;s below is what the current source
+  register actually supports today: a single citywide summary table. Individual per-ward pages
+  (2026 candidates, local facilities, ward-specific issue receipts, voting info) are the
+  planned next layer &mdash; not built yet, and not implied by anything on this page.</div>
+
+  <h2>What this page is, right now</h2>
+  <p>This is the honest v1: a single summary table covering all 25 wards, drawn from the City of
+  Toronto&rsquo;s own Ward Profiles dataset. It is a citywide picture broken out by ward, not yet
+  25 individual ward pages. That fuller version &mdash; a page per ward with 2022 election
+  results, who&rsquo;s running in 2026, local libraries and community centres, and ward-specific
+  civic-issue receipts &mdash; is planned and scoped (see &ldquo;What this grows into,&rdquo;
+  below), but the underlying joins it needs (candidate lists to wards, facility locations to
+  ward boundaries, individual research claims to specific wards) haven&rsquo;t been done yet. So
+  rather than publish a thin or padded version of that page, this is a real, fully-sourced table
+  instead.</p>
+
+  <h2>Sources</h2>
+  <ul>
+    <li><strong>Ward boundaries and names:</strong> City of Toronto, <em>25 Ward Model</em> (in
+    force since December 2018) &mdash; ward numbers and names, and per-ward land area, from the
+    City&rsquo;s Ward Profiles geographic-areas file, published December 2023.</li>
+    <li><strong>Population and social/economic figures:</strong> City of Toronto Ward Profiles
+    (25-Ward Model), Statistics Canada 2021 Census custom tabulations, prepared by Strategic
+    Initiatives, Policy &amp; Analysis, City Planning Division, City of Toronto, December 2023.
+    Income figures reflect 2020 (the reference year used by the 2021 Census).</li>
+  </ul>
+  <p>Both datasets are published as open data by the City of Toronto. Full file-level provenance
+  (fetch dates, checksums) is on record in this project&rsquo;s research files and available on
+  request via the corrections channel below.</p>
+
+  <h2>The 25 wards, in numbers</h2>
+  <p>All figures as of the 2021 Census (income figures: 2020 reference year); land area as of
+  December 2023. Every column here is a real reported value &mdash; no ward row has an
+  estimated or interpolated figure.</p>
+
+  <div class="ward-table-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th>Ward</th><th>Name</th><th>Area (km&sup2;)</th><th>Population</th>
+        <th>Median age</th><th>Unemployment</th><th>Median household<br>income (2020)</th>
+        <th>Avg. monthly<br>shelter, renters</th><th>Avg. monthly<br>shelter, owners</th>
+        <th>Renters spending<br>30%+ on shelter</th><th>Owners spending<br>30%+ on shelter</th>
+        <th>Low-income<br>prevalence (LIM-AT)</th>
+      </tr>
+    </thead>
+    <tbody>
+<tr><td>1</td><td>Etobicoke North</td><td>48.4</td><td>115,120</td><td>38</td><td>16.5%</td><td>$81,000</td><td>$1,328</td><td>$1,664</td><td>34.2%</td><td>23.5%</td><td>12.9%</td></tr>
+<tr><td>2</td><td>Etobicoke Centre</td><td>37.3</td><td>117,200</td><td>45.2</td><td>12.8%</td><td>$100,000</td><td>$1,574</td><td>$1,930</td><td>39.2%</td><td>18.8%</td><td>7.9%</td></tr>
+<tr><td>3</td><td>Etobicoke-Lakeshore</td><td>40.0</td><td>139,920</td><td>40.8</td><td>11.8%</td><td>$90,000</td><td>$1,592</td><td>$2,108</td><td>40.9%</td><td>24.7%</td><td>11%</td></tr>
+<tr><td>4</td><td>Parkdale-High Park</td><td>15.3</td><td>104,715</td><td>40</td><td>12.9%</td><td>$85,000</td><td>$1,492</td><td>$2,280</td><td>39.7%</td><td>20.3%</td><td>12%</td></tr>
+<tr><td>5</td><td>York South-Weston</td><td>25.0</td><td>115,675</td><td>40.4</td><td>16.4%</td><td>$72,000</td><td>$1,196</td><td>$1,660</td><td>34.8%</td><td>22.3%</td><td>14.7%</td></tr>
+<tr><td>6</td><td>York Centre</td><td>35.4</td><td>107,355</td><td>41.6</td><td>14.1%</td><td>$82,000</td><td>$1,448</td><td>$1,918</td><td>36.1%</td><td>25.3%</td><td>11.5%</td></tr>
+<tr><td>7</td><td>Humber River-Black Creek</td><td>30.7</td><td>111,200</td><td>37.6</td><td>17.8%</td><td>$73,000</td><td>$1,261</td><td>$1,622</td><td>33.2%</td><td>24%</td><td>15.1%</td></tr>
+<tr><td>8</td><td>Eglinton-Lawrence</td><td>22.7</td><td>114,820</td><td>41.2</td><td>12.2%</td><td>$97,000</td><td>$1,588</td><td>$2,418</td><td>38%</td><td>20.3%</td><td>10.1%</td></tr>
+<tr><td>9</td><td>Davenport</td><td>12.1</td><td>104,730</td><td>38.4</td><td>13.1%</td><td>$85,000</td><td>$1,552</td><td>$1,910</td><td>41.3%</td><td>21.6%</td><td>10.8%</td></tr>
+<tr><td>10</td><td>Spadina-Fort York</td><td>12.8</td><td>135,400</td><td>32.8</td><td>9.8%</td><td>$89,000</td><td>$1,988</td><td>$2,290</td><td>43.7%</td><td>35.2%</td><td>14.1%</td></tr>
+<tr><td>11</td><td>University-Rosedale</td><td>13.6</td><td>102,385</td><td>36.8</td><td>12.8%</td><td>$84,000</td><td>$1,976</td><td>$2,592</td><td>48.8%</td><td>29.8%</td><td>15.3%</td></tr>
+<tr><td>12</td><td>Toronto-St. Paul&rsquo;s</td><td>13.1</td><td>114,095</td><td>39.6</td><td>10.9%</td><td>$86,000</td><td>$1,768</td><td>$2,492</td><td>44.6%</td><td>24.8%</td><td>12.5%</td></tr>
+<tr><td>13</td><td>Toronto Centre</td><td>5.9</td><td>116,930</td><td>34.8</td><td>15.1%</td><td>$65,000</td><td>$1,520</td><td>$2,172</td><td>43.1%</td><td>35.1%</td><td>22.2%</td></tr>
+<tr><td>14</td><td>Toronto-Danforth</td><td>20.8</td><td>104,555</td><td>40.8</td><td>12.5%</td><td>$93,000</td><td>$1,424</td><td>$2,138</td><td>37.8%</td><td>18.2%</td><td>11.5%</td></tr>
+<tr><td>15</td><td>Don Valley West</td><td>30.3</td><td>101,025</td><td>41.2</td><td>12.1%</td><td>$102,000</td><td>$1,716</td><td>$2,968</td><td>40.9%</td><td>21.8%</td><td>12.6%</td></tr>
+<tr><td>16</td><td>Don Valley East</td><td>23.0</td><td>94,335</td><td>41.2</td><td>15.1%</td><td>$78,500</td><td>$1,492</td><td>$1,846</td><td>39.1%</td><td>26.1%</td><td>14.4%</td></tr>
+<tr><td>17</td><td>Don Valley North</td><td>24.4</td><td>112,590</td><td>40.4</td><td>14.4%</td><td>$84,000</td><td>$1,754</td><td>$1,904</td><td>43.6%</td><td>31.4%</td><td>14.4%</td></tr>
+<tr><td>18</td><td>Willowdale</td><td>19.8</td><td>117,130</td><td>39.2</td><td>12.7%</td><td>$81,000</td><td>$1,880</td><td>$2,202</td><td>49.3%</td><td>37.6%</td><td>17.8%</td></tr>
+<tr><td>19</td><td>Beaches-East York</td><td>16.8</td><td>108,500</td><td>41.2</td><td>13.4%</td><td>$89,000</td><td>$1,370</td><td>$2,168</td><td>38.6%</td><td>18.3%</td><td>11.9%</td></tr>
+<tr><td>20</td><td>Scarborough Southwest</td><td>28.1</td><td>110,095</td><td>40.8</td><td>16.4%</td><td>$79,000</td><td>$1,196</td><td>$1,872</td><td>32.3%</td><td>22.7%</td><td>13.9%</td></tr>
+<tr><td>21</td><td>Scarborough Centre</td><td>28.2</td><td>111,560</td><td>40</td><td>15.7%</td><td>$78,000</td><td>$1,338</td><td>$1,668</td><td>35.8%</td><td>26%</td><td>13.3%</td></tr>
+<tr><td>22</td><td>Scarborough-Agincourt</td><td>21.4</td><td>103,690</td><td>45.2</td><td>16.4%</td><td>$77,000</td><td>$1,358</td><td>$1,640</td><td>36%</td><td>32%</td><td>14.7%</td></tr>
+<tr><td>23</td><td>Scarborough North</td><td>30.4</td><td>94,025</td><td>42.8</td><td>17%</td><td>$87,000</td><td>$1,408</td><td>$1,636</td><td>33.3%</td><td>28.8%</td><td>11.8%</td></tr>
+<tr><td>24</td><td>Scarborough-Guildwood</td><td>26.1</td><td>102,755</td><td>38.4</td><td>16.3%</td><td>$78,000</td><td>$1,197</td><td>$1,776</td><td>31.6%</td><td>25.4%</td><td>14.7%</td></tr>
+<tr><td>25</td><td>Scarborough-Rouge Park</td><td>54.1</td><td>101,485</td><td>42</td><td>15%</td><td>$105,000</td><td>$1,362</td><td>$1,802</td><td>32.7%</td><td>20.7%</td><td>7.8%</td></tr>
+<tr class="totals-row"><td>&mdash;</td><td><strong>City of Toronto (all 25 wards)</strong></td><td>&mdash;</td><td>2,761,285</td><td>39.6</td><td>13.9%</td><td>$84,000</td><td>$1,562</td><td>$2,038</td><td>40%</td><td>25.6%</td><td>13.2%</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p><small>&ldquo;Renters/owners spending 30%+ on shelter&rdquo; is Statistics Canada&rsquo;s
+  standard shelter-cost-burden threshold, applied to tenant and owner households separately.
+  &ldquo;Low-income prevalence (LIM-AT)&rdquo; is the share of the population below Statistics
+  Canada&rsquo;s Low-Income Measure, after tax. City of Toronto totals are the citywide figures
+  as published in the same dataset, not a sum of the ward rows.</small></p>
+
+  <h2>What we don&rsquo;t have yet</h2>
+  <p>Named plainly, because the gap is honest and expected at this stage, not a defect:</p>
+  <ul>
+    <li>No per-ward breakdown of which library branches, community/recreation centres, or parks
+    sit in which ward. The City publishes those facility locations and a separate ward-boundary
+    file; joining the two (assigning each facility to a ward) is a geospatial step that hasn&rsquo;t
+    been run yet.</li>
+    <li>No per-ward 2022 election results or 2026 candidate lists on this page. Both datasets
+    exist elsewhere in this project&rsquo;s research (city-wide candidate and results data), but
+    haven&rsquo;t been joined into a ward-by-ward view here.</li>
+    <li>No ward-specific mapping of this project&rsquo;s civic-issue research to individual
+    wards. A first check of the research library for ward-specific claims found only a handful
+    across thousands of entries, and those are still pending their own verification pass &mdash;
+    not yet reliable enough to publish ward-by-ward.</li>
+    <li>The full 2021 Census ward-profile dataset covers far more than the columns shown here
+    (dwelling types, household composition, languages, education, industry and occupation,
+    immigration, Indigenous identity, and more). This table is a curated summary, not the whole
+    dataset &mdash; later versions may add more of it.</li>
+  </ul>
+
+  <h2>What this page grows into</h2>
+  <p>The plan is 25 individual ward pages, each carrying: a one-minute plain-language summary;
+  the 2022 election result for that ward; who&rsquo;s registered to run there in 2026; the
+  libraries, community centres, and parks physically in that ward; and, only where a real
+  ward-specific receipt exists, how that ward connects to this project&rsquo;s broader civic-issue
+  research. Nothing on that list gets built by guessing &mdash; each piece waits for its
+  underlying data to actually be joined to ward boundaries. Until then, this single sourced
+  table is the honest v1.</p>
+
+  <p>See something wrong, or have a better source for any figure above? Tell us &mdash;
+  <a href="corrections.html">corrections &amp; improvements</a>.</p>
+</main>
+
+<footer class="site-footer">
+  <nav aria-label="Footer">
+    <ul>
+      <li><a href="projects/index.html">Projects</a></li><li><a href="programs/index.html">Programs</a></li>
+      <li><a href="questions/index.html">Questions</a></li>
+      <li><a href="who.html">Who is the Unknown Soldier</a></li><li><a href="run/index.html">Run</a></li>
+      <li><a href="how-this-was-made.html">How this was made</a></li><li><a href="how-we-verify.html">How we verify</a></li>
+      <li><a href="corrections.html">Corrections &amp; improvements</a></li>
+    </ul>
+  </nav>
+  <p>The Unknown Soldier &middot; uniteTOlove &middot; Toronto</p>
+  <p class="ethic">Post only where you have the right to post.</p>
+  <p>This site is built with AI assistance &mdash; every claim carries a receipt regardless of who
+  drafted it. Read how: <a href="how-this-was-made.html">How this was made</a>.</p>
+  <p>No donations are asked for anywhere on this site. Contact:
+  <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a> &mdash;
+  corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+</footer>
+</body>
+</html>

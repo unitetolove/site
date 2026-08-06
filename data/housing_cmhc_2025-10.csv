@@ -1,0 +1,43 @@
+sgc_code,geo_name,geo_level,period,metric,value,unit,source_res_id,retrieved_date,proxy_note,quality_flag
+3520005,Toronto,CSD,2025-10,cmhc_rental_vacancy_rate,2.8,percent,RES-130033,2026-07-12,,a
+3520005,Toronto,CSD,2025-10,cmhc_average_rent,1916.0,CAD,RES-130033,2026-07-12,,a
+3523008,Guelph,CSD,2025-10,cmhc_rental_vacancy_rate,2.9,percent,RES-130034,2026-07-12,,a
+3523008,Guelph,CSD,2025-10,cmhc_average_rent,1759.0,CAD,RES-130034,2026-07-12,,a
+3523025,Centre Wellington,CSD,2025-10,cmhc_rental_vacancy_rate,3.7,percent,RES-130035,2026-07-12,,c
+3523025,Centre Wellington,CSD,2025-10,cmhc_average_rent,1467.0,CAD,RES-130035,2026-07-12,,a
+3506008,Ottawa,CSD,2025-10,cmhc_rental_vacancy_rate,2.9,percent,RES-130036,2026-07-12,,a
+3506008,Ottawa,CSD,2025-10,cmhc_average_rent,1741.0,CAD,RES-130036,2026-07-12,,a
+3537039,Windsor,CSD,2025-10,cmhc_rental_vacancy_rate,3.9,percent,RES-130019,2026-07-12,,b
+3537039,Windsor,CSD,2025-10,cmhc_average_rent,1241.0,CAD,RES-130019,2026-07-12,,a
+3539036,London,CSD,2025-10,cmhc_rental_vacancy_rate,3.8,percent,RES-130020,2026-07-12,,a
+3539036,London,CSD,2025-10,cmhc_average_rent,1554.0,CAD,RES-130020,2026-07-12,,a
+3510010,Kingston,CSD,2025-10,cmhc_rental_vacancy_rate,2.4,percent,RES-130021,2026-07-12,,a
+3510010,Kingston,CSD,2025-10,cmhc_average_rent,1717.0,CAD,RES-130021,2026-07-12,,a
+3553005,Greater Sudbury,CSD,2025-10,cmhc_rental_vacancy_rate,1.1,percent,RES-130022,2026-07-12,,a
+3553005,Greater Sudbury,CSD,2025-10,cmhc_average_rent,1482.0,CAD,RES-130022,2026-07-12,,a
+3525005,Hamilton,CSD,2025-10,cmhc_rental_vacancy_rate,3.9,percent,RES-130023,2026-07-12,,a
+3525005,Hamilton,CSD,2025-10,cmhc_average_rent,1439.0,CAD,RES-130023,2026-07-12,,a
+3521,Peel Region,CD,2025-10,cmhc_rental_vacancy_rate,2.8,percent,RES-130024,2026-07-12,Toronto CMA spans Peel/York/Halton/Durham/Toronto; not equivalent to Peel Region alone,a
+3521,Peel Region,CD,2025-10,cmhc_average_rent,2163.0,CAD,RES-130024,2026-07-12,Toronto CMA spans Peel/York/Halton/Durham/Toronto; not equivalent to Peel Region alone,a
+3519,York Region,CD,2025-10,cmhc_rental_vacancy_rate,2.8,percent,RES-130024,2026-07-12,Toronto CMA spans Peel/York/Halton/Durham/Toronto; not equivalent to York Region alone,a
+3519,York Region,CD,2025-10,cmhc_average_rent,2163.0,CAD,RES-130024,2026-07-12,Toronto CMA spans Peel/York/Halton/Durham/Toronto; not equivalent to York Region alone,a
+3524,Halton Region,CD,2025-10,cmhc_rental_vacancy_rate,2.8,percent,RES-130024,2026-07-12,Toronto CMA spans Peel/York/Halton/Durham/Toronto; not equivalent to Halton Region alone,a
+3524,Halton Region,CD,2025-10,cmhc_average_rent,2163.0,CAD,RES-130024,2026-07-12,Toronto CMA spans Peel/York/Halton/Durham/Toronto; not equivalent to Halton Region alone,a
+3518,Durham Region (Toronto CMA portion),CD,2025-10,cmhc_rental_vacancy_rate,2.8,percent,RES-130024,2026-07-12,Toronto CMA spans Peel/York/Halton/Durham/Toronto; covers only the Ajax/Pickering part of Durham,a
+3518,Durham Region (Toronto CMA portion),CD,2025-10,cmhc_average_rent,2163.0,CAD,RES-130024,2026-07-12,Toronto CMA spans Peel/York/Halton/Durham/Toronto; covers only the Ajax/Pickering part of Durham,a
+3518,Durham Region (Oshawa CMA portion),CD,2025-10,cmhc_rental_vacancy_rate,2.9,percent,RES-130025,2026-07-12,Oshawa CMA = Oshawa/Whitby/Clarington only; does not cover all of Durham Region,b
+3518,Durham Region (Oshawa CMA portion),CD,2025-10,cmhc_average_rent,1828.0,CAD,RES-130025,2026-07-12,Oshawa CMA = Oshawa/Whitby/Clarington only; does not cover all of Durham Region,a
+3530,Waterloo Region,CD,2025-10,cmhc_rental_vacancy_rate,3.6,percent,RES-130026,2026-07-12,Kitchener-Cambridge-Waterloo CMA boundary is close to but not proven identical to Waterloo Region,b
+3530,Waterloo Region,CD,2025-10,cmhc_average_rent,1550.0,CAD,RES-130026,2026-07-12,Kitchener-Cambridge-Waterloo CMA boundary is close to but not proven identical to Waterloo Region,a
+3526,Niagara Region,CD,2025-10,cmhc_rental_vacancy_rate,2.3,percent,RES-130027,2026-07-12,St. Catharines-Niagara CMA boundary is close to but not proven identical to Niagara Region,c
+3526,Niagara Region,CD,2025-10,cmhc_average_rent,1390.0,CAD,RES-130027,2026-07-12,St. Catharines-Niagara CMA boundary is close to but not proven identical to Niagara Region,a
+3543,Simcoe County,CD,2025-10,cmhc_rental_vacancy_rate,4.3,percent,RES-130028,2026-07-12,"Barrie is a separated single-tier city, not administratively part of Simcoe County; partial-population proxy only",b
+3543,Simcoe County,CD,2025-10,cmhc_average_rent,1699.0,CAD,RES-130028,2026-07-12,"Barrie is a separated single-tier city, not administratively part of Simcoe County; partial-population proxy only",a
+3537,Essex County,CD,2025-10,cmhc_rental_vacancy_rate,3.9,percent,RES-130019,2026-07-12,Essex County has no distinct CMHC geography; Windsor is the Service Manager's dominant centre,b
+3537,Essex County,CD,2025-10,cmhc_average_rent,1241.0,CAD,RES-130019,2026-07-12,Essex County has no distinct CMHC geography; Windsor is the Service Manager's dominant centre,a
+3539,Middlesex County,CD,2025-10,cmhc_rental_vacancy_rate,3.8,percent,RES-130020,2026-07-12,Middlesex County has no distinct CMHC geography; London is the Service Manager's dominant centre,a
+3539,Middlesex County,CD,2025-10,cmhc_average_rent,1554.0,CAD,RES-130020,2026-07-12,Middlesex County has no distinct CMHC geography; London is the Service Manager's dominant centre,a
+3510,Frontenac County,CD,2025-10,cmhc_rental_vacancy_rate,2.4,percent,RES-130021,2026-07-12,Frontenac County has no distinct CMHC geography; Kingston is the Service Manager's dominant centre,a
+3510,Frontenac County,CD,2025-10,cmhc_average_rent,1717.0,CAD,RES-130021,2026-07-12,Frontenac County has no distinct CMHC geography; Kingston is the Service Manager's dominant centre,a
+3511,Lennox and Addington County,CD,2025-10,cmhc_rental_vacancy_rate,2.4,percent,RES-130021,2026-07-12,Lennox and Addington County has no distinct CMHC geography; Kingston is the Service Manager's dominant centre,a
+3511,Lennox and Addington County,CD,2025-10,cmhc_average_rent,1717.0,CAD,RES-130021,2026-07-12,Lennox and Addington County has no distinct CMHC geography; Kingston is the Service Manager's dominant centre,a
