@@ -1,0 +1,17 @@
+# Explicit Cache-Control policy for the whole site (usability audit 2026-08-07 §3.1, fix #1).
+#
+# Before this file, HTML documents were served with the Cloudflare Pages platform DEFAULT
+# Cache-Control (public, max-age=0, must-revalidate, no ETag on HTML) with no policy pinned in
+# the repo -- so it could change silently with a platform default change, and the audit caught a
+# window where a cached copy of /kits/ and /harvest served a superseded nav (no Join link) at the
+# canonical, no-query-string URL. This file makes the same "never cache without revalidating"
+# intent explicit and durable, so it survives a platform change and is reviewable like any other
+# config in this repo, instead of being an unwritten default.
+#
+# Cache purge and edge/zone-level cache rules are NOT set here -- this repo has no Cloudflare
+# zone-write or cache-purge credentials (confirmed 2026-08-07: `wrangler whoami` shows
+# `zone (read)` only, and `wrangler pages project list` returns no projects under the linked
+# account). If a zone-level Cache Rule or Page Rule is overriding this, changing that is the
+# operator's call, not this file's.
+/*
+  Cache-Control: public, max-age=0, must-revalidate
