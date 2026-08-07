@@ -63,7 +63,7 @@
 </ul>
 
 <h2>Document shelf (28 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (28 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Annual report</td><td><a href="https://publications.gc.ca/collections/collection_2025/cppib/CC501-2025-eng.pdf">CPP Investments Annual Report 2025</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:capture-artifact-goc-interstitial</span></td></tr>
@@ -95,7 +95,7 @@
 <tr><td>2000</td><td>Annual report</td><td><a href="https://web.archive.org/web/20241015151958id_/https://publications.gc.ca/collections/collection_2012/cppib/CC501-2000-eng.pdf">CPP Investment Board Annual Report 2000</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:capture-artifact-goc-interstitial</span></td></tr>
 <tr><td>1999</td><td>Annual report</td><td><a href="https://web.archive.org/web/20241015150204id_/https://publications.gc.ca/collections/collection_2012/cppib/CC501-1999-eng.pdf">CPP Investment Board Annual Report for the Six-Month Period Ended March 31 1999</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:capture-artifact-goc-interstitial</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: <code>research/government/briefs/_backgrounders/fed-canada-pension-plan-investment-board.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -120,7 +120,7 @@
 <p>CPPIB is a federal corporation created by the Canada Pension Plan Investment Board Act, S.C. 1997, c. 40, tasked with investing Canada Pension Plan funds not needed to pay current benefits; it operates publicly under the brand "CPP Investments." It invests across public and private equity, fixed income, real assets, and other asset classes globally, and is designed to operate at arm's length from federal and provincial governments, with governance through a Board of Directors (chairperson, officers, mandatory Audit and Investment Committees) and public quarterly/annual reporting requirements. The registry notes CPPIB is excluded by statute from the Access to Information Act. The backgrounder gives one budget figure sourced outside the archived series: net assets of $793.3 billion at fiscal year-end March 31, 2026 (up from $714.4 billion at FYE 2025), per a CPP Investments fiscal 2026 year-end results announcement (May 21, 2026). The backgrounder flags its own institutional-history note (exact commencement/first-investment date) as ⚠️ VERIFY — not independently source-checked. The backgrounder text as read does not state a headquarters city for CPPIB/CPP Investments.</p>
 <h4>Series inventory</h4>
 <p>All 27 registered documents are annual reports, one per year from the six-month stub period ended March 31, 1999 through fiscal 2025 (year ended March 31, 2025). The registry/index marks all 27 as extraction status "ok," but on inspection every one of the 27 <code>.txt</code> files contains only the generic bilingual Government of Canada "Information Archived on the Web" gateway notice — not the annual report itself. See Residuals &amp; gaps.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Canada Pension Plan Investment Board - strategy evolution"><table>
 <thead>
 <tr>
 <th>doc_id</th>
@@ -321,7 +321,7 @@
 <td>no — gateway notice only</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h4>Priority evolution</h4>
 <p>⚠️ VERIFY — no chronological priority-evolution narrative can be constructed from this archived series. All 27 <code>.txt</code> extracts (f3ffe8c99726 through 6e213ed3ffdc, spanning ar-1999 through ar-2025) are byte-for-byte identical in body content after the file header: each contains only the bilingual publications.gc.ca "Information archivée dans le Web / Information Archived on the Web" interstitial notice ("Continuer vers la publication / Continue to publication," with a request-alternate-format link), never the underlying annual report PDF. Every doc's <code>content_type</code> is recorded as <code>text/html; charset=utf-8</code>, confirming the crawler captured the HTML gateway/redirect page at each <code>url</code> rather than following through to the linked PDF (e.g., <code>https://publications.gc.ca/collections/collection_2012/cppib/CC501-1999-eng.pdf</code>). Because no report text was actually read for any of the 27 documents, this brief makes no claims — sourced or otherwise — about CPPIB's stated investment strategy, asset-mix priorities, or mandate language changes across 1999–2025. Any such narrative would have to be invented rather than grounded in text actually read, which the task's hard rules prohibit.</p>
 <h4>Priorities added, dropped, renamed</h4>

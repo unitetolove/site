@@ -63,7 +63,7 @@
 </ul>
 
 <h2>Document shelf (34 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (34 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Annual report</td><td><a href="https://ship-rail.gc.ca/sites/default/files/2025-10/ship_fund_annual_report_2024-2025.pdf">Ship-source Oil Pollution Fund Annual Report 2024-2025</a></td><td>archived</td><td></td></tr>
@@ -101,7 +101,7 @@
 <tr><td>2002</td><td>Annual report</td><td><a href="https://web.archive.org/web/20220323113534id_/https://publications.gc.ca/collections/collection_2018/cidphn-sopf/T1-11-2002-eng.pdf">Annual Report 2001-2002</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:capture-artifact-goc-interstitial</span></td></tr>
 <tr><td>2001</td><td>Annual report</td><td><a href="https://web.archive.org/web/20220323113557id_/https://publications.gc.ca/collections/collection_2018/cidphn-sopf/T1-11-2001-eng.pdf">SOPF Administrator&#x27;s Annual Report 2000-2001</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:capture-artifact-goc-interstitial</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: <code>research/government/briefs/_backgrounders/fed-ship-rail-compensation-canada.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -128,7 +128,7 @@
 <p><code>_index.json</code>: 18 ok / 16 no-manifest-match (0 stub-suspected, 0 extract-failed).</p>
 <p>Registry (<code>government_documents.csv</code>) carries 34 rows for this org spanning 2001-2025; all 34 are marked <code>archived</code> in the registry's own <code>archive_status</code> field, but 16 of those (all Ship Fund/SOPF annual reports, 2001-2016) resolved to <code>no-manifest-match</code> at extraction — no WARC capture in this pass's manifest matched the registry's URL for those years. 16 of the 34 rows carry a <code>⚠️ VERIFY:capture-artifact-goc-interstitial</code> flag in the registry, consistent with those captures having landed on a redirect/interstitial page. Every Rail Fund row is present and readable (the Rail Fund's own series only begins in 2016-17, its first operating year, so it has no pre-2017 gap); the entire gap is on the Ship Fund side, pre-2017.</p>
 <p>Each fund publishes its own annual report; the <code>-2</code> suffix in this registry denotes the Rail Fund's report for the same fiscal year as its unsuffixed Ship Fund counterpart.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Ship and Rail Compensation Canada - strategy evolution"><table>
 <thead>
 <tr>
 <th>doc_id</th>
@@ -273,7 +273,7 @@
 <td>yes</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Full-form applied.</strong> All 18 usable documents are annual reports (one doc_type throughout; no doc_type-change anchor applies), so the large-series sampling rule was applied by year rather than by type: the oldest year (2017, both funds, full), the most recent year (2025, both funds, full), and the year containing the two structural transitions identified by keyword screening — the Ship Fund's rebrand to "Ship Fund" language and the outgoing Administrator's seven-year retrospective (2022-23, both funds, full) — were read in full. ar-2019 (Ship) was sampled for its Bill C-86 passages specifically. The remaining ten documents (2018, 2020, 2021, 2022, 2024, both funds) were not opened; each was keyword-screened across the full text (Administrator/IOPC/amend/Bill C-86/record/first time/HNS Convention/Arctic/Climate Change terms) as a check against missed inflection points, and nothing in those scans contradicted or added to the narrative built from the years read in full.</p>
 <h4>Priority evolution</h4>
 <p><strong>2016-17 (ar-2017, Ship, 6992f1d28912; ar-2017-2, Rail, 7068fa9f9e3d):</strong> Anne Legars is Administrator of both funds (Ship Fund since a prior appointment; Rail Fund from its creation). The Ship Fund report notes the prior Administrator "had been in the position for the past 9 years" and "retired on March 31, 2016," with Legars cross-appointed as interim Administrator of the newly created Rail Fund. The Rail Fund's first annual report documents its founding: statutory provisions and a $1.67/tonne crude-oil levy entered into force June 18, 2016; the claims framework was explicitly built "drawing from the Lac-Mégantic experience" (over 4,300 claims from the 2013 disaster). No rail accident has yet activated the Fund; year-end accumulated surplus $8.28 million.</p>

@@ -63,14 +63,14 @@
 </ul>
 
 <h2>Document shelf (3 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (3 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2024</td><td>Other</td><td><a href="https://www.pbo-dpb.ca/en/publications/LEG-2425-014-S--implementing-two-month-goods-services-tax-harmonized-sales-tax-gst-hst-break-groceries-holiday-essen--mise-uvre-un-conge-deux-mois-taxe-produits-services-taxe-vente-harmonisee-tps-tvh-articles-epicerie-">Implementing a two-month Goods and Services Tax/Harmonized Sales Tax (GST/HST) break for groceries and holiday essentials</a></td><td>archived</td><td></td></tr>
 <tr><td>2022</td><td>Other</td><td><a href="https://www.pbo-dpb.ca/en/publications/RP-2122-036-S--international-comparison-canada-revenue-agency-performance--comparaison-internationale-rendement-agence-revenu-canada">International Comparison of the Canada Revenue Agency&#x27;s Performance</a></td><td>archived</td><td></td></tr>
 <tr><td>2021</td><td>Other</td><td><a href="https://www.pbo-dpb.ca/en/publications/RP-2122-016-S--2021-election-proposal-costing-baseline--cout-mesures-proposees-pendant-campagne-electorale-2021-prevision-reference">2021 Election Proposal Costing Baseline</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: <code>research/government/briefs/_backgrounders/fed-office-parliamentary-budget-officer.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -95,7 +95,7 @@
 <p>The PBO is an Agent of Parliament established under Part I.1 (ss. 79.01-79.5) of the Parliament of Canada Act, created in 2006 by the Federal Accountability Act and reorganized into a fully independent office (own Senate/Commons-approved appointment, deputy-head authority) by 2017 and 2022 amendments. Its statutory purpose is to provide "independent and non-partisan" analysis — including macro-economic, fiscal, and legislative-costing analysis — "for the purposes of raising the quality of parliamentary debate and promoting greater budget transparency and accountability" (s.79.01). The Officer is appointed for a seven-year term (renewable to 14), removable for cause only by Governor in Council on address of both Houses. No PBO-specific budget figure is grounded in the backgrounder (flagged ⚠️ VERIFY there).</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 2 ok / 1 stub-suspected / 0 extract-failed (of 3 total).</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Office of the Parliamentary Budget Officer - strategy evolution"><table>
 <thead>
 <tr>
 <th>doc_id</th>
@@ -128,7 +128,7 @@
 <td>yes — substantive (5,389 chars): full costing note including methodology and figures</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Detector verification:</strong> the stub detector's call on oth-2021 is confirmed correct by direct read — the archived HTML capture genuinely contains only navigation boilerplate, byline, publication date, and a single abstract sentence, with no report body, methodology, or findings text present in the archive. This is not a mis-flag; the underlying WARC capture appears to have stopped short of the full publication page (or the source page structure loads body content in a way this capture did not retain). The detector's char-count floor (1,500 for doc_type='other') correctly separated it from the two genuinely substantive documents (2,713 and 5,389 chars).</p>
 <h4>Priority evolution</h4>
 <p>Two usable documents, each a standalone costing/comparative-analysis note on an unrelated fiscal question (CRA international performance in 2022; a GST/HST holiday bill in 2024) — this is not a sequential or thematic series, so no evolution in priorities, framing, or organizational emphasis can be traced between them or across the gap.</p>

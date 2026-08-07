@@ -63,13 +63,13 @@
 </ul>
 
 <h2>Document shelf (2 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (2 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Budget / estimates</td><td><a href="https://www.toronto.ca/wp-content/uploads/2026/03/8ec6-2026-Public-Book-DR-V1.pdf">Development Review -- 2026 Program Summary</a></td><td>archived</td><td></td></tr>
 <tr><td>2025</td><td>Budget / estimates</td><td><a href="https://www.toronto.ca/wp-content/uploads/2025/04/94f7-2025-Public-Book-CPDR-V1.pdf">Development Review program within City Planning and Development Review -- 2025 Program Summary</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:embedded-in-parent (City Planning and Development Review 2025 Program Summary.)</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: <code>research/government/briefs/_backgrounders/tor-development-review.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -96,7 +96,7 @@
 <p><code>_index.json</code>: 2 ok / 0 stub-suspected / 0 extract-failed.</p>
 <p>Registry (<code>government_documents.csv</code>) carries 2 rows for this org, spanning 2025-2026; both are <code>archived</code> and appear below -- no <code>staged</code> or <code>missing</code> gap years for this org.</p>
 <p><strong>Shared-document handling (BATCH12_ADDENDUM §B2):</strong> the bud-2025 row (eebe69d4c5a5) is a shared budget-cluster book jointly covering City Planning and Development Review -- title "Development Review program within City Planning and Development Review -- 2025 Program Summary," URL slug <code>...CPDR-V1.pdf</code>. The registry itself flags this row <code>⚠️ VERIFY:embedded-in-parent (City Planning and Development Review 2025 Program Summary.)</code> (<code>research/atlas/government_documents.csv</code>), confirming this is a by-design shared-book registration per §B2, not a duplicate-registration defect. Analysis below and in every other section of this brief is scoped to the Development Review sections, service tables, and budget figures within that PDF only -- never to City Planning's own $73.876M/$25.6M+$48.3M service lines in the same document. As checked against this batch's extraction directories, no other org_id currently cites this same sha256 or URL; notably, <code>tor-city-planning</code>'s own 2025 program budget does not appear to be separately registered under the <code>tor-city-planning</code> org_id at all (see Residuals).</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Development Review - strategy evolution"><table>
 <thead>
 <tr>
 <th>doc_id</th>
@@ -122,7 +122,7 @@
 <td>yes -- full standalone 2026 Program Summary: Development Review, 32,817 chars, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>SHORT-FORM RULE APPLIES (per BATCH12_ADDENDUM §B1):</strong> two documents, one year apart, the earlier of which describes a division under a year old at time of publication. This cannot support a genuine priority-evolution narrative; the sections below state only what the pair itself establishes, and are dominated by a single structural event (the 2024-2025 organizational realignment) rather than a change in stated priorities.</p>
 <h4>Priority evolution</h4>
 <p>Two documents one year apart, the earlier describing a division that had existed for well under a year, cannot show priority evolution in the ordinary sense -- the dominant change between them is structural absorption, not a shift in stated intent. What they do establish: Development Review's core commitment -- "a transparent, efficient and people-centred approach to reviewing all development applications," with a Priority Development Review Stream prioritizing affordable housing -- is named in both years in materially the same language (eebe69d4c5a5; 1ca3c7f6ddc5).</p>

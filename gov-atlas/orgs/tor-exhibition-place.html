@@ -63,7 +63,7 @@
 </ul>
 
 <h2>Document shelf (12 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (12 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Other</td><td><a href="https://www.toronto.ca/legdocs/mmis/2026/ep/bgrd/backgroundfile-285792.pdf">Fulfilling Ex Place&#x27;s Destiny - 192 Acres of Possibilities Vision Plan</a></td><td>archived</td><td></td></tr>
@@ -79,7 +79,7 @@
 <tr><td>2014</td><td>Strategic plan</td><td><a href="https://www.explace.on.ca/wp-content/uploads/2020/12/FINAL-2014-16-Strategic-Plan-June-7-2016-RO.pdf">Exhibition Place Strategic Plan 2014-2016</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:plan-horizon-2016</span></td></tr>
 <tr><td>2012</td><td>Strategic plan</td><td><a href="https://www.explace.on.ca/wp-content/uploads/2020/12/Strategic-Plan-March-20-2012.pdf">Exhibition Place Strategic Plan 2009-2012</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: <code>research/government/briefs/_backgrounders/tor-exhibition-place.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -104,7 +104,7 @@
 <p>Exhibition Place is a board of the City of Toronto, established in 1983 under the Municipality of Metropolitan Toronto Act and continued under s.407(1) of the City of Toronto Act, 2006, as "a body Corporate and an agent of the City." It operates 192 acres of convention, exhibition, and event venues on Toronto's waterfront — including the Enercare Centre, Automotive Building, Better Living Centre, and StudioEx — for parks/exhibition purposes, trade fairs (notably the CNE and Royal Agricultural Winter Fair), sporting/entertainment events, and other Council-approved uses. The nine-member Board (Mayor or designate, four Councillors, four public members) meets 6-8 times yearly. Budget scale is not established at an operating-budget order of magnitude in the backgrounder; the closest figures are a 2015 net-profit-on-cash-basis transfer to the City of $495,931 and the 2024 Economic Impact Study's $594.5M regional economic impact / $80.6M government tax revenue figure, which the backgrounder explicitly does not treat as a budget-scale proxy.</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 11 ok / 0 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Exhibition Place - strategy evolution"><table>
 <thead>
 <tr>
 <th>doc_id</th>
@@ -193,7 +193,7 @@
 <td>yes</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Detector disagreement: none — the stub detector correctly marked all 11 as <code>ok</code>, and reading confirmed all 11 carry real, substantive document content. The true count of <strong>distinct source documents</strong>, however, is 8, not 11: three doc_id pairs (sp-2014/sp-2016, sp-2017/sp-2019, sp-2022/sp-2026) share identical sha256_12 values and are the same archived PDF filed under two registry years. This is a registry-modeling artifact (the org's plans span multiple years and got a row per covered year), not an extraction failure — flagged here per the spec's live-QA instruction since it affects how "N documents" should be read for this org.</p>
 <h4>Priority evolution</h4>
 <p><strong>2009-2012 (sp-2012, 6ea45d860b57):</strong> First archived strategic plan. Seven Strategic Goals: Business Development, Infrastructure, Environmental, Safety and Security, Recognition/Public Understanding, Organizational and Staffing, Financial. Framing is "Always Moving Forward While Building on the Past" — heritage-conscious, revenue-focused (~$75M revenues cited for FY2008, ~180 employees, 13-member Board). Core assets already established: Direct Energy Centre (renamed from National Trade Centre), Allstream Centre (opened 2009), Ricoh Coliseum, BMO Field (2007). No mention of transit, Indigenous engagement, or climate/sustainability beyond a general "environmental stewardship" goal.</p>

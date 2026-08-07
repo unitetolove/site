@@ -63,7 +63,7 @@
 </ul>
 
 <h2>Document shelf (40 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (40 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Annual report</td><td><a href="https://telefilm.ca/wp-content/uploads/2025/10/Telefilm_AR2025_EN.pdf">Telefilm Canada Annual Report 2024-2025</a></td><td>archived</td><td></td></tr>
@@ -107,7 +107,7 @@
 <tr><td>2000</td><td>Annual report</td><td><a href="https://telefilm.ca/wp-content/uploads/2016/08/telefilm-annualreport-1999-2000.pdf">Telefilm Canada Annual Report 1999-2000</a></td><td>archived</td><td></td></tr>
 <tr><td>1999</td><td>Annual report</td><td><a href="https://telefilm.ca/wp-content/uploads/2016/08/telefilm-annualreport-1998-1999.pdf">Telefilm Canada Annual Report 1998-1999</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: <code>research/government/briefs/_backgrounders/fed-telefilm-canada.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -133,7 +133,7 @@
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 29 ok / 0 stub-suspected / 0 extract-failed (23 annual reports, extracted 2026-08-03, plus 6 corporate/strategic plans newly extracted 2026-08-06). This brief's own close read again found the detector's "ok" call for the FY2004-05 report (ar-2005, <code>a7adb3d505b9</code>) to be wrong — see Residuals — so the <em>effectively readable</em> count from this index is 28, not 29.</p>
 <p>Registry (<code>research/atlas/government_documents.csv</code>): <strong>40 rows</strong> for this org — the 29 above (archived + extracted), plus <strong>11 rows carrying <code>archive_status=staged</code></strong>: 4 annual reports (ar-2002/FY2001-02, ar-2018/FY2017-18, ar-2020/FY2019-20, ar-2022/FY2021-22 — the exact four years v1.0 wrongly called unrecoverable gaps) and 7 strategic-plan companion documents (sp-2011, sp-2015, sp-2018, sp-2020, sp-2021, sp-2022, sp-2024). All 11 were content-verified live on 2026-08-06 but are not yet captured/extracted — a Mac capture backlog, not a gap. The registry and extraction-dir counts differ (40 vs 29) simply because staged rows have no extraction yet.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Telefilm Canada - strategy evolution"><table>
 <thead>
 <tr>
 <th>doc_id</th>
@@ -425,7 +425,7 @@
 <td>yes</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h4>Priority evolution</h4>
 <p><em>Method note: this section is now built primarily from the six extracted corporate/strategic plans, which are Telefilm's own first-person strategy statements — v1.0 inferred strategy from annual-report retrospectives alone. Where a plan-derived claim was checkable against the annual-report record, this brief spot-checked it directly (method and results disclosed in Residuals): the funding-ramp figures below (against ar-2023), the Special Examination outcome (against ar-2010), and the Eurimages/gender-parity dating (against ar-2017) all corroborated the plan-derived account with no contradictions found.</em></p>
 <p><strong>1998-2001 — consolidation under the original CTF/Multimedia Fund architecture.</strong> No corporate plan from this window was extracted this pass, so this era's account is unchanged from v1.0 and remains AR-grounded. The earliest reports describe Telefilm operating under the 1997-2000 Business Plan <em>Towards the New Millennium</em> (12 primary goals), administering the Canadian Television Fund's Equity Investment Program (EIP) alongside the Multimedia Fund, created in 1998 with a $30M five-year envelope (fed-telefilm-canada-ar-1999, def3b33f3537). A dedicated $1M Aboriginal-language production envelope existed as early as FY1998-99 (fed-telefilm-canada-ar-1999). The single biggest inflection of this era is the Canada Feature Film Fund (CFFF), announced October 2000 and launched April 1, 2001 with a $100M annual budget — explicitly described as doubling prior feature-film resources (fed-telefilm-canada-ar-2001, 63e6198da511). A five-year Business Plan (2001-2006) followed, built on four objectives including "support and encourage Canada's cultural diversity, linguistic duality." A Committee on Linguistic and Cultural Diversity was formed in 2001 (fed-telefilm-canada-ar-2001).</p>
@@ -440,7 +440,7 @@
 <p><strong>Renamed:</strong> Canadian Film Development Corporation → Telefilm Canada (1984, per series milestones in fed-telefilm-canada-ar-2001; exact month not found in the readable series); Multimedia Fund → Canada New Media Fund; Canadian Television Fund (CTF) → Canada Media Fund (CMF), effective April 1, 2010, combining CTF and CNMF resources into "$134.7 million annually" (fed-telefilm-canada-cp-2009; transition also visible across fed-telefilm-canada-ar-2010 and fed-telefilm-canada-ar-2011); Micro-Budget Production Program → Talent to Watch Program (2018, fed-telefilm-canada-ar-2019); "Executive Director" → "Executive Director &amp; CEO" (title change visible between fed-telefilm-canada-ar-2019 and fed-telefilm-canada-ar-2021). ⚠️ VERIFY: Telefilm's HR Master Plan is named "A Shared Project" in fed-telefilm-canada-cp-2008 and "Changing Together" (describing a 2008 unveiling) in fed-telefilm-canada-cp-2009 — possibly the same initiative renamed within a year, not resolved in the read material.</p>
 <h4>Budget &amp; mandate inflection points</h4>
 <p>Parliamentary appropriation, as reported in each year's own MD&amp;A/financial-review section or corporate-plan financial statements (millions):</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Telefilm Canada - strategy evolution"><table>
 <thead>
 <tr>
 <th>FY</th>
@@ -530,7 +530,7 @@
 <td>fed-telefilm-canada-ar-2025</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>The pattern of budgeted-vs-actual gaps for 2022-23 through 2024-25 is consistent, not contradictory: mid-year top-ups (e.g., the $9.2M one-time Canada Arts and Culture Recovery Program fund in June 2022, per fed-telefilm-canada-ar-2023) routinely push actual PA above the corporate plan's earlier budget figure.</p>
 <p><strong>The supplementary funding ramp, precisely:</strong> two stacked multi-year packages, not a flat "$50M/year" as v1.0 described it. Package one ($105M/3yr, announced Budget 2021): $20M (2021-22) → $35M (2022-23, confirmed independently in fed-telefilm-canada-ar-2023) → $50M (2023-24). Package two ($98.5M/2yr, phasing in as package one phases out): $49.5M (2024-25) → $49.0M (2025-26) (fed-telefilm-canada-cp-2022; fed-telefilm-canada-cp-2024). This is the arithmetic behind AR-2025's "fourth of five years of confirmed budget increase," and cp-2024 sets an explicit target for the increase to become permanent "from 2026-2027" — sharper than v1.0's "still lobbying for permanent confirmation."</p>
 <p>Five clear inflection points: (1) FY2001 — CFFF launch doubles dedicated feature-film funding; (2) FY2006-07 — full exit from direct TV investment as CTF absorbs governance, with the eventual CMF merger already being informally proposed by Telefilm itself as early as the 2008-09 corporate-plan addendum; (3) FY2012-16 — sustained austerity under the federal Departmental Spending Review, bottoming at $95.5M; (4) FY2016-17 onward — a slow recovery; (5) FY2021-22 through FY2025-26 — the two-package, five-year supplementary funding ramp detailed above, whose permanence is targeted for FY2026-27 but remains, as of the newest document read, a target rather than a confirmed fact. The 2020-21 COVID emergency-relief mandate ($173.5M administered, mostly pass-through for the CMF and the Short-Term Compensation Fund rather than core appropriation) sits outside this trend line as a one-off shock (fed-telefilm-canada-ar-2021; corporate-plan budget figure cross-checked in fed-telefilm-canada-cp-2020).</p>

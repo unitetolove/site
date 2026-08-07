@@ -352,3 +352,8 @@ nav.sitemap li { break-inside: avoid; margin-bottom: 0.2rem; }
 @media (max-width: 34rem) {
   nav.sitemap ul { columns: 1; }
 }
+
+/* Horizontally-scrollable wrapper for tables wider than the viewport (usability audit 2026-08-07, Batch F/F3) */
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1rem 0; }
+.table-scroll table { margin: 0; }
+.table-scroll:focus { outline: 2px solid var(--accent); outline-offset: 2px; }

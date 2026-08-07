@@ -63,13 +63,13 @@
 </ul>
 
 <h2>Document shelf (2 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (2 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Annual report</td><td><a href="https://ontariohealthathome.ca/wp-content/uploads/2026/01/OHaH-OH-Consolidatd-Annual-Report-EN.pdf">Ontario Health atHome Annual Report 2024-2025</a></td><td>archived</td><td></td></tr>
 <tr><td>2025</td><td>Business / corporate plan</td><td><a href="https://ontariohealthathome.ca/wp-content/uploads/2024/08/HCCSS-2024-Annual-Business-Plan-EN.pdf">Ontario Health atHome Business Plan 2024-2025</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: <code>research/government/briefs/_backgrounders/on-ontario-health-athome.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -94,7 +94,7 @@
 <p>Ontario Health atHome is established under the Connecting Care Act, 2019, s.27.2(1), as the amalgamation of 14 predecessor Home and Community Care Support Services (HCCSS) organizations (formerly 14 Local Health Integration Networks) into one Service Organization delivering home/community care, operational supports, patient information/referrals, and long-term care placement (backgrounder, citing https://www.ontario.ca/laws/statute/19c05). Both archived documents independently confirm and sharpen this: bp-2025 (ac8b10d30097) is HCCSS's own account of the pending transition, and ar-2025 (da245d67ff74) confirms the amalgamating statute was actually the Convenient Care at Home Act, 2023 (proclaimed June 28, 2024), which HCCSS's own bp-2025 had referred to prospectively — resolving the backgrounder's implicit ambiguity about which Act triggered the change (Connecting Care Act sets the Service Organization's objects; Convenient Care at Home Act executed the amalgamation itself). The backgrounder's ⚠️ VERIFY on the exact HCCSS-to-OHaH rebrand date is resolved by ar-2025: June 28, 2024 (da245d67ff74).</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 2 ok / 0 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Ontario Health atHome - strategy evolution"><table>
 <thead>
 <tr>
 <th>doc_id</th>
@@ -120,7 +120,7 @@
 <td>yes — full 2024-25 Annual Business Plan, filed under the "Home and Community Care Support Services" name (pre-amalgamation), 1,991-line extract, read in full</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Detector note:</strong> both documents are correctly marked <code>ok</code> and both contain substantial, directly relevant content — no stub-suspected or failed calls to evaluate for this org, so no detector disagreement to report either direction. One structural quirk worth flagging as its own QA point: ar-2025's <em>doc_id and title</em> name it an "Ontario Health atHome Annual Report," but the file as extracted is actually Ontario Health's (the parent Crown agency's) full annual report, with OHaH's own report embedded as a labelled appendix starting roughly 3,800 lines in. This is not a detector error — the appendix content is genuine, substantive, and clearly OHaH-attributed — but a brief reading only the first screen of this file would wrongly conclude it contains no OHaH-specific material.</p>
 <h4>Priority evolution</h4>
 <p>Two documents, one year apart, spanning the org's actual legal creation, is not a multi-year trend series, but the pair captures a genuine before/after moment rather than just two snapshots. <strong>Before (bp-2025, as HCCSS, pre-June 2024):</strong> four numbered "Strategic Priorities" — (1) Drive Excellence in Care and Service Delivery, (2) Accelerate Innovation and Digital Delivery, (3) Advance Health System Modernization, (4) Invest in our People — explicitly carried forward "since they were first introduced in our 2021-2022 Annual Business Plan" (ac8b10d30097), with a stated fourth-anniversary framing ("Our fourth Annual Business Plan, since our inception in July of 2021"). Priority 3 in this document is explicitly about transition planning itself ("Transition resources, functions and responsibilities... to Ontario Health atHome," "Develop and implement a transition plan to consolidate 14 agencies into one single service organization") (ac8b10d30097). <strong>After (ar-2025 appendix, as OHaH, June 2024-March 2025):</strong> the same four thematic areas persist as narrative headers ("Driving Excellence in Care and Service Delivery," "Accelerating Innovation and Digital Delivery," "Advancing Health System Modernization," "Investing in our People") but are no longer presented as a formally numbered strategic-priorities framework — the report instead organizes around "Description of Activities," "Community Engagement," "Artificial Intelligence" (a new standalone section), and SAA/Annual Business Plan performance indicators (da245d67ff74). The substantive continuity is real (same four themes, same core mandate); the <em>framing</em> has shifted from a numbered corporate strategy document to a narrative post-transition status report.</p>

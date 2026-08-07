@@ -63,13 +63,13 @@
 </ul>
 
 <h2>Document shelf (2 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (2 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Budget / estimates</td><td><a href="https://pub-haltonhills.escribemeetings.com/filestream.ashx?DocumentId=31654">2026 Budget - Planning &amp; Development Policy Presentation (Town of Halton Hills)</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:escribe-host;departmental-deck-not-full-budget</span></td></tr>
 <tr><td>2023</td><td>Strategic plan</td><td><a href="https://www.haltonhills.ca/getContentAsset/8194f34d-8b37-4aec-bdfa-bedca6772cc4/5765e65f-0e8b-4885-a5ce-2084ab89c9fb/REPORT-NO-ADMIN-2023-034.pdf?language=en">Council&#x27;s 2023-2026 Strategic Plan (Rpt ADMIN-2023-034)</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:plan-horizon-2026</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: <code>research/government/briefs/_backgrounders/hhil-town-of-halton-hills.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -94,7 +94,7 @@
 <p>Halton Hills is a lower-tier municipality within upper-tier Halton Region (alongside Burlington, Oakville, and Milton), incorporated under the Municipal Act, 2001, S.O. 2001, c. 25, deriving its powers from ss. 8-11 and s. 224 of that Act (backgrounder, citing https://www.ontario.ca/laws/statute/01m25). Council's current strategic direction is "Council's 2023-2026 Strategic Plan" (Rpt ADMIN-2023-034), presented by Mayor Ann Lawlor. The backgrounder flags budget scale as ⚠️ VERIFY, noting the only budget document on file is a departmental Planning &amp; Development presentation rather than a consolidated town-wide total — confirmed independently below (D-042: this brief relays and separately re-verifies the backgrounder's characterization against the primary text). The backgrounder's institutional-history claim that Halton Hills formed in 1974 through amalgamation of the Town of Acton and Town of Georgetown is marked ⚠️ VERIFY (not confirmed against a primary source that pass); neither archived document here speaks to the 1974 founding, so that gap remains unresolved by this brief.</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 2 ok / 0 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Town of Halton Hills - strategy evolution"><table>
 <thead>
 <tr>
 <th>doc_id</th>
@@ -120,7 +120,7 @@
 <td>yes — full Planning &amp; Development departmental budget presentation, 5,795 chars, substantive but single-department scope only</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>SHORT-FORM RULE APPLIES: own read confirms only 2 usable documents, and neither is the kind of document its <code>doc_type</code> label implies.</strong> <code>_index.json</code>'s stub detector correctly marked both <code>status: ok</code> — both files contain real, substantive text, not interstitials or extraction failures. But close reading surfaces a scope mismatch the detector cannot catch: sp-2023 is titled "Council's 2023-2026 Strategic Plan" yet the extracted text is the staff covering report <em>about</em> the plan (process, consultation numbers, funding), not the plan document itself (Appendix A, which contains the actual vision/mission/priorities, is referenced as an attachment but its content is not in this capture). bud-2026 is titled as a Town budget but is a single division's (Planning &amp; Development) capital/operating slide deck, not a consolidated corporate budget. With no genuine town-wide strategic-priority list and no consolidated budget in the archived set, this is a short-form brief by both the "&lt;3 usable docs" rule and a scope-mismatch caveat that goes beyond it.</p>
 <h4>Priority evolution</h4>
 <p>A two-document window — one a process report about a plan, the other a single department's budget deck — cannot establish a town-wide priority-evolution narrative, and no prior-year Strategic Plan or budget document is present to compare against. What the two documents <em>do</em> jointly establish: growth management is a live cross-document theme. sp-2023 states the Strategic Plan "provides a framework for decisions relating to the Town's Budget and Business Plans and how programs and services are delivered" (ab46f6b797e6), and bud-2026, produced under that plan's stated framework, names "Vision Georgetown implementation," "Southeast Georgetown implementation," and preparing for "significant residential and non-residential growth in accordance with Council's approved Growth Management Strategy to 2051" as its lead 2026 pressures (3397a2bc2b06) — consistent with, though not verified as, an execution of the strategic plan's actual (unread) priorities.</p>

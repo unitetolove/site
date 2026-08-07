@@ -106,7 +106,7 @@
     <li><strong>Download:</strong> <a href="data/ontario_cd_population_2001-2025.csv">ontario_cd_population_2001-2025.csv</a>
     &mdash; 1,225 rows &times; 9 columns.</li>
   </ul>
-  <table>
+  <div class="table-scroll" tabindex="0" aria-label="1. Ontario population by census division, 2001–2025"><table>
     <thead><tr><th>Field</th><th>Meaning</th></tr></thead>
     <tbody>
       <tr><td><code>sgc_code</code></td><td>Statistics Canada SGC 2021 code for the Census Division (4 digits, zero-padded, stored as text).</td></tr>
@@ -119,7 +119,7 @@
       <tr><td><code>source_res_id</code></td><td>Internal reference ID pointing to the exact download this row traces to; not a public URL by itself (see caveats above for the named source).</td></tr>
       <tr><td><code>retrieved_date</code></td><td>Date this row&rsquo;s underlying file was actually fetched.</td></tr>
     </tbody>
-  </table>
+  </table></div>
 
   <h2 id="fir">2. Municipal finances &mdash; Ontario Financial Information Return, 2024</h2>
   <p><strong>What it is:</strong> Revenue figures for Ontario municipalities&rsquo; 2024 fiscal
@@ -151,7 +151,7 @@
     <li><strong>Download:</strong> <a href="data/fin_fir_2024.csv">fin_fir_2024.csv</a> &mdash;
     804 rows &times; 9 columns.</li>
   </ul>
-  <table>
+  <div class="table-scroll" tabindex="0" aria-label="2. Municipal finances — Ontario Financial Information Return, 2024"><table>
     <thead><tr><th>Field</th><th>Meaning</th></tr></thead>
     <tbody>
       <tr><td><code>sgc_code</code></td><td>Statistics Canada SGC 2021 code (4 digits for a county/region, 7 digits for a municipality).</td></tr>
@@ -164,7 +164,7 @@
       <tr><td><code>source_res_id</code></td><td>Internal reference ID for the exact source file this row traces to.</td></tr>
       <tr><td><code>retrieved_date</code></td><td>Date this row&rsquo;s underlying file was actually fetched.</td></tr>
     </tbody>
-  </table>
+  </table></div>
 
   <h2 id="cmhc">3. Rental market &mdash; CMHC, October 2025</h2>
   <p><strong>What it is:</strong> Rental vacancy rates and average rents from CMHC&rsquo;s Rental
@@ -189,7 +189,7 @@
     <li><strong>Download:</strong> <a href="data/housing_cmhc_2025-10.csv">housing_cmhc_2025-10.csv</a>
     &mdash; 42 rows &times; 11 columns.</li>
   </ul>
-  <table>
+  <div class="table-scroll" tabindex="0" aria-label="3. Rental market — CMHC, October 2025"><table>
     <thead><tr><th>Field</th><th>Meaning</th></tr></thead>
     <tbody>
       <tr><td><code>sgc_code</code></td><td>Statistics Canada SGC 2021 code where the geography is a genuine single municipality; blank where it is a multi-municipality CMHC metro area.</td></tr>
@@ -204,7 +204,7 @@
       <tr><td><code>proxy_note</code></td><td>Explains any geography mismatch &mdash; present only where the row is a proxy, blank otherwise.</td></tr>
       <tr><td><code>quality_flag</code></td><td>CMHC&rsquo;s own reliability rating: a / b / c (good / moderate / low).</td></tr>
     </tbody>
-  </table>
+  </table></div>
 
   <h2 id="pit">4. Homelessness point-in-time counts, 2024</h2>
   <p><strong>What it is:</strong> Single-night enumeration counts of people experiencing
@@ -236,7 +236,7 @@
     <li><strong>Download:</strong> <a href="data/housing_pit_2024.csv">housing_pit_2024.csv</a>
     &mdash; 15 rows &times; 10 columns.</li>
   </ul>
-  <table>
+  <div class="table-scroll" tabindex="0" aria-label="4. Homelessness point-in-time counts, 2024"><table>
     <thead><tr><th>Field</th><th>Meaning</th></tr></thead>
     <tbody>
       <tr><td><code>sgc_code</code></td><td>Statistics Canada SGC 2021 code where the Service Manager area maps to one; blank where it is a joint or multi-jurisdiction service area with no single matching code.</td></tr>
@@ -250,7 +250,7 @@
       <tr><td><code>retrieved_date</code></td><td>Date this row was fetched.</td></tr>
       <tr><td><code>notes</code></td><td>Row-specific caveats: what&rsquo;s included/excluded, count-date detail, and any endorsement or confidence flags.</td></tr>
     </tbody>
-  </table>
+  </table></div>
 
   <h2 id="collisions">5. Police-reported collisions</h2>
   <p><strong>What it is:</strong> Annual counts of police-reported injury and fatal motor-vehicle
@@ -273,7 +273,7 @@
     <li><strong>Download:</strong> <a href="data/police_collisions.csv">police_collisions.csv</a>
     &mdash; 20 rows &times; 9 columns.</li>
   </ul>
-  <table>
+  <div class="table-scroll" tabindex="0" aria-label="5. Police-reported collisions"><table>
     <thead><tr><th>Field</th><th>Meaning</th></tr></thead>
     <tbody>
       <tr><td><code>sgc_code</code></td><td>Statistics Canada SGC 2021 code (7 digits) for the municipality.</td></tr>
@@ -286,7 +286,7 @@
       <tr><td><code>source_res_id</code></td><td>Internal reference ID for the exact source feed.</td></tr>
       <tr><td><code>retrieved_date</code></td><td>Date this row was fetched.</td></tr>
     </tbody>
-  </table>
+  </table></div>
 
   <h2 id="asks">6. Municipal council asks to the province and federal government</h2>
   <p><strong>What it is:</strong> A catalog of Ontario municipal council resolutions and
@@ -317,7 +317,7 @@
     <li><strong>Download:</strong> <a href="data/municipal_asks.csv">municipal_asks.csv</a>
     &mdash; 81 rows &times; 8 columns.</li>
   </ul>
-  <table>
+  <div class="table-scroll" tabindex="0" aria-label="6. Municipal council asks to the province and federal government"><table>
     <thead><tr><th>Field</th><th>Meaning</th></tr></thead>
     <tbody>
       <tr><td><code>municipality</code></td><td>Municipality whose council passed the resolution.</td></tr>
@@ -329,7 +329,7 @@
       <tr><td><code>source_url</code></td><td>Link to the original resolution, council record, or news coverage of it.</td></tr>
       <tr><td><code>tier</code></td><td><code>1</code> = source directly fetched and confirmed; <code>1-search-verified</code> = corroborated via search, not a direct fetch of the primary document.</td></tr>
     </tbody>
-  </table>
+  </table></div>
 
   <h2 id="license">License</h2>
   <p><strong>License: being finalized.</strong> Until a final license is stated, these files are

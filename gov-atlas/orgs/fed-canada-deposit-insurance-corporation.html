@@ -63,7 +63,7 @@
 </ul>
 
 <h2>Document shelf (40 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (40 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Business / corporate plan</td><td><a href="https://www.cdic.ca/wp-content/uploads/summary-of-the-corporate-plan-2026-2027-to-2030-2031.pdf">CDIC Summary of the Corporate Plan 2026-2027 to 2030-2031</a></td><td>archived</td><td></td></tr>
@@ -107,7 +107,7 @@
 <tr><td>2000</td><td>Annual report</td><td><a href="https://web.archive.org/web/20220325160000id_/https://publications.gc.ca/collections/Collection/CC391-1-2000E.pdf">Annual report / Canada Deposit Insurance Corporation 1999-2000</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:capture-artifact-goc-interstitial</span></td></tr>
 <tr><td>2000</td><td>Business / corporate plan</td><td><a href="https://publications.gc.ca/collections/collection_2000/sadc-cdic/CC392-1-2000-eng.pdf">CDIC Summary of the Corporate Plan 2000/2001 to 2004/2005</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:capture-artifact-goc-interstitial</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: <code>research/government/briefs/_backgrounders/fed-canada-deposit-insurance-corporation.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -133,7 +133,7 @@
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 16 ok / 3 stub-suspected / 16 no-manifest-match (0 formally extract-failed, but the no-manifest-match rows have no extracted text file at all).</p>
 <p>Registry (<code>government_documents.csv</code>) carries 35 rows for this org spanning 2000-2026; all 35 are <code>archived</code>, but <strong>19 of them (ar-2000 through ar-2018) carry the explicit registry flag <code>⚠️ VERIFY:capture-artifact-goc-interstitial</code></strong> — meaning the WARC capture for those years landed on a Government-of-Canada "Information Archived on the Web" redirect/interstitial page rather than the actual PDF annual report, a capture failure rather than a disclosure gap. Of those 19 flagged rows, 3 (ar-2002, ar-2009, ar-2017) were extracted with a tiny amount of text (804 characters each) and the detector correctly called them stub-suspected — I opened one (ar-2002) directly and confirmed it is entirely the bilingual GoC interstitial page text ("Information archivée dans le Web / Information Archived on the Web... Continuer vers la publication"), with zero report content. The remaining 16 flagged rows (ar-2000, 2001, 2003-2008, 2010-2016, 2018) produced no extractable text at all (<code>no-manifest-match</code>; no <code>.txt</code> file exists in the extraction directory for any of them). <strong>TRUE usable series = 16 documents, all from 2019 onward</strong> (7 annual reports 2019-2025, 9 business plans 2018-2026); the pre-2019 archived record is not analyzable as report content from this capture pass.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Canada Deposit Insurance Corporation - strategy evolution"><table>
 <thead>
 <tr>
 <th>doc_id</th>
@@ -390,7 +390,7 @@
 <td>yes (read ~65% — four strategic priorities incl. new "elevate the use of data" objective, Comprehensive Expenditure Review budget cuts, 85bps near-term fund target)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h4>Priority evolution</h4>
 <p><strong>2018 (bp-2018, d4da6a8cd438):</strong> Four strategic objectives: (1) Preparedness — advancing resolution readiness, including a multi-year plan toward providing insured-deposit access within seven days of a failure; (2) Deposit insurance program — modernizing by-laws and legislation; (3) Stakeholders — public awareness (target 60-65%, then at 49-55%) and member-relationship strengthening; (4) Organization — evolving the workplace. Bail-in resolution powers for domestic systemically important banks (D-SIBs) were coming into force in 2018 following June 2017 legislative amendments; the ex ante deposit-insurance fund stood at 55 basis points of insured deposits against a 100-basis-point target set by a 2011 funding strategy.</p>
 <p><strong>2019 (ar-2019, 49dfd0dc14ff):</strong> Leadership renewal (new President and CEO Peter D. Routledge, five new private-sector directors). A new, more ambitious reimbursement goal is named: <strong>"T+0"</strong> — building, within five years, a system capable of reimbursing depositors on the day of member failure. A new Enterprise Risk Management (ERM) function is created (April 1, 2019) with CDIC's first Chief Risk Officer (appointed late 2018) and a new Board Risk Committee (March 2019), reframed as a "second line of defence."</p>

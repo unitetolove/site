@@ -63,7 +63,7 @@
 </ul>
 
 <h2>Document shelf (47 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (47 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Annual report</td><td><a href="https://www.tps.ca/services/resource-centre/2025-toronto-police-service-chiefs-annual-report/">2025 Toronto Police Service Chief&#x27;s Annual Report</a></td><td>staged</td><td><span class="incompleteness-tag">⚠️ VERIFY:fetch-failed-2026-08-06</span></td></tr>
@@ -114,7 +114,7 @@
 <tr><td>2001</td><td>Subject report</td><td><a href="https://www.tps.ca/services/resource-centre/2001-statistical-report/">2001 Statistical Report</a></td><td>staged</td><td><span class="incompleteness-tag">⚠️ VERIFY:fetch-failed-2026-08-01; ⚠️ VERIFY:fetch-failed-2026-08-02; ⚠️ VERIFY:fetch-failed-2026-08-04; ⚠️ VERIFY:fetch-failed-2026-08-05; ⚠️ VERIFY:fetch-failed-2026-08-06</span></td></tr>
 <tr><td>2000</td><td>Subject report</td><td><a href="https://www.tps.ca/services/resource-centre/2000-statistical-report/">2000 Statistical Report</a></td><td>staged</td><td><span class="incompleteness-tag">⚠️ VERIFY:fetch-failed-2026-08-01; ⚠️ VERIFY:fetch-failed-2026-08-02; ⚠️ VERIFY:fetch-failed-2026-08-04; ⚠️ VERIFY:fetch-failed-2026-08-05; ⚠️ VERIFY:fetch-failed-2026-08-06</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: <code>research/government/briefs/_backgrounders/tor-toronto-police-service.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -140,7 +140,7 @@
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 8 ok / 0 stub-suspected / 0 extract-failed.</p>
 <p>Registry (<code>government_documents.csv</code>) carries 46 rows for this org spanning 2000-2025; 8 are <code>archived</code> and appear below, 33 are <code>staged</code> and 5 are <code>missing</code> — those 38 staged-or-missing years are not analyzable from the archive and are treated as gaps, not as disclosure choices.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Toronto Police Service - strategy evolution"><table>
 <thead>
 <tr>
 <th>doc_id</th>
@@ -208,7 +208,7 @@
 <td>yes (short: Ombudsman Toronto summary page, not the full investigation report)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Detector note:</strong> the stub detector correctly flagged none of these as stub-suspected, and none failed extraction. However, five of the eight (<code>oth-2021-2</code>, <code>oth-2022</code>, <code>oth-2022-2</code>, <code>oth-2023</code>, <code>oth-2024</code>) are website landing/summary pages for underlying PDF reports that were not separately captured — the detector's <code>ok</code> status is technically accurate (real page content was read) but a reader should not infer these are full-length primary sources; they are accurately thin by capture design, not by extraction failure. This is a live QA observation, not a detector error.</p>
 <p>Only two documents in this set — bp-2014/2016 and ar-2024 — are Service-authored statements of organizational priorities. The remaining six are third-party oversight products (Auditor General x3, OHRC x1, Ombudsman Toronto x1, counted as five distinct oth documents since bp-2014/2016 is one file) about the Service, not the Service's own strategic self-description.</p>
 <h4>Priority evolution</h4>

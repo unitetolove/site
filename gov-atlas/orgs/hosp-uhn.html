@@ -63,7 +63,7 @@
 </ul>
 
 <h2>Document shelf (12 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (12 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Financial statements</td><td><a href="https://www.uhn.ca/corporate/AboutUHN/Fiscal_Accountability/Documents/AR-Financial-2024-2025.pdf">UHN Audited Financial Statements Mar 31 2025</a></td><td>archived</td><td></td></tr>
@@ -79,7 +79,7 @@
 <tr><td>2020</td><td>Financial statements</td><td><a href="https://www.uhn.ca/corporate/AboutUHN/Fiscal_Accountability/Documents/AR_Financial_2019_2020.pdf">UHN Audited Financial Statements Mar 31 2020</a></td><td>archived</td><td></td></tr>
 <tr><td>2019</td><td>Strategic plan</td><td><a href="https://www.uhn.ca/corporate/AboutUHN/Purpose_Performance/UHN_Strategic_Plan/Documents/Download_the_full_Strategic_Plan.pdf">UHN&#x27;s 2019-23 Strategic Plan: A Healthier World</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:plan-horizon-2023</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: <code>research/government/briefs/_backgrounders/hosp-uhn.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -104,7 +104,7 @@
 <p>UHN is a public hospital approved and governed under the Public Hospitals Act, R.S.O. 1990, c. P.40, with the Minister of Health holding approval and directive powers over hospital operations; UHN's own stated purpose is "Transforming lives and communities through excellence in care, discovery and learning," vision "A Healthier World" (backgrounder, citing https://www.uhn.ca/corporate/AboutUHN, and confirmed independently in every strategic-plan and annual-report document read for this brief). The backgrounder's governance description — a voluntary, elected Board of Trustees including two University of Toronto appointees, board by-laws subject to Lieutenant Governor in Council approval, Ontario Health as funding/oversight parent — is independently confirmed in ar-2021 (595836200517), which lists the full FY2020-21 Board roster, and in every financial statement's funding-source language. The backgrounder's ~$3.7B FY2024-25 budget-scale figure (total revenue $3,695,663 thousand, total expenses $3,727,604 thousand, deficiency $31.9M) is independently re-verified against the fs-2025 statement of operations read for this brief (c82432c6fefd) (D-042: this brief relays, and separately re-verifies against primary text, rather than asserting independent discovery). One item the backgrounder could not anticipate: the April 2024 West Park amalgamation, first disclosed in this archived series as a subsequent event in fs-2024 (a8f3e9ace172) and executed in fs-2025 (c82432c6fefd) — outside the backgrounder's own citation window — materially updates UHN's institutional-history and site-count facts (backgrounder's four-hospital, ~10-site figure is now five hospitals as of April 1, 2024).</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 12 ok / 0 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="University Health Network - strategy evolution"><table>
 <thead>
 <tr>
 <th>doc_id</th>
@@ -200,7 +200,7 @@
 <td><strong>stub-suspected</strong> (own read confirms: thin SharePoint landing page, 6,867 chars, mostly navigation/CMS boilerplate — the substantive content is a two-paragraph "Bold Resolve" framing statement and CEO/Chair names; the actual downloadable Strategic Plan PDF was not captured in this archive)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Detector disagreement, one direction:</strong> <code>_index.json</code> marks all 12 documents <code>status: ok</code>, and by the letter of that field the detector is correct — hosp-uhn-sp-2025 did extract 6,867 characters of real page text, not an error page or empty file. But on read, that text is almost entirely SharePoint navigation chrome and only two short paragraphs of actual "Bold Resolve" messaging with no priority list, no strategic-plan structure, and no content comparable to sp-2019's 24,292-character document. This is flagged here as a live QA signal per the operator's spec: a document can be <code>status: ok</code> (successfully extracted, not corrupted) while still being effectively a stub for evolution-comparison purposes because the underlying PDF was never fetched. It is treated as thin-but-read below, not excluded from the count, since real (if minimal) UHN-authored content was recovered.</p>
 <p>Series composition note: unlike the AECL/StatCan reference briefs, this series mixes three document types (2 strategic plans, 4 "Report to Our Community" annual reports, 6 audited financial statements) rather than one uniform annual-report type across 12 consecutive years — evolution below is read across all three types together, cross-referenced by fiscal year.</p>
 <h4>Priority evolution</h4>

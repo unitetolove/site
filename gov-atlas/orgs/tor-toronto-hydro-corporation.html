@@ -63,7 +63,7 @@
 </ul>
 
 <h2>Document shelf (41 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (41 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2024</td><td>Annual report</td><td><a href="https://www.torontohydro.com/documents/20143/204243691/2024-annual-report">Toronto Hydro 2024 Annual Report</a></td><td>archived</td><td></td></tr>
@@ -108,7 +108,7 @@
 <tr><td>2002</td><td>Financial statements</td><td><a href="https://www.toronto.ca/legdocs/2003/agendas/council/cc030722/au3rpt/cl006.pdf">2002 Audited Financial Statements - Toronto Hydro Corporation (Audit Committee Report 3 Clause 6)</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:inline-council-clause</span></td></tr>
 <tr><td>2001</td><td>Financial statements</td><td><a href="https://www.toronto.ca/legdocs/2002/agendas/council/cc021126/au9rpt/cl006.pdf">2001 Audited Financial Statements - Toronto Hydro (Audit Committee Report 9 Clause 6)</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:inline-council-clause</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: <code>research/government/briefs/_backgrounders/tor-toronto-hydro-corporation.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -133,7 +133,7 @@
 <p>Toronto Hydro Corporation (THC) is a holding company incorporated under the Business Corporations Act (Ontario) on June 23, 1999, as required for municipal electricity utilities by the Electricity Act, 1998; the City of Toronto is its sole shareholder, directing it through a Shareholder Direction. Its subsidiary, Toronto Hydro-Electric System Limited (LDC), distributes electricity within the City of Toronto and is regulated by the Ontario Energy Board (OEB), independent of the City. The Board comprises 11 members: 8 public members and 3 City Council members (one the Mayor or a designate). Reported budget scale: ~$937.8M in distribution revenue for the year ended December 31, 2024, up $98.3M from 2023. The archived series independently corroborates this exact figure and its year-over-year delta (ar-2024, 29ba63386028; see Budget &amp; mandate inflection points). Institutional history: incorporated 1999 as successor to the Toronto Hydro-Electric Commission, itself formed January 1, 1998 by amalgamating six former municipalities' electricity commissions following the 1998 City of Toronto amalgamation — the archived series corroborates this independently and in more detail than the backgrounder's own sourcing (see Priority evolution, 1999-2003 era).</p>
 <h4>Series inventory</h4>
 <p>The registry (<code>research/atlas/government_documents.csv</code>, org_id <code>tor-toronto-hydro-corporation</code>) carries 41 total rows; 4 (ar-2007, ar-2008, ar-2009, ar-2010) are flagged <code>archive_status: missing</code> / <code>⚠️ VERIFY:wayback-blocked-in-sandbox</code> and were never archived or extracted. The 37 rows below are all the archived/extracted documents (all <code>status: "ok"</code> in <code>_index.json</code>); all 37 were directly opened and read (in full, or via targeted deep reads guided by grep for the largest filings) as part of this brief, not inferred from filename or char count.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Toronto Hydro Corporation - strategy evolution"><table>
 <thead>
 <tr>
 <th>doc_id</th>
@@ -404,7 +404,7 @@
 <td>yes</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>True extraction/usable-content rate</strong>: all 37 archived documents were opened and read; 35 of 37 (94.6%) yielded genuine, substantial, Toronto-Hydro-specific strategic and/or financial content proportionate to their reported size — not merely a repetition of <code>_index.json</code>'s "ok" status. The two exceptions are named explicitly: <strong>fs-2010</strong> is a real, non-stub capture but is only a one-page City Clerk transmittal memo — the substantive financial statements it forwards were never captured — and <strong>fs-2001</strong>, despite a superficially healthy 16,240-byte size that would have passed a char-count-only screen, contains essentially zero Toronto-Hydro-specific commentary or figures (it is an omnibus City Audit Committee report on 11 different city agencies/boards/commissions in which Toronto Hydro is named only in a list). This is a materially different finding than a size-only scan would produce, since fs-2001 would not have been flagged by char count alone. Additionally, two doc_id pairs (ar-2003/fs-2003 and ar-2004/fs-2004) are byte-identical captures of the same two underlying City Council committee-clause PDFs, so the 37 registered doc_ids represent 35 unique underlying source documents.</p>
 <h4>Priority evolution</h4>
 <p><strong>1999-2003 — incorporation and first strategic framework (ar-2003/fs-2003, 888dc7b65197):</strong> Toronto Hydro-Electric Commission was formed January 1, 1998 by amalgamating the electricity commissions of six former municipalities following the City of Toronto's own amalgamation; the Commission's successor, Toronto Hydro Corporation, was incorporated under the OBCA on June 23, 1999, with assets transferred at book value effective July 1, 1999 (book value $1,548,048,000; a $980,231,000 long-term promissory note to the City plus $567,817,000 of common shares issued to the City) (ar-2003/fs-2003, 888dc7b65197; fs-2006, d6aab0dc87ab). The original Shareholder Direction (approved by Council July 1, 1999) set the City's objectives — value maintenance, an income stream comparable to a going-concern sale, protecting consumers through the transition, and improved environmental impacts — and required a dividend of 40% of the distribution company's net income and a minimum A- credit rating (ar-2003/fs-2003, 888dc7b65197). The Corporation's first stated corporate vision was <strong>"Top 10 utility providing a necessity of life,"</strong> organized around five strategic-pillar areas: Operational Excellence and Manage/Grow Assets; Customer Service; Developing Employees; and Building Shareholder Value (ar-2003/fs-2003, 888dc7b65197). Provincial Bill 210 (Electricity Pricing, Conservation and Supply Act, 2002) capped commodity prices and effectively froze the retail electricity market from November 2002, and the Corporation responded by exiting energy retailing entirely — ceasing new contracts and selling off its natural gas book by mid-2003 — "to reduce business risk and maintain the credit rating as per the Shareholder Direction" (ar-2003/fs-2003, 888dc7b65197). The August 14, 2003 Northeast Blackout is documented as a significant operational test: the Corporation restored power to parts of the City within 7 hours and to the entire City within 27 hours (ar-2003/fs-2003, 888dc7b65197). The OEB renewed the distribution licence for a 20-year term on October 17, 2003 (ar-2003/fs-2003, 888dc7b65197).</p>

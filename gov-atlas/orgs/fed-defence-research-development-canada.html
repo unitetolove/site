@@ -63,7 +63,7 @@
 </ul>
 
 <h2>Document shelf (7 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (7 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Financial statements</td><td><a href="https://www.canada.ca/en/department-national-defence/corporate/reports-publications/departmental-results-report/2024-25-index/financial-statements.html">Department of National Defence -- Consolidated Departmental Financial Statements (Unaudited), FY2024-25</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:embedded-in-parent (DND Consolidated Departmental Financial Statements FY2025, Note 2(b) names DRDC as consolidated sub-entity.)</span></td></tr>
@@ -74,7 +74,7 @@
 <tr><td>2002</td><td>Annual report</td><td><a href="https://web.archive.org/web/20200510012557id_/https://publications.gc.ca/collections/collection_2012/rddc-drdc/D1-19-2002-eng.pdf">Defence R&amp;D Canada Annual Report 2001-2002</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:capture-artifact-goc-interstitial</span></td></tr>
 <tr><td>2001</td><td>Annual report</td><td><a href="https://web.archive.org/web/20200510030643id_/https://publications.gc.ca/collections/Collection/D1-14-2001E.pdf">Defence Research and Development Canada Annual Report 2000-2001</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:capture-artifact-goc-interstitial</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: <code>research/government/briefs/_backgrounders/fed-defence-research-development-canada.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -99,7 +99,7 @@
 <p>DRDC has no standalone enabling statute; it operates within the Department of National Defence, whose department and the Canadian Armed Forces are constituted under the National Defence Act, R.S.C., 1985, c. N-5, though a direct text search of that Act did not surface a section naming DRDC specifically. DRDC's own stated mandate is to be "Canada's science, technology and innovation leader, trusted advisor, collaborative partner, and knowledge integrator for defence and security," delivering technical solutions and advice to DND, the Canadian Armed Forces, other federal departments, and the safety/security community from seven research centres across Canada. The registry lists no <code>strategy_current_url</code> and notes "no separate current plan located; DRDC reports within DND's departmental plan." DRDC reports through DND to the Minister of National Defence (registry <code>parent_org</code>: <code>fed-national-defence</code>). The backgrounder marks both DRDC's internal-governance instrument (e.g., Special Operating Agency status) and its budget scale as ⚠️ VERIFY — not grounded in a fetchable primary source that pass, including a 404 on the DND 2026-27 Departmental Plan URL attempted. Institutional history (Defence Research Board, 1947, dissolved 1977, reconstituted as DRDC in 2000) is sourced to Wikipedia only and flagged ⚠️ VERIFY, not independently confirmed against a primary DND/gc.ca document.</p>
 <h4>Series inventory</h4>
 <p>All 6 registered documents are annual reports, one per fiscal year from 2000-01 (ar-2001) through 2005-06 (ar-2006). The index marks all 6 as extraction status <code>"stub-suspected"</code> with <code>chars: 804</code> and <code>stub_reason: "publications.gc.ca/LAC 'Information Archived on the Web' interstitial"</code>. This pass opened and read all 6 <code>.txt</code> files directly: every one contains only the bilingual Government of Canada "Information archivée dans le Web / Information Archived on the Web" gateway notice — not the annual report itself. The ENG-153 detector's "stub-suspected" flag is correct on all 6/6 documents in this series (see Residuals &amp; gaps).</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Defence Research and Development Canada - strategy evolution"><table>
 <thead>
 <tr>
 <th>doc_id</th>
@@ -153,7 +153,7 @@
 <td>stub-suspected: gateway notice only, no report text</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h4>Priority evolution</h4>
 <p>⚠️ VERIFY — no chronological priority-evolution narrative can be constructed from this archived series. All 6 <code>.txt</code> extracts (700708de34d9 through afeb381684ed, spanning ar-2001 through ar-2006) are byte-for-byte identical in body content after the per-file header block: each contains only the bilingual publications.gc.ca "Information archivée dans le Web / Information Archived on the Web" interstitial notice ("Continuer vers la publication / Continue to publication," with a request-alternate-format link), never the underlying annual report PDF. Every doc's <code>content_type</code> is recorded as <code>text/html; charset=utf-8</code>, confirming the crawler captured the HTML gateway/redirect page at each <code>url</code> rather than following through to the linked PDF (e.g., <code>https://publications.gc.ca/collections/Collection/D1-14-2001E.pdf</code> for ar-2001). Because no report text was actually read for any of the 6 documents, this brief makes no claims — sourced or otherwise — about DRDC's stated research priorities, program structure, or mandate-language changes across 2000-01 through 2005-06. Any such narrative would have to be invented rather than grounded in text actually read, which the task's hard rules prohibit.</p>
 <h4>Priorities added, dropped, renamed</h4>

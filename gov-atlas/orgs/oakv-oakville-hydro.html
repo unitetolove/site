@@ -63,12 +63,12 @@
 </ul>
 
 <h2>Document shelf (1 row)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (1 row)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2024</td><td>Financial statements</td><td><a href="https://pub-oakville.escribemeetings.com/filestream.ashx?DocumentId=86491">Consolidated Financial Statements of Oakville Enterprises Corporation, Year Ended Dec 31 2024</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:escribe-host;parent-OEC-consolidated-fs</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: <code>research/government/briefs/_backgrounders/oakv-oakville-hydro.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -93,7 +93,7 @@
 <p>Oakville Hydro was incorporated in 2000 ahead of Ontario's May 2002 electricity-market deregulation, tracing institutional roots to an 1889 Harbour Grove lighting scheme and the 1908 Oakville Water and Light Commission via successor bodies Trafalgar Public Utilities (1947) and the Oakville Public Utilities Commission (1962). It is licensed by the Ontario Energy Board (OEB) to distribute electricity within the Town of Oakville to roughly 78,000 accounts, operates as a wholly-owned corporation of Oakville Enterprises Corporation (OEC), the Town's holding company, and has not merged into the regional Alectra Utilities consolidation. The backgrounder flags budget scale as ungrounded (only an OEB-scorecard-derived cost-per-customer estimate available) — this brief's document is, unusually, the consolidated financial statements that should in principle resolve that gap, but the extracted text's numeric tables are not readable (see Residuals &amp; gaps).</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 1 ok / 0 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Oakville Hydro Electricity Distribution Inc. - strategy evolution"><table>
 <thead>
 <tr>
 <th>doc_id</th>
@@ -112,7 +112,7 @@
 <td>yes — full document read (KPMG-audited consolidated financial statements of Oakville Enterprises Corporation, year ended Dec 31 2024, ~2,930 extracted lines); narrative/policy text legible, all numeric table values rendered as unreadable/blank characters by a PDF font-encoding fault (see Residuals &amp; gaps)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>SHORT-FORM RULE APPLIES: 1 usable document.</strong> No detector disagreement: <code>_index.json</code> marks this document <code>ok</code> and it is genuinely readable prose (an OHED-specific note structure, subsidiary list, and a February subsequent event are all legible), even though its financial tables are not. This is a single-document, single-year record; it cannot show priority evolution over time, and it is not even an Oakville-Hydro-only document — OHED is one of ~25 named entities in a group-wide consolidation. The sections below state only what this one document establishes about OHED specifically.</p>
 <h4>Priority evolution</h4>
 <p>A single document, one fiscal year, cannot establish evolution. It is also not framed as a strategy or priorities document at all — it is audited financial statements with note-form disclosure, so it contains no "priorities" language of the kind other orgs' annual reports use. What it does establish about OHED's role within the group: OHED is named as the "regulated subsidiary" throughout, distinct from OEC's roughly two dozen non-regulated subsidiaries (utility locating, geo-exchange energy development, solar generation, engineering/consulting) (b420ec3ef37d).</p>

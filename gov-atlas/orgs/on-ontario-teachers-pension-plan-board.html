@@ -63,7 +63,7 @@
 </ul>
 
 <h2>Document shelf (44 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (44 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Annual report</td><td><a href="https://www.otpp.com/content/dam/otpp/documents/reports/2025-ar/otpp-2025-annual-report-eng.pdf">OTPP 2025 Annual Report</a></td><td>archived</td><td></td></tr>
@@ -111,7 +111,7 @@
 <tr><td>2001</td><td>Annual report</td><td><a href="https://www.otpp.com/content/dam/otpp/documents/reports/2001%20Annual%20Report.pdf">2001 Annual Report</a></td><td>archived</td><td></td></tr>
 <tr><td>2000</td><td>Annual report</td><td><a href="https://www.otpp.com/content/dam/otpp/documents/reports/2000%20Annual%20Report.pdf">Outstanding Service Today, Retirement Security Tomorrow: 2000 Annual Report</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: <code>research/government/briefs/_backgrounders/on-ontario-teachers-pension-plan-board.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -138,7 +138,7 @@
 <p><code>_index.json</code>: 38 ok / 0 stub-suspected / 0 extract-failed.</p>
 <p>Registry (<code>government_documents.csv</code>) carries 38 rows for this org spanning 2000-2025 (annual reports) and 2007-2019 (standalone financial statements); all 38 are <code>archived</code> with no <code>staged</code> or <code>missing</code> rows and no registry flags — this is a fully continuous archived series with no declared gap years.</p>
 <p>This is a 38-document, 26-year multi-decade series, well above the large-series sampling threshold. Per the sampling rule, I read the oldest annual report, the most recent, and a spread of checkpoint years chosen to bracket the series' major inflections (the 2008-09 financial crisis, the 2010 sustainability push, the 2014 return to full funding, the 2020-21 net-zero commitment, and the 2025 35th-anniversary retrospective), plus one financial-statements doc to confirm that series is non-narrative. To extend coverage beyond the documents opened directly, I additionally ran targeted keyword-frequency scans (grep) across the full text of all 26 annual reports for terms tied to candidate inflection points ("responsible investing," "net-zero," "climate change," "ESG," "private capital," "asset mix," "funding status," "fully funded," "surplus," "shortfall," "diversif," "COVID," "70/30," "inflation") — this is not equivalent to reading the documents and is declared separately below; it was used only to date when terminology entered/exited the series and to select which additional checkpoint years to open directly.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Ontario Teachers&#x27; Pension Plan Board - strategy evolution"><table>
 <thead>
 <tr>
 <th>doc_id</th>
@@ -416,7 +416,7 @@
 <td><strong>not opened this pass</strong> (inferred non-narrative)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h4>Priority evolution</h4>
 <p><strong>2000 (ar-2000, 2d6e166fdd88):</strong> A young, actively-managed fund ten years into its existence. Asset-mix policy: 60% equities, 22% inflation-sensitive assets, 18% fixed income. Chair's report frames the strategy as "maximizing returns" through active management, foreign-equity diversification (via derivatives and external managers), and a large merchant-banking/private-equity program; the plan had just acquired full ownership of Cadillac Fairview (real estate) for $2.4B in March 2000. Funding language is upbeat: a $10.2B surplus, "best-ever value added" of $2.6B.</p>
 <p><strong>2003-2013, funding-shortfall era (keyword-scan-dated; not all years read directly):</strong> Grep across all 26 annual reports shows "shortfall" mentions jump from single digits pre-2003 to a sustained 20-55 mentions/year from 2003 through 2013, peaking in 2008 (53) and 2011 (54); "funding status" mentions follow the same arc (8-14/year 2008-2011, low single digits from 2015 on). This corroborates the directly-read ar-2008 and ar-2010 checkpoints below.</p>

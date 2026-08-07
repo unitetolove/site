@@ -63,7 +63,7 @@
 </ul>
 
 <h2>Document shelf (26 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (26 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Annual report</td><td><a href="https://www.citt-tcce.gc.ca/en/publications/annual-report-fiscal-year-ending-march-31-2025">CITT Annual Report - Fiscal Year Ending March 31, 2025</a></td><td>archived</td><td></td></tr>
@@ -93,7 +93,7 @@
 <tr><td>2001</td><td>Annual report</td><td><a href="https://web.archive.org/web/20200509070248id_/https://publications.gc.ca/collections/Collection/F40-2001E.pdf">CITT annual report for the fiscal year ending March 31 2001</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:capture-artifact-goc-interstitial; URL-fix 2026-08-06 (Mac capture run): direct publications.gc.ca route live-tested this session, confirmed systemically dead (307-&gt;archivee-archived.html interstitial for all 33 rows in this batch, every UA tried) -- reverted to staged on the original wayback id_ URL for a real recapture, per worklist fallback</span></td></tr>
 <tr><td>2000</td><td>Annual report</td><td><a href="https://web.archive.org/web/20200509070243id_/https://publications.gc.ca/collections/Collection/F40-2000E.pdf">CITT annual report for the fiscal year ending March 31 2000</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:capture-artifact-goc-interstitial; URL-fix 2026-08-06 (Mac capture run): direct publications.gc.ca route live-tested this session, confirmed systemically dead (307-&gt;archivee-archived.html interstitial for all 33 rows in this batch, every UA tried) -- reverted to staged on the original wayback id_ URL for a real recapture, per worklist fallback</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: <code>research/government/briefs/_backgrounders/fed-canadian-international-trade-tribunal.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -118,7 +118,7 @@
 <p>CITT is a quasi-judicial institution independent of government, constituted under the Canadian International Trade Tribunal Act with the powers of a superior court of record, reporting to Parliament through the Minister of Finance (backgrounder, <code>_backgrounders/fed-canadian-international-trade-tribunal.md</code>, citing AR FY2024-25). Its lineage — Board of Customs (1888) → Tariff Board (1931) → Anti-dumping Tribunal (1968) → CITT itself (1988) → absorption of the Procurement Review Board (1994) — is independently re-confirmed and extended below by ar-2025's own "History of the Canadian International Trade Tribunal" timeline (ee99b22bebe9), which additionally supplies two intermediate steps the backgrounder does not name: Canada's first anti-dumping legislation (1904) and the brief Canadian Import Tribunal (1969) / Textile and Clothing Board (1970) predecessors between the Anti-dumping Tribunal and the 1988 CITT merger (D-042: this brief relays and separately re-verifies against primary text). The backgrounder's ⚠️ VERIFY on standalone budget figures remains unresolved: none of the eight substantive annual reports read for this brief contains separate CITT financial statements or expenditure figures (consistent with the backgrounder's own finding that CITT is administratively supported by the Administrative Tribunals Support Service of Canada, ATSSC, rather than separately budgeted).</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 8 ok / 7 stub-suspected / 11 no-manifest-match.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Canadian International Trade Tribunal - strategy evolution"><table>
 <thead>
 <tr>
 <th>doc_id</th>
@@ -312,7 +312,7 @@
 <td>yes — full report: land acknowledgement, message, "year in numbers," full mandate descriptions, institutional history timeline, member roster, caseload tables, noteworthy-decision case summaries, judicial-review tracking, 69,272 chars</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Registry status update (2026-08-06, lead patch):</strong> the table above describes the vault as extracted on 2026-08-05 and remains accurate about <em>captures</em>, but its implied availability claims are superseded: (1) ar-2011 through ar-2017's rows now point at the full-report PDFs on citt-tcce.gc.ca (<code>/sites/default/files/.../annual-report-&lt;fy&gt;.pdf</code>, five of seven content-fetched 2026-08-06, two page-linked from the org's own year pages), <code>archive_status=staged</code>; (2) ar-2000 through ar-2010 were each confirmed readable at their underlying publications.gc.ca URLs by the 2026-08-05 discovery pass (browser-UA fetch; the earlier "no capture" state was a fetcher/interstitial artifact, not a missing document); recapture for all 18 rows is queued in <code>research/atlas/tmp_work/gov_t2_registryfix_2026-08-06/MAC_CAPTURE_WORKLIST_2026-08-06.md</code>. No year 2000-2025 is a documentary gap.</p>
 <p><strong>Detector explicitly verified across all three status tiers, no disagreement found in either direction.</strong> All 11 no-manifest-match rows genuinely have no extracted text file to read (confirming the operator's flagged capture-gap pattern — Wayback-wrapper <code>web.archive.org/web/&lt;ts&gt;id_/https://publications.gc.ca/...</code> URLs with archive_status disagreeing with the actual manifest — matching the Competition Bureau finding banked elsewhere this batch, not an extraction-tool bug). All 7 stub-suspected rows were individually opened and confirmed to be genuine one-paragraph transmittal-letter-only captures (the Chair's cover letter to the Minister of Finance, nothing else) — a real, below-floor thin capture, not a detector miscall. All 8 ok rows were individually opened and confirmed substantive, with content depth visibly growing year over year (4,502 chars in ar-2018 to 69,272 chars in ar-2025 — the last report is roughly 15x the length of the first substantive one, reflecting CITT's own shift toward a fuller public-facing annual report format starting around 2024-25).</p>
 <h4>Priority evolution</h4>

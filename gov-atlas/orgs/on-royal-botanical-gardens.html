@@ -63,7 +63,7 @@
 </ul>
 
 <h2>Document shelf (38 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (38 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Annual report</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td><strong>missing</strong></td><td><span class="incompleteness-tag">⚠️ VERIFY:searched-not-found-2026-07-30:No 2025 Annual Report found. RBG&#x27;s live /annual-report/ page (fetched directly) lists r...</span></td></tr>
@@ -105,7 +105,7 @@
 <tr><td>1998</td><td>Annual report</td><td><a href="https://archive.org/details/32022213358217">Annual Report of the Royal Botanical Gardens</a></td><td>archived</td><td></td></tr>
 <tr><td>1997</td><td>Annual report</td><td><a href="https://archive.org/details/32022213358209">Annual Report of the Royal Botanical Gardens</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: <code>research/government/briefs/_backgrounders/on-royal-botanical-gardens.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -130,7 +130,7 @@
 <p>Per the backgrounder, RBG is "the largest botanical garden in Canada, a National Historic Site, and registered charitable organization with a mandate to bring together people, plants and nature," a registered charity exempt from income tax, governed by a Board including Lieutenant-Governor-in-Council appointees and listed among Ontario's provincial agencies, incorporated in 1941 with National Historic Site designation since 1993, and funded by the Ontario Ministry of Tourism, Culture &amp; Sport, the City of Hamilton, and the Regional Municipality of Halton. The backgrounder's cited budget-scale figures — FY2024 total revenue $20,410,228 (2023: $20,998,944), total expenses $21,842,093, deficiency $1,436,993, and operating grants of $4,036,060 (Ministry) / $894,357 (Halton) / $673,559 (Hamilton) — are relayed here as backgrounder-sourced and are independently re-confirmed against the primary ar-2024 statement of operations text read for this brief (19eb1915d9d4): the figures match exactly. The backgrounder flags one open item — no confirmed citation to a distinct provincial founding statute. This brief partially, not fully, resolves that gap: RBG's own "Fast Facts" pages (ar-2010, 61b3d7e7c1ea; ar-2013, 5f8d84e975b3) state "1941 – Established by an Act of the Provincial Legislature," which is consistent with "officially incorporated" but does not supply an exact statute name or citation — the ⚠️VERIFY stands.</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 21 ok / 5 stub-suspected / 7 extract-failed, 33 total.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Royal Botanical Gardens - strategy evolution"><table>
 <thead>
 <tr>
 <th>doc_id</th>
@@ -373,7 +373,7 @@
 <td>yes — full standalone audited financial statements for FY2025, the newest document in the entire series (no ar-2025 exists in this archived set)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Extraction-quality note, live QA signal:</strong> all 5 stub-suspected rows were confirmed correct on direct read — each is genuinely a contentless Internet Archive item-detail/catalog wrapper page (identical boilerplate structure across all five, differing only in item metadata), no disagreement with the detector in either direction. Separately, a <em>distinct</em> and more consequential extraction gap was found among the "ok" rows themselves: ar-2018, ar-2019, ar-2020 and ar-2021 all extracted their narrative content cleanly but their embedded financial-statement tables did not extract as text (present as blank page markers only) — this is functionally identical to the fs-*.txt "0 bytes" failures but was not flagged by the stub/fail detector because narrative content elsewhere in the same PDF did extract. See Residuals &amp; gaps.</p>
 <h4>Priority evolution</h4>
 <p><strong>2007 (ar-2007, aa6d56772e57):</strong> RBG in year two of a "three-year transition period," implementing recommendations from the Ontario government's 2005 Mandate Review, <em>A Fresh Start</em>, which "examined our history and reaffirmed our commitment to our mandated areas." A three-year joint Transition Funding program (Ontario Ministry of Culture, Halton, Hamilton), announced June 2006, is winding toward its scheduled end in 2008; the report already warns that "after 2008, there will be no further funding support from this program." Mission is framed as "to be a living museum which serves local, regional and global communities while developing and promoting public understanding of the relationship between the plant world, humanity and the rest of nature" — no separate Vision statement appears this year. Four "mandated areas" are named as horticulture, conservation, science and education. A capital project bundling the Camilla and Peter Dalglish Atrium, the Helen M. Kippax Garden and Rose Garden work (funded partly through the Canada-Ontario Infrastructure Program, COIP) is under construction, budgeted at $11,680,000 but revised upward to $13,933,790 during the year (aa6d56772e57, note 19) — the series' first documented capital-cost overrun, pre-dating Rock Garden by six years. Total revenue: $9,907,360 (2006: $8,843,850); operating surplus $69,954.</p>

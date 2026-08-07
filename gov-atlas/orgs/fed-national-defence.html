@@ -63,7 +63,7 @@
 </ul>
 
 <h2>Document shelf (46 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (46 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Departmental plan</td><td><a href="https://www.canada.ca/en/department-national-defence/corporate/reports-publications/departmental-plans/departmental-plan-2025-26.html">Departmental Plan 2025–2026</a></td><td>archived</td><td></td></tr>
@@ -113,7 +113,7 @@
 <tr><td>2001</td><td>Departmental results report</td><td><a href="https://web.archive.org/web/20200509170608id_/https://publications.gc.ca/collections/Collection/BT31-4-50-2001E.pdf">Department of National Defence 2000-2001 Departmental Performance Report</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:capture-artifact-goc-interstitial</span></td></tr>
 <tr><td>1999</td><td>Departmental results report</td><td><a href="https://web.archive.org/web/20220917120037id_/https://publications.gc.ca/collections/Collection/BT31-4-50-1999E.pdf">National Defence Performance Report for the period ending March 31 1999</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:capture-artifact-goc-interstitial</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: <code>research/government/briefs/_backgrounders/fed-national-defence.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -139,7 +139,7 @@
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 7 ok / 27 stub-suspected / 0 extract-failed.</p>
 <p>Registry (<code>government_documents.csv</code>) carries 46 rows for this org spanning 1999-2026; 34 are <code>archived</code> and appear below (matching the 34 entries in <code>_index.json</code>, since the extraction dir covers the archived subset), 12 are <code>staged</code> and 0 are <code>missing</code> — those 12 <code>staged</code> years are not analyzable from the archive and are treated as gaps, not as disclosure choices. The 12 staged rows cluster tightly: departmental-plan and results-report pairs for 2007-2011, plus a lone dp-2013, all carrying <code>⚠️ VERIFY:dead-url-wayback-only</code> and repeated <code>fetch-failed</code> flags in the registry.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Department of National Defence - strategy evolution"><table>
 <thead>
 <tr>
 <th>doc_id</th>
@@ -389,7 +389,7 @@
 <td>yes — full Departmental Results Report 2024-25, substantive (348,923 chars)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>TRUE usable count: 2</strong> (dp-2026, drr-2025). The five other <code>ok</code>-flagged rows (dp-2015, dp-2016, dp-2017, drr-2014, drr-2015) passed the char-count floor but on direct read contain only Program Alignment Architecture section headers (a nested outline running to hundreds of sub-sub-program lines) with no priority narrative, budget figures, or discussion text — the actual report content lived in a linked PDF that this capture pass did not retrieve. They are functionally identical in kind to the confirmed stubs, just longer, because deeply nested outline text pushed them over the floor. This brief treats them as <strong>structural inventory only</strong> (confirms report titles, dates, and the PAA→Core Responsibilities framework existed) and does not cite them for any priority, budget, or narrative claim.</p>
 <h4>Priority evolution</h4>
 <p>With only 2 documents carrying real narrative content — both from the same recent two-year window (FY2024-25 and FY2025-26) — this record cannot show evolution across the 1999-2026 span the registry covers. What the two usable documents DO establish, side by side:</p>

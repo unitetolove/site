@@ -63,7 +63,7 @@
 </ul>
 
 <h2>Document shelf (21 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (21 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Annual report</td><td><a href="https://arcg.is/1aeaiO4">Belledune Port Authority Annual Report 2025</a></td><td>archived</td><td></td></tr>
@@ -88,7 +88,7 @@
 <tr><td>2006</td><td>Annual report</td><td><a href="https://www.portbelledune.ca/_files/ugd/6e6ba8_b99817755bd64bf187f5c5bb162a1b59.pdf">Belledune Port Authority Annual Report 2006</a></td><td>archived</td><td></td></tr>
 <tr><td>2005</td><td>Annual report</td><td><a href="https://www.portbelledune.ca/_files/ugd/6e6ba8_ce065ffac1c647a0ae014541a042978c.pdf">Belledune Port Authority Annual Report 2005</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: <code>research/government/briefs/_backgrounders/fed-belledune-port-authority.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -114,7 +114,7 @@
 <p>Both backgrounder gaps are addressed by this pass. The founding-date VERIFY is now <strong>resolved</strong>: two independent primary-source annual reports state it directly — ar-2015 (e7ece0cfc57b): "Originally built in 1968, the Belledune Port Authority (BPA) was formed in 2000 to take over all operations at the Port of Belledune. Until that time, the port had been run by a federal department in Ottawa"; and ar-2018 (b7158356be7d), marking the Port's 50th anniversary: "Beginning operations in 1968 primarily for the, at the time, Normanda Smelter." The earliest reports (ar-2005, 38872e2066dd; ar-2008, 61fd4bfcf699) independently corroborate March 2000 as the specific month the Authority took over from the prior federal crown corporation. One naming detail remains open: ar-2018 names the original industrial tenant as the "Normanda Smelter," where the backgrounder names "Brunswick Mining and Smelting" — ⚠️ VERIFY, not resolved by this read set. The 2024/2025 extraction gap is independently confirmed below (Series inventory) — and in fact extends back to 2021, not just 2024-2025.</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 16 ok / 5 stub-suspected / 0 extract-failed. (Own read of <code>_index.json</code> matches the table supplied in-prompt exactly — no discrepancy.)</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Belledune Port Authority - strategy evolution"><table>
 <thead>
 <tr>
 <th>doc_id</th>
@@ -273,7 +273,7 @@
 <td><strong>stub-suspected</strong> (confirmed: 24-char ArcGIS StoryMap page-title-only extract via arcg.is short link, no report body)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>All five stub-suspected files were opened directly rather than trusted on the detector label alone. Each is a tiny structured header (doc_id/year/doc_type/title/url/sha256_12/content_type) followed by a <code>---</code> separator and then exactly 24 characters of body content — either the literal string "BELLEDUNE PORT AUTHORITY" (ar-2021, all-caps) or "Belledune Port Authority" (ar-2022 through ar-2025, title case). All five source URLs are ArcGIS StoryMap pages (<code>storymaps.arcgis.com</code> or <code>arcg.is</code> short links); <code>content_type</code> is recorded as <code>text/html</code> in every case. This is consistent with a JS-rendered StoryMap whose scrollable narrative content loads client-side and was never present in the static HTML captured to WARC — only the page's <code>&lt;title&gt;</code>/<code>og:title</code> metadata survived extraction. The detector's "stub-suspected" call is confirmed correct in all five cases; no disagreement with the detector in either direction. This also means the reports for 2021-2025 are unreadable as a block, not just 2024-2025 as the backgrounder's own pass had found — the backgrounder's ArcGIS-StoryMap observation for 2024/2025 generalizes to the two years before it as well.</p>
 <p>Given 16 usable, information-dense annual reports spanning 2005-2020 (each 25,000-46,000 characters), this brief is full-form; SHORT-FORM does not apply.</p>
 <h4>Priority evolution</h4>

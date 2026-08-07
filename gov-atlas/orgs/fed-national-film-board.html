@@ -63,7 +63,7 @@
 </ul>
 
 <h2>Document shelf (44 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (44 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2027</td><td>Departmental plan</td><td><a href="https://www.canada.ca/en/national-film-board/corporate/publications/plans-reports/departmental-plans/2026-2027.html">NFB Departmental Plan 2026-2027</a></td><td>archived</td><td></td></tr>
@@ -111,7 +111,7 @@
 <tr><td>2007</td><td>Annual report</td><td><a href="https://web.archive.org/web/20250911220452id_/https://publications.gc.ca/collections/collection_2009/onf-nfb/NF1-2007E.pdf">National Film Board of Canada Annual Report 2006-2007</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:capture-artifact-goc-interstitial</span></td></tr>
 <tr><td>2006</td><td>Annual report</td><td><a href="https://web.archive.org/web/20250911203600id_/https://publications.gc.ca/collections/collection_2009/onf-nfb/NF1-2006E.pdf">National Film Board of Canada Annual Report 2005-2006</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:capture-artifact-goc-interstitial</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: <code>research/government/briefs/_backgrounders/fed-national-film-board.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -138,7 +138,7 @@ This registry carries 36 rows but only 9 resolve to usable document content — 
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 9 ok / 15 stub-suspected / 12 no-manifest-match.</p>
 <p>Registry (<code>government_documents.csv</code>) carries 36 rows for this org spanning 2006-2027; all 36 are marked <code>archived</code> in the registry's own <code>archive_status</code> field, but at the extraction stage 12 of those (all annual reports, 2006-2017) resolved to <code>no-manifest-match</code> — no WARC capture in this pass's manifest matched the registry's URL for those years, so despite the registry label, no document content is available for them here. 12 of the 36 are flagged <code>⚠️ VERIFY:capture-artifact-goc-interstitial</code> in the registry (the ar-2006–ar-2017 rows), consistent with a capture that landed on a Government of Canada interstitial/redirect page rather than the underlying PDF.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="National Film Board - strategy evolution"><table>
 <thead>
 <tr>
 <th>doc_id</th>
@@ -255,7 +255,7 @@ This registry carries 36 rows but only 9 resolve to usable document content — 
 <td><strong>stub-suspected</strong> (confirmed correct: same landing-page pattern)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Full-form applied.</strong> 9 documents carry real content — 8 annual reports (2018-2025, one calendar year unread) plus one results-report (2017-18) — which is enough to show real, dated evolution, even though the registry's 36-row count and this batch's Tier-2 framing implied a deeper series. Documents read in full: ar-2018, ar-2020, ar-2022, ar-2024, ar-2025, drr-2018 (oldest, most-recent, and evenly spaced middle years). Documents sampled (specific passages read, not cover-to-cover): ar-2023 (leadership-transition foreword). Documents skipped entirely: ar-2019, ar-2021 (both keyword-scanned across the full text for pandemic/streaming/funding/priority terms as a check against missed inflections, per LANE_SPEC/BATCH11_ADDENDUM §A3, but no passages were read and no claims below are sourced to them). Stub-suspected verification: 4 of the 15 stub-suspected rows were opened directly (dp-2020, dp-2025, drr-2019, drr-2023); all 4 confirmed as genuine stubs — each is the canada.ca HTML landing page for a Departmental Plan or Departmental Results Report whose actual content lives only in a separate PDF that this extraction did not capture, not an index/catalogue page as speculated. This is a distinct and narrower failure mode than "catalogue page mistaken for content": the detector is correct on every case checked, and the pattern is a report series that, from 2019 onward, canada.ca serves as a bare download-link stub rather than embedding the report text in the HTML page itself (drr-2018 is the one exception, captured with the full report body inline).</p>
 <h4>Priority evolution</h4>
 <p><strong>2017-18 (ar-2018, 4cb6e9d12f7d; drr-2018, b63ef9ccc0a7):</strong> Under Government Film Commissioner Claude Joli-Coeur, priorities centre on gender parity (42% of productions directed by women, target of parity by 2019 "reached well in advance"), the first year of a Three-Year Indigenous Action Plan (2017-2020, 33 commitments, "devote a minimum of 15% of total production costs to works directed by Indigenous artists"), and planning for relocation of NFB headquarters to Montreal's Quartier des Spectacles. Diversity and inclusion appears as a forming, not yet formal, priority: an internal Diversity and Inclusion Committee "developed a vision based on four pillars," with a full plan promised for 2018-19. Financial resources: actual spending $67.3 million; total NFB spending trend shown as $59.8M (2015-16) rising to $67.3M (2017-18).</p>

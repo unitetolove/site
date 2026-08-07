@@ -63,13 +63,13 @@
 </ul>
 
 <h2>Document shelf (2 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (2 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2024</td><td>Annual report</td><td><a href="https://vaughanpl.info/files/VPL_2024_Annual_Report.pdf">VPL 2024 Annual Report</a></td><td>archived</td><td></td></tr>
 <tr><td>2024</td><td>Financial statements</td><td><a href="https://www.vaughan.ca/sites/default/files/2025-07/2024-12-31_corp_of_city_of_vaughan_19837_aud_cons_psas_locked.pdf">Consolidated Financial Statements of The Corporation of The City of Vaughan and Independent Auditor&#x27;s Report thereon -- Year ended December 31, 2024</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:embedded-in-parent (City of Vaughan Consolidated Financial Statements, year ended Dec 31 2024. Capture failed: Akamai 403 to warc_capture.py despite Referer header; grounded via manual curl instead.) | ⚠️ VERIFY:capture-failed (see evidence — content live-confirmed, WARC capture did not succeed this pass)</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: <code>research/government/briefs/_backgrounders/vaug-vaughan-public-libraries.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -94,7 +94,7 @@
 <p>Vaughan Public Libraries operates under the Ontario Public Libraries Act, R.S.O. 1990, c. P.44, with a stated purpose to "ensure the delivery of library services to people who live, work or study in Vaughan" (per the backgrounder, citing VPL's board page). It runs thirteen full-service branches plus one express storefront, holds a collection exceeding 550,000 items, and draws roughly 2.5 million visitors annually per its own "About" page. Governance is a sixteen-trustee board for the 2023-2026 term (Mayor, ward/regional councillors, and citizen appointees), chaired by Gary Sangha; the parent municipality is the City of Vaughan. The backgrounder flags budget scale and institutional founding history as ⚠️ VERIFY, not grounded in its pass; the AR-2024 document read for this brief does not resolve either gap (no total-dollar budget figure and no founding date appear in the extracted text).</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 1 ok / 0 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Vaughan Public Libraries - strategy evolution"><table>
 <thead>
 <tr>
 <th>doc_id</th>
@@ -113,7 +113,7 @@
 <td>yes — full 2024 Annual Report, 44,748 chars, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>SHORT-FORM RULE APPLIES: one usable document.</strong> The detector's "ok" call is confirmed correct on reading — this is a genuine, content-rich annual report, not a stub. A single document cannot establish any evolution across time; the sections below state only what this one report itself establishes about the 2024 operating year, plus its forward references to 2025 openings.</p>
 <h4>Priority evolution</h4>
 <p>A single document cannot establish a priority-evolution narrative. What ar-2024 (1c7e92bd4de1) does establish for its own year: VPL frames its 2024 activity around its stated vision "Enrich, Inspire, Transform" and mission of offering "welcoming destinations that educate, excite and empower our community," with emphasis on programming breadth (early literacy, STEAM, culinary and health literacy, seniors' programming, therapy dogs) and community-impact measurement (a $1,200 per-cardholder benefit calculation) (1c7e92bd4de1).</p>

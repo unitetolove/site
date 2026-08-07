@@ -53,7 +53,7 @@ project's own working election dataset; regenerable any time the source data ref
     oninput="var q=this.value.toLowerCase();document.querySelectorAll('#muni-table tbody tr').forEach(function(r){r.style.display=r.dataset.name.indexOf(q)>-1?'':'none';});">
 </div>
 
-<table id="muni-table">
+<div class="table-scroll" tabindex="0" aria-label="Scrollable table"><table id="muni-table">
 <thead><tr><th>Municipality</th><th>Upper tier</th><th>Races on file</th><th>Coverage status</th></tr></thead>
 <tbody>
 <tr data-name="addington highlands, township of"><td><a href="ON-addington-highlands.html">Addington Highlands, Township of</a></td><td>Lennox and Addington, County of</td><td>3</td><td>census</td></tr>
@@ -501,7 +501,7 @@ project's own working election dataset; regenerable any time the source data ref
 <tr data-name="york, regional municipality of"><td><a href="ON-york.html">York, Regional Municipality of</a></td><td>&amp;mdash;</td><td>0</td><td>urls</td></tr>
 <tr data-name="zorra, township of"><td><a href="ON-zorra.html">Zorra, Township of</a></td><td>Oxford, County of</td><td>5</td><td>census</td></tr>
 </tbody>
-</table>
+</table></div>
 
 <p><strong>Disclosed gap:</strong> 29 of 444 municipalities have zero races on file in this pass (Bruce, County of, Dufferin, County of, Durham, Regional Municipality of, Elgin, County of, Essex, County of, Frontenac, County of, Grey, County of, Haliburton, County of, Halton, Regional Municipality of, Hastings, County of, Huron, County of, Lambton, County of, plus 17 more). Their pages say so plainly and point to AMO's own directory and the municipality's clerk link instead of pretending coverage that isn't there.</p>
 

@@ -63,7 +63,7 @@
 </ul>
 
 <h2>Document shelf (28 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (28 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Annual report</td><td><a href="https://parking.greenp.com/app/uploads/2026/06/TPA_2025_Annual_Report.pdf">Toronto Parking Authority 2025 Annual Report</a></td><td>archived</td><td></td></tr>
@@ -95,7 +95,7 @@
 <tr><td>2001</td><td>Annual report</td><td><a href="https://parking.greenp.com/app/uploads/2018/10/ar_00000007.pdf">Toronto Parking Authority 2001 Annual Report</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:scanned-pdf-unverified-year</span></td></tr>
 <tr><td>2000</td><td>Annual report</td><td><a href="https://parking.greenp.com/app/uploads/2018/10/ar_00000008.pdf">Toronto Parking Authority 2000 Annual Report</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ VERIFY:scanned-pdf-unverified-year</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: <code>research/government/briefs/_backgrounders/tor-toronto-parking-authority.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -121,7 +121,7 @@
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 25 ok / 1 stub-suspected / 1 extract-failed (27 rows total).</p>
 <p>Registry (<code>government_documents.csv</code>) carries 27 rows for this org spanning 2000-2025; all 27 are <code>archived</code> and appear below (0 staged, 0 missing) — the gap here is a residual extraction issue on two rows, not an unarchived-row problem. This supersedes the near-total extraction failure (26 of 27 failed) recorded in the prior version of this brief: throttled re-capture at 8-second intervals on 2026-08-02 succeeded on 26 of 26 previously-failed rows; only ar-2000 remains materially unreadable (now stub-suspected at 18 characters rather than extract-failed at 0 bytes — a change in failure signature, not a recovery) and ar-2001 remains fully extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Toronto Parking Authority - strategy evolution"><table>
 <thead>
 <tr>
 <th>doc_id</th>
@@ -322,7 +322,7 @@
 <td>yes — full read, all 38 pages ("TPA Strategic Outlook: Enabling Mobility for the Next 21 Years")</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Detector disagreement, one direction:</strong> ar-2000 (<code>56adb5d7873d</code>) is labeled <code>stub-suspected</code> at 18 characters; direct inspection confirms this is correct — the extracted text is the single stray character "A" (a PDF-to-text artifact), not usable content. No disagreement with the detector. ar-2003, ar-2005, ar-2006, ar-2007, ar-2010 are marked <code>ok</code> in <code>_index.json</code> with substantial char counts (68K-110K) but were not opened in this pass under the batch's sampling instruction; their <code>ok</code> status is accepted on the strength of the adjacent years' consistent formatting and char counts in the same range as years that were read, not independently verified.</p>
 <h4>Priority evolution</h4>
 <p><strong>2000-2001 (unreadable):</strong> No content recoverable.</p>

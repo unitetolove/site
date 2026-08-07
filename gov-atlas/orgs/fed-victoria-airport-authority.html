@@ -63,7 +63,7 @@
 </ul>
 
 <h2>Document shelf (20 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (20 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Annual report</td><td><a href="https://yyj.ca/wp-content/uploads/2026/05/YYJ-VAA-2025-Annual-Report-EN-WEB.pdf">Victoria Airport Authority 2025 Annual Report</a></td><td>archived</td><td></td></tr>
@@ -87,7 +87,7 @@
 <tr><td>2008</td><td>Annual report</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td>archived</td><td></td></tr>
 <tr><td>2007</td><td>Annual report</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: <code>research/government/briefs/_backgrounders/fed-victoria-airport-authority.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -115,7 +115,7 @@
 - <strong>New discrepancy surfaced.</strong> The same Note 1 states VAA "is incorporated under Part II of the Canada Corporations Act" — but the backgrounder (citing a Transport Canada Airport Authorities briefing) describes VAA as incorporated under the <em>Canada Not-for-profit Corporations Act</em> (CNCA). These are two different statutes: Part II of the old Canada Corporations Act was the pre-2011 regime that not-for-profits were required to continue out of under the CNCA by an October 2014 deadline. VAA's own audited financial statements — in both ar-2024 and fs-2025, i.e. not a one-off typo — still cite the older Act. This brief does not resolve which is correct; it is flagged as a primary-source-vs-backgrounder-source discrepancy in Residuals &amp; gaps.</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 7 ok / 0 stub-suspected / 13 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Victoria Airport Authority - strategy evolution"><table>
 <thead>
 <tr>
 <th>doc_id</th>
@@ -267,7 +267,7 @@
 <td>yes — full FY2025 audited Financial Statements, 44,639 chars, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Own read confirms all 20 rows and both status values match <code>_index.json</code> exactly.</strong> All 13 pre-2020 documents (ar-2007 through ar-2019) carry <code>_index.json</code> status <code>extract-failed</code> with note "PDF extracted 0 bytes of text (likely scanned/image PDF)" — confirmed directly against the extraction directory: <code>ls</code> on <code>.../fed-victoria-airport-authority/</code> shows no <code>.txt</code> file exists for any of these 13 doc_ids, only <code>_index.json</code> plus the 7 <code>.txt</code> files for the "ok" rows. This is a genuine Wayback-capture/extraction gap, not a pipeline bug and not something correctable this pass, per the operator's framing.</p>
 <p><strong>Minor labeling-nuance note (not a detector error):</strong> the batch addendum that briefed this pass described the 13 failures with the shorthand "no-manifest-match," while <code>_index.json</code>'s actual <code>status</code> field for all 13 rows is literally <code>extract-failed</code>. Both point at the same practical outcome — no text captured, no <code>.txt</code> produced — but the addendum's gloss is imprecise relative to the literal status string. Flagged per the operator's instruction; this is a wording nuance in a briefing document, not a finding about the extraction pipeline itself.</p>
 <h4>Priority evolution</h4>

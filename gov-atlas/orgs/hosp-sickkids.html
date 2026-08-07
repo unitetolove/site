@@ -63,7 +63,7 @@
 </ul>
 
 <h2>Document shelf (10 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (10 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Annual report</td><td><a href="https://microsite.sickkidsfoundation.com/annual-report-2024/">SickKids Annual Report 2024-2025</a></td><td>archived</td><td></td></tr>
@@ -77,7 +77,7 @@
 <tr><td>2020</td><td>Annual report</td><td><a href="https://www.sickkids.ca/siteassets/about/about-sickkids/sickkids-annual-report-2019-2020.pdf">SickKids Annual Report 2019-2020</a></td><td>archived</td><td></td></tr>
 <tr><td>2020</td><td>Strategic plan</td><td><a href="https://2025.sickkids.ca/wp-content/uploads/2020/03/SK2025_Full-strategic-plan.pdf">SickKids 2025: Five-Year Strategic Plan (2020-2025)</a></td><td>staged</td><td><span class="incompleteness-tag">⚠️ VERIFY:plan-horizon-2025;intermittent-5xx; ⚠️ VERIFY:fetch-failed-2026-08-01; ⚠️ VERIFY:fetch-failed-2026-08-02; ⚠️ VERIFY:fetch-failed-2026-08-04; ⚠️ VERIFY:fetch-failed-2026-08-05; ⚠️ VERIFY:fetch-failed-2026-08-06</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: <code>research/government/briefs/_backgrounders/hosp-sickkids.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -102,7 +102,7 @@
 <p>SickKids operates as an approved public hospital under the Public Hospitals Act, R.S.O. 1990, c. P.40, governed by a Board of Trustees, with Ontario Health as its funding/oversight parent per the registry (backgrounder, citing hosp-sickkids-fs-2025, not independently re-read this pass — see Series inventory). Backgrounder-cited FY2025 budget scale: ~$1.419B total revenue against ~$1.480B total expenses, a $4.2M deficiency of revenue over expenses. D-042: this figure is relayed from the backgrounder as-is; it could not be independently re-verified against primary text this pass because the FY2025 financial-statements document (hosp-sickkids-fs-2025) is extract-failed in this archived set (see Series inventory) — the backgrounder's own citation notes it was retrieved via r.jina.ai text rendering after a direct PDF fetch was blocked, a different capture path than this lane's WARC extraction. The backgrounder's institutional-history and governance ⚠️ VERIFY items are not resolved by any document read this pass; no document in the readable set addresses the incorporating instrument or founding history beyond what the annual reports' leadership messages already imply.</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 3 ok / 0 stub-suspected / 6 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="The Hospital for Sick Children - strategy evolution"><table>
 <thead>
 <tr>
 <th>doc_id</th>
@@ -177,7 +177,7 @@
 <td>yes — full "SickKids 2030" strategy microsite, 15,984 chars, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Detector-vs-read note:</strong> all 6 extract-failed documents were listed as <code>status: extract-failed</code> (not <code>stub-suspected</code>) by <code>_index.json</code> itself, with a "HTML extracted 0 bytes of text" note; no <code>.txt</code> file exists on disk for any of the six, consistent with that claim. No stub-suspected documents appear in this org's set at all — no detector disagreement to report in either direction, because the detector made no stub-suspected calls to check. This is a straightforward extraction-failure profile (four annual-report years 2022-2025 plus two financial-statement years, both from microsite.sickkidsfoundation.com sources), distinct from the interstitial-stub pattern seen in other orgs' briefs.</p>
 <p><strong>SHORT-FORM RULE, partial applicability:</strong> three usable documents clear the &lt;3 floor, but they are two annual reports one year apart (FY2019-20, FY2020-21) plus a single point-in-time strategic-plan microsite five years later (2025), with no FY2021-22 through FY2024-25 annual report or financial statement readable at all. This supports a real but narrow evolution comparison — two adjacent years plus one later snapshot — not a multi-year trend line. The sections below state only what these three specific documents establish, and are explicit about the five-year gap between ar-2021 and sp-2025.</p>
 <h4>Priority evolution</h4>
