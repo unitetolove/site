@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <header class="site-header">
 <div class="header-inner">
 <a class="wordmark-link" href="/index.html">unite<span class="to">TO</span>love<span class="tld">.ca</span></a>
@@ -32,7 +33,7 @@
 </ul>
 </nav>
 </header>
-
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="index.html">Tribe Map</a> &rsaquo; Reddit</nav>
 
 <h1>Reddit communities &mdash; Toronto / GTA / Ontario / Canada-wide</h1>
@@ -40,7 +41,7 @@
 row's status and confirmation mark come directly from the census
 (<code>research/tribes/subreddit_census.csv</code>). Member-count figures under
 1,000 are not shown (see the overview page).</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Scrollable table"><table>
 <thead><tr><th>Subreddit</th><th>Scope</th><th>Place</th><th>Topic</th>
 <th>Description</th><th>Status</th><th>Subscribers</th><th></th></tr></thead>
 <tbody>
@@ -2755,9 +2756,9 @@ row's status and confirmation mark come directly from the census
 <td><span class="badge">&#10003; confirmed</span></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><a href="index.html">&larr; Back to Tribe Map overview</a></p>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">
