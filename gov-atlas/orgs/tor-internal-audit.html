@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Internal Audit — GOV-ATLAS (staged)</title>
+<title>Internal Audit — GOV-ATLAS</title>
 <link rel="stylesheet" href="../../style.css">
-<meta property="og:title" content="Internal Audit — GOV-ATLAS (staged)">
+<meta property="og:title" content="Internal Audit — GOV-ATLAS">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://unitetolove.ca/gov-atlas/orgs/tor-internal-audit.html">
 <meta property="og:image" content="https://unitetolove.ca/assets/og/gov-atlas.png">
@@ -20,6 +20,7 @@
 <li><a href="/join.html">Start</a></li>
 <li><a href="/now.html">Now</a></li>
 <li><a href="/vision.html">Vision</a></li>
+<li><a href="/plan/">Plan</a></li>
 <li><a href="/kits/">Kits</a></li>
 <li><a href="/library.html">Library</a></li>
 <li><a href="/elections/">Elections</a></li>
@@ -36,7 +37,7 @@
 </nav>
 </header>
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; Internal Audit</nav>
-<div class="library-banner" role="note">STAGED &mdash; not linked from the live site; nav wiring and the live publish word are operator-gated. This page is mechanically generated from the GOV-ATLAS registry (<code>research/atlas/government_orgs.csv</code> + <code>research/atlas/government_documents.csv</code>); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis. Regenerate: <code>tools/gov_atlas_site_gen.py</code>.</div>
+<div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (<code>government_orgs.csv</code> + <code>government_documents.csv</code>); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Internal Audit</h1>
 <div class="meta">
 <span class="badge">Municipal — Toronto</span>
@@ -68,10 +69,71 @@
 </tbody>
 </table>
 
-<h2>Brief &amp; backgrounder</h2>
+<h2>Backgrounder</h2>
+<p class="source-note">Source: <code>research/government/briefs/_backgrounders/tor-internal-audit.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
+<h3>Internal Audit (City of Toronto) - backgrounder</h3>
+<p><em>Backgrounder / GOV-STRAT-EVOL-d1 Tier-1 tail / 2026-08-04 / registry row: <code>tor-internal-audit</code> (<code>research/atlas/government_orgs.csv</code>) / lens file for this org's series briefs</em></p>
+<h4>Mandate &amp; statutory basis</h4>
+<p>Internal Audit has no own enabling statute; it is an administrative division of the City of Toronto operating under Council-delegated authority via the City of Toronto Act, 2006, S.O. 2006, c. 11, Sched. A, ss.6(1) and 7 (citation per corpus precedent, <code>_backgrounders/tor-corporate-finance-revenue-function.md</code>; ⚠️ VERIFY not independently re-confirmed this pass). Its mission, per its own webpage, is to "assist senior management in meeting their responsibilities for maintaining proper internal controls" (https://www.toronto.ca/city-government/accountability-operations-customer-service/city-administration/staff-directory-divisions-and-customer-service/internal-audit/, fetched).</p>
+<h4>Roles, responsibilities &amp; scope</h4>
+<p>Internal Audit conducts audits of programs and business processes, fraud investigations, responds to audit requests from divisions, and advises management on new program design (https://www.toronto.ca/.../internal-audit/, fetched). This is explicitly a management-facing, executive-branch internal-controls function — <strong>distinct from the Auditor General's Office</strong> (<code>tor-auditor-general-s-office</code>), which is a statutory, Council-reporting accountability officer under City of Toronto Act, 2006 Part V (<code>_backgrounders/tor-auditor-general-s-office.md</code>). The Auditor General's own stated duties note referrals flow "to divisional management/Internal Audit" (https://www.torontoauditor.ca/about/our-duties/, per <code>_backgrounders/tor-auditor-general-s-office.md</code>), confirming the two offices are organizationally separate with a defined referral relationship rather than a reporting one.</p>
+<p><strong>Registry-completeness finding (new this pass):</strong> although this org's own registry row carries <code>archive_status: missing</code> (no dedicated Internal Audit budget note located as of the 2026-08-04 registry audit), Internal Audit is in fact named as a distinct, budgeted "Service" within the Office of the CFO and Treasurer's own FY2026 Program Summary book — the archived source for sibling org <code>tor-finance-treasury-services</code> (sha256-12 <code>26c5d96ad4c7</code>): "Internal Audit / Who We Serve: Council, City divisions, agencies and corporations / What We Deliver: Business and risk consulting on policies, processes and information systems; assurance services including the performance of compliance, operational, financial, forensic and internal control reviews." This confirms Internal Audit sits organizationally within the CFO &amp; Treasurer's budget structure at least for FY2026 reporting purposes, alongside (but distinct from) the registry's own <code>parent_org</code> assignment of <code>tor-deputy-city-manager-corporate-services</code> — the two are not necessarily in conflict (a Deputy City Manager portfolio can house a CFO-led budget program), but this pass could not resolve which is the more precise day-to-day reporting line. See the org's own STRATEGY_EVOLUTION brief for the cited budget figures.</p>
+<h4>Governance &amp; reporting line</h4>
+<p>The division reports to the Chief Financial Officer regarding the adequacy and effectiveness of City processes and improvement recommendations, and informs the Enterprise Risk Assurance Committee of its annual work plan and current activities (https://www.toronto.ca/.../internal-audit/, fetched). The only named staff member on the division's own webpage is Director Stuart Campbell (titled officeholder, cited institutionally). This CFO reporting line is consistent with the registry-completeness finding above (Internal Audit budgeted as a Service under the Office of the CFO and Treasurer).</p>
+<h4>Budget scale</h4>
+<p>FY2026 approved figures, read directly from the Office of the CFO and Treasurer Program Summary book (sha256-12 <code>26c5d96ad4c7</code>, archived under sibling org <code>tor-finance-treasury-services</code>): Internal Audit gross operating budget $3.112 million, net (after $255.8K revenue) $2.856 million; the FY2026 performance target is 80% of the Internal Audit workplan's engagements covering key risks (same source). This is the only budget figure available for this org and comes from a cross-referenced sibling document rather than a document registered under this org's own <code>doc_id</code> series — see Residuals &amp; gaps in the brief.</p>
+<h4>Institutional history</h4>
+<p>⚠️ VERIFY - not grounded this pass. No founding date or prior-structure history for Internal Audit specifically was located this session. The registry notes the division's <code>strategy_current_url</code> points to the City's 2019 Corporate Strategic Plan (a corporate-wide document, not an Internal Audit-specific plan); no dedicated Internal Audit work-plan or annual-report document was located as this division's own series (registry row <code>tor-internal-audit</code>, notes field).</p>
+<h2>Strategy evolution brief</h2>
+<p class="source-note">Source: <code>research/government/briefs/tor-internal-audit_STRATEGY_EVOLUTION.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
+<h3>Internal Audit (City of Toronto) - strategy evolution</h3>
+<p><em>GOV-STRAT-EVOL-d1 / 2026-08-04 / registry: <code>tor-internal-audit</code> / grounded in archived copies (cited doc_id + sha256) / read through <code>_backgrounders/tor-internal-audit.md</code></em></p>
+<p><strong>TL;DR:</strong> This org's own registry row carries <code>archive_status: missing</code> and this session's own fresh extraction attempt confirms zero documents registered under its own org_id — but this is not a true zero-usable-docs case: a sibling org's already-archived FY2026 budget book contains a distinct, quantified "Internal Audit" service line the registry's own search missed (it checked the Corporate Services Service Area Presentation and City Manager Services budget note, not the CFO &amp; Treasurer's own book). The biggest finding is a registry-completeness correction, not a priority-evolution narrative: Internal Audit has a real $3.112 million gross / $2.856 million net FY2026 operating budget, disclosed as a Service under the Office of the CFO and Treasurer, distinct from the Auditor General's Office (a separate, Council-reporting statutory accountability officer). This is a single-year, single-document data point — no evolution across time is possible. The open question is whether this org's registry row should be updated to point at the shared CFO book as its own archived source, the way BATCH12's shared-omnibus orgs already do.</p>
+<h4>Backgrounder summary</h4>
+<p>Internal Audit is a management-facing internal-controls function reporting to the Chief Financial Officer, distinct from the Council-reporting Auditor General's Office; it conducts audits, fraud investigations, and management advisory work (backgrounder, citing https://www.toronto.ca/city-government/accountability-operations-customer-service/city-administration/staff-directory-divisions-and-customer-service/internal-audit/, fetched). The backgrounder's own registry-completeness finding — that Internal Audit is in fact a named, budgeted CFO &amp; Treasurer Service for FY2026 — is carried forward and cited with its primary-source figures below.</p>
+<h4>Series inventory</h4>
+<p><code>_index.json</code>: 0 ok / 0 stub-suspected / 0 extract-failed under this org's own <code>tor-internal-audit</code> extraction directory — no document has ever been registered under this org_id.</p>
+<p>Registry (<code>government_documents.csv</code>) carries 1 row for this org (<code>tor-internal-audit-oth-2026</code>, year 2026, doc_type <code>other</code>); 0 are <code>archived</code>, 0 are <code>staged</code>, and 1 is <code>missing</code>. The row's flags field (dated 2026-07-24) states: "distinct from Auditor General's Office; No public work plan/reports link found on landing page...Confirmed via text search that Internal Audit/audit does not appear in the Corporate Services Service Area Presentation or City Manager Services 2026 budget note -- unlike the separately-named Auditor General's Office."</p>
+<p><strong>That search did not check the Office of the CFO and Treasurer's own FY2026 Program Summary book</strong>, which this session did check directly, and which does name Internal Audit as a Service:</p>
+<table>
+<thead>
+<tr>
+<th>doc_id</th>
+<th>year</th>
+<th>type</th>
+<th>archive ref sha256-12</th>
+<th>content read?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tor-finance-treasury-services-bud-2026 <em>(registered under sibling org <code>tor-finance-treasury-services</code>, not this org)</em></td>
+<td>2026</td>
+<td>budget</td>
+<td>26c5d96ad4c7</td>
+<td>yes — Internal Audit service-line section read in full within the shared Program Summary book</td>
+</tr>
+</tbody>
+</table>
+<p>This document is a shared budget-cluster book covering multiple CFO &amp; Treasurer services (Financial Planning, Financial Strategy and Policy, Internal Audit, Insurance and Risk Management, Capital Markets, Purchasing and Materials Management, Strategic Enterprise Integration and Modernization); analysis here is scoped strictly to the "Internal Audit" service section (BATCH12_ADDENDUM §B2 handling, applied even though this org's own registry row never pointed at this document).</p>
+<h4>Priority evolution</h4>
+<p>A single service-line entry in a single fiscal year's budget book cannot establish an evolution narrative. What the one entry does establish: for FY2026, Internal Audit's stated deliverable is "business and risk consulting on policies, processes and information systems; assurance services including the performance of compliance, operational, financial, forensic and internal control reviews," serving "Council, City divisions, agencies and corporations" (sha256-12 <code>26c5d96ad4c7</code>).</p>
+<h4>Priorities added, dropped, renamed</h4>
+<p>Not determinable — no prior-year Internal Audit service-line entry is registered anywhere in this corpus to compare against. The FY2026 book itself notes one narrative achievement relevant to this service without dating a specific change: "Enhanced the capacity of Internal Audit to proactively support management in addressing audit recommendations and providing quality assurance" (sha256-12 <code>26c5d96ad4c7</code>, Key Achievements and Success section) — described as a recent accomplishment, not framed as a change from a differently-named or differently-scoped prior function.</p>
+<h4>Budget &amp; mandate inflection points</h4>
 <ul>
-<li><a href="../../../research/government/briefs/_backgrounders/tor-internal-audit.md">Backgrounder (draft, .md)</a></li>
-<li><a href="../../../research/government/briefs/tor-internal-audit_STRATEGY_EVOLUTION.md">Strategy-evolution brief (draft, .md)</a></li>
+<li><strong>FY2026 Internal Audit budget: $3.112 million gross, $255.8 thousand revenue, $2.856 million net operating</strong> (sha256-12 <code>26c5d96ad4c7</code>, By Service budget table) — the only budget figure available for this org from any source in this corpus.</li>
+<li><strong>FY2026 performance target: 80% of the Internal Audit workplan's engagements cover key risks</strong> (sha256-12 <code>26c5d96ad4c7</code>, performance-measures table) — a stated target, not a multi-year trend, since no prior-year figure for this specific metric was located in the read portion of this shared document.</li>
+</ul>
+<h4>Ontario/Toronto relevance</h4>
+<p>Direct: this is a City of Toronto internal-controls division serving Council, City divisions, agencies and corporations city-wide (sha256-12 <code>26c5d96ad4c7</code>).</p>
+<h4>Residuals &amp; gaps</h4>
+<ul>
+<li><strong>Registry-completeness finding, not a stub/extract-failed detector disagreement:</strong> the detector never ran against this org (no document was ever registered under its own org_id), so there is no stub/failed call to confirm or dispute. The finding here is a different, adjacent kind of QA signal — a registry gap: this org's own <code>archive_status: missing</code> verdict undercounts its real documentary footprint, because the relevant budget line exists in a sibling org's already-archived series that was never cross-checked against this org_id.</li>
+<li><strong>Only the "Internal Audit" service section of the shared CFO &amp; Treasurer book was read for this brief</strong> — the remaining ~30-40 pages of that book (covering Financial Planning, Financial Strategy and Policy, Insurance and Risk Management, Capital Markets, Purchasing and Materials Management, and Strategic Enterprise Integration and Modernization) were not read in full for this pass, consistent with BATCH11_ADDENDUM §A3's sampling-and-disclosure rule; those sections belong to other orgs' own briefs.</li>
+<li><strong>This finding does not resolve the registry's own parent_org ambiguity</strong>: <code>government_orgs.csv</code> lists <code>tor-deputy-city-manager-corporate-services</code> as this org's parent, while the budget evidence here places it under the Office of the CFO and Treasurer for FY2026 reporting purposes — the two are not necessarily in conflict (see backgrounder), but this pass could not independently resolve which is the more precise day-to-day reporting line.</li>
+<li><strong>Recommended remediation (not performed in this pass, no git commands available to this lane):</strong> add a registry row for <code>tor-internal-audit</code> pointing at the same URL/sha256 already registered for <code>tor-finance-treasury-services-bud-2026</code>, following the precedent BATCH12 already established for other shared-omnibus Toronto divisions.</li>
+<li>⚠️ VERIFY: whether an equivalent FY2025 (not just FY2026) CFO &amp; Treasurer book exists and also names Internal Audit as a Service — not checked this pass; only the FY2026 book was located and read.</li>
 </ul>
 
 <div class="meta">Completeness: shelf last verified 2026-08-04; 1 of 2 rows archived; this org has NOT had a full discovery-verification pass (<code>SWEEP_LEDGER.csv</code>).</div>
@@ -94,7 +156,9 @@
 <h2>The vision</h2>
 <ul>
 <li><a href="/vision.html">The full vision</a></li>
-<li><a href="/platform.html">The Plan &mdash; 300 recommendations</a></li>
+<li><a href="/plan/">The plan &mdash; one year, all-out</a></li>
+<li><a href="/plan/covenant.html">The sprint covenant</a></li>
+<li><a href="/strategy.html">The strategy</a></li>
 <li><a href="/who.html">Who is the Unknown Soldier</a></li>
 <li><a href="/constitution.html">Our constitution</a></li>
 <li><a href="/permanent-culture.html">Permanent Culture 3.0</a></li>
@@ -146,7 +210,7 @@
 </nav>
 <p><a class="improve-mail" href="mailto:unknownsoldier@unitetolove.ca?subject=Improvement%3A&amp;body=Page%20link%20%28paste%20it%20here%29%3A%0A%0AWhat%20I%20noticed%20or%20suggest%3A%0A">&#9999;&#65039; Suggest an improvement</a> &mdash; corrections, improvements, ideas, resources, and offers of help all welcome.</p>
 <script>(function(){var s='Improvement: '+location.pathname;var b='Page link: '+location.href+'\n\nWhat I noticed or suggest:\n\nCredit me as (optional):\n';var h='mailto:unknownsoldier@unitetolove.ca?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);var l=document.querySelectorAll('a.improve-mail');for(var i=0;i<l.length;i++){l[i].href=h;}})();</script>
-<p>The Unknown Soldier &middot; GOV-ATLAS &middot; staged, unpublished</p>
+<p>The Unknown Soldier &middot; GOV-ATLAS</p>
 <p>Generated 2026-08-06 by <code>tools/gov_atlas_site_gen.py</code> from the registry
 CSVs. Not analysis; asserts nothing beyond the registry rows shown on each page.</p>
 </footer>

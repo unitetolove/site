@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Financial Planning — GOV-ATLAS (staged)</title>
+<title>Financial Planning — GOV-ATLAS</title>
 <link rel="stylesheet" href="../../style.css">
-<meta property="og:title" content="Financial Planning — GOV-ATLAS (staged)">
+<meta property="og:title" content="Financial Planning — GOV-ATLAS">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://unitetolove.ca/gov-atlas/orgs/tor-financial-planning.html">
 <meta property="og:image" content="https://unitetolove.ca/assets/og/gov-atlas.png">
@@ -20,6 +20,7 @@
 <li><a href="/join.html">Start</a></li>
 <li><a href="/now.html">Now</a></li>
 <li><a href="/vision.html">Vision</a></li>
+<li><a href="/plan/">Plan</a></li>
 <li><a href="/kits/">Kits</a></li>
 <li><a href="/library.html">Library</a></li>
 <li><a href="/elections/">Elections</a></li>
@@ -36,7 +37,7 @@
 </nav>
 </header>
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; Financial Planning</nav>
-<div class="library-banner" role="note">STAGED &mdash; not linked from the live site; nav wiring and the live publish word are operator-gated. This page is mechanically generated from the GOV-ATLAS registry (<code>research/atlas/government_orgs.csv</code> + <code>research/atlas/government_documents.csv</code>); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis. Regenerate: <code>tools/gov_atlas_site_gen.py</code>.</div>
+<div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (<code>government_orgs.csv</code> + <code>government_documents.csv</code>); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Financial Planning</h1>
 <div class="meta">
 <span class="badge">Municipal — Toronto</span>
@@ -68,9 +69,68 @@
 </tbody>
 </table>
 
-<h2>Brief &amp; backgrounder</h2>
+<h2>Backgrounder</h2>
+<p>No backgrounder written for this org yet.</p>
+<h2>Strategy evolution brief</h2>
+<p class="source-note">Source: <code>research/government/briefs/tor-financial-planning_STRATEGY_EVOLUTION.md</code> &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
+<h3>Financial Planning - strategy evolution</h3>
+<p><em>GOV-STRAT-EVOL-d1 / 2026-08-04 / registry: <code>tor-financial-planning</code> / grounded in archived copies (cited doc_id + sha256) / read through <code>_backgrounders/tor-corporate-finance-revenue-function.md</code></em></p>
+<p><strong>TL;DR:</strong> Financial Planning is one named service inside the shared "Office of the CFO and Treasurer" budget book, cleanly isolable in both the 2025 and 2026 editions. The biggest priority addition across the two years is the housing-supply fiscal-incentive package (15% property-tax reduction for new multi-residential properties, DC waiver for 6,128 rental units, forgone DC indexing) first reported in the 2026 document. The biggest quietly changed pattern is a persistent, worsening gap between the division's own capital state-of-good-repair (SOGR) funding <em>targets</em> and the <em>actual/projected</em> investment achieved: a $2.724M FY2024 target realized as $2.350M, and a $3.328M FY2025 target realized as only $2.670M. The load-bearing number is the division's own gross operating budget: $10.388M (2025) rising to $10.629M (2026), +2.3%. One open question the two-document window cannot resolve: whether the FY2026 SOGR target of $3.001M-$3.063M (2026/2027) will repeat the pattern of the two prior years or close the gap.</p>
+<h4>Backgrounder summary</h4>
+<p>See <code>_backgrounders/tor-corporate-finance-revenue-function.md</code> for the statutory, governance, and budget-scale context shared across this six-org City of Toronto finance/revenue cluster. Org-specific note: Financial Planning is explicitly named and isolable as its own service line within the CFO book's "What Service We Provide," "Budget by Service," and "How Well We Are Doing" tables in both archived editions (2025, 2026) — unlike <code>tor-finance-treasury-services</code>, this org's section within the shared book presents no isolation ambiguity.</p>
+<h4>Series inventory</h4>
+<p><code>_index.json</code>: 2 ok / 0 stub-suspected / 0 extract-failed.</p>
+<p>Registry (<code>government_documents.csv</code>) carries 2 rows for this org spanning 2025-2026; both are <code>archived</code> and appear below — no <code>staged</code>/<code>missing</code> gaps for this org.</p>
+<table>
+<thead>
+<tr>
+<th>doc_id</th>
+<th>year</th>
+<th>type</th>
+<th>archive ref sha256-12</th>
+<th>content read?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tor-financial-planning-bud-2025</td>
+<td>2025</td>
+<td>budget</td>
+<td>5ff8c001d8a8</td>
+<td>yes — full "Office of the CFO and Treasurer" 2025 Program Summary, 96,561 chars; Financial Planning section isolated within it. <strong>Shared document</strong>: byte-identical body (diff-confirmed) to <code>tor-finance-treasury-services-bud-2025</code>.</td>
+</tr>
+<tr>
+<td>tor-financial-planning-bud-2026</td>
+<td>2026</td>
+<td>budget</td>
+<td>26c5d96ad4c7</td>
+<td>yes — full "Office of the CFO and Treasurer" 2026 Program Summary, 69,639 chars; Financial Planning section isolated within it. <strong>Shared document</strong>: byte-identical body (diff-confirmed) to <code>tor-finance-treasury-services-bud-2026</code> and <code>tor-purchasing-materials-management-bud-2026</code>.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>BATCH12_ADDENDUM §B2 shared-book note:</strong> this document is the "CFO" cluster book, covering the whole Office of the CFO and Treasurer as one PDF shared across three org_ids in this batch (<code>tor-finance-treasury-services</code>, <code>tor-financial-planning</code>, <code>tor-purchasing-materials-management</code>). This brief scopes every claim below to the "Financial Planning" service subsection specifically (the "What Service We Provide" entry, the "Financial Planning" rows of Table 1/Table 2, and the "Financial Planning" row of the outcome-measures table) — not to the CFO office's totals, which are <code>tor-finance-treasury-services</code>'s own material.</p>
+<p><strong>BATCH12_ADDENDUM §B1 short-form note:</strong> 2 archived documents, one fiscal year apart. Per §B1, short-form treatment applies as this cohort's default; the sections below state a single honest 2025→2026 comparison rather than a manufactured multi-year trend.</p>
+<h4>Priority evolution</h4>
+<p>A two-document, one-year-apart window cannot establish a genuine evolution narrative. What the two documents <em>do</em> establish: Financial Planning's stated function is unchanged across both editions — "City of Toronto balanced budget; financial advice; financial policies and financial reports" for Council, City divisions, agencies and corporations (<code>5ff8c001d8a8</code>; <code>26c5d96ad4c7</code>) — with gross operating spend rising modestly from $10.388M to $10.629M (+2.3%) and net spend from $8.209M to $8.785M (+7.0%, <code>5ff8c001d8a8</code>; <code>26c5d96ad4c7</code>), a larger percentage increase in net than gross because Financial Planning's own revenue fell 8.4% year over year.</p>
+<h4>Priorities added, dropped, renamed</h4>
 <ul>
-<li><a href="../../../research/government/briefs/tor-financial-planning_STRATEGY_EVOLUTION.md">Strategy-evolution brief (draft, .md)</a></li>
+<li><strong>Added — housing-supply fiscal incentives</strong>: the 2026 document reports, in the office-wide "Our Experience and Success" section (not broken out specifically to Financial Planning, but naming SOGR/capital-funding tools this division administers), "a 15% property tax reduction for new multi-residential properties, providing a development charge (DC) waiver for 6,128 new rental units, and forgoing annual DC indexing" (<code>26c5d96ad4c7</code>) — absent from the 2025 document.</li>
+<li><strong>Added — Comprehensive Development Charges Review</strong>: the 2026 document names "Advance the City's Comprehensive Development Charges Review to develop recommendations which incorporate the City's growth-related requirements, while considering affordability, and market trends" as a Priority Action (<code>26c5d96ad4c7</code>); the 2025 document's comparable Priority Action is narrower ("Advance review of funding strategies including comprehensive analysis of development charges and initiation of the next Development Charges Background Study," <code>5ff8c001d8a8</code>) — a continuation/formalization of the same workstream rather than a new one, worth noting as evolving language rather than a clean addition.</li>
+<li><strong>No named priority dropped or renamed</strong> between the two editions; Financial Planning's core deliverables (balanced budget, financial advice, financial policies/reports) are stated identically in both documents.</li>
+</ul>
+<h4>Budget &amp; mandate inflection points</h4>
+<ul>
+<li><strong>Gross operating budget</strong>: $10.388M (2025) → $10.629M (2026), +2.3% (<code>5ff8c001d8a8</code>; <code>26c5d96ad4c7</code>).</li>
+<li><strong>Net operating budget</strong>: $8.209M (2025) → $8.785M (2026), +7.0% (<code>5ff8c001d8a8</code>; <code>26c5d96ad4c7</code>), driven by an 8.4% revenue decline this division's own budget offsetting the modest gross increase.</li>
+<li><strong>SOGR capital-funding target/actual gap, persistent across both editions</strong>: FY2024 target $2.724M vs. actual/projection $2.350M; FY2025 target $3.328M (stated identically in both documents) vs. FY2025 projection $2.670M in the 2026 document (<code>5ff8c001d8a8</code>; <code>26c5d96ad4c7</code>). The FY2026 target itself moved between editions — $2.885M as forecast in the 2025 document's forward column vs. $3.001M as the actual 2026 target set in the 2026 document — a revision upward despite the prior year's target having been missed by roughly 20%.</li>
+</ul>
+<h4>Ontario/Toronto relevance</h4>
+<p>Direct: this org is itself a City of Toronto corporate division, administering the City's own balanced-budget requirement, financial policy, and capital state-of-good-repair funding strategy for Toronto's own infrastructure — not an indirect or boilerplate reference (<code>5ff8c001d8a8</code>; <code>26c5d96ad4c7</code>).</p>
+<h4>Residuals &amp; gaps</h4>
+<ul>
+<li><strong>No stub-suspected or extract-failed documents in this org's two-document set</strong> — both status <code>ok</code>; no detector disagreement to report either direction.</li>
+<li><strong>Isolation caveat</strong>: the 2026 document's "Our Experience and Success" / "Priority Actions" narrative sections are not broken out per-service the way the Financial Operations and Control cluster book is (see <code>tor-accounting-services</code>, <code>tor-pension-payroll-employee-benefits</code>, <code>tor-revenue-services</code> briefs for the contrast); items cited above under "Priorities added, dropped, renamed" were selected because they name capital-funding/development-charge tools that are Financial Planning's stated deliverables, but the CFO book's own text does not explicitly attribute every such bullet to Financial Planning specifically as opposed to the office as a whole. Flagged per BATCH12_ADDENDUM §B2 rather than presented as a clean per-service attribution.</li>
+<li>No fiscal years earlier than 2025 are readable for this org in this archived set; any priority changes or budget inflection points before FY2025 are entirely unestablished here.</li>
 </ul>
 
 <div class="meta">Completeness: shelf last verified 2026-08-04; 2 of 2 rows archived; this org has NOT had a full discovery-verification pass (<code>SWEEP_LEDGER.csv</code>).</div>
@@ -93,7 +153,9 @@
 <h2>The vision</h2>
 <ul>
 <li><a href="/vision.html">The full vision</a></li>
-<li><a href="/platform.html">The Plan &mdash; 300 recommendations</a></li>
+<li><a href="/plan/">The plan &mdash; one year, all-out</a></li>
+<li><a href="/plan/covenant.html">The sprint covenant</a></li>
+<li><a href="/strategy.html">The strategy</a></li>
 <li><a href="/who.html">Who is the Unknown Soldier</a></li>
 <li><a href="/constitution.html">Our constitution</a></li>
 <li><a href="/permanent-culture.html">Permanent Culture 3.0</a></li>
@@ -145,7 +207,7 @@
 </nav>
 <p><a class="improve-mail" href="mailto:unknownsoldier@unitetolove.ca?subject=Improvement%3A&amp;body=Page%20link%20%28paste%20it%20here%29%3A%0A%0AWhat%20I%20noticed%20or%20suggest%3A%0A">&#9999;&#65039; Suggest an improvement</a> &mdash; corrections, improvements, ideas, resources, and offers of help all welcome.</p>
 <script>(function(){var s='Improvement: '+location.pathname;var b='Page link: '+location.href+'\n\nWhat I noticed or suggest:\n\nCredit me as (optional):\n';var h='mailto:unknownsoldier@unitetolove.ca?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);var l=document.querySelectorAll('a.improve-mail');for(var i=0;i<l.length;i++){l[i].href=h;}})();</script>
-<p>The Unknown Soldier &middot; GOV-ATLAS &middot; staged, unpublished</p>
+<p>The Unknown Soldier &middot; GOV-ATLAS</p>
 <p>Generated 2026-08-06 by <code>tools/gov_atlas_site_gen.py</code> from the registry
 CSVs. Not analysis; asserts nothing beyond the registry rows shown on each page.</p>
 </footer>
