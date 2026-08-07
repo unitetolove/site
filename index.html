@@ -14,9 +14,117 @@
 <meta property="og:image" content="https://unitetolove.ca/assets/og/home.png">
 <meta name="twitter:card" content="summary_large_image">
 <script defer src="assets/analytics.js"></script>
+<script defer src="assets/popup.js"></script>
+<style>
+/* Front-door signup popup + welcome-back banner — style.css has no modal rules yet;
+   kept page-local on purpose (matches join.html's own form-CSS convention). */
+.signup-modal { position: fixed; inset: 0; z-index: 1000; display: flex; align-items: flex-start;
+  justify-content: center; padding: 2rem 1rem; overflow-y: auto; }
+.signup-modal[hidden] { display: none; }
+.signup-modal__backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.55); }
+.signup-modal__dialog { position: relative; background: var(--bg); color: var(--fg);
+  border: 1px solid var(--border); border-radius: 8px; max-width: 30rem; width: 100%;
+  padding: 1.6rem 1.6rem 1.4rem; box-shadow: 0 8px 30px rgba(0,0,0,0.35); }
+.signup-modal__close { position: absolute; top: 0.6rem; right: 0.6rem; width: 2rem; height: 2rem;
+  border: 1px solid var(--border); border-radius: 50%; background: var(--bg); color: var(--fg);
+  font-size: 1.1rem; line-height: 1; cursor: pointer; }
+.signup-modal__close:hover { border-color: var(--accent); color: var(--accent); }
+.signup-modal h2 { margin-top: 0; border-bottom: none; }
+.popup-form .field-label { display: block; font-weight: 600; font-size: 0.95em; margin-top: 0.85rem; }
+.popup-form .field-label[hidden] { display: none; }
+.popup-form .hint { font-weight: 400; color: var(--muted); font-size: 0.85em; }
+.popup-form input[type="text"], .popup-form input[type="email"], .popup-form input[type="tel"] {
+  width: 100%; box-sizing: border-box; margin-top: 0.3rem; padding: 0.45rem 0.6rem;
+  border: 1px solid var(--border); border-radius: 4px; background: var(--bg); color: var(--fg);
+  font: inherit; line-height: 1.4; }
+.popup-form .link-toggle { display: inline-block; margin-top: 0.7rem; background: none; border: none;
+  padding: 0; color: var(--accent); text-decoration: underline; font: inherit; cursor: pointer; }
+.popup-form .check { display: flex; align-items: flex-start; gap: 0.5rem; margin: 1rem 0 0;
+  font-weight: 400; font-size: 0.88em; color: var(--muted); }
+.popup-form .check input { margin-top: 0.25em; flex: none; }
+.popup-actions { display: flex; align-items: center; gap: 0.9rem; margin-top: 1.2rem; flex-wrap: wrap; }
+.popup-submit { font: inherit; font-weight: 700; padding: 0.55rem 1.4rem; border: 1px solid var(--accent);
+  border-radius: 6px; background: var(--accent); color: var(--bg); cursor: pointer; }
+.popup-submit:hover { filter: brightness(1.1); }
+.popup-skip { font: inherit; background: none; border: none; padding: 0; color: var(--muted);
+  text-decoration: underline; cursor: pointer; }
+.popup-skip:hover { color: var(--accent); }
+.welcome-back-banner { border: 1px solid var(--border); border-left: 3px solid var(--accent);
+  border-radius: 6px; padding: 0.7rem 1rem; margin: 0 0 1.4rem; display: flex; align-items: baseline;
+  justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.welcome-back-banner[hidden] { display: none; }
+.welcome-back-banner p { margin: 0; }
+.welcome-back-banner a { font-weight: 600; }
+.welcome-back-banner button { font: inherit; background: none; border: none; color: var(--muted);
+  cursor: pointer; font-size: 1.1rem; line-height: 1; }
+.welcome-back-banner button:hover { color: var(--accent); }
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
+
+<div id="signup-modal" class="signup-modal" hidden>
+  <div class="signup-modal__backdrop"></div>
+  <div class="signup-modal__dialog" role="dialog" aria-modal="true"
+    aria-labelledby="signup-modal-heading" aria-describedby="signup-modal-desc">
+    <button type="button" class="signup-modal__close" id="signup-modal-close" aria-label="Skip for now">&times;</button>
+    <h2 id="signup-modal-heading">Join the conversation.</h2>
+    <p id="signup-modal-desc">Thirty seconds if that&rsquo;s all you have. A name and a way to
+    reach you moves a public number &mdash; that&rsquo;s the whole first ask, and it&rsquo;s
+    enough.</p>
+
+    <form id="popup-form" class="popup-form" novalidate="">
+      <label class="field-label" for="p-name">Name <span class="hint">(required &mdash; any name you choose)</span>
+        <input type="text" id="p-name" name="name" autocomplete="name" required>
+      </label>
+      <label class="field-label" for="p-email">Email <span class="hint">(required &mdash; how we reach you)</span>
+        <input type="email" id="p-email" name="email" autocomplete="email" required>
+      </label>
+
+      <button type="button" id="p-phone-toggle" class="link-toggle">+ Add a phone number (optional)</button>
+      <label class="field-label" for="p-phone" id="p-phone-wrap" hidden>Phone <span class="hint">(optional)</span>
+        <input type="tel" id="p-phone" name="phone" autocomplete="tel">
+      </label>
+
+      <div id="p-postal-list">
+        <label class="field-label" for="p-postal-0">Postal code <span class="hint">(optional &mdash; work, home, a parent&rsquo;s, wherever you&rsquo;d vote)</span>
+          <input type="text" id="p-postal-0" name="postal" class="postal-input" autocomplete="postal-code" placeholder="M5V 2T6">
+        </label>
+      </div>
+      <button type="button" id="p-postal-add" class="link-toggle">+ Add another postal code</button>
+
+      <label class="check">
+        <input type="checkbox" id="p-cookie-consent">
+        <span>Remember me on this device (optional) &mdash; skip this popup next time you visit.
+        We set one cookie recognizing your browser, matched to your signup; the cookie itself
+        holds no personal data, just a random ID. Kept 180 days from your last visit and
+        refreshed each time you return; never sold, never shared with anyone outside this
+        project. Clear it anytime by clearing your browser&rsquo;s cookies, or by unchecking
+        this box the next time the popup shows.</span>
+      </label>
+
+      <p class="hint">Under 18? Welcome &mdash; please have a parent or guardian send this for
+      you, from their own email. That&rsquo;s the whole rule, and you can withdraw anytime.</p>
+
+      <div class="popup-actions">
+        <button type="submit" class="popup-submit">Send it &mdash; join the conversation</button>
+        <button type="button" class="popup-skip" id="signup-modal-skip">Skip for now</button>
+      </div>
+    </form>
+
+    <noscript><p class="hint">JavaScript is off in your browser, so this popup can&rsquo;t compose
+    the email for you &mdash; no problem: use the full <a href="join.html">join form</a> instead,
+    or write directly to
+    <a href="mailto:unknownsoldier@unitetolove.ca?subject=Joining%20the%20conversation">unknownsoldier@unitetolove.ca</a>.</p></noscript>
+  </div>
+</div>
+
+<div id="welcome-back-banner" class="welcome-back-banner" role="status" hidden>
+  <p><strong id="wb-heading">Welcome back.</strong>
+  <span id="wb-message">You&rsquo;re signed up &mdash; thank you.</span>
+  <a href="now.html">Continue to next actions &rarr;</a></p>
+  <button type="button" id="wb-dismiss" aria-label="Dismiss">&times;</button>
+</div>
 
 <main id="main">
   <header class="hero">
