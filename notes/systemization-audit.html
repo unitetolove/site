@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Can this run without us? The systemization audit — working notes · Unite to Love</title>
+<meta name="description" content="An internal systemization audit, published nearly verbatim — the honest answer to whether the organization can run without its founders.">
+<link rel="stylesheet" href="../style.css">
+<link rel="canonical" href="https://unitetolove.ca/notes/systemization-audit">
+<script defer src="../assets/analytics.js"></script>
+<meta property="og:title" content="Can this run without us? The systemization audit — working notes · Unite to Love">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://unitetolove.ca/notes/systemization-audit">
+<meta property="og:image" content="https://unitetolove.ca/assets/og/kits.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
+<header class="site-header">
+<div class="header-inner">
+<a class="wordmark-link" href="/index.html">unite<span class="to">TO</span>love<span class="tld">.ca</span></a>
+<nav class="primary-nav" aria-label="Primary">
+<ul>
+<li><a href="/join.html">Start</a></li>
+<li><a href="/now.html">Now</a></li>
+<li><a href="/vision.html">Vision</a></li>
+<li><a href="/plan/">Plan</a></li>
+<li><a href="/kits/">Kits</a></li>
+<li><a href="/library.html">Library</a></li>
+<li><a href="/elections/">Elections</a></li>
+<li><a href="/gov-atlas/index.html">Gov Atlas</a></li>
+<li><a href="/run/index.html">Run</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<nav class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Working notes</a> / Can this run without us?</nav>
+
+<div class="working-notes-banner" style="border: 1px solid; padding: 1em 1.25em; margin: 1.25em 0;">
+<p>Working notes — an internal audit, published nearly verbatim, verdict and all. Expect apparatus: decision codes, board references, honest gaps. Why we publish our working documents: <a href="../how-we-share.html">how we share</a>.</p>
+</div>
+
+<main id="main" tabindex="-1">
+
+<h1>SYSTEMIZATION AUDIT — can this organization run without us?</h1>
+
+<p><em>v0.1 · 2026-08-08 · Founder (Fable, Cowork) · Answering the operator's question verbatim: "an
+organization can run on systems, policies, and procedures -&gt; do we have a complete system
+documented that can be run without us? can we continue to systemize our best practices, lessons
+learned, tools built, capabilities, etc etc etc" (banked OPERATOR_LOG this date). Evidence: two
+Explore inventory lanes this sitting (org-docs sweep + tools/lessons sweep); their full tables in
+SESSIONS-adjacent lane reports, key receipts inlined below.</em></p>
+
+<h2>The honest verdict, first</h2>
+
+<p><strong>No — not complete. Roughly: research production and mechanics could run without us today;
+judgment, voice, and continuity could not.</strong> And the sharpest finding: <strong>decisions become tools
+here, but lessons become archives</strong> — 40+ ratified decisions auto-execute as code/gates every 15
+minutes, while ~100 prose lessons in session logs propagate only if a human happens to re-read
+them. We have logs; we do not yet have a lessons system.</p>
+
+<h2>What IS stranger-runnable today (documented, current, tested by inventory)</h2>
+
+<ul>
+<li><strong>The dispatch system</strong> — MIND.md → CLAUDE.md → SHORTHANDS.md + PROMPT_CONVENTION.md
+→ 8 boot files. A competent stranger could orient and dispatch from cold.</li>
+<li><strong>Decision governance</strong> — DECISIONS.md (D-001→D-176 trail) +
+RESERVED_TO_OPERATOR.md (the 8-item Class-C boundary:
+identity, publication, money, legal, sends, candidate coordination). The line between delegable
+and operator-only is WRITTEN.</li>
+<li><strong>Publication mechanics</strong> — PUBLISH_MENU.md one-word
+fires + deploy pastes + live-verify gates.</li>
+<li><strong>The tools estate</strong> — 87 scripts, tools/README.md covers 86/87
+(gap_finder re-checks this every run), sampled docstrings excellent, 490+ test files, guards
+cite their decision IDs in-code. A stranger could discover and run everything.</li>
+<li><strong>Research methodology</strong> — as of this week: the canon
+(CANON_README.md) + the Methods Codex
+(research/methods/README.md, 15 processes, failure modes
+included) + IMPROVEMENT_BACKLOG.md. PROJ-0147
+closed most of this gap for the research half of the org.</li>
+<li><strong>Session discipline</strong> — open/claim/close protocol, B1–B4 boot standard, append-only memory.</li>
+</ul>
+
+<h2>What is PARTIAL (a stranger would struggle)</h2>
+
+<ul>
+<li><strong>Canon status is scattered</strong> — RATIFIED vs PROPOSED per layer/section lives across dated memos,
+not one status surface.</li>
+<li><strong>Track state files are tribal</strong> — NOW_CODE.md /
+NOW_RESEARCH.md are operational queues; there is no "you are new
+here, 30 minutes to oriented" cold-start per track.</li>
+<li><strong>OPERATOR_RUNBOOK.md</strong> assumes mid-mission context; no
+cold-start section.</li>
+<li><strong>OPERATOR_LOG.md</strong> — 2,700+ lines of banked judgment with
+NO retrieval index; the "when to ask the operator" heuristic is uncodified beyond Class C.</li>
+<li><strong>Standards</strong> — 19 docs exist (strategy/standards/STANDARDS_REGISTER_v2)
+but no periodic audit ritual runs them against practice.</li>
+</ul>
+
+<h2>What is TRIBAL-KNOWLEDGE-ONLY (hard stop without a live handover)</h2>
+
+<ul>
+<li><strong>Voice and persona</strong> — examples exist; no "how to write as this project" guide.</li>
+<li><strong>Novel-scenario judgment</strong> — the firewall names what's reserved, not how to reason about a case
+no rule anticipated.</li>
+<li><strong>Org resilience</strong> — NO succession/bus-factor doc; the DPC RAM self-assessment (ADOPT-ALL in the
+standards register since 2026-07-17, named there as "the only org-resilience/succession check")
+has never been run. If the operator were unavailable two weeks: dispatch/decisions/publish would
+run; canon production and voice coherence would stall.</li>
+</ul>
+
+<h2>The lessons asymmetry (the single most fixable structural gap)</h2>
+
+<p><strong>Institutionalized (lesson → running code):</strong> leak-pattern bulkhead (ENG-092) · commit-sweep
+automation (D-037) · versioned-never-overwrite (D-061) · keyed-merge + stale-checkout guard
+(ENG-150) — all fire unattended every 15 minutes.<br>
+<strong>Archived-only (lesson → prose that stops moving):</strong> multi-AI capture behavior patterns · brief
+failure classes B1–B7 · verification throughput rates · "unanimity is a warning" — each
+hand-written once (LESSONS_FIRST_TWO_PACKAGE_BUILDS,
+multi_ai_capture/LESSONS_LEARNED), none wired
+into a gate, no status marking "proven-binding" vs "one-wave provisional." The same failure
+classes get re-discovered per build.</p>
+
+<h2>Can we continue to systemize? Yes — the mechanism, scoped (→ PROJ-0153, boot cut)</h2>
+
+<p>Extend the codex pattern from research processes to the WHOLE organization — the Systems Codex:</p>
+
+<ol>
+<li><strong>Systems register</strong> (the org-level analogue of the methods index): every organizational
+function → its governing doc → owner track → stranger-runnable status → gap. Seed = this
+audit's tables. One page, CURATOR-refreshed, statuses live in it alone.</li>
+<li><strong>The lessons pipeline</strong> (closes the asymmetry): every session close may name candidate
+lessons (one line, existing close — no new loop); a periodic CURATOR-class pass distills them
+into a LESSONS register with two statuses only — <code>provisional</code> / <code>binding</code>; <strong>promotion to
+binding REQUIRES landing as a gate, template edit, or tool guard in the same pass</strong> (the
+decisions-become-tools path made mandatory for lessons). Backfill starts from the two existing
+LESSONS docs + SHORTHANDS' embedded precedents.</li>
+<li><strong>Cold-start pack</strong>: per-track "new here, 30 minutes" orientation + a runbook cold-start
+section + an OPERATOR_LOG index (mechanical, generated).</li>
+<li><strong>Continuity posture</strong>: actually run the DPC RAM self-assessment; write the two-weeks-absent
+protocol (what runs, what pauses, who holds Class C — answer: everything Class C PAUSES, by
+design; the doc says so plainly).</li>
+<li><strong>Canon status surface</strong>: one generated table of layer/section → RATIFIED/PROPOSED/date.</li>
+</ol>
+
+<p>Fire-ready boot: 2026-08-08_BOOT_SYSTEMS_CODEX.md.
+Mostly Sonnet assembly against what exists — same "formalize and organize" shape as PROJ-0147,
+which is the proven precedent for exactly this kind of pass.</p>
+
+<h2>What this audit does NOT claim</h2>
+
+<p>That "run without us" is the goal for everything: Class C (identity, money, legal, sends,
+publication words) is operator-reserved BY DESIGN and stays so; the vault stays sealed; the
+replication kit already answers "without us" for OTHER cities. This audit is about making
+everything delegable actually delegable, and continuity survivable.</p>
+
+</main>
+
+<footer class="site-footer">
+<nav aria-label="Footer">
+<div class="footer-cols">
+<section class="footer-col">
+<h2>Start here</h2>
+<ul>
+<li><a href="/join.html">Join the conversation</a></li>
+<li><a href="/now.html">Next actions</a></li>
+<li><a href="/find.html">Find &mdash; search this site</a></li>
+<li><a href="/kits/">The Kits</a></li>
+<li><a href="/harvest.html">The Harvest</a></li>
+<li><a href="/invite-me.html">Invite me into your room</a></li>
+<li><a href="/civic-hour.html">The Civic Hour</a></li>
+<li><a href="https://github.com/unitetolove/commons">Code &amp; data</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>The vision</h2>
+<ul>
+<li><a href="/vision.html">The full vision</a></li>
+<li><a href="/plan/">The plan &mdash; one year, all-out</a></li>
+<li><a href="/plan/covenant.html">The sprint covenant</a></li>
+<li><a href="/strategy.html">The strategy</a></li>
+<li><a href="/who.html">Who is the Unknown Soldier</a></li>
+<li><a href="/constitution.html">Our constitution</a></li>
+<li><a href="/permanent-culture.html">Permanent Culture 3.0</a></li>
+<li><a href="/futures/">The Futures Library</a></li>
+<li><a href="/research-agenda.html">What we&rsquo;re researching next</a></li>
+<li><a href="/vision/organizations.html">For organizations</a></li>
+<li><a href="/vision/candidates.html">For candidates</a></li>
+<li><a href="/vision/newcomers.html">For newcomers</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>The library</h2>
+<ul>
+<li><a href="/library.html">Backgrounders &amp; briefs</a></li>
+<li><a href="/map/">The Map &mdash; by issue</a></li>
+<li><a href="/projects/index.html">By project</a></li>
+<li><a href="/whats-built.html">What&rsquo;s built, and what&rsquo;s coming</a></li>
+<li><a href="/wiki/">The Wiki</a></li>
+<li><a href="/category-explainers/">Explainers</a></li>
+<li><a href="/programs/index.html">The Programs</a></li>
+<li><a href="/questions/index.html">Candidate questions</a></li>
+<li><a href="/guides/">Free Toronto guides</a></li>
+<li><a href="/transit/">Why can&rsquo;t Toronto move?</a></li>
+<li><a href="/free-toronto.html">Free Toronto Resource Atlas</a></li>
+<li><a href="/open-data.html">Open data</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>Registries &amp; tools</h2>
+<ul>
+<li><a href="/gov-atlas/index.html">The Government Atlas</a></li>
+<li><a href="/elections/">State of the Election</a></li>
+<li><a href="/elections/wards/">Ward math cards</a></li>
+<li><a href="/run/index.html">So you&rsquo;re thinking of running</a></li>
+<li><a href="/turnout.html">How to vote</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>How to trust this</h2>
+<ul>
+<li><a href="/how-this-was-made.html">How this was made</a></li>
+<li><a href="/how-we-verify.html">How we verify</a></li>
+<li><a href="/corrections.html">Corrections &amp; improvements</a></li>
+<li><a href="/press.html">Press kit</a></li>
+<li><a href="/sitemap.html">Sitemap &mdash; every page</a></li>
+</ul>
+</section>
+</div>
+</nav>
+<p><a class="improve-mail" href="mailto:unknownsoldier@unitetolove.ca?subject=Improvement%3A&amp;body=Page%20link%20%28paste%20it%20here%29%3A%0A%0AWhat%20I%20noticed%20or%20suggest%3A%0A">&#9999;&#65039; Suggest an improvement</a> &mdash; corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+<script>(function(){var s='Improvement: '+location.pathname;var b='Page link: '+location.href+'\n\nWhat I noticed or suggest:\n\nCredit me as (optional):\n';var h='mailto:unknownsoldier@unitetolove.ca?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);var l=document.querySelectorAll('a.improve-mail');for(var i=0;i<l.length;i++){l[i].href=h;}})();</script>
+<p>The Unknown Soldier &middot; uniteTOlove &middot; Toronto</p>
+  <p class="ethic">Post only where you have the right to post.</p>
+  <p>This site is built with AI assistance &mdash; every claim carries a receipt regardless of who
+  drafted it. Read how: <a href="/how-this-was-made.html">How this was made</a>.</p>
+  <p>No donations are asked for anywhere on this site. Contact:
+  <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a> &mdash;
+  corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+</footer>
+</body>
+</html>

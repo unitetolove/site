@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How this project runs — working notes · Unite to Love</title>
+<meta name="description" content="Working notes: the operator's guide to running this project, published nearly verbatim with named redactions.">
+<link rel="canonical" href="https://unitetolove.ca/notes/how-this-project-runs.html">
+<meta property="og:title" content="How this project runs — working notes · Unite to Love">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://unitetolove.ca/notes/how-this-project-runs.html">
+<meta property="og:image" content="https://unitetolove.ca/assets/og/kits.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header>
+<a href="https://unitetolove.ca/index.html">uniteTOlove.ca</a>
+<nav>
+<ul>
+<li><a href="https://unitetolove.ca/join.html">Start</a></li>
+<li><a href="https://unitetolove.ca/now.html">Now</a></li>
+<li><a href="https://unitetolove.ca/vision.html">Vision</a></li>
+<li><a href="https://unitetolove.ca/plan/">Plan</a></li>
+<li><a href="https://unitetolove.ca/kits/">Kits</a></li>
+<li><a href="https://unitetolove.ca/library.html">Library</a></li>
+<li><a href="https://unitetolove.ca/elections/">Elections</a></li>
+<li><a href="https://unitetolove.ca/gov-atlas/index.html">Gov Atlas</a></li>
+<li><a href="https://unitetolove.ca/run/index.html">Run</a></li>
+</ul>
+</nav>
+</header>
+
+<nav aria-label="breadcrumb">
+<a href="https://unitetolove.ca/index.html">Home</a> / Working notes / How this project runs
+</nav>
+
+<main id="main">
+
+<div style="border: 1px solid; padding: 1em; margin: 1.5em 0;">
+Working notes — an internal document, published nearly verbatim with named redactions marked in place. Expect apparatus: decision codes, board references, first-person seat voice. Why we publish our working documents: <a href="../how-we-share.html">how we share</a>.
+</div>
+
+<h1>Operator's Guide</h1>
+
+<p><em>Rewritten in full 2026-07-27 (D-098 core-docs refresh) by a delegated Sonnet lane, to bring the
+body current with the D-081 "canon" re-founding — the previous full rewrite (2026-07-13) predates
+THE CANON, the LAYER4_ENGINE prompt family, the Strategy Jane seat, and the D-096 paste-prompt
+interface rule; it had drifted to two bolted-on header addenda instead of an integrated update.
+Prior version (2026-07-13 body + both addenda) preserved in full at
+archive (repo-internal). This is YOUR manual, not an executor contract
+(that's MIND.md). If you've forgotten how to drive this fleet, start here instead of scrolling
+back through any chat — chat is never the coordination channel, this repo is.</em></p>
+
+<h2>Contents</h2>
+<ol>
+<li>How to start a session</li>
+<li>Giving a new CLI or LLM Desktop app access to the project</li>
+<li>The one rule</li>
+<li>Your accounts, right now</li>
+<li>Who's who (roles)</li>
+<li>The Desktop — RETIRED (D-140)</li>
+<li>Dispatch coordination — running things from your phone</li>
+<li>Project intake — don't lose an idea</li>
+<li>How git actually works here</li>
+<li>Decisions: PROPOSED vs RATIFIED</li>
+<li>When Jane escalates to you, and to Fable</li>
+<li>The dates that matter</li>
+<li>Where everything lives</li>
+<li>If you've forgotten everything: quick-start</li>
+<li>Identity firewall, one paragraph</li>
+</ol>
+
+<hr>
+
+<h2>1. How to start a session</h2>
+
+<p>Every surface below ends the same way: paste or open a `prompts/bootstrap_*.md` file (or say a
+shorthand trigger phrase and let the executor resolve it). You almost never type project context
+yourself — CLAUDE.md → MIND.md → the relevant state file is the entire briefing. Pick the
+surface based on what you're doing, not habit: terminal tools (Kimi CLI, Claude CLI) for anything
+that needs full git/file access; Claude Desktop's Cowork mode for quick sandboxed edits with no
+push risk; Claude Desktop's Code mode when you want the GUI but full repo access.</p>
+
+<p><strong>D-096 — the fleet never hands you a manual repo chore.</strong> No session should ever tell you to run
+`Commit Sweep.command`, type a shell line, or perform any other manual on-computer repo operation.
+Anything that genuinely needs on-computer execution (sweep verification, a git landing, a PR
+merge, an install, a checker run) arrives as ONE complete, self-contained Claude Code paste
+prompt — you open Claude Code, paste it, done. If any session ever asks you to run something
+yourself instead, that's a bug in that session, not a thing you need to figure out how to do.</p>
+
+<h3>Kimi CLI</h3>
+<p>Already installed (binary on your PATH) with credentials already set up — run `kimi --version` to
+confirm before assuming a reinstall is needed.</p>
+<pre>cd [operational detail withheld]   # your repo root — see your own shell history/Finder for the exact path
+git fetch origin
+git worktree add -b kimi/&lt;task-name&gt; [operational detail withheld] origin/main
+cd [operational detail withheld]
+kimi</pre>
+<p>Then paste the task, e.g. `Read prompts/bootstrap_jane_code.md in this repo and follow it exactly.`
+Kimi runs read-only actions automatically; it asks before anything that changes files or runs git.
+Clean up afterward from the main repo (not from inside the worktree):
+`git worktree remove [operational detail withheld]`. Official docs (re-check periodically, this tool
+moves fast): `kimi.com/code/docs`. Only trust installs from the official source — unofficial
+`kimi-cli`-named repos on GitHub are not the real project.</p>
+
+<h3>Claude CLI (Claude Code)</h3>
+<p>Simplest start, for a single session:</p>
+<pre>cd [operational detail withheld]   # your repo root — see your own shell history/Finder for the exact path
+claude</pre>
+<p>then paste the bootstrap prompt or say a shorthand (§1's shortcut table below). For an isolated
+session that won't collide with anything else running — recommended whenever you're firing more
+than one thing at once, or when Jane herself is fanning out background dispatches:</p>
+<pre>cd [operational detail withheld]   # your repo root — see your own shell history/Finder for the exact path
+git fetch origin
+git worktree add -b claude/&lt;task-name&gt; [operational detail withheld] origin/main
+cd [operational detail withheld]
+claude</pre>
+<p>Claude Code on the real filesystem is the one surface exempt from the Cowork FUSE-mount caution
+(§9) — it can read, commit, and push directly once authenticated, no extra setup per session.</p>
+
+<h3>Claude Desktop — Code mode</h3>
+<p>Open Claude Desktop, point it at the repo folder (or an existing worktree) the same way you'd open
+any project — full filesystem/git access, same class as Claude CLI, just the GUI instead of a
+terminal. Use this when you want to see file diffs/previews inline rather than in a terminal pager.
+Same paste-a-bootstrap-prompt convention applies.</p>
+
+<h3>Claude Desktop — Cowork mode</h3>
+<p>Desktop → Cowork tab → point it at the repo (mounted, not a plain clone). <strong>Cannot push, full
+stop, unless you paste a repo-scoped PAT into that specific chat</strong> (§9) — by design, never done in
+this project (FUSE rule, D-011/D-015). Good for: quick read/draft work, judgment questions,
+anything that doesn't need to land in git same-session. A Cowork session's edits sit in the mounted
+folder uncommitted until a Claude Code session (or a PAT-equipped Cowork session) lands them.</p>
+
+<h3>Shortcuts — say the phrase, any Jane resolves it</h3>
+
+<p>These are recognized automatically the moment CLAUDE.md is in context (any session rooted at the
+repo). Pasted cold into a session that hasn't picked it up yet (a fresh Cowork chat, an account
+where the working directory isn't the repo root), paste prompts/SHORTHANDS.md's matching entry
+instead — same effect. This table mirrors CLAUDE.md's live trigger list; if the two ever
+disagree, CLAUDE.md wins (it's the one auto-loaded every session).</p>
+
+<table border="1" cellpadding="6">
+<tr><th>You say</th><th>What happens</th></tr>
+<tr><td>"start jane" / "boot jane" / "new jane"</td><td>Boots the <strong>Planning</strong> track (prompts/bootstrap_jane_successor.md) — cross-track judgment, task creation. This boot file is a tombstoned pointer: Planning's real seat is now <strong>Founder</strong> (see §5)</td></tr>
+<tr><td>"start code jane" / "new code jane"</td><td>Boots the <strong>Code</strong> track (prompts/bootstrap_jane_code.md) — `tools/`, tests, CI, git/worktree hygiene, local capture/extraction tooling</td></tr>
+<tr><td>"start research jane" / "new research jane"</td><td>Boots the <strong>Research</strong> track (prompts/bootstrap_jane_research.md) — Atlas/Ledger/Scout/Lane-M/Lane-V, backgrounders</td></tr>
+<tr><td>"start movement jane" / "new movement jane"</td><td>Boots the <strong>Movement</strong> track (prompts/bootstrap_jane_movement.md) — charter support, contribution pipeline, coordinator kits, outreach execution</td></tr>
+<tr><td>"boot founder" / "start founder"</td><td>Boots <strong>Founder</strong> (strategy/canon/LAYER4_ENGINE/FOUNDER.md) — the canon-era judgment seat: ratification walks, architecture/firewall calls, dispatches the other four engine prompts</td></tr>
+<tr><td>"boot strategy jane" / "start strategy jane" / "strategy jane"</td><td>Boots <strong>Strategy Jane</strong> (prompts/bootstrap_jane_strategy.md, D-095) — the high-level thinker seat. Explicitly NOT Founder: non-execution by constitution, proposes memos and decision cards only, never fires/mints/edits</td></tr>
+<tr><td>"new jane: `&lt;mission&gt;`" / "new code jane: `&lt;mission&gt;`" / etc.</td><td>Boots the named track, but scopes its state-file read to `&lt;mission&gt;` and checks `git branch -a`/`git worktree list` for anything already mid-flight on it, instead of reading everything</td></tr>
+<tr><td>"new project" / "new project: `&lt;name&gt;`"</td><td>Logs your ask verbatim to state/PROJECTS.md first, then scopes/plans/produces the dispatch prompt(s) — see §8</td></tr>
+<tr><td>"status ping" / "quick status" / "ping"</td><td>Fixed-shape, minimum-token status block: local background scripts, HEAD, unmerged-branch count, last session log line — zero file reads beyond live checks</td></tr>
+<tr><td>"start fleet review" / "boot fleet review"</td><td>Standing review/integrate pass: lands Sonnet-reviewed Kimi branches, triages branch hygiene. One pass only</td></tr>
+<tr><td>any "desktop ..." phrase</td><td><strong>DEAD — the Desktop is retired (D-140). Nothing boots; see §6.</strong></td></tr>
+<tr><td>"boot build jane: develop project `&lt;name&gt;`"</td><td>Generalized project factory (prompts/bootstrap_project_factory.md) — engineering / movement-site / ops / research-program profiles</td></tr>
+<tr><td>"develop program: `&lt;name&gt;`" / "develop program `&lt;name&gt;`"</td><td>Research-only program factory (prompts/bootstrap_program_factory.md) — distinct from the line above</td></tr>
+<tr><td>"health check"</td><td>Runs `python3 tools/repo_health_check.py` directly — no prompt file needed</td></tr>
+</table>
+
+<p>If a phrase doesn't map cleanly, say so rather than guessing — "did you mean X or Y" once beats
+dispatching the wrong thing.</p>
+
+<h2>2. Giving a new CLI or LLM Desktop app access to the project</h2>
+
+<p>You'll periodically want to try a new tool (another coding CLI, a different desktop LLM app) against
+this repo — for a one-off review, or to actually let it contribute. The pattern is the same
+regardless of which tool it is; only the access level changes.</p>
+
+<p><strong>Root pointer files make onboarding non-Claude tools trivial now.</strong> Two files sit at the repo
+root purely so a tool's own auto-loaded convention file lands on the same spine as everything
+else: LLMs.md and AGENTS.md. Both say the same one thing — read CLAUDE.md then MIND.md
+and follow both exactly, same as any Claude session would. Neither file duplicates any actual
+rule (one fact, one home); if you ever see one grow past a pointer, that's a bug. Practically:
+if a tool auto-loads AGENTS.md (many agentic CLIs do) or a file named similarly to LLMs.md,
+it will find its way to the real contract with zero extra setup from you.</p>
+
+<p><strong>Review-only access (read the repo, answer questions, draft — never commits):</strong></p>
+<ol>
+<li>Give it a <strong>plain local clone or worktree</strong> of the repo — no GitHub credentials needed at all
+for read-only work. If it's already running on this Mac, the cheapest path is a fresh worktree
+off the same local repo (same pattern as Kimi/Claude CLI above):
+`git worktree add [operational detail withheld] origin/main` (no `-b`/new branch needed if it's never
+going to commit).</li>
+<li>Point it at CLAUDE.md first (auto-recognized trigger phrases), which defers to MIND.md, which
+points to the right state file. Tell it explicitly: "read CLAUDE.md then MIND.md, then follow
+whichever `state/NOW*.md` file that points you to — don't ask me for project context, it's all in
+the repo." That's the entire briefing for any tool, same as every executor here.</li>
+<li>Nothing else to grant — review access needs no PAT, no write permissions, no special onboarding.</li>
+</ol>
+
+<p><strong>No repo access at all (a phone app, a browser-only tool, anything you can't point at a clone):</strong>
+paste it PORTABLE_MIND.md — a self-contained bootstrap (v2.2) that carries the who/what/why and
+the distilled canon without needing to read a single repo file. It carries no live counts or
+statuses by design (any number in it is a snapshot, not a promise) and has its own short
+repo-access section at the bottom naming the same root pointer files, for when the tool later
+does get repo access.</p>
+
+<p><strong>Contribution access (it will actually edit files and commit):</strong></p>
+<ol>
+<li>Same clone/worktree as above, but on its own branch: `git worktree add -b &lt;tool-name&gt;/&lt;task&gt;
+[operational detail withheld] origin/main`.</li>
+<li><strong>Push access</strong> is the one real gate. If the tool runs directly against the real filesystem with
+its own authenticated `git`/`gh` (like Claude CLI or Kimi CLI do), no extra step — it can commit
+and push once you've confirmed it's authenticated to the right GitHub account. If the tool works
+through a <strong>mounted/synced virtual filesystem</strong> rather than a plain local clone (the same shape
+as Claude Desktop's Cowork mode), treat it exactly like Cowork: it should not attempt <em>any</em> git
+command against that mount, including read-only ones (D-011/D-015 — this was a real, repeatedly-
+observed failure mode, not theoretical caution) — its edits sit uncommitted until a
+plain-filesystem session lands them, or you paste a repo-scoped PAT into that specific
+session if it needs to push directly (never store the PAT anywhere persistent).</li>
+<li><strong>Git identity</strong>: commits in this repo use the author name `The Unknown Soldier` with a
+`noreply`-style GitHub email — configure any new contributing tool's `git config user.name`/
+`user.email` to match before its first commit, so history stays consistent (not required for
+review-only tools that never commit).</li>
+<li><strong>Tell it the guardrails, explicitly, before it does anything</strong> (this is the actual "onboarding"
+— there's no config file that enforces this automatically): identity firewall (§15 — no real
+name, no retired brand names, no fingerprint labels, ever, in content/filenames/commits); no
+force-push, no `git reset --hard` against shared history; never merge/delete a duplicate-row
+backlog or anything else this guide calls operator-gated without asking you first; never ask
+you to run a manual repo chore yourself (D-096, above) — it should hand you a paste prompt
+instead; if it's going to dispatch further sub-agents of its own, point it at
+prompts/PROMPT_CONVENTION.md for the expected shape.</li>
+<li>First real task should be small and reviewable — a single bounded fix, not a large unsupervised
+sweep — until you've seen how it behaves against this repo's conventions at least once.</li>
+</ol>
+
+<h2>3. The one rule</h2>
+<p>Every executor — every Claude chat, every Cowork session, Kimi, anything — reads MIND.md then its
+track's state file (state/NOW.md for Planning, state/NOW_CODE.md for Code, state/NOW_RESEARCH.md
+for Research — see §5) at the start of every session, and writes back to that file + state/SESSIONS.md
+at the end. <strong>You never need to relay context between chats by hand.</strong> If a session "closed clean,"
+its output is in the repo, not lost in that chat window. Your job is gardener, not courier: open
+sessions, paste prompts, answer the occasional judgment question, periodically sweep for PATs/merges.</p>
+
+<p><strong>Two more front doors worth knowing now, on top of the state files:</strong> strategy/KEY_PROJECTS.md
+§0 is the organized project-management view — what exists, where, what status, across every
+cluster — and it explicitly points at, rather than restates, the other registries (§13 has the
+full map). strategy/canon/CANON_README.md is the map of the production spine for anything
+research/content-shaped: vision (LAYER1) → scoreboard (LAYER2_MAP) → method (LAYER3) → the five
+engine prompts (LAYER4). If you're ever unsure "what are we building and where," start at
+strategy/KEY_PROJECTS.md §0; if you're unsure "how does a piece of content actually get made and
+verified," start at strategy/canon/CANON_README.md.</p>
+
+<h2>4. Your accounts, right now</h2>
+<ul>
+<li><strong>Account A</strong> — the original "Fable Sonnet (Master Orchestrator)" chat. Higher-effort,
+extended-thinking tier. Reserved for ratifications, verdicts, and architecture pivots — not
+day-to-day questions (burns budget you can't get back once Fable access lapses). Can run
+genuinely concurrently with Account B on the same repo — git handles it cleanly as long as each
+session claims its scope before touching shared files (§9 has a real recent example of this going
+wrong and being recovered, not just the happy path).</li>
+<li><strong>Account B</strong> — standing Sonnet advisor lineage. Route ordinary day-to-day questions and dispatch
+decisions here. Claude Code (not Cowork) on this account can commit and push directly.</li>
+<li><strong>Accounts are orthogonal to Jane tracks and canon seats (§5)</strong> — any account can run a Planning,
+Code, Research, Movement, or Strategy session, or boot Founder. Which account you use is about
+quota/budget; which track/seat you boot is about scope. Don't conflate "Account A" with
+"judgment-tier" — Account A running Sonnet is still Sonnet-tier work, just on a different quota
+pool.</li>
+<li><strong>Quota mechanics</strong>: both accounts have a 5-hour rolling window and a weekly window. "Grind an
+account" means keeping the dispatch queue full on that account until its window resets — idle
+quota is wasted quota. Observed rate: roughly 50% of a 5-hour window consumed by ~1.5 hours of
+continuous multi-agent dispatching.</li>
+<li>Fable/Opus budget doesn't reset the same way — spend it only on named judgment calls (contested
+claims, fairness/legal reads, firewall calls, architecture decisions), never on research sweeps,
+drafts, formatting, or cataloging (§11).</li>
+</ul>
+
+<p><strong>claude-swap — installed 2026-08-04 (K3 L1.3, BATCH-B(c)/D-141).</strong> Credential-swap for the
+official CLI (github.com/realiti4/claude-swap) — rotates between logged-in Claude Code accounts
+and can auto-switch before a 5h/7d window runs out. Installed via `pipx install claude-swap`
+(binaries: `claude-swap`, `cswap`). The one command you'll actually use day to day:</p>
+<pre>cswap list</pre>
+<p>shows every managed account's usage and reset times at a glance — run it any time you want to know
+which account has quota left before starting a session. To add an account: log into Claude Code
+with it, then run `cswap add`. To switch: `cswap switch &lt;num|email&gt;`, or let it rotate for you with
+`cswap auto` (foreground) — see the README for the full command set. <strong>Verified working this
+session</strong> (`cswap list`/`cswap status` both run correctly, Account 1 = [operational detail withheld]
+registered) — one caveat found, not fixed here: this seat's captured credential reports "re-login
+needed — refresh token dead," so the automatic-switch machinery isn't provably wired end-to-end
+yet. If `cswap list` ever shows that same "re-login needed" line for an account you're trying to
+rotate onto, log into Claude Code with it directly first, then re-run `cswap add` before trusting
+`cswap switch`/`cswap auto` against it.</p>
+
+<h2>5. Who's who (roles)</h2>
+
+<p><strong>The canon-era engine seats — where judgment and production actually route now.</strong> Since the D-081
+re-founding, research/content production runs on THE CANON (strategy/canon/CANON_README.md), and
+its LAYER4_ENGINE prompt family is the working roster for that spine, at
+`strategy/canon/LAYER4_ENGINE/`:</p>
+
+<table border="1" cellpadding="6">
+<tr><th>Seat</th><th>What it does</th><th>Boots via</th></tr>
+<tr><td><strong>FOUNDER</strong></td><td>The judgment seat — orchestrates the other four, holds ratification walks, architecture/firewall calls, render-class approvals. Runs on Fable/Opus (thinking on).</td><td>"boot founder"</td></tr>
+<tr><td><strong>CLOSURE_TRAIN</strong></td><td>Production — takes a scoped issue/piece from open to closed through the canon's method.</td><td>dispatched by Founder</td></tr>
+<tr><td><strong>VERIFY_SEAL</strong></td><td>Independent verification/seal pass — the canon's version of the old Lane-V discipline.</td><td>dispatched by Founder</td></tr>
+<tr><td><strong>RENDER</strong></td><td>Turns ratified CORE substance into an audience-tuned door (public page, candidate brief, org letter, etc.) — never disagrees with CORE.</td><td>dispatched by Founder</td></tr>
+<tr><td><strong>CURATOR</strong></td><td>Regenerates the scoreboard (`LAYER2_MAP.md`), sweeps for stranded work, keeps registries honest.</td><td>dispatched by Founder</td></tr>
+</table>
+
+<p>Each of the five reads only GOAL/CORE + MAP + METHOD to orient — they're deliberately narrow.
+"Boot founder" is now the real Planning-track boot; the old prompts/bootstrap_jane_successor.md
+("start jane") is a tombstoned pointer to it, kept only so the old trigger phrase still resolves
+somewhere sane.</p>
+
+<p><strong>The Jane tracks — day-to-day scope, still real and still separate from the canon seats:</strong></p>
+
+<table border="1" cellpadding="6">
+<tr><th>Role</th><th>What it does</th><th>Where it writes</th></tr>
+<tr><td><strong>Jane — Planning</strong></td><td>Cross-track judgment: architecture, firewall/fairness/legal flags, task creation, project intake. Rulings PROPOSED until you ratify. Its trigger now routes to Founder above.</td><td>state/NOW.md, state/DECISIONS.md, state/PROJECTS.md</td></tr>
+<tr><td><strong>Jane — Code</strong></td><td>Owns `tools/`, tests, CI, git/worktree hygiene, Desktop Orchestrator infrastructure.</td><td>state/NOW_CODE.md, `tools/`</td></tr>
+<tr><td><strong>Jane — Research</strong></td><td>Owns the content pipeline: Atlas → Ledger → Data → Backgrounders → Briefs. Day-to-day production order is absorbed into CLOSURE_TRAIN above; this track still owns the connector/data layer underneath it.</td><td>state/NOW_RESEARCH.md, `research/`</td></tr>
+<tr><td><strong>Jane — Movement</strong></td><td>Movement-facing content and outreach execution: charter support, contribution pipeline, coordinator kits, tribe map, engagement capture, press kit, distribution.</td><td>state/NOW_MOVEMENT.md</td></tr>
+<tr><td><strong>Jane — Strategy (D-095)</strong></td><td>The high-level thinker seat: whole-board review, assumption-testing, independent reviews of any artifact/plan/pivot. <strong>Non-execution by constitution</strong> — proposes memos and state/DECISION_QUEUE.md §0 card drafts, never fires a lane, mints a decision, or edits canon/state/production files. Explicitly NOT Founder.</td><td>its own dated `strategy/` memo + state/OPERATOR_LOG.md verbatim bank + one `SESSIONS.md` line</td></tr>
+</table>
+
+<p><strong>Supporting roles, unchanged in kind:</strong></p>
+
+<table border="1" cellpadding="6">
+<tr><th>Role</th><th>What it does</th><th>Where it writes</th></tr>
+<tr><td><strong>Kimi (CLI)</strong></td><td>A second model/tool in the fleet, same repo conventions. Has run dev-execution (review/merge supervision) and its own self-directed engineering roadmap.</td><td>wherever its assigned task lands, same as any executor</td></tr>
+<tr><td><strong>Gate / Merge</strong></td><td>Standing roles (not yet fully automated) — PR review and merge discipline as multi-agent PRs scale up.</td><td>GitHub PRs</td></tr>
+</table>
+
+<p>Full architecture: strategy/V3_VERDICT_AND_ARCHITECTURE_2026-07-11.md. Full track-split
+rationale: state/DECISIONS.md D-027. Full canon architecture: strategy/canon/CANON_README.md.</p>
+
+<h2>6. The Desktop — RETIRED (D-140, 2026-08-04)</h2>
+
+<p><strong>You retired it. There is nothing here to operate any more.</strong> Your words, on the record:
+<em>"FINAL DECISION - DESKTOP IS NOW RETIRED - ARCHIVE ALL DESKTOP TASKS - ALL DESKTOP WORK IS TO BE
+PERFORMED LOCALLY."</em></p>
+
+<p><strong>What replaced it: nothing — the Mac just does the work.</strong> Bulk fetch, WARC capture, extraction
+and classification all run here, and that is not a downgrade you have to trust on faith: on
+2026-08-03/04 the capture run went "no Desktop, no Ollama" and pulled 303 of 456 URLs, cutting the
+never-captured gap by two thirds. It was already the better path before the decision.</p>
+
+<p><strong>Why, in one line:</strong> 75% of every GPU-hour the box ever ran went into two lanes whose output never
+landed in a single committed artifact. Full measurement: strategy/2026-08-04_DESKTOP_VALUE_AUDIT.md.</p>
+
+<p><strong>What this means for you day to day:</strong></p>
+
+<ul>
+<li>The four "desktop ..." trigger phrases are dead. Nothing will boot if you type them.</li>
+<li>Nothing is queued, drained, or restocked any more — no daily-review chain, no unattended pass.</li>
+<li>You have <strong>one</strong> action left, and only after your final collection: <strong>revoke the GitHub token</strong>
+that box's git remote carried (github.com → Settings → Developer settings → Personal access
+tokens). Retiring hardware does not un-expose a credential.</li>
+<li>Everything else — unloading the schedulers, moving the code, the last WARC landing — is written
+up as a single paste for an on-computer session:
+prompts/dispatches/2026-08-04_DESKTOP_DECOMMISSION_PASTE.md. <strong>It is deliberately gated on you
+saying the final collection is done</strong>, because everything it disarms is what that collection uses.</li>
+</ul>
+
+<p>Full record of what the retirement changed: strategy/2026-08-04_DESKTOP_RETIREMENT.md.</p>
+
+<h2>7. Dispatch coordination — running things from your phone</h2>
+<p>Two different Claude features let you work with this fleet away from your desk:</p>
+<ul>
+<li><strong>Dispatch</strong> (Cowork feature): pair the Claude mobile app with Claude Desktop once via QR code
+(Desktop → Cowork tab → Dispatch → Get started). Message a task from your phone and it spawns a
+<strong>new</strong> session on your Mac. Requires your Mac awake with Desktop open. Recommended setting for
+this project: file access on, computer-use off — everything here is file/git/research work.</li>
+<li><strong>Remote Control</strong> (Claude Code feature): steers a session you've <em>already started</em> locally from
+your phone/browser — for picking up in-progress work, not starting new work.</li>
+</ul>
+
+<p><strong>For this project's workflow — pasting a `prompts/bootstrap_*.md` file to kick off a new grind
+session — Dispatch is the fit.</strong> One real constraint: single persistent thread, no parallel Dispatch
+conversations, and your Mac has to actually be on.</p>
+
+<h3>Phone alerts (ntfy over Tailscale) — D-107 L1.2</h3>
+
+<p>Ends the tab-cycling problem: a push notification to your phone the moment a Code Jane session
+stops and needs you, or hits a permission prompt — no more re-checking Claude Code to see if it's
+idle. One-way (repo → phone only, no agent tokens spent), private (your own server over your own
+tailnet, never the public ntfy.sh), and inert until you do this setup — the hooks that fire it
+(`.claude/hooks/ntfy_alert.sh`, wired to `Stop`/`Notification` in `.claude/settings.json`) are a
+silent no-op on every machine where the one environment variable below isn't set.</p>
+
+<p><strong>Same D-096 discipline, adapted:</strong> this isn't a repo chore Claude Code can run for you (it ends
+with a tap on your phone), so it can't arrive as a Claude-Code paste prompt — but it's still ONE
+block, pasted once, into a Terminal on your Mac:</p>
+
+<p>[operational detail withheld — one-time local setup script for phone push notifications over the operator's private network]</p>
+
+<p><strong>Then, on your phone (can't be scripted, two taps):</strong> install the <strong>ntfy</strong> app (App Store/Play
+Store) and Tailscale (if not already on this phone — it must be on the same tailnet as your Mac);
+open ntfy, "Add subscription," paste the printed URL. Every Stop/Notification alert from any
+Code Jane session on this Mac now buzzes your phone, over your own network only.</p>
+
+<p><strong>Every new terminal session picks up `NTFY_URL` automatically</strong> if your shell profile sources
+[operational detail withheld] (the same file this project's other secrets already live in); if it doesn't yet,
+add one line to your shell profile: `set -a; source [operational detail withheld]; set +a`. Claude Code
+itself inherits it from the environment it's launched in — no repo file ever names your topic.</p>
+
+<p><strong>Known limitation, disclosed:</strong> `ntfy serve`'s default config binds all interfaces, not only
+Tailscale's — the URL above only ever gets handed to your own phone, and the topic is an
+unguessable random string, but anyone who already knows both your Mac's Tailscale IP and the
+exact topic could still reach it if they were already on your tailnet (the same trust boundary
+this whole project already runs inside). If you want interface-level enforcement too, ntfy's own
+`listen-http` config option can be pinned to the Tailscale IP specifically — a manual follow-up,
+not part of this one-paste default.</p>
+
+<h2>8. Project intake — don't lose an idea</h2>
+<p>Say <strong>"new project"</strong> (or "new project: `&lt;name&gt;`") to any Jane, or just describe something bigger
+than a one-off dispatch. It runs the `NEW-PROJECT` shorthand (prompts/SHORTHANDS.md):</p>
+<ol>
+<li>Logs your ask <strong>verbatim</strong> to state/PROJECTS.md first, before any scoping — this step alone is
+the point: an idea said once in a chat that later closes doesn't silently disappear.</li>
+<li>Scopes it (in/out, which track(s)), plans it (a paragraph for something small, a real
+`strategy/` doc for something the size of a full sprint plan), and produces the actual
+ready-to-fire dispatch prompt(s) — not a description of what a prompt should say.</li>
+</ol>
+
+<p>state/PROJECTS.md is now explicitly the append-only intake LOG, not the organized view — it
+says so at its own top. The organized, human-facing view of everything that's been intaken,
+scoped, and built is strategy/KEY_PROJECTS.md §0 (see §3 above). A row in PROJECTS.md can sit at
+`LOGGED` or `PLANNED` indefinitely; that's the point, it's a durable record you can glance at, not
+something that needs babysitting.</p>
+
+<h2>9. How git actually works here</h2>
+<blockquote>Before trusting anything here about a specific surface's git/sync capability, read
+`state/EXECUTOR_CAPABILITIES.md` — the live capability matrix, kept current per-surface.</blockquote>
+
+<ul>
+<li>The repo (private GitHub remote — `git remote -v` for the exact URL; see §15 before ever citing
+that URL in a new committed file) is currently private.</li>
+<li><strong>Cowork sessions cannot push, full stop</strong>, unless you paste a repo-scoped PAT into that specific
+chat. No PAT in the mounted-folder sandbox, ever, by design (D-011/D-015 FUSE rule) — even
+read-only git commands (`status`/`log`/`fetch`/`diff`) are off-limits there; they were observed
+transiently writing `.git/index.lock` and jamming the next Claude Code session that touched the
+same repo.</li>
+<li><strong>Claude Code sessions on the real filesystem are exempt from all of the above</strong> — proven, routine
+path for anything that needs to land same-session.</li>
+<li><strong>Worktree isolation at scale</strong>: this project routinely runs many concurrent worktrees at once —
+normal, not a sign something's wrong. When Jane fans out background agents, each gets its own
+branch/directory, commits locally, and gets merged/pushed centrally once it reports back. Stray
+`.claude/worktrees/agent-*` directories are normal mid-session churn, cleaned up
+(`git worktree remove`) once merged.</li>
+<li><strong>A real concurrent-Jane collision happened once, worth knowing the shape of it since it can
+happen again</strong>: two separate sessions ran at the same time, both editing state/NOW.md/
+`DECISIONS.md`/`SESSIONS.md`. Neither did anything wrong; the fix was a normal 3-way git merge in
+an isolated branch, keeping both sessions' real content, plus renumbering one accidental `D-###`
+ID collision. <strong>The one thing that mattered most: neither session touched the other's live
+uncommitted work in a shared worktree</strong> — if you ever see a session pause with something
+uncommitted sitting in a worktree another session might also be using, that's exactly the moment
+to ask before proceeding, not push through.</li>
+<li><strong>D-026</strong>: stage multi-commit merge/integration work in an isolated branch first (verify tests +
+health check + identity-grep there), then land on the primary worktree's `main` via the smallest
+possible final step (a clean fast-forward). Multi-step git surgery run directly against the
+primary worktree is materially higher-risk than the same work staged elsewhere first.</li>
+<li>One-time exception already used: D-007 permitted a single force-push to purge a real-name leak
+from git history. That exception is spent — the standing no-force rule is back in effect
+permanently.</li>
+<li><strong>D-096, and what it means for you specifically:</strong> you should never be asked to type a git
+command or double-click a `.command` file again. The 15-minute commit-sweep automation keeps
+running on its own regardless; what changed is that any session needing your hands on the
+keyboard now hands you one complete Claude Code paste prompt instead of an instruction to run
+something yourself.</li>
+</ul>
+
+<h2>10. Decisions: PROPOSED vs RATIFIED</h2>
+<p>state/DECISIONS.md is append-only, one line per decision, newest at the bottom.
+<strong>It opens with a compact, domain-tagged quick-index</strong> (`[CROSS]`/`[CODE]`/`[RESEARCH]`) — skim
+that table first; only open a full paragraph entry below it if you need the detail. This exists
+specifically so a track-specific boot (§5) doesn't have to pay the token cost of reading every
+decision in full, including ones from a different track.</p>
+<ul>
+<li><strong>PROPOSED</strong> = a Jane/Founder instance's judgment call, not yet yours.</li>
+<li><strong>RATIFIED</strong> = you said yes, in any chat, in any form ("D27 approved" is enough).</li>
+<li><strong>RATIFIED-BY-DELEGATION</strong> (since D-091) = a ruling the operator has pre-authorized a session to
+make without per-instance sign-off, with standing redline rights: any one such ruling reverts on
+a single line from you, without reopening the rest.</li>
+<li>You ratify by telling whichever Jane/Founder you're talking to, or edit the file yourself — human
+edits are drafts the next session verifies, never silently overwritten.</li>
+<li>If you disagree with a PROPOSED entry, say so — nothing is binding until you flip it.</li>
+<li><strong>Sub-decisions/amendments</strong> to an already-ratified entry get appended inline to that same `D-0##`
+line with a `D-0##.N` reference tag (e.g. `D-022.2`), rather than a new top-level number.</li>
+<li>What's actively waiting on you, distilled into one-action cards, is a separate and more useful
+surface than reading the whole ledger cold: state/DECISION_QUEUE.md §0 — ranked, walk top-down,
+each card is one action.</li>
+</ul>
+
+<h2>11. When Jane escalates to you, and to Fable</h2>
+<p>Code Jane and Research Jane handle their own track's day-to-day dispatch and judgment; they flag to
+<strong>Founder</strong> (the canon-era Planning seat, §5) for anything cross-track or architecture-adjacent, and
+Founder flags to <strong>Fable/Account A</strong> only for a genuine architecture pivot, a contested-claim
+defensibility call, a fairness/legal read, or a firewall question with no clean precedent yet.
+<strong>Strategy Jane</strong> is a separate, parallel escalation path — ask for it directly whenever you want
+an independent second look at whether the current plan is even right, not just executed well; it
+never fires work itself, only proposes. Any seat flags for <strong>you directly</strong> whenever a decision
+needs your values, not just a rubber stamp — legal-adjacent calls, real-world action only you can
+take (credentials, physical files, revoking a token), a genuinely destructive/irreversible edit, or
+anything in the standing hard-limit list (any public publish/go-live click, money/spend, engagement
+decisions, substantive MIND.md changes, your own identity surfaces). Standing practice: never
+merge/delete catalog rows, even ones a session is fairly confident about, without your explicit
+go-ahead.</p>
+
+<h2>12. The dates that matter</h2>
+<p>No timelines are ever estimated here — only externally imposed dates:</p>
+<ul>
+<li><strong>August 21, 2026, 2:00 p.m.</strong> — Ontario municipal nominations close. This is what "done enough"
+is measured against, not corpus size.</li>
+<li><strong>October 26, 2026</strong> — Ontario municipal voting day. (BC Oct 17, Manitoba Oct 28, Quebec Oct 5 is
+<em>provincial</em> not municipal, Saskatchewan Nov 9 partial — the "five provinces/75%" claim is false,
+don't use it.)</li>
+</ul>
+
+<h2>13. Where everything lives</h2>
+<pre>
+MIND.md                executor contract (not this file)
+OPERATOR_GUIDE.md       this file — you, not executors
+README.md               human-facing explanation of the repo (firewall-safe)
+CLAUDE.md               auto-loaded trigger-phrase recognition (repo root)
+LLMs.md / AGENTS.md     route non-Claude tools to CLAUDE.md — pointers only, nothing duplicated
+PORTABLE_MIND.md        self-contained bootstrap for a tool with no repo access
+state/NOW.md            Planning track — index + cross-cutting, the hot file for architecture/judgment
+state/NOW_CODE.md       Code track — tools/, tests, CI, git/worktree hygiene, Desktop Orchestrator
+state/NOW_RESEARCH.md   Research track — Atlas/Ledger/Scout/Lane-M/Lane-V, backgrounders
+state/NOW_MOVEMENT.md   Movement track — outreach execution
+state/PROJECTS.md       NEW-PROJECT intake LOG, verbatim, append-only (§8) — not the organized view
+state/DECISIONS.md      ratification ledger, domain-tagged quick-index at top
+state/DECISION_QUEUE.md what's waiting on you, as one-action cards (§0)
+state/SESSIONS.md       one line per session, chronological, append-only — not meant to be read in
+                        full at boot; this is where superseded NOW*.md history gets archived
+strategy/               verdicts, architecture memos, sprint/campaign/weekly plans
+strategy/KEY_PROJECTS.md  the Project Management front door (§0) — the organized "what exists,
+                        where, what status" view; points at every other registry, restates nothing
+strategy/canon/         THE CANON — the production spine for research/content:
+                        CANON_README.md (the map) → LAYER0 (verbatim ground truth) →
+                        LAYER1_VISION (CORE + audience renders) → LAYER2_MAP.md (the content
+                        scoreboard, CURATOR-regenerated, never hand-edited) → LAYER3_METHOD.md
+                        (production physics) → LAYER4_ENGINE/ (FOUNDER · CLOSURE_TRAIN ·
+                        VERIFY_SEAL · RENDER · CURATOR prompts)
+maps/                   corpus maps of your own material
+library/                curated imports from old projects, provenance-tagged
+research/               the v3 knowledge infrastructure (issue map, atlas, ledger, data, Desktop docs)
+prompts/                PROMPT_CONVENTION.md + SHORTHANDS.md + every bootstrap prompt, ready to paste
+tools/                  scripts: id allocation, health checks, report renderers, duplicate-
+                        resolution/citation-drift/coverage checks, Desktop coding loop
+inbox/                  raw capture, triaged weekly — use it for on-the-go notes
+vault/                  gitignored, OPSEC-sensitive, never committed
+</pre>
+
+<p><strong>Registries own facts; prose points, never restates (D-042).</strong> If you want live status/counts —
+what's built, what's sealed, what's still a gap, what's waiting on you — the answer always lives in
+one of: strategy/KEY_PROJECTS.md (the PM view), strategy/canon/LAYER2_MAP.md (the content
+scoreboard), state/NOW.md + its per-track siblings (session state), or state/DECISION_QUEUE.md
+(what's on you). This guide deliberately never repeats a number from any of those — a number
+written here would just go stale.</p>
+
+<p><strong>Recurring housekeeping, not a fixed list:</strong> rather than a hand-maintained checklist of open
+operator actions (which goes stale within a session or two, per the same D-042 discipline above),
+check state/DECISION_QUEUE.md §0 whenever you want to know what's actually waiting on you right
+now — it's ranked, cards are one action each, and it's kept current far more reliably than any
+static list in this file could be.</p>
+
+<h2>14. If you've forgotten everything: quick-start</h2>
+<ol>
+<li>Open state/NOW.md (or `NOW_CODE.md`/`NOW_RESEARCH.md`/`NOW_MOVEMENT.md` if you know which
+track you want). It always tells you what's blocked, what's running, and what's next.</li>
+<li>Or, for the organized view instead of the session-state view: strategy/KEY_PROJECTS.md §0.</li>
+<li>To talk to Jane or Founder: paste the matching `prompts/bootstrap_*.md` into a new chat, or say
+a shorthand from §1's table if CLAUDE.md is already in context.</li>
+<li>To launch new execution work: check §1's shortcut table for a ready phrase, or say "new project"
+(§8) and let intake scope/plan/produce the prompt.</li>
+<li>If something feels like a big call (legal, firewall, architecture, or anything destructive):
+don't decide alone — ask, and expect to be told whether it's Fable-tier, Strategy-Jane-tier, or
+just needs your go-ahead.</li>
+<li>Never trust a fact you remember from an old chat over what the current state file says.</li>
+</ol>
+
+<h2>15. Identity firewall, one paragraph</h2>
+<p>[operational detail withheld] never appears in any file, commit, branch, or prompt in this repo — everywhere it's
+"the operator." Authorial identity for anything public-facing is <strong>The Unknown Soldier</strong> (also the
+git commit author identity used throughout this repo's history — configure any new contributing
+tool to match, per §2). Retired brand names never return. This research library is neutral civic
+infrastructure; any campaign/advocacy work is a separate project that only ever consumes <em>published</em>
+artifacts from here. If you paste something into a chat that has [operational detail withheld], a retired brand,
+or a live secret in it, expect the session to flag it before it touches a committed file — that's
+working as designed.</p>
+
+<hr>
+
+<h2>Questions for the operator</h2>
+<p><em>Broad questions to clarify or improve this territory. Answer any subset — in chat, or inline here.</em></p>
+
+<ol>
+<li>Which sections do you actually consult? Anything you repeatedly have to ask instead is the
+missing section — name it.</li>
+<li>Should state/EXECUTOR_CAPABILITIES.md fold into this guide (one manual) or stay separate (one
+file per concern)?</li>
+<li>Now that a real go-live slice exists, do you want a "public operations" section (corrections
+triage, announcement channels, response templates)?</li>
+</ol>
+
+</main>
+
+<footer>
+<div>
+<h2>Start here</h2>
+<ul>
+<li><a href="https://unitetolove.ca/join.html">Join the conversation</a></li>
+<li><a href="https://unitetolove.ca/now.html">Next actions</a></li>
+<li><a href="https://unitetolove.ca/find.html">Find — search this site</a></li>
+<li><a href="https://unitetolove.ca/kits/">The Kits</a></li>
+<li><a href="https://unitetolove.ca/harvest.html">The Harvest</a></li>
+<li><a href="https://unitetolove.ca/invite-me.html">Invite me into your room</a></li>
+<li><a href="https://unitetolove.ca/civic-hour.html">The Civic Hour</a></li>
+<li><a href="https://github.com/unitetolove/commons">Code &amp; data</a></li>
+</ul>
+</div>
+<div>
+<h2>The vision</h2>
+<ul>
+<li><a href="https://unitetolove.ca/vision.html">The full vision</a></li>
+<li><a href="https://unitetolove.ca/plan/">The plan — one year, all-out</a></li>
+<li><a href="https://unitetolove.ca/plan/covenant.html">The sprint covenant</a></li>
+<li><a href="https://unitetolove.ca/strategy.html">The strategy</a></li>
+<li><a href="https://unitetolove.ca/who.html">Who is the Unknown Soldier</a></li>
+<li><a href="https://unitetolove.ca/constitution.html">Our constitution</a></li>
+<li><a href="https://unitetolove.ca/permanent-culture.html">Permanent Culture 3.0</a></li>
+<li><a href="https://unitetolove.ca/futures/">The Futures Library</a></li>
+<li><a href="https://unitetolove.ca/research-agenda.html">What we're researching next</a></li>
+<li><a href="https://unitetolove.ca/vision/organizations.html">For organizations</a></li>
+<li><a href="https://unitetolove.ca/vision/candidates.html">For candidates</a></li>
+<li><a href="https://unitetolove.ca/vision/newcomers.html">For newcomers</a></li>
+</ul>
+</div>
+<div>
+<h2>The library</h2>
+<ul>
+<li><a href="https://unitetolove.ca/library.html">Backgrounders &amp; briefs</a></li>
+<li><a href="https://unitetolove.ca/map/">The Map — by issue</a></li>
+<li><a href="https://unitetolove.ca/projects/index.html">By project</a></li>
+<li><a href="https://unitetolove.ca/whats-built.html">What's built, and what's coming</a></li>
+<li><a href="https://unitetolove.ca/wiki/">The Wiki</a></li>
+<li><a href="https://unitetolove.ca/category-explainers/">Explainers</a></li>
+<li><a href="https://unitetolove.ca/programs/index.html">The Programs</a></li>
+<li><a href="https://unitetolove.ca/questions/index.html">Candidate questions</a></li>
+<li><a href="https://unitetolove.ca/guides/">Free Toronto guides</a></li>
+<li><a href="https://unitetolove.ca/transit/">Why can't Toronto move?</a></li>
+<li><a href="https://unitetolove.ca/free-toronto.html">Free Toronto Resource Atlas</a></li>
+<li><a href="https://unitetolove.ca/open-data.html">Open data</a></li>
+</ul>
+</div>
+<div>
+<h2>Registries &amp; tools</h2>
+<ul>
+<li><a href="https://unitetolove.ca/gov-atlas/index.html">The Government Atlas</a></li>
+<li><a href="https://unitetolove.ca/elections/">State of the Election</a></li>
+<li><a href="https://unitetolove.ca/elections/wards/">Ward math cards</a></li>
+<li><a href="https://unitetolove.ca/run/index.html">So you're thinking of running</a></li>
+<li><a href="https://unitetolove.ca/turnout.html">How to vote</a></li>
+</ul>
+</div>
+<div>
+<h2>How to trust this</h2>
+<ul>
+<li><a href="https://unitetolove.ca/how-this-was-made.html">How this was made</a></li>
+<li><a href="https://unitetolove.ca/how-we-verify.html">How we verify</a></li>
+<li><a href="https://unitetolove.ca/corrections.html">Corrections &amp; improvements</a></li>
+<li><a href="https://unitetolove.ca/press.html">Press kit</a></li>
+<li><a href="https://unitetolove.ca/sitemap.html">Sitemap — every page</a></li>
+</ul>
+</div>
+<p><a href="mailto:unknownsoldier@unitetolove.ca?subject=Improvement%3A&body=Page%20link%20%28paste%20it%20here%29%3A%0A%0AWhat%20I%20noticed%20or%20suggest%3A%0A">Suggest an improvement</a> — corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+<p>The Unknown Soldier · uniteTOlove · Toronto</p>
+<p>Post only where you have the right to post.</p>
+<p>This site is built with AI assistance — every claim carries a receipt regardless of who
+drafted it. Read how: <a href="https://unitetolove.ca/how-this-was-made.html">How this was made</a>.</p>
+<p>No donations are asked for anywhere on this site. Contact: <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a> —
+corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+</footer>
+
+</body>
+</html>

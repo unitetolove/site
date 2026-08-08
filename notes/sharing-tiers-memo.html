@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The sharing tiers — working notes · Unite to Love</title>
+<meta name="description" content="Working notes: an internal memo, published nearly verbatim — why a semi-private 'internal commons' repo is unstable, and the three-lane doctrine used instead.">
+<link rel="stylesheet" href="../style.css">
+<link rel="canonical" href="https://unitetolove.ca/notes/sharing-tiers-memo">
+<script defer src="../assets/analytics.js"></script>
+<meta property="og:title" content="The sharing tiers — working notes · Unite to Love">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://unitetolove.ca/notes/sharing-tiers-memo">
+<meta property="og:image" content="https://unitetolove.ca/assets/og/kits.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
+<header class="site-header">
+<div class="header-inner">
+<a class="wordmark-link" href="/index.html">unite<span class="to">TO</span>love<span class="tld">.ca</span></a>
+<nav class="primary-nav" aria-label="Primary">
+<ul>
+<li><a href="/join.html">Start</a></li>
+<li><a href="/now.html">Now</a></li>
+<li><a href="/vision.html">Vision</a></li>
+<li><a href="/plan/">Plan</a></li>
+<li><a href="/kits/">Kits</a></li>
+<li><a href="/library.html">Library</a></li>
+<li><a href="/elections/">Elections</a></li>
+<li><a href="/gov-atlas/index.html">Gov Atlas</a></li>
+<li><a href="/run/index.html">Run</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<nav class="crumbs"><a href="../index.html">Home</a> / Working notes / The sharing tiers</nav>
+
+<main id="main" tabindex="-1">
+
+<div style="border: 1px solid; padding: 1em 1.25em; margin: 1em 0 2em;">
+<p><strong>Working notes</strong> — an internal document, published nearly verbatim. Expect
+apparatus: decision codes, board references, first-person seat voice. Why we publish our
+working documents: <a href="../how-we-share.html">how we share</a>.</p>
+</div>
+
+<h1>SHARING TIERS — the &ldquo;internal commons&rdquo; question, thought through</h1>
+
+<p><em>2026-08-04 &middot; Mobilization Jane. Operator asked: should a ~98% &ldquo;internal
+commons&rdquo; repo exist for collaborators/friends? Recommendation: <strong>no as designed —
+yes to what it&rsquo;s actually for</strong>, via three lanes. Companion to the sharing
+architecture memo. Operator&rsquo;s inventory redlines (banked this sitting) are absorbed at
+&sect;5.</em></p>
+
+<h2>&sect;1. The core analysis — why a semi-private tier is unstable</h2>
+
+<ol>
+<li><strong>&ldquo;Friends&rdquo; is a feeling, not an access class.</strong> Trust
+doesn&rsquo;t survive forwarding, and a git clone is permanent. Ten friends means the eleventh
+reader is whoever any friend forwards to. So an internal commons must be designed as
+<em>survivable-if-fully-public</em> — at which point it IS the public commons with extra steps
+and none of the gates. There are only two stable states: <strong>private and published.</strong>
+Everything between drifts public, uncontrolled, on someone else&rsquo;s clock.</li>
+<li><strong>The risk was never the content — it&rsquo;s the container plus three content
+classes.</strong> The estate&rsquo;s prose is already written to survive a hostile reader (house
+law). What can&rsquo;t move, ever: the identity registers (operator log, decisions, sessions —
+biography shape, redaction records), the outreach machinery (per-tribe strategy, never-say
+lists, held rulings on named orgs, send calendars — a leak here burns the one-shot law itself:
+every future door reads as staged), and the vault. <strong>That&rsquo;s the true
+~2%-that-never-moves; the operator&rsquo;s 98% intuition is right — but the road for the 98% is
+publication, not a side door.</strong></li>
+<li><strong>Screening cost is symmetric.</strong> Exporting 98% safely costs the same screening
+as publishing 98% — minus the benefit, plus a second membrane to maintain and a standing
+one-fact-two-homes drift.</li>
+<li><strong>Collaborators don&rsquo;t need 98%.</strong> They need the sealed bodies to build
+on, the data, the toolkits, the roadmap, and the working files of <em>their</em> project. Nobody
+collaborates on an estate; they collaborate on a project.</li>
+</ol>
+
+<h2>&sect;2. The three lanes (what &ldquo;yes&rdquo; actually looks like)</h2>
+
+<p><strong>Lane 1 — the commons grows to &ldquo;everything sealed,&rdquo; fast.</strong>
+Today&rsquo;s repo is tiny because the v0.1 manifest was deliberately conservative, not because
+the ceiling is low. New standing rule proposed: <strong>SEALED = in the commons within 48h of
+seal</strong> — one manifest line each. The pipeline (exporter + screens + flags) is built;
+growth is now editorial, not technical. If it&rsquo;s good enough to hand a friend, it&rsquo;s
+sealed; if it&rsquo;s sealed, it&rsquo;s good enough for the world.</p>
+
+<p><strong>Lane 2 — project rooms, not estate access.</strong> For a real collaborator on X: a
+scoped, org-owned repo (private or public per project) cut by the same exporter with a
+per-project manifest — that project&rsquo;s working files plus needed context, nothing else.
+Blast radius = one project. Revocation = archive the room. The volunteer-packet pattern,
+generalized upward. First candidates: ward-browser room (with Civic Tech), assembly-toolkit
+room, open-data room.</p>
+
+<p><strong>Lane 3 — named-person embargo shares.</strong> Pre-publication artifacts with timing
+value (the consumer-protection report; strategy docs a kitchen-cabinet reader should see) go to
+<em>named humans as documents</em>, deliberately, one at a time — an embargo is a per-person
+promise, not a tier. Tracked in a vault-side shares log (who, what, when, why). Never standing
+access.</p>
+
+<h2>&sect;3. Manifest v0.2 — the immediate Lane-1 expansion (proposed)</h2>
+
+<p>Next additions, all sealed-class: the 149 backgrounders (the single biggest &ldquo;you built
+HOW much?&rdquo; reveal) &middot; the sealed category question banks &middot; State of the
+Election preamble + each biweekly edition &middot; the Free Toronto guides (31 sealed) +
+resources data &middot; discussion guides (sealed 7) &middot; transit flagship source chapters
+(already public as HTML; source completes it) &middot; reading list v1 &middot; futures
+companion when cut &middot; the two toolkits as they land. Each = one manifest line + screen
+pass. Target: the commons stops looking like a sample within the week.</p>
+
+<h2>&sect;4. What never enters any lane (restated as standing law)</h2>
+
+<p>The vault &middot; state registers &middot; the operator log &middot; outreach send
+machinery, tribe held-items, engagement calendars, per-tribe registers &middot; donor class
+&middot; counsel materials &middot; anything PROPOSED/unsealed (it can be <em>shown</em> via
+Lane 3, never <em>shared</em> via a repo). And no lane ever touches the private estate&rsquo;s
+git history.</p>
+
+<h2>&sect;5. Operator inventory redlines absorbed this sitting (banked, queued)</h2>
+
+<p>State of the Election render = ASAP (top of publish queue) &middot; open-data = publish (Lane
+1) &middot; publish-debt items = proceed on all (turnout fires; promise-tracker build;
+dashboards; ward-profiles) &middot; finance/standards pages = INTERNAL (removed from publish
+queue) &middot; content-source pages = operator walks 1-by-1 before render &middot; voice pieces
+per notes (a rewrite comparison needed vs. site version; a mistake-reframe piece; a kill-candidate
+piece) &middot; a stat needs Toronto-only framing verified before use &middot; the multi-AI piece
+gains a closing frame from the operator&rsquo;s note &middot; debate-in-a-box gains an
+assemblies-in-a-box twin &middot; a counsel item goes to the counsel package &middot;
+<strong>Accountability Observatory RULED a flagship project, not journalists-only</strong> — its
+public face needs its own publish design (person-data + legal posture reviewed before anything
+ships; queued as its own sitting, not folded in here).</p>
+
+<h2>&sect;6. Decision card</h2>
+
+<ol>
+<li>Adopt the three-lane doctrine (kills the 98% mirror).</li>
+<li>Adopt the SEALED&rarr;commons-in-48h standing rule.</li>
+<li>Approve manifest v0.2 slice (&sect;3) — one paste publishes it.</li>
+<li>First project room: ward browser with Civic Tech — cut it now?</li>
+<li>Lane-3 shares log: approve the vault-side pattern.</li>
+</ol>
+
+</main>
+
+<footer class="site-footer">
+<nav aria-label="Footer">
+<div class="footer-cols">
+<section class="footer-col">
+<h2>Start here</h2>
+<ul>
+<li><a href="/join.html">Join the conversation</a></li>
+<li><a href="/now.html">Next actions</a></li>
+<li><a href="/kits/">The Kits</a></li>
+<li><a href="/harvest.html">The Harvest</a></li>
+<li><a href="/invite-me.html">Invite me into your room</a></li>
+<li><a href="/civic-hour.html">The Civic Hour</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>The vision</h2>
+<ul>
+<li><a href="/vision.html">The full vision</a></li>
+<li><a href="/plan/">The plan &mdash; one year, all-out</a></li>
+<li><a href="/plan/covenant.html">The sprint covenant</a></li>
+<li><a href="/strategy.html">The strategy</a></li>
+<li><a href="/who.html">Who is the Unknown Soldier</a></li>
+<li><a href="/constitution.html">Our constitution</a></li>
+<li><a href="/permanent-culture.html">Permanent Culture 3.0</a></li>
+<li><a href="/futures/">The Futures Library</a></li>
+<li><a href="/research-agenda.html">What we&rsquo;re researching next</a></li>
+<li><a href="/vision/organizations.html">For organizations</a></li>
+<li><a href="/vision/candidates.html">For candidates</a></li>
+<li><a href="/vision/newcomers.html">For newcomers</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>The library</h2>
+<ul>
+<li><a href="/library.html">Backgrounders &amp; briefs</a></li>
+<li><a href="/map/">The Map &mdash; by issue</a></li>
+<li><a href="/projects/index.html">By project</a></li>
+<li><a href="/whats-built.html">What&rsquo;s built, and what&rsquo;s coming</a></li>
+<li><a href="/wiki/">The Wiki</a></li>
+<li><a href="/category-explainers/">Explainers</a></li>
+<li><a href="/programs/index.html">The Programs</a></li>
+<li><a href="/questions/index.html">Candidate questions</a></li>
+<li><a href="/guides/">Free Toronto guides</a></li>
+<li><a href="/transit/">Why can&rsquo;t Toronto move?</a></li>
+<li><a href="/free-toronto.html">Free Toronto Resource Atlas</a></li>
+<li><a href="/open-data.html">Open data</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>Registries &amp; tools</h2>
+<ul>
+<li><a href="/gov-atlas/index.html">The Government Atlas</a></li>
+<li><a href="/elections/">State of the Election</a></li>
+<li><a href="/elections/wards/">Ward math cards</a></li>
+<li><a href="/run/index.html">So you&rsquo;re thinking of running</a></li>
+<li><a href="/turnout.html">How to vote</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>How to trust this</h2>
+<ul>
+<li><a href="/how-this-was-made.html">How this was made</a></li>
+<li><a href="/how-we-verify.html">How we verify</a></li>
+<li><a href="/corrections.html">Corrections &amp; improvements</a></li>
+<li><a href="/press.html">Press kit</a></li>
+<li><a href="/sitemap.html">Sitemap &mdash; every page</a></li>
+</ul>
+</section>
+</div>
+</nav>
+<p><a class="improve-mail" href="mailto:unknownsoldier@unitetolove.ca?subject=Improvement%3A&amp;body=Page%20link%20%28paste%20it%20here%29%3A%0A%0AWhat%20I%20noticed%20or%20suggest%3A%0A">&#9999;&#65039; Suggest an improvement</a> &mdash; corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+<script>(function(){var s='Improvement: '+location.pathname;var b='Page link: '+location.href+'\n\nWhat I noticed or suggest:\n\nCredit me as (optional):\n';var h='mailto:unknownsoldier@unitetolove.ca?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);var l=document.querySelectorAll('a.improve-mail');for(var i=0;i<l.length;i++){l[i].href=h;}})();</script>
+<p>The Unknown Soldier &middot; uniteTOlove &middot; Toronto</p>
+  <p class="ethic">Post only where you have the right to post.</p>
+  <p>This site is built with AI assistance &mdash; every claim carries a receipt regardless of who
+  drafted it. Read how: <a href="/how-this-was-made.html">How this was made</a>.</p>
+  <p>No donations are asked for anywhere on this site. Contact:
+  <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a> &mdash;
+  corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+</footer>
+</body>
+</html>

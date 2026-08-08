@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How this system runs: the canon, part 1 — working notes · Unite to Love</title>
+<meta name="description" content="Working notes: the canon README and the Founder judgment-seat prompt, published nearly verbatim with named redactions.">
+<link rel="canonical" href="https://unitetolove.ca/notes/how-this-system-runs-canon-1.html">
+<meta property="og:title" content="How this system runs: the canon, part 1 — working notes · Unite to Love">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://unitetolove.ca/notes/how-this-system-runs-canon-1.html">
+<meta property="og:image" content="https://unitetolove.ca/assets/og/kits.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header>
+<a href="https://unitetolove.ca/index.html">uniteTOlove.ca</a>
+<nav>
+<ul>
+<li><a href="https://unitetolove.ca/join.html">Start</a></li>
+<li><a href="https://unitetolove.ca/now.html">Now</a></li>
+<li><a href="https://unitetolove.ca/vision.html">Vision</a></li>
+<li><a href="https://unitetolove.ca/plan/">Plan</a></li>
+<li><a href="https://unitetolove.ca/kits/">Kits</a></li>
+<li><a href="https://unitetolove.ca/library.html">Library</a></li>
+<li><a href="https://unitetolove.ca/elections/">Elections</a></li>
+<li><a href="https://unitetolove.ca/gov-atlas/index.html">Gov Atlas</a></li>
+<li><a href="https://unitetolove.ca/run/index.html">Run</a></li>
+</ul>
+</nav>
+</header>
+
+<nav aria-label="breadcrumb">
+<a href="https://unitetolove.ca/index.html">Home</a> / Working notes / How this system runs: the canon, part 1
+</nav>
+
+<main id="main">
+
+<div style="border: 1px solid; padding: 1em; margin: 1.5em 0;">
+Working notes — an internal document, published nearly verbatim with named redactions marked in place. Expect apparatus: decision codes, board references, first-person seat voice. Why we publish our working documents: <a href="../how-we-share.html">how we share</a>.
+</div>
+
+<h1>How this system runs: the canon, part 1</h1>
+
+<h2>The map</h2>
+
+<h3>THE CANON — how the vision becomes a document system that locks in</h3>
+
+<p><em>v0.7 · 2026-07-27 · Founder (Fable, Cowork) · The D-081 re-founding, concretized. This README
+is the map of the hierarchy; read it before touching anything in `strategy/canon/`. It carries
+NO state by design (D-098) — every status, count, and version lives in the registries pointed at
+below. Full version history + confessions: `CANON_README_LINEAGE.md` (moved verbatim, nothing
+lost); snapshots beside this mirror; v0.7 lineage check: mirror vs v0.6 snapshot byte-identical
+before edits.</em></p>
+
+<h4>The problem this architecture solves (operator, verbatim-adjacent)</h4>
+
+<p>One-on-one, the operator can present these ideas perfectly — right lens, right framing, per
+the listener's context. One-to-three-million is different: the same truths can be said
+hundreds of ways, and a single document keeps getting rewritten as each new audience or
+insight arrives (the vision's own version lineage is the proof). The fix is the same
+architecture the research library already uses (one backgrounder → many localized briefs):</p>
+
+<p><strong>ONE canonical substance. MANY rendered doors. Nothing replaced — only absorbed or rendered.</strong></p>
+
+<h4>The five layers</h4>
+
+<pre>
+strategy/canon/
+├── LAYER0_VERBATIM_INDEX.md      ← the ground truth: every record of the operator's words
+│                                    (per-program banks, OPERATOR_LOG, FRAMING Appendix A,
+│                                    PC3.0 hand-edit...). Append-only, link-never-copy.
+├── LAYER1_VISION/
+│   ├── VISION_CORE.md            ← THE INTERNAL CANON: complete, audience-untuned substance
+│   │                                (vision · diagnosis · theory of change · missions ·
+│   │                                full doctrine · PC3.0 grammar · tensions · receipts).
+│   │                                Mirror; versioned snapshots beside; per-section status
+│   │                                DRAFT → RATIFIED, carried in the file itself.
+│   └── renders/                  ← audience doors, DERIVED from ratified CORE only. Live
+│       │                            classes (one mirror each, snapshots beside):
+│       ├── RENDER_PUBLIC_GENERAL  (the first door — general public)
+│       ├── RENDER_ORG_LETTER      (organizations)
+│       ├── RENDER_CANDIDATE_BRIEF (candidates)
+│       ├── RENDER_NEWCOMERS       (newcomer communities)
+│       └── [unbuilt: RESIDENT_20MIN · PRESS_BACKGROUNDER · SKEPTIC_FAQ ·
+│                     YOUTH/STUDENT · FUNDER-someday]
+├── LAYER2_MAP.md                 ← the scoreboard: issues × audiences × deliverables ×
+│                                    seal status, estate credited in. CURATOR-regenerated;
+│                                    never hand-edited; THE place to learn what exists.
+├── LAYER3_METHOD.md              ← the production physics: closure trains (D-079),
+│                                    Repository Standard, backwards-verification publish
+│                                    gate, render discipline, correction propagation,
+│                                    registry ownership + refresh cadences (§7).
+└── LAYER4_ENGINE/                ← the five engine prompts, all live and production-proven:
+                                     FOUNDER · CLOSURE_TRAIN · VERIFY_SEAL · RENDER ·
+                                     CURATOR. Each reads GOAL/CORE+MAP+METHOD only.
+</pre>
+
+<h4>Where state lives (this file carries none — D-042 / one-fact-one-home)</h4>
+
+<ul>
+<li><strong>Content scoreboard</strong> (what's built, sealed, missing, per category × class):
+`LAYER2_MAP.md` — trust it over anything any prose file says.</li>
+<li><strong>Project estate</strong> (every project, home, status): strategy/KEY_PROJECTS.md §0 — the
+operator's PM front door.</li>
+<li><strong>Live session state and next actions:</strong> state/NOW.md (+ the per-track NOW files).</li>
+<li><strong>What waits on the operator:</strong> state/DECISION_QUEUE.md §0.</li>
+<li><strong>This file's own history:</strong> `CANON_README_LINEAGE.md` + the versioned snapshots beside.</li>
+</ul>
+
+<h4>The lock-in rules</h4>
+
+<ol>
+<li><strong>Statuses, per section, operator-flipped.</strong> CORE sections are DRAFT until the operator
+marks them RATIFIED (a workshop walk, section by section — same as the charter wave).
+Since D-091 the operator may also delegate a ruling — recorded RATIFIED-BY-DELEGATION,
+with standing redline rights: any delegated ruling reverts on one operator line. Renders
+may carry only RATIFIED substance; a render needing unratified substance is the signal to
+ratify or amend the CORE first.</li>
+<li><strong>One-direction flow.</strong> Verbatim (L0) → CORE (L1) → renders. New operator input lands in
+L0 first (banked), gets synthesized into CORE second, re-renders third. Nobody ever edits
+a render into disagreement with the CORE.</li>
+<li><strong>No overwrites, ever.</strong> Every change = new versioned snapshot + stable-mirror update
+(D-061/D-078 pattern). The full lineage stays browsable forever.</li>
+<li><strong>Correction propagation.</strong> When CORE changes, every render citing the changed section is
+re-rendered or flagged — checked by grep, not memory (same discipline as ledger claims).</li>
+<li><strong>Renders are lenses, not dilutions.</strong> Each render re-frames for its audience's context —
+exactly what the operator does one-on-one — but every claim in every render traces to CORE,
+and every CORE claim traces to L0 verbatim or the ledger. The gauntlet
+(`vision_workshop/ADVERSARIAL_GAUNTLET_2026-07-23.md`) is run against every new render
+class before it ships (the proven loop: verbatim → synthesis → adversarial → render).</li>
+<li><strong>The constraint binds everywhere</strong> (operator, 2026-07-23): not a new movement — one
+person's synthesis + existing infrastructure + a trigger. Any canon or render text that
+implies an organization to join is a bug.</li>
+</ol>
+
+<h2>The judgment seat</h2>
+
+<h3>ENGINE · FOUNDER — the judgment seat</h3>
+
+<p><em>v0.3 · 2026-08-02 (v0.2 snapshot beside; change: OUTPUT clause's ≤3-actions cap RETIRED per
+D-129 — closes now hand the operator the complete ranked decision walk, not a capped list) · The
+canon-era Planning boot. Trigger: "boot founder" (or any Planning boot once D-081 ratifies).
+Supersedes nothing until the operator ratifies D-081's tombstones.</em></p>
+
+<h4>HEADER</h4>
+<p>To: Claude Fable/Opus (thinking ON), any surface<br>
+Role: Founder — judgment, gates, architecture, firewall; orchestrator of the other four<br>
+Reads: MIND.md → strategy/canon/CANON_README.md → LAYER1_VISION/VISION_CORE.md (statuses)
+→ LAYER2_MAP.md (gaps) → state/NOW.md → nothing else until oriented</p>
+
+<h4>GOAL</h4>
+<p>Keep the whole system honest against THE GOAL (CORE §1 + the operator's north star) and the
+priority order (quality &amp; truthfulness → token efficiency → operator time → speed). You hold:
+ratification walks (CORE sections, charters, decisions), architecture and firewall calls,
+render-class approvals, and dispatch of CLOSURE_TRAIN / VERIFY_SEAL / RENDER / CURATOR lanes.</p>
+
+<h4>METHOD</h4>
+<ol>
+<li>Boot-standard B1-B3: bank operator words verbatim first — PRESERVING his original
+formatting, linebreaks, and bullets exactly (his words are precise instruments; operator
+law 2026-07-24); trigger+mission scopes the read; ≤6-line plan card before executing unless
+told "run until completion."</li>
+<li>VERSIONING LAW (operator, 2026-07-24, non-negotiable): every substantive file change cuts
+its versioned snapshot BEFORE the mirror updates — including READMEs, prompts, and this
+file itself. At every session close, verify both laws held for everything touched; any
+violation gets confessed in the file header and corrected, never papered over.</li>
+<li>Each session: name the single highest-leverage gap on the MAP or in CORE statuses; close it
+if judgment-tier, else dispatch the owning engine prompt with a bounded spec.</li>
+<li>Spend Test out loud before any Fable/Opus-tier dispatch. Batch judgment gates.</li>
+<li>Decisions you make are PROPOSED in state/DECISIONS.md until the operator flips them.</li>
+</ol>
+
+<h4>GUARDRAILS</h4>
+<p>Identity firewall absolute (The Unknown Soldier; no fingerprint labels). The catalyst
+constraint binds (CANON_README rule 6). Never git on a FUSE mount (D-015); Cowork closes per
+the D-070/A1 floor. Correct the operator with evidence when he is wrong.</p>
+
+<h4>OUTPUT</h4>
+<p>Route: canon changes as versioned snapshots + mirrors; rulings to DECISIONS.md (PROPOSED);
+close per MIND.md (NOW.md, SESSIONS.md, targeted checks, sweep note). Hand the operator the
+complete ranked decision walk — every decision genuinely his, ranked by blocker-weight, one
+line + a recommendation each; resolve-don't-defer, no artificial cap (D-129).</p>
+
+</main>
+
+<footer>
+<div>
+<h2>Start here</h2>
+<ul>
+<li><a href="https://unitetolove.ca/join.html">Join the conversation</a></li>
+<li><a href="https://unitetolove.ca/now.html">Next actions</a></li>
+<li><a href="https://unitetolove.ca/find.html">Find — search this site</a></li>
+<li><a href="https://unitetolove.ca/kits/">The Kits</a></li>
+<li><a href="https://unitetolove.ca/harvest.html">The Harvest</a></li>
+<li><a href="https://unitetolove.ca/invite-me.html">Invite me into your room</a></li>
+<li><a href="https://unitetolove.ca/civic-hour.html">The Civic Hour</a></li>
+<li><a href="https://github.com/unitetolove/commons">Code &amp; data</a></li>
+</ul>
+</div>
+<div>
+<h2>The vision</h2>
+<ul>
+<li><a href="https://unitetolove.ca/vision.html">The full vision</a></li>
+<li><a href="https://unitetolove.ca/plan/">The plan — one year, all-out</a></li>
+<li><a href="https://unitetolove.ca/plan/covenant.html">The sprint covenant</a></li>
+<li><a href="https://unitetolove.ca/strategy.html">The strategy</a></li>
+<li><a href="https://unitetolove.ca/who.html">Who is the Unknown Soldier</a></li>
+<li><a href="https://unitetolove.ca/constitution.html">Our constitution</a></li>
+<li><a href="https://unitetolove.ca/permanent-culture.html">Permanent Culture 3.0</a></li>
+<li><a href="https://unitetolove.ca/futures/">The Futures Library</a></li>
+<li><a href="https://unitetolove.ca/research-agenda.html">What we're researching next</a></li>
+<li><a href="https://unitetolove.ca/vision/organizations.html">For organizations</a></li>
+<li><a href="https://unitetolove.ca/vision/candidates.html">For candidates</a></li>
+<li><a href="https://unitetolove.ca/vision/newcomers.html">For newcomers</a></li>
+</ul>
+</div>
+<div>
+<h2>The library</h2>
+<ul>
+<li><a href="https://unitetolove.ca/library.html">Backgrounders &amp; briefs</a></li>
+<li><a href="https://unitetolove.ca/map/">The Map — by issue</a></li>
+<li><a href="https://unitetolove.ca/projects/index.html">By project</a></li>
+<li><a href="https://unitetolove.ca/whats-built.html">What's built, and what's coming</a></li>
+<li><a href="https://unitetolove.ca/wiki/">The Wiki</a></li>
+<li><a href="https://unitetolove.ca/category-explainers/">Explainers</a></li>
+<li><a href="https://unitetolove.ca/programs/index.html">The Programs</a></li>
+<li><a href="https://unitetolove.ca/questions/index.html">Candidate questions</a></li>
+<li><a href="https://unitetolove.ca/guides/">Free Toronto guides</a></li>
+<li><a href="https://unitetolove.ca/transit/">Why can't Toronto move?</a></li>
+<li><a href="https://unitetolove.ca/free-toronto.html">Free Toronto Resource Atlas</a></li>
+<li><a href="https://unitetolove.ca/open-data.html">Open data</a></li>
+</ul>
+</div>
+<div>
+<h2>Registries &amp; tools</h2>
+<ul>
+<li><a href="https://unitetolove.ca/gov-atlas/index.html">The Government Atlas</a></li>
+<li><a href="https://unitetolove.ca/elections/">State of the Election</a></li>
+<li><a href="https://unitetolove.ca/elections/wards/">Ward math cards</a></li>
+<li><a href="https://unitetolove.ca/run/index.html">So you're thinking of running</a></li>
+<li><a href="https://unitetolove.ca/turnout.html">How to vote</a></li>
+</ul>
+</div>
+<div>
+<h2>How to trust this</h2>
+<ul>
+<li><a href="https://unitetolove.ca/how-this-was-made.html">How this was made</a></li>
+<li><a href="https://unitetolove.ca/how-we-verify.html">How we verify</a></li>
+<li><a href="https://unitetolove.ca/corrections.html">Corrections &amp; improvements</a></li>
+<li><a href="https://unitetolove.ca/press.html">Press kit</a></li>
+<li><a href="https://unitetolove.ca/sitemap.html">Sitemap — every page</a></li>
+</ul>
+</div>
+<p><a href="mailto:unknownsoldier@unitetolove.ca?subject=Improvement%3A&body=Page%20link%20%28paste%20it%20here%29%3A%0A%0AWhat%20I%20noticed%20or%20suggest%3A%0A">Suggest an improvement</a> — corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+<p>The Unknown Soldier · uniteTOlove · Toronto</p>
+<p>Post only where you have the right to post.</p>
+<p>This site is built with AI assistance — every claim carries a receipt regardless of who
+drafted it. Read how: <a href="https://unitetolove.ca/how-this-was-made.html">How this was made</a>.</p>
+<p>No donations are asked for anywhere on this site. Contact: <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a> —
+corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+</footer>
+
+</body>
+</html>

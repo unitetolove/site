@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The master plan — working notes · Unite to Love</title>
+<meta name="description" content="Working notes: an internal strategy document, published nearly verbatim — the master plan for the ten thousand conversations, the candidate adoption architecture, and the coalition sprint.">
+<link rel="stylesheet" href="../style.css">
+<link rel="canonical" href="https://unitetolove.ca/notes/master-plan-the-big-conversation">
+<script defer src="../assets/analytics.js"></script>
+<meta property="og:title" content="The master plan — working notes · Unite to Love">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://unitetolove.ca/notes/master-plan-the-big-conversation">
+<meta property="og:image" content="https://unitetolove.ca/assets/og/kits.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
+<header class="site-header">
+<div class="header-inner">
+<a class="wordmark-link" href="/index.html">unite<span class="to">TO</span>love<span class="tld">.ca</span></a>
+<nav class="primary-nav" aria-label="Primary">
+<ul>
+<li><a href="/join.html">Start</a></li>
+<li><a href="/now.html">Now</a></li>
+<li><a href="/vision.html">Vision</a></li>
+<li><a href="/plan/">Plan</a></li>
+<li><a href="/kits/">Kits</a></li>
+<li><a href="/library.html">Library</a></li>
+<li><a href="/elections/">Elections</a></li>
+<li><a href="/gov-atlas/index.html">Gov Atlas</a></li>
+<li><a href="/run/index.html">Run</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<nav class="crumbs"><a href="../index.html">Home</a> / Working notes / The master plan</nav>
+
+<main id="main" tabindex="-1">
+
+<div style="border: 1px solid; padding: 1em 1.25em; margin: 1em 0 2em;">
+<p><strong>Working notes</strong> — an internal strategy document, published nearly verbatim.
+Expect apparatus: decision codes, board references, the planning seat&rsquo;s first-person voice.
+Why we publish our working documents: <a href="../how-we-share.html">how we share</a>.</p>
+</div>
+
+<h1>MASTER PLAN — THE BIG CONVERSATION</h1>
+<h3>10,000 conversations &rarr; one big conversation &rarr; the plan, the candidates who adopt it, the coalition that sprints</h3>
+<p><em>v0.1 &middot; 2026-08-05 &middot; Mobilization Fable Jane, lead orchestrator (operator: &ldquo;coordinate and
+orchestrate&hellip; go go go&rdquo; &mdash; banked verbatim, OPERATOR_LOG, 2026-08-05;
+run-until-completion granted for planning/orchestration; every send stays Class C; every publish
+click stays yours). This plan SUPERSEDES nothing &mdash; it sits above the
+website plan and
+mobilization plan as their mission layer,
+and absorbs ALL your inventory stars/notes (synced 2026-08-05) into one priority queue.</em></p>
+
+<hr>
+
+<h2>&sect;0. The mission, absorbed (your words, made operational)</h2>
+
+<table>
+<thead>
+<tr><th>Goal</th><th>Target</th><th>Measured how</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>G1 &middot; The conversations</strong></td><td>10,000 smaller conversations across Toronto in 3 months (by ~Nov 5)</td><td>rooms/kits/circles/online threads counted in aggregate &mdash; the conversation counter; a &ldquo;conversation&rdquo; = any gathering or thread that returns a harvest (vision &middot; complaint &middot; nomination)</td></tr>
+<tr><td><strong>G2 &middot; One Big Conversation</strong></td><td>the city-scale synthesis moment, ~mid-October</td><td>Polis-class opinion mapping over the harvest + State of the Conversation published; independent inputs first, deliberation second (&sect;13.9 wiring)</td></tr>
+<tr><td><strong>G3 &middot; The plan</strong></td><td>collectively-agreed plan; worked on by tens of thousands; discussed by 1M+ (2M target)</td><td>co-authors = signers + submitters + room participants + Polis voters (aggregate); discussed = reach tier (media, embeds, shares) &mdash; targets always labeled TARGETS, never claimed as counts (D-042)</td></tr>
+<tr><td><strong>G4 &middot; The candidates</strong></td><td>a suite of candidates who agree to implement the plan</td><td><strong>the ADOPTION architecture (&sect;1)</strong> &mdash; candidates publicly adopt; we publish the record</td></tr>
+<tr><td><strong>G5 &middot; The coalition</strong></td><td>1,000+ organizations agreeing to sprint the next year together</td><td>the coalition ladder (&sect;5): pin &rarr; kit &rarr; quest &rarr; sprint covenant</td></tr>
+</tbody>
+</table>
+
+<p>Tech naming ruling (your &ldquo;mention pol.is? not sure&rdquo;): <strong>internally yes &mdash; Polis is the named
+instrument</strong> for G2 (proven, open-source, embeddable, exactly the independent-inputs tool the
+canon&rsquo;s &sect;13.9 wiring wants; Decidim/CONSUL stay deferred until a partner needs them). <strong>Publicly,
+not yet</strong> &mdash; public copy says &ldquo;proven open tools used by Taiwan, Barcelona and hundreds of
+governments&rdquo; until our own pilot runs clean. Naming a tool before we&rsquo;ve run it invites a
+gotcha; naming it after is a receipt.</p>
+
+<h2>&sect;1. &ldquo;Candidates we support&rdquo; &mdash; the architecture that survives the firewall</h2>
+<p><strong>STATUS: RATIFIED (operator, 2026-08-05, verbatim &ldquo;approved, go&rdquo; &mdash; banked OPERATOR_LOG).
+The adoption model below is law for G4; D-mint owed at the next Founder sitting.</strong></p>
+
+<p>Your goal, held against the constitution (commons endorses no one, serves all identically;
+D-052; nobody elected us): the compliant, <em>stronger</em> form is <strong>adoption, not endorsement</strong>:</p>
+
+<ol>
+<li>The crowd&rsquo;s plan is published with the same receipts discipline as everything else.</li>
+<li>Every candidate in every race receives it identically, with one equal question: <strong>&ldquo;Will you
+commit to implementing the people&rsquo;s plan &mdash; and which parts?&rdquo;</strong> (This is Answer Day, aimed
+at the plan.)</li>
+<li>Adoption is public, candidate-by-candidate, in their own words &mdash; never a ranking, never an
+endorsement from us. <strong>The &ldquo;suite of candidates&rdquo; is self-assembling: whoever adopts, is the
+suite.</strong> The crowd supports the plan; candidates earn the crowd by adopting it.</li>
+<li>Any activity beyond publishing the record (posters naming adopters, &ldquo;vote for adopters&rdquo;
+messaging) is a different legal animal &mdash; that&rsquo;s the &#9878;&#65039; MEA third-party question, which your
+note routes to the counsel package. <strong>Consequence of this mission: the counsel package
+should fire within ~2 weeks, not &ldquo;eventually.&rdquo;</strong> Until counsel clears it, we publish
+records; we do not campaign.</li>
+<li><strong>Added to the counsel-package question set 2026-08-06 (S2 sitting), for the S4 governance
+sitting to carry:</strong> <em>under the MEA and related law, what are the boundaries on candidates
+coordinating among themselves (mutual withdrawal, cross-endorsement), and separately on a
+third party discussing, describing, facilitating, or reporting on such coordination &mdash; where
+does neutral reporting of candidate conduct end and participation begin?</em> Asked to know where
+the line is, not because anything is planned near it: the standing law is unchanged and
+absolute &mdash; the commons endorses no one, convenes nothing, and publishes records only.</li>
+</ol>
+
+<p>This is also strictly more powerful than endorsement: an endorsement is our opinion; an
+adoption record is <em>their commitment</em>, on the record, enforceable at the ballot box and
+reviewable all term.</p>
+
+<h2>&sect;2. The honest math (internal, so the targets stay credible)</h2>
+
+<ul>
+<li><strong>10,000 conversations &asymp; 110/day for 90 days.</strong> Connector visits supply ~150 total &mdash;
+irrelevant at this scale. The engine is: <strong>kits &times; existing gatherings &times; replication.</strong>
+Toronto already HOLDS thousands of gatherings weekly (congregations alone &asymp; thousands; add
+teams, meetups, classes, dinners). We are not creating 10,000 events; we are converting a
+fraction of existing ones into harvesting conversations + seeding new circles. Conversion
+needs: kits everywhere (P0), the counter visible, the harvest trivially easy (one QR &rarr; one
+form), and org adoption (G5 drives G1).</li>
+<li><strong>Tens of thousands co-authoring</strong> = signatures + vision submissions + room harvests + Polis
+participants. Festival-sized crowd (canon) &asymp; 20&ndash;50k: consistent.</li>
+<li><strong>1M+ discussing</strong> = reach, not participation: media cycles (the X-plays), embeds, shares,
+diaspora channels. 2M = stretch. Never published as a claim &mdash; published as an invitation
+(&ldquo;help us get to&hellip;&rdquo;).</li>
+<li><strong>1,000 orgs</strong> = registry holds ~1,016 verified rows TODAY. The ask ladder starts at a pin
+(zero-cost). This is the most achievable number on the board &mdash; and the one that makes G1
+arithmetic work (1,000 orgs &times; 10 conversations each = G1 done).</li>
+</ul>
+
+<h2>&sect;3. The workstream map &mdash; eight lanes, one queue (your stars set the order)</h2>
+
+<table>
+<thead>
+<tr><th>#</th><th>Lane</th><th>Owner (chat)</th><th>P0 work (from your stars)</th><th>State</th></tr>
+</thead>
+<tbody>
+<tr><td>L1</td><td><strong>Site &amp; funnel</strong></td><td>Code Jane (running 3-day build)</td><td>rail &middot; /now &middot; <strong>analytics &#9733;&#9733;&#9733;&#9733;</strong> &middot; og:images &#9733; &middot; widgets &middot; deploy paste LIVE check</td><td>day 1&ndash;3 in flight</td></tr>
+<tr><td>L2</td><td><strong>Publish train</strong></td><td>Render Jane &mdash; boot P2</td><td><strong>SOTE render ASAP (your !!nb)</strong> &middot; voice pieces staged for your 1-by-1 walk &middot; content_src staged &middot; open-data <strong>publish (your word given)</strong> &middot; turnout fire (proceed-all) &middot; press kit &#9733;&#9733; &middot; biweekly hub template</td><td><strong>RAN 2026-08-05; trued 2026-08-07:</strong> the original 10-word publish menu is &#9989; LIVE end-to-end; the menu&rsquo;s open words are now <strong>ONT-SOTE / ONT-BASELINE</strong> (staged 2026-08-07) &middot; voice walk rows 1&ndash;11 superseded by the improvement-pass report &mdash; one batch awaits the operator&rsquo;s ruling; rows 12&ndash;19 still await their one-word walk</td></tr>
+<tr><td>L3</td><td><strong>Elections sprint</strong></td><td>Elections Jane &mdash; boot P1</td><td>finish candidate research (web-hunt FIRES) &middot; <strong>question bank REDO (&ldquo;these 66 questions suck&rdquo;)</strong> &middot; kit publish &#9733;&#9733;&#9733; &middot; ward math cards &#9733;&#9733;&#9733; &middot; ward data packs &#9733;&#9733; &middot; acclamation nation &#9733;&#9733;&#9733; &middot; 0/70 verified-Toronto-only &rarr; ready &middot; non-frontrunner profiles &#9733; (your add) &middot; trustee spotlight</td><td>RUN 2026-08-05 &times;5 acts (lane report); QBank 300 (awaits redline) &middot; profiles+census+pilot+cards built &middot; hunt = cost-ladder pipeline (Stage-1 audit FAILED honestly &rarr; Code rework; Wave-1 APPLIED, researched 1,300) &middot; drafts refreshed, 0/70 escalated (newer census &mdash; operator call)</td></tr>
+<tr><td>L4</td><td><strong>Conversation engine</strong></td><td>Deliberation Jane &mdash; boot P3</td><td><strong>the G1/G2 core</strong>: kit suite (dinner &middot; Debate-in-a-box &middot; <strong>Assemblies-in-a-box, your nb</strong>) &middot; Polis pilot &middot; harvest intake &middot; conversation counter &middot; One Big Conversation design &middot; <strong>civic-hour early ask (your nb: encourage time-off requests NOW)</strong> &middot; deliberation charter &#9733;&#9733;&#9733;&#9733;</td><td><strong>RAN 2026-08-05</strong> &mdash; 6 kits staged + catalyst-checked &middot; harvest spec build-ready (deploy-dark, custodian-gated) &middot; Polis <strong>CONDITIONAL GO</strong>, real pilot W2 (report) &middot; OBC designed &middot; civic-hour ask staged Class C (draft) &middot; <strong>cont. same day (kits APPROVED-AS-IS):</strong> harvest spec v1.1 (deeper door: experts/reports/futures + classroom mode, PROJ-0139&rarr;Sept 1) &middot; toolkit eval &mdash; KISS = online annex (shipped) + Your Priorities async; kit cap ~10 &middot; <strong>W2 wave FIRED on &ldquo;continue&rdquo;:</strong> classroom futures (PROJ-0139, Sept-1) + complaint clinic staged &mdash; 9 of ~10 kits; W3 on demand &middot; <strong>ALL APPROVED 2026-08-05</strong> &mdash; verify pass done, fixes landed, MEA s.50 analysis on file (civic-hour un-gated from counsel), publish rides one paste</td></tr>
+<tr><td>L5</td><td><strong>Writing desk</strong></td><td>this seat drafts, you redline</td><td><strong>one-year sprint scenario &#9733;&#9733;&#9733;&#9733;&#9733; (the top star &mdash; I draft next sitting)</strong> &middot; seven-in-ten letter &#9733;&#9733;&#9733; &middot; how-to-read-a-platform &#9733;&#9733; &middot; what-a-mayor-can-do &#9733;&#9733; &middot; missing-infrastructure &#9733; &middot; 18-AIs piece (+your homeless-voice frame) &middot; <strong>re-queued 2026-08-06</strong> (reconciliation): PC3 essays &mdash; LETTER_TO_A_STEWARD + 3 companions (AUTHORS_EXIT_DRAFT, GLOBAL_RESONANCE, AUTHORS_PRINCIPLES_REFLECTION) &mdash; dropped by the runbook &sect;3b correction as &ldquo;intentionally ignored,&rdquo; <strong>RULED GO 2026-08-06</strong> (operator, chat) &mdash; <strong>BUILT 2026-08-06</strong>: all four staged (not deployed) as a cross-linked set at <code>site/letter-to-a-steward.html</code> + companions &middot; THE_THESIS &mdash; <strong>RULED + RENDERED 2026-08-06</strong>: historical render staged at <code>site/the-thesis.html</code>, publish word <strong>THESIS</strong></td><td>scenario <strong>SEALED</strong> (v0.5, S5 2026-08-06) &middot; <strong>covenant SEALED + LIVE</strong> (v0.1 redlined all-six-as-drafted at S8, VERIFY_SEAL 6/6, live at <code>/plan/covenant</code> and signable PDF since the 2026-08-06 deploy) &middot; seven-in-ten rides its Opus paste &middot; THE_THESIS staged (above) &middot; PC3 essays GO&rsquo;d and staged (above)</td></tr>
+<tr><td>L6</td><td><strong>Futures &amp; thought pieces</strong></td><td>Research Jane &mdash; P4 RAN 2026-08-05 (final report)</td><td>library <strong>FINAL</strong>: windows re-verified, registers worked to a disposition ledger, ladders registered in LINEAGE, companion <strong>STAGED</strong> at <code>site/futures/</code> behind your publish word &middot; Kimi review dispatch staged</td><td>&#9989; <strong>PUBLISHED (your word, 2026-08-05)</strong> &mdash; Fable review ran (PUBLISH-AFTER-FIXES) &rarr; ride applied &rarr; H1 approved &amp; carried &rarr; banners down, 9 pages badged PUBLISHED; <strong>L1 lane owes: /futures nav link + deploy-live check</strong> &middot; Kimi dispatch staged for K3&rsquo;s return &middot; Wayback sweep staged | next: P1 queue (AI set &rarr; <s>Mamdani</s> &rarr; deliberation stack &rarr; TorontoOS) &mdash; <strong>Mamdani struck 2026-08-06: SUPERSEDED by the operator&rsquo;s own ruling</strong> (&ldquo;I don&rsquo;t think I want to use this yet - save indefinitely for later,&rdquo; research inventory &sect;F) &mdash; kept here, not deleted, so this queue never quietly burns a sitting on it; see reconciliation &sect;1 adjacent</td></tr>
+<tr><td>L7</td><td><strong>Coalition &amp; tribes</strong></td><td>this seat + your sends</td><td>pins-before-people (S1) &middot; campus co-publication &#9733;&#9733;&#9733; &middot; coalition ladder (&sect;5) &middot; owed-respect letters staged &middot; faith/festival calendar &#9733;</td><td><strong>owed-respect letters DRAFTED 2026-08-06</strong> (staged Class C) &middot; faith calendar DONE &middot; pins play UNBLOCKED 2026-08-06 &mdash; tribe map ruled public at org level (<strong>D-153</strong>, S8; stale &ldquo;blocked on S4&rdquo; line corrected at the S4 sitting) &middot; sends staged, Class C &middot; <strong>org-directory render BUILT 2026-08-06, stopped at B3</strong> (v0.1; six-pass Fable gate clean) &mdash; publish word + IA placement + ~12 description judgment calls are the operator&rsquo;s &middot; tribes/orgs data-architecture memo PROPOSED &mdash; names the missing G5 coalition-ladder tracker (pin&rarr;host&rarr;quest&rarr;covenant has no data home)</td></tr>
+<tr><td>L8</td><td><strong>Sharing/commons</strong></td><td>landed by parallel sitting</td><td>commons repo push (your paste) &middot; public shelf &middot; projects index &mdash; canon-presentation question (your &ldquo;how do we want to present this?&rdquo;) answered in L2&rsquo;s process page + shelf</td><td>&#9989; pushed + LIVE 2026-08-05 (<code>cee8879</code>, D-145; cell corrected 2026-08-06 CURATOR pass &mdash; was &ldquo;awaiting your push&rdquo;)</td></tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr><th>#</th><th>Lane</th><th>Owner (chat)</th><th>P0 work (from your stars)</th><th>State</th></tr>
+</thead>
+<tbody>
+<tr><td>L9</td><td><strong>School week (the Sept-1 bundle)</strong></td><td>School-Week Jane &mdash; boot</td><td>&sect;6 W4&rsquo;s hard deadline: campus/orientation kit &middot; print pack v1 BUILT &middot; WhatsApp share cards &middot; bundle index &middot; distribution prep</td><td><strong>COMPLETE 2026-08-05, 27 days early</strong> &mdash; bundle (index &middot; staging &middot; lane report): tenth kit NEW + 20 library-printable PDFs + 30 share cards, all ratified-copy-only, zero facts &rarr; <strong>no re-stamp owed after Aug 21</strong>. Nothing sent. Operator: a print shop only if he wants volume</td></tr>
+<tr><td>L10</td><td><strong>Experts &amp; expert conversations</strong></td><td>this seat, named 2026-08-06 (was in no lane)</td><td>&#9733;&#9733;&#9733; Experts (<code>research/experts/</code>) + &#9733; expert outreach kit (<code>outreach/EXPERT_OUTREACH_KIT.md</code> + 18 domain briefs) &mdash; scoped in one-page memo: <code>LETTER_TO_THE_BUILDER</code> proposed as front door (pending S6), harvest intake&rsquo;s <code>expert_opinion</code> class (spec &sect;2a) is the standing route into the expert registry, feeds the OBC synthesis window</td><td><strong>NOT SURFACED until 2026-08-06</strong> (reconciliation &sect;1.4&ndash;5) &mdash; memo written, lane named; first send is your word, Class C</td></tr>
+</tbody>
+</table>
+
+<p>Fire order for the four pastes: <strong>P1 elections &rarr; P3 conversation engine &rarr; P2 publish train &rarr;
+P4 futures</strong> (P1 unblocks the most starred items; P3 is the mission&rsquo;s heart; P2 rides their
+outputs; P4 is parallel-safe anytime). All four can run simultaneously in separate windows if
+you prefer &mdash; they&rsquo;re write-path disjoint by design.</p>
+
+<h2>&sect;4. The unified priority queue (every &#9733; you gave, one list)</h2>
+
+<p><strong>P0 (this week):</strong> one-year sprint scenario &#9733;&#9733;&#9733;&#9733;&#9733; &middot; analytics &#9733;&#9733;&#9733;&#9733; &middot; deliberation/
+conversation engine &#9733;&#9733;&#9733;&#9733; &middot; SOTE ASAP &middot; elections lane &#9733;&#9733;&#9733; (kit publish, research finish,
+question-bank redo) &middot; seven-in-ten &#9733;&#9733;&#9733; &middot; ward cards &#9733;&#9733;&#9733; &middot; acclamation &#9733;&#9733;&#9733; &middot; 0/70 &#9733;&#9733;&#9733;
+(Toronto-confirmed) &middot; campus co-pub &#9733;&#9733;&#9733; prep &middot; civic-hour ask (early per your nb).<br>
+<strong>P1 (next):</strong> press kit &#9733;&#9733; &middot; ward data packs &#9733;&#9733; &middot; how-to-read &#9733;&#9733; &middot; mayor-powers &#9733;&#9733; &middot;
+green pill &#9733;&#9733; &middot; poster system &#9733;&#9733; &middot; futures &#9733;&#9733; finalize &middot; canon-presentation answer.<br>
+<strong>P2:</strong> all single-&#9733; items, sequenced inside their lanes. <strong>Killed/held per your notes:</strong>
+WhatsApp cards wait on print pack &middot; MEA in counsel package &middot; STATEMENTS_SEED kill-candidate
+(your walk) &middot; money/standards pages INTERNAL.</p>
+
+<h2>&sect;5. The coalition ladder (G5) &mdash; how 1,000 orgs happens</h2>
+
+<p>PIN (map presence, zero-cost &mdash; the S1 play, starts with the 108 anchors) &rarr; HOST (one kit
+conversation in their room, their name) &rarr; QUEST (adopt one of the Six for the 6ix with a
+scoreboard) &rarr; <strong>SPRINT COVENANT</strong> (the year-one commitment: &ldquo;we will point at the same goals
+at the same time&rdquo; &mdash; the narrative&rsquo;s own What-If, made signable). Each rung is one ask, one
+receipt; orgs climb at their own pace; the count of each rung publishes aggregate. The
+covenant text is an L5 writing-desk deliverable (rides the one-year sprint scenario &mdash; they&rsquo;re
+the same document seen from two sides).</p>
+
+<h2>&sect;6. The calendar, one line per week (Aug 5 &rarr; Nov 5)</h2>
+
+<p>W1 (now): builds land &middot; deploy live &middot; SOTE + kit published &middot; pastes fired &middot; civic-hour ask
+drafted. W2 (Aug 10&ndash;17): owed-respect sends &middot; question bank v2 &middot; Polis pilot &middot; press kit &middot;
+counsel package fires &middot; <strong>school-facing assets in production</strong> (classroom pack &middot; campus kits &middot;
+orientation-fair materials &middot; block-circle starters in volume). W3 (Aug 17&ndash;24): <strong>Aug 21 field
+final</strong> &rarr; SOC registrar edition &middot; campus co-pub locked &middot; kits in the wild &mdash; first
+self-convened conversations. W4 (Aug 24&ndash;Sept 1): <strong>SEPT-1 HARD DEADLINE &mdash; every school-facing
+asset READY</strong> (operator redline 2026-08-05: the first week of school is the year&rsquo;s biggest
+mobilization moment; after Aug 21 this is the estate&rsquo;s hardest date). W5 (Sept 7&ndash;14):
+<strong>SPRINT IGNITION at first week of school &mdash; ALL SIX QUESTS LAUNCH SIMULTANEOUSLY</strong> as evolving
+threads (the braid, per the scenario v0.2), six scoreboards live &middot; campus + K-12 + multiplier
+doors open on the live count. W6&ndash;8 (Sept 14&ndash;Oct 12): <strong>the six weeks of wins</strong> (canon dates) &middot;
+conversation counter public &middot; coalition pins &rarr; hosts &middot; harvest window &middot; Polis mass moment
+building &middot; adoption question delivered (post-counsel) &middot; biweekly editions drum. W9&ndash;10 (mid&ndash;late
+Oct): <strong>One Big Conversation + State of the Conversation published &middot; adoption record public &middot;
+Oct 26 = MID-SPRINT scoreboard</strong> &mdash; the sprint is already six weeks old and does not pause.
+W11+ (Nov&rarr;): covenant renewed with the new council &middot; winter braid (Friendliest/Safest lead) &middot;
+the sprint year runs school-year-shaped, September to September &mdash; G1&rsquo;s 10,000 completes across
+the full window, not by election day. <strong>The 2027 fall arc (scenario v0.3, operator-redlined):</strong>
+Sept 2027 second ignition (self-lighting) + coalition votes year-two quests &middot; Oct 2027 the
+reckoning (adoption record vs year-one receipts; second State of the Conversation) &middot; Nov 2027
+seed-packing (export kits, translations, world invitations) &middot; <strong>Dec 2027 earned rest &mdash; by
+design, scoreboards paused</strong> &middot; <strong>Jan 2028 the sporing (M3 activates).</strong></p>
+
+<h2>&sect;7. Standing discipline for every lane (unchanged, restated once)</h2>
+
+<p>Sends Class C &middot; publish clicks yours &middot; equip never convene &middot; identical-to-all for anything
+candidate-facing &middot; aggregate-only measurement &middot; targets labeled targets &middot; receipts everywhere &middot;
+the clock bends, the consent rule doesn&rsquo;t.</p>
+
+<h2>&sect;8. What I need from you (the whole list)</h2>
+
+<p><strong>SUPERSEDED 2026-08-05 by the operator&rsquo;s process ruling</strong> (banked, OPERATOR_LOG):
+decisions ship as one-chat sittings run to completion, never as this kind of list. The live
+surface is the <strong>OPERATOR RUNBOOK</strong> &mdash; seven sittings with ready pastes,
+fire order, two-minute items, and the already-ruled ledger. (This section&rsquo;s original six items
+are all absorbed: P1&ndash;P4 ran; publish words ruled and riding S1&rsquo;s deploy; custodian + adoption
+architecture live in S4/&sect;4 of the runbook.)</p>
+
+</main>
+
+<footer class="site-footer">
+<nav aria-label="Footer">
+<div class="footer-cols">
+<section class="footer-col">
+<h2>Start here</h2>
+<ul>
+<li><a href="/join.html">Join the conversation</a></li>
+<li><a href="/now.html">Next actions</a></li>
+<li><a href="/find.html">Find &mdash; search this site</a></li>
+<li><a href="/kits/">The Kits</a></li>
+<li><a href="/harvest.html">The Harvest</a></li>
+<li><a href="/invite-me.html">Invite me into your room</a></li>
+<li><a href="/civic-hour.html">The Civic Hour</a></li>
+<li><a href="https://github.com/unitetolove/commons">Code &amp; data</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>The vision</h2>
+<ul>
+<li><a href="/vision.html">The full vision</a></li>
+<li><a href="/plan/">The plan &mdash; one year, all-out</a></li>
+<li><a href="/plan/covenant.html">The sprint covenant</a></li>
+<li><a href="/strategy.html">The strategy</a></li>
+<li><a href="/who.html">Who is the Unknown Soldier</a></li>
+<li><a href="/constitution.html">Our constitution</a></li>
+<li><a href="/permanent-culture.html">Permanent Culture 3.0</a></li>
+<li><a href="/futures/">The Futures Library</a></li>
+<li><a href="/research-agenda.html">What we&rsquo;re researching next</a></li>
+<li><a href="/vision/organizations.html">For organizations</a></li>
+<li><a href="/vision/candidates.html">For candidates</a></li>
+<li><a href="/vision/newcomers.html">For newcomers</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>The library</h2>
+<ul>
+<li><a href="/library.html">Backgrounders &amp; briefs</a></li>
+<li><a href="/map/">The Map &mdash; by issue</a></li>
+<li><a href="/projects/index.html">By project</a></li>
+<li><a href="/whats-built.html">What&rsquo;s built, and what&rsquo;s coming</a></li>
+<li><a href="/wiki/">The Wiki</a></li>
+<li><a href="/category-explainers/">Explainers</a></li>
+<li><a href="/programs/index.html">The Programs</a></li>
+<li><a href="/questions/index.html">Candidate questions</a></li>
+<li><a href="/guides/">Free Toronto guides</a></li>
+<li><a href="/transit/">Why can&rsquo;t Toronto move?</a></li>
+<li><a href="/free-toronto.html">Free Toronto Resource Atlas</a></li>
+<li><a href="/open-data.html">Open data</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>Registries &amp; tools</h2>
+<ul>
+<li><a href="/gov-atlas/index.html">The Government Atlas</a></li>
+<li><a href="/elections/">State of the Election</a></li>
+<li><a href="/elections/wards/">Ward math cards</a></li>
+<li><a href="/run/index.html">So you&rsquo;re thinking of running</a></li>
+<li><a href="/turnout.html">How to vote</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>How to trust this</h2>
+<ul>
+<li><a href="/how-this-was-made.html">How this was made</a></li>
+<li><a href="/how-we-verify.html">How we verify</a></li>
+<li><a href="/corrections.html">Corrections &amp; improvements</a></li>
+<li><a href="/press.html">Press kit</a></li>
+<li><a href="/sitemap.html">Sitemap &mdash; every page</a></li>
+</ul>
+</section>
+</div>
+</nav>
+<p><a class="improve-mail" href="mailto:unknownsoldier@unitetolove.ca?subject=Improvement%3A&amp;body=Page%20link%20%28paste%20it%20here%29%3A%0A%0AWhat%20I%20noticed%20or%20suggest%3A%0A">&#9999;&#65039; Suggest an improvement</a> &mdash; corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+<script>(function(){var s='Improvement: '+location.pathname;var b='Page link: '+location.href+'\n\nWhat I noticed or suggest:\n\nCredit me as (optional):\n';var h='mailto:unknownsoldier@unitetolove.ca?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);var l=document.querySelectorAll('a.improve-mail');for(var i=0;i<l.length;i++){l[i].href=h;}})();</script>
+<p>The Unknown Soldier &middot; uniteTOlove &middot; Toronto</p>
+  <p class="ethic">Post only where you have the right to post.</p>
+  <p>This site is built with AI assistance &mdash; every claim carries a receipt regardless of who
+  drafted it. Read how: <a href="/how-this-was-made.html">How this was made</a>.</p>
+  <p>No donations are asked for anywhere on this site. Contact:
+  <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a> &mdash;
+  corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+</footer>
+</body>
+</html>

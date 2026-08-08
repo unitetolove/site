@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The sharing architecture — working notes · Unite to Love</title>
+<meta name="description" content="Working notes: an internal memo, published nearly verbatim — how Civic Tech, and anyone, gets our work, and why read-only repo access is the wrong design.">
+<link rel="stylesheet" href="../style.css">
+<link rel="canonical" href="https://unitetolove.ca/notes/sharing-architecture">
+<script defer src="../assets/analytics.js"></script>
+<meta property="og:title" content="The sharing architecture — working notes · Unite to Love">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://unitetolove.ca/notes/sharing-architecture">
+<meta property="og:image" content="https://unitetolove.ca/assets/og/kits.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
+<header class="site-header">
+<div class="header-inner">
+<a class="wordmark-link" href="/index.html">unite<span class="to">TO</span>love<span class="tld">.ca</span></a>
+<nav class="primary-nav" aria-label="Primary">
+<ul>
+<li><a href="/join.html">Start</a></li>
+<li><a href="/now.html">Now</a></li>
+<li><a href="/vision.html">Vision</a></li>
+<li><a href="/plan/">Plan</a></li>
+<li><a href="/kits/">Kits</a></li>
+<li><a href="/library.html">Library</a></li>
+<li><a href="/elections/">Elections</a></li>
+<li><a href="/gov-atlas/index.html">Gov Atlas</a></li>
+<li><a href="/run/index.html">Run</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<nav class="crumbs"><a href="../index.html">Home</a> / Working notes / The sharing architecture</nav>
+
+<main id="main" tabindex="-1">
+
+<div style="border: 1px solid; padding: 1em 1.25em; margin: 1em 0 2em;">
+<p><strong>Working notes</strong> — an internal document, published nearly verbatim. Expect
+apparatus: decision codes, board references, first-person seat voice. Why we publish our
+working documents: <a href="../how-we-share.html">how we share</a>.</p>
+</div>
+
+<h1>SHARING ARCHITECTURE — how Civic Tech (and anyone) gets our work</h1>
+
+<p><em>2026-08-04 &middot; Mobilization Jane. Answers the operator&rsquo;s question:
+&ldquo;simply give read-only access invitations and readmes to each folder?&rdquo; —
+<strong>No.</strong> Here is why, and the design that gives builders MORE than repo access
+would, with zero firewall cost.</em></p>
+
+<h2>&sect;1. Why the private estate can never take outside readers</h2>
+
+<ol>
+<li><strong>The invitation itself unmasks you.</strong> A GitHub invite to this repo exposes the
+owning account — the identity firewall (the real name &ldquo;never appears in any file, commit,
+branch, or prompt&rdquo;) dies at the first invite screen, before anyone reads a single file.
+Commit history compounds it: author names/emails on thousands of commits.</li>
+<li><strong>The estate is full of pre-gate material by design.</strong> Unsealed
+&#9888;&#65039; VERIFY claims, working drafts, adjudication logs, operator-log verbatims, send
+lists, held-item rulings on named organizations, third-party person data (candidate working
+fields, tribe vault pointers). The publish gate exists precisely so none of that is ever what an
+outside reader sees. Read-only access bypasses every gate at once — and one clone is
+permanent.</li>
+<li><strong>&ldquo;Survives a hostile outside reader&rdquo; is a writing standard, not a sharing
+license.</strong> It makes an eventual leak survivable; it does not make sharing free.</li>
+</ol>
+
+<h2>&sect;2. The design: publish OUT through the gate, into the public org</h2>
+
+<p>The estate already has the answer half-built: the <strong>uniteTOlove GitHub org</strong>,
+publicly detached from any personal account, already hosting the live site repo
+(<code>unitetolove/site</code>, public today). Extend the same pattern:</p>
+
+<table>
+<thead>
+<tr><th>Public repo</th><th>Contents</th><th>Source of truth (private)</th><th>Status</th></tr>
+</thead>
+<tbody>
+<tr><td><code>unitetolove/site</code></td><td>the whole live site</td><td>the site
+source</td><td><strong>EXISTS — shareable tonight</strong></td></tr>
+<tr><td><code>unitetolove/data</code> (NEW)</td><td>the data desk: sealed CSVs (races,
+candidates-public-fields, platform census, margins, research data sets) + schemas + data
+dictionary</td><td>per-file screened exports</td><td>this week</td></tr>
+<tr><td><code>unitetolove/tools</code> (NEW)</td><td>open tools: a candidate web-harvest
+script, link checkers, renderer utilities — stdlib, no secrets</td><td>the tools
+directory, screened</td><td>this week</td></tr>
+<tr><td><code>unitetolove/kits</code> (LATER)</td><td>mobilization toolkit &middot; assembly
+toolkit &middot; debate-in-a-box &middot; framework render</td><td>after your
+ratifications</td><td>phase 2</td></tr>
+</tbody>
+</table>
+
+<p><strong>Export rules (the one-way membrane):</strong></p>
+<ul>
+<li>Copy-out only, <strong>fresh git history</strong>, committed by the org identity — never a
+fork, never a filter-branch of the private repo (history carries authorship).</li>
+<li>Only SEALED/published artifacts and screened tools cross; every export gets the per-file
+screen (the vault-ruling pattern applied outward); leak greps run on the export tree, not just
+the sources.</li>
+<li>Licenses at the root of each: code Apache-2.0/MIT; content CC BY 4.0 (the drafted license
+page is the source; counsel-glance folded into the standing counsel batch, not a blocker for
+code/data with clear provenance).</li>
+<li>&#9888;&#65039; One verify before anything new goes out: confirm <code>unitetolove/site</code>&rsquo;s
+existing commit history carries org-identity authorship only (believed handled at go-live;
+check, don&rsquo;t assume — one command in the deploy session).</li>
+</ul>
+
+<h2>&sect;3. How collaboration comes IN (better than folder access)</h2>
+
+<ul>
+<li><strong>GitHub Issues + PRs on the public repos</strong> — scoped, reviewable, no access to
+anything private. Every contribution is DRAFT until reviewed (the standing discipline,
+unchanged).</li>
+<li><strong>The Civic Tech Slack channel</strong> (ruled) — where build-night coordination
+lives.</li>
+<li><strong>Contributor ethics</strong> — already written; it becomes CONTRIBUTING.md in each
+public repo.</li>
+<li><strong>Volunteer packets</strong> for non-code work (tribe long-tail rows etc.) — handed as
+slices, never as registry access.</li>
+<li><strong>Good-first-issues</strong> cut from the build menu: the ward browser, plan
+scoreboard, .ics calendar, embeds, og-images — each one issue with data pointers into
+<code>unitetolove/data</code>.</li>
+</ul>
+
+<h2>&sect;4. Tonight&rsquo;s practical answer (Civic Tech room)</h2>
+
+<p>Give the site URL — the repo behind it is already public, so &ldquo;who wants the repo
+links?&rdquo; has a true answer TONIGHT: <code>unitetolove/site</code>. For everything else:
+&ldquo;data and tools repos go up this week — leave an email if you want the links&rdquo; (paper
++ consent, custodian law; ONE Class-C follow-up email within 48h, per the pitch&rsquo;s own
+after-room discipline). Do not improvise any invitation to anything private, tonight or
+ever.</p>
+
+<h2>&sect;5. What this seat stages next (no word needed to prepare, your word to publish)</h2>
+
+<p>Day-1/2 lane: screened export trees for <code>data</code> and <code>tools</code> built and
+leak-grepped in staging; README + LICENSE + CONTRIBUTING drafted per repo; the site-repo
+authorship verify added to the deploy paste&rsquo;s step list. Repo creation + push = your click,
+same pattern as every publish.</p>
+
+</main>
+
+<footer class="site-footer">
+<nav aria-label="Footer">
+<div class="footer-cols">
+<section class="footer-col">
+<h2>Start here</h2>
+<ul>
+<li><a href="/join.html">Join the conversation</a></li>
+<li><a href="/now.html">Next actions</a></li>
+<li><a href="/kits/">The Kits</a></li>
+<li><a href="/harvest.html">The Harvest</a></li>
+<li><a href="/invite-me.html">Invite me into your room</a></li>
+<li><a href="/civic-hour.html">The Civic Hour</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>The vision</h2>
+<ul>
+<li><a href="/vision.html">The full vision</a></li>
+<li><a href="/plan/">The plan &mdash; one year, all-out</a></li>
+<li><a href="/plan/covenant.html">The sprint covenant</a></li>
+<li><a href="/strategy.html">The strategy</a></li>
+<li><a href="/who.html">Who is the Unknown Soldier</a></li>
+<li><a href="/constitution.html">Our constitution</a></li>
+<li><a href="/permanent-culture.html">Permanent Culture 3.0</a></li>
+<li><a href="/futures/">The Futures Library</a></li>
+<li><a href="/research-agenda.html">What we&rsquo;re researching next</a></li>
+<li><a href="/vision/organizations.html">For organizations</a></li>
+<li><a href="/vision/candidates.html">For candidates</a></li>
+<li><a href="/vision/newcomers.html">For newcomers</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>The library</h2>
+<ul>
+<li><a href="/library.html">Backgrounders &amp; briefs</a></li>
+<li><a href="/map/">The Map &mdash; by issue</a></li>
+<li><a href="/projects/index.html">By project</a></li>
+<li><a href="/whats-built.html">What&rsquo;s built, and what&rsquo;s coming</a></li>
+<li><a href="/wiki/">The Wiki</a></li>
+<li><a href="/category-explainers/">Explainers</a></li>
+<li><a href="/programs/index.html">The Programs</a></li>
+<li><a href="/questions/index.html">Candidate questions</a></li>
+<li><a href="/guides/">Free Toronto guides</a></li>
+<li><a href="/transit/">Why can&rsquo;t Toronto move?</a></li>
+<li><a href="/free-toronto.html">Free Toronto Resource Atlas</a></li>
+<li><a href="/open-data.html">Open data</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>Registries &amp; tools</h2>
+<ul>
+<li><a href="/gov-atlas/index.html">The Government Atlas</a></li>
+<li><a href="/elections/">State of the Election</a></li>
+<li><a href="/elections/wards/">Ward math cards</a></li>
+<li><a href="/run/index.html">So you&rsquo;re thinking of running</a></li>
+<li><a href="/turnout.html">How to vote</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>How to trust this</h2>
+<ul>
+<li><a href="/how-this-was-made.html">How this was made</a></li>
+<li><a href="/how-we-verify.html">How we verify</a></li>
+<li><a href="/corrections.html">Corrections &amp; improvements</a></li>
+<li><a href="/press.html">Press kit</a></li>
+<li><a href="/sitemap.html">Sitemap &mdash; every page</a></li>
+</ul>
+</section>
+</div>
+</nav>
+<p><a class="improve-mail" href="mailto:unknownsoldier@unitetolove.ca?subject=Improvement%3A&amp;body=Page%20link%20%28paste%20it%20here%29%3A%0A%0AWhat%20I%20noticed%20or%20suggest%3A%0A">&#9999;&#65039; Suggest an improvement</a> &mdash; corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+<script>(function(){var s='Improvement: '+location.pathname;var b='Page link: '+location.href+'\n\nWhat I noticed or suggest:\n\nCredit me as (optional):\n';var h='mailto:unknownsoldier@unitetolove.ca?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);var l=document.querySelectorAll('a.improve-mail');for(var i=0;i<l.length;i++){l[i].href=h;}})();</script>
+<p>The Unknown Soldier &middot; uniteTOlove &middot; Toronto</p>
+  <p class="ethic">Post only where you have the right to post.</p>
+  <p>This site is built with AI assistance &mdash; every claim carries a receipt regardless of who
+  drafted it. Read how: <a href="/how-this-was-made.html">How this was made</a>.</p>
+  <p>No donations are asked for anywhere on this site. Contact:
+  <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a> &mdash;
+  corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+</footer>
+</body>
+</html>
