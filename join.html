@@ -61,6 +61,8 @@
   cursor: pointer;
 }
 .join-form button[type="submit"]:hover { filter: brightness(1.1); }
+.join-form button[type="submit"]:disabled { opacity: 0.6; cursor: default; }
+.join-form .cf-turnstile { margin: 0.9rem 0; }
 .courier-note {
   font-size: 0.9em;
   color: var(--muted);
@@ -72,11 +74,12 @@
 }
 #sent-note {
   margin-top: 0.9rem;
-  border: 1px solid var(--accent);
+  border: 1px solid var(--border);
   border-radius: 6px;
   padding: 0.6rem 0.9rem;
   font-weight: 600;
 }
+#sent-note.ok { border-color: var(--accent); }
 </style>
 <script defer src="assets/analytics.js"></script>
 <meta property="og:title" content="Join the conversation — uniteTOlove">
@@ -200,43 +203,58 @@
         about this note, nothing more.</span>
       </label>
       <label class="check"><input type="checkbox" id="f-news">
-        <span><strong>Occasional news</strong> (optional) &mdash; gathering announcements, the
-        count going live. Rare, and only the moments.</span>
+        <span><strong>Yes &mdash; email me updates.</strong> (optional) We keep this list
+        ourselves and never share it.</span>
       </label>
-      <p class="hint">Unsubscribe anytime, one click. Your details are never sold or shared, there
-      are no dues, and no donations are ever asked for &mdash; here or anywhere on this site.</p>
+      <p class="hint">Unsubscribe anytime, one click. A named custodian holds this list, keeps it
+      solely for this project, and never sells or shares it &mdash; your details are never sold,
+      there are no dues, and no donations are ever asked for, here or anywhere on this site. Ask
+      us to see, correct, or remove your record anytime at
+      <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a>.</p>
       <p class="hint">Under 18? Welcome &mdash; please have a parent or guardian send this for you,
       from their own email. That&rsquo;s the whole rule, and you can withdraw anytime.</p>
     </fieldset>
 
-    <p class="courier-note">For now, your email app is the courier &mdash; pressing
-    <strong>Send</strong> is what submits. Direct submission is being built.</p>
+    <div class="cf-turnstile" data-sitekey="0x4AAAAAAEGWIsWFdt-RRBsx"></div>
 
     <button type="submit">Send it &mdash; join the conversation</button>
 
-    <p id="sent-note" hidden>Your email app should now be open with everything you wrote.
-    Press Send there and it&rsquo;s on its way to a human.</p>
+    <p class="courier-note">This form submits directly to us. If it ever fails, email works
+    just as well &mdash; write to
+    <a href="mailto:unknownsoldier@unitetolove.ca?subject=Joining%20the%20conversation">unknownsoldier@unitetolove.ca</a>
+    with your name and how to reach you, and you&rsquo;re in exactly the same way.</p>
 
-    <div class="this-week">
-      <p><strong>Prefer to write it yourself?</strong> Copy this into your own email instead of
-      using the button above &mdash; same door, same welcome.</p>
-      <p>To: <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a><br>
-      Subject: Joining the conversation</p>
-      <p>Include:<br>
-      &bull; your name<br>
-      &bull; how to reach you (email or phone)<br>
-      &bull; anything else from this page you&rsquo;d like us to know</p>
-    </div>
+    <p id="sent-note" role="status" aria-live="polite" hidden tabindex="-1"></p>
+
+    <noscript><p class="courier-note">JavaScript is off in your browser, so this form
+    can&rsquo;t submit here &mdash; no problem: write to
+    <a href="mailto:unknownsoldier@unitetolove.ca?subject=Joining%20the%20conversation">unknownsoldier@unitetolove.ca</a>
+    with your name, how to reach you, and anything else from this page you&rsquo;d like us to
+    know. Same door, same welcome.</p></noscript>
   </form>
 
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   <script>
   (function () {
     "use strict";
     var form = document.getElementById("join-form");
     if (!form) { return; }
     form.removeAttribute("novalidate");
+
+    var note = document.getElementById("sent-note");
+    function showNote(message, ok) {
+      note.textContent = message;
+      note.hidden = false;
+      note.className = ok ? "ok" : "";
+      note.focus();
+    }
+
+    var MAILTO_FALLBACK = "unknownsoldier@unitetolove.ca";
+
     form.addEventListener("submit", function (e) {
       e.preventDefault();
+      note.hidden = true;
+
       function val(id) {
         var el = document.getElementById(id);
         return el && el.value ? el.value.trim() : "";
@@ -251,14 +269,24 @@
         for (var i = 0; i < boxes.length; i++) { out.push(boxes[i].value); }
         return out.join(", ");
       }
-      var lines = [];
-      function add(label, value) { if (value) { lines.push(label + ": " + value); } }
+
       var name = val("f-name");
-      add("Name", name);
-      add("Email", val("f-email"));
-      add("Phone", val("f-phone"));
-      add("Neighbourhood / ward / postal FSA", val("f-area"));
-      if (isChecked("f-novote")) { lines.push("I can't vote here - count me anyway: yes"); }
+      var email = val("f-email");
+      if (!name || !email) {
+        showNote("Please fill in your name and email.", false);
+        return;
+      }
+
+      var turnstileField = form.querySelector('[name="cf-turnstile-response"]');
+      var turnstileToken = turnstileField ? turnstileField.value : "";
+      if (!turnstileToken) {
+        showNote("Please complete the verification widget above, then try again.", false);
+        return;
+      }
+
+      var notesLines = [];
+      function add(label, value) { if (value) { notesLines.push(label + ": " + value); } }
+      if (isChecked("f-novote")) { notesLines.push("Can't vote here - count me anyway: yes"); }
       add("Interests", checkedList("interest"));
       add("How I want to help", checkedList("help"));
       add("Expert field", val("f-expert-field"));
@@ -266,15 +294,53 @@
       add("Links", val("f-links"));
       add("Organization", val("f-org"));
       add("Anything else", val("f-else"));
-      lines.push("");
-      lines.push("Consent - reach me about what I wrote here: yes");
-      lines.push("Consent - occasional news: " + (isChecked("f-news") ? "yes" : "no"));
-      var subject = "Joining the conversation" + (name ? " - " + name : "");
-      var href = "mailto:unknownsoldier@unitetolove.ca?subject=" +
-        encodeURIComponent(subject) + "&body=" + encodeURIComponent(lines.join("\n"));
-      var note = document.getElementById("sent-note");
-      if (note) { note.hidden = false; }
-      window.location.href = href;
+
+      var nowIso = new Date().toISOString();
+      var payload = {
+        name: name,
+        email: email,
+        phone: val("f-phone") || undefined,
+        postal_fsa_or_ward: val("f-area") || undefined,
+        consent_flags: { reach_me: true, notes: notesLines.join("\n") || undefined },
+        consent_timestamp: nowIso,
+        consent_source_page: window.location.href,
+        newsletter_consent: isChecked("f-news"),
+        turnstile_token: turnstileToken,
+      };
+
+      var submitBtn = form.querySelector('button[type="submit"]');
+      submitBtn.disabled = true;
+
+      fetch("/api/join", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      })
+        .then(function (res) {
+          return res.json().catch(function () { return {}; }).then(function (data) {
+            return { ok: res.ok, status: res.status, data: data };
+          });
+        })
+        .then(function (result) {
+          submitBtn.disabled = false;
+          if (result.ok) {
+            form.querySelectorAll("fieldset").forEach(function (fs) { fs.hidden = true; });
+            showNote("Thank you — you're in. Your details are never sold or shared.", true);
+          } else if (result.status === 403) {
+            showNote("Verification failed — please try again.", false);
+            if (window.turnstile) { window.turnstile.reset(); }
+          } else if (result.status === 409) {
+            showNote("Looks like you're already signed up — thank you! Write to " + MAILTO_FALLBACK + " if that's wrong.", true);
+          } else if (result.status === 400) {
+            showNote((result.data && result.data.error) || "Please check the form and try again.", false);
+          } else {
+            showNote("Something went wrong on our end — please try again, or write to " + MAILTO_FALLBACK + " and we'll add you by hand.", false);
+          }
+        })
+        .catch(function () {
+          submitBtn.disabled = false;
+          showNote("Couldn't reach the signup server — please write to " + MAILTO_FALLBACK + " and we'll add you by hand.", false);
+        });
     });
   })();
   </script>

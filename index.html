@@ -15,6 +15,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <script defer src="assets/analytics.js"></script>
 <script defer src="assets/popup.js"></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 <style>
 /* Front-door signup popup + welcome-back banner — style.css has no modal rules yet;
    kept page-local on purpose (matches join.html's own form-CSS convention). */
@@ -38,7 +39,7 @@
   width: 100%; box-sizing: border-box; margin-top: 0.3rem; padding: 0.45rem 0.6rem;
   border: 1px solid var(--border); border-radius: 4px; background: var(--bg); color: var(--fg);
   font: inherit; line-height: 1.4; }
-.popup-form .link-toggle { display: inline-block; margin-top: 0.5rem; background: none; border: none;
+.link-toggle { display: inline-block; margin-top: 0.5rem; background: none; border: none;
   padding: 0; color: var(--accent); text-decoration: underline; font: inherit; cursor: pointer; }
 .popup-form .check { display: flex; align-items: flex-start; gap: 0.5rem; margin: 0.7rem 0 0;
   font-weight: 400; font-size: 0.88em; color: var(--muted); }
@@ -49,11 +50,17 @@
 .popup-actions { display: flex; align-items: center; gap: 0.9rem; margin-top: 0.9rem; flex-wrap: wrap; }
 .signup-modal p { margin: 0.5em 0; }
 .popup-submit { font: inherit; font-weight: 700; padding: 0.55rem 1.4rem; border: 1px solid var(--accent);
-  border-radius: 6px; background: var(--accent); color: var(--bg); cursor: pointer; }
+  border-radius: 6px; background: var(--accent); color: var(--bg); cursor: pointer; text-decoration: none;
+  display: inline-block; }
 .popup-submit:hover { filter: brightness(1.1); }
 .popup-skip { font: inherit; background: none; border: none; padding: 0; color: var(--muted);
   text-decoration: underline; cursor: pointer; }
 .popup-skip:hover { color: var(--accent); }
+.popup-form button[type="submit"]:disabled { opacity: 0.6; cursor: default; }
+.popup-form .cf-turnstile { margin: 0.9rem 0; }
+#popup-status { margin-top: 0.9rem; border: 1px solid var(--border); border-radius: 6px;
+  padding: 0.6rem 0.9rem; font-weight: 600; }
+#popup-status.ok { border-color: var(--accent); }
 .welcome-back-banner { border: 1px solid var(--border); border-left: 3px solid var(--accent);
   border-radius: 6px; padding: 0.7rem 1rem; margin: 0 0 1.4rem; display: flex; align-items: baseline;
   justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
@@ -111,29 +118,33 @@
         this box the next time the popup shows.</p>
       </details>
 
+      <label class="check">
+        <input type="checkbox" id="p-news">
+        <span><strong>Yes &mdash; email me updates.</strong> (optional) We keep this list
+        ourselves and never share it.</span>
+      </label>
+
       <p class="hint">Under 18? Welcome &mdash; please have a parent or guardian send this for
       you, from their own email. That&rsquo;s the whole rule, and you can withdraw anytime.</p>
 
-      <p class="hint">For now, your email app is the courier &mdash; pressing <strong>Send</strong>
-      is what submits. Direct submission is being built.</p>
+      <div class="cf-turnstile" data-sitekey="0x4AAAAAAEGWIsWFdt-RRBsx"></div>
 
       <div class="popup-actions">
         <button type="submit" class="popup-submit">Send it &mdash; join the conversation</button>
         <button type="button" class="popup-skip" id="signup-modal-skip">Skip for now</button>
       </div>
 
-      <details class="consent-details">
-        <summary>Prefer to write it yourself?</summary>
-        <p>Copy this into your own email instead of using the button above &mdash; same door,
-        same welcome.</p>
-        <p>To: <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a><br>
-        Subject: Joining the conversation</p>
-        <p>Include:<br>
-        &bull; your name<br>
-        &bull; how to reach you (email or phone)<br>
-        &bull; anything else from this page you&rsquo;d like us to know</p>
-      </details>
+      <div id="popup-status" role="status" aria-live="polite" hidden tabindex="-1"></div>
     </form>
+
+    <div id="popup-success" hidden>
+      <p id="popup-success-message">Thank you &mdash; you&rsquo;re in. Your details are never
+      sold or shared.</p>
+      <div class="popup-actions">
+        <a class="popup-submit" href="now.html">Continue to next actions &rarr;</a>
+        <button type="button" class="popup-skip" id="popup-sign-another">Sign another person</button>
+      </div>
+    </div>
 
     <noscript><p class="hint">JavaScript is off in your browser, so this popup can&rsquo;t compose
     the email for you &mdash; no problem: use the full <a href="join.html">join form</a> instead,
@@ -145,7 +156,8 @@
 <div id="welcome-back-banner" class="welcome-back-banner" role="status" hidden>
   <p><strong id="wb-heading">Welcome back.</strong>
   <span id="wb-message">You&rsquo;re signed up &mdash; thank you.</span>
-  <a href="now.html">Continue to next actions &rarr;</a></p>
+  <a href="now.html">Continue to next actions &rarr;</a>
+  <button type="button" id="wb-sign-another" class="link-toggle">Someone else? Sign here.</button></p>
   <button type="button" id="wb-dismiss" aria-label="Dismiss">&times;</button>
 </div>
 
@@ -300,9 +312,9 @@
     <img class="o-divider" src="assets/logo_v1/unitetolove_o_fine_light_v1.svg" alt="" width="44" height="44">
   </picture>
 
-  <div class="cta-final">
+  <div class="cta-final" id="essay-end">
   <p><strong>That&rsquo;s my challenge to you &mdash;
-  <a href="join.html">sign up for the conversation of a lifetime</a>, about our
+  <a href="join.html" id="essay-cta-link">sign up for the conversation of a lifetime</a>, about our
   future.</strong></p>
   </div>
 

@@ -76,6 +76,17 @@
   font-weight: 600;
 }
 #sign-status.ok { border-color: var(--accent); }
+.link-toggle {
+  display: inline-block;
+  margin-top: 0.9rem;
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--accent);
+  text-decoration: underline;
+  font: inherit;
+  cursor: pointer;
+}
 </style>
 <script defer src="../assets/analytics.js"></script>
 <meta property="og:title" content="The Listening Project — uniteTOlove">
@@ -289,9 +300,14 @@
         <span><strong>I am signing this declaration, as written above</strong> (required) &mdash;
         version of August 1, 2026.</span>
       </label>
-      <p class="hint">Your name and email are held for this signature record only &mdash; never
-      sold or shared, never published as a list. Unsubscribe or ask us to delete your record
-      anytime at <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a>.</p>
+      <label class="check"><input type="checkbox" id="s-news">
+        <span><strong>Yes &mdash; email me updates.</strong> (optional) We keep this list
+        ourselves and never share it.</span>
+      </label>
+      <p class="hint">Your name and email are held for this signature record only, by a named
+      custodian who keeps it solely for this project &mdash; never sold or shared, never
+      published as a list. Unsubscribe or ask us to delete your record anytime at
+      <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a>.</p>
 
       <div class="cf-turnstile" data-sitekey="0x4AAAAAAEGWIsWFdt-RRBsx"></div>
 
@@ -299,6 +315,7 @@
     </fieldset>
 
     <div id="sign-status" role="status" aria-live="polite" hidden tabindex="-1"></div>
+    <button type="button" id="sign-another" class="link-toggle" hidden>Sign another person &rarr;</button>
 
     <noscript><p class="courier-note">JavaScript is off in your browser, so this form
     can&rsquo;t submit here &mdash; no problem: write to
@@ -325,11 +342,24 @@
     });
 
     var status = document.getElementById("sign-status");
+    var signAnotherBtn = document.getElementById("sign-another");
     function showStatus(message, ok) {
       status.textContent = message;
       status.hidden = false;
       status.className = ok ? "ok" : "";
       status.focus();
+    }
+
+    if (signAnotherBtn) {
+      signAnotherBtn.addEventListener("click", function () {
+        form.reset();
+        form.querySelector("fieldset").hidden = false;
+        parentWrap.hidden = true;
+        parentEmail.removeAttribute("required");
+        status.hidden = true;
+        signAnotherBtn.hidden = true;
+        document.getElementById("s-name").focus();
+      });
     }
 
     // Relative path assumes join-signup-worker is routed at this path on the same origin as the
@@ -379,6 +409,7 @@
         consent_source_page: window.location.href,
         declaration_signed_at: nowIso,
         declaration_version: DECLARATION_VERSION,
+        newsletter_consent: document.getElementById("s-news").checked,
         turnstile_token: turnstileToken,
       };
 
@@ -400,6 +431,7 @@
           if (result.ok) {
             form.querySelector("fieldset").hidden = true;
             showStatus("Thank you — your signature is recorded. Your name and email are never published or shared as a list.", true);
+            if (signAnotherBtn) { signAnotherBtn.hidden = false; }
           } else if (result.status === 403) {
             showStatus("Verification failed — please try again.", false);
             if (window.turnstile) { window.turnstile.reset(); }
