@@ -220,6 +220,7 @@ nav.cta h2 { margin-top: 0; }
 /* Homepage hero + final CTA (2026-08-06 polish pass) */
 .hero { text-align: center; margin: 0.5rem 0 1rem; }
 .hero-mark img { display: block; width: 100%; max-width: 460px; height: auto; margin: 0.75rem auto 0.5rem; }
+.hero-tagline { text-align: center; margin: 0 0 0.15rem; font-size: 1.15rem; }
 .pronounce { color: var(--muted); margin-top: 0; text-align: center; }
 .door-orient { max-width: 42rem; margin: 0 auto 1.2rem; text-align: center; }
 .narrative { max-width: 42rem; margin: 1.5rem auto; }
