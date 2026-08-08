@@ -1,0 +1,18 @@
+{
+  // Cloudflare Workers static-assets config for this project. Added 2026-08-07 (usability
+  // fix-paste RIDER): without this file, the automatic git-triggered deploy uses platform
+  // defaults on every build, which silently reset a one-off `wrangler deploy`-applied
+  // not_found_handling setting back to "none" (junk URLs served a bare 404 with a 0-byte body
+  // even though 404.html exists and serves 200). Committing the setting here is what makes it
+  // survive the next push, instead of needing to be reapplied by hand after every deploy.
+  //
+  // html_handling is deliberately left unset -- its default ("auto-trailing-slash") is exactly
+  // the current live .html -> extensionless redirect behavior sitewide; do not add it without
+  // re-verifying that behavior on a sample of pages first.
+  "name": "site",
+  "compatibility_date": "2026-08-01",
+  "assets": {
+    "directory": ".",
+    "not_found_handling": "404-page"
+  }
+}
