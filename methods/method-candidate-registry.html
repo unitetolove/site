@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Method: The candidate registry & election receipts — uniteTOlove</title>
+<meta name="description" content="How we build and verify a dated, sourced registry of every registered candidate's public campaign footprint — the method behind our State-of-the-Election receipts, written down so your municipality can run its own version.">
+<link rel="stylesheet" href="../style.css">
+<link rel="canonical" href="https://unitetolove.ca/methods/method-candidate-registry.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://unitetolove.ca/methods/method-candidate-registry.html">
+<meta property="og:title" content="Method: The candidate registry & election receipts — uniteTOlove">
+<meta property="og:description" content="How we build and verify a dated, sourced registry of every registered candidate's public campaign footprint.">
+<script defer src="../assets/analytics.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+<div class="header-inner">
+<a class="wordmark-link" href="/index.html">unite<span class="to">TO</span>love<span class="tld">.ca</span></a>
+<nav class="primary-nav" aria-label="Primary">
+<ul>
+<li><a href="/join.html">Start</a></li>
+<li><a href="/now.html">Now</a></li>
+<li><a href="/vision.html">Vision</a></li>
+<li><a href="/plan/">Plan</a></li>
+<li><a href="/kits/">Kits</a></li>
+<li><a href="/library.html">Library</a></li>
+<li><a href="/elections/">Elections</a></li>
+<li><a href="/gov-atlas/index.html">Gov Atlas</a></li>
+<li><a href="/run/index.html">Run</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<nav class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Run this in your municipality</a> / Method: The candidate registry &amp; election receipts</nav>
+
+<main id="main">
+  <h1>Method: The candidate registry &amp; election receipts</h1>
+
+  <p class="lede">Before anyone can score a platform, compare a ward, or tell a voter what's
+  actually out there, someone has to answer a duller question first: who is running, and where can
+  a resident go read what they've said for themselves? This is the method behind that registry —
+  the base layer everything else on this site stands on. It exists so that no downstream page ever
+  has to guess at a candidate's web presence; it has to check a dated, sourced row instead.</p>
+
+  <h2>What it produces</h2>
+  <p>A structured registry covering every registered candidate in every race we track, with each
+  row carrying a State-of-the-Election receipt: not just a claim that a candidate has a website or
+  a platform document, but the date that claim was last actually verified and where it was
+  verified. Downstream, this registry is the only thing our platform-scoring process is allowed to
+  score — it never scores a candidate's web presence from memory or assumption, only from what this
+  registry says, on the row's own face, has been confirmed and when.</p>
+
+  <h2>How it works, step by step</h2>
+  <p>The registry is built and refreshed in two connected passes.</p>
+  <p><strong>Race and candidate refresh.</strong> For each municipality, someone goes back to that
+  municipality's own clerk or elections office page — never a third-party mirror or aggregator —
+  and re-confirms who is on the ballot and how many candidates are registered in each race. Any
+  field that can't be re-confirmed on a given pass is carried forward rather than blanked out, so
+  the registry never silently loses information it once had. Every change is written as a complete
+  proposed update, never edited in place, and a single accountable person merges those updates into
+  the live registry — never two people writing to the same record at the same time.</p>
+  <p><strong>Candidate web-presence search.</strong> Finding a candidate's actual website, social
+  accounts, and platform documents runs as a staged search. First, a broad automated sweep checks
+  clerk listings, searches the web, and crawls likely campaign pages, producing proposed matches —
+  never writing directly into the live registry. Second, those proposed matches are sorted into
+  confidence tiers: verified, probable, an unconfirmed lead, genuinely unsure, or not found.
+  Third, every "unsure" call, every case where two different candidates' proposed links collide,
+  and a meaningful random sample of everything else is personally re-checked by a person before any
+  of it is trusted. Only after that human check does anything move into the live registry, through
+  one single, disclosed, rule-bound process — never a free-for-all where any tool or pass can write
+  to the record directly. A final pass checks confirmed sites for basic safety and hygiene issues,
+  and a separate pass specifically hunts for a subtle failure mode: a website that matches a
+  candidate's name but actually belongs to a same-named person or place somewhere else entirely.</p>
+
+  <h2>How it's checked</h2>
+  <p>The registry is built so that no single pass, tool, or person can quietly corrupt it, and so
+  an outsider has concrete things to check us against.</p>
+  <ul>
+    <li><strong>Every uncertain call gets a second, independent look.</strong> Anything the
+    automated sweep marks "unsure," and any case where two candidates' proposed web links collide,
+    is personally re-verified by a person before it's trusted — not sampled, all of it.</li>
+    <li><strong>A meaningful share of everything else is independently audited too.</strong> A
+    real, disclosed percentage of both the accepted and the rejected proposals is spot-checked
+    against the live source. If that audit turns up more than a small, stated error rate, the whole
+    batch is held back rather than applied — we would rather publish less, later, than publish
+    wrong.</li>
+    <li><strong>One route in, and it's logged.</strong> Nothing enters the live registry except
+    through that single verification-and-apply step, and every change it makes is recorded, so any
+    row's history can be reconstructed.</li>
+    <li><strong>A dedicated sweep for name/place confusion.</strong> After any large batch of
+    updates, a separate check specifically looks for websites that were matched on a name but
+    actually belong to a different person or a different place, across the whole registry, not just
+    the new rows.</li>
+    <li><strong>Nothing is silently deleted.</strong> If something is later found to be wrong — a
+    misattributed website, a bad match — it's withdrawn into its own dated, retracted record rather
+    than erased, so the correction itself is checkable.</li>
+    <li><strong>The date is the receipt.</strong> Every row states plainly when it was last
+    confirmed. We never describe the registry's size or coverage as a fixed, standing fact in prose
+    — only as a dated snapshot, because a registry like this is out of date the moment it's
+    finished and the honest thing is to say so on every row.</li>
+  </ul>
+  <p>If you want to challenge a specific entry, the challenge that actually works is: what date was
+  this confirmed, and against what source? That's the question the registry is built to answer for
+  every row, and the question we'd expect anyone auditing us to ask.</p>
+
+  <h2>What it honestly costs</h2>
+  <p>The scarce resource here is not software, it's sustained human attention. Automated sweeps and
+  first-pass sorting can run on lighter-weight tools with no real judgment involved — that part is
+  mechanical. But the parts that actually make the registry trustworthy — re-checking uncertain
+  calls, auditing samples, deciding what counts as "verified," merging updates without collision —
+  require a person applying real judgment, and that doesn't scale down. In one real working session
+  on this registry, a single verification pass covered roughly two thousand ambiguous candidates
+  through staged automated sorting followed by a few hundred rows of hands-on human review — that's
+  one real run, not a guaranteed rate, and it's the kind of evenings-and-weekends effort a
+  motivated small team can sustain, not something that happens by itself.</p>
+
+  <h2>Known limits</h2>
+  <p>We'd rather name our own gaps than have someone else find them first.</p>
+  <ul>
+    <li>There is no single, start-to-finish checklist for this process yet — the steps exist, but
+    they currently live across several separate working documents rather than one instruction a new
+    volunteer could follow end to end without guidance.</li>
+    <li>The audit-sample rule — check a meaningful share, hold back the batch if error rates run
+    high — is currently enforced by people disclosing their own results honestly, not by a
+    mechanical gate that would refuse to let ungated data through automatically. That's a real gap,
+    and closing it is a live priority.</li>
+    <li>When two updates to the same record are merged together, there isn't yet a hard technical
+    guarantee that a merge can never lose previously verified information — this has happened, been
+    caught, and been hand-fixed more than once. A standing safeguard against it is designed but not
+    yet built.</li>
+  </ul>
+
+  <h2>What stays internal, and why</h2>
+  <p>The schema, the staged search sequence, and the verification bar are exactly the parts we
+  publish here, because those are what let someone else replicate and check this work. What stays
+  internal: the raw, in-progress proposal streams before they've been verified, and unreviewed
+  working notes that can carry speculation or research-in-progress language not fit to stand as a
+  public claim about a real person. And one rule we hold absolutely: this registry catalogs who is
+  running and what they've published — it never characterizes or criticizes a candidate. That
+  judgment, where it happens at all, happens in a separate process, in aggregate only, and never
+  here.</p>
+
+  <p>If your municipality is holding an election and you want to build this yourself, the method
+  above is the whole thing — start with <a href="index.html">Run this in your municipality</a> for
+  what comes first, second, and third, and see <a href="/how-we-verify.html">How we verify</a> for
+  how we hold every claim on this site to a receipt regardless of who or what drafted it.</p>
+
+  <p>&mdash; The Unknown Soldier &middot; uniteTOlove &middot; Toronto</p>
+</main>
+
+<footer class="site-footer">
+<nav aria-label="Footer">
+<div class="footer-cols">
+<section class="footer-col">
+<h2>Start here</h2>
+<ul>
+<li><a href="/join.html">Join the conversation</a></li>
+<li><a href="/now.html">Next actions</a></li>
+<li><a href="/find.html">Find &mdash; search this site</a></li>
+<li><a href="/kits/">The Kits</a></li>
+<li><a href="/harvest.html">The Harvest</a></li>
+<li><a href="/invite-me.html">Invite me into your room</a></li>
+<li><a href="/civic-hour.html">The Civic Hour</a></li>
+<li><a href="https://github.com/unitetolove/commons">Code &amp; data</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>The vision</h2>
+<ul>
+<li><a href="/vision.html">The full vision</a></li>
+<li><a href="/plan/">The plan &mdash; one year, all-out</a></li>
+<li><a href="/plan/covenant.html">The sprint covenant</a></li>
+<li><a href="/strategy.html">The strategy</a></li>
+<li><a href="/who.html">Who is the Unknown Soldier</a></li>
+<li><a href="/constitution.html">Our constitution</a></li>
+<li><a href="/permanent-culture.html">Permanent Culture 3.0</a></li>
+<li><a href="/futures/">The Futures Library</a></li>
+<li><a href="/research-agenda.html">What we&rsquo;re researching next</a></li>
+<li><a href="/vision/organizations.html">For organizations</a></li>
+<li><a href="/vision/candidates.html">For candidates</a></li>
+<li><a href="/vision/newcomers.html">For newcomers</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>The library</h2>
+<ul>
+<li><a href="/library.html">Backgrounders &amp; briefs</a></li>
+<li><a href="/map/">The Map &mdash; by issue</a></li>
+<li><a href="/projects/index.html">By project</a></li>
+<li><a href="/whats-built.html">What&rsquo;s built, and what&rsquo;s coming</a></li>
+<li><a href="/wiki/">The Wiki</a></li>
+<li><a href="/category-explainers/">Explainers</a></li>
+<li><a href="/programs/index.html">The Programs</a></li>
+<li><a href="/questions/index.html">Candidate questions</a></li>
+<li><a href="/guides/">Free Toronto guides</a></li>
+<li><a href="/transit/">Why can&rsquo;t Toronto move?</a></li>
+<li><a href="/free-toronto.html">Free Toronto Resource Atlas</a></li>
+<li><a href="/open-data.html">Open data</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>Registries &amp; tools</h2>
+<ul>
+<li><a href="/gov-atlas/index.html">The Government Atlas</a></li>
+<li><a href="/elections/">State of the Election</a></li>
+<li><a href="/elections/wards/">Ward math cards</a></li>
+<li><a href="/run/index.html">So you&rsquo;re thinking of running</a></li>
+<li><a href="/turnout.html">How to vote</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>How to trust this</h2>
+<ul>
+<li><a href="/how-this-was-made.html">How this was made</a></li>
+<li><a href="/how-we-verify.html">How we verify</a></li>
+<li><a href="/corrections.html">Corrections &amp; improvements</a></li>
+<li><a href="/press.html">Press kit</a></li>
+<li><a href="/sitemap.html">Sitemap &mdash; every page</a></li>
+</ul>
+</section>
+</div>
+</nav>
+<p><a class="improve-mail" href="mailto:unknownsoldier@unitetolove.ca?subject=Improvement%3A&amp;body=Page%20link%20%28paste%20it%20here%29%3A%0A%0AWhat%20I%20noticed%20or%20suggest%3A%0A">&#9999;&#65039; Suggest an improvement</a> &mdash; corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+<script>(function(){var s='Improvement: '+location.pathname;var b='Page link: '+location.href+'\n\nWhat I noticed or suggest:\n\nCredit me as (optional):\n';var h='mailto:unknownsoldier@unitetolove.ca?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);var l=document.querySelectorAll('a.improve-mail');for(var i=0;i<l.length;i++){l[i].href=h;}})();</script>
+<p>The Unknown Soldier &middot; uniteTOlove &middot; Toronto</p>
+  <p class="ethic">Post only where you have the right to post.</p>
+  <p>This site is built with AI assistance &mdash; every claim carries a receipt regardless of who
+  drafted it. Read how: <a href="/how-this-was-made.html">How this was made</a>.</p>
+  <p>No donations are asked for anywhere on this site. Contact:
+  <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a> &mdash;
+  corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+</footer>
+</body>
+</html>

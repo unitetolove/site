@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Method: Ward profiles and math cards — uniteTOlove</title>
+<meta name="description" content="How we build one honest, non-ranking profile per Toronto ward — the 2022 result, the filed 2026 candidates, a sourced Census summary, and every gap named as a gap.">
+<link rel="stylesheet" href="../style.css">
+<link rel="canonical" href="https://unitetolove.ca/methods/method-ward-profiles.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://unitetolove.ca/methods/method-ward-profiles.html">
+<meta property="og:title" content="Method: Ward profiles and math cards — uniteTOlove">
+<meta property="og:description" content="How we build one honest, non-ranking profile per Toronto ward — the 2022 result, the filed 2026 candidates, a sourced Census summary, and every gap named as a gap.">
+<script defer src="../assets/analytics.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+<div class="header-inner">
+<a class="wordmark-link" href="/index.html">unite<span class="to">TO</span>love<span class="tld">.ca</span></a>
+<nav class="primary-nav" aria-label="Primary">
+<ul>
+<li><a href="/join.html">Start</a></li>
+<li><a href="/now.html">Now</a></li>
+<li><a href="/vision.html">Vision</a></li>
+<li><a href="/plan/">Plan</a></li>
+<li><a href="/kits/">Kits</a></li>
+<li><a href="/library.html">Library</a></li>
+<li><a href="/elections/">Elections</a></li>
+<li><a href="/gov-atlas/index.html">Gov Atlas</a></li>
+<li><a href="/run/index.html">Run</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<nav class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Run this in your municipality</a> / Method: Ward profiles and math cards</nav>
+
+<main id="main">
+  <h1>Method: Ward profiles and math cards</h1>
+
+  <p class="lede">Toronto elects its council by ward — 25 of them. For every ward, we build one
+  honest, non-ranking page: what happened last time, who has filed to run this time, what the
+  Census says about the people who live there, and whatever else genuinely checkable is on file.
+  Where we don&rsquo;t have something, the page says so instead of quietly leaving it out.</p>
+
+  <h2>What it produces</h2>
+  <p>Three linked pieces per ward, built from the same underlying data so they never disagree with
+  each other. A one-page <strong>card</strong> for a fast read. A <strong>candidate pack</strong> —
+  the same handout, in the same format, for every candidate in that ward, so no one gets a longer
+  or shorter writeup than anyone else. And a fuller <strong>profile</strong> that adds the Census
+  layer, whatever civic detail is genuinely on file for that ward, and a note on what else shares
+  the ballot.</p>
+
+  <h2>How it works, step by step</h2>
+  <p>Before any page is drafted, every data source is checked live against its own publisher —
+  not assumed current because it looked current last time. Ward boundaries, the 2021 Census
+  breakdown, the City Clerk&rsquo;s candidate list, and the 2022 result are each confirmed against
+  their official source, not a cached copy.</p>
+  <p>Cards and candidate packs are generated the same mechanical way for every ward and every
+  candidate: same fields, alphabetical by surname, no ranking and no characterizing language.
+  A blank field reads &ldquo;none on file&rdquo; — never guessed, never filled in to look
+  complete.</p>
+  <p>Profiles layer the Census summary on top, using the City&rsquo;s own published ward-level
+  breakdown, matched to the ward by its official name and number. Where a civic finding from our
+  broader research ledger names a specific ward by name, and that finding has cleared our
+  verification bar, it gets folded into that ward&rsquo;s profile. Findings that haven&rsquo;t
+  cleared verification never appear.</p>
+  <p>Facility-level detail — libraries, community centres, parks by ward — is a known gap we
+  chose not to paper over: until that data is sourced and checked to the same standard as
+  everything else here, that section reads &ldquo;no ward-level data,&rdquo; plainly, rather than
+  being quietly dropped from the page.</p>
+  <p>Every ward is checked against a full field-by-field coverage list before anything is
+  published — not &ldquo;does the plan say we cover this,&rdquo; but &ldquo;does the actual output
+  for this ward have it.&rdquo; Nothing goes live until that check runs clean.</p>
+
+  <h2>How it's checked</h2>
+  <p>This is the audit surface, and it&rsquo;s meant to be challenged. The candidate and Census
+  data behind every ward are checked live against the publisher at build time, not read off a
+  page that might say &ldquo;retired&rdquo; or be stale without saying so. One ward (Ward 4) was
+  hand-verified in full against the raw Census workbook — population, median age, income, housing
+  tenure split, and top-five languages spoken — as a check on the whole method, and it matched
+  exactly. If a source changes its own structure underneath us, the build is designed to fail
+  loudly rather than quietly publish a wrong number. Every profile carries its own receipt: what
+  was sourced, when, and a note that candidate counts are provisional until nominations close.
+  The 2022 turnout figure is citywide only, and every page says so plainly rather than implying a
+  ward-specific number we don&rsquo;t have.</p>
+
+  <h2>What it honestly costs</h2>
+  <p>Building and regenerating all 25 wards&rsquo; cards, packs, and profiles is mechanical once
+  the source data is checked and locked in — a same-day pass. The real cost sits upstream of
+  that: verifying every data source is actually live and current, and then auditing the finished
+  output field by field against that source, both took a full working session each. Keeping
+  everything current going forward needs low ongoing attention, but someone has to actually
+  re-run the build when the underlying candidate list changes — that step doesn&rsquo;t happen by
+  itself.</p>
+
+  <h2>Known limits</h2>
+  <p>Stated plainly, not softened. Facility-to-ward data (libraries, community centres, parks) is
+  a named skip, not a hidden one — we found the datasets but haven&rsquo;t brought them in to the
+  standard the rest of this method holds itself to. Our broader research ledger&rsquo;s ward-level
+  coverage is thin: only a small handful of verified findings currently name a specific ward, so
+  most wards&rsquo; civic-texture section is sparse — a real content gap in our underlying
+  research, not a bug in how profiles are assembled. We&rsquo;ve also seen published pages drift
+  out of sync with the data behind them when the candidate list updates and no one re-runs the
+  build — that coupling is manual today, and we say so rather than implying it&rsquo;s automatic.
+  The neighbourhood-to-ward and school trustee-to-ward mappings are confirmed not built yet for
+  almost all wards.</p>
+
+  <h2>What stays internal, and why</h2>
+  <p>This method never handles anyone&rsquo;s personal contact information. Every candidate field
+  comes from the City Clerk&rsquo;s own public registrant feed — name, office sought, published
+  links — plus public Census aggregates. Nothing is looked up, guessed, or pattern-generated for
+  any individual. The one place judgment is applied is civic-issue findings drawn from our
+  broader research: a finding only gets promoted into a public ward page once it has cleared our
+  full verification standard, never before. Every published page is written to inform a voter,
+  never to rank, endorse, or characterize a candidate.</p>
+
+  <p>Want to build this for your own municipality, or check our work first?
+  <a href="index.html">Run this in your municipality</a> walks through what it takes, and
+  <a href="/how-we-verify.html">How we verify</a> is the general standard every claim on this site
+  is held to.</p>
+
+  <p>&mdash; The Unknown Soldier &middot; uniteTOlove &middot; Toronto</p>
+</main>
+
+<footer class="site-footer">
+<nav aria-label="Footer">
+<div class="footer-cols">
+<section class="footer-col">
+<h2>Start here</h2>
+<ul>
+<li><a href="/join.html">Join the conversation</a></li>
+<li><a href="/now.html">Next actions</a></li>
+<li><a href="/find.html">Find &mdash; search this site</a></li>
+<li><a href="/kits/">The Kits</a></li>
+<li><a href="/harvest.html">The Harvest</a></li>
+<li><a href="/invite-me.html">Invite me into your room</a></li>
+<li><a href="/civic-hour.html">The Civic Hour</a></li>
+<li><a href="https://github.com/unitetolove/commons">Code &amp; data</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>The vision</h2>
+<ul>
+<li><a href="/vision.html">The full vision</a></li>
+<li><a href="/plan/">The plan &mdash; one year, all-out</a></li>
+<li><a href="/plan/covenant.html">The sprint covenant</a></li>
+<li><a href="/strategy.html">The strategy</a></li>
+<li><a href="/who.html">Who is the Unknown Soldier</a></li>
+<li><a href="/constitution.html">Our constitution</a></li>
+<li><a href="/permanent-culture.html">Permanent Culture 3.0</a></li>
+<li><a href="/futures/">The Futures Library</a></li>
+<li><a href="/research-agenda.html">What we&rsquo;re researching next</a></li>
+<li><a href="/vision/organizations.html">For organizations</a></li>
+<li><a href="/vision/candidates.html">For candidates</a></li>
+<li><a href="/vision/newcomers.html">For newcomers</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>The library</h2>
+<ul>
+<li><a href="/library.html">Backgrounders &amp; briefs</a></li>
+<li><a href="/map/">The Map &mdash; by issue</a></li>
+<li><a href="/projects/index.html">By project</a></li>
+<li><a href="/whats-built.html">What&rsquo;s built, and what&rsquo;s coming</a></li>
+<li><a href="/wiki/">The Wiki</a></li>
+<li><a href="/category-explainers/">Explainers</a></li>
+<li><a href="/programs/index.html">The Programs</a></li>
+<li><a href="/questions/index.html">Candidate questions</a></li>
+<li><a href="/guides/">Free Toronto guides</a></li>
+<li><a href="/transit/">Why can&rsquo;t Toronto move?</a></li>
+<li><a href="/free-toronto.html">Free Toronto Resource Atlas</a></li>
+<li><a href="/open-data.html">Open data</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>Registries &amp; tools</h2>
+<ul>
+<li><a href="/gov-atlas/index.html">The Government Atlas</a></li>
+<li><a href="/elections/">State of the Election</a></li>
+<li><a href="/elections/wards/">Ward math cards</a></li>
+<li><a href="/run/index.html">So you&rsquo;re thinking of running</a></li>
+<li><a href="/turnout.html">How to vote</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>How to trust this</h2>
+<ul>
+<li><a href="/how-this-was-made.html">How this was made</a></li>
+<li><a href="/how-we-verify.html">How we verify</a></li>
+<li><a href="/corrections.html">Corrections &amp; improvements</a></li>
+<li><a href="/press.html">Press kit</a></li>
+<li><a href="/sitemap.html">Sitemap &mdash; every page</a></li>
+</ul>
+</section>
+</div>
+</nav>
+<p><a class="improve-mail" href="mailto:unknownsoldier@unitetolove.ca?subject=Improvement%3A&amp;body=Page%20link%20%28paste%20it%20here%29%3A%0A%0AWhat%20I%20noticed%20or%20suggest%3A%0A">&#9999;&#65039; Suggest an improvement</a> &mdash; corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+<script>(function(){var s='Improvement: '+location.pathname;var b='Page link: '+location.href+'\n\nWhat I noticed or suggest:\n\nCredit me as (optional):\n';var h='mailto:unknownsoldier@unitetolove.ca?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);var l=document.querySelectorAll('a.improve-mail');for(var i=0;i<l.length;i++){l[i].href=h;}})();</script>
+<p>The Unknown Soldier &middot; uniteTOlove &middot; Toronto</p>
+  <p class="ethic">Post only where you have the right to post.</p>
+  <p>This site is built with AI assistance &mdash; every claim carries a receipt regardless of who
+  drafted it. Read how: <a href="/how-this-was-made.html">How this was made</a>.</p>
+  <p>No donations are asked for anywhere on this site. Contact:
+  <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a> &mdash;
+  corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+</footer>
+</body>
+</html>

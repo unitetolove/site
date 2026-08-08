@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Method: The government atlas — uniteTOlove</title>
+<meta name="description" content="How we capture and keep the public record for the Government Atlas: three layers of custody, a check that we're holding the right document, and an honest account of what it costs.">
+<link rel="stylesheet" href="../style.css">
+<link rel="canonical" href="https://unitetolove.ca/methods/method-gov-atlas.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://unitetolove.ca/methods/method-gov-atlas.html">
+<meta property="og:title" content="Method: The government atlas — uniteTOlove">
+<meta property="og:description" content="How we capture and keep the public record: three layers of custody, a check that we're holding the right document, and an honest account of what it costs.">
+<script defer src="../assets/analytics.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+<div class="header-inner">
+<a class="wordmark-link" href="/index.html">unite<span class="to">TO</span>love<span class="tld">.ca</span></a>
+<nav class="primary-nav" aria-label="Primary">
+<ul>
+<li><a href="/join.html">Start</a></li>
+<li><a href="/now.html">Now</a></li>
+<li><a href="/vision.html">Vision</a></li>
+<li><a href="/plan/">Plan</a></li>
+<li><a href="/kits/">Kits</a></li>
+<li><a href="/library.html">Library</a></li>
+<li><a href="/elections/">Elections</a></li>
+<li><a href="/gov-atlas/index.html">Gov Atlas</a></li>
+<li><a href="/run/index.html">Run</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<nav class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Run this in your municipality</a> / Method: The government atlas</nav>
+
+<main id="main">
+  <h1>Method: The government atlas — capturing and keeping the public record</h1>
+
+  <p class="lede">The Government Atlas is only as trustworthy as the documents behind it. This is
+  how we hold every report, bylaw, and budget the atlas cites — not just a link that can rot or a
+  claim that can drift, but a kept copy anyone can independently re-check, plus a standing check
+  that we kept the <em>right</em> copy in the first place.</p>
+
+  <h2>What it produces</h2>
+  <p>A durable archive behind every document the Government Atlas cites — federal, provincial,
+  city, and a widening set of comparator municipalities. For each one, a record of whether we hold
+  it, whether we can read it, and whether we've confirmed it's actually the complete document and
+  not a summary, an index page, or the wrong year standing in for it.</p>
+
+  <h2>How it works, step by step</h2>
+  <p>Every document goes through the same three-layer custody chain before it's trusted as "held":</p>
+  <ul>
+    <li><strong>Proof it existed.</strong> When we capture a public document, we take an archived
+    copy in a standard web-archive format at the moment of capture — not after the fact. That
+    archived copy is the evidence the document looked the way we say it looked, on the day we say
+    we saw it.</li>
+    <li><strong>The original file itself.</strong> The archived copy is unpacked into the actual
+    file — the PDF, the web page — stored under a naming scheme keyed to the file's own content, so
+    duplicates are caught automatically and nothing gets silently overwritten.</li>
+    <li><strong>A readable text copy.</strong> Every held file is also converted to plain text, so
+    it can be searched and checked without re-opening the original format each time. If a document
+    turns out to be an image scan with no real text underneath, that gets flagged rather than
+    quietly counted as "readable."</li>
+  </ul>
+  <p>Then comes the check that matters most: the <strong>right-document check</strong>. Holding a
+  file isn't enough if it's the wrong file — a summary or an index page standing in for the full
+  report, or last year's budget filed under this year's name. A first pass uses mechanical
+  signals — duplicate files, mismatched file types, suspiciously short documents, a title that
+  doesn't match its stated year, first pages that read like "executive summary" or "table of
+  contents" instead of the real thing — to sort documents into clean and suspect piles. The suspect
+  pile is then reviewed, and at least one in ten of those review decisions is independently
+  re-checked by a second reviewer before anything gets flagged in the public registry. Nothing is
+  flagged silently: a suspect document gets a visible marker — <em>possible summary standing in for
+  the full document</em> or <em>possible wrong document</em> — right in the row that cites it.</p>
+  <p>Where a document was captured but the underlying file is missing locally, that's tracked as a
+  standing to-do list, not folded quietly into a "done" count. And where a report cites the law
+  that empowers an agency to act, we hold that law under the same three-layer chain as the agency's
+  own documents — because a claim about what a body is allowed to do is only as good as the statute
+  behind it.</p>
+
+  <h2>How it's checked</h2>
+  <p>Every layer writes its own record rather than asserting a number in prose: a custody record
+  tracks whether each document was successfully captured and unpacked, and a fidelity record
+  tracks whether each one converts cleanly to readable text. A document only counts as "held" for
+  citation purposes once both records say so. On top of that, the right-document check runs its own
+  independent sample: whenever a first pass sorts a batch of documents into clean and suspect, at
+  least 10% of those calls get re-checked by someone who didn't make the original call, before any
+  flag reaches the public registry. Every flag written to the registry goes through the same
+  controlled process — never a manual edit — so there's a single trail for every "possible wrong
+  document" marker anyone sees.</p>
+  <p>We also keep a dated, honest list of the failure modes we've actually hit — not a hypothetical
+  list. A retroactive audit of thirty cited claims from an earlier automated pass found zero
+  fabricated citations, which is the finding that pushed us to make "archive at the moment of
+  capture" mandatory rather than optional. A gap in how we extracted text from some documents was
+  found and patched. And the exact failure the right-document check exists to catch — a summary
+  quietly standing in for the full report — is treated as a real, expected class of error the
+  pipeline is built to find, not an edge case we hope never happens.</p>
+
+  <h2>What it honestly costs</h2>
+  <p>Capturing and unpacking documents, and converting them to text, is mechanical work a computer
+  does — no per-document judgment call required. Sorting the suspect pile from the right-document
+  check is bulk classification work, but the required independent re-check of at least one in ten
+  of those calls takes real reviewer time and cannot be skipped. Any judgment call that changes the
+  registry's own structure — a new government level, a new document category — is logged as a
+  dated, versioned change, not a silent edit.</p>
+  <p>As one data point: in a single working session, we recovered and matched over 99% of a batch
+  of roughly 2,750 previously-uncertain files, sorted the suspect pile into eight review batches,
+  and captured 160 pieces of underlying legislation the same day. That's one precedent, from one
+  session — not a promise about how fast the next batch will go.</p>
+  <p>Day to day attention required is low for the mechanical steps. It rises sharply the moment a
+  document gets flagged "possible wrong document," or when the registry's own categories need to
+  widen — those are the moments a person has to look and decide, by design.</p>
+
+  <h2>Known limits</h2>
+  <p>The "at least one in ten" independent re-check is a working convention, not yet written as a
+  formal rule with a defined next step if the re-checker disagrees with the original sort. When
+  several copies of what looks like the same document turn up, we don't yet have a written rule for
+  which copy becomes the one of record. The path for documents that turn out to be low-quality
+  scans — needing real optical character recognition and, for the worst cases, a human read-through
+  — has a known destination but no written trigger for when that extra step kicks in versus waits.
+  And when a document is confirmed captured but the underlying file can't be found locally, that's
+  tracked on a running list rather than resolved as a one-time sweep — it's ongoing work, not a
+  finished project.</p>
+
+  <h2>What stays internal, and why</h2>
+  <p>The actual archive — the stored files, their text conversions, and the internal indexes that
+  track them — is working storage, not a published dataset: it isn't part of the public site and
+  isn't linked from it. This page describes the three-layer rule that governs it, not the storage
+  scheme itself. Likewise, in-progress reconciliation work — sorting out duplicate or uncertain
+  entries before they're resolved — is internal working material, not something we publish
+  mid-process. If you're building this in your own municipality, what you need is the three-layer
+  law itself (proof it existed, the file, the readable text, plus the right-document check) — not
+  our internal file-naming or storage details, which are ours to manage and not part of the method
+  you'd copy.</p>
+
+  <p>Every entry in the Government Atlas that cites a document links back to this discipline. If a
+  document is flagged as a possible mismatch, you'll see the flag right on the registry row that
+  cites it — we'd rather show you an open question than a false confidence.</p>
+
+  <p>Want to run this in your own municipality? Start here: <a href="index.html">Run this in your
+  municipality</a>. See how we check other kinds of claims across the whole site:
+  <a href="/how-we-verify.html">How we verify</a>.</p>
+
+  <p>&mdash; The Unknown Soldier &middot; uniteTOlove &middot; Toronto</p>
+</main>
+
+<footer class="site-footer">
+<nav aria-label="Footer">
+<div class="footer-cols">
+<section class="footer-col">
+<h2>Start here</h2>
+<ul>
+<li><a href="/join.html">Join the conversation</a></li>
+<li><a href="/now.html">Next actions</a></li>
+<li><a href="/find.html">Find &mdash; search this site</a></li>
+<li><a href="/kits/">The Kits</a></li>
+<li><a href="/harvest.html">The Harvest</a></li>
+<li><a href="/invite-me.html">Invite me into your room</a></li>
+<li><a href="/civic-hour.html">The Civic Hour</a></li>
+<li><a href="https://github.com/unitetolove/commons">Code &amp; data</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>The vision</h2>
+<ul>
+<li><a href="/vision.html">The full vision</a></li>
+<li><a href="/plan/">The plan &mdash; one year, all-out</a></li>
+<li><a href="/plan/covenant.html">The sprint covenant</a></li>
+<li><a href="/strategy.html">The strategy</a></li>
+<li><a href="/who.html">Who is the Unknown Soldier</a></li>
+<li><a href="/constitution.html">Our constitution</a></li>
+<li><a href="/permanent-culture.html">Permanent Culture 3.0</a></li>
+<li><a href="/futures/">The Futures Library</a></li>
+<li><a href="/research-agenda.html">What we&rsquo;re researching next</a></li>
+<li><a href="/vision/organizations.html">For organizations</a></li>
+<li><a href="/vision/candidates.html">For candidates</a></li>
+<li><a href="/vision/newcomers.html">For newcomers</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>The library</h2>
+<ul>
+<li><a href="/library.html">Backgrounders &amp; briefs</a></li>
+<li><a href="/map/">The Map &mdash; by issue</a></li>
+<li><a href="/projects/index.html">By project</a></li>
+<li><a href="/whats-built.html">What&rsquo;s built, and what&rsquo;s coming</a></li>
+<li><a href="/wiki/">The Wiki</a></li>
+<li><a href="/category-explainers/">Explainers</a></li>
+<li><a href="/programs/index.html">The Programs</a></li>
+<li><a href="/questions/index.html">Candidate questions</a></li>
+<li><a href="/guides/">Free Toronto guides</a></li>
+<li><a href="/transit/">Why can&rsquo;t Toronto move?</a></li>
+<li><a href="/free-toronto.html">Free Toronto Resource Atlas</a></li>
+<li><a href="/open-data.html">Open data</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>Registries &amp; tools</h2>
+<ul>
+<li><a href="/gov-atlas/index.html">The Government Atlas</a></li>
+<li><a href="/elections/">State of the Election</a></li>
+<li><a href="/elections/wards/">Ward math cards</a></li>
+<li><a href="/run/index.html">So you&rsquo;re thinking of running</a></li>
+<li><a href="/turnout.html">How to vote</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>How to trust this</h2>
+<ul>
+<li><a href="/how-this-was-made.html">How this was made</a></li>
+<li><a href="/how-we-verify.html">How we verify</a></li>
+<li><a href="/corrections.html">Corrections &amp; improvements</a></li>
+<li><a href="/press.html">Press kit</a></li>
+<li><a href="/sitemap.html">Sitemap &mdash; every page</a></li>
+</ul>
+</section>
+</div>
+</nav>
+<p><a class="improve-mail" href="mailto:unknownsoldier@unitetolove.ca?subject=Improvement%3A&amp;body=Page%20link%20%28paste%20it%20here%29%3A%0A%0AWhat%20I%20noticed%20or%20suggest%3A%0A">&#9999;&#65039; Suggest an improvement</a> &mdash; corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+<script>(function(){var s='Improvement: '+location.pathname;var b='Page link: '+location.href+'\n\nWhat I noticed or suggest:\n\nCredit me as (optional):\n';var h='mailto:unknownsoldier@unitetolove.ca?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);var l=document.querySelectorAll('a.improve-mail');for(var i=0;i<l.length;i++){l[i].href=h;}})();</script>
+<p>The Unknown Soldier &middot; uniteTOlove &middot; Toronto</p>
+  <p class="ethic">Post only where you have the right to post.</p>
+  <p>This site is built with AI assistance &mdash; every claim carries a receipt regardless of who
+  drafted it. Read how: <a href="/how-this-was-made.html">How this was made</a>.</p>
+  <p>No donations are asked for anywhere on this site. Contact:
+  <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a> &mdash;
+  corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+</footer>
+</body>
+</html>

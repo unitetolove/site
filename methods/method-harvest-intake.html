@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Method: The harvest — collecting what residents actually say — uniteTOlove</title>
+<meta name="description" content="How we collect short-form public input — visions, complaints, nominations, and expert opinions — without ever making personal data part of our public record.">
+<link rel="stylesheet" href="../style.css">
+<link rel="canonical" href="https://unitetolove.ca/methods/method-harvest-intake.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://unitetolove.ca/methods/method-harvest-intake.html">
+<meta property="og:title" content="Method: The harvest — collecting what residents actually say — uniteTOlove">
+<meta property="og:description" content="How we collect short-form public input — visions, complaints, nominations, and expert opinions — without ever making personal data part of our public record.">
+<script defer src="../assets/analytics.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+<div class="header-inner">
+<a class="wordmark-link" href="/index.html">unite<span class="to">TO</span>love<span class="tld">.ca</span></a>
+<nav class="primary-nav" aria-label="Primary">
+<ul>
+<li><a href="/join.html">Start</a></li>
+<li><a href="/now.html">Now</a></li>
+<li><a href="/vision.html">Vision</a></li>
+<li><a href="/plan/">Plan</a></li>
+<li><a href="/kits/">Kits</a></li>
+<li><a href="/library.html">Library</a></li>
+<li><a href="/elections/">Elections</a></li>
+<li><a href="/gov-atlas/index.html">Gov Atlas</a></li>
+<li><a href="/run/index.html">Run</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<nav class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Run this in your municipality</a> / Method: The harvest — collecting what residents actually say</nav>
+
+<main id="main">
+  <h1>Method: The harvest — collecting what residents actually say</h1>
+
+  <p class="lede">Before you can represent what a community wants, you have to actually ask it —
+  and ask in a way people trust enough to answer honestly. The harvest is how we collect
+  short, real input from residents: one-line visions, complaints, nominations, and longer
+  expert opinions, in person and online, without turning anyone&rsquo;s private words into a
+  liability for them or for us.</p>
+
+  <h2>What it produces</h2>
+  <p>A growing body of first-person public input, held in one place built specifically to hold
+  it &mdash; never mixed with any list of verified real names or contact identities we hold
+  elsewhere. What&rsquo;s counted publicly is aggregate: how many contributions, how many
+  group conversations, published honestly rather than inflated. Individual submissions are never
+  the public-facing artifact; the patterns and the aggregate counts are.</p>
+
+  <h2>How it works, step by step</h2>
+  <ol>
+    <li><strong>Someone has to be responsible for the data before collection starts.</strong>
+    Nothing is collected until a real, named person is accountable for how submissions are
+    handled &mdash; that&rsquo;s decided before the first form goes live, not after.</li>
+    <li><strong>Public input lives in its own dedicated place.</strong> The harvest is kept
+    entirely separate from any list of verified supporters or contacts. Mixing an anonymous
+    complaint with a verified identity, even by accident of storage, is exactly the kind of harm
+    this separation exists to prevent.</li>
+    <li><strong>Two ways in.</strong> A short web form takes one-line input directly online.
+    A paper-sheet path lets someone collect input at an in-person event on paper, then enter it
+    digitally afterward &mdash; a photo of the sheet is used only to transcribe it, then deleted.</li>
+    <li><strong>A quick form for a quick thought.</strong> The default ask is short on purpose:
+    a vision, a complaint, or a nomination in a line or two, so the bar to contribute is low.</li>
+    <li><strong>A deeper door for those who want to say more.</strong> Anyone with a longer
+    expert opinion, a research link, or a fuller statement about the future can go further in —
+    that contribution is clearly labeled as such at the moment it&rsquo;s made, not relabeled
+    later.</li>
+    <li><strong>Group conversations count as themselves.</strong> An in-person conversation with
+    a real headcount is logged as a room, distinct from a single online submission, so we don&rsquo;t
+    conflate one voice with a room full of them.</li>
+    <li><strong>Counts are published honestly, or not at all.</strong> The public count of
+    conversations and submissions is held at an honest zero until the threshold for what counts
+    as a genuine group conversation is actually set — we do not round up or estimate to make an
+    early number look more impressive than it is.</li>
+    <li><strong>A regular, encrypted handoff to the one accountable person.</strong> On a set
+    schedule, the accumulated data is bundled, encrypted so only the accountable custodian can
+    open it, and handed off. Nothing about this handoff runs automatically without someone
+    choosing to run it.</li>
+    <li><strong>Anyone can ask to be deleted.</strong> A contributor can request their own
+    submission be removed at any time, and that path has been tested against the real system,
+    not just assumed to work.</li>
+  </ol>
+
+  <h2>How it's checked</h2>
+  <p>Here, the privacy architecture <em>is</em> the method — not a bolt-on, the actual audit
+  surface a challenger should look at. Consent is recorded in an append-only way: once logged, a
+  consent record cannot be quietly edited or deleted later, only added to through the
+  proper withdrawal path — and this is enforced at the database level, not just by staff
+  discipline or a policy that could be skipped under pressure.</p>
+  <p>In any classroom or youth setting, a minor&rsquo;s submission is anonymous by default —
+  the system is built to refuse to store a child&rsquo;s email address at all, under any mode,
+  enforced the same hard way as the consent rule. Only a parent&rsquo;s or teacher&rsquo;s
+  contact might exist, and only where a receipt path makes sense.</p>
+  <p>Personal data never enters our public repository or our general working files. The place
+  that holds submitted content is a single, dedicated store built for exactly this purpose —
+  nowhere else in our systems keeps a copy of what someone actually wrote. And deletion is
+  honored: a self-serve request removes a submission, and that path has been tested against the
+  real system twice, once against a simulated version and once against the real thing, because a
+  simulation only ever proves what its author remembered to imagine.</p>
+
+  <h2>What it honestly costs</h2>
+  <p>Building the intake system itself — the form, the paper-to-digital path, the group-room
+  mode, the deeper door for longer input, the counting logic, the export and delete tools — ran
+  as one connected build effort, not scattered across many separate passes. Beyond the build,
+  what it costs on an ongoing basis is attention: a real decision about who the accountable data
+  custodian is, deliberate handling of any sensitive configuration (never handled casually), and
+  a standing decision about when a count of conversations is genuine enough to publish. None of
+  that is free, and none of it is optional if you want people to actually trust you with their
+  words.</p>
+
+  <h2>Known limits</h2>
+  <p>Said plainly, because this is the section where honesty matters most: most of this system
+  has been tested against a realistic, fully simulated version of itself — including the
+  encrypted handoff to the accountable custodian — but not yet against a live custodian&rsquo;s
+  real encryption key, because that requires a real custodian relationship at the other end
+  first. The receipt-sending path — a confirmation message back to someone who leaves an email —
+  is currently a placeholder that doesn&rsquo;t yet send anything; the promise it makes (a
+  one-click way to stop future contact) is proven, but the sending mechanism itself is not wired
+  up yet. And the rule for what counts as a genuine online group conversation, as opposed to a
+  single submission, hasn&rsquo;t been defined yet — it&rsquo;s deliberately left at zero rather
+  than guessed at. None of these gaps are hidden; they&rsquo;re named here so anyone relying on
+  this method knows exactly where the proven ground ends.</p>
+
+  <h2>What stays internal, and why</h2>
+  <p>The accountable custodian&rsquo;s specific handling procedures once data leaves our system,
+  and the technical configuration of exactly how the intake tool is built and hosted, stay
+  internal — a reader doesn&rsquo;t need those details to trust the promise, and publishing them
+  would only make the system easier to abuse, not easier to audit. What matters publicly is the
+  architecture described above, and that promise holds regardless of which tools sit behind it.
+  The one rule that never bends: personal data does not belong in a public repository, and it
+  never will.</p>
+
+  <p>Want to build this for your own community? Start here: <a href="index.html">Run this in
+  your municipality</a>. Curious how we decide anything is true before we publish it at all?
+  Read <a href="/how-we-verify.html">How we verify</a>.</p>
+
+  <p>&mdash; The Unknown Soldier &middot; uniteTOlove &middot; Toronto</p>
+</main>
+
+<footer class="site-footer">
+<nav aria-label="Footer">
+<div class="footer-cols">
+<section class="footer-col">
+<h2>Start here</h2>
+<ul>
+<li><a href="/join.html">Join the conversation</a></li>
+<li><a href="/now.html">Next actions</a></li>
+<li><a href="/find.html">Find &mdash; search this site</a></li>
+<li><a href="/kits/">The Kits</a></li>
+<li><a href="/harvest.html">The Harvest</a></li>
+<li><a href="/invite-me.html">Invite me into your room</a></li>
+<li><a href="/civic-hour.html">The Civic Hour</a></li>
+<li><a href="https://github.com/unitetolove/commons">Code &amp; data</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>The vision</h2>
+<ul>
+<li><a href="/vision.html">The full vision</a></li>
+<li><a href="/plan/">The plan &mdash; one year, all-out</a></li>
+<li><a href="/plan/covenant.html">The sprint covenant</a></li>
+<li><a href="/strategy.html">The strategy</a></li>
+<li><a href="/who.html">Who is the Unknown Soldier</a></li>
+<li><a href="/constitution.html">Our constitution</a></li>
+<li><a href="/permanent-culture.html">Permanent Culture 3.0</a></li>
+<li><a href="/futures/">The Futures Library</a></li>
+<li><a href="/research-agenda.html">What we&rsquo;re researching next</a></li>
+<li><a href="/vision/organizations.html">For organizations</a></li>
+<li><a href="/vision/candidates.html">For candidates</a></li>
+<li><a href="/vision/newcomers.html">For newcomers</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>The library</h2>
+<ul>
+<li><a href="/library.html">Backgrounders &amp; briefs</a></li>
+<li><a href="/map/">The Map &mdash; by issue</a></li>
+<li><a href="/projects/index.html">By project</a></li>
+<li><a href="/whats-built.html">What&rsquo;s built, and what&rsquo;s coming</a></li>
+<li><a href="/wiki/">The Wiki</a></li>
+<li><a href="/category-explainers/">Explainers</a></li>
+<li><a href="/programs/index.html">The Programs</a></li>
+<li><a href="/questions/index.html">Candidate questions</a></li>
+<li><a href="/guides/">Free Toronto guides</a></li>
+<li><a href="/transit/">Why can&rsquo;t Toronto move?</a></li>
+<li><a href="/free-toronto.html">Free Toronto Resource Atlas</a></li>
+<li><a href="/open-data.html">Open data</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>Registries &amp; tools</h2>
+<ul>
+<li><a href="/gov-atlas/index.html">The Government Atlas</a></li>
+<li><a href="/elections/">State of the Election</a></li>
+<li><a href="/elections/wards/">Ward math cards</a></li>
+<li><a href="/run/index.html">So you&rsquo;re thinking of running</a></li>
+<li><a href="/turnout.html">How to vote</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>How to trust this</h2>
+<ul>
+<li><a href="/how-this-was-made.html">How this was made</a></li>
+<li><a href="/how-we-verify.html">How we verify</a></li>
+<li><a href="/corrections.html">Corrections &amp; improvements</a></li>
+<li><a href="/press.html">Press kit</a></li>
+<li><a href="/sitemap.html">Sitemap &mdash; every page</a></li>
+</ul>
+</section>
+</div>
+</nav>
+<p><a class="improve-mail" href="mailto:unknownsoldier@unitetolove.ca?subject=Improvement%3A&amp;body=Page%20link%20%28paste%20it%20here%29%3A%0A%0AWhat%20I%20noticed%20or%20suggest%3A%0A">&#9999;&#65039; Suggest an improvement</a> &mdash; corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+<script>(function(){var s='Improvement: '+location.pathname;var b='Page link: '+location.href+'\n\nWhat I noticed or suggest:\n\nCredit me as (optional):\n';var h='mailto:unknownsoldier@unitetolove.ca?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);var l=document.querySelectorAll('a.improve-mail');for(var i=0;i<l.length;i++){l[i].href=h;}})();</script>
+<p>The Unknown Soldier &middot; uniteTOlove &middot; Toronto</p>
+  <p class="ethic">Post only where you have the right to post.</p>
+  <p>This site is built with AI assistance &mdash; every claim carries a receipt regardless of who
+  drafted it. Read how: <a href="/how-this-was-made.html">How this was made</a>.</p>
+  <p>No donations are asked for anywhere on this site. Contact:
+  <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a> &mdash;
+  corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+</footer>
+</body>
+</html>
