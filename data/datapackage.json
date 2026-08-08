@@ -1,0 +1,366 @@
+{
+  "name": "unitetolove-open-data",
+  "title": "uniteTOlove open data",
+  "description": "The cleaned civic datasets behind unitetolove.ca — Ontario population, municipal finances, rental markets, homelessness counts, collisions, and municipal council resolutions.",
+  "homepage": "https://unitetolove.ca/open-data.html",
+  "licenses": [
+    {
+      "name": "pending",
+      "title": "License being finalized — see homepage."
+    }
+  ],
+  "resources": [
+    {
+      "name": "ontario_cd_population_2001-2025.csv",
+      "title": "Ontario population by census division, 2001–2025",
+      "path": "data/ontario_cd_population_2001-2025.csv",
+      "format": "csv",
+      "encoding": "utf-8",
+      "rowCount": 1225,
+      "schema": {
+        "fields": [
+          {
+            "name": "sgc_code",
+            "type": "string",
+            "description": "Statistics Canada SGC 2021 code. PR=2 digits, CD=4 digits, CSD=7 digits, zero-padded, stored as text."
+          },
+          {
+            "name": "geo_name",
+            "type": "string",
+            "description": "Official SGC name, e.g. \"Toronto\", \"Wellington County\", \"Ontario\"."
+          },
+          {
+            "name": "geo_level",
+            "type": "string",
+            "description": "PR | CD | CSD."
+          },
+          {
+            "name": "period",
+            "type": "string",
+            "description": "ISO date or year for point-in-time; YYYY for annual; YYYY-MM for monthly (CMHC)."
+          },
+          {
+            "name": "metric",
+            "type": "string",
+            "description": "Controlled vocabulary, per source family."
+          },
+          {
+            "name": "value",
+            "type": "string",
+            "description": "Raw value, no derived ratios computed at ingest."
+          },
+          {
+            "name": "unit",
+            "type": "string",
+            "description": "e.g. count, CAD, percent, dollars_per_month."
+          },
+          {
+            "name": "source_res_id",
+            "type": "string",
+            "description": "Pointer to the RES- registry row documenting exact download, SHA-256, retrieval method."
+          },
+          {
+            "name": "retrieved_date",
+            "type": "string",
+            "description": "When this row's underlying file was actually fetched."
+          }
+        ]
+      }
+    },
+    {
+      "name": "fin_fir_2024.csv",
+      "title": "Municipal finances — Ontario Financial Information Return, 2024",
+      "path": "data/fin_fir_2024.csv",
+      "format": "csv",
+      "encoding": "utf-8",
+      "rowCount": 804,
+      "schema": {
+        "fields": [
+          {
+            "name": "sgc_code",
+            "type": "string",
+            "description": "Statistics Canada SGC 2021 code. PR=2 digits, CD=4 digits, CSD=7 digits, zero-padded, stored as text."
+          },
+          {
+            "name": "geo_name",
+            "type": "string",
+            "description": "Official SGC name, e.g. \"Toronto\", \"Wellington County\", \"Ontario\"."
+          },
+          {
+            "name": "geo_level",
+            "type": "string",
+            "description": "PR | CD | CSD."
+          },
+          {
+            "name": "period",
+            "type": "string",
+            "description": "ISO date or year for point-in-time; YYYY for annual; YYYY-MM for monthly (CMHC)."
+          },
+          {
+            "name": "metric",
+            "type": "string",
+            "description": "Controlled vocabulary, per source family."
+          },
+          {
+            "name": "value",
+            "type": "string",
+            "description": "Raw value, no derived ratios computed at ingest."
+          },
+          {
+            "name": "unit",
+            "type": "string",
+            "description": "e.g. count, CAD, percent, dollars_per_month."
+          },
+          {
+            "name": "source_res_id",
+            "type": "string",
+            "description": "Pointer to the RES- registry row documenting exact download, SHA-256, retrieval method."
+          },
+          {
+            "name": "retrieved_date",
+            "type": "string",
+            "description": "When this row's underlying file was actually fetched."
+          }
+        ]
+      }
+    },
+    {
+      "name": "housing_cmhc_2025-10.csv",
+      "title": "Rental market — CMHC, October 2025",
+      "path": "data/housing_cmhc_2025-10.csv",
+      "format": "csv",
+      "encoding": "utf-8",
+      "rowCount": 42,
+      "schema": {
+        "fields": [
+          {
+            "name": "sgc_code",
+            "type": "string",
+            "description": "Statistics Canada SGC 2021 code. PR=2 digits, CD=4 digits, CSD=7 digits, zero-padded, stored as text."
+          },
+          {
+            "name": "geo_name",
+            "type": "string",
+            "description": "Official SGC name, e.g. \"Toronto\", \"Wellington County\", \"Ontario\"."
+          },
+          {
+            "name": "geo_level",
+            "type": "string",
+            "description": "PR | CD | CSD."
+          },
+          {
+            "name": "period",
+            "type": "string",
+            "description": "ISO date or year for point-in-time; YYYY for annual; YYYY-MM for monthly (CMHC)."
+          },
+          {
+            "name": "metric",
+            "type": "string",
+            "description": "Controlled vocabulary, per source family."
+          },
+          {
+            "name": "value",
+            "type": "string",
+            "description": "Raw value, no derived ratios computed at ingest."
+          },
+          {
+            "name": "unit",
+            "type": "string",
+            "description": "e.g. count, CAD, percent, dollars_per_month."
+          },
+          {
+            "name": "source_res_id",
+            "type": "string",
+            "description": "Pointer to the RES- registry row documenting exact download, SHA-256, retrieval method."
+          },
+          {
+            "name": "retrieved_date",
+            "type": "string",
+            "description": "When this row's underlying file was actually fetched."
+          },
+          {
+            "name": "proxy_note",
+            "type": "string",
+            "description": "Set when the reported geography does not map cleanly to one CSD/CD (e.g. a multi-municipality CMHC region) -- explains the substitution made."
+          },
+          {
+            "name": "quality_flag",
+            "type": "string",
+            "description": "Set when a value needed a documented adjustment or carries a known caveat."
+          }
+        ]
+      }
+    },
+    {
+      "name": "housing_pit_2024.csv",
+      "title": "Homelessness point-in-time counts, 2024",
+      "path": "data/housing_pit_2024.csv",
+      "format": "csv",
+      "encoding": "utf-8",
+      "rowCount": 15,
+      "schema": {
+        "fields": [
+          {
+            "name": "sgc_code",
+            "type": "string",
+            "description": "Statistics Canada SGC 2021 code. PR=2 digits, CD=4 digits, CSD=7 digits, zero-padded, stored as text."
+          },
+          {
+            "name": "geo_name",
+            "type": "string",
+            "description": "Official SGC name, e.g. \"Toronto\", \"Wellington County\", \"Ontario\"."
+          },
+          {
+            "name": "geo_level",
+            "type": "string",
+            "description": "PR | CD | CSD."
+          },
+          {
+            "name": "period",
+            "type": "string",
+            "description": "ISO date or year for point-in-time; YYYY for annual; YYYY-MM for monthly (CMHC)."
+          },
+          {
+            "name": "metric",
+            "type": "string",
+            "description": "Controlled vocabulary, per source family."
+          },
+          {
+            "name": "value",
+            "type": "string",
+            "description": "Raw value, no derived ratios computed at ingest."
+          },
+          {
+            "name": "unit",
+            "type": "string",
+            "description": "e.g. count, CAD, percent, dollars_per_month."
+          },
+          {
+            "name": "source_res_id",
+            "type": "string",
+            "description": "Pointer to the RES- registry row documenting exact download, SHA-256, retrieval method."
+          },
+          {
+            "name": "retrieved_date",
+            "type": "string",
+            "description": "When this row's underlying file was actually fetched."
+          },
+          {
+            "name": "notes",
+            "type": "string",
+            "description": "Free-text caveat for this row, where one applies."
+          }
+        ]
+      }
+    },
+    {
+      "name": "police_collisions.csv",
+      "title": "Police-reported collisions",
+      "path": "data/police_collisions.csv",
+      "format": "csv",
+      "encoding": "utf-8",
+      "rowCount": 20,
+      "schema": {
+        "fields": [
+          {
+            "name": "sgc_code",
+            "type": "string",
+            "description": "Statistics Canada SGC 2021 code. PR=2 digits, CD=4 digits, CSD=7 digits, zero-padded, stored as text."
+          },
+          {
+            "name": "geo_name",
+            "type": "string",
+            "description": "Official SGC name, e.g. \"Toronto\", \"Wellington County\", \"Ontario\"."
+          },
+          {
+            "name": "geo_level",
+            "type": "string",
+            "description": "PR | CD | CSD."
+          },
+          {
+            "name": "period",
+            "type": "string",
+            "description": "ISO date or year for point-in-time; YYYY for annual; YYYY-MM for monthly (CMHC)."
+          },
+          {
+            "name": "metric",
+            "type": "string",
+            "description": "Controlled vocabulary, per source family."
+          },
+          {
+            "name": "value",
+            "type": "string",
+            "description": "Raw value, no derived ratios computed at ingest."
+          },
+          {
+            "name": "unit",
+            "type": "string",
+            "description": "e.g. count, CAD, percent, dollars_per_month."
+          },
+          {
+            "name": "source_res_id",
+            "type": "string",
+            "description": "Pointer to the RES- registry row documenting exact download, SHA-256, retrieval method."
+          },
+          {
+            "name": "retrieved_date",
+            "type": "string",
+            "description": "When this row's underlying file was actually fetched."
+          }
+        ]
+      }
+    },
+    {
+      "name": "municipal_asks.csv",
+      "title": "Municipal council asks to the province and federal government",
+      "path": "data/municipal_asks.csv",
+      "format": "csv",
+      "encoding": "utf-8",
+      "rowCount": 81,
+      "schema": {
+        "fields": [
+          {
+            "name": "municipality",
+            "type": "string",
+            "description": "The municipality making the ask."
+          },
+          {
+            "name": "sgc_code",
+            "type": "string",
+            "description": "Statistics Canada SGC 2021 code for the municipality."
+          },
+          {
+            "name": "issue_slug",
+            "type": "string",
+            "description": "The issue this ask belongs to, matching this site's issue taxonomy."
+          },
+          {
+            "name": "resolution_date",
+            "type": "string",
+            "description": "Date the council resolution or ask was recorded."
+          },
+          {
+            "name": "ask_summary",
+            "type": "string",
+            "description": "Plain-language summary of what was asked for."
+          },
+          {
+            "name": "addressee_institution",
+            "type": "string",
+            "description": "Which government the ask was directed at (provincial/federal)."
+          },
+          {
+            "name": "source_url",
+            "type": "string",
+            "description": "Primary source for this ask."
+          },
+          {
+            "name": "tier",
+            "type": "string",
+            "description": "Verification tier for this row."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+# uniteTOlove
+
+> A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data. Published under the byline The Unknown Soldier. No donations asked for anywhere.
+
+This file follows the llms.txt convention (llmstxt.org). It points AI agents and assistants at the cleanest sources first: raw markdown in the public source repo, then the live site's own key pages. A fuller index is at [llms-full.txt](https://unitetolove.ca/llms-full.txt).
+
+## Source (cleanest text)
+
+- [https://unitetolove.ca/commons.html](https://unitetolove.ca/commons.html): A map of what's in the commons repo, for builders and agents.
+- [https://github.com/unitetolove/commons](https://github.com/unitetolove/commons): The commons repo — the public mirror in source form: sealed research markdown, cleaned datasets, frameworks, docs. Start here for raw text, not HTML.
+- [https://raw.githubusercontent.com/unitetolove/commons/main/README.md](https://raw.githubusercontent.com/unitetolove/commons/main/README.md): What's in the repo and what's coming.
+- [https://raw.githubusercontent.com/unitetolove/commons/main/docs/methodology.md](https://raw.githubusercontent.com/unitetolove/commons/main/docs/methodology.md): How claims are sourced and verified.
+- [https://raw.githubusercontent.com/unitetolove/commons/main/docs/ai-disclosure.md](https://raw.githubusercontent.com/unitetolove/commons/main/docs/ai-disclosure.md): How AI assistance is used and disclosed.
+- [https://raw.githubusercontent.com/unitetolove/commons/main/docs/corrections-policy.md](https://raw.githubusercontent.com/unitetolove/commons/main/docs/corrections-policy.md): How corrections are handled.
+- [https://github.com/unitetolove/commons/tree/main/research](https://github.com/unitetolove/commons/tree/main/research): Sealed research markdown: wiki, briefs, explainers, discussion guides, state-of-the-election, transit, questions.
+- [https://github.com/unitetolove/commons/tree/main/data](https://github.com/unitetolove/commons/tree/main/data): Cleaned civic datasets, schema included.
+- [https://github.com/unitetolove/commons/tree/main/frameworks](https://github.com/unitetolove/commons/tree/main/frameworks): Permanent Culture and the Toronto mobilization framework, public-principles tier.
+- [https://github.com/unitetolove/commons/tree/main/guides](https://github.com/unitetolove/commons/tree/main/guides): The Free Toronto resource guides, sealed families.
+
+## Key pages (live site)
+
+- [Start](https://unitetolove.ca/join.html): Sign up for updates; nothing to join, nothing for sale.
+- [Now](https://unitetolove.ca/now.html): The next-actions ladder.
+- [Vision](https://unitetolove.ca/vision.html): The full vision.
+- [Plan](https://unitetolove.ca/plan/): The one-year sprint plan.
+- [Kits](https://unitetolove.ca/kits/): Practical action kits.
+- [Library](https://unitetolove.ca/library.html): Backgrounders & briefs index.
+- [Elections](https://unitetolove.ca/elections/): The 2026 Toronto municipal election, biweekly editions.
+- [Gov Atlas](https://unitetolove.ca/gov-atlas/index.html): Registry of government & broader-public-sector organizations.
+- [Run](https://unitetolove.ca/run/index.html): Candidate starter kit — every municipality, the deadline, the cost.
+
+## Machine surfaces
+
+- [Sitemap (XML)](https://unitetolove.ca/sitemap.xml)
+- [robots.txt](https://unitetolove.ca/robots.txt)
+- [Open data](https://unitetolove.ca/open-data.html): CSVs with schema + provenance.
+
+## How to trust this
+
+- [How this was made](https://unitetolove.ca/how-this-was-made.html): How this was made.
+- [How we verify](https://unitetolove.ca/how-we-verify.html): How we verify.
+- [Corrections & improvements](https://unitetolove.ca/corrections.html): Corrections & improvements.
+- [Press kit](https://unitetolove.ca/press.html)
+- [Sitemap — every page](https://unitetolove.ca/sitemap.html): Every page, by door.
