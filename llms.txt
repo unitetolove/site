@@ -21,6 +21,7 @@ This file follows the llms.txt convention (llmstxt.org). It points AI agents and
 
 - [Start](https://unitetolove.ca/join.html): Sign up for updates; nothing to join, nothing for sale.
 - [Now](https://unitetolove.ca/now.html): The next-actions ladder.
+- [Start here](https://unitetolove.ca/strategy/start-here.html)
 - [Vision](https://unitetolove.ca/vision.html): The full vision.
 - [Plan](https://unitetolove.ca/plan/): The one-year sprint plan.
 - [Kits](https://unitetolove.ca/kits/): Practical action kits.

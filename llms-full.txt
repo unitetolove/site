@@ -23,7 +23,6 @@ This is a fuller INDEX, not the site's full text. Concatenating every rendered p
 - 453 candidate starter-kit pages (every Ontario municipality) — https://unitetolove.ca/run/
 - 146 issue briefs, one per jurisdiction slice — https://unitetolove.ca/briefs/
 - 145 recommendation cards — https://unitetolove.ca/cards/
-- 145 day-one packages — https://unitetolove.ca/dayone/
 - 13 wiki issue pages — https://unitetolove.ca/wiki/
 - 40 Free Toronto guide pages — https://unitetolove.ca/guides/
 - 29 transit report chapters — https://unitetolove.ca/transit/
@@ -46,6 +45,7 @@ This is a fuller INDEX, not the site's full text. Concatenating every rendered p
 
 ### The vision
 
+- [The whole strategy in one read](https://unitetolove.ca/strategy/start-here.html)
 - [The full vision](https://unitetolove.ca/vision.html): The full vision.
 - [The plan — one year, all-out](https://unitetolove.ca/plan/): The one-year sprint plan.
 - [The sprint covenant](https://unitetolove.ca/plan/covenant.html): The sprint covenant.
