@@ -1,0 +1,11 @@
+figure,value,denominator,source
+races total,"2,289",—,2026-08-10_ONTARIO_SOTE_FIGURES.md §1
+zero-candidate races,316,"2,289",receipt §2
+acclamation-track races,956,"2,289",receipt §2
+contested races,917,"2,289",receipt §2
+candidates on file,"4,751",—,receipt §1
+researched/dispositioned,"4,743","4,751",receipt §1 §10
+with campaign website,"1,267","4,743",receipt §3 + §11 reconciliation
+"SCORED platforms (v2.1, full-field completion)",416,"4,743",AGGREGATES_v21.md
+field with nothing readable (NPP+BROCHURE),"4,074 (85.9%)","4,743",AGGREGATES_v21.md
+exceptional page names,74,416 scored,"EXCEPTIONAL_SHORTLIST.csv, three gates"

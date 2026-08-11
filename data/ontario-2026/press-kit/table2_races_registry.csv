@@ -1,0 +1,2290 @@
+race_id,municipality,office,seats,candidates_registered
+ON-BD-adsb-trustee-red-rock,"Red Rock, Township of",trustee,1,1
+ON-BD-adsb-trustee-w01,"Sault Ste. Marie, City of",trustee,1,1
+ON-BD-adsb-trustee-w02,"Sault Ste. Marie, City of",trustee,1,2
+ON-BD-adsb-trustee-w03,"Sault Ste. Marie, City of",trustee,1,1
+ON-BD-adsb-trustee-w04,"Sault Ste. Marie, City of",trustee,1,1
+ON-BD-adsb-trustee-w05,"Sault Ste. Marie, City of",trustee,1,1
+ON-BD-alcdsb-trustee-bancroft-area,"Carlow/Mayo, Township of",trustee,1,1
+ON-BD-alcdsb-trustee-belleville,"Belleville, City of",trustee,2,2
+ON-BD-alcdsb-trustee-central-north-south-frontenac,"South Frontenac, Township of",trustee,1,0
+ON-BD-alcdsb-trustee-greater-napanee,"Greater Napanee, Town of",trustee,1,0
+ON-BD-alcdsb-trustee-greenstone-w1,"Greenstone, Municipality of",trustee,1,0
+ON-BD-alcdsb-trustee-greenstone-w2,"Greenstone, Municipality of",trustee,1,1
+ON-BD-alcdsb-trustee-loyalist,"Loyalist, Township of",trustee,1,0
+ON-BD-alcdsb-trustee-prince-edward,"Prince Edward, County of",trustee,1,0
+ON-BD-alcdsb-trustee-quinte-west,"Quinte West, City of",trustee,1,1
+ON-BD-alcdsb-trustee-red-rock,"Red Rock, Township of",trustee,1,1
+ON-BD-alcdsb-trustee-stone-mills,"Stone Mills, Township of",trustee,1,0
+ON-BD-amdsb-trustee-bluewater,"Bluewater, Municipality of",trustee,1,1
+ON-BD-amdsb-trustee-goderich,"Goderich, Town of",trustee,1,1
+ON-BD-amdsb-trustee-howick,"Howick, Township of",trustee,,1
+ON-BD-amdsb-trustee-morris-turnberry,"Morris-Turnberry, Municipality of",trustee,1,2
+ON-BD-amdsb-trustee-perth-east,"Perth East, Township of",trustee,1,0
+ON-BD-amdsb-trustee-stratford,"Stratford, City of",trustee,1,3
+ON-BD-amdsb-trustee-west-perth,"West Perth, Municipality of",trustee,2,2
+ON-BD-bgcdsb-trustee-arran-elderslie,"Arran-Elderslie, Municipality of",trustee,1,1
+ON-BD-bgcdsb-trustee-brockton-w3436,"Brockton, Municipality of",trustee,1,1
+ON-BD-bgcdsb-trustee-kincardine,"Kincardine, Municipality of",trustee,1,1
+ON-BD-bgcdsb-trustee-meaford,"Meaford, Municipality of",trustee,1,0
+ON-BD-bgcdsb-trustee-owen-sound-meaford-blue-mountains,"Owen Sound, City of",trustee,1,0
+ON-BD-bgcdsb-trustee-west-grey,"West Grey, Municipality of",trustee,1,1
+ON-BD-bhncdsb-trustee-brant,"Brant, County of",trustee,1,4
+ON-BD-bhncdsb-trustee-haldimand,Haldimand County,trustee,1,1
+ON-BD-bhncdsb-trustee-norfolk,Norfolk County,trustee,1,2
+ON-BD-bwdsb-trustee-arran-elderslie,"Arran-Elderslie, Municipality of",trustee,1,1
+ON-BD-bwdsb-trustee-brockton,"Brockton, Municipality of",trustee,1,1
+ON-BD-bwdsb-trustee-kincardine,"Kincardine, Municipality of",trustee,1,1
+ON-BD-bwdsb-trustee-meaford,"Meaford, Municipality of",trustee,1,1
+ON-BD-bwdsb-trustee-northern-bruce-peninsula,"Northern Bruce Peninsula, Municipality of",trustee,,0
+ON-BD-bwdsb-trustee-owen-sound,"Owen Sound, City of",trustee,1,0
+ON-BD-bwdsb-trustee-south-bruce-peninsula,"South Bruce Peninsula, Town of",trustee,1,0
+ON-BD-bwdsb-trustee-west-grey,"West Grey, Municipality of",trustee,1,1
+ON-BD-cdsbeo-trustee-alfred-and-plantagenet,"Alfred and Plantagenet, Township of",trustee,1,0
+ON-BD-cdsbeo-trustee-brockville,"Brockville, City of",trustee,1,0
+ON-BD-cdsbeo-trustee-champlain,"Champlain, Township of",trustee,1,0
+ON-BD-cdsbeo-trustee-clarence-rockland,"Clarence-Rockland, City of",trustee,1,0
+ON-BD-cdsbeo-trustee-cornwall,"Cornwall, City of",trustee,,3
+ON-BD-cdsbeo-trustee-east-hawkesbury,"East Hawkesbury, Township of",trustee,1,0
+ON-BD-cdsbeo-trustee-montague,"Montague, Township of",trustee,,1
+ON-BD-cdsbeo-trustee-north-dundas,"North Dundas, Township of",trustee,1,1
+ON-BD-cdsbeo-trustee-north-grenville-area,"North Grenville, Municipality of",trustee,1,1
+ON-BD-cdsbeo-trustee-prescott,"Prescott, Town of",trustee,,0
+ON-BD-cdsbeo-trustee-rideau-lakes,"Rideau Lakes, Township of",trustee,1,0
+ON-BD-cdsbeo-trustee-russell,"Russell, Township of",trustee,1,0
+ON-BD-cdsbeo-trustee-south-glengarry,"South Glengarry, Township of",trustee,1,3
+ON-BD-cecce-trustee-bancroft-area,"Carlow/Mayo, Township of",trustee,1,1
+ON-BD-cepeo-trustee-alfred-and-plantagenet,"Alfred and Plantagenet, Township of",trustee,1,0
+ON-BD-cepeo-trustee-champlain,"Champlain, Township of",trustee,1,0
+ON-BD-cepeo-trustee-clarence-rockland,"Clarence-Rockland, City of",trustee,1,1
+ON-BD-cepeo-trustee-cornwall,"Cornwall, City of",trustee,,1
+ON-BD-cepeo-trustee-deep-river,"Deep River, Town of",trustee,,0
+ON-BD-cepeo-trustee-east-hawkesbury,"East Hawkesbury, Township of",trustee,1,0
+ON-BD-cepeo-trustee-hastings-highlands,"Hastings Highlands, Municipality of",trustee,,0
+ON-BD-cepeo-trustee-hawkesbury,"Hawkesbury, Town of",trustee,1,0
+ON-BD-cepeo-trustee-highlands-east,"Highlands East, Municipality of",trustee,,1
+ON-BD-cepeo-trustee-pembroke,"Pembroke, City of",trustee,1,0
+ON-BD-cepeo-trustee-prescott,"Prescott, Town of",trustee,,0
+ON-BD-cepeo-trustee-prince-edward,"Prince Edward, County of",trustee,1,0
+ON-BD-cepeo-trustee-region-2,"South Frontenac, Township of",trustee,1,0
+ON-BD-cepeo-trustee-rideau-lakes,"Rideau Lakes, Township of",trustee,1,0
+ON-BD-cepeo-trustee-russell,"Russell, Township of",trustee,1,1
+ON-BD-cepeo-trustee-tay-valley,"Tay Valley, Township of",trustee,1,0
+ON-BD-cepeo-trustee-zone06,"Ottawa, City of",trustee,1,1
+ON-BD-cepeo-trustee-zone07,"Ottawa, City of",trustee,1,2
+ON-BD-cepeo-trustee-zone08,"Ottawa, City of",trustee,1,1
+ON-BD-cepeo-trustee-zone09,"Ottawa, City of",trustee,1,1
+ON-BD-cepeo-trustee-zone10,"Ottawa, City of",trustee,1,1
+ON-BD-cepeo-trustee-zone11,"Ottawa, City of",trustee,1,2
+ON-BD-cepeo-trustee-zone12,"Ottawa, City of",trustee,1,1
+ON-BD-cscdgr-trustee-kirkland-lake,"Kirkland Lake, Town of",trustee,1,1
+ON-BD-cscdgr-trustee-timmins,"Timmins, City of",trustee,1,1
+ON-BD-cscmonavenir-trustee-ajax,"Oshawa, City of",trustee,1,1
+ON-BD-cscmonavenir-trustee-brampton,"Brampton, City of",trustee,1,1
+ON-BD-cscmonavenir-trustee-grey-bruce,"Owen Sound, City of",trustee,1,0
+ON-BD-cscmonavenir-trustee-halton-hills,"Oakville, Town of",trustee,1,1
+ON-BD-cscmonavenir-trustee-hamilton-citywide,"Hamilton, City of",trustee,1,1
+ON-BD-cscmonavenir-trustee-king-vaughan,"Vaughan, City of",trustee,1,1
+ON-BD-cscmonavenir-trustee-midland,"Barrie, City of",trustee,1,4
+ON-BD-cscmonavenir-trustee-mississauga-citywide,"Mississauga, City of",trustee,1,1
+ON-BD-cscmonavenir-trustee-norfolk-haldimand,"Kitchener, City of",trustee,1,1
+ON-BD-cscmonavenir-trustee-st-thomas,"St. Thomas, City of",trustee,1,
+ON-BD-cscprovidence-trustee-brockton,"Brockton, Municipality of",trustee,1,0
+ON-BD-cscprovidence-trustee-essex-town,"Essex, Town of",trustee,1,1
+ON-BD-cscprovidence-trustee-goderich,"Goderich, Town of",trustee,1,0
+ON-BD-cscprovidence-trustee-hanover,"Hanover, Town of",trustee,1,0
+ON-BD-cscprovidence-trustee-huron-kinloss,"Huron-Kinloss, Township of",trustee,1,0
+ON-BD-cscprovidence-trustee-kincardine,"Kincardine, Municipality of",trustee,1,0
+ON-BD-cscprovidence-trustee-leamington,"Leamington, Municipality of",trustee,1,0
+ON-BD-cscprovidence-trustee-morris-turnberry,"Morris-Turnberry, Municipality of",trustee,1,0
+ON-BD-cscprovidence-trustee-northern-bruce-peninsula,"Northern Bruce Peninsula, Municipality of",trustee,,0
+ON-BD-cscprovidence-trustee-perth-east,"Perth East, Township of",trustee,1,0
+ON-BD-cscprovidence-trustee-perth-south,"Perth South, Township of",trustee,,0
+ON-BD-cscprovidence-trustee-point-edward,"Point Edward, Village of",trustee,1,0
+ON-BD-cscprovidence-trustee-sarnia,"Sarnia, City of",trustee,1,0
+ON-BD-cscprovidence-trustee-south-bruce-peninsula,"South Bruce Peninsula, Town of",trustee,1,0
+ON-BD-cscprovidence-trustee-stratford,"Stratford, City of",trustee,1,0
+ON-BD-cscprovidence-trustee-strathroy-caradoc,"Strathroy-Caradoc, Municipality of",trustee,1,0
+ON-BD-cscprovidence-trustee-tillsonburg,"Tillsonburg, Town of",trustee,1,0
+ON-BD-cscprovidence-trustee-w01-tecumseh-lasalle,"Windsor, City of",trustee,1,1
+ON-BD-cscprovidence-trustee-w02-w03-w04-w05-w10,"Windsor, City of",trustee,1,1
+ON-BD-cscprovidence-trustee-w06-w07-w08-w09,"Windsor, City of",trustee,1,1
+ON-BD-cscprovidence-trustee-warwick,"Warwick, Township of",trustee,1,0
+ON-BD-cscprovidence-trustee-west-perth,"West Perth, Municipality of",trustee,1,0
+ON-BD-csdcab-trustee-dryden,"Dryden, City of",trustee,1,1
+ON-BD-csdcab-trustee-kenora,"Kenora, City of",trustee,1,0
+ON-BD-csdcab-trustee-manitouwadge,"Manitouwadge, Township of",trustee,1,0
+ON-BD-csdcab-trustee-terrace-bay,"Terrace Bay, Township of",trustee,1,1
+ON-BD-csdcce-trustee-hastings-highlands,"Hastings Highlands, Municipality of",trustee,,1
+ON-BD-csdcce-trustee-north-glengarry,"North Glengarry, Township of",trustee,1,1
+ON-BD-csdcce-trustee-pembroke,"Pembroke, City of",trustee,1,1
+ON-BD-csdcce-trustee-prescott,"Prescott, Town of",trustee,,0
+ON-BD-csdcce-trustee-rideau-lakes,"Rideau Lakes, Township of",trustee,1,0
+ON-BD-csdcce-trustee-secteur2,"North Grenville, Municipality of",trustee,1,1
+ON-BD-csdcce-trustee-tay-valley,"Tay Valley, Township of",trustee,1,0
+ON-BD-csdcce-trustee-zone-1,"South Frontenac, Township of",trustee,1,1
+ON-BD-csdcce-trustee-zone04,"Ottawa, City of",trustee,1,1
+ON-BD-csdcce-trustee-zone05,"Ottawa, City of",trustee,1,1
+ON-BD-csdcce-trustee-zone06,"Ottawa, City of",trustee,1,2
+ON-BD-csdcce-trustee-zone07,"Ottawa, City of",trustee,1,2
+ON-BD-csdcce-trustee-zone08,"Ottawa, City of",trustee,1,1
+ON-BD-csdcce-trustee-zone09,"Ottawa, City of",trustee,1,1
+ON-BD-csdcce-trustee-zone10,"Ottawa, City of",trustee,1,1
+ON-BD-csdcce-trustee-zone11,"Ottawa, City of",trustee,1,1
+ON-BD-csdceo-trustee-alfred-and-plantagenet,"Alfred and Plantagenet, Township of",trustee,1,1
+ON-BD-csdceo-trustee-champlain,"Champlain, Township of",trustee,1,0
+ON-BD-csdceo-trustee-clarence-rockland,"Clarence-Rockland, City of",trustee,1,1
+ON-BD-csdceo-trustee-cornwall,"Cornwall, City of",trustee,,1
+ON-BD-csdceo-trustee-east-hawkesbury,"East Hawkesbury, Township of",trustee,1,0
+ON-BD-csdceo-trustee-hawkesbury,"Hawkesbury, Town of",trustee,1,1
+ON-BD-csdceo-trustee-north-dundas,"North Dundas, Township of",trustee,1,3
+ON-BD-csdceo-trustee-south-glengarry,"South Glengarry, Township of",trustee,1,1
+ON-BD-csdcfn-trustee-north-bay,"North Bay, City of",trustee,,0
+ON-BD-csdcfn-trustee-west-nipissing,"West Nipissing, Municipality of",trustee,3,3
+ON-BD-csdcno-trustee-at-large,"Sault Ste. Marie, City of",trustee,,1
+ON-BD-csdcno-trustee-greenstone-w1,"Greenstone, Municipality of",trustee,2,3
+ON-BD-csdcno-trustee-greenstone-w2,"Greenstone, Municipality of",trustee,1,1
+ON-BD-csdcno-trustee-red-lake,"Red Lake, Municipality of",trustee,,0
+ON-BD-csdcno-trustee-zone04,"Greater Sudbury, City of",trustee,1,2
+ON-BD-csdcno-trustee-zone05,"Greater Sudbury, City of",trustee,1,4
+ON-BD-csdcno-trustee-zone06,"Greater Sudbury, City of",trustee,1,2
+ON-BD-cspgno-trustee-area07,"Greater Sudbury, City of",trustee,1,1
+ON-BD-cspgno-trustee-area08,"Greater Sudbury, City of",trustee,1,1
+ON-BD-cspgno-trustee-area11,"Greater Sudbury, City of",trustee,1,1
+ON-BD-cspgno-trustee-area12,"Greater Sudbury, City of",trustee,1,1
+ON-BD-cspgno-trustee-at-large,"Sault Ste. Marie, City of",trustee,,1
+ON-BD-cspgno-trustee-kenora,"Kenora, City of",trustee,1,0
+ON-BD-cspgno-trustee-manitouwadge,"Manitouwadge, Township of",trustee,1,1
+ON-BD-cspgno-trustee-red-lake,"Red Lake, Municipality of",trustee,,0
+ON-BD-cspgno-trustee-terrace-bay,"Terrace Bay, Township of",trustee,1,0
+ON-BD-cspne-trustee-greenstone,"Greenstone, Municipality of",trustee,1,0
+ON-BD-cspne-trustee-kirkland-lake,"Kirkland Lake, Town of",trustee,1,0
+ON-BD-cspne-trustee-muskoka-zonea,"Huntsville, Town of",trustee,1,0
+ON-BD-cspne-trustee-north-bay,"North Bay, City of",trustee,,1
+ON-BD-cspne-trustee-timmins,"Timmins, City of",trustee,2,2
+ON-BD-cspne-trustee-west-nipissing,"West Nipissing, Municipality of",trustee,2,2
+ON-BD-cspno-trustee-carling,"Carling, Township of",trustee,1,0
+ON-BD-csviamonde-trustee-ajax,"Oshawa, City of",trustee,1,1
+ON-BD-csviamonde-trustee-amaranth,"Barrie, City of",trustee,1,1
+ON-BD-csviamonde-trustee-essex-town,"Windsor, City of",trustee,1,1
+ON-BD-csviamonde-trustee-grimsby,"Hamilton, City of",trustee,1,1
+ON-BD-csviamonde-trustee-mississauga-citywide,"Mississauga, City of",trustee,1,1
+ON-BD-csviamonde-trustee-sarnia,"Sarnia, City of",trustee,1,1
+ON-BD-csviamonde-trustee-sector9,"London, City of",trustee,1,1
+ON-BD-csviamonde-trustee-york-region,"Vaughan, City of",trustee,1,1
+ON-BD-dcdsb-trustee-ajax,"Ajax, Town of",trustee,2,1
+ON-BD-dcdsb-trustee-uxbridge,"Uxbridge, Township of",trustee,1,1
+ON-BD-dcdsb-trustee-whitby,"Whitby, Town of",trustee,2,1
+ON-BD-ddsb-trustee-ajax,"Ajax, Town of",trustee,2,4
+ON-BD-ddsb-trustee-uxbridge,"Uxbridge, Township of",trustee,1,3
+ON-BD-ddsb-trustee-whitby,"Whitby, Town of",trustee,2,3
+ON-BD-dpcdsb-trustee-amaranth,"Amaranth, Township of",trustee,,1
+ON-BD-dpcdsb-trustee-mono,"Mono, Town of",trustee,1,1
+ON-BD-dpcdsb-trustee-w01-w03,"Mississauga, City of",trustee,1,1
+ON-BD-dpcdsb-trustee-w01-w03-w04,"Brampton, City of",trustee,1,2
+ON-BD-dpcdsb-trustee-w02-w05-w06,"Brampton, City of",trustee,1,2
+ON-BD-dpcdsb-trustee-w02-w08,"Mississauga, City of",trustee,1,1
+ON-BD-dpcdsb-trustee-w04,"Mississauga, City of",trustee,1,1
+ON-BD-dpcdsb-trustee-w05,"Mississauga, City of",trustee,1,2
+ON-BD-dpcdsb-trustee-w06-w11,"Mississauga, City of",trustee,1,1
+ON-BD-dpcdsb-trustee-w07,"Mississauga, City of",trustee,1,1
+ON-BD-dpcdsb-trustee-w07-w08-w09-w10,"Brampton, City of",trustee,1,2
+ON-BD-dpcdsb-trustee-w09-w10,"Mississauga, City of",trustee,1,1
+ON-BD-dsb1-trustee-kirkland-lake,"Kirkland Lake, Town of",trustee,1,1
+ON-BD-dsb1-trustee-timmins,"Timmins, City of",trustee,1,0
+ON-BD-dsbn-trustee-grimsby,"Grimsby, Town of",trustee,1,0
+ON-BD-dsbn-trustee-niagara-on-the-lake,"Niagara-on-the-Lake, Town of",trustee,,6
+ON-BD-dsbn-trustee-pelham,"Pelham, Town of",trustee,1,3
+ON-BD-gecdsb-trustee-essex-town,"Essex, Town of",trustee,1,1
+ON-BD-gecdsb-trustee-lasalle-amherstburg,"LaSalle, Town of",trustee,1,2
+ON-BD-gecdsb-trustee-leamington,"Leamington, Municipality of",trustee,1,0
+ON-BD-gecdsb-trustee-w01-w02-w09,"Windsor, City of",trustee,2,1
+ON-BD-gecdsb-trustee-w03-w04-w10,"Windsor, City of",trustee,2,2
+ON-BD-gecdsb-trustee-w05-w06-w07-w08,"Windsor, City of",trustee,2,3
+ON-BD-granderie-trustee-haldimand,Haldimand County,trustee,1,3
+ON-BD-granderie-trustee-norfolk-w1-2-4-5-6,Norfolk County,trustee,1,2
+ON-BD-granderie-trustee-norfolk-w3-7,Norfolk County,trustee,1,2
+ON-BD-hcdsb-trustee-burlington-w01-w02,"Burlington, City of",trustee,1,2
+ON-BD-hcdsb-trustee-burlington-w03-w06,"Burlington, City of",trustee,1,1
+ON-BD-hcdsb-trustee-burlington-w04-w05,"Burlington, City of",trustee,1,2
+ON-BD-hcdsb-trustee-halton-hills,"Halton Hills, Town of",trustee,,1
+ON-BD-hcdsb-trustee-oakville-w01-w02-w03,"Oakville, Town of",trustee,1,1
+ON-BD-hcdsb-trustee-oakville-w04-w07,"Oakville, Town of",trustee,1,1
+ON-BD-hcdsb-trustee-oakville-w05-w06,"Oakville, Town of",trustee,1,1
+ON-BD-hdsb-trustee-burlington-w01-w02,"Burlington, City of",trustee,1,1
+ON-BD-hdsb-trustee-burlington-w03-w06,"Burlington, City of",trustee,1,1
+ON-BD-hdsb-trustee-burlington-w04,"Burlington, City of",trustee,1,1
+ON-BD-hdsb-trustee-burlington-w05,"Burlington, City of",trustee,1,1
+ON-BD-hdsb-trustee-halton-hills,"Halton Hills, Town of",trustee,,1
+ON-BD-hdsb-trustee-oakville-w01-w02,"Oakville, Town of",trustee,1,0
+ON-BD-hdsb-trustee-oakville-w03-w06,"Oakville, Town of",trustee,1,2
+ON-BD-hdsb-trustee-oakville-w04,"Oakville, Town of",trustee,1,3
+ON-BD-hdsb-trustee-oakville-w05-w07,"Oakville, Town of",trustee,1,1
+ON-BD-hpcdsb-trustee-goderich,"Goderich, Town of",trustee,1,0
+ON-BD-hpcdsb-trustee-morris-turnberry,"Morris-Turnberry, Municipality of",trustee,1,0
+ON-BD-hpcdsb-trustee-perth-east,"Perth East, Township of",trustee,1,0
+ON-BD-hpcdsb-trustee-perth-south,"Perth South, Township of",trustee,,0
+ON-BD-hpcdsb-trustee-stratford,"Stratford, City of",trustee,1,1
+ON-BD-hpcdsb-trustee-west-perth,"West Perth, Municipality of",trustee,1,1
+ON-BD-hpedsb-trustee-bancroft-area,"Carlow/Mayo, Township of",trustee,1,1
+ON-BD-hpedsb-trustee-belleville,"Belleville, City of",trustee,2,2
+ON-BD-hpedsb-trustee-prince-edward-w1w2w5w8w9,"Prince Edward, County of",trustee,1,1
+ON-BD-hpedsb-trustee-prince-edward-w3w4w6w7,"Prince Edward, County of",trustee,1,1
+ON-BD-hpedsb-trustee-quinte-west-w2w4,"Quinte West, City of",trustee,1,1
+ON-BD-hpedsb-trustee-stirling-rawdon,"Stirling-Rawdon, Township of",trustee,1,1
+ON-BD-hscdsb-trustee-at-large,"Sault Ste. Marie, City of",trustee,,6
+ON-BD-hscdsb-trustee-hornepayne,"Hornepayne, Township of",trustee,1,1
+ON-BD-hwcdsb-trustee-w01-w02-w15,"Hamilton, City of",trustee,1,1
+ON-BD-hwcdsb-trustee-w03-w04,"Hamilton, City of",trustee,1,1
+ON-BD-hwcdsb-trustee-w05,"Hamilton, City of",trustee,1,1
+ON-BD-hwcdsb-trustee-w06,"Hamilton, City of",trustee,1,2
+ON-BD-hwcdsb-trustee-w07,"Hamilton, City of",trustee,1,1
+ON-BD-hwcdsb-trustee-w08-w14,"Hamilton, City of",trustee,1,1
+ON-BD-hwcdsb-trustee-w09-w11,"Hamilton, City of",trustee,1,1
+ON-BD-hwcdsb-trustee-w10,"Hamilton, City of",trustee,1,2
+ON-BD-hwcdsb-trustee-w12-w13,"Hamilton, City of",trustee,1,1
+ON-BD-hwdsb-trustee-w01,"Hamilton, City of",trustee,1,0
+ON-BD-hwdsb-trustee-w02,"Hamilton, City of",trustee,1,2
+ON-BD-hwdsb-trustee-w03,"Hamilton, City of",trustee,1,1
+ON-BD-hwdsb-trustee-w04,"Hamilton, City of",trustee,1,1
+ON-BD-hwdsb-trustee-w05-w10,"Hamilton, City of",trustee,1,2
+ON-BD-hwdsb-trustee-w06-w09,"Hamilton, City of",trustee,1,2
+ON-BD-hwdsb-trustee-w07,"Hamilton, City of",trustee,1,1
+ON-BD-hwdsb-trustee-w08-w14,"Hamilton, City of",trustee,1,1
+ON-BD-hwdsb-trustee-w11-w12,"Hamilton, City of",trustee,1,2
+ON-BD-hwdsb-trustee-w13,"Hamilton, City of",trustee,1,0
+ON-BD-hwdsb-trustee-w15,"Hamilton, City of",trustee,1,1
+ON-BD-kcdsb-trustee-kenora,"Kenora, City of",trustee,5,2
+ON-BD-kpdsb-trustee-dryden,"Dryden, City of",trustee,1,1
+ON-BD-kpdsb-trustee-kenora,"Kenora, City of",trustee,3,0
+ON-BD-kpdsb-trustee-sioux-lookout,"Sioux Lookout, Municipality of",trustee,1,1
+ON-BD-kprdsb-trustee-asphodel-norwood,"Asphodel-Norwood, Township of",trustee,1,1
+ON-BD-kprdsb-trustee-city,"Peterborough, City of",trustee,1,2
+ON-BD-kprdsb-trustee-cobourg,"Cobourg, Town of",trustee,2,2
+ON-BD-kprdsb-trustee-douro-dummer,"Douro-Dummer, Township of",trustee,1,1
+ON-BD-kprdsb-trustee-osm,"Otonabee-South Monaghan, Township of",trustee,1,1
+ON-BD-kprdsb-trustee-quinte-west-w1w3,"Quinte West, City of",trustee,1,2
+ON-BD-kprdsb-trustee-red-lake,"Red Lake, Municipality of",trustee,,0
+ON-BD-kprdsb-trustee-selwyn-area,"Selwyn, Township of",trustee,1,1
+ON-BD-lakehead-trustee-atlarge,"Thunder Bay, City of",trustee,8,6
+ON-BD-ldcsb-trustee-elgin-county,"St. Thomas, City of",trustee,1,1
+ON-BD-ldcsb-trustee-middlesex-county,"Middlesex Centre, Municipality of",trustee,1,1
+ON-BD-ldcsb-trustee-oxford-county,"Tillsonburg, Town of",trustee,1,1
+ON-BD-limestone-trustee-greater-napanee,"Greater Napanee, Town of",trustee,1,1
+ON-BD-limestone-trustee-loyalist,"Loyalist, Township of",trustee,1,0
+ON-BD-limestone-trustee-south-frontenac,"South Frontenac, Township of",trustee,1,0
+ON-BD-limestone-trustee-stone-mills,"Stone Mills, Township of",trustee,1,0
+ON-BD-lkdsb-trustee-central-lambton,"Petrolia, Town of",trustee,1,3
+ON-BD-lkdsb-trustee-sarnia,"Sarnia, City of",trustee,1,3
+ON-BD-lkdsb-trustee-warwick,"Warwick, Township of",trustee,1,1
+ON-BD-ncdsb-trustee-dryden,"Dryden, City of",trustee,2,2
+ON-BD-ncdsb-trustee-kirkland-lake,"Kirkland Lake, Town of",trustee,2,1
+ON-BD-ncdsb-trustee-timmins,"Timmins, City of",trustee,1,2
+ON-BD-nearnorth-trustee-carling,"Carling, Township of",trustee,1,1
+ON-BD-nearnorth-trustee-georgian-bay,"Georgian Bay, Township of",trustee,,1
+ON-BD-nearnorth-trustee-greenstone-public,"Greenstone, Municipality of",trustee,2,1
+ON-BD-nearnorth-trustee-north-bay,"North Bay, City of",trustee,,2
+ON-BD-nearnorth-trustee-parry-sound,"Parry Sound, Town of",trustee,1,1
+ON-BD-nearnorth-trustee-powassan,"Powassan, Municipality of",trustee,1,1
+ON-BD-nearnorth-trustee-red-lake,"Red Lake, Municipality of",trustee,,0
+ON-BD-nearnorth-trustee-west-nipissing,"West Nipissing, Municipality of",trustee,1,0
+ON-BD-niagara-catholic-trustee-fort-erie,"Fort Erie, Town of",trustee,,1
+ON-BD-niagara-catholic-trustee-grimsby,"Grimsby, Town of",trustee,1,1
+ON-BD-niagara-catholic-trustee-niagara-on-the-lake,"Niagara-on-the-Lake, Town of",trustee,,2
+ON-BD-niagara-catholic-trustee-pelham,"Pelham, Town of",trustee,1,2
+ON-BD-niagara-catholic-trustee-st-catharines-merritton-thorold,"Thorold, City of",trustee,1,1
+ON-BD-npsc-trustee-north-bay,"North Bay, City of",trustee,,3
+ON-BD-npsc-trustee-powassan,"Powassan, Municipality of",trustee,2,1
+ON-BD-npsc-trustee-west-nipissing,"West Nipissing, Municipality of",trustee,1,0
+ON-BD-ocdsb-trustee-zone01,"Ottawa, City of",trustee,1,1
+ON-BD-ocdsb-trustee-zone02,"Ottawa, City of",trustee,1,1
+ON-BD-ocdsb-trustee-zone03,"Ottawa, City of",trustee,1,2
+ON-BD-ocdsb-trustee-zone04,"Ottawa, City of",trustee,1,2
+ON-BD-ocdsb-trustee-zone05,"Ottawa, City of",trustee,1,3
+ON-BD-ocdsb-trustee-zone06,"Ottawa, City of",trustee,1,3
+ON-BD-ocdsb-trustee-zone07,"Ottawa, City of",trustee,1,2
+ON-BD-ocdsb-trustee-zone08,"Ottawa, City of",trustee,1,1
+ON-BD-ocdsb-trustee-zone09,"Ottawa, City of",trustee,1,1
+ON-BD-ocdsb-trustee-zone10,"Ottawa, City of",trustee,1,2
+ON-BD-ocdsb-trustee-zone11,"Ottawa, City of",trustee,1,1
+ON-BD-ocdsb-trustee-zone12,"Ottawa, City of",trustee,1,1
+ON-BD-ocsb-trustee-zone01,"Ottawa, City of",trustee,1,1
+ON-BD-ocsb-trustee-zone02,"Ottawa, City of",trustee,1,1
+ON-BD-ocsb-trustee-zone03,"Ottawa, City of",trustee,1,1
+ON-BD-ocsb-trustee-zone04,"Ottawa, City of",trustee,1,1
+ON-BD-ocsb-trustee-zone05,"Ottawa, City of",trustee,1,1
+ON-BD-ocsb-trustee-zone06,"Ottawa, City of",trustee,1,1
+ON-BD-ocsb-trustee-zone07,"Ottawa, City of",trustee,1,2
+ON-BD-ocsb-trustee-zone08,"Ottawa, City of",trustee,1,1
+ON-BD-ocsb-trustee-zone09,"Ottawa, City of",trustee,1,2
+ON-BD-ocsb-trustee-zone10,"Ottawa, City of",trustee,1,2
+ON-BD-pdsb-trustee-caledon,"Caledon, Town of",trustee,1,2
+ON-BD-pdsb-trustee-w01-w05,"Brampton, City of",trustee,1,1
+ON-BD-pdsb-trustee-w01-w07,"Mississauga, City of",trustee,1,4
+ON-BD-pdsb-trustee-w02-w06,"Brampton, City of",trustee,1,3
+ON-BD-pdsb-trustee-w02-w08,"Mississauga, City of",trustee,1,2
+ON-BD-pdsb-trustee-w03-w04,"Mississauga, City of",trustee,1,1
+ON-BD-pdsb-trustee-w05,"Mississauga, City of",trustee,1,2
+ON-BD-pdsb-trustee-w06-w11,"Mississauga, City of",trustee,1,3
+ON-BD-pdsb-trustee-w07-w08,"Brampton, City of",trustee,1,4
+ON-BD-pdsb-trustee-w09-w10,"Mississauga, City of",trustee,1,2
+ON-BD-pvnccdsb-trustee-alnwick-haldimand,"Alnwick/Haldimand, Township of",trustee,1,0
+ON-BD-pvnccdsb-trustee-asphodel-norwood,"Asphodel-Norwood, Township of",trustee,1,3
+ON-BD-pvnccdsb-trustee-city,"Peterborough, City of",trustee,1,2
+ON-BD-pvnccdsb-trustee-cobourg,"Cobourg, Town of",trustee,1,0
+ON-BD-pvnccdsb-trustee-douro-dummer,"Douro-Dummer, Township of",trustee,1,2
+ON-BD-pvnccdsb-trustee-osm,"Otonabee-South Monaghan, Township of",trustee,2,2
+ON-BD-rainbow-trustee-area01,"Greater Sudbury, City of",trustee,1,1
+ON-BD-rainbow-trustee-area02,"Greater Sudbury, City of",trustee,1,1
+ON-BD-rainbow-trustee-area03,"Greater Sudbury, City of",trustee,1,1
+ON-BD-rainbow-trustee-area04,"Greater Sudbury, City of",trustee,1,1
+ON-BD-rainbow-trustee-area05,"Greater Sudbury, City of",trustee,1,1
+ON-BD-rainbow-trustee-area06,"Greater Sudbury, City of",trustee,1,1
+ON-BD-rainbow-trustee-espanola,"Espanola, Town of",trustee,,1
+ON-BD-rainbow-trustee-nemi,"Northeastern Manitoulin and The Islands, Town of",trustee,,1
+ON-BD-rccdsb-trustee-arnprior,"Arnprior, Town of",trustee,1,0
+ON-BD-rccdsb-trustee-bonnechere-valley,"Bonnechere Valley, Township of",trustee,1,1
+ON-BD-rccdsb-trustee-deep-river,"Deep River, Town of",trustee,,1
+ON-BD-rccdsb-trustee-pembroke,"Pembroke, City of",trustee,1,1
+ON-BD-rccdsb-trustee-whitewater-region,"Whitewater Region, Township of",trustee,1,0
+ON-BD-rcdsb-trustee-arnprior,"Arnprior, Town of",trustee,1,0
+ON-BD-rcdsb-trustee-bonnechere-valley,"Bonnechere Valley, Township of",trustee,1,1
+ON-BD-rcdsb-trustee-deep-river,"Deep River, Town of",trustee,,0
+ON-BD-rcdsb-trustee-pembroke,"Pembroke, City of",trustee,1,1
+ON-BD-rcdsb-trustee-whitewater-region,"Whitewater Region, Township of",trustee,1,0
+ON-BD-rrdsb-trustee-west-central,"La Vallee, Township of",trustee,,1
+ON-BD-sccdsb-trustee-sarnia,"Sarnia, City of",trustee,1,1
+ON-BD-scdsb-trustee-bwg,"Bradford West Gwillimbury, Town of",trustee,1,1
+ON-BD-scdsb-trustee-essa,"Essa, Township of",trustee,1,1
+ON-BD-scdsb-trustee-innisfil,"Innisfil, Town of",trustee,1,2
+ON-BD-scdsb-trustee-midland-penetanguishene-tay-tiny,"Midland, Town of",trustee,1,0
+ON-BD-scdsb-trustee-new-tecumseth,"New Tecumseth, Town of",trustee,,0
+ON-BD-scdsb-trustee-orillia,"Orillia, City of",trustee,1,1
+ON-BD-scdsb-trustee-oro-medonte,"Oro-Medonte, Township of",trustee,1,2
+ON-BD-scdsb-trustee-tay,"Tay, Township of",trustee,1,0
+ON-BD-scdsb-trustee-wasaga-beach,"Wasaga Beach, Town of",trustee,1,0
+ON-BD-sgdsb-trustee-manitouwadge,"Manitouwadge, Township of",trustee,1,1
+ON-BD-sgdsb-trustee-terrace-bay,"Terrace Bay, Township of",trustee,1,1
+ON-BD-smcdsb-trustee-bracebridge-area5,"Bracebridge, Town of",trustee,1,0
+ON-BD-smcdsb-trustee-bwg,"Bradford West Gwillimbury, Town of",trustee,1,2
+ON-BD-smcdsb-trustee-carling,"Carling, Township of",trustee,1,0
+ON-BD-smcdsb-trustee-collingwood,"Collingwood, Town of",trustee,1,1
+ON-BD-smcdsb-trustee-essa,"Essa, Township of",trustee,1,1
+ON-BD-smcdsb-trustee-georgian-bay,"Georgian Bay, Township of",trustee,,0
+ON-BD-smcdsb-trustee-huntsville-area5,"Huntsville, Town of",trustee,1,0
+ON-BD-smcdsb-trustee-lake-of-bays,"Lake of Bays, Township of",trustee,1,3
+ON-BD-smcdsb-trustee-midland-penetanguishene-tay-tiny,"Midland, Town of",trustee,1,0
+ON-BD-smcdsb-trustee-new-tecumseth,"New Tecumseth, Town of",trustee,,1
+ON-BD-smcdsb-trustee-orillia,"Orillia, City of",trustee,1,1
+ON-BD-smcdsb-trustee-oro-medonte,"Oro-Medonte, Township of",trustee,1,1
+ON-BD-smcdsb-trustee-tay,"Tay, Township of",trustee,1,0
+ON-BD-sncdsb-trustee-manitouwadge,"Manitouwadge, Township of",trustee,1,0
+ON-BD-sncdsb-trustee-terrace-bay,"Terrace Bay, Township of",trustee,1,0
+ON-BD-stclaircdsb-trustee-warwick,"Warwick, Township of",trustee,1,2
+ON-BD-sudbury-catholic-trustee-zone01,"Greater Sudbury, City of",trustee,1,1
+ON-BD-sudbury-catholic-trustee-zone02,"Greater Sudbury, City of",trustee,1,1
+ON-BD-sudbury-catholic-trustee-zone03,"Greater Sudbury, City of",trustee,1,1
+ON-BD-sudbury-catholic-trustee-zone04,"Greater Sudbury, City of",trustee,1,1
+ON-BD-tbcdsb-trustee-atlarge,"Thunder Bay, City of",trustee,7,3
+ON-BD-tldsb-trustee-bracebridge,"Bracebridge, Town of",trustee,1,0
+ON-BD-tldsb-trustee-georgian-bay,"Georgian Bay, Township of",trustee,,0
+ON-BD-tldsb-trustee-highlands-east,"Highlands East, Municipality of",trustee,,1
+ON-BD-tldsb-trustee-huntsville,"Huntsville, Town of",trustee,1,1
+ON-BD-tncdsb-trustee-sioux-lookout,"Sioux Lookout, Municipality of",trustee,,2
+ON-BD-tvdsb-trustee-elgin-county,"St. Thomas, City of",trustee,2,2
+ON-BD-tvdsb-trustee-middlesex-county,"Middlesex Centre, Municipality of",trustee,2,2
+ON-BD-tvdsb-trustee-oxford-county,"Tillsonburg, Town of",trustee,2,1
+ON-BD-ucdsb-trustee-brockville,"Brockville, City of",trustee,1,2
+ON-BD-ucdsb-trustee-clarence-rockland,"Clarence-Rockland, City of",trustee,1,1
+ON-BD-ucdsb-trustee-cornwall,"Cornwall, City of",trustee,,0
+ON-BD-ucdsb-trustee-drummond-north-elmsley,"Drummond/North Elmsley, Township of",trustee,1,1
+ON-BD-ucdsb-trustee-mississippi-mills,"Mississippi Mills, Municipality of",trustee,1,1
+ON-BD-ucdsb-trustee-north-dundas,"North Dundas, Township of",trustee,1,1
+ON-BD-ucdsb-trustee-north-glengarry,"North Glengarry, Township of",trustee,1,0
+ON-BD-ucdsb-trustee-north-grenville-area,"North Grenville, Municipality of",trustee,1,0
+ON-BD-ucdsb-trustee-prescott,"Prescott, Town of",trustee,,0
+ON-BD-ucdsb-trustee-rideau-lakes,"Rideau Lakes, Township of",trustee,1,1
+ON-BD-ucdsb-trustee-russell,"Russell, Township of",trustee,1,1
+ON-BD-ucdsb-trustee-south-glengarry,"South Glengarry, Township of",trustee,1,0
+ON-BD-ucdsb-trustee-tay-valley,"Tay Valley, Township of",trustee,1,2
+ON-BD-ucdsb-trustee-w04,"Leeds and the Thousand Islands, Township of",trustee,1,2
+ON-BD-ugdsb-trustee-erin,"Erin, Town of",trustee,1,1
+ON-BD-ugdsb-trustee-guelph-eramosa,"Guelph/Eramosa, Township of",trustee,1,1
+ON-BD-ugdsb-trustee-mono,"Mono, Town of",trustee,1,1
+ON-BD-ugdsb-trustee-orangeville,"Orangeville, Town of",trustee,1,1
+ON-BD-ugdsb-trustee-puslinch,"Puslinch, Township of",trustee,1,1
+ON-BD-ugdsb-trustee-wellington-north-area,"Minto, Town of",trustee,1,0
+ON-BD-wcdsb-trustee-kitchener-wilmot,"Wilmot, Township of",trustee,4,3
+ON-BD-wcdsb-trustee-woolwich,"Woolwich, Township of",trustee,,0
+ON-BD-wecdsb-trustee-essex-town,"Essex, Town of",trustee,1,1
+ON-BD-wecdsb-trustee-lasalle-amherstburg,"LaSalle, Town of",trustee,1,2
+ON-BD-wecdsb-trustee-w01-w10,"Windsor, City of",trustee,1,1
+ON-BD-wecdsb-trustee-w02-w09,"Windsor, City of",trustee,1,1
+ON-BD-wecdsb-trustee-w03-w04,"Windsor, City of",trustee,1,2
+ON-BD-wecdsb-trustee-w05-w08,"Windsor, City of",trustee,1,1
+ON-BD-wecdsb-trustee-w06-w07,"Windsor, City of",trustee,1,1
+ON-BD-wellingtoncdsb-trustee-erin,"Erin, Town of",trustee,1,1
+ON-BD-wellingtoncdsb-trustee-puslinch,"Puslinch, Township of",trustee,1,1
+ON-BD-wrdsb-trustee-cambridge-north-dumfries,"Cambridge, City of",trustee,3,3
+ON-BD-wrdsb-trustee-kitchener,"Kitchener, City of",trustee,4,2
+ON-BD-wrdsb-trustee-waterloo-wilmot,"Wilmot, Township of",trustee,3,3
+ON-BD-wrdsb-trustee-woolwich,"Woolwich, Township of",trustee,1,0
+ON-BD-ycdsb-trustee-king-aurora,"King, Township of",trustee,1,1
+ON-BD-ycdsb-trustee-markham-w01-w02-w03-w06,"Markham, City of",trustee,1,0
+ON-BD-ycdsb-trustee-markham-w04-w05-w07-w08,"Markham, City of",trustee,1,1
+ON-BD-ycdsb-trustee-newmarket,"Newmarket, Town of",trustee,,3
+ON-BD-ycdsb-trustee-richmond-hill,"Richmond Hill, City of",trustee,2,2
+ON-BD-ycdsb-trustee-w01,"Vaughan, City of",trustee,1,2
+ON-BD-ycdsb-trustee-w02,"Vaughan, City of",trustee,1,1
+ON-BD-ycdsb-trustee-w03-w04-w05,"Vaughan, City of",trustee,1,3
+ON-BD-yrdsb-trustee-aurora-whitchurch-stouffville,"Aurora, Town of",trustee,1,2
+ON-BD-yrdsb-trustee-eg-georgina,"Georgina, Town of",trustee,1,1
+ON-BD-yrdsb-trustee-markham-w01-w08,"Markham, City of",trustee,1,1
+ON-BD-yrdsb-trustee-markham-w02-w06,"Markham, City of",trustee,1,1
+ON-BD-yrdsb-trustee-markham-w03-w04,"Markham, City of",trustee,1,2
+ON-BD-yrdsb-trustee-markham-w05-w07,"Markham, City of",trustee,1,1
+ON-BD-yrdsb-trustee-newmarket,"Newmarket, Town of",trustee,,3
+ON-BD-yrdsb-trustee-richmond-hill-w01-w02-w04,"Richmond Hill, City of",trustee,1,1
+ON-BD-yrdsb-trustee-richmond-hill-w03-w05-w06,"Richmond Hill, City of",trustee,1,1
+ON-BD-yrdsb-trustee-w01,"Vaughan, City of",trustee,1,1
+ON-BD-yrdsb-trustee-w02-w03,"Vaughan, City of",trustee,1,3
+ON-BD-yrdsb-trustee-w04-w05,"Vaughan, City of",trustee,1,3
+ON-addington-highlands-councillor-ward1,"Addington Highlands, Township of",councillor,2,2
+ON-addington-highlands-councillor-ward2,"Addington Highlands, Township of",councillor,2,1
+ON-addington-highlands-mayor,"Addington Highlands, Township of",mayor,1,1
+ON-adelaide-metcalfe-councillor,"Adelaide-Metcalfe, Township of",councillor,4,3
+ON-adelaide-metcalfe-mayor,"Adelaide-Metcalfe, Township of",mayor,1,1
+ON-adjala-tosorontio-council-w01,"Adjala-Tosorontio, Township of",councillor,1,3
+ON-adjala-tosorontio-council-w02,"Adjala-Tosorontio, Township of",councillor,1,2
+ON-adjala-tosorontio-council-w03,"Adjala-Tosorontio, Township of",councillor,1,0
+ON-adjala-tosorontio-council-w04,"Adjala-Tosorontio, Township of",councillor,1,2
+ON-adjala-tosorontio-council-w05,"Adjala-Tosorontio, Township of",councillor,1,0
+ON-adjala-tosorontio-deputy-mayor,"Adjala-Tosorontio, Township of",deputy_mayor,1,2
+ON-adjala-tosorontio-mayor,"Adjala-Tosorontio, Township of",mayor,1,3
+ON-admaston-bromley-councillor,"Admaston/Bromley, Township of",councillor,4,0
+ON-admaston-bromley-mayor,"Admaston/Bromley, Township of",mayor,1,2
+ON-admaston-bromley-trustee-cepeo,"Admaston/Bromley, Township of",trustee,1,1
+ON-ajax-council-w01-local,"Ajax, Town of",councillor,1,7
+ON-ajax-council-w01-regional,"Ajax, Town of",councillor,1,2
+ON-ajax-council-w02-local,"Ajax, Town of",councillor,1,5
+ON-ajax-council-w02-regional,"Ajax, Town of",councillor,1,4
+ON-ajax-council-w03-local,"Ajax, Town of",councillor,1,4
+ON-ajax-council-w03-regional,"Ajax, Town of",councillor,1,6
+ON-ajax-mayor,"Ajax, Town of",mayor,1,3
+ON-alberton-council,"Alberton, Township of",councillor,4,4
+ON-alberton-mayor,"Alberton, Township of",mayor,1,0
+ON-alfred-and-plantagenet-council-ward1,"Alfred and Plantagenet, Township of",councillor,2,2
+ON-alfred-and-plantagenet-council-ward2,"Alfred and Plantagenet, Township of",councillor,2,3
+ON-alfred-and-plantagenet-mayor,"Alfred and Plantagenet, Township of",mayor,1,2
+ON-algonquin-highlands-councillor-ward1,"Algonquin Highlands, Township of",councillor,1,2
+ON-algonquin-highlands-councillor-ward2,"Algonquin Highlands, Township of",councillor,1,2
+ON-algonquin-highlands-councillor-ward3,"Algonquin Highlands, Township of",councillor,1,1
+ON-algonquin-highlands-mayor,"Algonquin Highlands, Township of",mayor,1,1
+ON-alnwick-haldimand-council-at-large,"Alnwick/Haldimand, Township of",councillor,3,2
+ON-alnwick-haldimand-deputy-mayor,"Alnwick/Haldimand, Township of",deputy_mayor,1,1
+ON-alnwick-haldimand-mayor,"Alnwick/Haldimand, Township of",mayor,1,2
+ON-amaranth-council-at-large,"Amaranth, Township of",councillor,,3
+ON-amaranth-deputy-mayor,"Amaranth, Township of",deputy_mayor,,1
+ON-amaranth-mayor,"Amaranth, Township of",mayor,1,1
+ON-amherstburg-council-at-large,"Amherstburg, Town of",councillor,5,9
+ON-amherstburg-deputy-mayor,"Amherstburg, Town of",deputy_mayor,1,2
+ON-amherstburg-mayor,"Amherstburg, Town of",mayor,1,3
+ON-armour-council,"Armour, Township of",councillor,4,4
+ON-armour-mayor,"Armour, Township of",mayor,1,1
+ON-armstrong-councillor,"Armstrong, Township of",councillor,4,4
+ON-armstrong-mayor,"Armstrong, Township of",mayor,1,1
+ON-arnprior-council-at-large,"Arnprior, Town of",councillor,5,1
+ON-arnprior-deputy-mayor,"Arnprior, Town of",deputy_mayor,1,1
+ON-arnprior-mayor,"Arnprior, Town of",mayor,1,2
+ON-arran-elderslie-council-arran,"Arran-Elderslie, Municipality of",councillor,1,1
+ON-arran-elderslie-council-chesley,"Arran-Elderslie, Municipality of",councillor,1,0
+ON-arran-elderslie-council-elderslie,"Arran-Elderslie, Municipality of",councillor,1,1
+ON-arran-elderslie-council-paisley,"Arran-Elderslie, Municipality of",councillor,1,3
+ON-arran-elderslie-council-tara,"Arran-Elderslie, Municipality of",councillor,1,0
+ON-arran-elderslie-deputy-mayor,"Arran-Elderslie, Municipality of",deputy_mayor,1,1
+ON-arran-elderslie-mayor,"Arran-Elderslie, Municipality of",mayor,1,1
+ON-ashfield-colborne-wawanosh-council-at-large,"Ashfield-Colborne-Wawanosh, Township of",councillor,5,6
+ON-ashfield-colborne-wawanosh-deputy-mayor,"Ashfield-Colborne-Wawanosh, Township of",deputy_mayor,1,1
+ON-ashfield-colborne-wawanosh-mayor,"Ashfield-Colborne-Wawanosh, Township of",mayor,1,3
+ON-asphodel-norwood-council-at-large,"Asphodel-Norwood, Township of",councillor,3,5
+ON-asphodel-norwood-deputy-mayor,"Asphodel-Norwood, Township of",deputy_mayor,1,1
+ON-asphodel-norwood-mayor,"Asphodel-Norwood, Township of",mayor,1,4
+ON-assiginack-council,"Assiginack, Township of",councillor,4,1
+ON-assiginack-mayor,"Assiginack, Township of",mayor,1,1
+ON-athens-councillor,"Athens, Township of",councillor,6,9
+ON-athens-mayor,"Athens, Township of",mayor,1,2
+ON-atikokan-councillor,"Atikokan, Town of",councillor,4,1
+ON-atikokan-mayor,"Atikokan, Town of",mayor,1,2
+ON-augusta-council-at-large,"Augusta, Township of",councillor,,3
+ON-augusta-deputy-mayor,"Augusta, Township of",deputy_mayor,1,1
+ON-augusta-mayor,"Augusta, Township of",mayor,1,1
+ON-aurora-council-w01,"Aurora, Town of",councillor,1,2
+ON-aurora-council-w02,"Aurora, Town of",councillor,1,3
+ON-aurora-council-w03,"Aurora, Town of",councillor,1,3
+ON-aurora-council-w04,"Aurora, Town of",councillor,1,2
+ON-aurora-council-w05,"Aurora, Town of",councillor,1,4
+ON-aurora-council-w06,"Aurora, Town of",councillor,1,2
+ON-aurora-mayor,"Aurora, Town of",mayor,1,3
+ON-aylmer-council-at-large,"Aylmer, Town of",councillor,6,8
+ON-aylmer-mayor,"Aylmer, Town of",mayor,1,4
+ON-baldwin-council-at-large,"Baldwin, Township of",councillor,3,0
+ON-baldwin-mayor,"Baldwin, Township of",mayor,1,0
+ON-bancroft-council-bancroft-ward,"Bancroft, Town of",councillor,3,3
+ON-bancroft-council-dungannon-ward,"Bancroft, Town of",councillor,3,3
+ON-bancroft-mayor,"Bancroft, Town of",mayor,1,4
+ON-barrie-council-w01,"Barrie, City of",councillor,1,6
+ON-barrie-council-w02,"Barrie, City of",councillor,1,4
+ON-barrie-council-w03,"Barrie, City of",councillor,1,4
+ON-barrie-council-w04,"Barrie, City of",councillor,1,5
+ON-barrie-council-w05,"Barrie, City of",councillor,1,1
+ON-barrie-council-w06,"Barrie, City of",councillor,1,1
+ON-barrie-council-w07,"Barrie, City of",councillor,1,1
+ON-barrie-council-w08,"Barrie, City of",councillor,1,2
+ON-barrie-council-w09,"Barrie, City of",councillor,1,3
+ON-barrie-council-w10,"Barrie, City of",councillor,1,1
+ON-barrie-mayor,"Barrie, City of",mayor,1,2
+ON-bayham-council-ward1,"Bayham, Municipality of",councillor,1,1
+ON-bayham-council-ward2,"Bayham, Municipality of",councillor,1,0
+ON-bayham-council-ward3,"Bayham, Municipality of",councillor,1,0
+ON-bayham-deputy-mayor,"Bayham, Municipality of",deputy_mayor,1,1
+ON-bayham-mayor,"Bayham, Municipality of",mayor,1,2
+ON-beckwith-council-at-large,"Beckwith, Township of",councillor,3,3
+ON-beckwith-deputymayor-at-large,"Beckwith, Township of",deputy_mayor,1,0
+ON-beckwith-mayor,"Beckwith, Township of",mayor,1,1
+ON-belleville-council-w01,"Belleville, City of",councillor,6,11
+ON-belleville-council-w02,"Belleville, City of",councillor,2,3
+ON-belleville-mayor,"Belleville, City of",mayor,1,2
+ON-billings-council,"Billings, Township of",councillor,4,0
+ON-billings-mayor,"Billings, Township of",mayor,1,0
+ON-black-river-matheson-council-w01,"Black River-Matheson, Township of",councillor,1,1
+ON-black-river-matheson-council-w02,"Black River-Matheson, Township of",councillor,1,1
+ON-black-river-matheson-council-w03,"Black River-Matheson, Township of",councillor,1,1
+ON-black-river-matheson-council-w04,"Black River-Matheson, Township of",councillor,1,1
+ON-black-river-matheson-council-w05,"Black River-Matheson, Township of",councillor,1,0
+ON-black-river-matheson-council-w06,"Black River-Matheson, Township of",councillor,1,1
+ON-black-river-matheson-mayor,"Black River-Matheson, Township of",mayor,1,
+ON-blandford-blenheim-council-at-large,"Blandford-Blenheim, Township of",councillor,3,2
+ON-blandford-blenheim-deputy-mayor,"Blandford-Blenheim, Township of",deputy_mayor,1,1
+ON-blandford-blenheim-mayor,"Blandford-Blenheim, Township of",mayor,1,1
+ON-blind-river-council-at-large,"Blind River, Town of",councillor,,3
+ON-blind-river-mayor,"Blind River, Town of",mayor,1,2
+ON-bluewater-council-bayfield,"Bluewater, Municipality of",councillor,,1
+ON-bluewater-council-hay-east,"Bluewater, Municipality of",councillor,,2
+ON-bluewater-council-hay-west,"Bluewater, Municipality of",councillor,,1
+ON-bluewater-council-stanley-east,"Bluewater, Municipality of",councillor,,1
+ON-bluewater-council-stanley-west,"Bluewater, Municipality of",councillor,,1
+ON-bluewater-council-zurich,"Bluewater, Municipality of",councillor,,2
+ON-bluewater-deputy-mayor,"Bluewater, Municipality of",deputy_mayor,1,1
+ON-bluewater-mayor,"Bluewater, Municipality of",mayor,1,2
+ON-bonfield-councillor,"Bonfield, Township of",councillor,4,5
+ON-bonfield-mayor,"Bonfield, Township of",mayor,1,3
+ON-bonnechere-valley-council-at-large,"Bonnechere Valley, Township of",councillor,4,4
+ON-bonnechere-valley-mayor,"Bonnechere Valley, Township of",mayor,1,1
+ON-bracebridge-council-district,"Bracebridge, Town of",regional_councillor,3,4
+ON-bracebridge-council-w01,"Bracebridge, Town of",councillor,1,1
+ON-bracebridge-council-w02,"Bracebridge, Town of",councillor,1,1
+ON-bracebridge-council-w03,"Bracebridge, Town of",councillor,1,2
+ON-bracebridge-council-w04,"Bracebridge, Town of",councillor,1,1
+ON-bracebridge-council-w05,"Bracebridge, Town of",councillor,1,1
+ON-bracebridge-mayor,"Bracebridge, Town of",mayor,1,1
+ON-bradford-west-gwillimbury-council-w01,"Bradford West Gwillimbury, Town of",councillor,1,7
+ON-bradford-west-gwillimbury-council-w02,"Bradford West Gwillimbury, Town of",councillor,1,2
+ON-bradford-west-gwillimbury-council-w03,"Bradford West Gwillimbury, Town of",councillor,1,1
+ON-bradford-west-gwillimbury-council-w04,"Bradford West Gwillimbury, Town of",councillor,1,5
+ON-bradford-west-gwillimbury-council-w05,"Bradford West Gwillimbury, Town of",councillor,1,3
+ON-bradford-west-gwillimbury-council-w06,"Bradford West Gwillimbury, Town of",councillor,1,4
+ON-bradford-west-gwillimbury-council-w07,"Bradford West Gwillimbury, Town of",councillor,1,2
+ON-bradford-west-gwillimbury-deputy-mayor,"Bradford West Gwillimbury, Town of",deputy_mayor,1,2
+ON-bradford-west-gwillimbury-mayor,"Bradford West Gwillimbury, Town of",mayor,1,5
+ON-brampton-council-w01-w05,"Brampton, City of",councillor,1,6
+ON-brampton-council-w02-w06,"Brampton, City of",councillor,1,5
+ON-brampton-council-w03-w04,"Brampton, City of",councillor,1,3
+ON-brampton-council-w07-w08,"Brampton, City of",councillor,1,5
+ON-brampton-council-w09-w10,"Brampton, City of",councillor,1,5
+ON-brampton-mayor,"Brampton, City of",mayor,1,8
+ON-brampton-regional-councillor-w01-w05,"Brampton, City of",regional_councillor,1,3
+ON-brampton-regional-councillor-w02-w06,"Brampton, City of",regional_councillor,1,6
+ON-brampton-regional-councillor-w03-w04,"Brampton, City of",regional_councillor,1,2
+ON-brampton-regional-councillor-w07-w08,"Brampton, City of",regional_councillor,1,5
+ON-brampton-regional-councillor-w09-w10,"Brampton, City of",regional_councillor,1,5
+ON-brant-council-w01,"Brant, County of",councillor,2,3
+ON-brant-council-w02,"Brant, County of",councillor,2,3
+ON-brant-council-w03,"Brant, County of",councillor,2,6
+ON-brant-council-w04,"Brant, County of",councillor,2,6
+ON-brant-council-w05,"Brant, County of",councillor,2,3
+ON-brant-mayor,"Brant, County of",mayor,1,3
+ON-brantford-council-w01,"Brantford, City of",councillor,2,4
+ON-brantford-council-w02,"Brantford, City of",councillor,2,4
+ON-brantford-council-w03,"Brantford, City of",councillor,2,6
+ON-brantford-council-w04,"Brantford, City of",councillor,2,5
+ON-brantford-council-w05,"Brantford, City of",councillor,2,5
+ON-brantford-mayor,"Brantford, City of",mayor,1,6
+ON-brethour-mayor,"Brethour, Township of",mayor,1,
+ON-brighton-council-at-large,"Brighton, Municipality of",councillor,5,6
+ON-brighton-deputy-mayor,"Brighton, Municipality of",deputy_mayor,1,1
+ON-brighton-mayor,"Brighton, Municipality of",mayor,1,3
+ON-brock-council-w01,"Brock, Township of",councillor,1,4
+ON-brock-council-w02,"Brock, Township of",councillor,1,2
+ON-brock-council-w03,"Brock, Township of",councillor,1,2
+ON-brock-council-w04,"Brock, Township of",councillor,1,2
+ON-brock-council-w05,"Brock, Township of",councillor,1,2
+ON-brock-mayor,"Brock, Township of",mayor,1,2
+ON-brock-regional-councillor,"Brock, Township of",regional_councillor,1,2
+ON-brockton-council-at-large,"Brockton, Municipality of",councillor,,5
+ON-brockton-deputy-mayor,"Brockton, Municipality of",deputy_mayor,1,1
+ON-brockton-mayor,"Brockton, Municipality of",mayor,1,1
+ON-brockville-council-at-large,"Brockville, City of",councillor,8,8
+ON-brockville-mayor,"Brockville, City of",mayor,1,2
+ON-brooke-alvinston-councillor,"Brooke-Alvinston, Municipality of",councillor,4,6
+ON-brooke-alvinston-mayor,"Brooke-Alvinston, Municipality of",mayor,1,2
+ON-brooke-alvinston-trustee-csdceo,"Brooke-Alvinston, Municipality of",trustee,1,0
+ON-bruce-mines-councillor,"Bruce Mines, Town of",councillor,4,2
+ON-bruce-mines-mayor,"Bruce Mines, Town of",mayor,1,1
+ON-brudenell-lyndoch-and-raglan-council-w1,"Brudenell, Lyndoch and Raglan, Township of",councillor,1,2
+ON-brudenell-lyndoch-and-raglan-council-w2,"Brudenell, Lyndoch and Raglan, Township of",councillor,1,3
+ON-brudenell-lyndoch-and-raglan-mayor,"Brudenell, Lyndoch and Raglan, Township of",mayor,1,0
+ON-burks-falls-council-at-large,"Burk’s Falls, Village of",councillor,4,2
+ON-burks-falls-mayor,"Burk’s Falls, Village of",mayor,1,1
+ON-burlington-council-w01,"Burlington, City of",regional_councillor,1,3
+ON-burlington-council-w02,"Burlington, City of",regional_councillor,1,3
+ON-burlington-council-w03,"Burlington, City of",regional_councillor,1,4
+ON-burlington-council-w04,"Burlington, City of",regional_councillor,1,2
+ON-burlington-council-w05,"Burlington, City of",regional_councillor,1,3
+ON-burlington-council-w06,"Burlington, City of",regional_councillor,1,4
+ON-burlington-mayor,"Burlington, City of",mayor,1,3
+ON-burpee-and-mills-council-at-large,"Burpee and Mills, Township of",councillor,3,0
+ON-burpee-and-mills-mayor,"Burpee and Mills, Township of",mayor,1,0
+ON-caledon-council-w01,"Caledon, Town of",councillor,1,1
+ON-caledon-council-w02,"Caledon, Town of",councillor,1,3
+ON-caledon-council-w03,"Caledon, Town of",councillor,1,2
+ON-caledon-council-w04,"Caledon, Town of",councillor,1,2
+ON-caledon-council-w05,"Caledon, Town of",councillor,1,3
+ON-caledon-council-w06,"Caledon, Town of",councillor,1,1
+ON-caledon-mayor,"Caledon, Town of",mayor,1,5
+ON-caledon-regional-councillor-w1w3,"Caledon, Town of",regional_councillor,1,3
+ON-caledon-regional-councillor-w4w6,"Caledon, Town of",regional_councillor,1,1
+ON-callander-council-at-large,"Callander, Municipality of",councillor,,3
+ON-callander-mayor,"Callander, Municipality of",mayor,1,1
+ON-calvin-councillor,"Calvin, Municipality of",councillor,4,1
+ON-calvin-mayor,"Calvin, Municipality of",mayor,1,1
+ON-cambridge-council-w01,"Cambridge, City of",councillor,1,2
+ON-cambridge-council-w02,"Cambridge, City of",councillor,1,2
+ON-cambridge-council-w03,"Cambridge, City of",councillor,1,1
+ON-cambridge-council-w04,"Cambridge, City of",councillor,1,3
+ON-cambridge-council-w05,"Cambridge, City of",councillor,1,2
+ON-cambridge-council-w06,"Cambridge, City of",councillor,1,3
+ON-cambridge-council-w07,"Cambridge, City of",councillor,1,5
+ON-cambridge-council-w08,"Cambridge, City of",councillor,1,1
+ON-cambridge-mayor,"Cambridge, City of",mayor,1,5
+ON-carleton-place-council-at-large,"Carleton Place, Town of",councillor,5,5
+ON-carleton-place-deputy-mayor,"Carleton Place, Town of",deputy_mayor,1,1
+ON-carleton-place-mayor,"Carleton Place, Town of",mayor,1,1
+ON-carling-council,"Carling, Township of",councillor,4,6
+ON-carling-mayor,"Carling, Township of",mayor,1,2
+ON-carlow-mayo-council-ward-one,"Carlow/Mayo, Township of",councillor,2,2
+ON-carlow-mayo-council-ward-two,"Carlow/Mayo, Township of",councillor,2,2
+ON-carlow-mayo-mayor,"Carlow/Mayo, Township of",mayor,1,1
+ON-casey-council-atlarge,"Casey, Township of",councillor,4,3
+ON-casey-mayor,"Casey, Township of",mayor,1,1
+ON-casselman-council-at-large,"Casselman, Municipality of",councillor,4,5
+ON-casselman-mayor,"Casselman, Municipality of",mayor,1,1
+ON-cavan-monaghan-council-w01,"Cavan Monaghan, Township of",councillor,1,1
+ON-cavan-monaghan-council-w02,"Cavan Monaghan, Township of",councillor,1,2
+ON-cavan-monaghan-council-w03,"Cavan Monaghan, Township of",councillor,1,3
+ON-cavan-monaghan-deputy-mayor,"Cavan Monaghan, Township of",deputy_mayor,1,1
+ON-cavan-monaghan-mayor,"Cavan Monaghan, Township of",mayor,1,1
+ON-central-elgin-council-ward1,"Central Elgin, Municipality of",councillor,1,1
+ON-central-elgin-council-ward2,"Central Elgin, Municipality of",councillor,1,1
+ON-central-elgin-council-ward3,"Central Elgin, Municipality of",councillor,1,0
+ON-central-elgin-council-ward4,"Central Elgin, Municipality of",councillor,1,1
+ON-central-elgin-council-ward5,"Central Elgin, Municipality of",councillor,1,1
+ON-central-elgin-deputy-mayor,"Central Elgin, Municipality of",deputy_mayor,1,1
+ON-central-elgin-mayor,"Central Elgin, Municipality of",mayor,1,1
+ON-central-frontenac-council-ward1,"Central Frontenac, Township of",councillor,2,3
+ON-central-frontenac-council-ward2,"Central Frontenac, Township of",councillor,2,3
+ON-central-frontenac-council-ward3,"Central Frontenac, Township of",councillor,2,3
+ON-central-frontenac-council-ward4,"Central Frontenac, Township of",councillor,2,3
+ON-central-frontenac-mayor,"Central Frontenac, Township of",mayor,1,2
+ON-central-huron-council-east-ward,"Central Huron, Municipality of",councillor,1,2
+ON-central-huron-council-west-ward,"Central Huron, Municipality of",councillor,1,2
+ON-central-huron-deputy-mayor,"Central Huron, Municipality of",deputy_mayor,1,1
+ON-central-huron-mayor,"Central Huron, Municipality of",mayor,1,1
+ON-central-manitoulin-councillor-ward1,"Central Manitoulin, Municipality of",councillor,2,1
+ON-central-manitoulin-councillor-ward2,"Central Manitoulin, Municipality of",councillor,2,0
+ON-central-manitoulin-councillor-ward3,"Central Manitoulin, Municipality of",councillor,2,1
+ON-central-manitoulin-mayor,"Central Manitoulin, Municipality of",mayor,1,1
+ON-centre-hastings-council-at-large,"Centre Hastings, Municipality of",councillor,3,4
+ON-centre-hastings-deputy-mayor,"Centre Hastings, Municipality of",deputy_mayor,1,1
+ON-centre-hastings-mayor,"Centre Hastings, Municipality of",mayor,1,1
+ON-centre-wellington-council-w01,"Centre Wellington, Township of",councillor,1,5
+ON-centre-wellington-council-w02,"Centre Wellington, Township of",councillor,1,2
+ON-centre-wellington-council-w03,"Centre Wellington, Township of",councillor,1,3
+ON-centre-wellington-council-w04,"Centre Wellington, Township of",councillor,1,3
+ON-centre-wellington-council-w05,"Centre Wellington, Township of",councillor,1,2
+ON-centre-wellington-council-w06,"Centre Wellington, Township of",councillor,1,2
+ON-centre-wellington-mayor,"Centre Wellington, Township of",mayor,1,5
+ON-centre-wellington-regional-councillor-w04,"Centre Wellington, Township of",regional_councillor,1,1
+ON-centre-wellington-regional-councillor-w05,"Centre Wellington, Township of",regional_councillor,1,1
+ON-centre-wellington-regional-councillor-w06,"Centre Wellington, Township of",regional_councillor,1,1
+ON-centre-wellington-trustee-ugdsb,"Centre Wellington, Township of",trustee,1,1
+ON-chamberlain-council-at-large,"Chamberlain, Township of",councillor,4,0
+ON-chamberlain-mayor,"Chamberlain, Township of",mayor,1,
+ON-champlain-council-ward1,"Champlain, Township of",councillor,2,2
+ON-champlain-council-ward2,"Champlain, Township of",councillor,2,2
+ON-champlain-council-ward3,"Champlain, Township of",councillor,2,2
+ON-champlain-council-ward4,"Champlain, Township of",councillor,2,3
+ON-champlain-mayor,"Champlain, Township of",mayor,1,2
+ON-chapleau-councillor,"Chapleau, Township of",councillor,6,6
+ON-chapleau-mayor,"Chapleau, Township of",mayor,1,3
+ON-chapple-council,"Chapple, Township of",councillor,4,0
+ON-chapple-mayor,"Chapple, Township of",mayor,1,0
+ON-charlton-and-dack-council-at-large,"Charlton and Dack, Municipality of",councillor,3,0
+ON-charlton-and-dack-mayor,"Charlton and Dack, Municipality of",mayor,1,0
+ON-chatham-kent-council-w01,"Chatham-Kent, Municipality of",councillor,2,6
+ON-chatham-kent-council-w02,"Chatham-Kent, Municipality of",councillor,2,10
+ON-chatham-kent-council-w03,"Chatham-Kent, Municipality of",councillor,1,7
+ON-chatham-kent-council-w04,"Chatham-Kent, Municipality of",councillor,1,3
+ON-chatham-kent-council-w05,"Chatham-Kent, Municipality of",councillor,2,10
+ON-chatham-kent-council-w06,"Chatham-Kent, Municipality of",councillor,2,7
+ON-chatham-kent-council-w07,"Chatham-Kent, Municipality of",councillor,2,12
+ON-chatham-kent-council-w08,"Chatham-Kent, Municipality of",councillor,2,12
+ON-chatham-kent-mayor,"Chatham-Kent, Municipality of",mayor,1,6
+ON-chatsworth-council-at-large,"Chatsworth, Township of",councillor,,2
+ON-chatsworth-deputy-mayor,"Chatsworth, Township of",deputy_mayor,1,2
+ON-chatsworth-mayor,"Chatsworth, Township of",mayor,1,2
+ON-chisholm-council,"Chisholm, Township of",councillor,4,4
+ON-chisholm-mayor,"Chisholm, Township of",mayor,1,1
+ON-clarence-rockland-council-w01,"Clarence-Rockland, City of",councillor,1,2
+ON-clarence-rockland-council-w02,"Clarence-Rockland, City of",councillor,1,1
+ON-clarence-rockland-council-w03,"Clarence-Rockland, City of",councillor,1,3
+ON-clarence-rockland-council-w04,"Clarence-Rockland, City of",councillor,1,1
+ON-clarence-rockland-council-w05,"Clarence-Rockland, City of",councillor,1,2
+ON-clarence-rockland-council-w06,"Clarence-Rockland, City of",councillor,1,1
+ON-clarence-rockland-council-w07,"Clarence-Rockland, City of",councillor,1,1
+ON-clarence-rockland-council-w08,"Clarence-Rockland, City of",councillor,1,1
+ON-clarence-rockland-mayor,"Clarence-Rockland, City of",mayor,1,2
+ON-clarington-council-w01,"Clarington, Municipality of",councillor,1,2
+ON-clarington-council-w02,"Clarington, Municipality of",councillor,1,3
+ON-clarington-council-w03,"Clarington, Municipality of",councillor,1,1
+ON-clarington-council-w04,"Clarington, Municipality of",councillor,1,2
+ON-clarington-mayor,"Clarington, Municipality of",mayor,1,2
+ON-clarington-regional-councillor-w01-02,"Clarington, Municipality of",regional_councillor,1,2
+ON-clarington-regional-councillor-w03-04,"Clarington, Municipality of",regional_councillor,1,2
+ON-clarington-trustee-kprdsb,"Clarington, Municipality of",trustee,3,3
+ON-clarington-trustee-pvnccdsb,"Clarington, Municipality of",trustee,2,2
+ON-clearview-council-w01,"Clearview, Township of",councillor,1,1
+ON-clearview-council-w02,"Clearview, Township of",councillor,1,1
+ON-clearview-council-w03,"Clearview, Township of",councillor,1,1
+ON-clearview-council-w04,"Clearview, Township of",councillor,1,1
+ON-clearview-council-w05,"Clearview, Township of",councillor,1,3
+ON-clearview-deputy-mayor,"Clearview, Township of",deputy_mayor,1,1
+ON-clearview-mayor,"Clearview, Township of",mayor,1,2
+ON-cobalt-council,"Cobalt, Town of",councillor,6,2
+ON-cobalt-mayor,"Cobalt, Town of",mayor,1,1
+ON-cobourg-council-at-large,"Cobourg, Town of",councillor,5,11
+ON-cobourg-deputy-mayor,"Cobourg, Town of",deputy_mayor,1,1
+ON-cobourg-mayor,"Cobourg, Town of",mayor,1,2
+ON-cochrane-council-at-large,"Cochrane, Town of",councillor,6,7
+ON-cochrane-mayor,"Cochrane, Town of",mayor,1,1
+ON-cockburn-island-council-at-large,"Cockburn Island, Township of",councillor,4,0
+ON-cockburn-island-mayor,"Cockburn Island, Township of",mayor,1,0
+ON-coleman-council,"Coleman, Township of",councillor,,3
+ON-coleman-mayor,"Coleman, Township of",mayor,1,1
+ON-collingwood-council-at-large,"Collingwood, Town of",councillor,7,9
+ON-collingwood-deputy-mayor,"Collingwood, Town of",deputy_mayor,1,2
+ON-collingwood-mayor,"Collingwood, Town of",mayor,1,3
+ON-conmee-council,"Conmee, Township of",councillor,4,0
+ON-conmee-mayor,"Conmee, Township of",mayor,1,0
+ON-cornwall-council-at-large,"Cornwall, City of",councillor,8,14
+ON-cornwall-mayor,"Cornwall, City of",mayor,1,2
+ON-cramahe-council-at-large,"Cramahe, Township of",councillor,3,2
+ON-cramahe-deputy-mayor,"Cramahe, Township of",deputy_mayor,1,0
+ON-cramahe-mayor,"Cramahe, Township of",mayor,1,1
+ON-cscmonavenir-trustee-toronto-est,"Toronto, City of",trustee,1,2
+ON-cscmonavenir-trustee-toronto-ouest,"Toronto, City of",trustee,1,1
+ON-csviamonde-trustee-toronto-centre,"Toronto, City of",trustee,1,1
+ON-csviamonde-trustee-toronto-est,"Toronto, City of",trustee,1,1
+ON-csviamonde-trustee-toronto-ouest,"Toronto, City of",trustee,1,1
+ON-dawn-euphemia-council,"Dawn-Euphemia, Township of",councillor,4,5
+ON-dawn-euphemia-mayor,"Dawn-Euphemia, Township of",mayor,1,1
+ON-dawson-council-at-large,"Dawson, Township of",councillor,4,0
+ON-dawson-mayor,"Dawson, Township of",mayor,1,0
+ON-deep-river-council-at-large,"Deep River, Town of",councillor,5,3
+ON-deep-river-mayor,"Deep River, Town of",mayor,1,2
+ON-deseronto-council,"Deseronto, Town of",councillor,3,3
+ON-deseronto-deputy-mayor,"Deseronto, Town of",deputy_mayor,1,0
+ON-deseronto-mayor,"Deseronto, Town of",mayor,1,2
+ON-dorion-council-at-large,"Dorion, Township of",councillor,4,0
+ON-dorion-mayor,"Dorion, Township of",mayor,1,
+ON-douro-dummer-council-at-large,"Douro-Dummer, Township of",councillor,1,2
+ON-douro-dummer-council-douro,"Douro-Dummer, Township of",councillor,1,1
+ON-douro-dummer-council-dummer,"Douro-Dummer, Township of",councillor,1,3
+ON-douro-dummer-deputy-mayor,"Douro-Dummer, Township of",deputy_mayor,1,2
+ON-douro-dummer-mayor,"Douro-Dummer, Township of",mayor,1,2
+ON-drummond-north-elmsley-council-drummond,"Drummond/North Elmsley, Township of",councillor,2,3
+ON-drummond-north-elmsley-council-north-elmsley,"Drummond/North Elmsley, Township of",councillor,2,3
+ON-drummond-north-elmsley-mayor,"Drummond/North Elmsley, Township of",mayor,1,1
+ON-dryden-council-at-large,"Dryden, City of",councillor,6,3
+ON-dryden-mayor,"Dryden, City of",mayor,1,1
+ON-dryden-trustee-french-public-unknown-board,"Dryden, City of",trustee,1,0
+ON-dubreuilville-councillor,"Dubreuilville, Township of",councillor,4,2
+ON-dubreuilville-mayor,"Dubreuilville, Township of",mayor,1,1
+ON-dutton-dunwich-council-ward1,"Dutton/Dunwich, Municipality of",councillor,1,1
+ON-dutton-dunwich-council-ward2,"Dutton/Dunwich, Municipality of",councillor,2,0
+ON-dutton-dunwich-deputy-mayor,"Dutton/Dunwich, Municipality of",deputy_mayor,1,1
+ON-dutton-dunwich-mayor,"Dutton/Dunwich, Municipality of",mayor,1,2
+ON-dysart-et-al-council-w01,"Dysart et al, Municipality of",councillor,1,2
+ON-dysart-et-al-council-w02,"Dysart et al, Municipality of",councillor,1,2
+ON-dysart-et-al-council-w03,"Dysart et al, Municipality of",councillor,1,3
+ON-dysart-et-al-council-w04,"Dysart et al, Municipality of",councillor,1,1
+ON-dysart-et-al-council-w05,"Dysart et al, Municipality of",councillor,1,2
+ON-dysart-et-al-deputy-mayor,"Dysart et al, Municipality of",deputy_mayor,1,1
+ON-dysart-et-al-mayor,"Dysart et al, Municipality of",mayor,1,3
+ON-ear-falls-council,"Ear Falls, Township of",councillor,4,0
+ON-ear-falls-mayor,"Ear Falls, Township of",mayor,1,0
+ON-east-ferris-council,"East Ferris, Municipality of",councillor,4,4
+ON-east-ferris-mayor,"East Ferris, Municipality of",mayor,1,2
+ON-east-ferris-trustee-csdcfn,"East Ferris, Municipality of",trustee,1,0
+ON-east-ferris-trustee-nearnorth,"East Ferris, Municipality of",trustee,1,0
+ON-east-garafraxa-councillor,"East Garafraxa, Township of",councillor,3,2
+ON-east-garafraxa-deputy-mayor,"East Garafraxa, Township of",deputy_mayor,1,1
+ON-east-garafraxa-mayor,"East Garafraxa, Township of",mayor,1,1
+ON-east-garafraxa-trustee-ugdsb,"East Garafraxa, Township of",trustee,1,1
+ON-east-gwillimbury-council-w01,"East Gwillimbury, Town of",councillor,2,4
+ON-east-gwillimbury-council-w02,"East Gwillimbury, Town of",councillor,2,7
+ON-east-gwillimbury-council-w03,"East Gwillimbury, Town of",councillor,2,3
+ON-east-gwillimbury-mayor,"East Gwillimbury, Town of",mayor,1,2
+ON-east-hawkesbury-council-at-large,"East Hawkesbury, Township of",councillor,,3
+ON-east-hawkesbury-deputy-mayor,"East Hawkesbury, Township of",deputy_mayor,,2
+ON-east-hawkesbury-mayor,"East Hawkesbury, Township of",mayor,1,2
+ON-east-zorra-tavistock-council-w01,"East Zorra-Tavistock, Township of",councillor,2,1
+ON-east-zorra-tavistock-council-w02,"East Zorra-Tavistock, Township of",councillor,1,2
+ON-east-zorra-tavistock-council-w03,"East Zorra-Tavistock, Township of",councillor,2,2
+ON-east-zorra-tavistock-deputy-mayor,"East Zorra-Tavistock, Township of",deputy_mayor,1,1
+ON-east-zorra-tavistock-mayor,"East Zorra-Tavistock, Township of",mayor,1,1
+ON-edwardsburgh-cardinal-council-w01,"Edwardsburgh/Cardinal, Township of",councillor,1,1
+ON-edwardsburgh-cardinal-council-w02,"Edwardsburgh/Cardinal, Township of",councillor,1,1
+ON-edwardsburgh-cardinal-council-w03,"Edwardsburgh/Cardinal, Township of",councillor,1,1
+ON-edwardsburgh-cardinal-deputy-mayor,"Edwardsburgh/Cardinal, Township of",deputy_mayor,1,1
+ON-edwardsburgh-cardinal-mayor,"Edwardsburgh/Cardinal, Township of",mayor,1,1
+ON-elizabethtown-kitley-council,"Elizabethtown-Kitley, Township of",councillor,,7
+ON-elizabethtown-kitley-mayor,"Elizabethtown-Kitley, Township of",mayor,1,1
+ON-elliot-lake-council,"Elliot Lake, City of",councillor,6,7
+ON-elliot-lake-mayor,"Elliot Lake, City of",mayor,1,1
+ON-elliot-lake-trustee-english-public,"Elliot Lake, City of",trustee,1,1
+ON-elliot-lake-trustee-english-separate,"Elliot Lake, City of",trustee,2,2
+ON-elliot-lake-trustee-french-public,"Elliot Lake, City of",trustee,1,1
+ON-elliot-lake-trustee-french-separate,"Elliot Lake, City of",trustee,1,0
+ON-emo-council,"Emo, Township of",councillor,4,0
+ON-emo-mayor,"Emo, Township of",mayor,1,0
+ON-englehart-council,"Englehart, Town of",councillor,6,3
+ON-englehart-mayor,"Englehart, Town of",mayor,1,2
+ON-enniskillen-councillor,"Enniskillen, Township of",councillor,4,4
+ON-enniskillen-mayor,"Enniskillen, Township of",mayor,1,1
+ON-erin-council-at-large,"Erin, Town of",councillor,4,8
+ON-erin-mayor,"Erin, Town of",mayor,1,2
+ON-erin-regional-councillor,"Erin, Town of",regional_councillor,1,1
+ON-espanola-council,"Espanola, Town of",councillor,6,4
+ON-espanola-mayor,"Espanola, Town of",mayor,1,2
+ON-essa-council-w01,"Essa, Township of",councillor,1,1
+ON-essa-council-w02,"Essa, Township of",councillor,1,1
+ON-essa-council-w03,"Essa, Township of",councillor,1,1
+ON-essa-deputy-mayor,"Essa, Township of",deputy_mayor,1,1
+ON-essa-mayor,"Essa, Township of",mayor,1,2
+ON-essex-town-council-w01,"Essex, Town of",councillor,2,3
+ON-essex-town-council-w02,"Essex, Town of",councillor,1,1
+ON-essex-town-council-w03,"Essex, Town of",councillor,2,4
+ON-essex-town-council-w04,"Essex, Town of",councillor,1,1
+ON-essex-town-deputy-mayor,"Essex, Town of",deputy_mayor,1,1
+ON-essex-town-mayor,"Essex, Town of",mayor,1,1
+ON-evanturel-councillor,"Evanturel, Township of",councillor,4,0
+ON-evanturel-mayor,"Evanturel, Township of",mayor,1,1
+ON-faraday-council,"Faraday, Township of",councillor,4,2
+ON-faraday-deputy-mayor,"Faraday, Township of",deputy_mayor,1,1
+ON-faraday-mayor,"Faraday, Township of",mayor,1,1
+ON-fauquier-strickland-council-at-large,"Fauquier-Strickland, Township of",councillor,4,1
+ON-fauquier-strickland-mayor,"Fauquier-Strickland, Township of",mayor,1,
+ON-fort-erie-council-w01,"Fort Erie, Town of",councillor,1,1
+ON-fort-erie-council-w02,"Fort Erie, Town of",councillor,1,1
+ON-fort-erie-council-w03,"Fort Erie, Town of",councillor,1,2
+ON-fort-erie-council-w04,"Fort Erie, Town of",councillor,1,3
+ON-fort-erie-council-w05,"Fort Erie, Town of",councillor,1,4
+ON-fort-erie-council-w06,"Fort Erie, Town of",councillor,1,1
+ON-fort-erie-mayor,"Fort Erie, Town of",mayor,1,3
+ON-fort-frances-council,"Fort Frances, Town of",councillor,,6
+ON-fort-frances-mayor,"Fort Frances, Town of",mayor,1,2
+ON-fort-frances-trustee-csdcab,"Fort Frances, Town of",trustee,,
+ON-fort-frances-trustee-cspgno,"Fort Frances, Town of",trustee,,
+ON-fort-frances-trustee-nwcdsb,"Fort Frances, Town of",trustee,,
+ON-fort-frances-trustee-rrdsb,"Fort Frances, Town of",trustee,,0
+ON-french-river-council-w01,"French River, Municipality of",councillor,1,2
+ON-french-river-council-w02,"French River, Municipality of",councillor,1,1
+ON-french-river-council-w03,"French River, Municipality of",councillor,1,1
+ON-french-river-council-w04,"French River, Municipality of",councillor,1,2
+ON-french-river-council-w05,"French River, Municipality of",councillor,1,1
+ON-french-river-council-w06,"French River, Municipality of",councillor,1,1
+ON-french-river-mayor,"French River, Municipality of",mayor,1,1
+ON-front-of-yonge-councillor,"Front of Yonge, Township of",councillor,4,4
+ON-front-of-yonge-mayor,"Front of Yonge, Township of",mayor,1,3
+ON-frontenac-islands-council-w01,"Frontenac Islands, Township of",councillor,2,2
+ON-frontenac-islands-council-w02,"Frontenac Islands, Township of",councillor,2,3
+ON-frontenac-islands-mayor,"Frontenac Islands, Township of",mayor,1,2
+ON-gananoque-council-at-large,"Gananoque, Town of",councillor,6,6
+ON-gananoque-mayor,"Gananoque, Town of",mayor,1,1
+ON-gauthier-mayor,"Gauthier, Township of",mayor,1,
+ON-georgian-bay-council-district-wards1-3,"Georgian Bay, Township of",regional_councillor,1,2
+ON-georgian-bay-council-district-wards2-4,"Georgian Bay, Township of",regional_councillor,1,1
+ON-georgian-bay-council-ward1,"Georgian Bay, Township of",councillor,1,1
+ON-georgian-bay-council-ward2,"Georgian Bay, Township of",councillor,1,1
+ON-georgian-bay-council-ward3,"Georgian Bay, Township of",councillor,1,1
+ON-georgian-bay-council-ward4,"Georgian Bay, Township of",councillor,1,2
+ON-georgian-bay-mayor,"Georgian Bay, Township of",mayor,1,2
+ON-georgian-bluffs-council,"Georgian Bluffs, Township of",councillor,,0
+ON-georgian-bluffs-deputy-mayor,"Georgian Bluffs, Township of",deputy_mayor,1,1
+ON-georgian-bluffs-mayor,"Georgian Bluffs, Township of",mayor,1,1
+ON-georgian-bluffs-trustee-bwdsb,"Georgian Bluffs, Township of",trustee,1,1
+ON-georgina-council-w01,"Georgina, Town of",councillor,1,2
+ON-georgina-council-w02,"Georgina, Town of",councillor,1,5
+ON-georgina-council-w03,"Georgina, Town of",councillor,1,5
+ON-georgina-council-w04,"Georgina, Town of",councillor,1,4
+ON-georgina-council-w05,"Georgina, Town of",councillor,1,1
+ON-georgina-mayor,"Georgina, Town of",mayor,1,2
+ON-georgina-regional-councillor,"Georgina, Town of",regional_councillor,1,2
+ON-gillies-councillor,"Gillies, Township of",councillor,4,2
+ON-gillies-mayor,"Gillies, Township of",mayor,1,2
+ON-goderich-council-at-large,"Goderich, Town of",councillor,,2
+ON-goderich-deputy-mayor,"Goderich, Town of",deputy_mayor,1,1
+ON-goderich-mayor,"Goderich, Town of",mayor,1,2
+ON-gordon-barrie-island-council-at-large,"Gordon/Barrie Island, Municipality of",councillor,4,0
+ON-gordon-barrie-island-mayor,"Gordon/Barrie Island, Municipality of",mayor,1,
+ON-gore-bay-council,"Gore Bay, Town of",councillor,4,0
+ON-gore-bay-mayor,"Gore Bay, Town of",mayor,1,0
+ON-grand-valley-council-at-large,"Grand Valley, Town of",councillor,3,3
+ON-grand-valley-deputy-mayor,"Grand Valley, Town of",deputy_mayor,1,1
+ON-grand-valley-mayor,"Grand Valley, Town of",mayor,1,2
+ON-gravenhurst-council-w01,"Gravenhurst, Town of",councillor,1,4
+ON-gravenhurst-council-w02,"Gravenhurst, Town of",councillor,1,3
+ON-gravenhurst-council-w03,"Gravenhurst, Town of",councillor,1,2
+ON-gravenhurst-council-w04,"Gravenhurst, Town of",councillor,1,1
+ON-gravenhurst-council-w05,"Gravenhurst, Town of",councillor,1,2
+ON-gravenhurst-district-councillor,"Gravenhurst, Town of",regional_councillor,1,5
+ON-gravenhurst-mayor,"Gravenhurst, Town of",mayor,1,3
+ON-greater-madawaska-councillor-ward1,"Greater Madawaska, Township of",councillor,2,2
+ON-greater-madawaska-councillor-ward2,"Greater Madawaska, Township of",councillor,1,1
+ON-greater-madawaska-councillor-ward3,"Greater Madawaska, Township of",councillor,1,3
+ON-greater-madawaska-mayor,"Greater Madawaska, Township of",mayor,1,2
+ON-greater-madawaska-trustee-cepeo,"Greater Madawaska, Township of",trustee,1,0
+ON-greater-madawaska-trustee-rccdsb,"Greater Madawaska, Township of",trustee,1,0
+ON-greater-madawaska-trustee-rcdsb,"Greater Madawaska, Township of",trustee,1,1
+ON-greater-napanee-council-w01,"Greater Napanee, Town of",councillor,1,1
+ON-greater-napanee-council-w02,"Greater Napanee, Town of",councillor,1,0
+ON-greater-napanee-council-w03,"Greater Napanee, Town of",councillor,1,1
+ON-greater-napanee-council-w04,"Greater Napanee, Town of",councillor,1,2
+ON-greater-napanee-council-w05,"Greater Napanee, Town of",councillor,1,1
+ON-greater-napanee-deputy-mayor,"Greater Napanee, Town of",deputy_mayor,1,1
+ON-greater-napanee-mayor,"Greater Napanee, Town of",mayor,1,1
+ON-greater-sudbury-council-w01,"Greater Sudbury, City of",councillor,1,2
+ON-greater-sudbury-council-w02,"Greater Sudbury, City of",councillor,1,4
+ON-greater-sudbury-council-w03,"Greater Sudbury, City of",councillor,1,2
+ON-greater-sudbury-council-w04,"Greater Sudbury, City of",councillor,1,2
+ON-greater-sudbury-council-w05,"Greater Sudbury, City of",councillor,1,1
+ON-greater-sudbury-council-w06,"Greater Sudbury, City of",councillor,1,1
+ON-greater-sudbury-council-w07,"Greater Sudbury, City of",councillor,1,1
+ON-greater-sudbury-council-w08,"Greater Sudbury, City of",councillor,1,3
+ON-greater-sudbury-council-w09,"Greater Sudbury, City of",councillor,1,3
+ON-greater-sudbury-council-w10,"Greater Sudbury, City of",councillor,1,5
+ON-greater-sudbury-council-w11,"Greater Sudbury, City of",councillor,1,1
+ON-greater-sudbury-council-w12,"Greater Sudbury, City of",councillor,1,2
+ON-greater-sudbury-mayor,"Greater Sudbury, City of",mayor,1,6
+ON-greenstone-council-beardmore-ward,"Greenstone, Municipality of",councillor,1,0
+ON-greenstone-council-geraldton-ward,"Greenstone, Municipality of",councillor,2,3
+ON-greenstone-council-longlac-ward,"Greenstone, Municipality of",councillor,2,1
+ON-greenstone-council-nakina-ward,"Greenstone, Municipality of",councillor,1,1
+ON-greenstone-council-rural-east-ward,"Greenstone, Municipality of",councillor,1,0
+ON-greenstone-council-rural-west-ward,"Greenstone, Municipality of",councillor,1,2
+ON-greenstone-mayor,"Greenstone, Municipality of",mayor,1,3
+ON-grey-highlands-council,"Grey Highlands, Municipality of",councillor,5,3
+ON-grey-highlands-deputy-mayor,"Grey Highlands, Municipality of",deputy_mayor,1,2
+ON-grey-highlands-mayor,"Grey Highlands, Municipality of",mayor,1,3
+ON-grey-highlands-trustee-cscprovidence,"Grey Highlands, Municipality of",trustee,1,0
+ON-grimsby-council-w01,"Grimsby, Town of",councillor,2,2
+ON-grimsby-council-w02,"Grimsby, Town of",councillor,2,5
+ON-grimsby-council-w03,"Grimsby, Town of",councillor,2,0
+ON-grimsby-council-w04,"Grimsby, Town of",councillor,2,3
+ON-grimsby-mayor,"Grimsby, Town of",mayor,1,4
+ON-guelph-council-w01,"Guelph, City of",councillor,2,7
+ON-guelph-council-w02,"Guelph, City of",councillor,2,8
+ON-guelph-council-w03,"Guelph, City of",councillor,2,5
+ON-guelph-council-w04,"Guelph, City of",councillor,2,3
+ON-guelph-council-w05,"Guelph, City of",councillor,2,8
+ON-guelph-council-w06,"Guelph, City of",councillor,2,5
+ON-guelph-eramosa-council-w01,"Guelph/Eramosa, Township of",councillor,1,1
+ON-guelph-eramosa-council-w02,"Guelph/Eramosa, Township of",councillor,1,1
+ON-guelph-eramosa-council-w03,"Guelph/Eramosa, Township of",councillor,1,3
+ON-guelph-eramosa-council-w04,"Guelph/Eramosa, Township of",councillor,1,3
+ON-guelph-eramosa-county-councillor-w07,"Guelph/Eramosa, Township of",county_councillor,1,1
+ON-guelph-eramosa-county-councillor-w08,"Guelph/Eramosa, Township of",county_councillor,1,1
+ON-guelph-eramosa-mayor,"Guelph/Eramosa, Township of",mayor,1,2
+ON-guelph-mayor,"Guelph, City of",mayor,1,4
+ON-haldimand-county-council-w01,Haldimand County,councillor,1,0
+ON-haldimand-county-council-w02,Haldimand County,councillor,1,2
+ON-haldimand-county-council-w03,Haldimand County,councillor,1,2
+ON-haldimand-county-council-w04,Haldimand County,councillor,1,3
+ON-haldimand-county-council-w05,Haldimand County,councillor,1,3
+ON-haldimand-county-council-w06,Haldimand County,councillor,1,7
+ON-haldimand-county-council-w07,Haldimand County,councillor,1,5
+ON-haldimand-county-mayor,Haldimand County,mayor,1,4
+ON-halton-hills-council-w01,"Halton Hills, Town of",councillor,2,3
+ON-halton-hills-council-w02,"Halton Hills, Town of",councillor,2,3
+ON-halton-hills-council-w03,"Halton Hills, Town of",councillor,2,4
+ON-halton-hills-council-w04,"Halton Hills, Town of",councillor,2,5
+ON-halton-hills-mayor,"Halton Hills, Town of",mayor,1,2
+ON-halton-hills-regional-councillor-w01-02,"Halton Hills, Town of",regional_councillor,1,2
+ON-halton-hills-regional-councillor-w03-04,"Halton Hills, Town of",regional_councillor,1,2
+ON-hamilton-city-council-w01,"Hamilton, City of",councillor,1,2
+ON-hamilton-city-council-w02,"Hamilton, City of",councillor,1,9
+ON-hamilton-city-council-w03,"Hamilton, City of",councillor,1,7
+ON-hamilton-city-council-w04,"Hamilton, City of",councillor,1,4
+ON-hamilton-city-council-w05,"Hamilton, City of",councillor,1,1
+ON-hamilton-city-council-w06,"Hamilton, City of",councillor,1,2
+ON-hamilton-city-council-w07,"Hamilton, City of",councillor,1,4
+ON-hamilton-city-council-w08,"Hamilton, City of",councillor,1,2
+ON-hamilton-city-council-w09,"Hamilton, City of",councillor,1,6
+ON-hamilton-city-council-w10,"Hamilton, City of",councillor,1,5
+ON-hamilton-city-council-w11,"Hamilton, City of",councillor,1,2
+ON-hamilton-city-council-w12,"Hamilton, City of",councillor,1,2
+ON-hamilton-city-council-w13,"Hamilton, City of",councillor,1,2
+ON-hamilton-city-council-w14,"Hamilton, City of",councillor,1,2
+ON-hamilton-city-council-w15,"Hamilton, City of",councillor,1,5
+ON-hamilton-city-mayor,"Hamilton, City of",mayor,1,8
+ON-hamilton-township-council,"Hamilton, Township of",councillor,3,3
+ON-hamilton-township-deputy-mayor,"Hamilton, Township of",deputy_mayor,1,1
+ON-hamilton-township-mayor,"Hamilton, Township of",mayor,1,1
+ON-hamilton-township-trustee-pvnccdsb,"Hamilton, Township of",trustee,1,0
+ON-hanover-council,"Hanover, Town of",councillor,5,5
+ON-hanover-deputy-mayor,"Hanover, Town of",deputy_mayor,1,1
+ON-hanover-mayor,"Hanover, Town of",mayor,1,2
+ON-harley-councillor,"Harley, Township of",councillor,,5
+ON-harley-mayor,"Harley, Township of",mayor,1,1
+ON-harris-council-at-large,"Harris, Township of",councillor,4,0
+ON-harris-mayor,"Harris, Township of",mayor,1,
+ON-hastings-highlands-council-at-large,"Hastings Highlands, Municipality of",councillor,,7
+ON-hastings-highlands-deputy-mayor,"Hastings Highlands, Municipality of",deputy_mayor,,1
+ON-hastings-highlands-mayor,"Hastings Highlands, Municipality of",mayor,1,2
+ON-havelock-belmont-methuen-council-at-large,"Havelock-Belmont-Methuen, Township of",councillor,3,7
+ON-havelock-belmont-methuen-deputy-mayor,"Havelock-Belmont-Methuen, Township of",deputy_mayor,1,2
+ON-havelock-belmont-methuen-mayor,"Havelock-Belmont-Methuen, Township of",mayor,1,1
+ON-hawkesbury-council-at-large,"Hawkesbury, Town of",councillor,6,3
+ON-hawkesbury-mayor,"Hawkesbury, Town of",mayor,1,2
+ON-head-clara-and-maria-council-atlarge,"Head, Clara and Maria, Township of",councillor,4,4
+ON-head-clara-and-maria-mayor,"Head, Clara and Maria, Township of",mayor,1,1
+ON-hearst-council-at-large,"Hearst, Town of",councillor,6,4
+ON-hearst-mayor,"Hearst, Town of",mayor,1,2
+ON-highlands-east-council-ward1-bicroft,"Highlands East, Municipality of",councillor,,1
+ON-highlands-east-council-ward2-cardiff,"Highlands East, Municipality of",councillor,,2
+ON-highlands-east-council-ward3-glamorgan,"Highlands East, Municipality of",councillor,,2
+ON-highlands-east-council-ward4-monmouth,"Highlands East, Municipality of",councillor,,1
+ON-highlands-east-mayor,"Highlands East, Municipality of",mayor,1,4
+ON-hilliard-council-atlarge,"Hilliard, Township of",councillor,4,1
+ON-hilliard-mayor,"Hilliard, Township of",mayor,1,1
+ON-hilton-beach-council-at-large,"Hilton Beach, Village of",councillor,4,0
+ON-hilton-beach-mayor,"Hilton Beach, Village of",mayor,1,1
+ON-hilton-council-atlarge,"Hilton, Township of",councillor,4,4
+ON-hilton-mayor,"Hilton, Township of",mayor,1,1
+ON-hornepayne-council,"Hornepayne, Township of",councillor,4,5
+ON-hornepayne-mayor,"Hornepayne, Township of",mayor,1,1
+ON-horton-council,"Horton, Township of",councillor,4,5
+ON-horton-mayor,"Horton, Township of",mayor,1,2
+ON-horton-trustee-english-public,"Horton, Township of",trustee,1,1
+ON-horton-trustee-french-separate,"Horton, Township of",trustee,1,1
+ON-howick-council-at-large,"Howick, Township of",councillor,3,1
+ON-howick-deputy-reeve,"Howick, Township of",deputy_mayor,1,0
+ON-howick-mayor,"Howick, Township of",mayor,1,0
+ON-hudson-councillor,"Hudson, Township of",councillor,,1
+ON-hudson-mayor,"Hudson, Township of",mayor,1,0
+ON-huntsville-council-district-town,"Huntsville, Town of",regional_councillor,3,3
+ON-huntsville-council-w01-02,"Huntsville, Town of",councillor,2,2
+ON-huntsville-council-w03-04-05,"Huntsville, Town of",councillor,2,0
+ON-huntsville-council-w06,"Huntsville, Town of",councillor,1,1
+ON-huntsville-mayor,"Huntsville, Town of",mayor,1,4
+ON-huron-east-council-brussels,"Huron East, Municipality of",councillor,2,0
+ON-huron-east-council-grey,"Huron East, Municipality of",councillor,1,1
+ON-huron-east-council-mckillop,"Huron East, Municipality of",councillor,2,2
+ON-huron-east-council-seaforth,"Huron East, Municipality of",councillor,2,2
+ON-huron-east-council-tuckersmith,"Huron East, Municipality of",councillor,2,1
+ON-huron-east-mayor,"Huron East, Municipality of",mayor,1,1
+ON-huron-kinloss-council-at-large,"Huron-Kinloss, Township of",councillor,5,6
+ON-huron-kinloss-deputy-mayor,"Huron-Kinloss, Township of",deputy_mayor,1,1
+ON-huron-kinloss-mayor,"Huron-Kinloss, Township of",mayor,1,2
+ON-huron-shores-council-w1,"Huron Shores, Municipality of",councillor,1,1
+ON-huron-shores-council-w1w2,"Huron Shores, Municipality of",councillor,1,1
+ON-huron-shores-council-w2,"Huron Shores, Municipality of",councillor,1,2
+ON-huron-shores-council-w3,"Huron Shores, Municipality of",councillor,1,2
+ON-huron-shores-council-w3w4,"Huron Shores, Municipality of",councillor,1,1
+ON-huron-shores-council-w4,"Huron Shores, Municipality of",councillor,1,1
+ON-huron-shores-mayor,"Huron Shores, Municipality of",mayor,1,2
+ON-ignace-council,"Ignace, Township of",councillor,4,4
+ON-ignace-mayor,"Ignace, Township of",mayor,1,1
+ON-ingersoll-council-at-large,"Ingersoll, Town of",councillor,5,4
+ON-ingersoll-deputy-mayor,"Ingersoll, Town of",deputy_mayor,1,2
+ON-ingersoll-mayor,"Ingersoll, Town of",mayor,1,2
+ON-innisfil-council-w01,"Innisfil, Town of",councillor,1,3
+ON-innisfil-council-w02,"Innisfil, Town of",councillor,1,3
+ON-innisfil-council-w03,"Innisfil, Town of",councillor,1,3
+ON-innisfil-council-w04,"Innisfil, Town of",councillor,1,2
+ON-innisfil-council-w05,"Innisfil, Town of",councillor,1,2
+ON-innisfil-council-w06,"Innisfil, Town of",councillor,1,3
+ON-innisfil-council-w07,"Innisfil, Town of",councillor,1,1
+ON-innisfil-deputy-mayor,"Innisfil, Town of",deputy_mayor,1,3
+ON-innisfil-mayor,"Innisfil, Town of",mayor,1,2
+ON-iroquois-falls-council,"Iroquois Falls, Town of",councillor,6,0
+ON-iroquois-falls-mayor,"Iroquois Falls, Town of",mayor,1,0
+ON-james-councillor,"James, Township of",councillor,4,1
+ON-james-mayor,"James, Township of",mayor,1,2
+ON-jocelyn-council-atlarge,"Jocelyn, Township of",councillor,4,1
+ON-jocelyn-mayor,"Jocelyn, Township of",mayor,1,1
+ON-johnson-councillor,"Johnson, Township of",councillor,,2
+ON-johnson-mayor,"Johnson, Township of",mayor,1,1
+ON-joly-council-atlarge,"Joly, Township of",councillor,4,2
+ON-joly-mayor,"Joly, Township of",mayor,1,0
+ON-kapuskasing-council,"Kapuskasing, Town of",councillor,6,2
+ON-kapuskasing-mayor,"Kapuskasing, Town of",mayor,1,1
+ON-kawartha-lakes-council-w01,"Kawartha Lakes, City of",councillor,1,5
+ON-kawartha-lakes-council-w02,"Kawartha Lakes, City of",councillor,1,2
+ON-kawartha-lakes-council-w03,"Kawartha Lakes, City of",councillor,1,2
+ON-kawartha-lakes-council-w04,"Kawartha Lakes, City of",councillor,1,3
+ON-kawartha-lakes-council-w05,"Kawartha Lakes, City of",councillor,1,1
+ON-kawartha-lakes-council-w06,"Kawartha Lakes, City of",councillor,1,2
+ON-kawartha-lakes-council-w07,"Kawartha Lakes, City of",councillor,1,2
+ON-kawartha-lakes-council-w08,"Kawartha Lakes, City of",councillor,1,3
+ON-kawartha-lakes-mayor,"Kawartha Lakes, City of",mayor,1,5
+ON-kawartha-lakes-trustee-pvnccdsb,"Kawartha Lakes, City of",trustee,1,1
+ON-kawartha-lakes-trustee-tldsb-w01w04,"Kawartha Lakes, City of",trustee,1,0
+ON-kawartha-lakes-trustee-tldsb-w02w03,"Kawartha Lakes, City of",trustee,1,1
+ON-kawartha-lakes-trustee-tldsb-w05,"Kawartha Lakes, City of",trustee,1,0
+ON-kawartha-lakes-trustee-tldsb-w06w08,"Kawartha Lakes, City of",trustee,1,1
+ON-kawartha-lakes-trustee-tldsb-w07,"Kawartha Lakes, City of",trustee,1,1
+ON-kearney-council,"Kearney, Town of",councillor,4,3
+ON-kearney-mayor,"Kearney, Town of",mayor,1,1
+ON-kenora-council-at-large,"Kenora, City of",councillor,6,5
+ON-kenora-mayor,"Kenora, City of",mayor,1,1
+ON-kerns-council-atlarge,"Kerns, Township of",councillor,4,2
+ON-kerns-mayor,"Kerns, Township of",mayor,1,1
+ON-killaloe-hagarty-and-richards-councillor-ward1,"Killaloe, Hagarty and Richards, Township of",councillor,2,3
+ON-killaloe-hagarty-and-richards-councillor-ward2,"Killaloe, Hagarty and Richards, Township of",councillor,2,2
+ON-killaloe-hagarty-and-richards-councillor-ward3,"Killaloe, Hagarty and Richards, Township of",councillor,2,2
+ON-killaloe-hagarty-and-richards-mayor,"Killaloe, Hagarty and Richards, Township of",mayor,1,2
+ON-killarney-council-ward1,"Killarney, Municipality of",councillor,3,1
+ON-killarney-council-ward2,"Killarney, Municipality of",councillor,2,3
+ON-killarney-mayor,"Killarney, Municipality of",mayor,1,1
+ON-kincardine-council-at-large,"Kincardine, Municipality of",councillor,,2
+ON-kincardine-council-ward1,"Kincardine, Municipality of",councillor,1,1
+ON-kincardine-council-ward2,"Kincardine, Municipality of",councillor,1,2
+ON-kincardine-council-ward3,"Kincardine, Municipality of",councillor,1,1
+ON-kincardine-deputy-mayor,"Kincardine, Municipality of",deputy_mayor,1,1
+ON-kincardine-mayor,"Kincardine, Municipality of",mayor,1,2
+ON-king-council-w01,"King, Township of",councillor,1,2
+ON-king-council-w02,"King, Township of",councillor,1,1
+ON-king-council-w03,"King, Township of",councillor,1,1
+ON-king-council-w04,"King, Township of",councillor,1,3
+ON-king-council-w05,"King, Township of",councillor,1,3
+ON-king-council-w06,"King, Township of",councillor,1,1
+ON-king-mayor,"King, Township of",mayor,1,2
+ON-kingston-council-w01,"Kingston, City of",councillor,1,3
+ON-kingston-council-w02,"Kingston, City of",councillor,1,4
+ON-kingston-council-w03,"Kingston, City of",councillor,1,2
+ON-kingston-council-w04,"Kingston, City of",councillor,1,2
+ON-kingston-council-w05,"Kingston, City of",councillor,1,1
+ON-kingston-council-w06,"Kingston, City of",councillor,1,1
+ON-kingston-council-w07,"Kingston, City of",councillor,1,3
+ON-kingston-council-w08,"Kingston, City of",councillor,1,2
+ON-kingston-council-w09,"Kingston, City of",councillor,1,1
+ON-kingston-council-w10,"Kingston, City of",councillor,1,5
+ON-kingston-council-w11,"Kingston, City of",councillor,1,2
+ON-kingston-council-w12,"Kingston, City of",councillor,1,4
+ON-kingston-mayor,"Kingston, City of",mayor,1,4
+ON-kingsville-council-at-large,"Kingsville, Town of",councillor,5,5
+ON-kingsville-deputy-mayor,"Kingsville, Town of",deputy_mayor,1,2
+ON-kingsville-mayor,"Kingsville, Town of",mayor,1,3
+ON-kirkland-lake-council,"Kirkland Lake, Town of",councillor,6,3
+ON-kirkland-lake-mayor,"Kirkland Lake, Town of",mayor,1,1
+ON-kitchener-council-ward1,"Kitchener, City of",councillor,1,1
+ON-kitchener-council-ward10,"Kitchener, City of",councillor,1,2
+ON-kitchener-council-ward2,"Kitchener, City of",councillor,1,2
+ON-kitchener-council-ward3,"Kitchener, City of",councillor,1,5
+ON-kitchener-council-ward4,"Kitchener, City of",councillor,1,3
+ON-kitchener-council-ward5,"Kitchener, City of",councillor,1,8
+ON-kitchener-council-ward6,"Kitchener, City of",councillor,1,2
+ON-kitchener-council-ward7,"Kitchener, City of",councillor,1,2
+ON-kitchener-council-ward8,"Kitchener, City of",councillor,1,1
+ON-kitchener-council-ward9,"Kitchener, City of",councillor,1,2
+ON-kitchener-mayor,"Kitchener, City of",mayor,1,4
+ON-la-vallee-council,"La Vallee, Township of",councillor,4,1
+ON-la-vallee-mayor,"La Vallee, Township of",mayor,1,1
+ON-laird-council,"Laird, Township of",councillor,4,1
+ON-laird-mayor,"Laird, Township of",mayor,1,1
+ON-lake-of-bays-council-franklin-sinclair-ward,"Lake of Bays, Township of",regional_councillor,1,1
+ON-lake-of-bays-council-franklin-ward,"Lake of Bays, Township of",councillor,1,2
+ON-lake-of-bays-council-mclean-ward,"Lake of Bays, Township of",councillor,1,1
+ON-lake-of-bays-council-ridout-mclean-ward,"Lake of Bays, Township of",regional_councillor,1,1
+ON-lake-of-bays-council-ridout-ward,"Lake of Bays, Township of",councillor,1,1
+ON-lake-of-bays-council-sinclair-finlayson-ward,"Lake of Bays, Township of",councillor,1,1
+ON-lake-of-bays-mayor,"Lake of Bays, Township of",mayor,1,2
+ON-lake-of-the-woods-council-at-large,"Lake of the Woods, Township of",councillor,4,0
+ON-lake-of-the-woods-mayor,"Lake of the Woods, Township of",mayor,1,0
+ON-lakeshore-council-w01,"Lakeshore, Municipality of",councillor,1,2
+ON-lakeshore-council-w02,"Lakeshore, Municipality of",councillor,1,3
+ON-lakeshore-council-w03,"Lakeshore, Municipality of",councillor,1,0
+ON-lakeshore-council-w04,"Lakeshore, Municipality of",councillor,1,0
+ON-lakeshore-council-w05,"Lakeshore, Municipality of",councillor,1,2
+ON-lakeshore-council-w06,"Lakeshore, Municipality of",councillor,1,2
+ON-lakeshore-deputy-mayor,"Lakeshore, Municipality of",deputy_mayor,1,3
+ON-lakeshore-mayor,"Lakeshore, Municipality of",mayor,1,3
+ON-lakeshore-trustee-cscprovidence-s5,"Lakeshore, Municipality of",trustee,1,1
+ON-lakeshore-trustee-cscprovidence-s7,"Lakeshore, Municipality of",trustee,1,1
+ON-lakeshore-trustee-cscprovidence-s9,"Lakeshore, Municipality of",trustee,1,1
+ON-lakeshore-trustee-gecdsb,"Lakeshore, Municipality of",trustee,1,1
+ON-lakeshore-trustee-wecdsb,"Lakeshore, Municipality of",trustee,1,0
+ON-lambton-shores-council-w01,"Lambton Shores, Municipality of",councillor,1,0
+ON-lambton-shores-council-w02,"Lambton Shores, Municipality of",councillor,1,0
+ON-lambton-shores-council-w03,"Lambton Shores, Municipality of",councillor,1,0
+ON-lambton-shores-council-w04,"Lambton Shores, Municipality of",councillor,1,1
+ON-lambton-shores-council-w05,"Lambton Shores, Municipality of",councillor,1,1
+ON-lambton-shores-council-w06,"Lambton Shores, Municipality of",councillor,1,1
+ON-lambton-shores-council-w07,"Lambton Shores, Municipality of",councillor,1,2
+ON-lambton-shores-deputy-mayor,"Lambton Shores, Municipality of",deputy_mayor,1,1
+ON-lambton-shores-mayor,"Lambton Shores, Municipality of",mayor,1,1
+ON-lambton-shores-trustee-cscprovidence,"Lambton Shores, Municipality of",trustee,1,0
+ON-lanark-highlands-council-w01,"Lanark Highlands, Township of",councillor,1,2
+ON-lanark-highlands-council-w02,"Lanark Highlands, Township of",councillor,1,0
+ON-lanark-highlands-council-w03,"Lanark Highlands, Township of",councillor,1,1
+ON-lanark-highlands-council-w04,"Lanark Highlands, Township of",councillor,1,1
+ON-lanark-highlands-council-w05,"Lanark Highlands, Township of",councillor,1,0
+ON-lanark-highlands-deputy-mayor,"Lanark Highlands, Township of",deputy_mayor,1,1
+ON-lanark-highlands-mayor,"Lanark Highlands, Township of",mayor,1,1
+ON-larder-lake-council,"Larder Lake, Township of",councillor,3,8
+ON-larder-lake-mayor,"Larder Lake, Township of",mayor,1,2
+ON-lasalle-council-at-large,"LaSalle, Town of",councillor,5,5
+ON-lasalle-deputy-mayor,"LaSalle, Town of",deputy_mayor,1,1
+ON-lasalle-mayor,"LaSalle, Town of",mayor,1,2
+ON-latchford-council-at-large,"Latchford, Town of",councillor,4,0
+ON-latchford-mayor,"Latchford, Town of",mayor,1,0
+ON-laurentian-hills-council-w01,"Laurentian Hills, Town of",councillor,1,0
+ON-laurentian-hills-council-w02,"Laurentian Hills, Town of",councillor,1,0
+ON-laurentian-hills-council-w03,"Laurentian Hills, Town of",councillor,1,0
+ON-laurentian-hills-council-w04,"Laurentian Hills, Town of",councillor,1,0
+ON-laurentian-hills-mayor,"Laurentian Hills, Town of",mayor,1,1
+ON-laurentian-valley-council-at-large,"Laurentian Valley, Township of",councillor,5,9
+ON-laurentian-valley-mayor,"Laurentian Valley, Township of",mayor,1,2
+ON-leamington-council-at-large,"Leamington, Municipality of",councillor,5,10
+ON-leamington-deputy-mayor,"Leamington, Municipality of",deputy_mayor,1,2
+ON-leamington-mayor,"Leamington, Municipality of",mayor,1,2
+ON-leeds-and-the-thousand-islands-council-w01,"Leeds and the Thousand Islands, Township of",councillor,3,4
+ON-leeds-and-the-thousand-islands-council-w02,"Leeds and the Thousand Islands, Township of",councillor,2,2
+ON-leeds-and-the-thousand-islands-council-w03,"Leeds and the Thousand Islands, Township of",councillor,1,0
+ON-leeds-and-the-thousand-islands-mayor,"Leeds and the Thousand Islands, Township of",mayor,1,1
+ON-limerick-council,"Limerick, Township of",councillor,,6
+ON-limerick-mayor,"Limerick, Township of",mayor,1,2
+ON-lincoln-council-w01,"Lincoln, Town of",councillor,2,4
+ON-lincoln-council-w02,"Lincoln, Town of",councillor,2,2
+ON-lincoln-council-w03,"Lincoln, Town of",councillor,2,3
+ON-lincoln-mayor,"Lincoln, Town of",mayor,1,3
+ON-lincoln-trustee-cscmonavenir,"St. Catharines, City of",trustee,1,0
+ON-lincoln-trustee-dsbn,"Lincoln, Town of",trustee,1,0
+ON-lincoln-trustee-niagaracatholic,"Lincoln, Town of",trustee,1,0
+ON-london-council-w01,"London, City of",councillor,1,3
+ON-london-council-w02,"London, City of",councillor,1,2
+ON-london-council-w03,"London, City of",councillor,1,4
+ON-london-council-w04,"London, City of",councillor,1,8
+ON-london-council-w05,"London, City of",councillor,1,3
+ON-london-council-w06,"London, City of",councillor,1,4
+ON-london-council-w07,"London, City of",councillor,1,9
+ON-london-council-w08,"London, City of",councillor,1,2
+ON-london-council-w09,"London, City of",councillor,1,4
+ON-london-council-w10,"London, City of",councillor,1,4
+ON-london-council-w11,"London, City of",councillor,1,2
+ON-london-council-w12,"London, City of",councillor,1,3
+ON-london-council-w13,"London, City of",councillor,1,6
+ON-london-council-w14,"London, City of",councillor,1,2
+ON-london-mayor,"London, City of",mayor,1,10
+ON-loyalist-council-w01,"Loyalist, Township of",councillor,1,0
+ON-loyalist-council-w02,"Loyalist, Township of",councillor,1,2
+ON-loyalist-council-w03,"Loyalist, Township of",councillor,3,0
+ON-loyalist-deputy-mayor,"Loyalist, Township of",deputy_mayor,1,1
+ON-loyalist-mayor,"Loyalist, Township of",mayor,1,1
+ON-lucan-biddulph-council-w01,"Lucan Biddulph, Township of",councillor,1,2
+ON-lucan-biddulph-council-w02,"Lucan Biddulph, Township of",councillor,1,1
+ON-lucan-biddulph-council-w03,"Lucan Biddulph, Township of",councillor,1,3
+ON-lucan-biddulph-deputy-mayor,"Lucan Biddulph, Township of",deputy_mayor,1,1
+ON-lucan-biddulph-mayor,"Lucan Biddulph, Township of",mayor,1,2
+ON-macdonald-meredith-and-aberdeen-additional-council,"Macdonald, Meredith and Aberdeen Additional, Township of",councillor,4,5
+ON-macdonald-meredith-and-aberdeen-additional-mayor,"Macdonald, Meredith and Aberdeen Additional, Township of",mayor,1,1
+ON-machar-council,"Machar, Township of",councillor,4,5
+ON-machar-mayor,"Machar, Township of",mayor,1,1
+ON-machin-council,"Machin, Township of",councillor,4,0
+ON-machin-mayor,"Machin, Township of",mayor,1,0
+ON-madawaska-valley-council-at-large,"Madawaska Valley, Township of",councillor,4,2
+ON-madawaska-valley-mayor,"Madawaska Valley, Township of",mayor,1,1
+ON-madoc-council-at-large,"Madoc, Township of",councillor,,3
+ON-madoc-deputy-mayor,"Madoc, Township of",deputy_mayor,1,1
+ON-madoc-mayor,"Madoc, Township of",mayor,1,2
+ON-magnetawan-council,"Magnetawan, Municipality of",councillor,4,8
+ON-magnetawan-mayor,"Magnetawan, Municipality of",mayor,1,4
+ON-malahide-council-w01,"Malahide, Township of",councillor,1,0
+ON-malahide-council-w02,"Malahide, Township of",councillor,1,0
+ON-malahide-council-w03,"Malahide, Township of",councillor,1,1
+ON-malahide-council-w04,"Malahide, Township of",councillor,1,1
+ON-malahide-council-w05,"Malahide, Township of",councillor,1,0
+ON-malahide-deputy-mayor,"Malahide, Township of",deputy_mayor,1,1
+ON-malahide-mayor,"Malahide, Township of",mayor,1,0
+ON-manitouwadge-council,"Manitouwadge, Township of",councillor,4,6
+ON-manitouwadge-mayor,"Manitouwadge, Township of",mayor,1,3
+ON-mapleton-council-at-large,"Mapleton, Township of",councillor,4,4
+ON-mapleton-county-councillor-w02,"Mapleton, Township of",county_councillor,1,1
+ON-mapleton-mayor,"Mapleton, Township of",mayor,1,1
+ON-mapleton-trustee-ugdsb,"Mapleton, Township of",trustee,1,0
+ON-marathon-councillor,"Marathon, Town of",councillor,4,6
+ON-marathon-mayor,"Marathon, Town of",mayor,1,2
+ON-marathon-trustee-csdcab,"Marathon, Town of",trustee,1,1
+ON-marathon-trustee-sgdsb,"Marathon, Town of",trustee,1,1
+ON-marathon-trustee-sncdsb,"Marathon, Town of",trustee,1,1
+ON-markham-council-w01,"Markham, City of",councillor,1,2
+ON-markham-council-w02,"Markham, City of",councillor,1,2
+ON-markham-council-w03,"Markham, City of",councillor,1,5
+ON-markham-council-w04,"Markham, City of",councillor,1,1
+ON-markham-council-w05,"Markham, City of",councillor,1,3
+ON-markham-council-w06,"Markham, City of",councillor,1,1
+ON-markham-council-w07,"Markham, City of",councillor,1,4
+ON-markham-council-w08,"Markham, City of",councillor,1,2
+ON-markham-mayor,"Markham, City of",mayor,1,1
+ON-markham-regional-councillor-at-large,"Markham, City of",regional_councillor,4,6
+ON-markstay-warren-councillor,"Markstay-Warren, Municipality of",councillor,4,2
+ON-markstay-warren-mayor,"Markstay-Warren, Municipality of",mayor,1,1
+ON-marmora-and-lake-council-at-large,"Marmora and Lake, Municipality of",councillor,,5
+ON-marmora-and-lake-mayor,"Marmora and Lake, Municipality of",mayor,1,5
+ON-matachewan-council-at-large,"Matachewan, Township of",councillor,4,5
+ON-matachewan-mayor,"Matachewan, Township of",mayor,1,2
+ON-mattawa-council,"Mattawa, Town of",councillor,4,7
+ON-mattawa-mayor,"Mattawa, Town of",mayor,1,1
+ON-mattawan-council,"Mattawan, Municipality of",councillor,4,1
+ON-mattawan-mayor,"Mattawan, Municipality of",mayor,1,1
+ON-mattice-val-cote-councillor,"Mattice-Val Côté, Township of",councillor,,5
+ON-mattice-val-cote-mayor,"Mattice-Val Côté, Township of",mayor,1,2
+ON-mcdougall-councillor,"McDougall, Township of",councillor,4,4
+ON-mcdougall-mayor,"McDougall, Township of",mayor,1,1
+ON-mcgarry-councillor,"McGarry, Township of",councillor,4,0
+ON-mcgarry-mayor,"McGarry, Township of",mayor,1,0
+ON-mckellar-council,"McKellar, Township of",councillor,4,5
+ON-mckellar-mayor,"McKellar, Township of",mayor,1,1
+ON-mcmurrich-monteith-council-at-large,"McMurrich/Monteith, Township of",councillor,4,0
+ON-mcmurrich-monteith-mayor,"McMurrich/Monteith, Township of",mayor,1,1
+ON-mcnab-braeside-council,"McNab/Braeside, Township of",councillor,3,6
+ON-mcnab-braeside-deputy-mayor,"McNab/Braeside, Township of",deputy_mayor,1,2
+ON-mcnab-braeside-mayor,"McNab/Braeside, Township of",mayor,1,3
+ON-mcnab-braeside-trustee-csdcce,"McNab/Braeside, Township of",trustee,1,1
+ON-meaford-council-at-large,"Meaford, Municipality of",councillor,5,7
+ON-meaford-deputy-mayor,"Meaford, Municipality of",deputy_mayor,1,1
+ON-meaford-mayor,"Meaford, Municipality of",mayor,1,1
+ON-melancthon-councillor,"Melancthon, Township of",councillor,3,6
+ON-melancthon-deputy-mayor,"Melancthon, Township of",deputy_mayor,1,1
+ON-melancthon-mayor,"Melancthon, Township of",mayor,1,1
+ON-merrickville-wolford-councillor-merrickville-ward,"Merrickville-Wolford, Village of",councillor,1,3
+ON-merrickville-wolford-councillor-wolford-ward,"Merrickville-Wolford, Village of",councillor,1,2
+ON-merrickville-wolford-mayor,"Merrickville-Wolford, Village of",mayor,1,2
+ON-merrickville-wolford-trustee-cdsbeo,"Merrickville-Wolford, Village of",trustee,1,0
+ON-merrickville-wolford-trustee-cepeo,"Merrickville-Wolford, Village of",trustee,1,0
+ON-merrickville-wolford-trustee-csdceo,"Merrickville-Wolford, Village of",trustee,1,0
+ON-middlesex-centre-council-w01,"Middlesex Centre, Municipality of",councillor,1,2
+ON-middlesex-centre-council-w02,"Middlesex Centre, Municipality of",councillor,1,1
+ON-middlesex-centre-council-w03,"Middlesex Centre, Municipality of",councillor,1,2
+ON-middlesex-centre-council-w04,"Middlesex Centre, Municipality of",councillor,1,1
+ON-middlesex-centre-council-w05,"Middlesex Centre, Municipality of",councillor,1,1
+ON-middlesex-centre-deputy-mayor,"Middlesex Centre, Municipality of",deputy_mayor,1,1
+ON-middlesex-centre-mayor,"Middlesex Centre, Municipality of",mayor,1,1
+ON-midland-council-at-large,"Midland, Town of",councillor,7,8
+ON-midland-deputy-mayor,"Midland, Town of",deputy_mayor,1,1
+ON-midland-mayor,"Midland, Town of",mayor,1,1
+ON-milton-council-w01,"Milton, Town of",councillor,1,5
+ON-milton-council-w02,"Milton, Town of",councillor,1,6
+ON-milton-council-w03,"Milton, Town of",councillor,1,2
+ON-milton-council-w04,"Milton, Town of",councillor,1,5
+ON-milton-mayor,"Milton, Town of",mayor,1,8
+ON-milton-regional-councillor-w01,"Milton, Town of",regional_councillor,1,1
+ON-milton-regional-councillor-w02,"Milton, Town of",regional_councillor,1,4
+ON-milton-regional-councillor-w03,"Milton, Town of",regional_councillor,1,4
+ON-milton-regional-councillor-w04,"Milton, Town of",regional_councillor,1,5
+ON-milton-trustee-hcdsb-w01-04,"Milton, Town of",trustee,1,1
+ON-milton-trustee-hcdsb-w02-03,"Milton, Town of",trustee,1,1
+ON-milton-trustee-hdsb-w01-02,"Milton, Town of",trustee,1,1
+ON-milton-trustee-hdsb-w03-04,"Milton, Town of",trustee,1,4
+ON-minden-hills-council-at-large,"Minden Hills, Township of",councillor,,2
+ON-minden-hills-council-w01,"Minden Hills, Township of",councillor,,3
+ON-minden-hills-council-w02,"Minden Hills, Township of",councillor,,3
+ON-minden-hills-council-w03,"Minden Hills, Township of",councillor,,3
+ON-minden-hills-deputy-mayor,"Minden Hills, Township of",deputy_mayor,1,1
+ON-minden-hills-mayor,"Minden Hills, Township of",mayor,1,4
+ON-minto-council-at-large,"Minto, Town of",councillor,5,10
+ON-minto-county-councillor,"Minto, Town of",county_councillor,1,1
+ON-minto-deputy-mayor,"Minto, Town of",deputy_mayor,1,0
+ON-minto-mayor,"Minto, Town of",mayor,1,1
+ON-mississauga-council-w01,"Mississauga, City of",councillor,1,2
+ON-mississauga-council-w02,"Mississauga, City of",councillor,1,7
+ON-mississauga-council-w03,"Mississauga, City of",councillor,1,4
+ON-mississauga-council-w04,"Mississauga, City of",councillor,1,1
+ON-mississauga-council-w05,"Mississauga, City of",councillor,1,8
+ON-mississauga-council-w06,"Mississauga, City of",councillor,1,2
+ON-mississauga-council-w07,"Mississauga, City of",councillor,1,15
+ON-mississauga-council-w08,"Mississauga, City of",councillor,1,3
+ON-mississauga-council-w09,"Mississauga, City of",councillor,1,4
+ON-mississauga-council-w10,"Mississauga, City of",councillor,1,2
+ON-mississauga-council-w11,"Mississauga, City of",councillor,1,2
+ON-mississauga-mayor,"Mississauga, City of",mayor,1,9
+ON-mississippi-mills-council-almonte,"Mississippi Mills, Municipality of",councillor,2,1
+ON-mississippi-mills-council-pakenham,"Mississippi Mills, Municipality of",councillor,1,1
+ON-mississippi-mills-council-ramsay,"Mississippi Mills, Municipality of",councillor,2,1
+ON-mississippi-mills-deputy-mayor,"Mississippi Mills, Municipality of",deputy_mayor,1,1
+ON-mississippi-mills-mayor,"Mississippi Mills, Municipality of",mayor,1,1
+ON-mono-council-at-large,"Mono, Town of",councillor,3,11
+ON-mono-deputy-mayor,"Mono, Town of",deputy_mayor,1,3
+ON-mono-mayor,"Mono, Town of",mayor,1,4
+ON-montague-council-at-large,"Montague, Township of",councillor,,3
+ON-montague-deputy-reeve,"Montague, Township of",deputy_mayor,,1
+ON-montague-mayor,"Montague, Township of",mayor,1,1
+ON-moonbeam-council-at-large,"Moonbeam, Township of",councillor,,0
+ON-moonbeam-mayor,"Moonbeam, Township of",mayor,1,
+ON-moosonee-council,"Moosonee, Town of",councillor,4,0
+ON-moosonee-mayor,"Moosonee, Town of",mayor,1,0
+ON-morley-council-at-large,"Morley, Township of",councillor,4,0
+ON-morley-mayor,"Morley, Township of",mayor,1,0
+ON-morris-turnberry-council-at-large,"Morris-Turnberry, Municipality of",councillor,4,1
+ON-morris-turnberry-mayor,"Morris-Turnberry, Municipality of",mayor,1,1
+ON-mulmur-council-at-large,"Mulmur, Township of",councillor,3,3
+ON-mulmur-deputy-mayor,"Mulmur, Township of",deputy_mayor,1,1
+ON-mulmur-mayor,"Mulmur, Township of",mayor,1,1
+ON-muskoka-lakes-council-warda-district,"Muskoka Lakes, Township of",regional_councillor,1,2
+ON-muskoka-lakes-council-warda-township,"Muskoka Lakes, Township of",councillor,2,4
+ON-muskoka-lakes-council-wardb-district,"Muskoka Lakes, Township of",regional_councillor,1,1
+ON-muskoka-lakes-council-wardb-township,"Muskoka Lakes, Township of",councillor,2,2
+ON-muskoka-lakes-council-wardc-district,"Muskoka Lakes, Township of",regional_councillor,1,2
+ON-muskoka-lakes-council-wardc-township,"Muskoka Lakes, Township of",councillor,2,3
+ON-muskoka-lakes-mayor,"Muskoka Lakes, Township of",mayor,1,1
+ON-muskoka-lakes-trustee-smcdsb,"Muskoka Lakes, Township of",trustee,1,0
+ON-muskoka-lakes-trustee-tldsb,"Muskoka Lakes, Township of",trustee,1,0
+ON-nairn-and-hyman-council-at-large,"Nairn and Hyman, Township of",councillor,4,3
+ON-nairn-and-hyman-mayor,"Nairn and Hyman, Township of",mayor,1,1
+ON-neebing-councillor-at-large,"Neebing, Municipality of",councillor,1,1
+ON-neebing-councillor-blake,"Neebing, Municipality of",councillor,1,2
+ON-neebing-councillor-crooks,"Neebing, Municipality of",councillor,1,1
+ON-neebing-councillor-pardee,"Neebing, Municipality of",councillor,1,1
+ON-neebing-councillor-pearson,"Neebing, Municipality of",councillor,1,2
+ON-neebing-councillor-scoble,"Neebing, Municipality of",councillor,1,2
+ON-neebing-mayor,"Neebing, Municipality of",mayor,1,5
+ON-new-tecumseth-council-w01,"New Tecumseth, Town of",councillor,1,1
+ON-new-tecumseth-council-w02,"New Tecumseth, Town of",councillor,1,2
+ON-new-tecumseth-council-w03,"New Tecumseth, Town of",councillor,1,2
+ON-new-tecumseth-council-w04,"New Tecumseth, Town of",councillor,1,1
+ON-new-tecumseth-council-w05,"New Tecumseth, Town of",councillor,1,2
+ON-new-tecumseth-council-w06,"New Tecumseth, Town of",councillor,1,3
+ON-new-tecumseth-council-w07,"New Tecumseth, Town of",councillor,1,3
+ON-new-tecumseth-deputy-mayor,"New Tecumseth, Town of",deputy_mayor,1,2
+ON-new-tecumseth-mayor,"New Tecumseth, Town of",mayor,1,2
+ON-newbury-council-at-large,"Newbury, Village of",councillor,4,0
+ON-newbury-mayor,"Newbury, Village of",mayor,1,
+ON-newmarket-council-w01,"Newmarket, Town of",councillor,1,5
+ON-newmarket-council-w02,"Newmarket, Town of",councillor,1,3
+ON-newmarket-council-w03,"Newmarket, Town of",councillor,1,3
+ON-newmarket-council-w04,"Newmarket, Town of",councillor,1,2
+ON-newmarket-council-w05,"Newmarket, Town of",councillor,1,1
+ON-newmarket-council-w06,"Newmarket, Town of",councillor,1,1
+ON-newmarket-council-w07,"Newmarket, Town of",councillor,1,1
+ON-newmarket-deputy-mayor,"Newmarket, Town of",regional_councillor,1,1
+ON-newmarket-mayor,"Newmarket, Town of",mayor,1,1
+ON-niagara-falls-council-at-large,"Niagara Falls, City of",councillor,8,13
+ON-niagara-falls-mayor,"Niagara Falls, City of",mayor,1,4
+ON-niagara-on-the-lake-council-at-large,"Niagara-on-the-Lake, Town of",councillor,6,5
+ON-niagara-on-the-lake-mayor,"Niagara-on-the-Lake, Town of",mayor,1,3
+ON-nipigon-council,"Nipigon, Township of",councillor,4,3
+ON-nipigon-mayor,"Nipigon, Township of",mayor,1,2
+ON-nipissing-council,"Nipissing, Township of",councillor,4,6
+ON-nipissing-mayor,"Nipissing, Township of",mayor,1,2
+ON-norfolk-county-council-w01,Norfolk County,councillor,1,1
+ON-norfolk-county-council-w02,Norfolk County,councillor,1,1
+ON-norfolk-county-council-w03,Norfolk County,councillor,1,3
+ON-norfolk-county-council-w04,Norfolk County,councillor,1,1
+ON-norfolk-county-council-w05,Norfolk County,councillor,1,6
+ON-norfolk-county-council-w06,Norfolk County,councillor,1,1
+ON-norfolk-county-council-w07,Norfolk County,councillor,1,2
+ON-norfolk-county-mayor,Norfolk County,mayor,1,7
+ON-north-algona-wilberforce-councillor,"North Algona Wilberforce, Township of",councillor,4,4
+ON-north-algona-wilberforce-mayor,"North Algona Wilberforce, Township of",mayor,1,0
+ON-north-algona-wilberforce-trustee-cepeo,"North Algona Wilberforce, Township of",trustee,1,0
+ON-north-algona-wilberforce-trustee-rcdsb,"North Algona Wilberforce, Township of",trustee,1,1
+ON-north-bay-council-at-large,"North Bay, City of",councillor,10,6
+ON-north-bay-mayor,"North Bay, City of",mayor,1,3
+ON-north-dumfries-council-w01,"North Dumfries, Township of",councillor,1,2
+ON-north-dumfries-council-w02,"North Dumfries, Township of",councillor,1,2
+ON-north-dumfries-council-w03,"North Dumfries, Township of",councillor,1,1
+ON-north-dumfries-council-w04,"North Dumfries, Township of",councillor,1,2
+ON-north-dumfries-mayor,"North Dumfries, Township of",mayor,1,2
+ON-north-dundas-council-at-large,"North Dundas, Township of",councillor,3,3
+ON-north-dundas-deputy-mayor,"North Dundas, Township of",deputy_mayor,1,2
+ON-north-dundas-mayor,"North Dundas, Township of",mayor,1,2
+ON-north-frontenac-councillor-ward1,"North Frontenac, Township of",councillor,1,2
+ON-north-frontenac-councillor-ward2,"North Frontenac, Township of",councillor,1,2
+ON-north-frontenac-councillor-ward3,"North Frontenac, Township of",councillor,1,4
+ON-north-frontenac-mayor,"North Frontenac, Township of",mayor,1,4
+ON-north-glengarry-council-at-large,"North Glengarry, Township of",councillor,1,1
+ON-north-glengarry-council-w01,"North Glengarry, Township of",councillor,1,3
+ON-north-glengarry-council-w02,"North Glengarry, Township of",councillor,1,1
+ON-north-glengarry-council-w03,"North Glengarry, Township of",councillor,1,2
+ON-north-glengarry-council-w04,"North Glengarry, Township of",councillor,1,2
+ON-north-glengarry-deputy-mayor,"North Glengarry, Township of",deputy_mayor,1,1
+ON-north-glengarry-mayor,"North Glengarry, Township of",mayor,1,5
+ON-north-grenville-council-at-large,"North Grenville, Municipality of",councillor,4,2
+ON-north-grenville-mayor,"North Grenville, Municipality of",mayor,1,1
+ON-north-huron-council-east-wawanosh,"North Huron, Township of",councillor,1,2
+ON-north-huron-council-wingham,"North Huron, Township of",councillor,1,2
+ON-north-huron-mayor,"North Huron, Township of",mayor,1,2
+ON-north-kawartha-councillor-at-large,"North Kawartha, Township of",councillor,1,1
+ON-north-kawartha-councillor-ward1,"North Kawartha, Township of",councillor,1,1
+ON-north-kawartha-councillor-ward2,"North Kawartha, Township of",councillor,1,1
+ON-north-kawartha-deputy-mayor,"North Kawartha, Township of",deputy_mayor,1,1
+ON-north-kawartha-mayor,"North Kawartha, Township of",mayor,1,1
+ON-north-middlesex-council-w01,"North Middlesex, Municipality of",councillor,1,1
+ON-north-middlesex-council-w02,"North Middlesex, Municipality of",councillor,1,1
+ON-north-middlesex-council-w03,"North Middlesex, Municipality of",councillor,1,1
+ON-north-middlesex-council-w04,"North Middlesex, Municipality of",councillor,1,1
+ON-north-middlesex-council-w05,"North Middlesex, Municipality of",councillor,1,1
+ON-north-middlesex-deputy-mayor,"North Middlesex, Municipality of",deputy_mayor,1,2
+ON-north-middlesex-mayor,"North Middlesex, Municipality of",mayor,1,1
+ON-north-perth-council-elma-ward,"North Perth, Municipality of",councillor,3,1
+ON-north-perth-council-listowel-ward,"North Perth, Municipality of",councillor,3,5
+ON-north-perth-council-wallace-ward,"North Perth, Municipality of",councillor,2,2
+ON-north-perth-deputy-mayor,"North Perth, Municipality of",deputy_mayor,1,2
+ON-north-perth-mayor,"North Perth, Municipality of",mayor,1,1
+ON-north-stormont-council,"North Stormont, Township of",councillor,3,3
+ON-north-stormont-deputy-mayor,"North Stormont, Township of",deputy_mayor,1,1
+ON-north-stormont-mayor,"North Stormont, Township of",mayor,1,1
+ON-northeastern-manitoulin-and-the-islands-councillor-ward1,"Northeastern Manitoulin and The Islands, Town of",councillor,2,2
+ON-northeastern-manitoulin-and-the-islands-councillor-ward2,"Northeastern Manitoulin and The Islands, Town of",councillor,2,1
+ON-northeastern-manitoulin-and-the-islands-councillor-ward3,"Northeastern Manitoulin and The Islands, Town of",councillor,2,2
+ON-northeastern-manitoulin-and-the-islands-councillor-ward4,"Northeastern Manitoulin and The Islands, Town of",councillor,2,2
+ON-northeastern-manitoulin-and-the-islands-mayor,"Northeastern Manitoulin and The Islands, Town of",mayor,1,1
+ON-northern-bruce-peninsula-council-at-large,"Northern Bruce Peninsula, Municipality of",councillor,,0
+ON-northern-bruce-peninsula-deputy-mayor,"Northern Bruce Peninsula, Municipality of",deputy_mayor,,0
+ON-northern-bruce-peninsula-mayor,"Northern Bruce Peninsula, Municipality of",mayor,1,1
+ON-norwich-council-w01,"Norwich, Township of",councillor,1,2
+ON-norwich-council-w02,"Norwich, Township of",councillor,1,1
+ON-norwich-council-w03,"Norwich, Township of",councillor,1,1
+ON-norwich-council-w04,"Norwich, Township of",councillor,1,1
+ON-norwich-mayor,"Norwich, Township of",mayor,1,1
+ON-oakville-council-w01,"Oakville, Town of",councillor,1,3
+ON-oakville-council-w02,"Oakville, Town of",councillor,1,3
+ON-oakville-council-w03,"Oakville, Town of",councillor,1,1
+ON-oakville-council-w04,"Oakville, Town of",councillor,1,2
+ON-oakville-council-w05,"Oakville, Town of",councillor,1,5
+ON-oakville-council-w06,"Oakville, Town of",councillor,1,1
+ON-oakville-council-w07,"Oakville, Town of",councillor,1,2
+ON-oakville-mayor,"Oakville, Town of",mayor,1,4
+ON-oakville-regional-councillor-w01,"Oakville, Town of",regional_councillor,1,1
+ON-oakville-regional-councillor-w02,"Oakville, Town of",regional_councillor,1,3
+ON-oakville-regional-councillor-w03,"Oakville, Town of",regional_councillor,1,1
+ON-oakville-regional-councillor-w04,"Oakville, Town of",regional_councillor,1,4
+ON-oakville-regional-councillor-w05,"Oakville, Town of",regional_councillor,1,1
+ON-oakville-regional-councillor-w06,"Oakville, Town of",regional_councillor,1,1
+ON-oakville-regional-councillor-w07,"Oakville, Town of",regional_councillor,1,3
+ON-oconnor-councillor,"O’Connor, Township of",councillor,4,4
+ON-oconnor-mayor,"O’Connor, Township of",mayor,1,0
+ON-oil-springs-council-at-large,"Oil Springs, Village of",councillor,4,0
+ON-oil-springs-mayor,"Oil Springs, Village of",mayor,1,1
+ON-oliver-paipoonge-council,"Oliver Paipoonge, Municipality of",councillor,,4
+ON-oliver-paipoonge-mayor,"Oliver Paipoonge, Municipality of",mayor,1,1
+ON-opasatika-council-at-large,"Opasatika, Township of",councillor,4,0
+ON-opasatika-mayor,"Opasatika, Township of",mayor,1,0
+ON-orangeville-council-at-large,"Orangeville, Town of",councillor,5,11
+ON-orangeville-deputy-mayor,"Orangeville, Town of",deputy_mayor,1,1
+ON-orangeville-mayor,"Orangeville, Town of",mayor,1,2
+ON-orillia-council-w01,"Orillia, City of",councillor,2,4
+ON-orillia-council-w02,"Orillia, City of",councillor,2,4
+ON-orillia-council-w03,"Orillia, City of",councillor,2,2
+ON-orillia-council-w04,"Orillia, City of",councillor,2,5
+ON-orillia-mayor,"Orillia, City of",mayor,1,2
+ON-oro-medonte-council-w01,"Oro-Medonte, Township of",councillor,1,0
+ON-oro-medonte-council-w02,"Oro-Medonte, Township of",councillor,1,1
+ON-oro-medonte-council-w03,"Oro-Medonte, Township of",councillor,1,1
+ON-oro-medonte-council-w04,"Oro-Medonte, Township of",councillor,1,0
+ON-oro-medonte-council-w05,"Oro-Medonte, Township of",councillor,1,0
+ON-oro-medonte-deputy-mayor,"Oro-Medonte, Township of",deputy_mayor,1,1
+ON-oro-medonte-mayor,"Oro-Medonte, Township of",mayor,1,1
+ON-oshawa-council-w01,"Oshawa, City of",councillor,1,5
+ON-oshawa-council-w02,"Oshawa, City of",councillor,1,3
+ON-oshawa-council-w03,"Oshawa, City of",councillor,1,3
+ON-oshawa-council-w04,"Oshawa, City of",councillor,1,7
+ON-oshawa-council-w05,"Oshawa, City of",councillor,1,5
+ON-oshawa-mayor,"Oshawa, City of",mayor,1,7
+ON-oshawa-regional-councillor-w01,"Oshawa, City of",regional_councillor,1,1
+ON-oshawa-regional-councillor-w02,"Oshawa, City of",regional_councillor,1,2
+ON-oshawa-regional-councillor-w03,"Oshawa, City of",regional_councillor,1,1
+ON-oshawa-regional-councillor-w04,"Oshawa, City of",regional_councillor,1,4
+ON-oshawa-regional-councillor-w05,"Oshawa, City of",regional_councillor,1,2
+ON-oshawa-trustee-dcdsb,"Oshawa, City of",trustee,2,3
+ON-oshawa-trustee-ddsb,"Oshawa, City of",trustee,3,5
+ON-otonabee-south-monaghan-council-at-large,"Otonabee-South Monaghan, Township of",councillor,1,2
+ON-otonabee-south-monaghan-council-otonabee-ward,"Otonabee-South Monaghan, Township of",councillor,1,1
+ON-otonabee-south-monaghan-council-south-monaghan-ward,"Otonabee-South Monaghan, Township of",councillor,1,1
+ON-otonabee-south-monaghan-deputy-mayor,"Otonabee-South Monaghan, Township of",deputy_mayor,1,1
+ON-otonabee-south-monaghan-mayor,"Otonabee-South Monaghan, Township of",mayor,1,1
+ON-ottawa-council-w01,"Ottawa, City of",councillor,1,7
+ON-ottawa-council-w02,"Ottawa, City of",councillor,1,2
+ON-ottawa-council-w03,"Ottawa, City of",councillor,1,2
+ON-ottawa-council-w04,"Ottawa, City of",councillor,1,1
+ON-ottawa-council-w05,"Ottawa, City of",councillor,1,2
+ON-ottawa-council-w06,"Ottawa, City of",councillor,1,8
+ON-ottawa-council-w07,"Ottawa, City of",councillor,1,2
+ON-ottawa-council-w08,"Ottawa, City of",councillor,1,1
+ON-ottawa-council-w09,"Ottawa, City of",councillor,1,4
+ON-ottawa-council-w10,"Ottawa, City of",councillor,1,3
+ON-ottawa-council-w11,"Ottawa, City of",councillor,1,2
+ON-ottawa-council-w12,"Ottawa, City of",councillor,1,2
+ON-ottawa-council-w13,"Ottawa, City of",councillor,1,2
+ON-ottawa-council-w14,"Ottawa, City of",councillor,1,4
+ON-ottawa-council-w15,"Ottawa, City of",councillor,1,4
+ON-ottawa-council-w16,"Ottawa, City of",councillor,1,1
+ON-ottawa-council-w17,"Ottawa, City of",councillor,1,2
+ON-ottawa-council-w18,"Ottawa, City of",councillor,1,3
+ON-ottawa-council-w19,"Ottawa, City of",councillor,1,2
+ON-ottawa-council-w20,"Ottawa, City of",councillor,1,1
+ON-ottawa-council-w21,"Ottawa, City of",councillor,1,1
+ON-ottawa-council-w22,"Ottawa, City of",councillor,1,2
+ON-ottawa-council-w23,"Ottawa, City of",councillor,1,3
+ON-ottawa-council-w24,"Ottawa, City of",councillor,1,4
+ON-ottawa-mayor,"Ottawa, City of",mayor,1,6
+ON-owen-sound-council-at-large,"Owen Sound, City of",councillor,7,7
+ON-owen-sound-deputy-mayor,"Owen Sound, City of",deputy_mayor,1,1
+ON-owen-sound-mayor,"Owen Sound, City of",mayor,1,5
+ON-papineau-cameron-council,"Papineau-Cameron, Township of",councillor,4,5
+ON-papineau-cameron-mayor,"Papineau-Cameron, Township of",mayor,1,2
+ON-parry-sound-council,"Parry Sound, Town of",councillor,6,9
+ON-parry-sound-mayor,"Parry Sound, Town of",mayor,1,1
+ON-pelee-council-atlarge,"Pelee, Township of",councillor,4,2
+ON-pelee-mayor,"Pelee, Township of",mayor,1,0
+ON-pelham-council-w01,"Pelham, Town of",councillor,2,4
+ON-pelham-council-w02,"Pelham, Town of",councillor,2,4
+ON-pelham-council-w03,"Pelham, Town of",councillor,2,3
+ON-pelham-mayor,"Pelham, Town of",mayor,1,1
+ON-pembroke-council-at-large,"Pembroke, City of",councillor,6,8
+ON-pembroke-mayor,"Pembroke, City of",mayor,1,5
+ON-penetanguishene-council,"Penetanguishene, Town of",councillor,5,7
+ON-penetanguishene-deputy-mayor,"Penetanguishene, Town of",deputy_mayor,1,2
+ON-penetanguishene-mayor,"Penetanguishene, Town of",mayor,1,1
+ON-penetanguishene-trustee-english-catholic,"Penetanguishene, Town of",trustee,1,0
+ON-penetanguishene-trustee-english-public,"Penetanguishene, Town of",trustee,1,0
+ON-penetanguishene-trustee-english-separate-other,"Penetanguishene, Town of",trustee,7,6
+ON-penetanguishene-trustee-french-catholic,"Penetanguishene, Town of",trustee,1,2
+ON-penetanguishene-trustee-french-public,"Penetanguishene, Town of",trustee,1,1
+ON-penetanguishene-trustee-pssb,"Penetanguishene, Town of",trustee,7,6
+ON-perry-councillor,"Perry, Township of",councillor,4,6
+ON-perry-mayor,"Perry, Township of",mayor,1,1
+ON-perth-east-council-ellice,"Perth East, Township of",councillor,1,0
+ON-perth-east-council-milverton,"Perth East, Township of",councillor,1,0
+ON-perth-east-council-mornington,"Perth East, Township of",councillor,1,0
+ON-perth-east-council-north-easthope,"Perth East, Township of",councillor,1,0
+ON-perth-east-council-south-easthope,"Perth East, Township of",councillor,1,0
+ON-perth-east-deputy-mayor,"Perth East, Township of",deputy_mayor,1,1
+ON-perth-east-mayor,"Perth East, Township of",mayor,1,2
+ON-perth-south-council-at-large,"Perth South, Township of",councillor,6,4
+ON-perth-south-mayor,"Perth South, Township of",mayor,1,1
+ON-perth-town-council-at-large,"Perth, Town of",councillor,,10
+ON-perth-town-deputy-mayor,"Perth, Town of",deputy_mayor,1,1
+ON-perth-town-mayor,"Perth, Town of",mayor,1,4
+ON-petawawa-council-at-large,"Petawawa, Town of",councillor,6,7
+ON-petawawa-mayor,"Petawawa, Town of",mayor,1,1
+ON-petawawa-trustee-cepeo,"Petawawa, Town of",trustee,1,0
+ON-petawawa-trustee-rccdsb,"Petawawa, Town of",trustee,1,1
+ON-petawawa-trustee-rcdsb,"Petawawa, Town of",trustee,1,1
+ON-peterborough-city-council-w01,"Peterborough, City of",councillor,1,5
+ON-peterborough-city-council-w02,"Peterborough, City of",councillor,1,5
+ON-peterborough-city-council-w03,"Peterborough, City of",councillor,1,4
+ON-peterborough-city-council-w04,"Peterborough, City of",councillor,1,4
+ON-peterborough-city-council-w05,"Peterborough, City of",councillor,1,6
+ON-peterborough-city-mayor,"Peterborough, City of",mayor,1,6
+ON-petrolia-council-at-large,"Petrolia, Town of",councillor,6,5
+ON-petrolia-mayor,"Petrolia, Town of",mayor,1,1
+ON-pickering-council-w01,"Pickering, City of",councillor,1,6
+ON-pickering-council-w02,"Pickering, City of",councillor,1,5
+ON-pickering-council-w03,"Pickering, City of",councillor,1,2
+ON-pickering-mayor,"Pickering, City of",mayor,1,4
+ON-pickering-regional-councillor-w01,"Pickering, City of",regional_councillor,1,1
+ON-pickering-regional-councillor-w02,"Pickering, City of",regional_councillor,1,2
+ON-pickering-regional-councillor-w03,"Pickering, City of",regional_councillor,1,1
+ON-pickering-trustee-dcdsb,"Pickering, City of",trustee,1,2
+ON-pickering-trustee-ddsb,"Pickering, City of",trustee,2,6
+ON-pickle-lake-council-at-large,"Pickle Lake, Township of",councillor,4,0
+ON-pickle-lake-mayor,"Pickle Lake, Township of",mayor,1,1
+ON-plummer-additional-council,"Plummer Additional, Township of",councillor,4,2
+ON-plummer-additional-mayor,"Plummer Additional, Township of",mayor,1,2
+ON-plympton-wyoming-council-at-large,"Plympton-Wyoming, Town of",councillor,5,7
+ON-plympton-wyoming-deputy-mayor,"Plympton-Wyoming, Town of",deputy_mayor,1,1
+ON-plympton-wyoming-mayor,"Plympton-Wyoming, Town of",mayor,1,2
+ON-point-edward-council,"Point Edward, Village of",councillor,1,1
+ON-point-edward-mayor,"Point Edward, Village of",mayor,1,1
+ON-port-colborne-council-w01,"Port Colborne, City of",councillor,2,2
+ON-port-colborne-council-w02,"Port Colborne, City of",councillor,2,3
+ON-port-colborne-council-w03,"Port Colborne, City of",councillor,2,2
+ON-port-colborne-mayor,"Port Colborne, City of",mayor,1,2
+ON-port-colborne-trustee-dsbn,"Port Colborne, City of",trustee,2,2
+ON-port-hope-council-w01,"Port Hope, Municipality of",councillor,4,7
+ON-port-hope-council-w02,"Port Hope, Municipality of",councillor,2,2
+ON-port-hope-mayor,"Port Hope, Municipality of",mayor,1,4
+ON-port-hope-trustee-pvnccdsb,"Port Hope, Municipality of",trustee,1,0
+ON-powassan-council-at-large,"Powassan, Municipality of",councillor,4,0
+ON-powassan-mayor,"Powassan, Municipality of",mayor,1,0
+ON-prescott-council-at-large,"Prescott, Town of",councillor,6,7
+ON-prescott-mayor,"Prescott, Town of",mayor,1,1
+ON-prince-council,"Prince, Township of",councillor,4,3
+ON-prince-edward-council-w01,"Prince Edward, County of",councillor,1,2
+ON-prince-edward-council-w02,"Prince Edward, County of",councillor,1,3
+ON-prince-edward-council-w03,"Prince Edward, County of",councillor,1,1
+ON-prince-edward-council-w04,"Prince Edward, County of",councillor,1,6
+ON-prince-edward-council-w05,"Prince Edward, County of",councillor,1,1
+ON-prince-edward-council-w06,"Prince Edward, County of",councillor,1,2
+ON-prince-edward-council-w07,"Prince Edward, County of",councillor,1,1
+ON-prince-edward-council-w08,"Prince Edward, County of",councillor,1,1
+ON-prince-edward-council-w09,"Prince Edward, County of",councillor,1,1
+ON-prince-edward-mayor,"Prince Edward, County of",mayor,1,3
+ON-prince-mayor,"Prince, Township of",mayor,1,1
+ON-puslinch-council-at-large,"Puslinch, Township of",councillor,4,5
+ON-puslinch-county-councillor-w07,"Puslinch, Township of",county_councillor,1,1
+ON-puslinch-mayor,"Puslinch, Township of",mayor,1,1
+ON-quinte-west-council-w01,"Quinte West, City of",councillor,1,3
+ON-quinte-west-council-w02,"Quinte West, City of",councillor,1,3
+ON-quinte-west-council-w03,"Quinte West, City of",councillor,1,2
+ON-quinte-west-council-w04,"Quinte West, City of",councillor,1,1
+ON-quinte-west-mayor,"Quinte West, City of",mayor,1,3
+ON-rainy-river-council,"Rainy River, Town of",councillor,4,0
+ON-rainy-river-mayor,"Rainy River, Town of",mayor,1,0
+ON-ramara-council-ward1,"Ramara, Township of",councillor,1,1
+ON-ramara-council-ward2,"Ramara, Township of",councillor,1,2
+ON-ramara-council-ward3,"Ramara, Township of",councillor,1,1
+ON-ramara-council-ward4,"Ramara, Township of",councillor,1,2
+ON-ramara-council-ward5,"Ramara, Township of",councillor,1,1
+ON-ramara-deputy-mayor,"Ramara, Township of",deputy_mayor,1,2
+ON-ramara-mayor,"Ramara, Township of",mayor,1,3
+ON-red-lake-council-at-large,"Red Lake, Municipality of",councillor,4,1
+ON-red-lake-mayor,"Red Lake, Municipality of",mayor,1,1
+ON-red-rock-council,"Red Rock, Township of",councillor,4,1
+ON-red-rock-mayor,"Red Rock, Township of",mayor,1,1
+ON-renfrew-town-council,"Renfrew, Town of",councillor,6,7
+ON-renfrew-town-mayor,"Renfrew, Town of",mayor,1,5
+ON-richmond-hill-council-w01,"Richmond Hill, City of",councillor,1,2
+ON-richmond-hill-council-w02,"Richmond Hill, City of",councillor,1,4
+ON-richmond-hill-council-w03,"Richmond Hill, City of",councillor,1,1
+ON-richmond-hill-council-w04,"Richmond Hill, City of",councillor,1,4
+ON-richmond-hill-council-w05,"Richmond Hill, City of",councillor,1,4
+ON-richmond-hill-council-w06,"Richmond Hill, City of",councillor,1,2
+ON-richmond-hill-mayor,"Richmond Hill, City of",mayor,1,2
+ON-richmond-hill-regional-councillor-at-large,"Richmond Hill, City of",regional_councillor,2,3
+ON-rideau-lakes-council-w01,"Rideau Lakes, Township of",councillor,,1
+ON-rideau-lakes-council-w02,"Rideau Lakes, Township of",councillor,,2
+ON-rideau-lakes-council-w03,"Rideau Lakes, Township of",councillor,,2
+ON-rideau-lakes-council-w04,"Rideau Lakes, Township of",councillor,,3
+ON-rideau-lakes-mayor,"Rideau Lakes, Township of",mayor,1,2
+ON-russell-council-at-large,"Russell, Township of",councillor,4,5
+ON-russell-mayor,"Russell, Township of",mayor,1,1
+ON-ryerson-councillor,"Ryerson, Township of",councillor,3,0
+ON-ryerson-deputy-mayor,"Ryerson, Township of",deputy_mayor,1,0
+ON-ryerson-mayor,"Ryerson, Township of",mayor,1,0
+ON-sables-spanish-rivers-council-at-large,"Sables-Spanish Rivers, Township of",councillor,5,5
+ON-sables-spanish-rivers-deputy-mayor,"Sables-Spanish Rivers, Township of",deputy_mayor,1,0
+ON-sables-spanish-rivers-mayor,"Sables-Spanish Rivers, Township of",mayor,1,1
+ON-sarnia-council-at-large,"Sarnia, City of",councillor,4,14
+ON-sarnia-mayor,"Sarnia, City of",mayor,1,4
+ON-sarnia-regional-councillor-at-large,"Sarnia, City of",regional_councillor,4,12
+ON-saugeen-shores-council-portelgin,"Saugeen Shores, Town of",councillor,1,1
+ON-saugeen-shores-council-saugeen,"Saugeen Shores, Town of",councillor,1,3
+ON-saugeen-shores-council-southampton,"Saugeen Shores, Town of",councillor,1,5
+ON-saugeen-shores-deputy-mayor,"Saugeen Shores, Town of",deputy_mayor,1,0
+ON-saugeen-shores-mayor,"Saugeen Shores, Town of",mayor,1,2
+ON-saugeen-shores-trustee-cscprovidence,"Saugeen Shores, Town of",trustee,,0
+ON-saugeen-shores-vice-deputy-mayor,"Saugeen Shores, Town of",deputy_mayor,1,2
+ON-sault-ste-marie-council-w01,"Sault Ste. Marie, City of",councillor,2,3
+ON-sault-ste-marie-council-w02,"Sault Ste. Marie, City of",councillor,2,7
+ON-sault-ste-marie-council-w03,"Sault Ste. Marie, City of",councillor,2,6
+ON-sault-ste-marie-council-w04,"Sault Ste. Marie, City of",councillor,2,4
+ON-sault-ste-marie-council-w05,"Sault Ste. Marie, City of",councillor,2,4
+ON-sault-ste-marie-mayor,"Sault Ste. Marie, City of",mayor,1,1
+ON-schreiber-council,"Schreiber, Township of",councillor,4,4
+ON-schreiber-mayor,"Schreiber, Township of",mayor,1,0
+ON-scugog-council-w01,"Scugog, Township of",councillor,1,2
+ON-scugog-council-w02,"Scugog, Township of",councillor,1,2
+ON-scugog-council-w03,"Scugog, Township of",councillor,1,1
+ON-scugog-council-w04,"Scugog, Township of",councillor,1,2
+ON-scugog-council-w05,"Scugog, Township of",councillor,1,3
+ON-scugog-mayor,"Scugog, Township of",mayor,1,3
+ON-scugog-regional-councillor-at-large,"Scugog, Township of",regional_councillor,1,3
+ON-scugog-trustee-ddsb,"Scugog, Township of",trustee,1,3
+ON-seguin-council-w01,"Seguin, Township of",councillor,1,2
+ON-seguin-council-w02,"Seguin, Township of",councillor,1,1
+ON-seguin-council-w03,"Seguin, Township of",councillor,1,1
+ON-seguin-council-w04,"Seguin, Township of",councillor,1,1
+ON-seguin-council-w05,"Seguin, Township of",councillor,1,2
+ON-seguin-council-w06,"Seguin, Township of",councillor,1,1
+ON-seguin-mayor,"Seguin, Township of",mayor,1,1
+ON-selwyn-council-ennismore-w10,"Selwyn, Township of",councillor,1,1
+ON-selwyn-council-lakefield-w30,"Selwyn, Township of",councillor,1,1
+ON-selwyn-council-smith-w20,"Selwyn, Township of",councillor,1,1
+ON-selwyn-deputy-mayor,"Selwyn, Township of",deputy_mayor,1,1
+ON-selwyn-mayor,"Selwyn, Township of",mayor,1,1
+ON-severn-council-w01,"Severn, Township of",councillor,1,1
+ON-severn-council-w02,"Severn, Township of",councillor,1,2
+ON-severn-council-w03,"Severn, Township of",councillor,1,1
+ON-severn-council-w04,"Severn, Township of",councillor,1,0
+ON-severn-council-w05,"Severn, Township of",councillor,1,1
+ON-severn-deputy-mayor,"Severn, Township of",deputy_mayor,1,2
+ON-severn-mayor,"Severn, Township of",mayor,1,1
+ON-shelburne-council-at-large,"Shelburne, Town of",councillor,5,7
+ON-shelburne-deputy-mayor,"Shelburne, Town of",deputy_mayor,1,1
+ON-shelburne-mayor,"Shelburne, Town of",mayor,1,2
+ON-shuniah-council-macgregor-ward,"Shuniah, Municipality of",councillor,3,3
+ON-shuniah-council-mctavish-ward,"Shuniah, Municipality of",councillor,1,1
+ON-shuniah-mayor,"Shuniah, Municipality of",mayor,1,1
+ON-sioux-lookout-council,"Sioux Lookout, Municipality of",councillor,6,5
+ON-sioux-lookout-mayor,"Sioux Lookout, Municipality of",mayor,1,1
+ON-sioux-narrows-nestor-falls-councillor-at-large,"Sioux Narrows-Nestor Falls, Township of",councillor,2,2
+ON-sioux-narrows-nestor-falls-councillor-w1,"Sioux Narrows-Nestor Falls, Township of",councillor,1,1
+ON-sioux-narrows-nestor-falls-councillor-w2,"Sioux Narrows-Nestor Falls, Township of",councillor,1,1
+ON-sioux-narrows-nestor-falls-mayor,"Sioux Narrows-Nestor Falls, Township of",mayor,1,2
+ON-sioux-narrows-nestor-falls-trustee-english-catholic-w1,"Sioux Narrows-Nestor Falls, Township of",trustee,5,0
+ON-sioux-narrows-nestor-falls-trustee-english-catholic-w2,"Sioux Narrows-Nestor Falls, Township of",trustee,1,0
+ON-sioux-narrows-nestor-falls-trustee-english-public-w1,"Sioux Narrows-Nestor Falls, Township of",trustee,3,0
+ON-sioux-narrows-nestor-falls-trustee-english-public-w2,"Sioux Narrows-Nestor Falls, Township of",trustee,1,0
+ON-sioux-narrows-nestor-falls-trustee-french-catholic,"Sioux Narrows-Nestor Falls, Township of",trustee,1,0
+ON-sioux-narrows-nestor-falls-trustee-french-public,"Sioux Narrows-Nestor Falls, Township of",trustee,1,0
+ON-smiths-falls-council,"Smiths Falls, Town of",councillor,,1
+ON-smiths-falls-mayor,"Smiths Falls, Town of",mayor,1,2
+ON-smiths-falls-trustee-cdsbeo,"Smiths Falls, Town of",trustee,1,0
+ON-smiths-falls-trustee-cepeo,"Smiths Falls, Town of",trustee,1,0
+ON-smiths-falls-trustee-csdcce,"Smiths Falls, Town of",trustee,1,0
+ON-smooth-rock-falls-council,"Smooth Rock Falls, Town of",councillor,4,1
+ON-smooth-rock-falls-mayor,"Smooth Rock Falls, Town of",mayor,1,1
+ON-south-algonquin-council-w01,"South Algonquin, Township of",councillor,2,4
+ON-south-algonquin-council-w02,"South Algonquin, Township of",councillor,1,2
+ON-south-algonquin-council-w03,"South Algonquin, Township of",councillor,1,1
+ON-south-algonquin-council-w04,"South Algonquin, Township of",councillor,1,1
+ON-south-algonquin-council-w05,"South Algonquin, Township of",councillor,1,1
+ON-south-algonquin-mayor,"South Algonquin, Township of",mayor,1,1
+ON-south-bruce-council-atlarge,"South Bruce, Municipality of",councillor,2,2
+ON-south-bruce-council-mildmay-carrick,"South Bruce, Municipality of",councillor,2,1
+ON-south-bruce-council-teeswater-culross,"South Bruce, Municipality of",councillor,2,0
+ON-south-bruce-mayor,"South Bruce, Municipality of",mayor,1,1
+ON-south-bruce-peninsula-council-at-large,"South Bruce Peninsula, Town of",councillor,3,8
+ON-south-bruce-peninsula-deputy-mayor,"South Bruce Peninsula, Town of",deputy_mayor,1,2
+ON-south-bruce-peninsula-mayor,"South Bruce Peninsula, Town of",mayor,1,3
+ON-south-bruce-trustee-bgcdsb,"South Bruce, Municipality of",trustee,1,1
+ON-south-bruce-trustee-bwdsb,"South Bruce, Municipality of",trustee,1,1
+ON-south-bruce-trustee-cscprovidence,"South Bruce, Municipality of",trustee,1,0
+ON-south-dundas-council-at-large,"South Dundas, Municipality of",councillor,3,4
+ON-south-dundas-deputy-mayor,"South Dundas, Municipality of",deputy_mayor,1,3
+ON-south-dundas-mayor,"South Dundas, Municipality of",mayor,1,1
+ON-south-frontenac-council-bedford,"South Frontenac, Township of",councillor,2,2
+ON-south-frontenac-council-loughborough,"South Frontenac, Township of",councillor,2,2
+ON-south-frontenac-council-portland,"South Frontenac, Township of",councillor,2,2
+ON-south-frontenac-council-storrington,"South Frontenac, Township of",councillor,2,3
+ON-south-frontenac-mayor,"South Frontenac, Township of",mayor,1,3
+ON-south-glengarry-council-at-large,"South Glengarry, Township of",councillor,3,4
+ON-south-glengarry-deputy-mayor,"South Glengarry, Township of",deputy_mayor,1,1
+ON-south-glengarry-mayor,"South Glengarry, Township of",mayor,1,1
+ON-south-huron-council-w01,"South Huron, Municipality of",councillor,2,3
+ON-south-huron-council-w02,"South Huron, Municipality of",councillor,2,4
+ON-south-huron-council-w03,"South Huron, Municipality of",councillor,1,0
+ON-south-huron-deputy-mayor,"South Huron, Municipality of",deputy_mayor,1,1
+ON-south-huron-mayor,"South Huron, Municipality of",mayor,1,3
+ON-south-river-council,"South River, Village of",councillor,4,0
+ON-south-river-mayor,"South River, Village of",mayor,1,0
+ON-south-stormont-council-at-large,"South Stormont, Township of",councillor,,5
+ON-south-stormont-deputy-mayor,"South Stormont, Township of",deputy_mayor,1,1
+ON-south-stormont-mayor,"South Stormont, Township of",mayor,1,1
+ON-south-west-oxford-council-ward1,"South-West Oxford, Township of",councillor,1,1
+ON-south-west-oxford-council-ward2,"South-West Oxford, Township of",councillor,1,1
+ON-south-west-oxford-council-ward3,"South-West Oxford, Township of",councillor,1,2
+ON-south-west-oxford-council-ward4,"South-West Oxford, Township of",councillor,1,1
+ON-south-west-oxford-council-ward5,"South-West Oxford, Township of",councillor,1,0
+ON-south-west-oxford-council-ward6,"South-West Oxford, Township of",councillor,1,1
+ON-south-west-oxford-mayor,"South-West Oxford, Township of",mayor,1,1
+ON-southgate-council,"Southgate, Township of",councillor,,5
+ON-southgate-deputy-mayor,"Southgate, Township of",deputy_mayor,1,1
+ON-southgate-mayor,"Southgate, Township of",mayor,1,1
+ON-southgate-trustee-bgcdsb,"Southgate, Township of",trustee,1,1
+ON-southgate-trustee-bwdsb,"Southgate, Township of",trustee,1,1
+ON-southgate-trustee-cscprovidence,"Southgate, Township of",trustee,1,0
+ON-southwest-middlesex-council-w01,"Southwest Middlesex, Municipality of",councillor,2,1
+ON-southwest-middlesex-council-w02,"Southwest Middlesex, Municipality of",councillor,2,2
+ON-southwest-middlesex-council-w03,"Southwest Middlesex, Municipality of",councillor,2,1
+ON-southwest-middlesex-deputy-mayor,"Southwest Middlesex, Municipality of",deputy_mayor,1,1
+ON-southwest-middlesex-mayor,"Southwest Middlesex, Municipality of",mayor,1,1
+ON-southwest-middlesex-trustee-cscprovidence,"Southwest Middlesex, Municipality of",trustee,1,0
+ON-southwold-council-at-large,"Southwold, Township of",councillor,3,2
+ON-southwold-deputy-mayor,"Southwold, Township of",deputy_mayor,1,1
+ON-southwold-mayor,"Southwold, Township of",mayor,1,1
+ON-spanish-council-at-large,"Spanish, Town of",councillor,4,0
+ON-spanish-mayor,"Spanish, Town of",mayor,1,0
+ON-springwater-council-w01,"Springwater, Township of",councillor,1,3
+ON-springwater-council-w02,"Springwater, Township of",councillor,1,2
+ON-springwater-council-w03,"Springwater, Township of",councillor,1,2
+ON-springwater-council-w04,"Springwater, Township of",councillor,1,2
+ON-springwater-council-w05,"Springwater, Township of",councillor,1,2
+ON-springwater-deputy-mayor,"Springwater, Township of",deputy_mayor,1,3
+ON-springwater-mayor,"Springwater, Township of",mayor,1,2
+ON-st-catharines-council-grantham,"St. Catharines, City of",councillor,1,4
+ON-st-catharines-council-merritton,"St. Catharines, City of",councillor,1,3
+ON-st-catharines-council-port-dalhousie,"St. Catharines, City of",councillor,1,3
+ON-st-catharines-council-st-andrews,"St. Catharines, City of",councillor,1,5
+ON-st-catharines-council-st-georges,"St. Catharines, City of",councillor,1,5
+ON-st-catharines-council-st-patricks,"St. Catharines, City of",councillor,1,6
+ON-st-catharines-mayor,"St. Catharines, City of",mayor,1,4
+ON-st-charles-council,"St.-Charles, Municipality of",councillor,4,3
+ON-st-charles-mayor,"St.-Charles, Municipality of",mayor,1,1
+ON-st-clair-council-w01,"St. Clair, Township of",councillor,3,5
+ON-st-clair-council-w02,"St. Clair, Township of",councillor,2,2
+ON-st-clair-deputy-mayor,"St. Clair, Township of",deputy_mayor,1,1
+ON-st-clair-mayor,"St. Clair, Township of",mayor,1,1
+ON-st-clair-trustee-sccdsb,"St. Clair, Township of",trustee,,
+ON-st-joseph-council,"St. Joseph, Township of",councillor,4,3
+ON-st-joseph-mayor,"St. Joseph, Township of",mayor,1,1
+ON-st-marys-council,"St. Marys, Town of",councillor,6,3
+ON-st-marys-mayor,"St. Marys, Town of",mayor,1,2
+ON-st-marys-trustee-cscprovidence,"St. Marys, Town of",trustee,1,0
+ON-st-marys-trustee-english-separate,"St. Marys, Town of",trustee,1,0
+ON-st-thomas-council-at-large,"St. Thomas, City of",councillor,8,13
+ON-st-thomas-mayor,"St. Thomas, City of",mayor,1,2
+ON-stirling-rawdon-council-w01,"Stirling-Rawdon, Township of",councillor,2,3
+ON-stirling-rawdon-council-w02,"Stirling-Rawdon, Township of",councillor,2,2
+ON-stirling-rawdon-mayor,"Stirling-Rawdon, Township of",mayor,1,3
+ON-stone-mills-council-at-large,"Stone Mills, Township of",councillor,5,5
+ON-stone-mills-deputy-mayor,"Stone Mills, Township of",deputy_mayor,1,1
+ON-stone-mills-mayor,"Stone Mills, Township of",mayor,1,1
+ON-stratford-council-at-large,"Stratford, City of",councillor,10,13
+ON-stratford-mayor,"Stratford, City of",mayor,1,5
+ON-strathroy-caradoc-council-w01,"Strathroy-Caradoc, Municipality of",councillor,4,3
+ON-strathroy-caradoc-council-w02,"Strathroy-Caradoc, Municipality of",councillor,3,3
+ON-strathroy-caradoc-deputy-mayor,"Strathroy-Caradoc, Municipality of",deputy_mayor,1,1
+ON-strathroy-caradoc-mayor,"Strathroy-Caradoc, Municipality of",mayor,1,2
+ON-strong-council,"Strong, Township of",councillor,4,0
+ON-strong-mayor,"Strong, Township of",mayor,1,1
+ON-sundridge-councillor,"Sundridge, Village of",councillor,4,3
+ON-sundridge-mayor,"Sundridge, Village of",mayor,1,1
+ON-tarbutt-councillor,"Tarbutt, Township of",councillor,,4
+ON-tarbutt-mayor,"Tarbutt, Township of",mayor,1,1
+ON-tay-council-at-large,"Tay, Township of",councillor,5,8
+ON-tay-deputy-mayor,"Tay, Township of",deputy_mayor,1,1
+ON-tay-mayor,"Tay, Township of",mayor,1,1
+ON-tay-valley-council-bathurst,"Tay Valley, Township of",councillor,1,1
+ON-tay-valley-council-burgess,"Tay Valley, Township of",councillor,1,2
+ON-tay-valley-council-sherbrooke,"Tay Valley, Township of",councillor,1,2
+ON-tay-valley-deputy-reeve,"Tay Valley, Township of",deputy_mayor,1,3
+ON-tay-valley-mayor,"Tay Valley, Township of",mayor,1,2
+ON-tcdsb-trustee-w01,"Toronto, City of",trustee,1,1
+ON-tcdsb-trustee-w02,"Toronto, City of",trustee,1,1
+ON-tcdsb-trustee-w03,"Toronto, City of",trustee,1,2
+ON-tcdsb-trustee-w04,"Toronto, City of",trustee,1,2
+ON-tcdsb-trustee-w05,"Toronto, City of",trustee,1,2
+ON-tcdsb-trustee-w06,"Toronto, City of",trustee,1,1
+ON-tcdsb-trustee-w07,"Toronto, City of",trustee,1,1
+ON-tcdsb-trustee-w08,"Toronto, City of",trustee,1,0
+ON-tcdsb-trustee-w09,"Toronto, City of",trustee,1,2
+ON-tcdsb-trustee-w10,"Toronto, City of",trustee,1,3
+ON-tcdsb-trustee-w11,"Toronto, City of",trustee,1,2
+ON-tcdsb-trustee-w12,"Toronto, City of",trustee,1,1
+ON-tdsb-trustee-w01,"Toronto, City of",trustee,1,2
+ON-tdsb-trustee-w02,"Toronto, City of",trustee,1,3
+ON-tdsb-trustee-w03,"Toronto, City of",trustee,1,3
+ON-tdsb-trustee-w04,"Toronto, City of",trustee,1,4
+ON-tdsb-trustee-w05,"Toronto, City of",trustee,1,3
+ON-tdsb-trustee-w06,"Toronto, City of",trustee,1,2
+ON-tdsb-trustee-w07,"Toronto, City of",trustee,1,6
+ON-tdsb-trustee-w08,"Toronto, City of",trustee,1,2
+ON-tdsb-trustee-w09,"Toronto, City of",trustee,1,2
+ON-tdsb-trustee-w10,"Toronto, City of",trustee,1,2
+ON-tdsb-trustee-w11,"Toronto, City of",trustee,1,3
+ON-tdsb-trustee-w12,"Toronto, City of",trustee,1,3
+ON-tecumseh-council-w01,"Tecumseh, Town of",councillor,1,1
+ON-tecumseh-council-w02,"Tecumseh, Town of",councillor,1,4
+ON-tecumseh-council-w03,"Tecumseh, Town of",councillor,1,3
+ON-tecumseh-council-w04,"Tecumseh, Town of",councillor,1,2
+ON-tecumseh-council-w05,"Tecumseh, Town of",councillor,1,1
+ON-tecumseh-deputy-mayor,"Tecumseh, Town of",deputy_mayor,1,2
+ON-tecumseh-mayor,"Tecumseh, Town of",mayor,1,2
+ON-tecumseh-trustee-cscprovidence-s9,"Tecumseh, Town of",trustee,1,1
+ON-tecumseh-trustee-gecdsb,"Tecumseh, Town of",trustee,1,1
+ON-tecumseh-trustee-wecdsb,"Tecumseh, Town of",trustee,1,1
+ON-tehkummah-councillor,"Tehkummah, Township of",councillor,,4
+ON-tehkummah-mayor,"Tehkummah, Township of",mayor,1,1
+ON-temagami-council,"Temagami, Municipality of",councillor,6,2
+ON-temagami-mayor,"Temagami, Municipality of",mayor,1,2
+ON-temiskaming-shores-council,"Temiskaming Shores, City of",councillor,6,3
+ON-temiskaming-shores-mayor,"Temiskaming Shores, City of",mayor,1,1
+ON-temiskaming-shores-trustee-cscdgr-zoneb,"Temiskaming Shores, City of",trustee,1,1
+ON-temiskaming-shores-trustee-cspne-zoned,"Temiskaming Shores, City of",trustee,1,0
+ON-temiskaming-shores-trustee-dsb1-zonea,"Temiskaming Shores, City of",trustee,2,2
+ON-temiskaming-shores-trustee-ncdsb-zoneb,"Temiskaming Shores, City of",trustee,1,0
+ON-terrace-bay-council,"Terrace Bay, Township of",councillor,4,3
+ON-terrace-bay-mayor,"Terrace Bay, Township of",mayor,1,1
+ON-thames-centre-council-w01,"Thames Centre, Municipality of",councillor,1,0
+ON-thames-centre-council-w02,"Thames Centre, Municipality of",councillor,1,1
+ON-thames-centre-council-w03,"Thames Centre, Municipality of",councillor,1,1
+ON-thames-centre-deputy-mayor,"Thames Centre, Municipality of",deputy_mayor,1,2
+ON-thames-centre-mayor,"Thames Centre, Municipality of",mayor,1,1
+ON-the-archipelago-council-w01,"The Archipelago, Township of",councillor,2,3
+ON-the-archipelago-council-w02,"The Archipelago, Township of",councillor,1,0
+ON-the-archipelago-council-w03,"The Archipelago, Township of",councillor,2,2
+ON-the-archipelago-council-w04,"The Archipelago, Township of",councillor,3,3
+ON-the-archipelago-council-w05,"The Archipelago, Township of",councillor,1,0
+ON-the-archipelago-council-w06,"The Archipelago, Township of",councillor,1,1
+ON-the-archipelago-mayor,"The Archipelago, Township of",mayor,1,1
+ON-the-blue-mountains-council,"The Blue Mountains, Town of",councillor,5,9
+ON-the-blue-mountains-deputy-mayor,"The Blue Mountains, Town of",deputy_mayor,1,1
+ON-the-blue-mountains-mayor,"The Blue Mountains, Town of",mayor,1,3
+ON-the-blue-mountains-trustee-bgcdsb,"The Blue Mountains, Town of",trustee,1,0
+ON-the-blue-mountains-trustee-cscprovidence,"The Blue Mountains, Town of",trustee,1,0
+ON-the-nation-municipality-council-w01,The Nation Municipality,councillor,1,1
+ON-the-nation-municipality-council-w02,The Nation Municipality,councillor,1,1
+ON-the-nation-municipality-council-w03,The Nation Municipality,councillor,1,1
+ON-the-nation-municipality-council-w04,The Nation Municipality,councillor,1,1
+ON-the-nation-municipality-council-w05,The Nation Municipality,councillor,1,1
+ON-the-nation-municipality-council-w06,The Nation Municipality,councillor,1,1
+ON-the-nation-municipality-mayor,The Nation Municipality,mayor,1,1
+ON-the-nation-municipality-trustee-cdsbeo,The Nation Municipality,trustee,1,0
+ON-the-nation-municipality-trustee-cepeo,The Nation Municipality,trustee,1,0
+ON-the-nation-municipality-trustee-csdceo,The Nation Municipality,trustee,1,1
+ON-the-north-shore-councillor,"The North Shore, Township of",councillor,4,5
+ON-the-north-shore-mayor,"The North Shore, Township of",mayor,1,1
+ON-thessalon-council,"Thessalon, Town of",councillor,4,3
+ON-thessalon-mayor,"Thessalon, Town of",mayor,1,1
+ON-thornloe-mayor,"Thornloe, Village of",mayor,1,
+ON-thorold-council-at-large,"Thorold, City of",councillor,6,18
+ON-thorold-mayor,"Thorold, City of",mayor,1,2
+ON-thunder-bay-council-at-large,"Thunder Bay, City of",councillor,5,4
+ON-thunder-bay-council-current-river,"Thunder Bay, City of",councillor,1,2
+ON-thunder-bay-council-mcintyre,"Thunder Bay, City of",councillor,1,1
+ON-thunder-bay-council-mckellar,"Thunder Bay, City of",councillor,1,2
+ON-thunder-bay-council-neebing,"Thunder Bay, City of",councillor,1,1
+ON-thunder-bay-council-northwood,"Thunder Bay, City of",councillor,1,2
+ON-thunder-bay-council-red-river,"Thunder Bay, City of",councillor,1,1
+ON-thunder-bay-council-westfort,"Thunder Bay, City of",councillor,1,1
+ON-thunder-bay-mayor,"Thunder Bay, City of",mayor,1,6
+ON-tillsonburg-council-at-large,"Tillsonburg, Town of",councillor,6,7
+ON-tillsonburg-mayor,"Tillsonburg, Town of",mayor,1,2
+ON-timmins-council-w01,"Timmins, City of",councillor,1,2
+ON-timmins-council-w02,"Timmins, City of",councillor,1,4
+ON-timmins-council-w03,"Timmins, City of",councillor,1,2
+ON-timmins-council-w04,"Timmins, City of",councillor,1,4
+ON-timmins-council-w05,"Timmins, City of",councillor,4,12
+ON-timmins-mayor,"Timmins, City of",mayor,1,6
+ON-tiny-council-at-large,"Tiny, Township of",councillor,3,8
+ON-tiny-deputy-mayor,"Tiny, Township of",deputy_mayor,1,3
+ON-tiny-mayor,"Tiny, Township of",mayor,1,2
+ON-toronto-council-w01,"Toronto, City of",councillor,1,6
+ON-toronto-council-w02,"Toronto, City of",councillor,1,2
+ON-toronto-council-w03,"Toronto, City of",councillor,1,4
+ON-toronto-council-w04,"Toronto, City of",councillor,1,9
+ON-toronto-council-w05,"Toronto, City of",councillor,1,6
+ON-toronto-council-w06,"Toronto, City of",councillor,1,2
+ON-toronto-council-w07,"Toronto, City of",councillor,1,3
+ON-toronto-council-w08,"Toronto, City of",councillor,1,5
+ON-toronto-council-w09,"Toronto, City of",councillor,1,3
+ON-toronto-council-w10,"Toronto, City of",councillor,1,8
+ON-toronto-council-w11,"Toronto, City of",councillor,1,10
+ON-toronto-council-w12,"Toronto, City of",councillor,1,5
+ON-toronto-council-w13,"Toronto, City of",councillor,1,9
+ON-toronto-council-w14,"Toronto, City of",councillor,1,2
+ON-toronto-council-w15,"Toronto, City of",councillor,1,2
+ON-toronto-council-w16,"Toronto, City of",councillor,1,3
+ON-toronto-council-w17,"Toronto, City of",councillor,1,6
+ON-toronto-council-w18,"Toronto, City of",councillor,1,4
+ON-toronto-council-w19,"Toronto, City of",councillor,1,10
+ON-toronto-council-w20,"Toronto, City of",councillor,1,7
+ON-toronto-council-w21,"Toronto, City of",councillor,1,10
+ON-toronto-council-w22,"Toronto, City of",councillor,1,7
+ON-toronto-council-w23,"Toronto, City of",councillor,1,5
+ON-toronto-council-w24,"Toronto, City of",councillor,1,2
+ON-toronto-council-w25,"Toronto, City of",councillor,1,6
+ON-toronto-mayor,"Toronto, City of",mayor,1,36
+ON-trent-hills-council-w01,"Trent Hills, Municipality of",councillor,1,1
+ON-trent-hills-council-w02,"Trent Hills, Municipality of",councillor,1,0
+ON-trent-hills-council-w03,"Trent Hills, Municipality of",councillor,1,3
+ON-trent-hills-council-w04,"Trent Hills, Municipality of",councillor,1,0
+ON-trent-hills-council-w05,"Trent Hills, Municipality of",councillor,1,3
+ON-trent-hills-deputy-mayor,"Trent Hills, Municipality of",deputy_mayor,1,1
+ON-trent-hills-mayor,"Trent Hills, Municipality of",mayor,1,1
+ON-trent-hills-trustee-pvnccdsb,"Trent Hills, Municipality of",trustee,1,1
+ON-trent-lakes-council-at-large,"Trent Lakes, Municipality of",councillor,1,1
+ON-trent-lakes-council-galway-cavendish,"Trent Lakes, Municipality of",councillor,2,3
+ON-trent-lakes-council-harvey,"Trent Lakes, Municipality of",councillor,2,2
+ON-trent-lakes-deputy-mayor,"Trent Lakes, Municipality of",deputy_mayor,1,1
+ON-trent-lakes-mayor,"Trent Lakes, Municipality of",mayor,1,1
+ON-trent-lakes-trustee-english-public,"Trent Lakes, Municipality of",trustee,1,1
+ON-trent-lakes-trustee-english-separate,"Trent Lakes, Municipality of",trustee,1,3
+ON-trent-lakes-trustee-french-separate,"Trent Lakes, Municipality of",trustee,1,0
+ON-tudor-and-cashel-councillor,"Tudor and Cashel, Township of",councillor,3,3
+ON-tudor-and-cashel-deputy-mayor,"Tudor and Cashel, Township of",deputy_mayor,1,1
+ON-tudor-and-cashel-mayor,"Tudor and Cashel, Township of",mayor,1,1
+ON-tweed-councillor,"Tweed, Municipality of",councillor,3,4
+ON-tweed-deputy-mayor,"Tweed, Municipality of",deputy_mayor,1,2
+ON-tweed-mayor,"Tweed, Municipality of",mayor,1,2
+ON-tyendinaga-council,"Tyendinaga, Township of",councillor,,2
+ON-tyendinaga-deputy-mayor,"Tyendinaga, Township of",deputy_mayor,1,1
+ON-tyendinaga-mayor,"Tyendinaga, Township of",mayor,1,3
+ON-tyendinaga-trustee-alcdsb,"Tyendinaga, Township of",trustee,1,0
+ON-tyendinaga-trustee-cepeo,"Tyendinaga, Township of",trustee,1,0
+ON-tyendinaga-trustee-csdcce,"Tyendinaga, Township of",trustee,1,1
+ON-tyendinaga-trustee-hpedsb,"Tyendinaga, Township of",trustee,1,1
+ON-uxbridge-council-w01,"Uxbridge, Township of",councillor,1,2
+ON-uxbridge-council-w02,"Uxbridge, Township of",councillor,1,2
+ON-uxbridge-council-w03,"Uxbridge, Township of",councillor,1,2
+ON-uxbridge-council-w04,"Uxbridge, Township of",councillor,1,2
+ON-uxbridge-council-w05,"Uxbridge, Township of",councillor,1,1
+ON-uxbridge-mayor,"Uxbridge, Township of",mayor,1,3
+ON-uxbridge-regional-councillor,"Uxbridge, Township of",regional_councillor,1,1
+ON-val-rita-harty-council,"Val Rita-Harty, Township of",councillor,4,1
+ON-val-rita-harty-mayor,"Val Rita-Harty, Township of",mayor,1,1
+ON-vaughan-council-w01,"Vaughan, City of",councillor,1,2
+ON-vaughan-council-w02,"Vaughan, City of",councillor,1,1
+ON-vaughan-council-w03,"Vaughan, City of",councillor,1,1
+ON-vaughan-council-w04,"Vaughan, City of",councillor,1,1
+ON-vaughan-council-w05,"Vaughan, City of",councillor,1,1
+ON-vaughan-mayor,"Vaughan, City of",mayor,1,1
+ON-vaughan-regional-councillor-at-large,"Vaughan, City of",regional_councillor,4,6
+ON-wainfleet-council,"Wainfleet, Township of",councillor,4,6
+ON-wainfleet-mayor,"Wainfleet, Township of",mayor,1,1
+ON-wainfleet-trustee-dsbn,"Wainfleet, Township of",trustee,1,0
+ON-warwick-council-at-large,"Warwick, Township of",councillor,4,5
+ON-warwick-mayor,"Warwick, Township of",mayor,1,1
+ON-wasaga-beach-council-at-large,"Wasaga Beach, Town of",councillor,5,11
+ON-wasaga-beach-deputy-mayor,"Wasaga Beach, Town of",deputy_mayor,1,2
+ON-wasaga-beach-mayor,"Wasaga Beach, Town of",mayor,1,3
+ON-waterloo-city-council-w01,"Waterloo, City of",councillor,1,1
+ON-waterloo-city-council-w02,"Waterloo, City of",councillor,1,4
+ON-waterloo-city-council-w03,"Waterloo, City of",councillor,1,2
+ON-waterloo-city-council-w04,"Waterloo, City of",councillor,1,2
+ON-waterloo-city-council-w05,"Waterloo, City of",councillor,1,4
+ON-waterloo-city-council-w06,"Waterloo, City of",councillor,1,2
+ON-waterloo-city-council-w07,"Waterloo, City of",councillor,1,1
+ON-waterloo-city-mayor,"Waterloo, City of",mayor,1,1
+ON-waterloo-regional-municipality-councillor-cambridge,"Waterloo, Regional Municipality of",regional_councillor,2,5
+ON-waterloo-regional-municipality-councillor-kitchener,"Waterloo, Regional Municipality of",regional_councillor,4,9
+ON-waterloo-regional-municipality-councillor-waterloo,"Waterloo, Regional Municipality of",regional_councillor,2,3
+ON-wawa-councillor,"Wawa, Municipality of",councillor,4,5
+ON-wawa-mayor,"Wawa, Municipality of",mayor,1,1
+ON-wawa-trustee-adsb,"Wawa, Municipality of",trustee,1,1
+ON-wawa-trustee-csdcno,"Wawa, Municipality of",trustee,1,0
+ON-wawa-trustee-cspgno,"Wawa, Municipality of",trustee,1,0
+ON-wawa-trustee-hscdsb,"Wawa, Municipality of",trustee,1,0
+ON-welland-council-w01,"Welland, City of",councillor,2,2
+ON-welland-council-w02,"Welland, City of",councillor,2,3
+ON-welland-council-w03,"Welland, City of",councillor,2,3
+ON-welland-council-w04,"Welland, City of",councillor,2,4
+ON-welland-council-w05,"Welland, City of",councillor,2,2
+ON-welland-council-w06,"Welland, City of",councillor,2,3
+ON-welland-mayor,"Welland, City of",mayor,1,6
+ON-welland-trustee-cscmonavenir,"Welland, City of",trustee,1,0
+ON-welland-trustee-csviamonde,"Welland, City of",trustee,1,3
+ON-welland-trustee-dsbn,"Welland, City of",trustee,1,2
+ON-wellesley-council-ward1,"Wellesley, Township of",councillor,1,0
+ON-wellesley-council-ward2,"Wellesley, Township of",councillor,1,0
+ON-wellesley-council-ward3,"Wellesley, Township of",councillor,1,1
+ON-wellesley-council-ward4,"Wellesley, Township of",councillor,1,0
+ON-wellesley-mayor,"Wellesley, Township of",mayor,1,2
+ON-wellington-north-council-w01,"Wellington North, Township of",councillor,1,3
+ON-wellington-north-council-w02,"Wellington North, Township of",councillor,1,2
+ON-wellington-north-council-w03,"Wellington North, Township of",councillor,1,1
+ON-wellington-north-council-w04,"Wellington North, Township of",councillor,1,2
+ON-wellington-north-county-councillor-w03,"Wellington North, Township of",county_councillor,1,1
+ON-wellington-north-county-councillor-w04,"Wellington North, Township of",county_councillor,1,1
+ON-wellington-north-mayor,"Wellington North, Township of",mayor,1,1
+ON-wellington-north-trustee-ugdsb,"Wellington North, Township of",trustee,1,0
+ON-wellington-north-trustee-wellingtoncdsb,"Wellington North, Township of",trustee,1,1
+ON-west-elgin-council-at-large,"West Elgin, Municipality of",councillor,,5
+ON-west-elgin-deputy-mayor,"West Elgin, Municipality of",deputy_mayor,1,1
+ON-west-elgin-mayor,"West Elgin, Municipality of",mayor,1,1
+ON-west-grey-council,"West Grey, Municipality of",councillor,,3
+ON-west-grey-deputy-mayor,"West Grey, Municipality of",deputy_mayor,1,1
+ON-west-grey-mayor,"West Grey, Municipality of",mayor,1,1
+ON-west-lincoln-council-w01,"West Lincoln, Township of",councillor,2,3
+ON-west-lincoln-council-w02,"West Lincoln, Township of",councillor,2,1
+ON-west-lincoln-council-w03,"West Lincoln, Township of",councillor,2,2
+ON-west-lincoln-mayor,"West Lincoln, Township of",mayor,1,1
+ON-west-lincoln-trustee-dsbn-wainfleet-west-lincoln,"West Lincoln, Township of",trustee,1,0
+ON-west-nipissing-council-ward1,"West Nipissing, Municipality of",councillor,1,1
+ON-west-nipissing-council-ward2,"West Nipissing, Municipality of",councillor,1,1
+ON-west-nipissing-council-ward3,"West Nipissing, Municipality of",councillor,1,4
+ON-west-nipissing-council-ward4,"West Nipissing, Municipality of",councillor,1,1
+ON-west-nipissing-council-ward5,"West Nipissing, Municipality of",councillor,1,0
+ON-west-nipissing-council-ward6,"West Nipissing, Municipality of",councillor,1,1
+ON-west-nipissing-council-ward7,"West Nipissing, Municipality of",councillor,1,1
+ON-west-nipissing-council-ward8,"West Nipissing, Municipality of",councillor,1,1
+ON-west-nipissing-mayor,"West Nipissing, Municipality of",mayor,1,3
+ON-west-perth-council-fullarton,"West Perth, Municipality of",councillor,2,2
+ON-west-perth-council-hibbert,"West Perth, Municipality of",councillor,2,2
+ON-west-perth-council-logan,"West Perth, Municipality of",councillor,2,1
+ON-west-perth-council-mitchell,"West Perth, Municipality of",councillor,3,1
+ON-west-perth-deputy-mayor,"West Perth, Municipality of",deputy_mayor,1,1
+ON-west-perth-mayor,"West Perth, Municipality of",mayor,1,2
+ON-westport-councillor,"Westport, Village of",councillor,,6
+ON-westport-mayor,"Westport, Village of",mayor,1,1
+ON-whitby-council-w01,"Whitby, Town of",councillor,1,3
+ON-whitby-council-w02,"Whitby, Town of",councillor,1,5
+ON-whitby-council-w03,"Whitby, Town of",councillor,1,6
+ON-whitby-council-w04,"Whitby, Town of",councillor,1,3
+ON-whitby-mayor,"Whitby, Town of",mayor,1,3
+ON-whitby-regional-councillor-w01,"Whitby, Town of",regional_councillor,1,2
+ON-whitby-regional-councillor-w02,"Whitby, Town of",regional_councillor,1,2
+ON-whitby-regional-councillor-w03,"Whitby, Town of",regional_councillor,1,2
+ON-whitby-regional-councillor-w04,"Whitby, Town of",regional_councillor,1,2
+ON-whitchurch-stouffville-council-w01,"Whitchurch-Stouffville, Town of",councillor,1,2
+ON-whitchurch-stouffville-council-w02,"Whitchurch-Stouffville, Town of",councillor,1,5
+ON-whitchurch-stouffville-council-w03,"Whitchurch-Stouffville, Town of",councillor,1,1
+ON-whitchurch-stouffville-council-w04,"Whitchurch-Stouffville, Town of",councillor,1,3
+ON-whitchurch-stouffville-council-w05,"Whitchurch-Stouffville, Town of",councillor,1,1
+ON-whitchurch-stouffville-council-w06,"Whitchurch-Stouffville, Town of",councillor,1,2
+ON-whitchurch-stouffville-mayor,"Whitchurch-Stouffville, Town of",mayor,1,1
+ON-white-river-councillor,"White River, Township of",councillor,,4
+ON-white-river-mayor,"White River, Township of",mayor,1,2
+ON-whitestone-council,"Whitestone, Municipality of",councillor,4,4
+ON-whitestone-mayor,"Whitestone, Municipality of",mayor,1,2
+ON-whitewater-region-council-at-large,"Whitewater Region, Township of",councillor,5,4
+ON-whitewater-region-deputy-mayor,"Whitewater Region, Township of",deputy_mayor,1,2
+ON-whitewater-region-mayor,"Whitewater Region, Township of",mayor,1,1
+ON-wilmot-council-w01,"Wilmot, Township of",councillor,1,1
+ON-wilmot-council-w02,"Wilmot, Township of",councillor,1,0
+ON-wilmot-council-w03,"Wilmot, Township of",councillor,1,1
+ON-wilmot-council-w04,"Wilmot, Township of",councillor,2,2
+ON-wilmot-mayor,"Wilmot, Township of",mayor,1,3
+ON-windsor-council-w01,"Windsor, City of",councillor,1,1
+ON-windsor-council-w02,"Windsor, City of",councillor,1,2
+ON-windsor-council-w03,"Windsor, City of",councillor,1,1
+ON-windsor-council-w04,"Windsor, City of",councillor,1,1
+ON-windsor-council-w05,"Windsor, City of",councillor,1,3
+ON-windsor-council-w06,"Windsor, City of",councillor,1,4
+ON-windsor-council-w07,"Windsor, City of",councillor,1,2
+ON-windsor-council-w08,"Windsor, City of",councillor,1,1
+ON-windsor-council-w09,"Windsor, City of",councillor,1,0
+ON-windsor-council-w10,"Windsor, City of",councillor,1,2
+ON-windsor-mayor,"Windsor, City of",mayor,1,2
+ON-wollaston-councillor,"Wollaston, Township of",councillor,3,2
+ON-wollaston-deputy-mayor,"Wollaston, Township of",deputy_mayor,1,2
+ON-wollaston-mayor,"Wollaston, Township of",mayor,1,3
+ON-woodstock-council-at-large,"Woodstock, City of",councillor,4,7
+ON-woodstock-deputy-mayor,"Woodstock, City of",deputy_mayor,1,3
+ON-woodstock-mayor,"Woodstock, City of",mayor,1,2
+ON-woodstock-regional-councillor-at-large,"Woodstock, City of",regional_councillor,1,2
+ON-woodstock-trustee-cscprovidence,"Woodstock, City of",trustee,1,0
+ON-woodstock-trustee-tvdsb,"Woodstock, City of",trustee,2,1
+ON-woolwich-council-w01,"Woolwich, Township of",councillor,2,3
+ON-woolwich-council-w02,"Woolwich, Township of",councillor,1,0
+ON-woolwich-council-w03,"Woolwich, Township of",councillor,2,2
+ON-woolwich-mayor,"Woolwich, Township of",mayor,1,3
+ON-zorra-council-w01,"Zorra, Township of",councillor,1,1
+ON-zorra-council-w02,"Zorra, Township of",councillor,1,1
+ON-zorra-council-w03,"Zorra, Township of",councillor,1,1
+ON-zorra-council-w04,"Zorra, Township of",councillor,1,1
+ON-zorra-mayor,"Zorra, Township of",mayor,1,2
