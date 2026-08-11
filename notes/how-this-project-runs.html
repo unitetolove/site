@@ -44,9 +44,9 @@ Working notes — an internal document, published nearly verbatim with named red
 
 <h1>Operator's Guide</h1>
 
-<p><em>Rewritten in full 2026-07-27 (D-098 core-docs refresh) by a delegated Sonnet lane, to bring the
-body current with the D-081 "canon" re-founding — the previous full rewrite (2026-07-13) predates
-THE CANON, the LAYER4_ENGINE prompt family, the Strategy Jane seat, and the D-096 paste-prompt
+<p><em>Rewritten in full 2026-07-27 (a core-docs refresh) by a delegated review pass, to bring the
+body current with the recorded "canon" re-founding — the previous full rewrite (2026-07-13) predates
+THE CANON, the LAYER4_ENGINE prompt family, the Strategy Jane seat, and the paste-prompt
 interface rule; it had drifted to two bolted-on header addenda instead of an integrated update.
 Prior version (2026-07-13 body + both addenda) preserved in full at
 archive (repo-internal). This is YOUR manual, not an executor contract
@@ -60,12 +60,12 @@ back through any chat — chat is never the coordination channel, this repo is.<
 <li>The one rule</li>
 <li>Your accounts, right now</li>
 <li>Who's who (roles)</li>
-<li>The Desktop — RETIRED (D-140)</li>
+<li>The Desktop — RETIRED</li>
 <li>Dispatch coordination — running things from your phone</li>
 <li>Project intake — don't lose an idea</li>
 <li>How git actually works here</li>
 <li>Decisions: PROPOSED vs RATIFIED</li>
-<li>When Jane escalates to you, and to Fable</li>
+<li>When Jane escalates to you, and beyond</li>
 <li>The dates that matter</li>
 <li>Where everything lives</li>
 <li>If you've forgotten everything: quick-start</li>
@@ -83,7 +83,7 @@ surface based on what you're doing, not habit: terminal tools (Kimi CLI, Claude 
 that needs full git/file access; Claude Desktop's Cowork mode for quick sandboxed edits with no
 push risk; Claude Desktop's Code mode when you want the GUI but full repo access.</p>
 
-<p><strong>D-096 — the fleet never hands you a manual repo chore.</strong> No session should ever tell you to run
+<p><strong>a recorded standing decision — the fleet never hands you a manual repo chore.</strong> No session should ever tell you to run
 `Commit Sweep.command`, type a shell line, or perform any other manual on-computer repo operation.
 Anything that genuinely needs on-computer execution (sweep verification, a git landing, a PR
 merge, an install, a checker run) arrives as ONE complete, self-contained Claude Code paste
@@ -129,7 +129,7 @@ Same paste-a-bootstrap-prompt convention applies.</p>
 <h3>Claude Desktop — Cowork mode</h3>
 <p>Desktop → Cowork tab → point it at the repo (mounted, not a plain clone). <strong>Cannot push, full
 stop, unless you paste a repo-scoped PAT into that specific chat</strong> (§9) — by design, never done in
-this project (FUSE rule, D-011/D-015). Good for: quick read/draft work, judgment questions,
+this project (FUSE rule, a recorded standing decision/a recorded standing decision). Good for: quick read/draft work, judgment questions,
 anything that doesn't need to land in git same-session. A Cowork session's edits sit in the mounted
 folder uncommitted until a Claude Code session (or a PAT-equipped Cowork session) lands them.</p>
 
@@ -148,12 +148,12 @@ disagree, CLAUDE.md wins (it's the one auto-loaded every session).</p>
 <tr><td>"start research jane" / "new research jane"</td><td>Boots the <strong>Research</strong> track (prompts/bootstrap_jane_research.md) — Atlas/Ledger/Scout/Lane-M/Lane-V, backgrounders</td></tr>
 <tr><td>"start movement jane" / "new movement jane"</td><td>Boots the <strong>Movement</strong> track (prompts/bootstrap_jane_movement.md) — charter support, contribution pipeline, coordinator kits, outreach execution</td></tr>
 <tr><td>"boot founder" / "start founder"</td><td>Boots <strong>Founder</strong> (strategy/canon/LAYER4_ENGINE/FOUNDER.md) — the canon-era judgment seat: ratification walks, architecture/firewall calls, dispatches the other four engine prompts</td></tr>
-<tr><td>"boot strategy jane" / "start strategy jane" / "strategy jane"</td><td>Boots <strong>Strategy Jane</strong> (prompts/bootstrap_jane_strategy.md, D-095) — the high-level thinker seat. Explicitly NOT Founder: non-execution by constitution, proposes memos and decision cards only, never fires/mints/edits</td></tr>
+<tr><td>"boot strategy jane" / "start strategy jane" / "strategy jane"</td><td>Boots <strong>Strategy Jane</strong> (prompts/bootstrap_jane_strategy.md, a recorded standing decision) — the high-level thinker seat. Explicitly NOT Founder: non-execution by constitution, proposes memos and decision cards only, never fires/mints/edits</td></tr>
 <tr><td>"new jane: `&lt;mission&gt;`" / "new code jane: `&lt;mission&gt;`" / etc.</td><td>Boots the named track, but scopes its state-file read to `&lt;mission&gt;` and checks `git branch -a`/`git worktree list` for anything already mid-flight on it, instead of reading everything</td></tr>
 <tr><td>"new project" / "new project: `&lt;name&gt;`"</td><td>Logs your ask verbatim to state/PROJECTS.md first, then scopes/plans/produces the dispatch prompt(s) — see §8</td></tr>
 <tr><td>"status ping" / "quick status" / "ping"</td><td>Fixed-shape, minimum-token status block: local background scripts, HEAD, unmerged-branch count, last session log line — zero file reads beyond live checks</td></tr>
-<tr><td>"start fleet review" / "boot fleet review"</td><td>Standing review/integrate pass: lands Sonnet-reviewed Kimi branches, triages branch hygiene. One pass only</td></tr>
-<tr><td>any "desktop ..." phrase</td><td><strong>DEAD — the Desktop is retired (D-140). Nothing boots; see §6.</strong></td></tr>
+<tr><td>"start fleet review" / "boot fleet review"</td><td>Standing review/integrate pass: lands reviewed Kimi branches, triages branch hygiene. One pass only</td></tr>
+<tr><td>any "desktop ..." phrase</td><td><strong>DEAD — the Desktop is retired. Nothing boots; see §6.</strong></td></tr>
 <tr><td>"boot build jane: develop project `&lt;name&gt;`"</td><td>Generalized project factory (prompts/bootstrap_project_factory.md) — engineering / movement-site / ops / research-program profiles</td></tr>
 <tr><td>"develop program: `&lt;name&gt;`" / "develop program `&lt;name&gt;`"</td><td>Research-only program factory (prompts/bootstrap_program_factory.md) — distinct from the line above</td></tr>
 <tr><td>"health check"</td><td>Runs `python3 tools/repo_health_check.py` directly — no prompt file needed</td></tr>
@@ -206,7 +206,7 @@ its own authenticated `git`/`gh` (like Claude CLI or Kimi CLI do), no extra step
 and push once you've confirmed it's authenticated to the right GitHub account. If the tool works
 through a <strong>mounted/synced virtual filesystem</strong> rather than a plain local clone (the same shape
 as Claude Desktop's Cowork mode), treat it exactly like Cowork: it should not attempt <em>any</em> git
-command against that mount, including read-only ones (D-011/D-015 — this was a real, repeatedly-
+command against that mount, including read-only ones (a recorded standing decision/a recorded standing decision — this was a real, repeatedly-
 observed failure mode, not theoretical caution) — its edits sit uncommitted until a
 plain-filesystem session lands them, or you paste a repo-scoped PAT into that specific
 session if it needs to push directly (never store the PAT anywhere persistent).</li>
@@ -219,7 +219,7 @@ review-only tools that never commit).</li>
 name, no retired brand names, no fingerprint labels, ever, in content/filenames/commits); no
 force-push, no `git reset --hard` against shared history; never merge/delete a duplicate-row
 backlog or anything else this guide calls operator-gated without asking you first; never ask
-you to run a manual repo chore yourself (D-096, above) — it should hand you a paste prompt
+you to run a manual repo chore yourself (a recorded standing decision, above) — it should hand you a paste prompt
 instead; if it's going to dispatch further sub-agents of its own, point it at
 prompts/PROMPT_CONVENTION.md for the expected shape.</li>
 <li>First real task should be small and reviewable — a single bounded fix, not a large unsupervised
@@ -245,29 +245,29 @@ verified," start at strategy/canon/CANON_README.md.</p>
 
 <h2>4. Your accounts, right now</h2>
 <ul>
-<li><strong>Account A</strong> — the original "Fable Sonnet (Master Orchestrator)" chat. Higher-effort,
+<li><strong>Account A</strong> — the original "Master Orchestrator" chat. Higher-effort,
 extended-thinking tier. Reserved for ratifications, verdicts, and architecture pivots — not
-day-to-day questions (burns budget you can't get back once Fable access lapses). Can run
+day-to-day questions (burns budget you can't get back once your higher-effort access lapses). Can run
 genuinely concurrently with Account B on the same repo — git handles it cleanly as long as each
 session claims its scope before touching shared files (§9 has a real recent example of this going
 wrong and being recovered, not just the happy path).</li>
-<li><strong>Account B</strong> — standing Sonnet advisor lineage. Route ordinary day-to-day questions and dispatch
+<li><strong>Account B</strong> — standing advisor lineage. Route ordinary day-to-day questions and dispatch
 decisions here. Claude Code (not Cowork) on this account can commit and push directly.</li>
 <li><strong>Accounts are orthogonal to Jane tracks and canon seats (§5)</strong> — any account can run a Planning,
 Code, Research, Movement, or Strategy session, or boot Founder. Which account you use is about
 quota/budget; which track/seat you boot is about scope. Don't conflate "Account A" with
-"judgment-tier" — Account A running Sonnet is still Sonnet-tier work, just on a different quota
+"judgment-tier" — Account A running the standard tier is still standard-tier work, just on a different quota
 pool.</li>
 <li><strong>Quota mechanics</strong>: both accounts have a 5-hour rolling window and a weekly window. "Grind an
 account" means keeping the dispatch queue full on that account until its window resets — idle
 quota is wasted quota. Observed rate: roughly 50% of a 5-hour window consumed by ~1.5 hours of
 continuous multi-agent dispatching.</li>
-<li>Fable/Opus budget doesn't reset the same way — spend it only on named judgment calls (contested
+<li>Higher-effort budget doesn't reset the same way — spend it only on named judgment calls (contested
 claims, fairness/legal reads, firewall calls, architecture decisions), never on research sweeps,
 drafts, formatting, or cataloging (§11).</li>
 </ul>
 
-<p><strong>claude-swap — installed 2026-08-04 (K3 L1.3, BATCH-B(c)/D-141).</strong> Credential-swap for the
+<p><strong>claude-swap — installed 2026-08-04 (K3 L1.3, BATCH-B(c)/a recorded standing decision).</strong> Credential-swap for the
 official CLI (github.com/realiti4/claude-swap) — rotates between logged-in Claude Code accounts
 and can auto-switch before a 5h/7d window runs out. Installed via `pipx install claude-swap`
 (binaries: `claude-swap`, `cswap`). The one command you'll actually use day to day:</p>
@@ -277,7 +277,7 @@ which account has quota left before starting a session. To add an account: log i
 with it, then run `cswap add`. To switch: `cswap switch &lt;num|email&gt;`, or let it rotate for you with
 `cswap auto` (foreground) — see the README for the full command set. <strong>Verified working this
 session</strong> (`cswap list`/`cswap status` both run correctly, Account 1 = [operational detail withheld]
-registered) — one caveat found, not fixed here: this seat's captured credential reports "re-login
+registered) — one caveat found, not fixed here: this review's captured credential reports "re-login
 needed — refresh token dead," so the automatic-switch machinery isn't provably wired end-to-end
 yet. If `cswap list` ever shows that same "re-login needed" line for an account you're trying to
 rotate onto, log into Claude Code with it directly first, then re-run `cswap add` before trusting
@@ -285,16 +285,16 @@ rotate onto, log into Claude Code with it directly first, then re-run `cswap add
 
 <h2>5. Who's who (roles)</h2>
 
-<p><strong>The canon-era engine seats — where judgment and production actually route now.</strong> Since the D-081
+<p><strong>The canon-era engine seats — where judgment and production actually route now.</strong> Since the canon
 re-founding, research/content production runs on THE CANON (strategy/canon/CANON_README.md), and
 its LAYER4_ENGINE prompt family is the working roster for that spine, at
 `strategy/canon/LAYER4_ENGINE/`:</p>
 
 <table border="1" cellpadding="6">
 <tr><th>Seat</th><th>What it does</th><th>Boots via</th></tr>
-<tr><td><strong>FOUNDER</strong></td><td>The judgment seat — orchestrates the other four, holds ratification walks, architecture/firewall calls, render-class approvals. Runs on Fable/Opus (thinking on).</td><td>"boot founder"</td></tr>
+<tr><td><strong>FOUNDER</strong></td><td>The judgment seat — orchestrates the other four, holds ratification walks, architecture/firewall calls, render-class approvals. Runs on the higher-effort tier (thinking on).</td><td>"boot founder"</td></tr>
 <tr><td><strong>CLOSURE_TRAIN</strong></td><td>Production — takes a scoped issue/piece from open to closed through the canon's method.</td><td>dispatched by Founder</td></tr>
-<tr><td><strong>VERIFY_SEAL</strong></td><td>Independent verification/seal pass — the canon's version of the old Lane-V discipline.</td><td>dispatched by Founder</td></tr>
+<tr><td><strong>independent verification</strong></td><td>Independent verification/seal pass — the canon's version of the old Lane-V discipline.</td><td>dispatched by Founder</td></tr>
 <tr><td><strong>RENDER</strong></td><td>Turns ratified CORE substance into an audience-tuned door (public page, candidate brief, org letter, etc.) — never disagrees with CORE.</td><td>dispatched by Founder</td></tr>
 <tr><td><strong>CURATOR</strong></td><td>Regenerates the scoreboard (`LAYER2_MAP.md`), sweeps for stranded work, keeps registries honest.</td><td>dispatched by Founder</td></tr>
 </table>
@@ -312,7 +312,7 @@ somewhere sane.</p>
 <tr><td><strong>Jane — Code</strong></td><td>Owns `tools/`, tests, CI, git/worktree hygiene, Desktop Orchestrator infrastructure.</td><td>state/NOW_CODE.md, `tools/`</td></tr>
 <tr><td><strong>Jane — Research</strong></td><td>Owns the content pipeline: Atlas → Ledger → Data → Backgrounders → Briefs. Day-to-day production order is absorbed into CLOSURE_TRAIN above; this track still owns the connector/data layer underneath it.</td><td>state/NOW_RESEARCH.md, `research/`</td></tr>
 <tr><td><strong>Jane — Movement</strong></td><td>Movement-facing content and outreach execution: charter support, contribution pipeline, coordinator kits, tribe map, engagement capture, press kit, distribution.</td><td>state/NOW_MOVEMENT.md</td></tr>
-<tr><td><strong>Jane — Strategy (D-095)</strong></td><td>The high-level thinker seat: whole-board review, assumption-testing, independent reviews of any artifact/plan/pivot. <strong>Non-execution by constitution</strong> — proposes memos and state/DECISION_QUEUE.md §0 card drafts, never fires a lane, mints a decision, or edits canon/state/production files. Explicitly NOT Founder.</td><td>its own dated `strategy/` memo + state/OPERATOR_LOG.md verbatim bank + one `SESSIONS.md` line</td></tr>
+<tr><td><strong>Jane — Strategy</strong></td><td>The high-level thinker seat: whole-board review, assumption-testing, independent reviews of any artifact/plan/pivot. <strong>Non-execution by constitution</strong> — proposes memos and state/DECISION_QUEUE.md §0 card drafts, never fires a lane, mints a decision, or edits canon/state/production files. Explicitly NOT Founder.</td><td>its own dated `strategy/` memo + state/OPERATOR_LOG.md verbatim bank + one `SESSIONS.md` line</td></tr>
 </table>
 
 <p><strong>Supporting roles, unchanged in kind:</strong></p>
@@ -324,9 +324,9 @@ somewhere sane.</p>
 </table>
 
 <p>Full architecture: strategy/V3_VERDICT_AND_ARCHITECTURE_2026-07-11.md. Full track-split
-rationale: state/DECISIONS.md D-027. Full canon architecture: strategy/canon/CANON_README.md.</p>
+rationale: state/DECISIONS.md a recorded standing decision. Full canon architecture: strategy/canon/CANON_README.md.</p>
 
-<h2>6. The Desktop — RETIRED (D-140, 2026-08-04)</h2>
+<h2>6. The Desktop — RETIRED (a recorded standing decision, 2026-08-04)</h2>
 
 <p><strong>You retired it. There is nothing here to operate any more.</strong> Your words, on the record:
 <em>"FINAL DECISION - DESKTOP IS NOW RETIRED - ARCHIVE ALL DESKTOP TASKS - ALL DESKTOP WORK IS TO BE
@@ -371,7 +371,7 @@ your phone/browser — for picking up in-progress work, not starting new work.</
 session — Dispatch is the fit.</strong> One real constraint: single persistent thread, no parallel Dispatch
 conversations, and your Mac has to actually be on.</p>
 
-<h3>Phone alerts (ntfy over Tailscale) — D-107 L1.2</h3>
+<h3>Phone alerts (ntfy over Tailscale) — a recorded standing decision L1.2</h3>
 
 <p>Ends the tab-cycling problem: a push notification to your phone the moment a Code Jane session
 stops and needs you, or hits a permission prompt — no more re-checking Claude Code to see if it's
@@ -380,7 +380,7 @@ tailnet, never the public ntfy.sh), and inert until you do this setup — the ho
 (`.claude/hooks/ntfy_alert.sh`, wired to `Stop`/`Notification` in `.claude/settings.json`) are a
 silent no-op on every machine where the one environment variable below isn't set.</p>
 
-<p><strong>Same D-096 discipline, adapted:</strong> this isn't a repo chore Claude Code can run for you (it ends
+<p><strong>Same a recorded standing decision discipline, adapted:</strong> this isn't a repo chore Claude Code can run for you (it ends
 with a tap on your phone), so it can't arrive as a Claude-Code paste prompt — but it's still ONE
 block, pasted once, into a Terminal on your Mac:</p>
 
@@ -429,7 +429,7 @@ something that needs babysitting.</p>
 <li>The repo (private GitHub remote — `git remote -v` for the exact URL; see §15 before ever citing
 that URL in a new committed file) is currently private.</li>
 <li><strong>Cowork sessions cannot push, full stop</strong>, unless you paste a repo-scoped PAT into that specific
-chat. No PAT in the mounted-folder sandbox, ever, by design (D-011/D-015 FUSE rule) — even
+chat. No PAT in the mounted-folder sandbox, ever, by design (a recorded standing decision/a recorded standing decision FUSE rule) — even
 read-only git commands (`status`/`log`/`fetch`/`diff`) are off-limits there; they were observed
 transiently writing `.git/index.lock` and jamming the next Claude Code session that touched the
 same repo.</li>
@@ -448,14 +448,14 @@ ID collision. <strong>The one thing that mattered most: neither session touched 
 uncommitted work in a shared worktree</strong> — if you ever see a session pause with something
 uncommitted sitting in a worktree another session might also be using, that's exactly the moment
 to ask before proceeding, not push through.</li>
-<li><strong>D-026</strong>: stage multi-commit merge/integration work in an isolated branch first (verify tests +
+<li><strong>a recorded standing decision</strong>: stage multi-commit merge/integration work in an isolated branch first (verify tests +
 health check + identity-grep there), then land on the primary worktree's `main` via the smallest
 possible final step (a clean fast-forward). Multi-step git surgery run directly against the
 primary worktree is materially higher-risk than the same work staged elsewhere first.</li>
-<li>One-time exception already used: D-007 permitted a single force-push to purge a real-name leak
+<li>One-time exception already used: a recorded standing decision permitted a single force-push to purge a real-name leak
 from git history. That exception is spent — the standing no-force rule is back in effect
 permanently.</li>
-<li><strong>D-096, and what it means for you specifically:</strong> you should never be asked to type a git
+<li><strong>a recorded standing decision, and what it means for you specifically:</strong> you should never be asked to type a git
 command or double-click a `.command` file again. The 15-minute commit-sweep automation keeps
 running on its own regardless; what changed is that any session needing your hands on the
 keyboard now hands you one complete Claude Code paste prompt instead of an instruction to run
@@ -471,23 +471,23 @@ decision in full, including ones from a different track.</p>
 <ul>
 <li><strong>PROPOSED</strong> = a Jane/Founder instance's judgment call, not yet yours.</li>
 <li><strong>RATIFIED</strong> = you said yes, in any chat, in any form ("D27 approved" is enough).</li>
-<li><strong>RATIFIED-BY-DELEGATION</strong> (since D-091) = a ruling the operator has pre-authorized a session to
+<li><strong>RATIFIED-BY-DELEGATION</strong> (since a recorded standing decision) = a ruling the operator has pre-authorized a session to
 make without per-instance sign-off, with standing redline rights: any one such ruling reverts on
 a single line from you, without reopening the rest.</li>
 <li>You ratify by telling whichever Jane/Founder you're talking to, or edit the file yourself — human
 edits are drafts the next session verifies, never silently overwritten.</li>
 <li>If you disagree with a PROPOSED entry, say so — nothing is binding until you flip it.</li>
 <li><strong>Sub-decisions/amendments</strong> to an already-ratified entry get appended inline to that same `D-0##`
-line with a `D-0##.N` reference tag (e.g. `D-022.2`), rather than a new top-level number.</li>
+line with a `D-0##.N` reference tag (e.g. `a recorded standing decision.2`), rather than a new top-level number.</li>
 <li>What's actively waiting on you, distilled into one-action cards, is a separate and more useful
 surface than reading the whole ledger cold: state/DECISION_QUEUE.md §0 — ranked, walk top-down,
 each card is one action.</li>
 </ul>
 
-<h2>11. When Jane escalates to you, and to Fable</h2>
+<h2>11. When Jane escalates to you, and beyond</h2>
 <p>Code Jane and Research Jane handle their own track's day-to-day dispatch and judgment; they flag to
 <strong>Founder</strong> (the canon-era Planning seat, §5) for anything cross-track or architecture-adjacent, and
-Founder flags to <strong>Fable/Account A</strong> only for a genuine architecture pivot, a contested-claim
+Founder flags to <strong>Account A</strong> only for a genuine architecture pivot, a contested-claim
 defensibility call, a fairness/legal read, or a firewall question with no clean precedent yet.
 <strong>Strategy Jane</strong> is a separate, parallel escalation path — ask for it directly whenever you want
 an independent second look at whether the current plan is even right, not just executed well; it
@@ -534,7 +534,7 @@ strategy/canon/         THE CANON — the production spine for research/content:
                         LAYER1_VISION (CORE + audience renders) → LAYER2_MAP.md (the content
                         scoreboard, CURATOR-regenerated, never hand-edited) → LAYER3_METHOD.md
                         (production physics) → LAYER4_ENGINE/ (FOUNDER · CLOSURE_TRAIN ·
-                        VERIFY_SEAL · RENDER · CURATOR prompts)
+                        independent verification · RENDER · CURATOR prompts)
 maps/                   corpus maps of your own material
 library/                curated imports from old projects, provenance-tagged
 research/               the v3 knowledge infrastructure (issue map, atlas, ledger, data, Desktop docs)
@@ -545,7 +545,7 @@ inbox/                  raw capture, triaged weekly — use it for on-the-go not
 vault/                  gitignored, OPSEC-sensitive, never committed
 </pre>
 
-<p><strong>Registries own facts; prose points, never restates (D-042).</strong> If you want live status/counts —
+<p><strong>Registries own facts; prose points, never restates.</strong> If you want live status/counts —
 what's built, what's sealed, what's still a gap, what's waiting on you — the answer always lives in
 one of: strategy/KEY_PROJECTS.md (the PM view), strategy/canon/LAYER2_MAP.md (the content
 scoreboard), state/NOW.md + its per-track siblings (session state), or state/DECISION_QUEUE.md
@@ -553,7 +553,7 @@ scoreboard), state/NOW.md + its per-track siblings (session state), or state/DEC
 written here would just go stale.</p>
 
 <p><strong>Recurring housekeeping, not a fixed list:</strong> rather than a hand-maintained checklist of open
-operator actions (which goes stale within a session or two, per the same D-042 discipline above),
+operator actions (which goes stale within a session or two, per the same a recorded standing decision discipline above),
 check state/DECISION_QUEUE.md §0 whenever you want to know what's actually waiting on you right
 now — it's ranked, cards are one action each, and it's kept current far more reliably than any
 static list in this file could be.</p>
@@ -568,7 +568,7 @@ a shorthand from §1's table if CLAUDE.md is already in context.</li>
 <li>To launch new execution work: check §1's shortcut table for a ready phrase, or say "new project"
 (§8) and let intake scope/plan/produce the prompt.</li>
 <li>If something feels like a big call (legal, firewall, architecture, or anything destructive):
-don't decide alone — ask, and expect to be told whether it's Fable-tier, Strategy-Jane-tier, or
+don't decide alone — ask, and expect to be told whether it's higher-effort-tier, Strategy-Jane-tier, or
 just needs your go-ahead.</li>
 <li>Never trust a fact you remember from an old chat over what the current state file says.</li>
 </ol>
