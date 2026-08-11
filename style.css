@@ -193,178 +193,51 @@ footer.site-footer nav ul {
 }
 footer.site-footer nav a { color: var(--muted); }
 footer.site-footer nav a:hover { color: var(--accent); }
-
-/* Kit cards + print links (restored — used by /kits/*.html and civic-hour.html) */
-.print-link {
-  font-size: 0.92em;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 0.5rem 0.8rem;
-  display: inline-block;
-}
-ul.kit-list { list-style: none; padding: 0; margin: 1.5rem 0; }
-li.kit-entry {
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 0.8rem 1rem;
-  margin-bottom: 0.9rem;
-}
-li.kit-entry h3 { margin: 0 0 0.3rem; font-size: 1.05rem; }
-li.kit-entry p { margin: 0.3rem 0; }
-li.kit-entry .print-link { padding: 0.2rem 0.6rem; font-size: 0.85em; }
-
-/* Shared CTA box (2026-08-06 polish pass — restores vision.html's stripped inline border/padding) */
-nav.cta { margin: 2rem 0; padding: 1rem; border: 1px solid var(--border); }
-nav.cta h2 { margin-top: 0; }
-
-/* Homepage hero + final CTA (2026-08-06 polish pass) */
-.hero { text-align: center; margin: 0.5rem 0 1rem; }
-.hero-mark img { display: block; width: 100%; max-width: 460px; height: auto; margin: 0.75rem auto 0.5rem; }
-.hero-tagline { text-align: center; margin: 0 0 0.15rem; font-size: 1.15rem; }
-.pronounce { color: var(--muted); margin-top: 0; text-align: center; }
-.door-orient { max-width: 42rem; margin: 0 auto 1.2rem; text-align: center; }
-.narrative { max-width: 42rem; margin: 1.5rem auto; }
-.sr-only {
-  position: absolute;
-  width: 1px; height: 1px;
-  padding: 0; margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-.o-divider { display: block; margin: 2rem auto 0.5rem; opacity: 0.6; }
-.cta-final {
-  max-width: 42rem;
-  margin: 1.5rem auto;
-  padding: 1rem 1.5rem;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  text-align: center;
-}
-
-/* /now rung cards (2026-08-06 polish pass — moved out of now.html's inline <style>, hover added) */
-.rung-group { margin: 1.5rem 0 2rem; }
-.rung-group h2 { border-bottom: 1px solid var(--border); padding-bottom: 0.2rem; margin-top: 2rem; }
-ul.rung-list { list-style: none; padding: 0; margin: 1rem 0; }
-li.rung {
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 0.7rem 1rem;
-  margin-bottom: 0.7rem;
-  transition: border-color 0.15s ease;
-}
-li.rung:hover { border-color: var(--accent); }
-li.rung h3 { margin: 0 0 0.3rem; font-size: 1.02rem; }
-li.rung p { margin: 0.25rem 0; }
-li.rung .status {
-  font-size: 0.82em;
-  font-weight: 600;
+/* L1 site-IA pass (2026-08-11): substance-first doc pages + the library front door. See
+   tools/site_renderer.py's render_index_page()/render_backgrounder_page()/render_card_page()
+   docstrings for the shape these classes serve -- one dek line under the H1, one small top
+   meta strip (never the old noisy header block), and one styled footer block carrying every
+   internal notation/version line the operator's law says belongs at the bottom, not the top. */
+p.dek {
+  font-size: 1.08em;
   color: var(--muted);
+  margin: -0.35rem 0 1rem;
 }
-.this-week {
-  border: 1px solid var(--border);
-  border-left: 3px solid var(--accent);
-  border-radius: 6px;
-  padding: 0.75rem 1rem;
-  margin: 1.25rem 0 2rem;
-}
-.this-week p:first-child { margin-top: 0; }
-.this-week p:last-child { margin-bottom: 0; }
-
-/* ------------------------------------------------------------------ *
- * Sitewide chrome — 2026-08-06 site-integration pass.
- * One nav system on every page; source of truth is tools/site_nav.py.
- * ------------------------------------------------------------------ */
-
-/* Skip link: 632 pages carried the markup with no rule for it, so it rendered
-   as a visible link above the masthead. Standard visually-hidden-until-focus. */
-.skip-link {
-  position: absolute;
-  left: -9999px;
-  top: 0;
-  background: var(--bg);
-  color: var(--accent);
-  border: 1px solid var(--accent);
-  border-radius: 0 0 4px 0;
-  padding: 0.5rem 0.9rem;
-  z-index: 100;
-}
-.skip-link:focus {
-  left: 0;
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-}
-
-/* Current door */
-nav.primary-nav a[aria-current="page"] { color: var(--fg); font-weight: 600; }
-
-/* Sub-site secondary nav (gov-atlas Index / A-Z), inside the header band */
-nav.section-nav ul {
-  list-style: none;
+.doc-meta-strip {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.9rem;
-  max-width: 52rem;
-  margin: 0.45rem auto 0;
-  padding: 0;
-  font-size: 0.86rem;
+  align-items: center;
+  gap: 0.4rem 0.9rem;
+  font-size: 0.85em;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
 }
-nav.section-nav a { color: var(--muted); text-decoration: none; }
-nav.section-nav a:hover { color: var(--accent); }
-
-/* Footer directory */
-footer.site-footer .footer-cols {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
-  gap: 1rem 1.5rem;
-  margin: 0.75rem 0 1.25rem;
-}
-footer.site-footer .footer-col h2 {
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--fg);
-  border-bottom: 0;
-  margin: 0 0 0.4rem;
-  padding: 0;
-}
-footer.site-footer .footer-cols ul {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-footer.site-footer .footer-cols li { margin-bottom: 0.22rem; }
-
-/* "More on this issue" / "Explained simply" — orphan-walk door blocks */
-nav.related-nav {
-  margin: 2.5rem 0 1rem;
-  padding: 0.9rem 1.1rem;
-  border: 1px solid var(--border);
-  border-left: 3px solid var(--accent);
-  border-radius: 6px;
-}
-nav.related-nav h2 {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  border-bottom: 0;
-  margin: 0 0 0.45rem;
-  padding: 0;
+.doc-meta-strip .doc-class { font-weight: 600; color: var(--fg); }
+.doc-footer-meta {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.85em;
   color: var(--muted);
 }
-nav.related-nav ul { list-style: none; margin: 0; padding: 0; }
-nav.related-nav li { margin-bottom: 0.25rem; }
-
-/* Human sitemap */
-nav.sitemap h2 { font-size: 1.02rem; margin-top: 1.8rem; }
-nav.sitemap ul { columns: 2; column-gap: 2rem; padding-left: 1.1rem; }
-nav.sitemap li { break-inside: avoid; margin-bottom: 0.2rem; }
-@media (max-width: 34rem) {
-  nav.sitemap ul { columns: 1; }
+.doc-footer-meta h2 { font-size: 1rem; border-bottom: none; margin: 0 0 0.5rem; }
+.doc-footer-meta p { margin: 0.35rem 0; }
+.doc-footer-meta ul { margin: 0.35rem 0; padding-left: 1.1rem; }
+ul.category-doors {
+  list-style: none;
+  padding: 0;
+  margin: 1.1rem 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 0.9rem;
 }
-
-/* Horizontally-scrollable wrapper for tables wider than the viewport (usability audit 2026-08-07, Batch F/F3) */
-.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1rem 0; }
-.table-scroll table { margin: 0; }
-.table-scroll:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+.category-door {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+}
+.category-door a { font-weight: 700; }
+.category-door p { margin: 0.35rem 0 0; color: var(--muted); font-size: 0.92em; }
+ul.issue-index-list { padding-left: 1.1rem; }
+ul.issue-index-list li { margin-bottom: 0.3rem; }
+p.small-note { font-size: 0.88em; color: var(--muted); }
