@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Toronto Assembly project — uniteTOlove</title>
-<meta name="description" content="Citizens&#x27; assemblies — random residents, real evidence, structured deliberation — have a strong record of producing decisions ordinary politics can&#x27;t reach. Before anyone convenes a real one, we built something unusual: a complete simulation of a Toronto citizens&#x27; assembly, with 1,600 AI agents stat">
+<meta name="description" content="Status: LIVE — page source v2, rewritten 2026-08-12 on the operator&#x27;s word (&quot;the assembly page literally describes nothing about what we built - it should be comprehensive in every way except the final results&quot;). Public voice; renders through the assembly surface; chrome from sitenav. Every factual">
 <link rel="stylesheet" href="/style.css">
 <link rel="canonical" href="https://unitetolove.ca/assembly/index.html">
 <meta property="og:title" content="The Toronto Assembly project">
@@ -46,39 +46,127 @@
 <nav class="crumbs"><a href="/index.html">Home</a> / The Toronto Assembly</nav>
 <main id="main" tabindex="-1">
 <div class="library-banner" role="note"><strong>SIMULATED.</strong> Everything on this page concerns a simulation of deliberation by AI agents. No real residents were surveyed, and nothing here measures actual public opinion. No results from the system&rsquo;s one full run are published anywhere on this site &mdash; our own review found the prompts colored the deliberations, and results publish only after a redesigned re-run clears our <a href="/assembly/methods.html">validity bar</a>.</div>
+<h1>The Toronto Assembly project</h1>
+<p><em>Status: LIVE — page source v2, rewritten 2026-08-12 on the operator's word ("the assembly page
+literally describes nothing about what we built - it should be comprehensive in every way except
+the final results"). Public voice; renders through the <code>assembly</code> surface; chrome from site_nav.
+Every factual claim below traces to the engine's own documentation (METHODS/VALIDITY memos on
+the methods page, the blueprint, the imported engine's docs). This header block is stripped at
+render.</em></p>
+<hr />
 <h2>What would 1,600 Torontonians decide together?</h2>
 <p>Citizens' assemblies — random residents, real evidence, structured deliberation — have a strong
 record of producing decisions ordinary politics can't reach. Before anyone convenes a real one,
-we built something unusual: a complete simulation of a Toronto citizens' assembly, with 1,600
-AI agents statistically raked to the city's real census — every ward, every age band, every
-income group — deliberating in rounds, clustering opinions, and reading expert briefings.</p>
+we built something unusual: a complete, working simulation of a Toronto citizens' assembly, and
+ran it once at full scale — 1,600 AI agents statistically raked to the city's real census,
+deliberating in rounds, voting on statements, authoring proposals, and requesting expert
+briefings.</p>
 <p><strong>This is a simulation.</strong> No real residents were surveyed. It cannot tell you what Torontonians
 think. What it can do is test the <em>machinery</em> of a mass assembly — the deliberation formats, the
-briefing designs, the consensus measures — cheaply and in the open, before anyone spends public
-money or public trust on the real thing.</p>
-<h2>Why there are no results on this page</h2>
-<p>We ran the full system once, at 1,600-agent scale. We are not publishing those results — and the
-reason is the point of this whole site: <strong>our own review found the prompts we used colored the
-deliberations.</strong> A simulation whose questions lean is a push-poll with extra steps. Rather than
-publish impressive-looking numbers we can't stand behind, we're redesigning the prompt layer with
-neutral framing and a pre-registered analysis plan, fixing three known validity issues our own
-methods review documents, and re-running the system. Results publish when they survive that bar,
-and not before.</p>
-<h2>What's here now</h2>
-<ul>
-<li><strong>The blueprint</strong> — what convening a real Toronto citizens' assembly would take: selection,
-  staffing, briefing design, cost.</li>
-<li><strong>Methods and limits</strong> — how agent generation, deliberation, and opinion clustering work, and
-  the three open validity issues we have not solved, stated plainly.</li>
-<li><strong>The engine</strong> — the simulator itself: census-raked agents for all 25 wards and 158
-  neighbourhoods, a 95-assertion test suite, and a browser control panel. Code and methods
-  documentation open per our commons.</li>
-</ul>
+briefing designs, the consensus mathematics — cheaply and in the open, before anyone spends
+public money or public trust on the real thing. This page describes everything we built. The
+one thing it does not show is the run's results — and the section below explains exactly why.</p>
+<h2>The room: 1,600 agents raked to Toronto's census</h2>
+<p>The roster is generated, not invented. Agent profiles are drawn to match the 2021 Census for
+the City of Toronto across geography (all four community-council areas, all 25 wards, all 158
+neighbourhoods), gender, age band, visible-minority group, immigrant status, housing tenure,
+household income band, education, and Indigenous identity. A largest-remainder quota method
+makes every one-way marginal exact to the nearest integer; a targeted-swap pass then builds
+realistic joint structure (seniors tend to be retired and owners; renters skew younger) against
+declared pairwise targets, converging within three percentage points of every target while
+leaving the marginals untouched. Small mandatory groups are hard-seated so they are never
+rounded out of the room.</p>
+<p>Two honest disclosures ride with that. First, some lifestyle marginals (household type, commute
+mode, caregiving) are plausible estimates, not census-exact — each is flagged in the code and
+must be restated in any published result. Second, we deliberately include populations the census
+undercounts — people experiencing homelessness, precariously housed and non-status residents —
+so the simulated room is not limited to the well-counted. Their population sizes are estimates
+with wide uncertainty, and the research literature is clearest that language models portray
+exactly these groups least reliably. Those personas make the voices <em>present</em>; they are not a
+substitute for engaging real people from those communities.</p>
+<p>The room is also stratified on <strong>attitude</strong>, not just demographics: trust in government,
+openness to change, political lean, and religiosity — the same move Climate Assembly UK made so
+the room isn't quietly stacked with enthusiasts for any particular vision.</p>
+<h2>The people: narrative-grounded personas</h2>
+<p>A demographic row is not a person. Each profile becomes an agent with ranked values, per-issue
+leanings, a latent opinion position, and six behavioural traits — engagement, numeracy,
+persuadability, risk tolerance, optimism, verbosity — all profile-conditioned with bounded
+noise. All of it is rendered into a one-page life narrative, and that narrative <em>is</em> the
+agent's system prompt, so behaviour is conditioned on a full, legible profile. Some agents
+abstain often; some over-participate; some misunderstand a briefing and ask for it re-explained.
+That unevenness is deliberate — it is what keeps a simulated room from collapsing into an
+unrealistically articulate consensus.</p>
+<p>The architecture follows the Stanford result that narrative grounding raises fidelity and
+lowers demographic bias — and it is built so real interview transcripts can replace the
+synthetic narratives later with no interface change. Until then, these are demographic
+archetypes, not people; our methods page calls this the single largest fidelity gap in the
+whole design.</p>
+<h2>The deliberation: rounds, votes, proposals, evidence</h2>
+<p>The agenda is a question plus balanced, two-sided seed statements — 22 statements across 11
+themes in the default agenda, with a built-in check that warns on any one-sided theme. Each
+round, every agent reads a routed subset of statements (twelve, preferring ones it hasn't
+seen), votes agree / disagree / pass on each, and may author one new proposal and one evidence
+question. Authored proposals are de-duplicated — an identical proposal already on the table
+records support rather than spawning a copy, and a semantic pass clusters paraphrases into
+distinct ideas so the output ranks genuinely different proposals instead of one idea phrased
+forty ways. Evidence questions go to the expert panel, and the answers flow back into agents'
+memory for later rounds.</p>
+<h2>The mathematics: Pol.is opinion mapping</h2>
+<p>Votes accumulate into an agents-by-statements matrix, and the analysis is the same mathematics
+the Pol.is platform uses in real deliberations: principal-component analysis projects the matrix
+to a two-dimensional opinion map; k-means clustering (k from 2 to 5, chosen by silhouette score)
+finds the opinion groups; and <strong>group-informed consensus</strong> scores each statement by multiplying
+every group's smoothed probability of agreement. Because it is a product, one dissenting group
+drives a statement's score toward zero — the metric structurally rewards statements <em>every</em>
+group can live with and resists tyranny of the majority. Our test suite verifies the
+implementation against an independent recomputation.</p>
+<h2>The expert panel and knowledge base</h2>
+<p>When agents ask for evidence, the system answers knowledge-base-first: a briefing already on
+file is reused at zero model cost, and a genuine miss is answered by an expert model writing
+from a fixed, non-partisan prompt — TL;DR, the strongest case for, the strongest case against,
+costs and financing, named precedents with numbers, equity effects, success factors,
+uncertainties, and sources to verify. Briefings are saved, reused across runs, and published as
+evergreen Q&amp;As with their figures flagged for re-verification. The deliberating model and the
+expert model are deliberately decoupled, so a cheap local model can deliberate while a frontier
+model writes evidence once. This design directly patches the fact-finding gap DeepMind's own
+Habermas Machine paper acknowledges.</p>
+<h2>The engineering: reproducible, inspectable, tested</h2>
+<p>The engine is open along its whole length. Roster generation, agent construction, and statement
+routing are deterministic functions of explicit seeds — the roster is bit-for-bit reproducible.
+A transparent mock backend runs the full pipeline with no network for testing and ablations,
+and any OpenAI-compatible endpoint (local or hosted) can drive the real thing, hardened for
+small models with per-agent failure isolation so one malformed reply cannot abort a run. Every
+run writes a timestamped folder holding a structured event log, the full configuration and
+package versions, the roster and personas, the complete vote matrix, and the rendered report
+and opinion map — nothing hidden, any result re-inspectable. A 95-assertion test suite covers
+the sampling mathematics, the consensus metric, the de-duplication, and the knowledge-base
+lookup, and a browser control panel runs the whole thing locally. Region datasheets make the
+population swappable — Toronto is the reference; Ontario and Canada sheets ship as scaling
+examples, with persona wording localized so a rural agent doesn't reference the TTC.</p>
+<h2>What the full run produced — and why you can't see it</h2>
+<p>In June 2026 we ran the complete system once at 1,600-agent scale: the full pipeline, an
+interactive results dashboard, and a written results report. Those artifacts exist. <strong>We are
+not publishing them</strong> — and the reason is the point of this whole site: our own review found
+the prompts we used colored the deliberations. A simulation whose questions lean is a push-poll
+with extra steps. Our code review also logged three open validity issues, stated in full on the
+<a href="/assembly/methods.html">methods page</a>: live agents never update opinions across
+rounds; the raw consensus score is not comparable across runs with different group counts; and
+seeded live runs are not exactly reproducible. Rather than publish impressive-looking numbers
+we can't stand behind, the results stay sealed until a redesigned run clears the bar.</p>
+<h2>The blueprint</h2>
+<p>The <a href="/assembly/blueprint.html">design and implementation blueprint</a> (June 2026,
+published as-is with a download of the original document) sets out what this instrument is for
+and what convening a <em>real</em> Toronto citizens' assembly would take: selection by civic lottery,
+staffing, balanced briefing design, facilitation, and cost — and the staged path from a
+zero-dollar engineering run to a frontier-model run to the real thing.</p>
 <h2>What's next</h2>
-<p>Prompt redesign → validity fixes → re-run → results, with the run's design published before the
-run so you can check whether we moved the goalposts. If you work on deliberation, opinion
-modeling, or survey methodology and see a flaw we missed, the corrections door is open — that's
-how this site works.</p>
+<p>The re-run is designed and queued: neutral-framing prompts rebuilt and adversarially audited by
+a second model; briefing inputs restricted to the balanced knowledge-base Q&As; the full
+analysis plan pre-registered and published on this page <em>before</em> the run, so you can check
+whether we moved the goalposts; and the three validity issues addressed first. Results publish
+when they survive that bar, and not before. If you work on deliberation, opinion modeling, or
+survey methodology and see a flaw we missed, the corrections door is open — that's how this
+site works.</p>
 <div class="meta page-provenance">Part of the Toronto Assembly project · updated 2026-08-12 · corrections welcome — <a href="/corrections.html">tell us where we’re wrong</a>.</div>
 </main>
 <footer class="site-footer">
@@ -121,7 +209,7 @@ how this site works.</p>
 <ul>
 <li><a href="/problems/">Toronto&rsquo;s Questions &mdash; the problems</a></li>
 <li><a href="/assembly/">The Toronto Assembly &mdash; simulated deliberation</a></li>
-<li><a href="/v1-library/">Homelessness &mdash; the frozen v1 edition (July 2026)</a></li>
+<li><a href="/research/old/v1-library/">Homelessness &mdash; the frozen v1 edition (July 2026)</a></li>
 <li><a href="/library.html">Backgrounders &amp; briefs</a></li>
 <li><a href="/map/">The Map &mdash; by issue</a></li>
 <li><a href="/projects/index.html">By project</a></li>
