@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Regenerative Toronto Assembly — Blueprint — uniteTOlove</title>
+<meta name="description" content="Derived 2026-08-12 (old-estate fires dispatch, Leg 1) by pandoc (gfm) from research/assembly/assemblykbimport/RegenerativeTorontoAssemblyBlueprint.docx, AFTER the D-008 scrub recorded in that tree&#x27;s IMPORTLOG.md (2026-08-12 entry: cover line + docx creator metadata → &quot;The Unknown Soldier&quot;; zero resi">
+<link rel="stylesheet" href="/style.css">
+<link rel="canonical" href="https://unitetolove.ca/assembly/blueprint.html">
+<meta property="og:title" content="The Regenerative Toronto Assembly — Blueprint">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://unitetolove.ca/assembly/blueprint.html">
+<meta name="twitter:card" content="summary_large_image">
+<script defer src="/assets/analytics.js"></script>
+<meta property="og:image" content="https://unitetolove.ca/assets/og/library.png">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
+<header class="site-header">
+<div class="header-inner">
+<a class="wordmark-link" href="/index.html">unite<span class="to">TO</span>love<span class="tld">.ca</span></a>
+<nav class="primary-nav" aria-label="Primary">
+<ul>
+<li><a href="/join.html">Start</a></li>
+<li><a href="/now.html">Now</a></li>
+<li><a href="/strategy/start-here.html">Start here</a></li>
+<li><a href="/vision.html">Vision</a></li>
+<li><a href="/plan/">Plan</a></li>
+<li><a href="/kits/">Kits</a></li>
+<li><a href="/library.html">Library</a></li>
+<li><a href="/elections/">Elections</a></li>
+<li><a href="/gov-atlas/index.html">Gov Atlas</a></li>
+<li><a href="/run/index.html">Run</a></li>
+</ul>
+</nav>
+</div>
+<nav class="section-nav" aria-label="The Toronto Assembly">
+<ul>
+<li><a href="/assembly/index.html">The Assembly</a></li>
+<li><a href="/assembly/blueprint.html" aria-current="page">Blueprint</a></li>
+<li><a href="/assembly/methods.html">Methods &amp; limits</a></li>
+</ul>
+</nav>
+</header>
+<nav class="crumbs"><a href="/index.html">Home</a> / <a href="/assembly/index.html">The Toronto Assembly</a> / The Regenerative Toronto Assembly — Blueprint</nav>
+<main id="main" tabindex="-1">
+<div class="library-banner" role="note"><strong>SIMULATED.</strong> Everything on this page concerns a simulation of deliberation by AI agents. No real residents were surveyed, and nothing here measures actual public opinion. No results from the system&rsquo;s one full run are published anywhere on this site &mdash; our own review found the prompts colored the deliberations, and results publish only after a redesigned re-run clears our <a href="/assembly/methods.html">validity bar</a>.</div>
+<h1>The Regenerative Toronto Assembly — Blueprint</h1>
+<div class="meta page-provenance">Frozen working draft, June 2026 — published as-is from the project archive (its second-person voice addresses the project&rsquo;s founder). Download the original: <a href="/assembly/Regenerative_Toronto_Assembly_Blueprint.docx">Regenerative_Toronto_Assembly_Blueprint.docx</a>.</div>
+<h1>Blueprint page source — derived render of the frozen Assembly Blueprint</h1>
+<p><em>Derived 2026-08-12 (old-estate fires dispatch, Leg 1) by pandoc (gfm) from
+<code>research/assembly/assembly_kb_import/Regenerative_Toronto_Assembly_Blueprint.docx</code>, AFTER the
+D-008 scrub recorded in that tree's <code>_IMPORT_LOG.md</code> (2026-08-12 entry: cover line + docx
+creator metadata → "The Unknown Soldier"; zero residuals verified inside the zip). This file is
+the committed page source for <code>/assembly/blueprint.html</code> so the deploy leg needs no pandoc
+dependency. Content is the frozen June-2026 working draft, published as-is (cite-don't-adopt;
+the second-person voice addresses the project's founder). Everything above the first <code>---</code> is
+stripped at render by <code>tools/assembly_site_gen.py</code>.</em></p>
+<hr />
+<p><strong>THE REGENERATIVE TORONTO ASSEMBLY</strong></p>
+<p>A simulated Citizens’ Assembly built from representative AI agents and Pol.is-style deliberation</p>
+<p><em>A reusable civic-deliberation instrument — Toronto as flagship pilot, designed to scale beyond it</em></p>
+<p><strong>Design &amp; Implementation Blueprint</strong></p>
+<p>Prepared for The Unknown Soldier</p>
+<p>Working draft — June 2026</p>
+<p>Contents</p>
+<p>1. Executive summary</p>
+<p>This blueprint describes how to build and run a simulated Citizens’ Assembly for Toronto: roughly 300 AI agents, each constructed to be statistically representative of a real Torontonian, deliberating one question — the regenerative, flourishing future we want for the city and our grandchildren, and how to get there. The agents argue, listen, and vote like the members of a real civic lottery would. Their votes are mapped with the same mathematics Pol.is uses to surface where a divided public actually agrees. When they need facts, they can summon a panel of frontier “expert” models for balanced briefings. The system outputs a synthesized vision, a set of bridging priorities that hold across demographic groups, and candidate pathways to get there.</p>
+<p>What this is: a rehearsal instrument and hypothesis generator. It lets you design and pressure-test the agenda, the framing, the expert materials and the process for a fraction of the cost and time of a real assembly, and it produces testable predictions about where Torontonians might find common ground. It is engineered to run first for $0 on your own hardware, then for \~$20 on cheap hosted models, then — only if warranted — for \~$10k on frontier models.</p>
+<p>What this is not: a substitute for real Torontonians. Simulated deliberation approximates group averages far better than it captures the lived diversity within any group, and it carries documented biases. Its outputs are inputs to a real, human assembly — never a replacement for one, and never a manufactured “mandate.” Every published result must be labelled as simulated. Section 9 sets out the validity limits in detail, and they are not optional reading.</p>
+<p><strong>Strategic positioning.</strong> Per your steer, this is framed as a movement instrument rather than a campaign vehicle: an open, forkable method for any city to convene its own regenerative conversation, with Toronto as the proof-of-concept. It is built to help you lead the conversation and scale it well beyond Toronto, regardless of who ultimately stands for office in October.</p>
+<p>2. Strategic framing &amp; purpose</p>
+<p>Your thesis is that humanity’s hardest problems are not, at root, technology or resource problems but coordination, governance, incentive and system-design problems — and that the missing piece is adoption and integration of known solutions in one place. A Citizens’ Assembly is one of the strongest known instruments for exactly that: it takes a representative slice of a population, gives them balanced information and good facilitation, and lets them reason their way to recommendations that carry democratic legitimacy. The OECD has documented nearly 300 such processes and found they consistently produce considered, common-ground outcomes that ordinary polling and politics miss [16].</p>
+<p>Running one is slow and expensive, which is precisely why a simulation is valuable. A simulation lets you iterate the hard design choices — what question to ask, what evidence to put in front of people, how to frame contested issues without leading the room — cheaply and repeatedly before a single real participant is recruited. It serves three honest purposes:</p>
+<ol>
+<li>
+<p><strong>Rehearsal and de-risking.</strong> Test agendas, framings and expert briefings across many runs; find where the process breaks or biases the outcome before spending real money and real people’s time.</p>
+</li>
+<li>
+<p><strong>Hypothesis generation.</strong> Produce concrete, testable predictions about where Toronto’s groups might converge — e.g. “across every cluster, renters and owners both endorse X” — which a real assembly or survey can then confirm or refute.</p>
+</li>
+<li>
+<p><strong>A replicable public artifact.</strong> An open-source kit other cities can fork. This is how the conversation scales past Toronto, which is the actual goal.</p>
+</li>
+</ol>
+<p><strong>The October 2026 context.</strong> The municipal election is the catalytic occasion, not the object. The assembly question is framed around the regenerative future; its outputs can include a citizen-authored set of priorities that any candidate could be invited to endorse, and the model can be used to explore the city’s contested relationship with the Province under Doug Ford — where a coordinated, representative citizenry could press for change. This blueprint keeps campaign mechanics light by design; that strategy belongs in its own thread.</p>
+<p>3. What we are borrowing — grounded in real systems</p>
+<p>Nothing here is speculative architecture. Every component maps to a working system or a peer-reviewed result. The table summarizes; the notes that follow give the mechanism we actually borrow.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Precedent</strong></td>
+<td><strong>What it is</strong></td>
+<td><strong>What we borrow</strong></td>
+</tr>
+<tr>
+<td>Pol.is + Jigsaw Sensemaking [1–4]</td>
+<td>Open-source deliberation platform; opinion-clustering on a vote matrix; LLM summarization layer</td>
+<td>The clustering math and bridging metric; grounded LLM summaries that cite source statements</td>
+</tr>
+<tr>
+<td>DeepMind Habermas Machine [7]</td>
+<td>AI mediator that drafts group statements maximizing endorsement (Science, 2024)</td>
+<td>The generate → predict-endorsement → rank → critique loop for drafting consensus statements</td>
+</tr>
+<tr>
+<td>Stanford generative agents [9,10]</td>
+<td>Interview-grounded agents replicating 1,052 real Americans; memory/reflection architecture</td>
+<td>Agent construction from a life-narrative + an “expert reflection” module; memory stream</td>
+</tr>
+<tr>
+<td>Silicon sampling [11]</td>
+<td>Conditioning an LLM on real demographic backstories to simulate survey responses</td>
+<td>The method — with its fidelity tested per model, never assumed</td>
+</tr>
+<tr>
+<td>OECD / sortition [16–19]</td>
+<td>Best practice for real assemblies: stratified civic lottery, balanced learning phase</td>
+<td>Stratified selection on census strata + an attitudinal stratum; informants-vs-advocates evidence</td>
+</tr>
+</tbody>
+</table>
+<p>Pol.is and the bridging metric [1–4]</p>
+<p>Pol.is, from the Computational Democracy Project, runs entirely on a vote matrix — participants vote agree / disagree / pass on short statements and submit their own. The engine reduces that matrix with PCA to a 2-D opinion map, then clusters it with k-means (sweeping k = 2–5, picking the best by silhouette score). The metric we most want is Group-Informed Consensus: for each statement it estimates each group’s probability of agreement (with a Bayesian +1/+2 smoothing prior) and multiplies those probabilities together. Because it is a product, one dissenting group pulls the score toward zero — by design, this rewards statements that \~70–80% of every group endorses and structurally defeats tyranny of the majority [2]. Google Jigsaw’s Sensemaking tools add a Gemini layer that summarizes agreement and disagreement while citing the underlying statements, so summaries stay grounded [4]. The whole stack is open source and reproducible in Python (Section 6).</p>
+<p><strong>Note on “Pol.is 2.0”:</strong> that term does not map to a single shipped product. It is an informal label for CompDem’s in-progress LLM-augmented rebuild. The real, citable evidence of AI-augmented Pol.is is the Jigsaw Sensemaking partnership and Talk to the City [4,5] — we cite those rather than a version number.</p>
+<p>The Habermas Machine [7]</p>
+<p>DeepMind’s mediator drafts a single group statement that maximizes predicted endorsement. Mechanically it is a simulated ranked-choice election over candidate statements: a generative model proposes candidates from each member’s written opinion; a reward model predicts how each individual would rank them; a Condorcet (Schulze) method picks the winner; then a critique round lets members object and the draft is regenerated. Across 5,734 UK participants, people preferred the AI-mediated statement to a human mediator’s 56% to 44%, group agreement rose, and minority positions were preserved, not steamrolled. Crucially the authors flag that it does no fact-checking — garbage in, garbage out — and that their virtual assembly modelled only the deliberation phase, without expert testimony. We borrow the loop and explicitly fix the two gaps with the expert panel (Section 7).</p>
+<p>Interview-grounded agents [9,10]</p>
+<p>Stanford and Google built agents of 1,052 real Americans by injecting a two-hour interview transcript into each agent’s prompt plus an “expert reflection” module (the model reviews the transcript as an economist, a psychologist and a sociologist and stores \~20 high-level observations). These agents reproduced their real humans’ survey answers at about 85% of the humans’ own test-retest consistency, and — importantly — grounding in a narrative reduced demographic bias versus thin persona prompts. The earlier “Smallville” paper supplies the canonical memory architecture: a memory stream scored by recency, importance and relevance, periodic reflection into higher-level beliefs, and planning. We use both: rich narratives over thin personas, and a memory/reflection loop so agents evolve their views across rounds rather than re-answering from scratch.</p>
+<p>4. System architecture overview</p>
+<p>The system is a seven-stage pipeline. Stages 1–2 build the room; 3–6 run the meeting; 7 writes it up. Each stage is a discrete module you can run, inspect and swap independently — which is what makes the free engineering run (Phase 0) tractable.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>#</strong></td>
+<td><strong>Stage</strong></td>
+<td><strong>Function</strong></td>
+<td><strong>Core technique</strong></td>
+</tr>
+<tr>
+<td>1</td>
+<td>Sampling</td>
+<td>Allocate 300 agent “seats” to match Toronto</td>
+<td>Stratified lottery + raking to census marginals</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Instantiation</td>
+<td>Turn each seat into a believable person</td>
+<td>Life-narrative + expert-reflection + memory store</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Learning</td>
+<td>Give agents balanced evidence on request</td>
+<td>Frontier “expert” panel: informants vs advocates</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Deliberation</td>
+<td>Multi-round statement generation &amp; voting</td>
+<td>Agent debate; Pol.is comment routing</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Mapping</td>
+<td>Find the clusters and the bridges</td>
+<td>Vote matrix → PCA → k-means → group-informed consensus</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Mediation</td>
+<td>Draft statements the whole room can accept</td>
+<td>Habermas loop: generate → predict → Schulze → critique</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Synthesis</td>
+<td>Vision, priorities, pathways, report</td>
+<td>Grounded LLM summarization (Jigsaw-style)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Data flow:</strong> Census + strata → [1] agent roster → [2] agent objects (profile + memory) → [4] each round, agents read shared context and the routed statement subset, emit a statement and votes → votes accumulate in a participant×statement matrix → [5] clustering identifies groups and bridging statements → [3] unmet information needs trigger expert calls that feed back into the next round → [6] consensus drafting → [7] report. Everything — every vote, every expert call, every prompt — is logged for transparency and replay.</p>
+<p>5. Component A — the 300 representative agents</p>
+<p>5.1 Selection: a stratified civic lottery, executed by raking</p>
+<p>Real assemblies use a two-stage civic lottery: thousands of random invitations, then a stratified weighted draw from the respondents so the final panel matches the population on agreed strata [17,18]. Because we generate agents rather than recruit them, we collapse this to one step: we define target quotas from Toronto’s 2021 census marginals and use iterative proportional fitting (raking) to allocate 300 agents so that every marginal is matched simultaneously. The table below shows illustrative single-dimension targets and the resulting agent counts; the real allocation rakes across all dimensions jointly, because StatCan publishes the marginals freely but the full joint cross-tabulation (e.g. income × race × ward) requires a custom tabulation [20,21].</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Dimension</strong></td>
+<td><strong>Target (City of Toronto, 2021)</strong></td>
+<td><strong>Agents / 300</strong></td>
+</tr>
+<tr>
+<td>Geography (community council areas)</td>
+<td>Toronto–East York 30% · North York 25% · Scarborough 23% · Etobicoke–York 22%</td>
+<td>90 / 75 / 69 / 66</td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>\~52% women · \~48% men · \&lt;1% non-binary / trans</td>
+<td>156 / 142 / \~2 hard-seated</td>
+</tr>
+<tr>
+<td>Age (adults 18+)</td>
+<td>18–24 \~10% · 25–44 \~38% · 45–64 \~31% · 65+ \~21%</td>
+<td>30 / 114 / 93 / 63</td>
+</tr>
+<tr>
+<td>Racialized population</td>
+<td>55.7% racialized · 44.3% not</td>
+<td>167 / 133</td>
+</tr>
+<tr>
+<td>— largest groups</td>
+<td>South Asian 14% · Chinese 10.7% · Black 9.6% · Filipino 5.8%</td>
+<td>42 / 32 / 29 / 17</td>
+</tr>
+<tr>
+<td>Immigrant status</td>
+<td>\~47% foreign-born</td>
+<td>141</td>
+</tr>
+<tr>
+<td>Tenure</td>
+<td>\~48% renter · \~52% owner</td>
+<td>144 / 156</td>
+</tr>
+<tr>
+<td>Low income (LIM-AT, 2020)</td>
+<td>\~13% (structurally \~18–20%; 2020 was COVID-deflated)</td>
+<td>\~45 hard-seated</td>
+</tr>
+<tr>
+<td>Education</td>
+<td>\~41% bachelor’s degree or higher</td>
+<td>123</td>
+</tr>
+<tr>
+<td>Indigenous</td>
+<td>\~1.7% (First Nations, Métis, Inuit)</td>
+<td>\~5 hard-seated, all three identities present</td>
+</tr>
+<tr>
+<td>Attitudinal stratum</td>
+<td>e.g. trust-in-government &amp; openness-to-change, balanced terciles</td>
+<td>\~100 / 100 / 100</td>
+</tr>
+</tbody>
+</table>
+<p><em>Figure values are illustrative single-dimension marginals; the production roster rakes all dimensions jointly. Income figures for 2020 are distorted by pandemic transfers — flag this when low-income representation matters. Sources: Statistics Canada 2021 Census Profile for Toronto (CSD 3520005) [20] and City of Toronto census backgrounders [21].</em></p>
+<p><strong>The attitudinal stratum matters.</strong> Climate Assembly UK deliberately stratified not only on age, gender, ethnicity, education and geography but on attitude to climate change, so the room was not packed only with people who already cared [19]. We adopt the same move: stratify on one or two attitudinal axes (for example trust in government and openness to systemic change) so the simulated assembly is not quietly stacked with enthusiasts for your own vision. This is one of the strongest guards against a flattering, self-confirming result.</p>
+<p>5.2 Instantiation: from a row in a table to a person</p>
+<p>A demographic row is not a person. Following the Stanford result that narrative grounding both raises fidelity and lowers demographic bias [9], each agent is built from a synthesized life-narrative consistent with its profile — occupation, neighbourhood, household, migration story, daily pressures, what it worries about and hopes for — plus an expert-reflection pass that distills the narrative into stable beliefs and values stored in the agent’s memory. During deliberation the agent retrieves from a memory stream scored by recency, importance and relevance [10], so positions taken in round 2 inform round 4.</p>
+<p><strong>Honest gap:</strong> Stanford’s agents were grounded in real two-hour interviews of the actual people they simulate. Ours are grounded in synthetic narratives generated from demographics. That is a meaningful fidelity downgrade and the single largest validity risk in the whole design (Section 9). In the $10k phase it is partly closed by grounding narratives in real qualitative material — public Toronto consultation transcripts, ethnographic and oral-history archives — rather than inventing them whole.</p>
+<p>5.3 Varying capacities and limitations</p>
+<p>Real rooms are not uniform. Some members are articulate and numerate; others are quiet, uncertain, distrustful, or short on time. We give each agent profile-linked parameters: verbosity, baseline knowledge, numeracy, attention, civic engagement, persuadability, and trust in institutions. Some agents abstain often; some over-participate; some misunderstand a briefing and need it re-explained. This heterogeneity is not cosmetic — it is what keeps the simulation from collapsing into an unrealistically articulate, agreeable consensus, and it is what makes the expert-request mechanism necessary: an agent that flags “I don’t follow this” or “I want evidence on that” is what routes a question to the panel.</p>
+<p>6. Component B — the deliberation engine &amp; Pol.is integration</p>
+<p>Each deliberation round has the agents (a) read a short shared context and a routed subset of existing statements, (b) vote agree / disagree / pass on them, and (c) optionally author a new statement or an information request. Pol.is’s comment-routing logic decides which statements each agent sees next — weighting by information gain, consensus potential and novelty — so no agent has to read all of them and the system scales [1]. Votes accumulate into the participant×statement matrix that drives the mapping.</p>
+<p><strong>The clustering, in practice.</strong> After each round the vote matrix is reduced with PCA to two dimensions and clustered with k-means (k = 2–5, best by silhouette). For each candidate statement we compute group-informed consensus — the product of per-group agreement probabilities — and representativeness for each group [1,2]. This yields two outputs every round: the opinion map (how many camps, and what divides them) and the bridge list (statements that hold across all camps). The bridge list is the heart of the deliverable: it is where a divided Toronto actually agrees.</p>
+<p>6.1 Self-hosting the math</p>
+<p><strong>Cheap / fast path — red-dwarf.</strong> The Python library red-dwarf reproduces Pol.is’s pipeline exactly using stock scikit-learn (PCA → KMeans → silhouette, plus the representativeness statistics) and can even load real Pol.is conversations for calibration [26]. For Phases 0 and 1 this is all you need — no server, just a function over the vote matrix.</p>
+<p><strong>High-fidelity / real path — full Pol.is.</strong> The full Pol.is platform is open source (AGPL-3.0) and self-hostable via Docker [3]. Stand it up when you want the real participation and reporting UI — in particular when you move to a hybrid run that mixes simulated agents with real Torontonians, or when you want the Jigsaw Sensemaking summaries on top [4].</p>
+<p>6.2 The deliberation arc</p>
+<p>The round structure mirrors a real assembly’s learning → deliberation → decision arc [16,19]: (1) framing and seed statements; (2) a learning phase where agents request and receive balanced expert briefings; (3) debate and statement generation; (4) voting and clustering; (5) Habermas-style consensus drafting on the contested items; (6) a critique-and-amend round; (7) a final vote. Three to five rounds is enough to see convergence in Phase 0–1; the $10k run can afford more rounds and re-runs.</p>
+<p>7. Component C — the expert-opinion mechanism</p>
+<p>This is the component that fixes the Habermas Machine’s acknowledged weakness — no fact-checking, no evidence phase [7] — and that mirrors what makes real assemblies legitimate: a balanced, contestable body of evidence. Its design follows Climate Assembly UK’s split between informants and advocates, overseen by a balance check [19].</p>
+<ul>
+<li>
+<p><strong>Informants.</strong> Neutral briefings in response to an agent’s information request (“what would a neighbourhood-cell network cost?”, “what does the evidence say about fourplexes and rents?”). The panel returns a grounded, citation-bearing summary.</p>
+</li>
+<li>
+<p><strong>Advocates.</strong> On contested questions, the panel is asked to present the strongest case for each side, explicitly, so agents hear genuine disagreement rather than a single smoothed answer.</p>
+</li>
+<li>
+<p><strong>Balance check.</strong> A meta-step (and, in the $10k phase, a human reviewer) audits whether the evidence set is balanced before it reaches the floor — the institutional guard that real assemblies place around who gives evidence.</p>
+</li>
+</ul>
+<p><strong>Implementation.</strong> The panel is a small ensemble of frontier models acting as expert witnesses — e.g. Claude Opus, a GPT-5-class model, a Gemini Pro-class model, and DeepSeek. Fanning each request out to several models and reconciling their answers (flagging where they disagree) reduces single-model bias and is itself a useful signal. Two guardrails are mandatory: grounding (every claim cites a source) and contestability (any agent can challenge an expert claim, which triggers a re-query). Every expert call is logged, so the evidence base is fully auditable after the fact.</p>
+<p><strong>Cost note.</strong> Expert calls hit frontier models and are the main cost driver at the top end (Section 12). Budget them deliberately: cache the shared briefing context, batch where latency allows, and reserve the most expensive models for genuinely contested questions.</p>
+<p>8. The deliberation agenda — the regenerative future</p>
+<p>The central question: what is the regenerative, flourishing future we want for Toronto and our grandchildren, and how do we get there? Around it sit a set of balanced sub-themes, each seeded with both supporting and opposing statements so the room is not led:</p>
+<ul>
+<li>
+<p>Housing &amp; land — supply, affordability, public and cooperative housing, density and tenure</p>
+</li>
+<li>
+<p>Food, green space &amp; permaculture — urban agriculture, the ravine system, regenerative land use</p>
+</li>
+<li>
+<p>Mobility &amp; the 15-minute city — transit, active transport, car dependence</p>
+</li>
+<li>
+<p>Governance &amp; decentralization — neighbourhood-level democracy, participatory budgeting, the “10,000 puroks” idea</p>
+</li>
+<li>
+<p>Economy &amp; post-scarcity — local economies, cooperatives, who accumulates wealth and power</p>
+</li>
+<li>
+<p>Climate resilience &amp; energy — adaptation, retrofits, emergency preparedness</p>
+</li>
+<li>
+<p>Belonging &amp; multiculturalism — Toronto’s diversity as civic capacity; cohesion and trust</p>
+</li>
+<li>
+<p>The city–province relationship — municipal autonomy and democratic pushback under provincial control</p>
+</li>
+<li>
+<p>AI, data &amp; transparency — the city as a leader in open, accountable technology adoption</p>
+</li>
+</ul>
+<p>8.1 A flagship stimulus: the 10,000 puroks idea</p>
+<p>One concrete proposal makes an excellent deliberation stimulus because it is vivid, evidence-backed, and genuinely two-sided. A purok is a Filipino sub-neighbourhood cell of roughly 20–50 households with a named volunteer leader, a roster of every resident, recurring peacetime functions, and an emergency activation protocol [22]. The municipality of San Francisco in the Camotes Islands, Cebu, built its disaster response on this unit and won the UN’s 2011 Sasakawa Award for it [23]. The proof came in 2013: when Typhoon Haiyan struck, the purok network pre-emptively evacuated the \~1,000 residents of the offshore islet of Tulang Diyot — whose roughly 500 houses were then destroyed — with zero casualties [24].</p>
+<p><strong>Asking the assembly:</strong> could Toronto build a network of \~10,000 neighbourhood cells, and should it? The balanced evidence pack includes the strong analogues — Indonesia’s near-universal RT/RW associations and Brazil’s Porto Alegre participatory budgeting, which lifted sanitation coverage in poor districts dramatically [25] — and the cautionary one: Cuba’s block-level CDRs, which deliver real mutual aid but also function as instruments of surveillance and political control. A dense neighbourhood-cell network is dual-use; the assembly’s job is to weigh mutual aid against social control, and the simulation should surface exactly where Toronto’s groups land on that trade-off rather than assume the answer.</p>
+<p>9. Validity, bias &amp; ethics — reading the results honestly</p>
+<p>This section is load-bearing. A simulated assembly that is presented as if it were real, or whose biases go unstated, would be worse than useless — it would be discrediting. The literature on simulating people with LLMs is clear about the failure modes:</p>
+<ul>
+<li>
+<p><strong>Variance collapse / false precision.</strong> Even when synthetic group means track reality, synthetic responses are far less varied than real ones — in one study the synthetic standard deviation was roughly half the real one — which manufactures false statistical confidence and exaggerated polarization, and can flip the sign of relationships between variables [12].</p>
+</li>
+<li>
+<p><strong>Caricature and flattening.</strong> LLM personas reproduce out-group stereotypes and are systematically less internally diverse than real people — worst for minority and intersectional groups [13]. This directly threatens the parts of Toronto we most need to hear.</p>
+</li>
+<li>
+<p><strong>Reliably mis-modelled groups &amp; default skew.</strong> Models poorly represent some groups (e.g. the elderly, certain religious communities) and aligned models carry a measurable WEIRD/liberal skew; prompt-steering only partly corrects it [14].</p>
+</li>
+<li>
+<p><strong>Alignment can hurt fidelity.</strong> The same RLHF that makes a model pleasant can make it worse at reproducing a subpopulation’s actual distribution of views [11].</p>
+</li>
+<li>
+<p><strong>The inclusion illusion.</strong> Even accurate simulation does not deliver the representation that human deliberation exists to provide [15]. Simulated Torontonians are not Torontonians.</p>
+</li>
+</ul>
+<p><strong>What follows for use.</strong> The simulation is good at central tendencies and at generating hypotheses about bridging statements; it is unreliable about within-group diversity, the intensity of views, and minority nuance. So: treat every output as a hypothesis to be tested with real people, not a finding. Run on multiple base models and report where they disagree. Where any real Toronto survey data exists, calibrate against it and report the gap. Never publish a synthetic number as though it were a measured one. And label everything as simulated, every time.</p>
+<p><strong>Ethics.</strong> Three commitments keep this honest: full transparency that participants are AI; an open method others can inspect and fork; and a hard line that the simulation informs and mobilizes but never substitutes for a real democratic mandate. The endpoint of this work is a real, human assembly — the simulation is how we design and de-risk it, not how we replace it.</p>
+<p>10. Three-phase implementation plan</p>
+<p>10.1 Phase 0 — free feasibility run (engineering proof)</p>
+<p><strong>Goal:</strong> prove the whole pipeline runs end-to-end on hardware you already own. Quality is secondary; “the machine runs” is the bar.</p>
+<ul>
+<li>
+<p><strong>Compute:</strong> your RTX 4070 Ti SUPER (16 GB), serving a quantized 8–14B model (Qwen2.5-14B or Llama-3.1-8B at 4-bit) under vLLM, which uses continuous batching to run \~16–32 agents concurrently rather than one at a time [27,28]. 300 agents run as \~10–20 batched waves — an overnight job, not a week.</p>
+</li>
+<li>
+<p><strong>Clustering:</strong> red-dwarf in-process [26]. Orchestration: a few hundred lines of custom Python asyncio (see Section 11). Expert panel: Claude Max headroom plus free OpenRouter models.</p>
+</li>
+<li>
+<p><strong>Method:</strong> start at 30–50 agents to exercise every stage and debug cheaply, then scale to 300. Cost: $0 marginal. Deliverable: a complete run and a short report showing each stage produced sane output.</p>
+</li>
+</ul>
+<p>10.2 Phase 1 — \~$20 quality run (hosted, cheap)</p>
+<p><strong>Goal:</strong> a credible first vision report, plus the ability to iterate and run sensitivity checks across base models.</p>
+<ul>
+<li>
+<p><strong>Models:</strong> cheap non-thinking models via OpenRouter — Qwen3-235B, Mistral Small 3.2, Llama 3.3 70B, or DeepSeek V3.1 — for the agents; a mid-tier model for the expert panel [29]. Avoid reasoning models here: their hidden reasoning tokens are billed as output and make 300-agent costs unpredictable.</p>
+</li>
+<li>
+<p><strong>Economics:</strong> a full 300-agent × 5-round run costs well under $1 on these models (Section 12). $20 therefore buys roughly 20–45 complete runs — enough to vary framings, swap base models, and run ablations. Deliverable: a v1 regenerative-Toronto report with a cross-model sensitivity analysis.</p>
+</li>
+</ul>
+<p>10.3 Phase 2 — \~$10k frontier run (only if warranted)</p>
+<p><strong>Goal:</strong> a defensible, publishable study — and the design spec for a real, human (or hybrid) assembly.</p>
+<ul>
+<li>
+<p><strong>Models:</strong> frontier agents (e.g. Claude Sonnet 4.6 with prompt caching and the batch API) and a frontier expert panel (Claude Opus 4.8, a GPT-5-class model, a Gemini Pro-class model) [30].</p>
+</li>
+<li>
+<p><strong>Where the money goes:</strong> caching and batching make the 300-agent loop itself surprisingly cheap (\~tens of dollars). The budget is consumed by richer interview-grounded narratives, larger contexts and more rounds, multi-model ensembles, frontier expert calls, calibration against real Toronto data, and human oversight/facilitation. Deliverable: a publishable method + the blueprint for the real thing.</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><strong>Phase 0 — free</strong></td>
+<td><strong>Phase 1 — \~$20</strong></td>
+<td><strong>Phase 2 — \~$10k</strong></td>
+</tr>
+<tr>
+<td>Proves</td>
+<td>Pipeline runs end-to-end</td>
+<td>Credible results + iteration</td>
+<td>Defensible, publishable study</td>
+</tr>
+<tr>
+<td>Agents on</td>
+<td>Local 8–14B (vLLM)</td>
+<td>Cheap hosted (OpenRouter)</td>
+<td>Frontier (Sonnet-class + cache/batch)</td>
+</tr>
+<tr>
+<td>Experts on</td>
+<td>Claude Max + free tier</td>
+<td>Mid-tier hosted</td>
+<td>Frontier ensemble (Opus / GPT-5 / Gemini Pro)</td>
+</tr>
+<tr>
+<td>Agent count</td>
+<td>30 → 300</td>
+<td>300</td>
+<td>300+ × ensembles</td>
+</tr>
+<tr>
+<td>Rounds</td>
+<td>3–5</td>
+<td>3–5 × many runs</td>
+<td>More rounds, more re-runs, calibration</td>
+</tr>
+<tr>
+<td>Marginal cost</td>
+<td>$0</td>
+<td>\&lt;$1 per run; \~20–45 runs</td>
+<td>\~$10,000 all-in</td>
+</tr>
+<tr>
+<td>Timebox</td>
+<td>A few days</td>
+<td>1–2 weeks</td>
+<td>4–8 weeks</td>
+</tr>
+</tbody>
+</table>
+<p>11. Recommended tech stack</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Layer</strong></td>
+<td><strong>Recommendation</strong></td>
+<td><strong>Why</strong></td>
+</tr>
+<tr>
+<td>Local serving</td>
+<td>vLLM</td>
+<td>Only mature option with continuous batching + PagedAttention; \~10–19× Ollama under load on one GPU [28]</td>
+</tr>
+<tr>
+<td>Local models</td>
+<td>Qwen2.5/Qwen3-14B or Llama-3.1-8B (4-bit)</td>
+<td>14B at 4-bit is the realistic ceiling for 16 GB; \~37 tok/s on your card [32]</td>
+</tr>
+<tr>
+<td>Hosted aggregation</td>
+<td>OpenRouter</td>
+<td>One OpenAI-compatible API over 300+ models; free tier for testing, cheap tier for Phase 1 [29]</td>
+</tr>
+<tr>
+<td>Frontier (Phase 2)</td>
+<td>Anthropic / OpenAI / Google direct</td>
+<td>Use prompt caching (\~90% off repeated context) + batch (50% off) to keep the agent loop cheap [30]</td>
+</tr>
+<tr>
+<td>Orchestration</td>
+<td>Custom Python asyncio first; LangGraph if you need an explicit phased graph</td>
+<td>300 near-identical agents need a semaphore-bounded async loop, not a heavy framework [31]</td>
+</tr>
+<tr>
+<td>Clustering</td>
+<td>red-dwarf (Python) → full Pol.is (Docker) later</td>
+<td>Reproduces Pol.is math exactly with scikit-learn; upgrade to the platform for real/hybrid runs [3,26]</td>
+</tr>
+<tr>
+<td>Data</td>
+<td>StatCan 2021 census + City of Toronto profiles</td>
+<td>Marginals for raking the 300-agent roster [20,21]</td>
+</tr>
+<tr>
+<td>Storage</td>
+<td>SQLite (Phase 0–1) → Postgres</td>
+<td>Holds the vote matrix, agent memory and the full expert-call log</td>
+</tr>
+</tbody>
+</table>
+<p><strong>On “OpenClaw” / “MyClaw.”</strong> These do not map to a 300-agent orchestrator and are not recommended for this. “OpenClaw” most prominently names an unrelated game-engine project; a same-named AI-assistant gateway exists but is a single message-router, not a multi-agent framework, and its provenance is hard to verify. “MyClaw” and “ClawCloud” are hosting/deployment SaaS, not orchestration. Use a custom asyncio loop (cheapest, most transparent, exact token control) and reach for LangGraph only when you want explicit, checkpointed deliberation phases. Avoid AutoGen-style conversational frameworks at this scale — their per-turn overhead multiplies token cost across 300 agents.</p>
+<p>12. Cost model</p>
+<p>Working assumption per full run: 300 agents × \~5 rounds ≈ 4M input tokens and 1.5M output tokens, before the expert panel. Two levers dominate the top end: prompt caching (cached reads bill at \~10% of input price — decisive because every agent reads the same shared context each round) and the batch API (50% off, async).</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Model (per 1M tokens, in / out)</strong></td>
+<td><strong>Cost of one 300×5 run</strong></td>
+<td><strong>Use</strong></td>
+</tr>
+<tr>
+<td>Qwen3-235B ($0.07 / $0.10)</td>
+<td>\~$0.43</td>
+<td>Phase 1 — cheapest credible</td>
+</tr>
+<tr>
+<td>Mistral Small 3.2 ($0.075 / $0.20)</td>
+<td>\~$0.60</td>
+<td>Phase 1</td>
+</tr>
+<tr>
+<td>Llama 3.3 70B ($0.10 / $0.32)</td>
+<td>\~$0.88</td>
+<td>Phase 1 — strong open model</td>
+</tr>
+<tr>
+<td>DeepSeek V3.1 ($0.15 / $0.75)</td>
+<td>\~$1.73</td>
+<td>Phase 1 — upper cheap tier</td>
+</tr>
+<tr>
+<td>Claude Sonnet 4.6 ($3 / $15), cached + batched</td>
+<td>\~$20–40 (core loop)</td>
+<td>Phase 2 agents</td>
+</tr>
+<tr>
+<td>Frontier expert panel (Opus 4.8 / GPT-5-class / Gemini Pro)</td>
+<td>Main Phase 2 driver</td>
+<td>Phase 2 evidence</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Illustrative $10k allocation:</strong> frontier deliberation core across a 3-model ensemble and many scenario variants (\~$1.5k); frontier expert panel, thousands of grounded briefings (\~$2k); rich interview-grounded narrative generation for 300 agents (\~$1k); calibration, validation and ablations against real survey data (\~$1.5k); human facilitation, comms and cloud compute for full Pol.is hosting (\~$2.5k); contingency and frontier-price-volatility buffer (\~$1.5k). The headline: the crowd is cheap; large uncached contexts and frontier expert calls are what spend the budget.</p>
+<p><em>Pricing is volatile and was current to mid-2026 at the time of writing; re-verify the Anthropic, OpenAI, Google and OpenRouter pricing pages before locking any cost model [29,30].</em></p>
+<p>13. Risks &amp; mitigations</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Risk</strong></td>
+<td><strong>Mitigation</strong></td>
+</tr>
+<tr>
+<td>Validity — variance collapse, caricature, skew (Section 9)</td>
+<td>Multi-model ensembles; calibrate to real data; report uncertainty; label simulated; treat outputs as hypotheses</td>
+</tr>
+<tr>
+<td>VRAM ceiling on 16 GB</td>
+<td>Cap local models at \~14B (4-bit); quantize KV cache for context; use vLLM batching; offload heavy runs to hosted models</td>
+</tr>
+<tr>
+<td>Reputational — “fake mandate” accusation</td>
+<td>Radical transparency: open method, open logs, simulated labelling, and a stated commitment to a real assembly as the endpoint</td>
+</tr>
+<tr>
+<td>Leading the room</td>
+<td>Balanced seed statements (pro + con); attitudinal stratification; informants-vs-advocates evidence; independent balance check</td>
+</tr>
+<tr>
+<td>Political — provincial (Ford) friction</td>
+<td>Frame as citizen-led and non-partisan; let the assembly’s bridging statements, not you, carry the message</td>
+</tr>
+<tr>
+<td>Cost overrun at frontier tier</td>
+<td>Cache + batch aggressively; reserve frontier models for contested questions; hard budget caps per run</td>
+</tr>
+<tr>
+<td>Ethics — inclusion illusion</td>
+<td>Simulation informs, never replaces; real human deliberation remains the goal</td>
+</tr>
+</tbody>
+</table>
+<p>14. Roadmap &amp; how it feeds the movement</p>
+<p>A pragmatic sequence that keeps the scale-beyond-Toronto goal in front:</p>
+<ol start="4">
+<li>
+<p><strong>Days 0–30 — build the free pilot.</strong> Stand up Phase 0 end-to-end at small scale, then 300 agents. Publish the method openly and invite others to fork it. The artifact itself is the first act of leading the conversation.</p>
+</li>
+<li>
+<p><strong>Days 30–60 — iterate cheaply.</strong> Run Phase 1 across framings and base models; produce a first regenerative-Toronto report with sensitivity analysis; recruit collaborators (the Computational Democracy Project, AI Objectives Institute, the Sortition Foundation, sympathetic academics) to harden the method.</p>
+</li>
+<li>
+<p><strong>Days 60–90 — decide on the $10k run.</strong> Only if Phase 1 shows something worth the spend. Use it to produce a defensible study and the design spec for a real assembly.</p>
+</li>
+<li>
+<p><strong>Beyond — the real thing, and the fork.</strong> Convene a real (or hybrid simulated-plus-human) assembly; release the open-source kit so other cities run their own; let Toronto’s result be the demonstration that invites the world.</p>
+</li>
+</ol>
+<p><strong>How outputs feed the work.</strong> The bridge list becomes a citizen-authored set of priorities any October candidate can be invited to endorse; the opinion maps show where the city is genuinely divided versus where it is quietly united; the purok deliberation yields a concrete, evidence-tested flagship proposal; and the whole method becomes a reusable instrument for the larger conversation you want to lead — in Toronto first, and then well past it.</p>
+<p>Appendix A — Glossary</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Term</strong></td>
+<td><strong>Meaning</strong></td>
+</tr>
+<tr>
+<td>Sortition / civic lottery</td>
+<td>Selecting an assembly by random draw rather than election, then stratifying to match the population.</td>
+</tr>
+<tr>
+<td>Raking (IPF)</td>
+<td>Iterative proportional fitting — adjusting a sample so it matches several known marginal distributions at once.</td>
+</tr>
+<tr>
+<td>Group-informed consensus</td>
+<td>Pol.is metric: the product of each opinion group’s probability of agreeing with a statement; rewards cross-group agreement.</td>
+</tr>
+<tr>
+<td>PCA / k-means / silhouette</td>
+<td>Dimensionality reduction, clustering, and the score used to pick the number of clusters — the Pol.is opinion-mapping stack.</td>
+</tr>
+<tr>
+<td>Habermas loop</td>
+<td>Generate candidate statements → predict each person’s endorsement → rank (Schulze) → critique → regenerate.</td>
+</tr>
+<tr>
+<td>Expert reflection</td>
+<td>Distilling an agent’s narrative into stable beliefs via simulated domain experts (Stanford agent design).</td>
+</tr>
+<tr>
+<td>Continuous batching / PagedAttention</td>
+<td>vLLM techniques that let one GPU serve many agents concurrently by sharing and paging the KV cache.</td>
+</tr>
+<tr>
+<td>Silicon sampling</td>
+<td>Conditioning an LLM on real demographic backstories to generate matched synthetic survey respondents.</td>
+</tr>
+</tbody>
+</table>
+<p>Appendix B — Sources</p>
+<p><strong>[1]</strong> Pol.is clustering algorithms (Computational Democracy Project) — <a href="https://compdemocracy.org/algorithms/">https://compdemocracy.org/algorithms/</a></p>
+<p><strong>[2]</strong> Group-Informed Consensus (CompDem) — <a href="https://compdemocracy.org/group-informed-consensus/">https://compdemocracy.org/group-informed-consensus/</a></p>
+<p><strong>[3]</strong> Pol.is source code, AGPL-3.0 (GitHub) — <a href="https://github.com/compdemocracy/polis">https://github.com/compdemocracy/polis</a></p>
+<p><strong>[4]</strong> Jigsaw Sensemaking tools (Gemini + Polis) — <a href="https://github.com/Jigsaw-Code/sensemaking-tools">https://github.com/Jigsaw-Code/sensemaking-tools</a></p>
+<p><strong>[5]</strong> Talk to the City, AI Objectives Institute — <a href="https://ai.objectives.institute/talk-to-the-city">https://ai.objectives.institute/talk-to-the-city</a></p>
+<p><strong>[6]</strong> vTaiwan case study (CompDem) — <a href="https://compdemocracy.org/case-studies/2014-vtaiwan/">https://compdemocracy.org/case-studies/2014-vtaiwan/</a></p>
+<p><strong>[7]</strong> Tessler, Bakker et al., 'AI can help humans find common ground' (Habermas Machine), Science 2024 — <a href="https://www.science.org/doi/10.1126/science.adq2852">https://www.science.org/doi/10.1126/science.adq2852</a></p>
+<p><strong>[8]</strong> Habermas Machine code (DeepMind) — <a href="https://github.com/google-deepmind/habermas_machine">https://github.com/google-deepmind/habermas_machine</a></p>
+<p><strong>[9]</strong> Park et al., 'Generative Agent Simulations of 1,000 People', 2024 — <a href="https://arxiv.org/abs/2411.10109">https://arxiv.org/abs/2411.10109</a></p>
+<p><strong>[10]</strong> Park et al., 'Generative Agents: Interactive Simulacra of Human Behavior', 2023 — <a href="https://arxiv.org/abs/2304.03442">https://arxiv.org/abs/2304.03442</a></p>
+<p><strong>[11]</strong> Argyle et al., 'Out of One, Many' (silicon sampling), Political Analysis 2023 — <a href="https://arxiv.org/abs/2209.06899">https://arxiv.org/abs/2209.06899</a></p>
+<p><strong>[12]</strong> Bisbee et al., 'Synthetic Replacements for Human Survey Data? The Perils of LLMs', Political Analysis 2024 — <a href="https://www.cambridge.org/core/journals/political-analysis/article/B92267DC26195C7F36E63EA04A47D2FE">https://www.cambridge.org/core/journals/political-analysis/article/B92267DC26195C7F36E63EA04A47D2FE</a></p>
+<p><strong>[13]</strong> Wang, Morgenstern, Dickerson, 'LLMs ... misportray and flatten identity groups', Nature Mach. Intell. 2025 — <a href="https://arxiv.org/abs/2402.01908">https://arxiv.org/abs/2402.01908</a></p>
+<p><strong>[14]</strong> Santurkar et al., 'Whose Opinions Do Language Models Reflect?', ICML 2023 — <a href="https://arxiv.org/abs/2303.17548">https://arxiv.org/abs/2303.17548</a></p>
+<p><strong>[15]</strong> Agnew et al., 'The Illusion of Artificial Inclusion', CHI 2024 — <a href="https://arxiv.org/abs/2401.08572">https://arxiv.org/abs/2401.08572</a></p>
+<p><strong>[16]</strong> OECD, 'Catching the Deliberative Wave', 2020 — <a href="https://www.oecd.org/en/publications/innovative-citizen-participation-and-new-democratic-institutions_339306da-en/full-report.html">https://www.oecd.org/en/publications/innovative-citizen-participation-and-new-democratic-institutions_339306da-en/full-report.html</a></p>
+<p><strong>[17]</strong> Sortition Foundation stratification algorithm (GitHub) — <a href="https://github.com/sortitionfoundation/sortition-algorithms">https://github.com/sortitionfoundation/sortition-algorithms</a></p>
+<p><strong>[18]</strong> Flanigan et al., 'Fair algorithms for selecting citizens' assemblies', Nature 2021 — <a href="https://www.nature.com/articles/s41586-021-03788-6">https://www.nature.com/articles/s41586-021-03788-6</a></p>
+<p><strong>[19]</strong> Climate Assembly UK (stratification incl. attitude) — <a href="https://www.climateassembly.uk/about/citizens-assemblies/">https://www.climateassembly.uk/about/citizens-assemblies/</a></p>
+<p><strong>[20]</strong> Statistics Canada, 2021 Census Profile — Toronto, City (CSD 3520005) — <a href="https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&amp;DGUIDlist=2021A00053520005">https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?Lang=E&amp;DGUIDlist=2021A00053520005</a></p>
+<p><strong>[21]</strong> City of Toronto, 2021 Census backgrounders &amp; ward/CCA profiles — <a href="https://www.toronto.ca/city-government/data-research-maps/neighbourhoods-communities/ward-profiles/">https://www.toronto.ca/city-government/data-research-maps/neighbourhoods-communities/ward-profiles/</a></p>
+<p><strong>[22]</strong> Purok (definition), Wikipedia — <a href="https://en.wikipedia.org/wiki/Purok">https://en.wikipedia.org/wiki/Purok</a></p>
+<p><strong>[23]</strong> San Francisco, Camotes wins 2011 UN Sasakawa Award (Official Gazette PH) — <a href="https://www.officialgazette.gov.ph/2011/05/18/camotes-island-municipality-awarded-2011-un-sasakawa-award-for-disaster-risk-reduction/">https://www.officialgazette.gov.ph/2011/05/18/camotes-island-municipality-awarded-2011-un-sasakawa-award-for-disaster-risk-reduction/</a></p>
+<p><strong>[24]</strong> UNDRR, 'Evacuation saves whole island from Typhoon Haiyan' — <a href="https://www.undrr.org/news/evacuation-saves-whole-island-typhoon-haiyan">https://www.undrr.org/news/evacuation-saves-whole-island-typhoon-haiyan</a></p>
+<p><strong>[25]</strong> WRI, Porto Alegre participatory budgeting — <a href="https://www.wri.org/research/porto-alegre-participatory-budgeting-and-challenge-sustaining-transformative-change">https://www.wri.org/research/porto-alegre-participatory-budgeting-and-challenge-sustaining-transformative-change</a></p>
+<p><strong>[26]</strong> red-dwarf: Pol.is math reproduced in Python (GitHub) — <a href="https://github.com/polis-community/red-dwarf">https://github.com/polis-community/red-dwarf</a></p>
+<p><strong>[27]</strong> vLLM documentation — <a href="https://docs.vllm.ai/">https://docs.vllm.ai/</a></p>
+<p><strong>[28]</strong> Red Hat, 'Ollama vs vLLM' benchmarking — <a href="https://developers.redhat.com/articles/2025/08/08/ollama-vs-vllm-deep-dive-performance-benchmarking">https://developers.redhat.com/articles/2025/08/08/ollama-vs-vllm-deep-dive-performance-benchmarking</a></p>
+<p><strong>[29]</strong> OpenRouter API limits &amp; pricing — <a href="https://openrouter.ai/docs/api/reference/limits">https://openrouter.ai/docs/api/reference/limits</a></p>
+<p><strong>[30]</strong> Anthropic / Claude pricing — <a href="https://platform.claude.com/docs/en/about-claude/pricing">https://platform.claude.com/docs/en/about-claude/pricing</a></p>
+<p><strong>[31]</strong> LangChain, AI agent frameworks overview — <a href="https://www.langchain.com/resources/ai-agent-frameworks">https://www.langchain.com/resources/ai-agent-frameworks</a></p>
+<p><strong>[32]</strong> LocalScore benchmark — RTX 4070 Ti SUPER — <a href="https://www.localscore.ai/accelerator/136">https://www.localscore.ai/accelerator/136</a></p>
+<div class="meta page-provenance">Part of the Toronto Assembly project · updated 2026-08-12 · corrections welcome — <a href="/corrections.html">tell us where we’re wrong</a>.</div>
+</main>
+<footer class="site-footer">
+<nav aria-label="Footer">
+<div class="footer-cols">
+<section class="footer-col">
+<h2>Start here</h2>
+<ul>
+<li><a href="/join.html">Join the conversation</a></li>
+<li><a href="/now.html">Next actions</a></li>
+<li><a href="/find.html">Find &mdash; search this site</a></li>
+<li><a href="/kits/">The Kits</a></li>
+<li><a href="/harvest.html">The Harvest</a></li>
+<li><a href="/invite-me.html">Invite me into your room</a></li>
+<li><a href="/civic-hour.html">The Civic Hour</a></li>
+<li><a href="https://github.com/unitetolove/commons">Code &amp; data</a></li>
+<li><a href="/commons.html">For builders &amp; agents</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>The vision</h2>
+<ul>
+<li><a href="/strategy/start-here.html">The whole strategy in one read</a></li>
+<li><a href="/vision.html">The full vision</a></li>
+<li><a href="/plan/">The plan &mdash; one year, all-out</a></li>
+<li><a href="/plan/covenant.html">The sprint covenant</a></li>
+<li><a href="/strategy.html">The strategy</a></li>
+<li><a href="/who.html">Who is the Unknown Soldier</a></li>
+<li><a href="/constitution.html">Our constitution</a></li>
+<li><a href="/permanent-culture.html">Permanent Culture 3.0</a></li>
+<li><a href="/futures/">The Futures Library</a></li>
+<li><a href="/research-agenda.html">What we&rsquo;re researching next</a></li>
+<li><a href="/vision/organizations.html">For organizations</a></li>
+<li><a href="/vision/candidates.html">For candidates</a></li>
+<li><a href="/vision/newcomers.html">For newcomers</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>The library</h2>
+<ul>
+<li><a href="/problems/">Toronto&rsquo;s Questions &mdash; the problems</a></li>
+<li><a href="/assembly/">The Toronto Assembly &mdash; simulated deliberation</a></li>
+<li><a href="/v1-library/">Homelessness &mdash; the frozen v1 edition (July 2026)</a></li>
+<li><a href="/library.html">Backgrounders &amp; briefs</a></li>
+<li><a href="/map/">The Map &mdash; by issue</a></li>
+<li><a href="/projects/index.html">By project</a></li>
+<li><a href="/whats-built.html">What&rsquo;s built, and what&rsquo;s coming</a></li>
+<li><a href="/wiki/">The Wiki</a></li>
+<li><a href="/category-explainers/">Explainers</a></li>
+<li><a href="/programs/index.html">The Programs</a></li>
+<li><a href="/questions/index.html">Candidate questions</a></li>
+<li><a href="/guides/">Free Toronto guides</a></li>
+<li><a href="/transit/">Why can&rsquo;t Toronto move?</a></li>
+<li><a href="/free-toronto.html">Free Toronto Resource Atlas</a></li>
+<li><a href="/open-data.html">Open data</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>Registries &amp; tools</h2>
+<ul>
+<li><a href="/gov-atlas/index.html">The Government Atlas</a></li>
+<li><a href="/elections/">State of the Election</a></li>
+<li><a href="/elections/wards/">Ward math cards</a></li>
+<li><a href="/run/index.html">So you&rsquo;re thinking of running</a></li>
+<li><a href="/turnout.html">How to vote</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>How to trust this</h2>
+<ul>
+<li><a href="/how-this-was-made.html">How this was made</a></li>
+<li><a href="/how-we-verify.html">How we verify</a></li>
+<li><a href="/corrections.html">Corrections &amp; improvements</a></li>
+<li><a href="/press.html">Press kit</a></li>
+<li><a href="/sitemap.html">Sitemap &mdash; every page</a></li>
+</ul>
+</section>
+</div>
+</nav>
+<p><a class="improve-mail" href="mailto:unknownsoldier@unitetolove.ca?subject=Improvement%3A&amp;body=Page%20link%20%28paste%20it%20here%29%3A%0A%0AWhat%20I%20noticed%20or%20suggest%3A%0A">&#9999;&#65039; Suggest an improvement</a> &mdash; corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+<script>(function(){var s='Improvement: '+location.pathname;var b='Page link: '+location.href+'\n\nWhat I noticed or suggest:\n\nCredit me as (optional):\n';var h='mailto:unknownsoldier@unitetolove.ca?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);var l=document.querySelectorAll('a.improve-mail');for(var i=0;i<l.length;i++){l[i].href=h;}})();</script>
+<p>The Unknown Soldier &middot; the Toronto Assembly project</p>
+  <p class="ethic">Post only where you have the right to post.</p>
+  <p>This site is built with AI assistance &mdash; every claim carries a receipt regardless of who
+  drafted it. Read how: <a href="/how-this-was-made.html">How this was made</a>.</p>
+  <p>No donations are asked for anywhere on this site. Contact:
+  <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a> &mdash;
+  corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+</footer>
+</body>
+</html>
