@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Add your line — The Harvest — uniteTOlove</title>
-<meta name="description" content="Add your line to the Harvest — a vision, a complaint, and a nomination for Toronto. Enter your own, or a whole room's paper harvest sheets.">
+<title>Harvest Intake (dark) — uniteTOlove</title>
+<meta name="description" content="Deploy-dark harvest intake — not linked from any live page, not open to the public. See tools/harvest_intake_worker/README.md.">
+<meta name="robots" content="noindex, nofollow">
 <link rel="stylesheet" href="../style.css">
 <style>
 /* Page-local form styling, same pattern as ../join.html and ../listen/index.html. */
@@ -78,21 +79,22 @@
         <li><a href="../index.html">Home</a></li>
         <li><a href="../harvest.html">The Harvest (public page)</a></li>
         <li><a href="../kits/">Kits</a></li>
-      </ul>
+      <li><a href="../gov-atlas/index.html">Gov Atlas</a></li></ul>
     </nav>
   </div>
 </header>
 
-<nav class="crumbs"><a href="../index.html">Home</a> / <a href="../harvest.html">The Harvest</a> / Add your line</nav>
+<nav class="crumbs"><a href="../index.html">Home</a> / <a href="../harvest.html">The Harvest</a> / Intake (dark)</nav>
 
-<main id="main" tabindex="-1">
-<h1>Add your line to the record</h1>
+<main id="main">
+<h1>Harvest Intake — dark build</h1>
 
 <div class="dark-banner">
-  <strong>One record for one Toronto.</strong> Three lines: a vision, a complaint, and a
-  nomination. Add your own, or enter a whole room's paper harvest sheets in one pass. The record
-  has a real, accountable data custodian — read the promise on
-  <a href="../harvest.html">the Harvest page</a>.
+  This page is not linked from anywhere on the live site, is marked <code>noindex</code>, and its
+  backend is not deployed. Nothing submitted here reaches anyone until a named data custodian
+  holds the store — same promise as <a href="../harvest.html">the public Harvest page</a>. It
+  exists so the intake flow can be reviewed end-to-end before that flip. See
+  tools/harvest_intake_worker/one of this library's internal records.
 </div>
 
 <p class="hint">Never collected, anywhere on this page: a nominee's contact info, attendee names,
@@ -265,7 +267,10 @@ remove exactly that submission — nothing else.</p>
 (function () {
   "use strict";
 
-  // The intake worker is routed at /harvest/* on this same origin, so these stay relative.
+  // Relative paths assume harvest-intake-worker is routed at /harvest/* on the same origin —
+  // see tools/harvest_intake_worker/README.md for the still-open deploy steps (D1, R2,
+  // Turnstile secret, wrangler deploy). This page is not linked from anywhere live; it exists
+  // to prove the flow end-to-end before the custodian flip.
   var SUBMIT_ENDPOINT = "/harvest/submit";
   var ROOM_ENDPOINT = "/harvest/room";
   var DELETE_ENDPOINT = "/harvest/delete";

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Ontario Platform Baseline — what 4,743 candidates have actually written down — uniteTOlove</title>
+<meta name="description" content="We read every published municipal platform in Ontario — 2.36 million words of assessable text from 4,743 researched candidates — and measured breadth, depth and quality under a public, viewpoint-neutral rubric with blind double-rating. 91.5% of the field has published nothing readable. Weekend-edition corpus of 2026-08-10 (METHODOLOGY v2.1); re-measured after nominations close.">
+<link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://unitetolove.ca/ontario-platform-baseline.html">
+<meta property="og:title" content="The Ontario Platform Baseline — 2026">
+<meta property="og:description" content="Every published municipal platform in Ontario, measured for breadth, depth and quality — viewpoint-neutral, receipts attached, blind double-rated. 91.5% of 4,743 researched candidates have published nothing readable.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://unitetolove.ca/ontario-platform-baseline.html">
+<meta property="og:image" content="https://unitetolove.ca/assets/og/ontario-platform-baseline.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  .dated-banner {
+    font-size: 0.95em;
+    border: 2px solid var(--accent);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.25rem;
+    background: var(--code-bg);
+  }
+  .dated-banner strong { color: var(--accent); }
+  .why-matters {
+    margin: 1rem 0 1.5rem;
+    padding: 0.6rem 1rem;
+    border-left: 3px solid var(--accent);
+    background: var(--code-bg);
+    border-radius: 0 4px 4px 0;
+  }
+  .why-matters p { margin: 0; }
+  nav.toc {
+    font-size: 0.92em;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.5rem;
+  }
+  nav.toc p { margin: 0 0 0.4rem; font-weight: 600; }
+  nav.toc ol { margin: 0; padding-left: 1.2rem; columns: 2; column-gap: 1.5rem; }
+  nav.toc li { break-inside: avoid; margin-bottom: 0.15rem; }
+  .hub-note { font-size: 0.9em; color: var(--muted); }
+  table.small-table { font-size: 0.88em; }
+  .praise-card {
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    padding: 0.6rem 1rem;
+    margin: 0.75rem 0;
+  }
+  .praise-card p { margin: 0.25rem 0; }
+  .dark-number { font-weight: 700; color: var(--accent); }
+</style>
+<script defer src="assets/analytics.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
+<header class="site-header">
+<div class="header-inner">
+<a class="wordmark-link" href="/index.html">unite<span class="to">TO</span>love<span class="tld">.ca</span></a>
+<nav class="primary-nav" aria-label="Primary">
+<ul>
+<li><a href="/join.html">Start</a></li>
+<li><a href="/now.html">Now</a></li>
+<li><a href="/vision.html">Vision</a></li>
+<li><a href="/kits/">Kits</a></li>
+<li><a href="/library.html">Library</a></li>
+<li><a href="/elections/">Elections</a></li>
+<li><a href="/gov-atlas/index.html">Gov Atlas</a></li>
+<li><a href="/run/index.html">Run</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<nav class="crumbs"><a href="index.html">Home</a> / The Ontario Platform Baseline</nav>
+
+<main id="main">
+  <h1>The Ontario Platform Baseline</h1>
+  <p class="hub-note">What 4,743 researched candidates across Ontario have actually written down —
+  the province-wide extension of <a href="platform-baseline.html">the Toronto Platform Baseline</a>,
+  companion to <a href="ontario-election.html">State of the Election — Ontario</a>. This is the
+  <strong>weekend edition</strong>: corpus as of the August 10 Friday-close plus the August 10–11
+  recovery-and-regrind legs, with Toronto scored fresh alongside the rest of the province under
+  <strong>METHODOLOGY v2.1</strong> for the first time. The <a href="#receipts">receipts</a> and
+  <a href="#method">method</a> are below.</p>
+
+  <div class="dated-banner" role="note">
+    <strong>This is a baseline, on purpose.</strong> Everything below describes the public written
+    record for the <strong>weekend edition — field truth as of August 10–11, 2026</strong>
+    (METHODOLOGY v2.1) — ten days before nominations close
+    (<strong>August 21, 2:00&nbsp;p.m.</strong>). The field will grow, candidates will publish, and
+    that is the point: we re-measure after close and every two weeks thereafter, and improvement is
+    the headline we are hoping to write. A candidate who publishes tomorrow gets re-measured,
+    gladly — <a href="corrections.html">tell us</a>.
+  </div>
+
+  <nav class="toc" aria-label="Contents">
+    <p>Contents</p>
+    <ol>
+      <li><a href="#measured">What was measured</a></li>
+      <li><a href="#headline">The headline — the ballot is mostly blank</a></li>
+      <li><a href="#profile">The substance profile</a></li>
+      <li><a href="#gradients">Office, region, incumbency</a></li>
+      <li><a href="#praise">The exceptional shortlist</a></li>
+      <li><a href="#reliability">How much to trust the scores</a></li>
+      <li><a href="#growth">The growth loop</a></li>
+      <li><a href="#method">Method &amp; limitations</a></li>
+      <li><a href="#receipts">Receipts</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="measured">What was measured</h2>
+  <p>Ontario's candidate registry carries 4,751 municipal candidates; <strong>4,743 were
+  researched</strong> to a dated conclusion (the remaining 8 are list-only, closing at nomination
+  day): website verified, or a recorded search that found none. Of the 1,280 with a site on file,
+  984 were captured and indexed; the <strong>assessable platform corpus</strong> — every candidate
+  with at least 50 words of real platform content — totals <strong>2,359,387 words across 484
+  candidates</strong> province-wide. Every assessable platform was scored under the same versioned,
+  viewpoint-neutral instrument used for Toronto: eight anchored dimensions — specificity, fiscal
+  grounding, jurisdictional fit, evidence, implementation, local groundedness, coherence,
+  time-boundedness — plus a new <strong>commitment gate (G5)</strong> that separates forward-pledged
+  commitments from record and aspirational content, plus issue breadth scoped to the office sought
+  (a trustee is never measured against transit). Every material score carries a quote from the
+  candidate's own text. A stratified <strong>105-candidate blind double-rating (20.2% of the
+  primary set)</strong> audits the whole exercise (<a href="#reliability">results below</a>).
+  <strong>No position was judged for its direction, anywhere, by construction</strong> — a fully
+  specified plan to build X and a fully specified plan to remove X score identically. The only
+  adverse finding this instrument can produce is absence or thinness of published substance.</p>
+
+  <h2 id="headline">The headline — the ballot is mostly blank</h2>
+  <p>METHODOLOGY v2.1 reports the field in eight classes, both cities scored fresh together for
+  the first time this edition — reported here as one province-wide count (n=4,743 researched):</p>
+  <table class="small-table">
+    <thead><tr><th>What a voter can read</th><th>Ontario-wide (n=4,743)</th></tr></thead>
+    <tbody>
+      <tr><td>A scored platform (SCORED)</td><td>245 (5.2%)</td></tr>
+      <tr><td>A site with no platform on it (BROCHURE)</td><td>911 (19.2%)</td></tr>
+      <tr><td>A delivery record, not a forward platform (RETROSPECTIVE-RECORD)</td><td>55 (1.2%)</td></tr>
+      <tr><td>Platform content that's stale for this race (STALE-CONTENT)</td><td>11 (0.2%)</td></tr>
+      <tr><td><strong>Nothing — no findable published platform</strong> (NO-PUBLISHED-PLATFORM)</td><td><strong>3,428 (72.3%)</strong></td></tr>
+      <tr><td>Held on technical or registry grounds (UNASSESSABLE, MISATTRIBUTED-CAPTURE, EXCLUDED-PENDING-REVERIFY)</td><td>93 (2.0%)</td></tr>
+    </tbody>
+  </table>
+  <p><strong>RETROSPECTIVE-RECORD (55 candidates, 10 of them incumbents):</strong> a real public
+  document — usually a term-in-review or delivery record — reported here on its own terms rather
+  than scored as a forward platform it was never written to be. <strong>STALE-CONTENT (11
+  candidates):</strong> platform text is on file, but for a different office or an earlier cycle —
+  real writing, just not a readable answer to this race.</p>
+  <p><span class="dark-number">91.5% of the 4,743 researched candidates province-wide currently
+  offer the public nothing readable about what they would do in office</span> (NO-PUBLISHED-PLATFORM
+  or BROCHURE, combined). Toronto was re-scored fresh alongside the rest of the province this
+  edition, under the identical v2.1 instrument, on the same day. The desert deepens by region and
+  municipality size until, under 5,000 people, published platforms effectively do not exist.</p>
+  <p><em>Fairness, stated here as everywhere: absence of a published platform is a fact about the
+  public record, not about a candidate's effort, character, or worth — much of small-town Ontario
+  campaigns door to door, and ten days remain in which any candidate can change their row in this
+  table. We will gladly re-measure.</em></p>
+
+  <h2 id="profile">The substance profile — Ontario knows WHAT and WHOSE JOB; almost nobody says WHEN or WITH WHOSE MONEY</h2>
+  <p>Across the 245 scored platforms province-wide — both cities scored fresh together under v2.1
+  — the dimensions tell one story:</p>
+  <ul>
+    <li><strong>Strongest: jurisdictional fit (4.27/5, median 4.0).</strong> The folk theory that
+    municipal candidates promise federal miracles is false province-wide. Candidates overwhelmingly
+    campaign inside their office's actual powers — a genuinely encouraging baseline fact.</li>
+    <li><strong>Middling-strong: local groundedness (4.11), specificity (3.71), coherence
+    (3.70).</strong> Platforms name real local places and hold together as lists; named actions
+    usually arrive without mechanisms.</li>
+    <li><strong>Weak: evidence (3.20), implementation (2.76), fiscal grounding (2.68).</strong>
+    Claims without data; money without numbers; almost no sequencing.</li>
+    <li><strong>Weakest, everywhere, again: time-boundedness (1.36/5, median 1.0).</strong> A
+    dated, staged commitment is still the rarest object in Ontario's platform corpus. Almost
+    nobody in the province will tell you what happens in their first hundred days.</li>
+  </ul>
+  <p>Of the 245, in bands: 7 nominal &middot; 27 thin &middot; 83 workmanlike &middot; 74
+  substantial &middot; 54 exceptional. The strict recognition-campaign floor — no substance
+  signals at all — is 0 of 245 scored (0.0%): the v2.1 commitment gate (G5) now routes
+  recognition-only content out of SCORED before it reaches the band count, reported in aggregate
+  as always.</p>
+
+  <h2 id="gradients">Office, region, incumbency</h2>
+  <p><em>The breakdown below is carried from the v2.0 baseline as lineage. The v2.1 scored set
+  (n=245) is smaller and cleaner by construction — the commitment gate routes record and
+  aspirational content to their own classes before this cut is taken — and its own office/region/
+  incumbency slice publishes with the next edition.</em></p>
+  <ul>
+    <li><strong>Office:</strong> mayors who publish, publish best (scored mean 3.2/5); councillors
+    2.9; <strong>trustees 2.5 — the school-board dark zone holds at the substance layer</strong>,
+    atop a field where 29% of trustee races have zero candidates and 9% of trustee candidates have
+    any platform page.</li>
+    <li><strong>Region:</strong> among scored platforms, Eastern Ontario leads (3.4),
+    Hamilton-Niagara 3.2, Central 3.1, Northern 3.0, GTA-905 2.8, Southwestern 2.8 — read with the
+    selection caveat below: where fewer publish, the few who do skew serious. The North has the
+    thinnest coverage (7% websites) and its scored few carry the widest issue breadth.</li>
+    <li><strong>Incumbency — the finding with teeth (aggregate, as it must be):</strong> of 271
+    known incumbents outside Toronto, <strong>255 (94.1%) publish nothing readable</strong> (212
+    nothing findable, 43 brochure-class sites). The 13 who publish score a solid 3.3 average —
+    but sitting officials as a class are asking for renewed mandates on name and record alone,
+    and <strong>challengers as a class out-publish incumbents</strong>, everywhere we have
+    measured.</li>
+  </ul>
+
+  <h2 id="praise">The exceptional platforms — praise only, three gates before any name</h2>
+  <p>54 of 245 scored platforms cleared the instrument's top band. Nobody gets named on a score:
+  every one was independently re-read in full, and then held to this project's strictest test —
+  <strong>a verbatim policy commitment from the candidate's own platform</strong>: a pledged
+  future action with a number, mechanism or deadline attached. <strong><a
+  href="ontario-exceptional-platforms.html">The 52 candidates who cleared all three gates — the
+  best published platforms in Ontario, by region, each linked and each quoted on a commitment —
+  have their own page.</a></strong> The rest of the top band stays in the aggregate count only —
+  delivery records, older-cycle pages, or platforms whose pledges stay hedged; absence from the
+  named list is not criticism. Five standouts, each quoted on a commitment (measured on
+  <strong>published substance only</strong> — not viability, endorsement, or agreement with any
+  position):</p>
+  <div class="praise-card"><p><strong>Frank Domenic — Burlington, Ward 6 regional council.</strong>
+  Plank-by-plank, costed, with named funding tests: "I'll move to register the City's interest
+  and test Pearson as the adaptive-reuse base case in the study."</p></div>
+  <div class="praise-card"><p><strong>Dan Meinen — London, Ward 7 council.</strong> Case-built
+  accountability planks with hard targets: "Hold property tax increases to 4% or less for 2027
+  and 2028."</p></div>
+  <div class="praise-card"><p><strong>Ernest Margetson — Prince Edward County, mayoral.</strong>
+  Study-grounded, decade-scale fiscal planks: "I would propose to increase the Municipal
+  Accommodation Tax from 4% to 6%" — against a quantified $266.4M infrastructure backlog.</p></div>
+  <div class="praise-card"><p><strong>Alex Lawson — Ottawa, mayoral.</strong> A reasoned,
+  numbers-first housing program: "Cut development charges in half for one year,
+  immediately."</p></div>
+  <div class="praise-card"><p><strong>Leanne Caron — Guelph, mayoral.</strong> Quantified, dated
+  program planks: "Plant 50,000 trees by 2030 city-wide in partnership with community groups,
+  citizens, and businesses."</p></div>
+  <div class="why-matters"><p><strong>Why this matters:</strong> the exceptional platforms are not
+  where the spotlight is. They are in ward races and small-town mayoralties, written by people
+  doing the unglamorous work of saying what, how much, and when. The bar is passable —
+  <a href="ontario-exceptional-platforms.html">52 people across Ontario prove it</a> — and the
+  whole point of a baseline is to watch more people pass it.</p></div>
+
+  <h2 id="reliability">How much to trust the scores</h2>
+  <p>Scoring was done by AI raters under the anchored public rubric, disclosed as always — and
+  audited: a stratified <strong>105-candidate sample (20.2% of the 521 primary rows)</strong> was
+  independently re-scored blind by different raters, drawn across every lane. <strong>Class
+  agreement (5-way, post-adjudication scores-of-record): 100 of 105 (95.2%).</strong>
+  Commitment-extraction agreement: 97.1%. Among the 47 pairs both raters scored, per-dimension
+  agreement within one point ran 85&ndash;100% by dimension; average composite-7 divergence: 0.41
+  (median 0.29), with 3 pairs diverging more than a point. Every one of those larger disagreements
+  — 17 cases in total: 13 class disagreements and 4 divergences over a point — was re-read and
+  adjudicated by the lead against the candidate's own text on 2026-08-11 (primary upheld 9, dual
+  upheld 8); the full reasoning publishes with the data. One honest number, stated by us first: a
+  separate 50-pair blind cross-edition check re-rated v2.0-scored corpora under v2.1 —
+  <strong>mean composite-7 drift of +0.09</strong> (median +0.14) among the 23 pairs that stayed
+  SCORED, while 27 of the 50 moved class entirely under the new commitment gate (19 to BROCHURE, 6
+  to RETROSPECTIVE-RECORD, 2 to STALE-CONTENT) — the gate doing exactly what it was built to do.</p>
+
+  <h2 id="growth">The growth loop — what happens next</h2>
+  <p>This baseline exists to be beaten. After nominations close August 21, we recapture everything
+  — including the 153 candidate sites that appeared after our capture window and the 143 that were
+  assessed dead or parked — score every new and changed platform, and publish the deltas in aggregate: how
+  many candidates added costed planks, how far time-boundedness moved, how much of the ballot
+  stopped being blank. Then every two weeks until the election. Candidates who publish after being
+  measured are not gaming the system; <strong>they are the system working.</strong> Publish
+  something real and <a href="corrections.html">tell us</a> — re-measurement is free, fast, and
+  gladly done.</p>
+
+  <h2 id="method">Method &amp; limitations — ours to state first</h2>
+  <p>The instrument is public and versioned: eight 0&ndash;5 dimensions with written anchors, a
+  commitment gate (G5) that separates forward-pledged commitments from record and aspirational
+  content — the source of this edition's two newly-reported classes, RETROSPECTIVE-RECORD and
+  STALE-CONTENT — office-scoped issue-breadth (12 buckets for mayor/council, 8 for trustee),
+  quotes required behind every material score, "low confidence" flagged rather than guessed,
+  French platforms scored as-is and never penalized for language. Web-only record — print and
+  doorstep literature are invisible to us, and we say so. Ten days pre-close — the field will
+  grow; that is why this is a baseline. Forty-eight unassessable/unreadable sites (UNASSESSABLE)
+  are held as their own class, never counted as absent. AI raters under anchors, quotes, blind
+  double-rating and lead adjudication — disclosed, reproducible, not infallible. Issue taxonomies
+  are versioned choices. Nine miscaptured rows (MISATTRIBUTED-CAPTURE) and eighteen
+  retracted/flagged captures were held out of scoring rather than guessed at; a further four
+  wrong-website registry errors were caught by this analysis's own cross-checks and corrected
+  before publication — verification working as designed. And the standing truth:
+  <strong>a great platform is not proof of a great officeholder — it is the part of the offer a
+  voter can actually read, and the part a province can demand more of. That demand is the
+  project.</strong></p>
+
+  <h2 id="receipts">Receipts — where every number comes from</h2>
+  <ul>
+    <li><strong>The official candidate lists of all 444 Ontario municipal clerk's offices</strong>
+    (August 10, 2026 collection — this weekend edition) — the candidate universe and submitted
+    channels.</li>
+    <li><strong>Our per-candidate research record</strong> — 4,743 candidates researched to a dated
+    disposition; 984 candidate sites captured and indexed (2,359,387 words of assessable platform
+    text across 484 candidates); method at <a href="research-process.html">how the research is
+    made</a> and <a href="how-we-verify.html">how we verify</a>.</li>
+    <li><strong>The versioned scoring instrument and aggregate results</strong> — dimension
+    anchors, breadth taxonomies, band definitions, reliability statistics and every aggregate on
+    this page are published together; re-running the pipeline on the same corpus reproduces every
+    number. Toronto figures: re-scored fresh alongside the rest of the province under
+    METHODOLOGY v2.1 this edition, no longer reused from the original baseline — see
+    <a href="platform-baseline.html">the original Toronto Platform Baseline</a> for the v2.0
+    lineage figures.</li>
+    <li><strong>Per-candidate assessments are never published.</strong> Aggregates only, committed
+    before publication; the praise-only shortlist above is the single exception, by standing
+    rule. No aggregate on this page describes a group of one or two identifiable people.</li>
+  </ul>
+
+  <h2>Found a mistake?</h2>
+  <p>That's the system working. If any figure here is wrong, out of date, or reads differently
+  than its source supports, send it to <a href="corrections.html">the corrections page</a> —
+  thirty seconds, and every correction is published, dated, and left visible. Candidates: if we
+  have your site wrong, your platform missed, or you've just published — tell us and we will
+  re-check and re-measure, gladly.</p>
+
+</main>
+
+<footer class="site-footer">
+<nav aria-label="Footer">
+<div class="footer-cols">
+<section class="footer-col">
+<h2>Start here</h2>
+<ul>
+<li><a href="/join.html">Join the conversation</a></li>
+<li><a href="/now.html">Next actions</a></li>
+<li><a href="/kits/">The Kits</a></li>
+<li><a href="/harvest.html">The Harvest</a></li>
+<li><a href="/invite-me.html">Invite me into your room</a></li>
+<li><a href="/civic-hour.html">The Civic Hour</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>The vision</h2>
+<ul>
+<li><a href="/vision.html">The full vision</a></li>
+<li><a href="/platform.html">The Plan &mdash; 300 recommendations</a></li>
+<li><a href="/who.html">Who is the Unknown Soldier</a></li>
+<li><a href="/constitution.html">Our constitution</a></li>
+<li><a href="/permanent-culture.html">Permanent Culture 3.0</a></li>
+<li><a href="/futures/">The Futures Library</a></li>
+<li><a href="/research-agenda.html">What we&rsquo;re researching next</a></li>
+<li><a href="/vision/organizations.html">For organizations</a></li>
+<li><a href="/vision/candidates.html">For candidates</a></li>
+<li><a href="/vision/newcomers.html">For newcomers</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>The library</h2>
+<ul>
+<li><a href="/library.html">Backgrounders &amp; briefs</a></li>
+<li><a href="/map/">The Map &mdash; by issue</a></li>
+<li><a href="/projects/index.html">By project</a></li>
+<li><a href="/whats-built.html">What&rsquo;s built, and what&rsquo;s coming</a></li>
+<li><a href="/wiki/">The Wiki</a></li>
+<li><a href="/category-explainers/">Explainers</a></li>
+<li><a href="/programs/index.html">The Programs</a></li>
+<li><a href="/questions/index.html">Candidate questions</a></li>
+<li><a href="/guides/">Free Toronto guides</a></li>
+<li><a href="/transit/">Why can&rsquo;t Toronto move?</a></li>
+<li><a href="/free-toronto.html">Free Toronto Resource Atlas</a></li>
+<li><a href="/open-data.html">Open data</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>Registries &amp; tools</h2>
+<ul>
+<li><a href="/gov-atlas/index.html">The Government Atlas</a></li>
+<li><a href="/elections/">State of the Election</a></li>
+<li><a href="/elections/wards/">Ward math cards</a></li>
+<li><a href="/run/index.html">So you&rsquo;re thinking of running</a></li>
+<li><a href="/turnout.html">How to vote</a></li>
+</ul>
+</section>
+<section class="footer-col">
+<h2>How to trust this</h2>
+<ul>
+<li><a href="/how-this-was-made.html">How this was made</a></li>
+<li><a href="/how-we-verify.html">How we verify</a></li>
+<li><a href="/corrections.html">Corrections &amp; improvements</a></li>
+<li><a href="/press.html">Press kit</a></li>
+<li><a href="/sitemap.html">Sitemap &mdash; every page</a></li>
+</ul>
+</section>
+</div>
+</nav>
+<p><a class="improve-mail" href="mailto:unknownsoldier@unitetolove.ca?subject=Improvement%3A&amp;body=Page%20link%20%28paste%20it%20here%29%3A%0A%0AWhat%20I%20noticed%20or%20suggest%3A%0A">&#9999;&#65039; Suggest an improvement</a> &mdash; corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+<script>(function(){var s='Improvement: '+location.pathname;var b='Page link: '+location.href+'\n\nWhat I noticed or suggest:\n\nCredit me as (optional):\n';var h='mailto:unknownsoldier@unitetolove.ca?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);var l=document.querySelectorAll('a.improve-mail');for(var i=0;i<l.length;i++){l[i].href=h;}})();</script>
+<p>The Unknown Soldier &middot; uniteTOlove &middot; Toronto</p>
+  <p class="ethic">Post only where you have the right to post.</p>
+  <p>This site is built with AI assistance &mdash; every claim carries a receipt regardless of who
+  drafted it. Read how: <a href="how-this-was-made.html">How this was made</a>.</p>
+  <p>No donations are asked for anywhere on this site. Contact:
+  <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a> &mdash;
+  corrections, improvements, ideas, resources, and offers of help all welcome.</p>
+</footer>
+</body>
+</html>

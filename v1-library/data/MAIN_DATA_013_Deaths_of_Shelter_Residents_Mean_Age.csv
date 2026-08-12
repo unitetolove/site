@@ -1,0 +1,21 @@
+_id,Year,Total decedents,"Average age of death, all decedents",Male decedents,"Average age of death, male decedents",Female decedents,"Average age of death, female decedents",Transgender/Non-binary/Two-Spirit decedents,"Avg age of death, transgender/non-binary/two-spirit decedents"
+1,2007,24,52,22,53,2,50,n/a,n/a
+2,2008,26,50,19,47,7,58,n/a,n/a
+3,2009,16,56,14,59,2,37,n/a,n/a
+4,2010,21,54,11,53,10,56,n/a,n/a
+5,2011,21,54,15,53,6,56,n/a,n/a
+6,2012,18,53,18,53,0,n/a,n/a,n/a
+7,2013,16,52,13,51,3,59,n/a,n/a
+8,2014,30,57,26,57,4,58,n/a,n/a
+9,2015,45,58,41,58,4,64,n/a,n/a
+10,2016,33,57,27,58,6,47,n/a,n/a
+11,2017,35,56,23,54,12,58,n/a,n/a
+12,2018,26,57,23,58,3,45,n/a,n/a
+13,2019,48,54,38,57,10,43,n/a,n/a
+14,2020,74,51,54,51,19,50,1,n/a
+15,2021,132,47,96,48,31,48,5,33
+16,2022,110,51,81,52,29,49,0,n/a
+17,2023,91,51,78,52,12,45,1,n/a
+18,2024,59,51,43,50,11,54,5,50
+19,2025,59,53,42,55,16,49,1,n/a
+20,2026,12,58,9,62,3,44,0,n/a
