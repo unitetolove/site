@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Delivery — Andrew1234</title>
+<!-- Analytics: no beacon is active on this site build. To count views/unlocks/downloads:
+     Option A (zero code): enable Cloudflare Web Analytics in the CF dashboard — per-path pageviews
+     and per-URL request counts (the zip's request count ≈ downloads).
+     Option B: uncomment and set your umami site-id; the event hooks below fire automatically.
+<script defer src="https://cloud.umami.is/script.js" data-website-id="YOUR-ID"></script> -->
+<style>
+  body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;background:#101418;color:#e8e8e8;
+       display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0}
+  .card{background:#1a2028;border:1px solid #2b3442;border-radius:12px;padding:2.2rem;max-width:430px;width:90%}
+  h1{font-size:1.15rem;margin:0 0 .4rem} p{font-size:.88rem;line-height:1.5;color:#aab4c0}
+  input{width:100%;box-sizing:border-box;padding:.65rem .8rem;border-radius:8px;border:1px solid #2b3442;
+        background:#0d1116;color:#e8e8e8;font-size:1rem;margin:.8rem 0 .5rem}
+  button{width:100%;padding:.7rem;border:0;border-radius:8px;background:#3b82f6;color:#fff;
+         font-size:.95rem;cursor:pointer} button:hover{background:#2f6fd6}
+  #files{display:none} .dl{display:block;text-align:center;text-decoration:none;background:#16a34a;
+        color:#fff;border-radius:8px;padding:.75rem;margin-top:.7rem;font-size:.95rem}
+  .dl:hover{background:#128a3e} #err{color:#f87171;font-size:.85rem;display:none;margin-top:.3rem}
+  .note{font-size:.78rem;color:#7c8794;margin-top:1rem}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>File delivery — Andrew1234</h1>
+  <p>Enter the passphrase you were given to access this delivery.</p>
+  <div id="gate">
+    <input id="pw" type="password" placeholder="Passphrase" autocomplete="off"
+           onkeydown="if(event.key==='Enter')unlock()">
+    <button onclick="unlock()">Unlock</button>
+    <div id="err">That passphrase isn't right.</div>
+  </div>
+  <div id="files">
+    <p><strong>1 archive, 5 files</strong> — research package (PDF · Word · Markdown) + receipts bundle + README.</p>
+    <a class="dl" href="delivery_encrypted.zip" onclick="track('delivery_download')">Download delivery_encrypted.zip (3&nbsp;MB)</a>
+    <p class="note">The archive is AES-256 encrypted: opening it asks for the <em>same passphrase</em>
+    you just entered (macOS: use The Unarchiver or <code>unzip</code>/Keka; the built-in Archive
+    Utility can't read AES zips). Please don't redistribute the passphrase.</p>
+  </div>
+  <p class="note">Private delivery · not for publication · this page is unlisted and noindexed.</p>
+</div>
+<script>
+function track(ev){ if(window.umami&&umami.track){umami.track(ev)} }
+track('delivery_view');
+const HASH='98fbfaeac71a730f3538a18bde22c37de8805635452b222d3fad08d99ef218ba';
+async function unlock(){
+  const v=document.getElementById('pw').value.trim();
+  const buf=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(v));
+  const hex=[...new Uint8Array(buf)].map(b=>b.toString(16).padStart(2,'0')).join('');
+  if(hex===HASH){document.getElementById('gate').style.display='none';
+    document.getElementById('files').style.display='block';track('delivery_unlock');}
+  else{document.getElementById('err').style.display='block';}
+}
+</script>
+</body>
+</html>
