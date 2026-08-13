@@ -300,9 +300,13 @@ main.section-hub .deck { border: 1px solid var(--border); border-left: 3px solid
    ever shipped -- the six IA groups (Act/Plan/Library/Connect/Elections 2026/More) were
    rendering as one stacked column on every page, live included. Operator flagged live
    ("reverted back") while reviewing the mirror-repair pass. Same undesigned-not-badly-
-   designed bug class as main.section-hub's .card-grid, fixed the same way this sitting. */
+   designed bug class as main.section-hub's .card-grid, fixed the same way this sitting.
+   Same-sitting follow-up (operator, in-chat): "The Plan" folded into "Act" as a nested
+   <h3> sub-heading (site_nav.py's (None, label) marker) -- five top-level columns now
+   fit one clean row at 9rem/col instead of six wrapping a lone one. */
 footer.site-footer .footer-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: 1.25rem 1rem; }
 footer.site-footer .footer-col h2 { font-size: 0.82em; text-transform: uppercase; letter-spacing: 0.04em; color: var(--fg); margin: 0 0 0.4rem; }
+footer.site-footer .footer-col h3 { font-size: 0.78em; font-weight: 600; color: var(--fg); margin: 0.75rem 0 0.3rem; }
 footer.site-footer .footer-col ul { display: block; margin: 0; padding: 0; }
 footer.site-footer .footer-col li { margin: 0 0 0.2rem; }
 @media (max-width: 640px) {
