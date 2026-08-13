@@ -250,3 +250,17 @@ ul.category-doors {
 ul.issue-index-list { padding-left: 1.1rem; }
 ul.issue-index-list li { margin-bottom: 0.3rem; }
 p.small-note { font-size: 0.88em; color: var(--muted); }
+
+/* Footer directory: clean columns (2026-08-13 operator redesign). Six groups render as real
+   columns: 6-up on wide screens, stepping down responsively; compact type so the footer is a
+   directory, not a wall. */
+.footer-cols { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0.25rem 1.25rem; margin: 0 0 1rem; }
+.footer-col h2 { font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 0.35rem; color: var(--muted); }
+.footer-col ul { list-style: none; margin: 0; padding: 0; }
+.footer-col li { margin: 0 0 0.3rem; line-height: 1.35; }
+@media (max-width: 1100px) { .footer-cols { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 640px)  { .footer-cols { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+footer.site-footer .footer-line { margin: 0.15rem 0; }
+footer.site-footer .footer-line.ethic { font-size: 0.92em; opacity: 0.85; }
+
+.series-bar { font-size: 0.85em; color: var(--muted); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; margin-bottom: 1.2rem; }
