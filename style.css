@@ -294,3 +294,17 @@ main.section-hub .deck { border: 1px solid var(--border); border-left: 3px solid
   main.section-hub .sh-steps { grid-template-columns: 1fr; }
   main.section-hub .sh-scales { grid-template-columns: 1fr; }
 }
+
+/* Footer columns (2026-08-13): tools/site_nav.py's site_footer() has emitted
+   .footer-cols/.footer-col since the sitewide chrome rewire, but no layout rule for it
+   ever shipped -- the six IA groups (Act/Plan/Library/Connect/Elections 2026/More) were
+   rendering as one stacked column on every page, live included. Operator flagged live
+   ("reverted back") while reviewing the mirror-repair pass. Same undesigned-not-badly-
+   designed bug class as main.section-hub's .card-grid, fixed the same way this sitting. */
+footer.site-footer .footer-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: 1.25rem 1rem; }
+footer.site-footer .footer-col h2 { font-size: 0.82em; text-transform: uppercase; letter-spacing: 0.04em; color: var(--fg); margin: 0 0 0.4rem; }
+footer.site-footer .footer-col ul { display: block; margin: 0; padding: 0; }
+footer.site-footer .footer-col li { margin: 0 0 0.2rem; }
+@media (max-width: 640px) {
+  footer.site-footer .footer-cols { grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr)); }
+}
