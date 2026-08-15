@@ -3,16 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ward Profiles &mdash; all 25 wards &mdash; uniteTOlove</title>
-<meta name="description" content="All 25 Toronto council ward profiles, one page each: 2021 Census figures, the 2022 election result, and the 2026 filed-candidate list.">
+<title>Toronto Ward Profiles — all 25 wards — uniteTOlove</title>
+<meta name="description" content="All 25 Toronto council ward profiles, one page each: who&#x27;s running in 2026 with bios sourced only from their own campaign material, the 2021 Census layer, the 2022 election result, and ward-specific civic texture — sourced, dated, and honest about the gaps.">
 <link rel="stylesheet" href="../style.css">
 <link rel="canonical" href="https://unitetolove.ca/wards/index.html">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://unitetolove.ca/wards/index.html">
-<meta property="og:title" content="Ward Profiles — all 25 wards">
-<meta property="og:description" content="All 25 Toronto council ward profiles, one page each: 2021 Census figures, the 2022 election result, and the 2026 filed-candidate list.">
+<meta property="og:title" content="Toronto Ward Profiles — all 25 wards">
+<meta property="og:description" content="All 25 Toronto council ward profiles, one page each: who&#x27;s running in 2026 with bios sourced only from their own campaign material, the 2021 Census layer, the 2022 election result, and ward-specific civic texture — sourced, dated, and honest about the gaps.">
 <meta property="og:image" content="https://unitetolove.ca/assets/og/ward-profiles.png">
 <meta name="twitter:card" content="summary_large_image">
+<style>
+  .dated-banner { font-size: 0.95em; border: 2px solid var(--accent); border-radius: 6px;
+    padding: 0.75rem 1rem; margin-bottom: 1.25rem; background: var(--code-bg); }
+  .dated-banner strong { color: var(--accent); }
+  .why-matters { margin: 1rem 0 1.5rem; padding: 0.6rem 1rem; border-left: 3px solid var(--accent);
+    background: var(--code-bg); border-radius: 0 4px 4px 0; }
+  .why-matters p { margin: 0; }
+  nav.toc { font-size: 0.92em; border: 1px solid var(--border); border-radius: 6px;
+    padding: 0.75rem 1rem; margin-bottom: 1.5rem; }
+  nav.toc p { margin: 0 0 0.4rem; font-weight: 600; }
+  nav.toc ol { margin: 0; padding-left: 1.2rem; columns: 2; column-gap: 1.5rem; }
+  nav.toc li { break-inside: avoid; margin-bottom: 0.15rem; }
+  .candidate { border: 1px solid var(--border); border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0; padding: 0.6rem 1rem; margin: 0.75rem 0; }
+  .candidate h3 { margin: 0 0 0.25rem; }
+  .candidate .meta-line { font-size: 0.9em; color: var(--muted); margin: 0 0 0.4rem; }
+  .candidate .bio { margin: 0; }
+  .absence-note, .gap-note { font-size: 0.9em; color: var(--muted); border: 1px solid var(--border);
+    border-radius: 6px; padding: 0.6rem 1rem; margin: 1rem 0; }
+  .ward-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 0.9rem; margin: 1.25rem 0; }
+  .ward-card { border: 1px solid var(--border); border-radius: 6px; padding: 0.75rem 1rem; }
+  .ward-card h3 { margin: 0 0 0.35rem; font-size: 1.02em; }
+  .ward-card p { margin: 0.15rem 0; font-size: 0.9em; color: var(--muted); }
+</style>
 <script defer src="../assets/analytics.js"></script>
 </head>
 <body>
@@ -37,47 +62,19 @@
 </div>
 </header>
 
-<nav class="crumbs"><a href="../index.html">Home</a> / <a href="../ward-profiles.html">Ward Profiles</a> / All 25 wards</nav>
+<nav class="crumbs"><a href="../index.html">Home</a> / Ward Profiles</nav>
 
-<main id="main">
-<h1>Ward Profiles &mdash; all 25 wards</h1>
-<p class="lede">One page per Toronto council ward: 2021 Census figures, the 2022 election result,
-and who&rsquo;s registered to run in 2026 &mdash; sourced, dated, and honest about the gaps. See
-<a href="../ward-profiles.html">the citywide summary table</a> for the same census columns in one
-page.</p>
-<table>
-<thead><tr><th>Ward</th><th>Name</th><th>Population</th><th>2022 margin</th><th>2026 candidates on file</th></tr></thead>
-<tbody>
-<tr><td>1</td><td><a href="ward-01-etobicoke-north.html">Etobicoke North</a></td><td>115,120</td><td>20.5%</td><td>5</td></tr>
-<tr><td>2</td><td><a href="ward-02-etobicoke-centre.html">Etobicoke Centre</a></td><td>117,200</td><td>61.9%</td><td>2</td></tr>
-<tr><td>3</td><td><a href="ward-03-etobicoke-lakeshore.html">Etobicoke-Lakeshore</a></td><td>139,920</td><td>6.1%</td><td>4</td></tr>
-<tr><td>4</td><td><a href="ward-04-parkdale-high-park.html">Parkdale-High Park</a></td><td>104,715</td><td>3.9%</td><td>9</td></tr>
-<tr><td>5</td><td><a href="ward-05-york-south-weston.html">York South-Weston</a></td><td>115,675</td><td>0.4%</td><td>6</td></tr>
-<tr><td>6</td><td><a href="ward-06-york-centre.html">York Centre</a></td><td>107,355</td><td>62.0%</td><td>2</td></tr>
-<tr><td>7</td><td><a href="ward-07-humber-river-black-creek.html">Humber River-Black Creek</a></td><td>111,200</td><td>38.7%</td><td>3</td></tr>
-<tr><td>8</td><td><a href="ward-08-eglinton-lawrence.html">Eglinton-Lawrence</a></td><td>114,820</td><td>56.1%</td><td>5</td></tr>
-<tr><td>9</td><td><a href="ward-09-davenport.html">Davenport</a></td><td>104,730</td><td>57.5%</td><td>3</td></tr>
-<tr><td>10</td><td><a href="ward-10-spadina-fort-york.html">Spadina-Fort York</a></td><td>135,400</td><td>15.2%</td><td>8</td></tr>
-<tr><td>11</td><td><a href="ward-11-university-rosedale.html">University-Rosedale</a></td><td>102,385</td><td>0.5%</td><td>10</td></tr>
-<tr><td>12</td><td><a href="ward-12-toronto-st-paul-s.html">Toronto-St. Paul’s</a></td><td>114,095</td><td>77.0%</td><td>5</td></tr>
-<tr><td>13</td><td><a href="ward-13-toronto-centre.html">Toronto Centre</a></td><td>116,930</td><td>30.2%</td><td>8</td></tr>
-<tr><td>14</td><td><a href="ward-14-toronto-danforth.html">Toronto-Danforth</a></td><td>104,555</td><td>66.8%</td><td>2</td></tr>
-<tr><td>15</td><td><a href="ward-15-don-valley-west.html">Don Valley West</a></td><td>101,025</td><td>61.4%</td><td>2</td></tr>
-<tr><td>16</td><td><a href="ward-16-don-valley-east.html">Don Valley East</a></td><td>94,335</td><td>24.0%</td><td>3</td></tr>
-<tr><td>17</td><td><a href="ward-17-don-valley-north.html">Don Valley North</a></td><td>112,590</td><td>58.3%</td><td>7</td></tr>
-<tr><td>18</td><td><a href="ward-18-willowdale.html">Willowdale</a></td><td>117,130</td><td>8.1%</td><td>4</td></tr>
-<tr><td>19</td><td><a href="ward-19-beaches-east-york.html">Beaches-East York</a></td><td>108,500</td><td>32.0%</td><td>10</td></tr>
-<tr><td>20</td><td><a href="ward-20-scarborough-southwest.html">Scarborough Southwest</a></td><td>110,095</td><td>5.5%</td><td>7</td></tr>
-<tr><td>21</td><td><a href="ward-21-scarborough-centre.html">Scarborough Centre</a></td><td>111,560</td><td>41.5%</td><td>8</td></tr>
-<tr><td>22</td><td><a href="ward-22-scarborough-agincourt.html">Scarborough-Agincourt</a></td><td>103,690</td><td>30.2%</td><td>7</td></tr>
-<tr><td>23</td><td><a href="ward-23-scarborough-north.html">Scarborough North</a></td><td>94,025</td><td>24.6%</td><td>5</td></tr>
-<tr><td>24</td><td><a href="ward-24-scarborough-guildwood.html">Scarborough-Guildwood</a></td><td>102,755</td><td>65.4%</td><td>2</td></tr>
-<tr><td>25</td><td><a href="ward-25-scarborough-rouge-park.html">Scarborough-Rouge Park</a></td><td>101,485</td><td>54.7%</td><td>6</td></tr>
-</tbody>
-</table>
-<p class="meta">Profile vintage 2026-08-06. Mechanically generated from held, provenanced sources &mdash;
-see each ward&rsquo;s own page for citations.</p>
-
+<main id="main" tabindex="-1">
+<h1>Toronto Ward Profiles &mdash; all 25 wards</h1>
+<div class="dated-banner" role="note"><strong>Reading this in real time:</strong> every registrant figure below &mdash; who&rsquo;s filed, incumbency, candidate counts &mdash; is a snapshot <strong>as of 2026-08-14</strong>, from the City Clerk&rsquo;s candidate feeds. <strong>Nominations close Friday, August 21, 2026, at 2:00&nbsp;p.m.</strong> &mdash; this page re-pulls and re-stamps every registrant figure after that date. Geography, transit, development and census figures are structural facts that don&rsquo;t move at nomination close and are dated separately, section by section.</div>
+<div class="why-matters"><p><strong>Built for three readers at once:</strong> a resident wants sixty seconds &mdash; is my ward&rsquo;s seat contested, who&rsquo;s running, what does my ward look like. A journalist wants five minutes &mdash; the receipted numbers, fast, with a citation trail to verify without re-reporting. A candidate or community organization wants the full depth &mdash; every other candidate in the race treated identically, named gaps stated honestly. Every reader gets the same page; only how far you read changes.</p></div>
+<p class="pdf-download">&#128196; Prefer paper or one file? The complete set is also a <a href="TORONTO_WARD_PROFILES_2026-08-14.pdf">single print-ready PDF &mdash; all 25 wards, 70 pages, figures as of August 14, 2026</a>.</p>
+<p>One page per Toronto council ward: who&rsquo;s running in 2026 with a bio drawn only from their own published campaign material, the 2021 Census layer, the 2022 election result, and ward-specific civic texture &mdash; transit, development, local commons, local media &mdash; sourced and dated. See <a href="../elections/index.html">State of the Election</a> for the citywide picture and <a href="../state-of-the-election.html">the full State of the Election report</a> for the moving field.</p>
+<div class="ward-grid"><div class="ward-card"><h3><a href="ward-01-etobicoke-north.html">Ward 01 &mdash; Etobicoke North</a></h3><p>Population 115,120 &middot; 2022 margin 20.5% &middot; 7 candidate(s) filed for 2026</p></div><div class="ward-card"><h3><a href="ward-02-etobicoke-centre.html">Ward 02 &mdash; Etobicoke Centre</a></h3><p>Population 117,200 &middot; 2022 margin 61.9% &middot; 2 candidate(s) filed for 2026</p></div><div class="ward-card"><h3><a href="ward-03-etobicoke-lakeshore.html">Ward 03 &mdash; Etobicoke-Lakeshore</a></h3><p>Population 139,920 &middot; 2022 margin 6.1% &middot; 4 candidate(s) filed for 2026</p></div><div class="ward-card"><h3><a href="ward-04-parkdale-high-park.html">Ward 04 &mdash; Parkdale-High Park</a></h3><p>Population 104,715 &middot; 2022 margin 3.9% &middot; 9 candidate(s) filed for 2026</p></div><div class="ward-card"><h3><a href="ward-05-york-south-weston.html">Ward 05 &mdash; York South-Weston</a></h3><p>Population 115,675 &middot; 2022 margin 0.4% &middot; 7 candidate(s) filed for 2026</p></div><div class="ward-card"><h3><a href="ward-06-york-centre.html">Ward 06 &mdash; York Centre</a></h3><p>Population 107,355 &middot; 2022 margin 62.0% &middot; 2 candidate(s) filed for 2026</p></div><div class="ward-card"><h3><a href="ward-07-humber-river-black-creek.html">Ward 07 &mdash; Humber River-Black Creek</a></h3><p>Population 111,200 &middot; 2022 margin 38.7% &middot; 3 candidate(s) filed for 2026</p></div><div class="ward-card"><h3><a href="ward-08-eglinton-lawrence.html">Ward 08 &mdash; Eglinton-Lawrence</a></h3><p>Population 114,820 &middot; 2022 margin 56.1% &middot; 6 candidate(s) filed for 2026</p></div><div class="ward-card"><h3><a href="ward-09-davenport.html">Ward 09 &mdash; Davenport</a></h3><p>Population 104,730 &middot; 2022 margin 57.5% &middot; 4 candidate(s) filed for 2026</p></div><div class="ward-card"><h3><a href="ward-10-spadina-fort-york.html">Ward 10 &mdash; Spadina-Fort York</a></h3><p>Population 135,400 &middot; 2022 margin 15.2% &middot; 8 candidate(s) filed for 2026</p></div><div class="ward-card"><h3><a href="ward-11-university-rosedale.html">Ward 11 &mdash; University-Rosedale</a></h3><p>Population 102,385 &middot; 2022 margin 0.5% &middot; 10 candidate(s) filed for 2026</p></div><div class="ward-card"><h3><a href="ward-12-toronto-st-paul-s.html">Ward 12 &mdash; Toronto-St. Paul’s</a></h3><p>Population 114,095 &middot; 2022 margin 77.0% &middot; 6 candidate(s) filed for 2026</p></div><div class="ward-card"><h3><a href="ward-13-toronto-centre.html">Ward 13 &mdash; Toronto Centre</a></h3><p>Population 116,930 &middot; 2022 margin 30.2% &middot; 9 candidate(s) filed for 2026</p></div><div class="ward-card"><h3><a href="ward-14-toronto-danforth.html">Ward 14 &mdash; Toronto-Danforth</a></h3><p>Population 104,555 &middot; 2022 margin 66.8% &middot; 2 candidate(s) filed for 2026</p></div><div class="ward-card"><h3><a href="ward-15-don-valley-west.html">Ward 15 &mdash; Don Valley West</a></h3><p>Population 101,025 &middot; 2022 margin 61.4% &middot; 3 candidate(s) filed for 2026</p></div><div class="ward-card"><h3><a href="ward-16-don-valley-east.html">Ward 16 &mdash; Don Valley East</a></h3><p>Population 94,335 &middot; 2022 margin 24.0% &middot; 3 candidate(s) filed for 2026</p></div><div class="ward-card"><h3><a href="ward-17-don-valley-north.html">Ward 17 &mdash; Don Valley North</a></h3><p>Population 112,590 &middot; 2022 margin 58.3% &middot; 7 candidate(s) filed for 2026</p></div><div class="ward-card"><h3><a href="ward-18-willowdale.html">Ward 18 &mdash; Willowdale</a></h3><p>Population 117,130 &middot; 2022 margin 8.1% &middot; 4 candidate(s) filed for 2026</p></div><div class="ward-card"><h3><a href="ward-19-beaches-east-york.html">Ward 19 &mdash; Beaches-East York</a></h3><p>Population 108,500 &middot; 2022 margin 32.0% &middot; 10 candidate(s) filed for 2026</p></div><div class="ward-card"><h3><a href="ward-20-scarborough-southwest.html">Ward 20 &mdash; Scarborough Southwest</a></h3><p>Population 110,095 &middot; 2022 margin 5.5% &middot; 10 candidate(s) filed for 2026</p></div><div class="ward-card"><h3><a href="ward-21-scarborough-centre.html">Ward 21 &mdash; Scarborough Centre</a></h3><p>Population 111,560 &middot; 2022 margin 41.5% &middot; 10 candidate(s) filed for 2026</p></div><div class="ward-card"><h3><a href="ward-22-scarborough-agincourt.html">Ward 22 &mdash; Scarborough-Agincourt</a></h3><p>Population 103,690 &middot; 2022 margin 30.2% &middot; 7 candidate(s) filed for 2026</p></div><div class="ward-card"><h3><a href="ward-23-scarborough-north.html">Ward 23 &mdash; Scarborough North</a></h3><p>Population 94,025 &middot; 2022 margin 24.6% &middot; 5 candidate(s) filed for 2026</p></div><div class="ward-card"><h3><a href="ward-24-scarborough-guildwood.html">Ward 24 &mdash; Scarborough-Guildwood</a></h3><p>Population 102,755 &middot; 2022 margin 65.4% &middot; 3 candidate(s) filed for 2026</p></div><div class="ward-card"><h3><a href="ward-25-scarborough-rouge-park.html">Ward 25 &mdash; Scarborough-Rouge Park</a></h3><p>Population 101,485 &middot; 2022 margin 54.7% &middot; 6 candidate(s) filed for 2026</p></div></div>
+<h2 id="method">Methodology &amp; firewall</h2>
+<ul><li><strong>Registry facts only.</strong> Candidate rosters, registration dates, incumbency, and 2022 results come from this project&rsquo;s Toronto elections registry, re-pulled from the City Clerk&rsquo;s official candidate feeds.</li><li><strong>Bios, strictly sourced.</strong> Every candidate bio is synthesized only from that candidate&rsquo;s own published campaign material and registry facts &mdash; never from news coverage, opposition material, or this project&rsquo;s own characterization. A candidate with no located material gets that stated plainly, in the same format as every other candidate, never a blank and never an apology.</li><li><strong>No scores, no rankings, no characterization &mdash; anywhere.</strong> This project informs; it never ranks, endorses, or attacks a candidate. Every candidate in a race gets identical fields, identical length, identical treatment, alphabetical by surname only.</li><li><strong>Named gaps, never papered over.</strong> Where a fact isn&rsquo;t on file &mdash; a trustee-ward crosswalk, a library/park geospatial join &mdash; each ward page says so plainly rather than guessing.</li><li><strong>Provisional until nominations close.</strong> Every registrant figure is dated 2026-08-14 and re-pulls after nominations close 2026-08-21; structural facts (geography, transit, census, development) are dated separately and don&rsquo;t move at that pivot.</li></ul>
+<h2>Found a mistake?</h2>
+<p>That&rsquo;s the system working. Every figure on this page traces to a public source or a candidate&rsquo;s own published material, cited in the Receipts section above; if one is wrong, out of date, or reads differently than the source supports, we want to know before anyone else repeats it. Send it to <a href="../corrections.html">the corrections page</a> &mdash; it takes thirty seconds, and every correction is published, dated, and left visible.</p>
 </main>
 
 <footer class="site-footer">
@@ -160,7 +157,7 @@ see each ward&rsquo;s own page for citations.</p>
 </nav>
 <p><a class="improve-mail" href="mailto:unknownsoldier@unitetolove.ca?subject=Improvement%3A&amp;body=Page%20link%20%28paste%20it%20here%29%3A%0A%0AWhat%20I%20noticed%20or%20suggest%3A%0A">&#9999;&#65039; Suggest an improvement</a> &mdash; corrections, improvements, ideas, resources, and offers of help all welcome.</p>
 <script>(function(){var s='Improvement: '+location.pathname;var b='Page link: '+location.href+'\n\nWhat I noticed or suggest:\n\nCredit me as (optional):\n';var h='mailto:unknownsoldier@unitetolove.ca?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);var l=document.querySelectorAll('a.improve-mail');for(var i=0;i<l.length;i++){l[i].href=h;}})();</script>
-<p class="footer-line">The Unknown Soldier &middot; uniteTOlove &middot;
+  <p class="footer-line">The Unknown Soldier &middot; uniteTOlove &middot;
   <a href="mailto:unknownsoldier@unitetolove.ca">unknownsoldier@unitetolove.ca</a> &middot;
   <a href="/harvest.html">the Harvest</a> for corrections, improvements, ideas, resources,
   and offers of help</p>
