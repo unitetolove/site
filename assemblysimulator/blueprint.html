@@ -85,7 +85,7 @@ stripped at render by <code>tools/assembly_site_gen.py</code>.</em></p>
 <p><strong>The October 2026 context.</strong> The municipal election is the catalytic occasion, not the object. The assembly question is framed around the regenerative future; its outputs can include a citizen-authored set of priorities that any candidate could be invited to endorse, and the model can be used to explore the city’s contested relationship with the Province under Doug Ford — where a coordinated, representative citizenry could press for change. This blueprint keeps campaign mechanics light by design; that strategy belongs in its own thread.</p>
 <p>3. What we are borrowing — grounded in real systems</p>
 <p>Nothing here is speculative architecture. Every component maps to a working system or a peer-reviewed result. The table summarizes; the notes that follow give the mechanism we actually borrow.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Scrollable table"><table>
 <thead>
 <tr>
 <th></th>
@@ -125,7 +125,7 @@ stripped at render by <code>tools/assembly_site_gen.py</code>.</em></p>
 <td>Stratified selection on census strata + an attitudinal stratum; informants-vs-advocates evidence</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Pol.is and the bridging metric [1–4]</p>
 <p>Pol.is, from the Computational Democracy Project, runs entirely on a vote matrix — participants vote agree / disagree / pass on short statements and submit their own. The engine reduces that matrix with PCA to a 2-D opinion map, then clusters it with k-means (sweeping k = 2–5, picking the best by silhouette score). The metric we most want is Group-Informed Consensus: for each statement it estimates each group’s probability of agreement (with a Bayesian +1/+2 smoothing prior) and multiplies those probabilities together. Because it is a product, one dissenting group pulls the score toward zero — by design, this rewards statements that \~70–80% of every group endorses and structurally defeats tyranny of the majority [2]. Google Jigsaw’s Sensemaking tools add a Gemini layer that summarizes agreement and disagreement while citing the underlying statements, so summaries stay grounded [4]. The whole stack is open source and reproducible in Python (Section 6).</p>
 <p><strong>Note on “Pol.is 2.0”:</strong> that term does not map to a single shipped product. It is an informal label for CompDem’s in-progress LLM-augmented rebuild. The real, citable evidence of AI-augmented Pol.is is the Jigsaw Sensemaking partnership and Talk to the City [4,5] — we cite those rather than a version number.</p>
@@ -135,7 +135,7 @@ stripped at render by <code>tools/assembly_site_gen.py</code>.</em></p>
 <p>Stanford and Google built agents of 1,052 real Americans by injecting a two-hour interview transcript into each agent’s prompt plus an “expert reflection” module (the model reviews the transcript as an economist, a psychologist and a sociologist and stores \~20 high-level observations). These agents reproduced their real humans’ survey answers at about 85% of the humans’ own test-retest consistency, and — importantly — grounding in a narrative reduced demographic bias versus thin persona prompts. The earlier “Smallville” paper supplies the canonical memory architecture: a memory stream scored by recency, importance and relevance, periodic reflection into higher-level beliefs, and planning. We use both: rich narratives over thin personas, and a memory/reflection loop so agents evolve their views across rounds rather than re-answering from scratch.</p>
 <p>4. System architecture overview</p>
 <p>The system is a seven-stage pipeline. Stages 1–2 build the room; 3–6 run the meeting; 7 writes it up. Each stage is a discrete module you can run, inspect and swap independently — which is what makes the free engineering run (Phase 0) tractable.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Scrollable table"><table>
 <thead>
 <tr>
 <th></th>
@@ -194,12 +194,12 @@ stripped at render by <code>tools/assembly_site_gen.py</code>.</em></p>
 <td>Grounded LLM summarization (Jigsaw-style)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Data flow:</strong> Census + strata → [1] agent roster → [2] agent objects (profile + memory) → [4] each round, agents read shared context and the routed statement subset, emit a statement and votes → votes accumulate in a participant×statement matrix → [5] clustering identifies groups and bridging statements → [3] unmet information needs trigger expert calls that feed back into the next round → [6] consensus drafting → [7] report. Everything — every vote, every expert call, every prompt — is logged for transparency and replay.</p>
 <p>5. Component A — the 300 representative agents</p>
 <p>5.1 Selection: a stratified civic lottery, executed by raking</p>
 <p>Real assemblies use a two-stage civic lottery: thousands of random invitations, then a stratified weighted draw from the respondents so the final panel matches the population on agreed strata [17,18]. Because we generate agents rather than recruit them, we collapse this to one step: we define target quotas from Toronto’s 2021 census marginals and use iterative proportional fitting (raking) to allocate 300 agents so that every marginal is matched simultaneously. The table below shows illustrative single-dimension targets and the resulting agent counts; the real allocation rakes across all dimensions jointly, because StatCan publishes the marginals freely but the full joint cross-tabulation (e.g. income × race × ward) requires a custom tabulation [20,21].</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Scrollable table"><table>
 <thead>
 <tr>
 <th></th>
@@ -269,7 +269,7 @@ stripped at render by <code>tools/assembly_site_gen.py</code>.</em></p>
 <td>\~100 / 100 / 100</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><em>Figure values are illustrative single-dimension marginals; the production roster rakes all dimensions jointly. Income figures for 2020 are distorted by pandemic transfers — flag this when low-income representation matters. Sources: Statistics Canada 2021 Census Profile for Toronto (CSD 3520005) [20] and City of Toronto census backgrounders [21].</em></p>
 <p><strong>The attitudinal stratum matters.</strong> Climate Assembly UK deliberately stratified not only on age, gender, ethnicity, education and geography but on attitude to climate change, so the room was not packed only with people who already cared [19]. We adopt the same move: stratify on one or two attitudinal axes (for example trust in government and openness to systemic change) so the simulated assembly is not quietly stacked with enthusiasts for your own vision. This is one of the strongest guards against a flattering, self-confirming result.</p>
 <p>5.2 Instantiation: from a row in a table to a person</p>
@@ -389,7 +389,7 @@ stripped at render by <code>tools/assembly_site_gen.py</code>.</em></p>
 <p><strong>Where the money goes:</strong> caching and batching make the 300-agent loop itself surprisingly cheap (\~tens of dollars). The budget is consumed by richer interview-grounded narratives, larger contexts and more rounds, multi-model ensembles, frontier expert calls, calibration against real Toronto data, and human oversight/facilitation. Deliverable: a publishable method + the blueprint for the real thing.</p>
 </li>
 </ul>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Scrollable table"><table>
 <thead>
 <tr>
 <th></th>
@@ -448,9 +448,9 @@ stripped at render by <code>tools/assembly_site_gen.py</code>.</em></p>
 <td>4–8 weeks</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>11. Recommended tech stack</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Scrollable table"><table>
 <thead>
 <tr>
 <th></th>
@@ -505,11 +505,11 @@ stripped at render by <code>tools/assembly_site_gen.py</code>.</em></p>
 <td>Holds the vote matrix, agent memory and the full expert-call log</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>On “OpenClaw” / “MyClaw.”</strong> These do not map to a 300-agent orchestrator and are not recommended for this. “OpenClaw” most prominently names an unrelated game-engine project; a same-named AI-assistant gateway exists but is a single message-router, not a multi-agent framework, and its provenance is hard to verify. “MyClaw” and “ClawCloud” are hosting/deployment SaaS, not orchestration. Use a custom asyncio loop (cheapest, most transparent, exact token control) and reach for LangGraph only when you want explicit, checkpointed deliberation phases. Avoid AutoGen-style conversational frameworks at this scale — their per-turn overhead multiplies token cost across 300 agents.</p>
 <p>12. Cost model</p>
 <p>Working assumption per full run: 300 agents × \~5 rounds ≈ 4M input tokens and 1.5M output tokens, before the expert panel. Two levers dominate the top end: prompt caching (cached reads bill at \~10% of input price — decisive because every agent reads the same shared context each round) and the batch API (50% off, async).</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Scrollable table"><table>
 <thead>
 <tr>
 <th></th>
@@ -554,11 +554,11 @@ stripped at render by <code>tools/assembly_site_gen.py</code>.</em></p>
 <td>Phase 2 evidence</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Illustrative $10k allocation:</strong> frontier deliberation core across a 3-model ensemble and many scenario variants (\~$1.5k); frontier expert panel, thousands of grounded briefings (\~$2k); rich interview-grounded narrative generation for 300 agents (\~$1k); calibration, validation and ablations against real survey data (\~$1.5k); human facilitation, comms and cloud compute for full Pol.is hosting (\~$2.5k); contingency and frontier-price-volatility buffer (\~$1.5k). The headline: the crowd is cheap; large uncached contexts and frontier expert calls are what spend the budget.</p>
 <p><em>Pricing is volatile and was current to mid-2026 at the time of writing; re-verify the Anthropic, OpenAI, Google and OpenRouter pricing pages before locking any cost model [29,30].</em></p>
 <p>13. Risks &amp; mitigations</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Scrollable table"><table>
 <thead>
 <tr>
 <th></th>
@@ -599,7 +599,7 @@ stripped at render by <code>tools/assembly_site_gen.py</code>.</em></p>
 <td>Simulation informs, never replaces; real human deliberation remains the goal</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>14. Roadmap &amp; how it feeds the movement</p>
 <p>A pragmatic sequence that keeps the scale-beyond-Toronto goal in front:</p>
 <ol start="4">
@@ -618,7 +618,7 @@ stripped at render by <code>tools/assembly_site_gen.py</code>.</em></p>
 </ol>
 <p><strong>How outputs feed the work.</strong> The bridge list becomes a citizen-authored set of priorities any October candidate can be invited to endorse; the opinion maps show where the city is genuinely divided versus where it is quietly united; the purok deliberation yields a concrete, evidence-tested flagship proposal; and the whole method becomes a reusable instrument for the larger conversation you want to lead — in Toronto first, and then well past it.</p>
 <p>Appendix A — Glossary</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Scrollable table"><table>
 <thead>
 <tr>
 <th></th>
@@ -663,7 +663,7 @@ stripped at render by <code>tools/assembly_site_gen.py</code>.</em></p>
 <td>Conditioning an LLM on real demographic backstories to generate matched synthetic survey respondents.</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Appendix B — Sources</p>
 <p><strong>[1]</strong> Pol.is clustering algorithms (Computational Democracy Project) — <a href="https://compdemocracy.org/algorithms/">https://compdemocracy.org/algorithms/</a></p>
 <p><strong>[2]</strong> Group-Informed Consensus (CompDem) — <a href="https://compdemocracy.org/group-informed-consensus/">https://compdemocracy.org/group-informed-consensus/</a></p>

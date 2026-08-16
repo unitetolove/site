@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/federal.html">Federal</a> &middot; Transport Canada</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Transport Canada</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (31 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (31 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2027</td><td>Departmental plan</td><td><a href="https://tc.canada.ca/en/corporate-services/transparency/corporate-management-reporting/departmental-plans-dp/transport-canada-2026-2027-departmental-plan">Transport Canada&#x27;s 2026-2027 Departmental Plan</a></td><td>archived</td><td></td></tr>
@@ -108,7 +110,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2002</td><td>Departmental plan</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td><strong>missing</strong></td><td><span class="incompleteness-tag">era:pre-web-baseline</span></td></tr>
 <tr><td>2001</td><td>Departmental plan</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td><strong>missing</strong></td><td><span class="incompleteness-tag">era:pre-web-baseline</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -133,7 +135,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>Transport Canada is established under the Department of Transport Act, R.S.C. 1985, c. T-18, with s.3 establishing the Department and s.7 granting the Minister of Transport broad authority including contracting, examining witnesses under oath, and regulating canals and airports. The department's own stated purpose is to keep Canada's transportation system "safe and secure, sustainable and innovative, and more efficient" (2026-2027 Departmental Plan). It carries out regulatory oversight across air, marine, rail, and road modes; transportation policy development; and infrastructure management; it maintains an open-data portal (49 datasets) and an ATIP function. The Department is headed by the Minister of Transport and reports to Parliament annually through its Departmental Plan and Departmental Results Report. Budget scale: ~$3.94 billion in total planned spending for 2026-27 ($3,940,442,707), with 6,434 planned full-time equivalents. The backgrounder flags the department's commonly cited 1936 founding year as not independently fetch-confirmed.</p>
 <h4>Series inventory</h4>
 <p>Of 25 registered (<code>archive_status: archived</code>) documents, all show <code>_index.json</code> <code>status: "ok"</code>, but that status is not proof of usable content. Direct reading of every one of the 25 <code>.txt</code> files finds: <strong>6 are content-free stubs</strong> (804 characters each, the publications.gc.ca "Information Archived on the Web" bilingual interstitial), <strong>4 are landing-page/table-of-contents-only captures</strong> (2,206-2,982 characters — the department's website page linking to a PDF report that was never actually fetched, the same failure mode seen at Natural Resources Canada this review), and <strong>15 contain real, substantive content</strong>. True usable rate: <strong>15 of 25 = 60%</strong>, not the 25/25 the archive_status/index status implies. A further 6 registry rows (dp-2001, dp-2002, dp-2003, dp-2006, drr-2005, drr-2006) carry <code>archive_status: missing</code> with flag <code>era:pre-web-baseline</code> — no URL was ever available and no fetch was attempted; these are excluded from the 25-document set and discussed separately under Residuals &amp; gaps.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Transport Canada - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -320,7 +322,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes (independent OAG audit of Transport Canada's National Trade Corridors Fund, not a TC self-report)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h4>Priority evolution</h4>
 <p><strong>Program Alignment Architecture era (dp-2014 through dp-2018, covering RPP/DP years 2013-14 through 2017-18):</strong> The landing-page captures for dp-2014 (4de4ca3b49ce), dp-2015 (4da4975f23ef), dp-2016 (39bc60d8a478) and dp-2017 (5d24365b8613) preserve only site chrome, a table of contents, the minister's signature line, and a "available in PDF format" notice — but that TOC is genuine and shows a stable Program Alignment Architecture (PAA) across all four years: three Strategic Outcomes, "An Efficient Transportation System" (SO1), "A Clean Transportation System" (SO2), "A Safe and Secure Transportation System" (SO3), each with numbered Programs (1.1-1.4, 2.1-2.3, 3.1-3.9) plus an Internal Services program. Only dp-2018 (65938220bf53), covering FY2017-18, preserved full narrative/financial content under this framework: Transport Canada "plans to spend $1,303 million" for 2017-18, "a net decrease in planned spending of $18 million from the 2016-17 forecast spending level of $1,321 million," attributed to maturing programs (Gateways and Border Crossings Fund, Ferry Services Contribution Program) partly offset by rail-safety and dangerous-goods investment growth (dp-2018, 65938220bf53). Ministers of record across this era, from signature lines preserved even in the thin captures: Denis Lebel (dp-2014, 4de4ca3b49ce), Lisa Raitt (dp-2015, 4da4975f23ef; dp-2016, 39bc60d8a478), Marc Garneau (dp-2017, 5d24365b8613, onward).</p>
 <p><strong>Transition to Core Responsibilities (dp-2019):</strong> dp-2019 (5baab9001c36, FY2018-19) adopts the government-wide Policy on Results terminology: three Core Responsibilities replace the PAA's Strategic Outcomes, reordered to lead with safety — "A Safe and Secure Transportation System," "A Green and Innovative Transportation System," "An Efficient Transportation System." The dp-2018 capture (65938220bf53) shows the transition arriving mid-document: FY2017-18 is still reported under the old Strategic-Outcome/PAA structure, but its own glossary already defines the incoming terms "Core Responsibility" and "Departmental Results Framework." Sitting atop the three Core Responsibilities, dp-2019 introduces a numbered, mandate-letter-linked priority layer: "seven priorities we aim to fulfil," each mapped to a "Transportation 2030" strategic-plan theme — e.g., Priority 1 ("Improve the performance and reliability of Canada's transportation system to get products to market and grow our economy") linked to the "Trade Corridors to Global Markets" theme (dp-2019, 5baab9001c36).</p>
@@ -393,7 +395,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: whether Bill C-33 or Bill C-52 were reintroduced in a subsequent Parliament after both "died on the Order Paper" at the January 6, 2025 prorogation (drr-2025, 85a7ea3fda21) — not addressed by any later document in this archived series (dp-2027, a2673b6a3b00, does not mention either bill by name).</li>
 <li>The backgrounder's Budget scale figure ("~$3.94 billion...with 6,434 planned full-time equivalents" for 2026-27) is directly and exactly confirmed by dp-2027 (a2673b6a3b00): "total planned spending (including internal services) for Transport Canada is $3,940,442,707 and total planned full-time equivalent staff (including internal services) is 6,434" — no mismatch found between the backgrounder and the archived series for this figure.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

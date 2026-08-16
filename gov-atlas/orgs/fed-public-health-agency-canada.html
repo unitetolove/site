@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/federal.html">Federal</a> &middot; Public Health Agency of Canada</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Public Health Agency of Canada</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (9 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (9 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2027</td><td>Departmental plan</td><td><a href="https://www.canada.ca/en/public-health/corporate/transparency/corporate-management-reporting/reports-plans-priorities/2026-2027-departmental-plan.html">Public Health Agency of Canada&#x27;s 2026-27 Departmental Plan</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ still being checked — the fetch failed on 2026-07-30; ⚠️ still being checked — the fetch failed on 2026-07-31; ⚠️ still being checked — the fetch failed on 2026-08-01; ⚠️ still being checked — the fetch failed on 2026-08-02</span></td></tr>
@@ -86,7 +88,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2022</td><td>Departmental results report</td><td><a href="https://www.canada.ca/en/public-health/corporate/transparency/corporate-management-reporting/departmental-performance-reports/2021-2022.html">Public Health Agency of Canada 2021-22 Departmental Results Report</a></td><td>archived</td><td></td></tr>
 <tr><td>2021</td><td>Other</td><td><a href="https://www.canada.ca/en/auditor-general/our-work/audit-reports/parl-oag-202112-04-e.html">Report 15—Enforcement of Quarantine and COVID-19 Testing Orders—Public Health Agency of Canada</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -111,7 +113,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>PHAC is established by the Public Health Agency of Canada Act, S.C. 2006, c. 5, assisting the Minister of Health with "health protection and promotion, population health assessment, health surveillance, disease and injury prevention, and public health emergency preparedness" (backgrounder, citing statute s.3). It is led by a Governor-in-Council-appointed President (deputy-head status) and a separately appointed Chief Public Health Officer who reports annually to Parliament on Canada's public health status. The backgrounder's cited FY2026-27 budget scale (~$1.527B total planned spending, 2,854 planned FTEs, three core responsibilities: health promotion and chronic disease prevention ~$341.2M, infectious disease prevention and control ~$744.8M, health security ~$257.0M) is independently re-confirmed below against dp-2027's own Table 15 (fed-public-health-agency-canada-dp-2027, 24cc5bc1ac28: gross planned spending $1,528,373,768, net $1,527,423,768 — a recorded standing decision: this brief separately re-verifies rather than merely relaying the backgrounder figure). The backgrounder names the Honourable Marjorie Michel as Minister of Health as of the 2026-27 Departmental Plan; this series independently traces the full ministerial and presidential succession behind that endpoint (see Priority evolution). PHAC was created in 2004 administratively following the 2003 SARS outbreak, placed on statutory footing in 2006 (backgrounder; ⚠️ still being checked flag on the 2004 date/instrument carried forward from the backgrounder, not resolved by this series).</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 9 ok / 0 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Public Health Agency of Canada - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -186,7 +188,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full 2026-27 Departmental Plan, 178,923 chars, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>All 9 documents were read for substantive content: drr-2024 and drr-2025 via a salvaged pre-digest (spot-verified against source text below, see Residuals &amp; gaps), the remaining 7 via direct reads (2 by a parallel automated read, 5 directly in this review). No stub-suspected or failed-extraction documents in this org's set — the stub detector had nothing to disagree on either direction.</p>
 <h4>Priority evolution</h4>
 <p><strong>FY2021-22 (drr-2022, 5f36bf45a086) — peak pandemic response.</strong> Total actual spending $8,705,432,497 ("a decrease of $52.3 million over the previous year," i.e. from an even larger FY2020-21 figure of $8,757,759,632). The same three core responsibilities already in place (health promotion and chronic disease prevention; infectious disease prevention and control; health security), but dominated by active emergency operations: 120+ million vaccine doses secured, 96+ million distributed; 2,473,943 border tests facilitated; Safe Voluntary Isolation Sites program at $181M funding 63 sites in 50 communities; a standardized Proof of Vaccination Credential built and funded for provinces/territories; 240+ million rapid tests distributed against a nearly $2B bulk-procurement commitment; wastewater surveillance at 60% national population coverage. Minister of Health: the Honourable Jean-Yves Duclos; Minister of Mental Health and Addictions: the Honourable Carolyn Bennett (5f36bf45a086).</p>
@@ -235,7 +237,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: outcome/final scope of the Departmental Results Framework rewrite disclosed in drr-2025 (6da0f4be919d) — dp-2027 delivers a new numbered priorities structure consistent with a rewrite having occurred, but dp-2027's own text does not explicitly narrate "we rewrote the DRF" in so many words; the connection is inferred from structural change, not a direct textual confirmation.</li>
 <li>No archive_status=missing years and no era:pre-web-baseline flags apply to this series (registry flags column empty throughout, consistent with <code>_index.json</code> showing 9/9 ok).</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

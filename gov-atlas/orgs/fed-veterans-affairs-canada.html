@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/federal.html">Federal</a> &middot; Veterans Affairs Canada</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Veterans Affairs Canada</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (9 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (9 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Departmental plan</td><td><a href="https://www.veterans.gc.ca/en/about-vac/reports-policies-and-legislation/departmental-reports/departmental-plans/departmental-plan-2025-2026">VAC Departmental Plan 2025-2026</a></td><td>archived</td><td></td></tr>
@@ -86,7 +88,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2001</td><td>Departmental plan</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td><strong>missing</strong></td><td><span class="incompleteness-tag">era:pre-web-baseline</span></td></tr>
 <tr><td>2000</td><td>Departmental plan</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td><strong>missing</strong></td><td><span class="incompleteness-tag">era:pre-web-baseline</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -111,7 +113,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>VAC is a federal department continued under the Department of Veterans Affairs Act, R.S.C., 1985, c. V-1, with the Minister of Veterans Affairs holding statutory authority over "the care, treatment or re-establishment in civil life" of eligible former Canadian Forces, merchant navy, and allied-force members, and "care of the dependants or survivors" of those persons (backgrounder, citing laws-lois.justice.gc.ca/eng/acts/v-1/FullText.html). The backgrounder's three-core-responsibility structure (Benefits, Services and Support; Commemoration; Veterans Ombudsperson) and its ~$7.69B/3,786.1-FTE 2025-26 budget figures are both independently re-confirmed against dp-2026 below (this brief relays the registry/backgrounder framing and separately re-verifies against primary text). The backgrounder's institutional-history claim (1944 founding, tracing to 1918/1928 predecessor departments, sourced to Wikipedia and flagged ⚠️ still being checked) is addressed in Residuals &amp; gaps: drr-2025's own Corporate Information section gives a different, primary-sourced figure.</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 2 ok / 1 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Veterans Affairs Canada - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -144,7 +146,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full Departmental Results Report 2024-2025, 136,975 chars, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>SHORT-FORM RULE APPLIES: own read confirms only 2 usable documents.</strong> The 2001-02 Report on Plans and Priorities survives only as a content-free LAC archival interstitial — the stub detector's call is correct (see Residuals &amp; gaps). That leaves one Departmental Plan (2025-26, forward-looking) and one Departmental Results Report (2024-25, backward-looking, reporting against the 2024-25 Departmental Plan, not the 2025-26 one read here) — a near-adjacent one-year pairing, not a multi-year trend series. The sections below state only what these two documents themselves establish.</p>
 <h4>Priority evolution</h4>
 <p>A two-document window that does not even pair a single fiscal year's plan against its own results report (drr-2025 reports on 2024-25; dp-2026 plans 2025-26) cannot establish a genuine evolution narrative. What the two documents <em>do</em> establish: both organize VAC's work under the same three core responsibilities — Benefits, Services and Support; Commemoration; Veterans Ombudsperson — plus Internal Services (ddad0cb5b450; 393a25c71516). drr-2025 additionally names four explicit "key priorities" for 2024-25 ("Drive service excellence," "Enable modernized and digitized service delivery," "Provide equitable and accessible programs and services," "Build an agile and resilient organization," ddad0cb5b450); dp-2026 does not restate this four-priority framing anywhere in its text, organizing its "Plans to achieve results" sections directly under the three core responsibilities and their departmental results instead. Whether this reflects a genuine dropped framing or simply a formatting choice specific to each report type cannot be determined from two documents alone.</p>
@@ -170,7 +172,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: no readable document in this set covers fiscal years 2002-03 through 2023-24 for this org at all; any priority changes, added/dropped programs, or budget inflection points in that ~21-year span are entirely unestablished by this archived series.</li>
 <li>The 2001-02 Report on Plans and Priorities being interstitial-only is a capture/archival gap, not evidence the report doesn't exist; publications.gc.ca still hosts a "Continue to publication" link behind the interstitial that the archived capture did not follow through to the underlying PDF.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

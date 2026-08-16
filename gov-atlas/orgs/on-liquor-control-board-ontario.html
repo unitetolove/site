@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/provincial-on.html">Provincial — Ontario</a> &middot; Liquor Control Board of Ontario</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Liquor Control Board of Ontario</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (18 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (18 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Strategic plan</td><td><a href="https://aem.lcbo.com/content/dam/lcbo/PDFs/2024/LCBO-2024-2026-Strategic-Plan-English.pdf">LCBO Strategic Plan 2024-2026</a></td><td>archived</td><td></td></tr>
@@ -95,7 +97,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2013</td><td>Annual report</td><td><a href="https://web.archive.org/web/20150926072215id_/http://www.lcbo.com/content/dam/lcbo/corporate-pages/about/pdf/LCBO_AR12-13-english.pdf">LCBO Annual Report 2012-13</a></td><td>archived</td><td></td></tr>
 <tr><td>2012</td><td>Annual report</td><td><a href="https://www.lcbo.com/content/dam/lcbo/corporate-pages/about/pdf/2011_2012.pdf">LCBO Annual Report 2011-12: Responsible Growth</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -120,7 +122,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>The LCBO is a Crown agency established through the Liquor Control Board of Ontario Act, 2019, mandated "to control the importation of liquor into Ontario and to be a socially responsible retailer and wholesaler of wine, beer, and spirits." It operates over 685 LCBO stores, ~400 Convenience Outlets/agency stores, and supplies ~450 licensed grocers and 420 Beer Stores across close to 3,000 physical retail points province-wide. It is a provincial government enterprise reporting to the Minister of Finance (which issues an annual Letter of Direction), governed by a Board of up to 11 Order-in-Council appointees serving up to five-year terms, with day-to-day management under a President &amp; CEO. The backgrounder flags budget scale as "⚠️ not yet confirmed against an original source" (no specific total-revenue or dividend figure confirmed at that stage) and flags the organization's original founding year as unconfirmed. This brief's own reading of the archived annual-report series resolves the budget-scale gap with hard figures (see Budget &amp; mandate inflection points) but does not resolve the founding-year gap.</p>
 <h4>Series inventory</h4>
 <p>18 documents are registered for this org. 7 (ar-2013, ar-2014, ar-2016, ar-2017, ar-2019, ar-2022, ar-2023) were never captured — registry <code>archive_status: missing</code>, flagged <code>⚠️ still being checked — the web archive was unreachable when we looked</code> — so they are absent from the extracted set entirely; this is an archiving gap, not an extraction failure. Of the 11 rows that were archived and extracted, all 11 (100%) yielded real, substantive report or plan text on direct reading — no 404 stubs or blank captures were found. However, <strong>sp-2021 and sp-2024 share an identical sha256 (<code>9cd373d768b8</code>) and, confirmed by direct <code>diff</code> of the two <code>.txt</code> files, differ only in their two header metadata lines (<code>document id</code>, <code>year</code>) — the entire body text is byte-for-byte identical.</strong> Both registry rows point to the same URL and the same title ("LCBO Strategic Plan 2021-2024"); this is one WARC capture registered twice, not two distinct documents. Counting sp-2024 separately would double-count evidence, so it is treated below as a duplicate pointer, not an independent data point. <strong>True usable/independent-evidence rate: 10 of 11 extracted files (91%) represent distinct documents; 11 of 11 (100%) of what was extracted is real, readable content.</strong></p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Liquor Control Board of Ontario - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -209,7 +211,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes (this is the genuine LCBO Strategic Plan 2024-2026, despite the "2026" document id/year label)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Missing (registry <code>archive_status: missing</code>, not extracted): ar-2013, ar-2014, ar-2016, ar-2017, ar-2019, ar-2022, ar-2023 — all flagged <code>⚠️ still being checked — the web archive was unreachable when we looked</code>.</p>
 <h4>Priority evolution</h4>
 <p><strong>FY2011-12 and FY2014-15 (ar-2012, 44dc95edad4e; ar-2015, 701f07072d9e):</strong> Neither document contains a standalone "Strategic Plan" or numbered-mandate section; both are organized around Minister/Chair/CEO messages, product trends, and financial highlights. The 2011-12 report's own title theme is "Responsible Growth" (ar-2012), reporting an 18th consecutive record dividend of $1.63 billion. By 2014-15 the dividend streak reaches its 21st consecutive year ($1.805 billion), and the LCBO adopts its first new brand vision in over a decade, "Let's Get Together," replacing the prior "Discover the World" brand (ar-2015, 701f07072d9e). No explicit numbered priority framework is present in either document.</p>
@@ -260,7 +262,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ still being checked — the OCRC/cannabis shared-services mandate's cost-recovery arrangement is documented only through FY2019-20 (ar-2020, 146ed2041004); no later document in this series discusses its final wind-down or total value, since it stops appearing entirely from ar-2021 onward.</li>
 <li>Not determinable from the archived series: any outcome data on the FY2025-26-onward effects of full marketplace liberalization (dividend trajectory, store-count changes) beyond the FY2024-25 figures reported in ar-2025 (acff83c41b23), since that is the most recent annual report in this registry.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

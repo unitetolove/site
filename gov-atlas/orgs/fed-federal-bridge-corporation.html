@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/federal.html">Federal</a> &middot; Federal Bridge Corporation</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Federal Bridge Corporation</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (43 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (43 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2031</td><td>Business / corporate plan</td><td><a href="https://www.federalbridge.ca/wp-content/uploads/FBCL_CPSummary_2026_EN_V2_WEB.pdf">FBCL Corporate Plan Summary 2026-2031</a></td><td>archived</td><td><span class="incompleteness-tag">new-row 2026-08-06: GOV-ATLAS-COMPLETENESS-SWEEP-d1 batch 1, P9-grounded this review</span></td></tr>
@@ -120,7 +122,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2001</td><td>Annual report</td><td><a href="https://web.archive.org/web/20200510034834id_/https://publications.gc.ca/collections/collection_2012/spfl-fbcl/CC530-2001-eng.pdf">Annual Report 2000-2001</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: capture-artifact-goc-interstitial</span></td></tr>
 <tr><td>2000</td><td>Annual report</td><td><a href="https://web.archive.org/web/20200510034812id_/https://publications.gc.ca/collections/collection_2012/spfl-fbcl/CC530-2000-eng.pdf">Federal Bridge Corporation Limited Annual Report 1999-2000</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: capture-artifact-goc-interstitial</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -146,7 +148,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 15 ok / 7 stub-suspected / 12 no-manifest-match.</p>
 <p>Registry (our document registry) carries 34 rows for this org spanning 2000-2030, all recorded <code>archive_status=archived</code>; of these, this review's WARC-manifest match found 22 rows with a captured binary (15 genuinely readable + 7 confirmed stub interstitials, below) and 12 with no matching capture in the manifest (<code>no-manifest-match</code>) — those 12 rows (ar-2000, 2001, 2003, 2005, 2007, 2012, 2013; bp-2010, 2011, 2012, 2013, 2014) are not analyzable from the archive despite the registry's "archived" label and are treated as capture gaps, not disclosure choices.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Federal Bridge Corporation - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -396,7 +398,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>not read this review (sampled — see Residuals)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h4>Priority evolution</h4>
 <p><strong>2002-2011 (7 stub years):</strong> Unreadable — LAC "Information Archived on the Web" interstitial only; no priority content survives from this decade in the archive.</p>
 <p><strong>2014-15 (ar-2015, a9036678abc7), first report of the amalgamated entity:</strong> FBCL was formed February 1, 2015 by amalgamating legacy FBCL with the Blue Water Bridge Authority and St. Mary's River Bridge Company (SIBC amalgamation still pending a U.S.-partner agreement at this point). The report is framed almost entirely around "amalgamation" as the single organizing event: an "interim" Mission/Vision/five Pillars are stated explicitly as provisional ("These aspects will be revisited and reconfirmed as the Board, senior management and staff work together"). Priorities are reported per-bridge under a "Deliver on Today's Plans and Priorities" section listing named, dollar-figured capital projects (Sault Ste. Marie CBSA Plaza redevelopment $51.6M; Thousand Islands Lansdowne Port of Entry $60M; Seaway North Channel Bridge replacement $74.8M), plus a two-legacy-corporation "Activity 1 / Activity 2" performance-measures table inherited from the pre-amalgamation FBCL and Blue Water Bridge Authority reporting formats.</p>
@@ -433,7 +435,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>No <code>archive_status=missing</code> rows appear in the registry for this org (all rows say <code>archived</code>); the true unusable set is entirely a combination of <code>no-manifest-match</code> (capture failure) and confirmed <code>stub-suspected</code> (interstitial capture, not the source document).</li>
 </ul>
 <p>Pair byte-identical confirmed (<code>diff</code> run, exit 0).</p>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

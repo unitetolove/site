@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-markham.html">Municipal — Markham</a> &middot; City of Markham</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>City of Markham</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (9 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (9 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Strategic plan</td><td><a href="https://www.markham.ca/sites/default/files/about-city-markham/BMFT+2020-2026+Strategic+Plan+Summary+AODA.pdf">2020-2026 Strategic Plan Summary - Building Markham&#x27;s Future Together</a></td><td>archived</td><td></td></tr>
@@ -86,7 +88,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2010</td><td>Budget / estimates</td><td><a href="https://www.markham.ca/sites/default/files/about-city-markham/2010+Budget_document.pdf">2010 Budget Document</a></td><td>archived</td><td></td></tr>
 <tr><td>2010</td><td>Financial statements</td><td><a href="https://www.markham.ca/sites/default/files/about-city-markham/2010-annual-report.pdf">2010 Annual Report</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -111,7 +113,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>Markham is a lower-tier municipality in York Region (GTA), incorporated as a body corporate under the Municipal Act, 2001. It changed from Town to City status effective July 1, 2012 by municipal by-law under s. 187 of the Act. Its current strategic direction is "Building Markham's Future Together 2020-2026" (BMFT), and its 2025 tax-levy-supported Operating Budget was ~$296.2M (excluding Waterworks and Building), with a 2025 Capital Budget of $178,989,400. The backgrounder flags the 1971 incorporation date as unverified against a primary source.</p>
 <h4>Series inventory</h4>
 <p>The archived series consists of nine documents spanning four sampled periods (2010, 2015, 2020, 2025) plus one current strategic-plan summary. All nine were read in full or substantial part; none were stubs.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="City of Markham - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -186,7 +188,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>No document in this series failed extraction. All nine yielded genuine, substantial narrative and financial content (mayor's/CAO's messages, governance sections, budget tables, audited financial statements, strategic-plan text) consistent with their reported character counts (161,817 to 1,404,403 chars in <code>_index.json</code>).</p>
 <h4>Priority evolution</h4>
 <p><strong>2010 (bud-2010, a3300fad03d9; fs-2010, 1dde6c74a356), Town of Markham:</strong> Both documents' cover pages read "Town of Markham," confirming pre-city-status framing. Council and senior staff had identified <strong>six strategic priorities</strong> in 2007, confirmed through the "Click with Markham" consultation (over 5,000 respondents): Growth Management, Transportation/Transit, Environment, Municipal Services, Parks/Recreation/Culture/Library Master Plan and Public Safety, and Diversity — all organized under the "Building Markham's Future Together" (BMFT) strategic direction, alongside a separately named "Greenprint" Community Sustainability Plan (four pillars: Healthy Environment, Economic Vitality, Social Equity, Vibrant Culture), then in draft and slated for Council adoption in 2011 (a3300fad03d9; 1dde6c74a356). The Town delivered a zero percent tax increase for three consecutive years (2009-2011) (1dde6c74a356). The "Excellence through Efficiency and Effectiveness" (E3) continuous-improvement program was already operating, with $8.5M in cumulative expenditure savings/revenue enhancements captured in 2009-2010 (1dde6c74a356). The Town approved a total 2010 budget of $316.2 million (Operating $153.8M; Capital $77.9M; Building Standards $7.2M; Engineering $5.1M; Planning &amp; Design $4.9M; Waterworks $67.3M) (a3300fad03d9). The Town had been debt-free since 2002 and operated a "Pay As You Go" fiscal policy (1dde6c74a356).</p>
@@ -252,7 +254,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li><strong>Minor document-production artifact, not a content failure</strong>: bud-2025 (e0fe3c697450) carries a page footer reading "Budget 2024: A Strong Markham" on several pages within its Budget Overview section (around lines discussing the 2025 process), while its cover and executive summary are titled "Budget 2025: A Markham Milestone" — apparently a reused template footer from the prior year's document. This does not affect the substance of the content read.</li>
 <li><strong>Extraction-quality verification per task instructions</strong>: rather than relying on <code>_index.json</code> status fields, all nine documents were directly read in full or in large, targeted sections (executive summaries, mayor's/CAO's messages, governance sections, strategic-plan text, budget tables, financial-statement highlights). All nine contained genuine, substantial, internally coherent narrative and financial content proportionate to their reported character counts (161,817 to 1,404,403 characters). No stub, boilerplate-only, truncated, or garbled document was found in this series; true extraction success is 9 of 9 (100%).</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

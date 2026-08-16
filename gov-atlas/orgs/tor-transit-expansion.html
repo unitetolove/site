@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; Transit Expansion</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Transit Expansion</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (4 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (4 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Budget / estimates</td><td><a href="https://www.toronto.ca/legdocs/mmis/2025/bu/bgrd/backgroundfile-252496.pdf">2025 Budget Notes: Transit Expansion</a></td><td>archived</td><td></td></tr>
@@ -81,7 +83,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2022</td><td>Budget / estimates</td><td><a href="https://www.toronto.ca/legdocs/mmis/2022/ex/bgrd/backgroundfile-199453.pdf">2022 Budget Notes: Transit Expansion</a></td><td>archived</td><td></td></tr>
 <tr><td>2020</td><td>Budget / estimates</td><td><a href="https://www.toronto.ca/legdocs/mmis/2020/ex/bgrd/backgroundfile-145948.pdf">2020 Budget Notes: Transit Expansion</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -107,7 +109,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 4 ok / 0 stub-suspected / 0 extract-failed.</p>
 <p>Registry (our document registry equivalent — per-org seriesaudit record) carries 4 rows for this org spanning 2020-2025; all 4 are archived and appear below; 0 are staged and 0 are missing — no registry/archive gap exists for this org's four-document set. (Per this library’s standing org-facts rule: "4 rows, census 4 ok.")</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Toronto Transit Expansion - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -147,7 +149,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full 2025 Budget Notes, 78,556 chars, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Four usable, non-stub documents spanning a 5-year budget-note series (no 2021 or 2024 budget note was archived in this set; the 2020, 2022, 2023 and 2025 notes are what the registry carries — this brief does not assume a document for years not in the archived set). Per this library’s standing editorial rule, full-form treatment is applied given ≥3 usable documents, while restricting analysis strictly to what these budget notes state about the Transit Expansion Division's own priorities and funding — not the wider provincial/municipal transit-politics narrative around the Ontario Line and Eglinton Crosstown programs, which is outside this brief's scope.</p>
 <h4>Priority evolution</h4>
 <p>The division's own framing of its role is stable in substance but shifts in emphasis across the four documents. In 2020, the division describes itself as newly created (September 2019) to provide "day-to-day leadership and oversight" of the City's role in transit expansion, with priority actions focused on developing agreements with the Province, establishing governance structures, and building organizational capacity — the division states its own outcome measures and service levels "are being developed by Q2 2020" (5ca2e270f93e). By 2022, the division reports concrete agreement milestones (Ontario-Toronto Agreement in Principle amended, GO Expansion Master Agreement, Eglinton Crosstown Operations and Maintenance Agreement negotiations) and frames priorities around continuing negotiations and coordinating "City feedback" on four provincially-led priority subway projects (07978a152386). By 2023, priorities shift further toward active project delivery: SmartTrack Stations RFP closed and early works construction underway, Eglinton Crosstown track installation complete with vehicle testing beginning, tunneling underway for Scarborough Subway Extension and Eglinton Crosstown West Extension (3ce56d79fd6b). By 2025, the division frames its priorities around advancing two City-priority projects (Eglinton East LRT and Waterfront East LRT) toward "construction readiness," managing a "New Deal" Subway Program Agreement in Principle with the Province, and administering centralized invoicing/receivables for Metrolinx-funded work across multiple City divisions (c12661cc7915) — a coordination/financial-administration role not present in the 2020-2022 documents.</p>
@@ -173,7 +175,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: whether the "Capital Needs Constraints" (unmet needs) figure growing from $5.2 billion (2023) to $7.065 billion (2025) for the same two named projects (Eglinton East LRT, Waterfront Transit) reflects cost escalation, scope growth, or a change in what counts as "not included" — the documents state the totals but do not explain the year-over-year delta between the two disclosures.</li>
 <li><strong>Backgrounder reconciliation, 2026-08-02:</strong> this brief was written before the org's Wave-1 backgrounder existed. The backgrounder corroborated every claim; only the Backgrounder summary section was rewritten. The backgrounder's own institutional-history section carries an unresolved ⚠️ still being checked on the division's exact founding date, consistent with this brief's reliance on the division's 2020 budget note self-description ("newly created September 2019") as the only founding-date evidence in the record.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

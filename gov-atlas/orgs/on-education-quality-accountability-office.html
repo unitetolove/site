@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/provincial-on.html">Provincial — Ontario</a> &middot; Education Quality and Accountability Office</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Education Quality and Accountability Office</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (13 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (13 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2028</td><td>Business / corporate plan</td><td><a href="https://www.eqao.com/eqao-business-plan-2025-2028/">EQAO Business Plan 2025-2028</a></td><td>archived</td><td></td></tr>
@@ -90,7 +92,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2021</td><td>Annual report</td><td><a href="https://www.eqao.com/annual-report-2020-2021/">EQAO Annual Report 2020-2021</a></td><td>archived</td><td></td></tr>
 <tr><td>2020</td><td>Annual report</td><td><a href="https://www.eqao.com/annual-report-2019-2020/">EQAO Annual Report 2019-2020</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -115,7 +117,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>EQAO is a board-governed Ontario Crown agency established by the Education Quality and Accountability Office Act, 1996, tasked with designing and administering province-wide elementary/secondary assessments (e.g., primary/junior literacy and numeracy tests, OSSLT) and reporting results for public accountability. It reports to the Minister of Education, which tables its annual report in the Legislature. Backgrounder-sourced (live-URL) figures put projected 2025-26 program operating expenses at ~$32.69M against a $31.39M annual ministry allocation for 2025-28.</p>
 <h4>Series inventory</h4>
 <p>All ten registry rows for this org resolved, on extraction, to WordPress "file download" redirect interstitials rather than the report content itself. Each captured page is a 200-status HTML stub with a 4-second JavaScript timer pointing at a <code>wp-content/uploads/.../*.pdf</code> target; the WARC capture stopped at that stub and never recorded the underlying PDF as a response record. None carry the <code>publications.gc.ca</code> string the extraction tool's automated BANNER flag looks for, but they are functionally identical to a landing page: no report content, no priority language, nothing citable as document text.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Education Quality and Accountability Office - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -197,7 +199,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>banner</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h4>Priority evolution</h4>
 <p>Not derivable from this review. No archived capture in the series contains readable report text, so there is no basis for reconstructing EQAO's stated strategic priorities, goals, or key initiatives across 2020-2028, nor any dated narrative of how that framing shifted. This section is intentionally left without claims rather than filled with inference from the backgrounder or from redirect-page metadata.</p>
 <h4>Priorities added, dropped, renamed</h4>
@@ -214,7 +216,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>A future pass should re-run the WARC capture for these ten URLs with JS-redirect following enabled (or capture the <code>wp-content/uploads/.../*.pdf</code> targets directly), then re-run this brief — at present it carries a mandate/budget skeleton from the backgrounder and no priority-evolution content at all.</li>
 <li><strong>2026-08-02:</strong> Ontario/Toronto relevance section backfilled (K3 review §6 — founding-batch briefs predate the 7-section formalization of 2026-08-01); written from the brief's own cited content + backgrounder, no new extraction reads.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/federal.html">Federal</a> &middot; Canadian Food Inspection Agency</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Canadian Food Inspection Agency</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (22 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (22 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2027</td><td>Departmental plan</td><td><a href="https://inspection.canada.ca/en/about-cfia/transparency/corporate-management-reporting/reports-parliament/2026-2027-departmental-plan-0">CFIA 2026-2027 Departmental Plan</a></td><td>archived</td><td></td></tr>
@@ -99,7 +101,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2001</td><td>Annual report</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td><strong>missing</strong></td><td><span class="incompleteness-tag">era:pre-web-baseline</span></td></tr>
 <tr><td>2000</td><td>Annual report</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td><strong>missing</strong></td><td><span class="incompleteness-tag">era:pre-web-baseline</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -124,7 +126,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>CFIA is established under s.3 of the Canadian Food Inspection Agency Act, S.C. 1997, c. 6, as a Crown corporate body exercising powers as an agent of Her Majesty, in force since April 1, 1997. Its statutory mandate (s.11) is to administer and enforce federal food-safety, animal-health and plant-health law, consolidating functions previously split across Agriculture and Agri-Food Canada, Health Canada and Fisheries and Oceans Canada. Governance is a Governor-in-Council-appointed President reporting to the Minister of Health, working closely with the Minister of Agriculture and Agri-Food — both reporting lines are directly confirmed throughout the archived series, which is signed alternately by "Minister of Health" across three different named ministers over the read window (Jean-Yves Duclos, Mark Holland, Marjorie Michel), consistent with the backgrounder's description of the Health portfolio reporting line. Backgrounder-cited budget scale: ~$389M planned spending for 2026-27, 5,768 planned FTEs — independently re-confirmed against the extracted dp-2027 text below (this brief relays, and separately re-verifies against primary text, the registry/backgrounder figures rather than asserting independent discovery).</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 13 ok / 2 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Canadian Food Inspection Agency - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -241,7 +243,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — Financial Statements (Unaudited), year ended March 31 2025, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Detector calls confirmed correct for both stub-suspected documents.</strong> ar-2003 and ar-2004 were each read in full and confirmed as the same 804-character LAC/publications.gc.ca "Information Archived on the Web" interstitial pattern documented elsewhere in this lane, matching the stated <code>stub_reason</code> exactly — no disagreement with the detector in either direction. That leaves 13 usable documents: four Departmental Plans (2022-23, 2024-25, 2025-26, 2026-27), four Departmental Results Reports (2020-21, 2022-23, 2023-24, 2024-25), and five consecutive years of audited-scale Financial Statements (FY2021-FY2025) — an unusually strong combination of narrative planning documents and hard financial data for this lane. Full-form treatment applies.</p>
 <h4>Priority evolution</h4>
 <p><strong>2022-23 (dp-2023, d35db39cc23d):</strong> Single core responsibility framing already established — "Safe food and healthy plants and animals" — organized around three departmental results (food sold in Canada is safe and accurately represented; plant and animal resources protected from diseases and pests; Canadian food/plants/animals tradeable internationally). Minister's message (then-Minister Jean-Yves Duclos) frames CFIA as a "valued partner in the Health Portfolio," emphasizing COVID-19-era continuity of food-supply safeguarding and market-access support.</p>
@@ -282,7 +284,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: whether the "One Health" framing's disappearance from dp-2026/dp-2027 section headings (after prominent use in drr-2023/drr-2025) reflects a genuine terminology retirement or simply this brief's sampling of section headers rather than full-document search.</li>
 <li>No archive_status=missing years and no era:pre-web-baseline flags apply beyond the two confirmed interstitial stubs; the five-year unbroken run of audited-scale Financial Statements (fs-2021 through fs-2025) is an unusually strong evidentiary base for the budget-inflection analysis above, independent of and corroborating the narrative DP/DRR figures.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

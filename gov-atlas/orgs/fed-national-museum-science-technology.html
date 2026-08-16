@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/federal.html">Federal</a> &middot; National Museum of Science and Technology</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>National Museum of Science and Technology</h1>
@@ -71,7 +73,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (41 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (41 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2031</td><td>Business / corporate plan</td><td><a href="https://ingenium.ca/wp-content/uploads/2026/06/Ingenium-Corporate-Plan-Summary-2026-2027-to-2030-2031.pdf">Ingenium Corporate Plan Summary 2026-2027 to 2030-2031</a></td><td>archived</td><td></td></tr>
@@ -116,7 +118,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2001</td><td>Annual report</td><td><a href="https://web.archive.org/web/20200510135717id_/https://publications.gc.ca/collections/collection_2011/technomuses/NM30-2001-eng.pdf">Annual Report 2000-2001</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: capture-artifact-goc-interstitial</span></td></tr>
 <tr><td>2000</td><td>Annual report</td><td><a href="https://web.archive.org/web/20220918154232id_/https://publications.gc.ca/collections/collection_2009/sciencetech/NM30-2000E.pdf">National Museum of Science and Technology Annual Report 1999-2000</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: capture-artifact-goc-interstitial</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -143,7 +145,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p><code>_index.json</code>: 12 ok / 21 no-manifest-match (0 stub-suspected, 0 extract-failed).</p>
 <p>Registry (our document registry) carries 33 rows for this org spanning 2000-2031; all 33 are marked <code>archived</code> in the registry's own <code>archive_status</code> field, but 21 of those (all annual reports, 2000-2020) resolved to <code>no-manifest-match</code> — no matching WARC capture exists in this extraction for that entire span. 21 of the 33 rows carry a <code>⚠️ Still being checked: capture-artifact-goc-interstitial</code> flag. This is the largest proportional archive gap of this lane's four orgs: two full decades of annual reporting (2000-2020) are unavailable, and the readable record begins only with the corporation's pandemic-year report.</p>
 <p><strong>Shared-document flag: this org's two most recent documents are the identical underlying files as a sibling org's brief.</strong> <code>fed-national-museum-science-technology-ar-2025</code> (sha <code>f282fa612d43</code>) is the same PDF cited in <code>fed-canada-agriculture-food-museum_STRATEGY_EVOLUTION.md</code> as that org's <code>ar-2025</code>, and <code>fed-national-museum-science-technology-bp-2031</code> (sha <code>2ec815d9d4f8</code>) is the same PDF cited there as <code>bp-2027</code>. Both documents are Ingenium-corporation-wide publications (annual report and rolling five-year corporate plan) covering all three sites; they are registered against two different site-level org_ids in this atlas because Ingenium publishes one report per year, not one per site. This org (<code>fed-national-museum-science-technology</code>, the legal Crown corporation itself, styled Ingenium) is the natural, non-derivative home for these documents — unlike the CAFM registration, which borrows a corporate-wide document for a single-site brief. This brief cites CSTM- and corporation-wide content directly from these documents; where a figure is corporation-wide rather than CSTM-specific, it is labeled as such.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="National Museum of Science and Technology - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -246,7 +248,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes (Corporate Plan Summary 2026-2027 to 2030-2031 — read directly for CSTM-specific capital and attendance tables and the corporation-wide deficit trajectory)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Full-form applied, with the large capture gap named prominently as instructed.</strong> 12 documents carry real content — 5 annual reports (2021-2025, but only 2021 read in depth; 2022-2024 not opened) and 7 rolling corporate-plan summaries (2025-2031, but only the oldest, bp-2025, and newest, bp-2031, read in depth). This comfortably clears the ≥3-usable-document full-form threshold, but the usable window is entirely post-2020 — two full decades of the corporation's own reported history (2000-2020, spanning its founding-era mandate, its operation before the CSTM's 2014-2017 renewal closure, and the closure/reopening itself) are absent from this archive and cannot be analyzed. Documents read in depth: ar-2021 (oldest usable, full — pandemic-year message, governance, and MD&amp;A sections), bp-2025 (oldest corporate plan, full — museum descriptions, Ingenium Centre capital-cost table), bp-2031 (newest corporate plan, targeted — CSTM-specific capital and attendance tables, corporation-wide deficit trajectory), ar-2025 (newest annual report, targeted — governance/leadership-continuity check). Three annual reports (ar-2022, ar-2023, ar-2024) were keyword-screened but not opened. Five corporate plans (bp-2026 through bp-2030) were not opened at all.</p>
 <h4>Priority evolution</h4>
 <p><strong>2020-21 (ar-2021, 9a64032c1a0a):</strong> First-year implementation of Ingenium's five-year 2020-2025 Strategic Plan (three goals: Collaborate to Innovate; Access for All; Strengthen our Foundations) coincides directly with COVID-19 onset — "the greatest challenge Ingenium has ever faced," per Chair Neil Russon and Director/CEO Christina Tessier's joint message. Museum and site closures, suspended travelling exhibitions, and a pivot to virtual programming (Curating Under Quarantine crowd-sourcing project; participation in the Connected North distance-learning program reaching 40+ remote schools, "many located in Indigenous communities"). Construction/consolidation of the new Ingenium Centre continues through the pandemic; the facility receives Gold-Level Accessibility Certification from the Rick Hansen Foundation. First two Indigenous Sky Symposium sessions held (September equinox, December solstice), reaching 680 participants. A new Sustainability and Outreach Committee is established at the Board level, August 2020.</p>
@@ -282,7 +284,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: the reason for the Sustainability and Outreach Committee's September 2025 dissolution — neither document available to this org names one (same open question the CAFM sibling brief raised).</li>
 <li>⚠️ Still being checked: whether CSTM's comparatively thin capital allocation in the 2026-2031 plan reflects a deliberate site-prioritization decision (e.g., CASM or CAFM having more urgent facility needs) or simply sequencing after the Ingenium Centre's completion absorbed CSTM-era capital in the 2016-2020 window; no document read states a reason.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

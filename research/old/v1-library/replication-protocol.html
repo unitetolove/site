@@ -67,7 +67,7 @@
 <hr />
 <h2>PART 2 — THE DOCUMENT ARCHITECTURE (taxonomy that scaled)</h2>
 <p>A flat pile of research notes does not scale past a handful of documents. This taxonomy, arrived at empirically, did:</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="PART 2 — THE DOCUMENT ARCHITECTURE (taxonomy that scaled)"><table>
 <thead>
 <tr>
 <th>Prefix</th>
@@ -117,7 +117,7 @@
 <td>Local working-directory scratch only; never uploaded</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>A note for anyone replicating this on a platform without folder-upload support (Claude Projects, as of this project): don't design around a folder split at all.</strong> This project originally used a real <code>_internal/</code> subfolder to separate process/review documents from public-facing research — a working, sound idea for a local filesystem — but it silently broke the moment the library was uploaded as Project knowledge, since that platform flattens every upload into one directory regardless of local structure. The fix applied here (July 3, 2026) was to track the same distinction by an explicit, maintained list in <code>MAIN_REF_001_Index.md</code> instead of by path. <strong>Design for the flat case from the start</strong> if you're building this on a platform with the same constraint — a list is more maintenance overhead than a folder, but it's the one that actually survives upload.</p>
 <p><strong>Lesson:</strong> Don't split documents prematurely, but do split once a document exceeds roughly 400-500 lines or covers more than one clearly distinct question. HMK-001 became an unwieldy 1,450+-line "everything" document because early sections were never spun out — a replicator should split earlier than this project did.</p>
 <hr />

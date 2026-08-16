@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; People &amp; Equity</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>People &amp; Equity</h1>
@@ -73,12 +75,12 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (1 row)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (1 row)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Budget / estimates</td><td><a href="https://www.toronto.ca/wp-content/uploads/2026/03/8dff-2026-Public-Book-CMS-V1.pdf">2026 Program Summary -- City Manager Services (People &amp; Equity subsection)</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: embedded-in-parent (City Manager Services 2026 Program Summary.)</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -103,7 +105,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>People &amp; Equity is a division of the City of Toronto (no division-specific enabling statute; the City itself operates under the City of Toronto Act, 2006, ss.6(1), 7). It delivers corporate HR advisory services, employee relations, equity/reconciliation integration into workforce policy, health &amp; safety compliance, recruitment/talent acquisition, and learning &amp; development, including a Human Rights Office handling complaint resolution and mandatory training. It sits within the City Manager Services cluster alongside the City Manager's Office, Communications, and the FIFA World Cup 2026 Secretariat. The backgrounder flags an unresolved ambiguity in the source document's own text about a "transfer of IAO and Equity group to Social Development" footnote (⚠️ still being checked, backgrounder) — this brief does not resolve it either.</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 1 ok / 0 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="People &amp; Equity - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -122,7 +124,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full 2026 Program Summary (City Manager Services), 65,523 chars — shared budget-cluster book, see below</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Registry (our public-body registry) carries 1 row for this org (2026); it is archived and appears above; there are no <code>staged</code> or <code>missing</code> rows to report.</p>
 <p>This document is a shared budget-cluster book covering multiple City Manager Services divisions (City Manager's Office, Communications, People &amp; Equity, FIFA World Cup 2026 Secretariat); it is byte-identical (sha256-12 <code>75474e23efd4</code>) to <code>tor-communications</code>'s 2026 registered document — see that batch’s own build note §B2. Analysis below is scoped to the "People &amp; Equity (P&amp;E)" section only (pp.3, 7-8, 14, 19).</p>
 <p><strong>SHORT-FORM RULE APPLIES (extreme case): a single usable document cannot exhibit evolution.</strong> The sections below state only what this one document establishes.</p>
@@ -146,7 +148,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li><strong>Cross-reference, not part of this org's own series:</strong> a same-named "People and Equity" 2025 budget line ($60.949M gross / $53.164M net) appears within <code>tor-communications</code>'s separately-registered 2025 document (sha256-12 <code>3d0b211d999c</code>), which covers the prior year's "City Manager's Office" cluster. That document is not registered to <code>tor-people-equity</code> and is not treated as part of this org's own archived series, but is noted here descriptively: if the same underlying division, its gross budget declined modestly ($60.949M → $59.868M) while net rose modestly ($53.164M → $54.010M) year over year — consistent with, not contradicting, this brief's single-document read. ⚠️ still being checked this comparison against a primary source scoped to this registry id before relying on it.</li>
 <li>⚠️ Still being checked: registry carries only 1 row for this org (2026); no earlier document is registered, so nothing about this division's history before 2026 is establishable from this org's own archived series.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

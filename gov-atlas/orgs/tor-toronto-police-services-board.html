@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; Toronto Police Services Board</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Toronto Police Services Board</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (6 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (6 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2030</td><td>Strategic plan</td><td><a href="https://tpsb.ca/wp-content/uploads/2026/06/The-TPSB-Strategic-Plan-for-Policing-in-Toronto-1.pdf">Strategic Plan for Policing in Toronto 2026-2030</a></td><td>archived</td><td></td></tr>
@@ -83,7 +85,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2008</td><td>Annual report</td><td><a href="https://www.toronto.ca/legdocs/mmis/2009/ex/bgrd/backgroundfile-23016.pdf">Toronto Police Service 2008 Annual Report</a></td><td>archived</td><td></td></tr>
 <tr><td>2000</td><td>Annual report</td><td><a href="https://www.toronto.ca/legdocs/2001/agendas/council/cc011002/pof12rpt/cl012.pdf">Toronto Police Service - Annual Report 2000</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -112,7 +114,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 5 ok / 0 stub-suspected / 0 extract-failed.</p>
 <p>Registry (our document registry) carries 5 rows for this org, spanning 2000-2030 (with sp-2030 keyed to its plan's end-year, actually published 2026); all 5 are <code>archived</code> and appear below. No <code>staged</code> or <code>missing</code> rows are recorded for this org in the registry pull behind this batch — the prior "no series" status was a location/access failure (an unindexed empty <code>robots.txt</code> <code>Disallow</code> at tpsb.ca and legacy legdocs.toronto.ca paths not previously crawled), not a disclosure gap, and is not the same thing as a registry row marked <code>missing</code>.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Toronto Police Services Board - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -159,7 +161,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — Board-received 2024 Parking Enforcement Unit annual report, 11,926 chars, full text read</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>All five documents were read in full; none was sampled. TRUE usable rate: 5/5 (100%), matching <code>_index.json</code> exactly — no stub-detector disagreement in either direction for this org.</p>
 <p><strong>FULL-FORM APPLIED, WITH SCOPING DISCIPLINE.</strong> Five usable documents clears the ≥3 threshold, but the years are five isolated points across 25 years (2000, 2008, 2018, 2024, 2026) with no two documents adjacent — this is not a continuous run. Below, priority language is compared only where two documents actually bracket a comparable period (mission statement, 2008 vs. 2026), and no claim of a trend through the unread years (2001-2007, 2009-2017, 2019-2023) is made.</p>
 <h4>Priority evolution</h4>
@@ -199,7 +201,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ still being checked (carried from backgrounder): the Board's exact current membership count and composition split (council/provincial/community appointees) was not independently confirmed from a Toronto-specific primary source in the backgrounder pass; the five documents read for this brief do not resolve it either, though sp-2030 does name Councillor Shelley Carroll as Chair.</li>
 <li><strong>Backgrounder reconciliation, 2026-08-02:</strong> this brief was written before the org's Wave-1 backgrounder existed, and had substituted the Toronto Police Service's backgrounder as its lens. The Board's own backgrounder now exists and corroborated every claim already in this brief's body — the brief's priority-evolution, budget, and governance findings needed no correction, since the brief already correctly distinguished the Board's governance role from the Service's operational one throughout. Only the Backgrounder summary section was rewritten to cite and summarize the org's own backgrounder.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

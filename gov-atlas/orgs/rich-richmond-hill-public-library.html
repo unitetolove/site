@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-richmond-hill.html">Municipal — Richmond Hill</a> &middot; Richmond Hill Public Library</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Richmond Hill Public Library</h1>
@@ -73,12 +75,12 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (1 row)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (1 row)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2024</td><td>Annual report</td><td><a href="https://www.rhpl.ca/annual-report-2024">2024 Annual Report</a></td><td>staged</td><td><span class="incompleteness-tag">⚠️ still being checked — the fetch failed on 2026-07-28; ⚠️ still being checked — the fetch failed on 2026-08-01; ⚠️ still being checked — the fetch failed on 2026-08-02; ⚠️ still being checked — the fetch failed on 2026-08-04; ⚠️ still being checked — the fetch failed on 2026-08-05; ⚠️ still being checked — the fetch failed on 2026-08-06</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -104,7 +106,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 0 ok / 0 stub-suspected / 0 extract-failed. This org's extraction index is empty because no document has ever been successfully archived for it.</p>
 <p>Registry (our document registry) carries 1 row for this org (<code>rich-richmond-hill-public-library-ar-2024</code>, 2024 Annual Report), <code>archive_status: staged</code> — a known source URL exists (https://www.rhpl.ca/annual-report-2024) but capture has never succeeded. 0 rows are <code>archived</code>, 1 is <code>staged</code>, 0 are <code>missing</code>.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Richmond Hill Public Library - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -123,7 +125,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td><strong>failed</strong> (staged; registry flags <code>fetch-failed</code> on 2026-07-28, 08-01, 08-02, and 08-04; this review's own live re-test of the exact URL returns HTTP 404 Not Found)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h4>Priority evolution</h4>
 <p>Not determinable. No document — archived or otherwise — was successfully read for this org in this review; any priority narrative would have to be invented rather than grounded in text actually read, which this task's hard rules prohibit.</p>
 <h4>Priorities added, dropped, renamed</h4>
@@ -139,7 +141,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li><strong>Recommended remediation (not performed in this review):</strong> search RHPL's own site (e.g. https://www.rhpl.ca/about-the-library/strategic-plan-reports, the registry's <code>strategy_current_url</code>) for a current annual-report URL, since library sites commonly restructure report pages by publication year; the 2024 report may now live at a different path than the one registered.</li>
 <li>No detector disagreement to report: the stub/extract-failed detector never ran against this org, since no document was ever successfully archived for it to evaluate.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

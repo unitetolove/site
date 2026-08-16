@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; Auditor General&#x27;s Office</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Auditor General&#x27;s Office</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (45 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (45 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Business / corporate plan</td><td><a href="https://www.torontoauditor.ca/report/auditor-generals-office-2026-work-plan-and-budget-highlights/">Auditor General&#x27;s Office 2026 Work Plan and Budget Highlights</a></td><td>archived</td><td></td></tr>
@@ -122,7 +124,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2004</td><td>Business / corporate plan</td><td><a href="https://www.toronto.ca/legdocs/2004/agendas/committees/au/au040121/it001.pdf">2004 Operating Plan and Budget - Auditor General&#x27;s Office</a></td><td>archived</td><td></td></tr>
 <tr><td>2004</td><td>Business / corporate plan</td><td><a href="https://www.toronto.ca/legdocs/2004/agendas/committees/au/au040121/it002.pdf">Audit Work Plan - 2004</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -147,7 +149,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>The office is a statutory accountability officer created under Part V of the City of Toronto Act, 2006 (s.177-178), reporting directly to City Council and operating independently of City management; its core mandate is assisting "city council in holding itself and city administrators accountable for the quality of stewardship over public funds and for achievement of value for money in city operations." Council's Audit Committee provides operational oversight. The office was first established in May 2002, predating the 2006 Act. Its approved 2025 operating budget was $8.651 million, a 4.3% increase over 2024. Beverly Romeo-Beehler was Auditor General through the years covered by most of this series; Tara Anderson has held the role since December 17, 2022 per the backgrounder (this transition is not independently documented within the 44 archived docs read for this brief — see Residuals &amp; gaps).</p>
 <h4>Series inventory</h4>
 <p>All 44 registry entries were fetched successfully (status "ok" in <code>_index.json</code>); two are landing-page stubs with negligible substantive content (noted below). No PDF/binary extraction failures occurred in this series.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Auditor General&#x27;s Office (City of Toronto) - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -467,7 +469,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h4>Priority evolution</h4>
 <p><strong>2002 origin (background, cited in bp-2004-2, 69fac1002a26):</strong> The Auditor General's Office was created "pursuant to a report prepared by Mr. Denis Desautels, former Auditor General of Canada, in May 2002 under a by-law approved by Council," appointed by and independent of City administration.</p>
 <p><strong>2004 (bp-2004, 51ac3e8aa2c3; bp-2004-2, 69fac1002a26):</strong> Founding-era baseline. Budget request $3,481,500 (against a $3,366,800 base), 92% salaries/benefits. First Auditor General named in this series is Jeffrey Griffiths. 2004 is explicitly "the first year that the Auditor General is not required to conduct attest audits" of Community Centre/Arena Boards of Management — that work moved to a private accounting firm (Grant Thornton LLP) under a recently amended Municipal Act s.296(4), with the AG retaining an oversight-only role; the City's own attest auditor was Ernst &amp; Young LLP. The office used a formal risk-assessment model (~120 potential audit units, ~130 staff interviews, weighted risk factors) to build its work plan — a methodology it says was "a best practice" among North American peer cities. Scope explicitly named agencies/boards/commissions: TTC, Toronto Police Service, Toronto Parking Authority, Toronto Public Library, Toronto Zoo, Exhibition Place. Two of the highest-risk-scored units (Waste and Wastewater Services; Purchasing and Materials Management) were deliberately excluded from the 2004 plan for stated reasons (organizational change underway; recent prior review), showing risk-ranking did not mechanically determine the work plan. Total identified annual savings from AG work were estimated at $7.6 million (bp-2004, 51ac3e8aa2c3) — the "value" framing already present at founding, later formalized into a recurring named report series.</p>
@@ -528,7 +530,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>The two 2004 documents (51ac3e8aa2c3, 69fac1002a26) were captured under a different WARC batch date (2026-08-01) than the rest of the series (2026-07-30); noted for completeness, with no substantive implication for content reliability.</li>
 <li>No archive_status=missing flags or era:pre-web-baseline flags apply to any row in this registry; all identified gaps above are either registry gaps (documents never registered for a given year) or thin-content extractions (documents registered and fetched, but substantively uninformative), not fetch failures.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

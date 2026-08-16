@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; Toronto Water</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Toronto Water</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (37 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (37 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Other</td><td><a href="https://www.toronto.ca/legdocs/mmis/2025/ex/bgrd/backgroundfile-252172.pdf">Reducing Stormwater Runoff and Mitigating Basement Flooding</a></td><td>archived</td><td></td></tr>
@@ -114,7 +116,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2006</td><td>Annual report</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td><strong>missing</strong></td><td><span class="incompleteness-tag">⚠️ Still being checked: division-created-2005</span></td></tr>
 <tr><td>2005</td><td>Annual report</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td><strong>missing</strong></td><td><span class="incompleteness-tag">era:pre-web-baseline</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -139,7 +141,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>Toronto Water is a non-statutory City of Toronto administrative division (not a distinct corporation or board), operating under the City of Toronto Act, 2006 and Toronto Municipal Code Chapters 851 (Water Supply) and 681 (Sewers). It runs roughly $90 billion in infrastructure — eight treatment plants, pumping stations, watermains and sewers — with about 1,700 staff serving over 3.6 million people in Toronto and parts of York and Peel. It reports through the Deputy City Manager, Infrastructure Services to City Council and is led by General Manager Lou Di Gironimo, named consistently as report signatory across every document in this series. The backgrounder cites a 2026 approved operating budget of $542.4 million gross / $1,654.1 million revenue / $1,111.7 million net surplus applied to capital; none of the 18 archived documents in this review independently confirm those exact figures (⚠️ still being checked — not cross-checked here, as none of the 18 docs is a budget document).</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 18 ok / 0 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Toronto Water - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -277,7 +279,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Note on doc-type labelling: <code>_index.json</code> labels all 18 docs <code>subject-report</code> or <code>other</code>; there is no separate "annual-report" corporate-strategy series for this org (consistent with Toronto Water being a division, not a Crown corporation with its own annual report to Parliament/shareholders). The four <code>ar-*</code> docs are themselves regulatory <em>Drinking Water System</em> Annual Reports (per-treatment-plant compliance filings under O. Reg. 170/03), not organization-wide strategic annual reports — see Residuals &amp; gaps.</p>
 <h4>Priority evolution</h4>
 <p><strong>2022 (ar-2022 ff0f758ef4bd; sr-2022 12ac7145740e; sr-2022-2 6e67835d65d2; sr-2022-3 f41d8a49b8ae):</strong> Baseline year. The four regulatory Annual Reports show routine per-plant compliance (four water treatment plants — R.C. Harris, R.L. Clark, F.J. Horgan, Island — plus the distribution system), zero non-compliance incidents, and capital line items totalling roughly $226M across watermain replacement ($96.1M), watermain rehabilitation ($65.8M), water service replacement ($37.6M) and facility rehab/standby power ($22.6M) (ar-2022, ff0f758ef4bd). The Lead in Drinking Water Mitigation Strategy Annual Report shows 20,700 remaining City-owned lead water services (down from ~38,000 estimated in 2014 and ~65,000 in 2007), and zero regulated tap-water samples exceeding either the 10 ppb Ontario limit or the tighter 5 ppb Health Canada guideline then under MECP consideration (sr-2022-3, f41d8a49b8ae).</p>
@@ -314,7 +316,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: outcome of the Q3 2025 committee report-backs on green infrastructure incentive program design and expanded BFPSP subsidies, promised in the January 2025 report (oth-2025) — no document in this archived set post-dates that promise on the incentive-design question specifically (the October 2025 audit is a separate, contract-management-focused document).</li>
 <li>⚠️ Still being checked: whether Ontario's MECP has moved to formally adopt the 5 ppb lead guideline referenced as "under consideration" in every lead-mitigation report 2022-2025 — the archived series ends with it still described as pending.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

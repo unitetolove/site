@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; Financial Planning</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Financial Planning</h1>
@@ -73,13 +75,13 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (2 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (2 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Budget / estimates</td><td><a href="https://www.toronto.ca/wp-content/uploads/2026/03/8dd5-2026-Public-Book-CFO-V1.pdf">Financial Planning program within Office of the CFO and Treasurer -- 2026 Program Summary</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: embedded-in-parent (Office of the CFO and Treasurer 2026 Program Summary.)</span></td></tr>
 <tr><td>2025</td><td>Budget / estimates</td><td><a href="https://www.toronto.ca/wp-content/uploads/2025/04/9535-2025-Public-Book-CFO-V1.pdf">Financial Planning program within Office of the CFO and Treasurer -- 2025 Program Summary</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: embedded-in-parent (Office of the CFO and Treasurer 2025 Program Summary.)</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p>No backgrounder written for this org yet.</p>
@@ -93,7 +95,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 2 ok / 0 stub-suspected / 0 extract-failed.</p>
 <p>Registry (our document registry) carries 2 rows for this org spanning 2025-2026; both are <code>archived</code> and appear below — no <code>staged</code>/<code>missing</code> gaps for this org.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Financial Planning - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -119,7 +121,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full "Office of the CFO and Treasurer" 2026 Program Summary, 69,639 chars; Financial Planning section isolated within it. <strong>Shared document</strong>: byte-identical body (diff-confirmed) to <code>tor-finance-treasury-services-bud-2026</code> and <code>tor-purchasing-materials-management-bud-2026</code>.</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>that batch’s own build note §B2 shared-book note:</strong> this document is the "CFO" cluster book, covering the whole Office of the CFO and Treasurer as one PDF shared across three org_ids in this batch (<code>tor-finance-treasury-services</code>, <code>tor-financial-planning</code>, <code>tor-purchasing-materials-management</code>). This brief scopes every claim below to the "Financial Planning" service subsection specifically (the "What Service We Provide" entry, the "Financial Planning" rows of Table 1/Table 2, and the "Financial Planning" row of the outcome-measures table) — not to the CFO office's totals, which are <code>tor-finance-treasury-services</code>'s own material.</p>
 <p><strong>that batch’s own build note §B1 short-form note:</strong> 2 archived documents, one fiscal year apart. Per §B1, short-form treatment applies as this cohort's default; the sections below state a single honest 2025→2026 comparison rather than a manufactured multi-year trend.</p>
 <h4>Priority evolution</h4>
@@ -144,7 +146,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li><strong>Isolation caveat</strong>: the 2026 document's "Our Experience and Success" / "Priority Actions" narrative sections are not broken out per-service the way the Financial Operations and Control cluster book is (see <code>tor-accounting-services</code>, <code>tor-pension-payroll-employee-benefits</code>, <code>tor-revenue-services</code> briefs for the contrast); items cited above under "Priorities added, dropped, renamed" were selected because they name capital-funding/development-charge tools that are Financial Planning's stated deliverables, but the CFO book's own text does not explicitly attribute every such bullet to Financial Planning specifically as opposed to the office as a whole. Flagged per that batch’s own build note §B2 rather than presented as a clean per-service attribution.</li>
 <li>No fiscal years earlier than 2025 are readable for this org in this archived set; any priority changes or budget inflection points before FY2025 are entirely unestablished here.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-york.html">Municipal — York</a> &middot; York Region Transit</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>York Region Transit</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (4 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (4 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2030</td><td>Business / corporate plan</td><td><a href="https://online.flippingbook.com/view/1036615928/">Moving to 2030 - YRT 5-year Business Plan</a></td><td>archived</td><td></td></tr>
@@ -81,7 +83,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2024</td><td>Subject report</td><td><a href="https://online.flippingbook.com/view/946116602/">2024 Transit Initiatives</a></td><td>archived</td><td></td></tr>
 <tr><td>2015</td><td>Subject report</td><td><a href="https://www.york.ca/media/69131/download">2015 Annual Service Plan (YRT/Viva Transit Service Guidelines)</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -106,7 +108,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>This org now has its own backgrounder, <code>our research file for that body</code> (Wave 1, 2026-08-02), which this brief reads directly (superseding the earlier practice of reading through the parent Region's backgrounder, which did not mention transit specifically). The backgrounder confirms YRT is a division of The Regional Municipality of York, not a separately incorporated body, operating under the Region's general municipal authority to provide transportation systems under the Municipal Act, 2001; as a Regional division it has no independent board and reports through Regional administrative staff to York Regional Council. It notes a governance linkage this brief's own document set does not surface: YRT Special Constables, who exercise limited peace-officer powers for transit security, operate under an agreement with the York Regional Police Service Board, with appointment and training now regulated under the Community Safety and Policing Act, 2019 (CSPA) — the correctly-named 2019 statute, which corroborates this brief's own ⚠️ still being checked flag (below) that sr-2027's reference to a "Community Safety and Police Act, 2029" is very likely a drafting variant or transcription artifact, not a distinct future statute. The backgrounder flags ⚠️ still being checked on a YRT-specific operating/capital budget figure (none located; YRT's budget is set as part of York Region's consolidated regional budget) and on YRT's founding date/predecessor-agency history — neither is resolved by the two readable documents in this brief either.</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 2 ok / 2 stub-suspected / 0 extract-failed. Registry (our document registry) carries 4 rows for this org spanning 2015-2030 (by nominal document year, not capture year); all 4 are <code>archived</code> and appear below — the boot message's org facts confirm 4 rows, census 2 ok / 2 stub-suspected, matching this index exactly. No <code>staged</code> or <code>missing</code> registry rows are recorded for this org.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="York Region Transit - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -146,7 +148,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full "York Region Transit's 2027 Annual Transit Plan" public-consultation summary, 32,409 chars, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>SHORT-FORM RULE APPLIES: own read confirms only 2 usable documents (&lt;3 threshold).</strong> The two readable documents are twelve years apart (2015, 2027) and are different document kinds — a technical Annual Service Plan defining performance-indicator methodology (route coverage, on-time targets, vehicle capacity) versus a public-consultation Annual Transit Plan summarizing proposed route-by-route service changes for a single forward year. No genuine trend is manufacturable from this pair; the sections below state only what each document individually establishes.</p>
 <h4>Priority evolution</h4>
 <p>A 2015 technical service-design manual and a 2027 route-change consultation document, twelve years apart, cannot establish a priority-evolution narrative — they are not comparable document types and do not share a common priority-list structure to track across time. What each individually establishes: sr-2015 is entirely methodological, defining performance indicators (net cost per passenger, on-time performance targets of 90-95%, accident rate, Mean Distance Between Failures, vehicle capacity guidelines) used to evaluate YRT/Viva conventional and Mobility Plus specialized service (ec95f9ad55cb) — it does not state organizational priorities in a strategic sense. sr-2027, by contrast, is organized around concrete 2027 service-year priorities visible in its "Other Projects and Program" section, grouped under five named headings: Financial Responsibility, Equity and Diversity, Safety, Innovation, and Customer Focus (1a2ba880ec41) — a strategic-priority framework with no equivalent structure in sr-2015. ⚠️ Still being checked: whether this five-category framework (Financial Responsibility / Equity and Diversity / Safety / Innovation / Customer Focus) originated in the 2026-2030 Business Plan referenced within sr-2027 itself ("The Business Plan informs the projects and programs that York Region Transit implements on an annual basis," 1a2ba880ec41) — that Business Plan document is the stub-suspected bp-2030 above and its content is not recoverable from this archived set.</p>
@@ -170,7 +172,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: the "Community Safety and Police Act, 2029" reference in sr-2027 (1a2ba880ec41) — statute name/year does not match the Community Safety and Policing Act, 2019 (CSPA) named elsewhere in this corpus; see Budget &amp; mandate inflection points above.</li>
 <li>⚠️ Still being checked: whether the five-category priority framework in sr-2027 (Financial Responsibility / Equity and Diversity / Safety / Innovation / Customer Focus) is itself new as of the 2026-2030 Business Plan or a continuation of an earlier framework — the plan document that would confirm this (bp-2030) is unrecoverable in this archived set.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

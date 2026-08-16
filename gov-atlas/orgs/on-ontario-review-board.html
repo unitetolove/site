@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/provincial-on.html">Provincial — Ontario</a> &middot; Ontario Review Board</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Ontario Review Board</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (40 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (40 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2029</td><td>Business / corporate plan</td><td><a href="https://www.orb.on.ca/scripts/en/resources/ORB%20Business%20Plan%202026-2029%20%20-%20English.pdf">ORB Business Plan 2026-2029</a></td><td>archived</td><td><span class="incompleteness-tag">new-row 2026-08-05: GOV-ATLAS-EXPANSION-d1 discovery-verification pass, content-verified or HTTP-200-confirmed this review</span></td></tr>
@@ -117,7 +119,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2002</td><td>Annual report</td><td><a href="https://www.orb.on.ca/scripts/en/resources/Annual%20Report%202001-2002.pdf">Ontario Review Board Annual Report 2001/2002</a></td><td>archived</td><td></td></tr>
 <tr><td>2001</td><td>Annual report</td><td><a href="https://www.orb.on.ca/scripts/en/resources/Annual%20Report%202000-2001.pdf">Ontario Review Board Annual Report 2000/2001</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -142,7 +144,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>The ORB is "a unique tribunal that forms a critical component of the Canadian justice system," created under Part XX.1 of the Criminal Code with jurisdiction over accused persons found not criminally responsible (NCR) or unfit to stand trial, but administratively "not subject to the provisions of the Statutory Powers Procedure Act" the way provincial tribunals are (ORB Annual Report 2024-25, p.5, c5ce9dc702c0). The Board is chaired by a sitting or retired superior-court judge, sits panels of five (Chair/Alternate Chair, two psychiatrists or a psychiatrist-and-psychologist, a legal member, a public member), and had 132 members and 17 Ministry-of-Health staff as of March 31, 2025 (same source, p.6, 11). Backgrounder-cited FY2024-25 figures — 1,590 accused under jurisdiction, 224 new accused (57 unfit, 167 NCR), 1,913 hearings, 100 absolute discharges, $7,057,851 total expenditures (up from $5,964,258 in FY2023-24) — are all independently re-confirmed against the primary text below (this brief relays, and separately re-verifies, rather than asserting independent discovery); the FY2023-24 figure is also independently corroborated in the newly-read bp-2028 (d85420e59f26), which cites the identical $5,964,258 as an "actual" expenditure line. The backgrounder's one open item — the exact year Ontario's Review Board was first established under the pre-1992 Lieutenant-Governor-warrant predecessor system — is narrowed but not resolved by the newly-read Business Plan series' own "History" section; see Priority evolution and Residuals &amp; gaps.</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 40 ok / 0 stub-suspected / 0 extract-failed (25 annual-report + 15 business-plan). The registry (this library's government-document registry, filtered <code>on-ontario-review-board</code>) also lists exactly 40 rows, all <code>archive_status=archived</code> — extraction-dir and registry counts match exactly for this org, with no <code>staged</code>/pending-capture rows to carry forward (unlike several other orgs in this batch). The 25 AR rows are unchanged from the v1.0 brief and are re-verified rather than re-read line-by-line except where spliced against the new BP content below; the 15 BP rows (bp-2015 through bp-2029) are new this review and were read in full.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Ontario Review Board - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -434,7 +436,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — Business Plan 2026-2029, 29,483 chars, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Combined, the AR series' 2001-2025 retrospective window and the BP series' 2012-2029 forward-looking window (each BP is a rolling 3-4-year-forward plan) give this brief a 28-year documentary footprint (2001-2029) — the AR series still the record of what happened; the BP series the record of what the Board, in real time, said it intended, feared, and was budgeting for.</p>
 <h4>Priority evolution</h4>
 <p><strong>2012-2015 (bp-2015, 45c224a8d1b7) — the earliest strategic document in either series:</strong> this plan predates every other document read for this brief and captures the Board mid-transition to a new Chair ("The ORB is currently working with a new Chair and is prepared for a transitional year going forward"), anticipating what the AR series (ar-2012, 5c603d53859f) confirms as Richard D. Schneider's June 27, 2012 appointment. Membership stood at 164 (46 Chair/Alternates, 11 Lawyers, 81 Psychiatrists/Psychologists, 26 Public Members) — the highest single figure anywhere in either series. This is also the only vantage in the full 40-document record from which the Board narrates its own pre-1992 institutional history: a dedicated "History" section states that in 1892, in adopting Britain's draft Criminal Code, Canada gave Lieutenant Governors custody of "mentally disordered accused," with an advisory body in Ontario called "the Lieutenant Governor's Board of Review"; that the Supreme Court struck this system down in 1991 as Charter-violating; and that "on February 4, 1992, Bill C-30 was enacted creating Review Boards in every province and territory," eliminating the Lieutenant Governor's Warrant system and introducing the term "not criminally responsible." This directly, if not completely, narrows the backgrounder's ⚠️ still being checked on the pre-1992 predecessor: it is now grounded in the Board's own primary planning document (not merely a "search-derived summary," as the backgrounder characterized it) rather than resolved to an exact founding year for the Ontario body specifically (see Residuals). bp-2015 also documents a chronic structural budget deficit: the Board's Vote-and-Item allocation was frozen at $3,975,400 from FY2008-09 through FY2011-12 while actual expenditure ran $6.8-7.3M every year — a roughly $3M/year gap the Board says was closed only by a FY2012-13 "right-sizing" (see Budget &amp; mandate inflection points).</p>
@@ -493,7 +495,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li><strong>Backgrounder's ⚠️ still being checked on the ORB's pre-Part-XX.1 institutional history is now narrowed but not closed.</strong> The BP series' "History" section (bp-2015 through bp-2026) grounds the 1892/1991/1992 narrative in a primary Board document rather than the backgrounder's own "search-derived summary," and names the pre-1992 Ontario body as "the Lieutenant Governor's Board of Review" — but no document in either series states the specific year that body itself began operating in Ontario, as distinct from the 1892 date tied to Canada's first Criminal Code nationally. Still ⚠️ still being checked for the exact Ontario-specific founding year.</li>
 <li><strong>R v. Bharwani outcome remains unresolved within this series</strong>: ar-2024 (888a940c3df8) reports that "an application by the accused for leave to appeal to the Supreme Court of Canada has been granted"; no document in either series — AR or BP — mentions the case again, so the Supreme Court's disposition (if any occurred) is not established by this archived set. (Carried forward from v1.0; the BP series adds nothing new here.)</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

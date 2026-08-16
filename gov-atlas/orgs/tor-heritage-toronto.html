@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; Heritage Toronto</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Heritage Toronto</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (12 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (12 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Annual report</td><td><a href="https://www.heritagetoronto.org/2025-annual-report/">Heritage Toronto Annual Report 2025</a></td><td>archived</td><td></td></tr>
@@ -89,7 +91,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2016</td><td>Annual report</td><td><a href="https://www.heritagetoronto.org/wp-content/uploads/PDFs/Annual_Reports/HeritageToronto_AnnualReport_Web2016.pdf">Heritage Toronto Annual Report 2016</a></td><td>archived</td><td></td></tr>
 <tr><td>2015</td><td>Annual report</td><td><a href="https://www.heritagetoronto.org/wp-content/uploads/PDFs/Annual_Reports/HeritageToronto_AnnualReport_Web2015.pdf">Heritage Toronto Annual Report 2015</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -115,7 +117,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <h4>Series inventory</h4>
 <p>The registry carries 12 rows for <code>tor-heritage-toronto</code>: 10 annual-report-type rows (2015, 2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024, 2025), 1 financials row (2025), and 1 row (2018 annual report) flagged <code>missing</code> / <code>⚠️ still being checked — the web archive was unreachable when we looked</code> (last checked 2026-07-23, a distinct and older check date than the other 11 rows' 2026-07-30/2026-08-01). Of the 12 registered documents, 11 were archived and extracted; the 2018 annual report was never captured at all (a capture failure, not an extraction failure — no <code>.txt</code> exists to check). <strong>All 11 extracted documents were opened and read in full.</strong> None are stubs, 404 pages, or boilerplate-only captures: each contains genuine, substantial, internally coherent narrative and/or financial content proportionate to its reported character count (5,257 to 139,888 chars per <code>_index.json</code>). <strong>True usable-content rate: 11 of 11 extracted documents (100%); 11 of 12 registered documents (91.7%)</strong>, with the shortfall being the one never-archived 2018 report, not a false "ok" status.</p>
 <p>One extraction-quality nuance: <code>tor-heritage-toronto-ar-2025</code> is genuine content but is a short HTML landing/summary page (<code>content_type: text/html</code>), not a full PDF annual report like 2016–2024. It links out to sub-pages ("Tours Program Highlights," "Plaque Program Highlights," "Find out more" for Emerging Historians/Equity Heritage Initiative/Volunteers, "Read here" for financials) that were <strong>not</strong> separately archived in this series — see Residuals &amp; gaps.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Heritage Toronto - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -211,7 +213,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes (the only fully audited financial statement in this series)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h4>Priority evolution</h4>
 <p><strong>2015 (ar-2015, 5ae8c0c5bebc):</strong> The cover page describes Heritage Toronto as "a charitable arms-length agency of the City of Toronto established in 1949." The Executive Director/Chair letter states the Board "recently refreshed the Strategic Plan that will guide all our combined efforts in the coming period" — no specifics of that plan are given in this document. Because "Board of Directors appointments are timed to match the City elections process," the 2015 report describes a wholesale Board turnover ("twelve retiring Board members... roughly half of the Board" replaced by "a new group of eleven Directors") tied to the 2014 municipal election cycle. Programmatically, the report describes the Tours, Plaques &amp; Markers, Awards &amp; Kilbourn Lecture, Cultural Heritage Programming, Lectures, and State of Heritage Report as the core program set; the <strong>Century House plaque program launches in 2015</strong> ("we launched the Century House program, which celebrates... houses that have been a part of the architectural landscape... for over a century," 37 markers in its inaugural year). FY2014 financials (audited): total revenue $768,737, including a $311,800 City of Toronto grant; total expenses $768,901; operating fund deficiency of $164.</p>
 <p><strong>2016 (ar-2016, 3a3e62e319dc):</strong> For the only time in the archived series, the annual report states an explicit named <strong>Vision</strong> ("To be the recognized voice of Toronto's heritage stories") and three <strong>Strategic Directions</strong>: "Transform Programming," "Raise Profile," "Grow Financial Capacity." The Year-End Message reports "a 2.6% reduction in funding from the City of Toronto" in 2016, absorbed via "savings resulting from program reviews and staffing vacancies." The <strong>Heritage Primer</strong> seminar series launches in November 2016. Executive Director Francisco Alvarez departs in September 2016; Kaitlin Wainwright becomes Interim Executive Director. FY2015 financials (audited): total revenue $741,958, City grant $311,966; total expenses $742,328; deficiency of $370.</p>
@@ -278,7 +280,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: whether "State of Heritage 2025: From Community Voices to Action" (launched March 2025, per ar-2025) is the same deliverable ar-2023 and ar-2024 describe as being coordinated for delivery as the "2024 State of Heritage Report" (9ab8d83e915e; da6656b33294), simply retitled and delivered roughly a year later, or a distinct successor document. Nothing in the archived series states this explicitly either way.</li>
 <li><strong>Heritage Primer's status after 2017 is undetermined.</strong> It is a named, described program in ar-2016 and ar-2017 (3a3e62e319dc; de3c46e92543) but does not appear by name in any later document read (ar-2019 onward). Its absence is noted, not asserted as a formal cancellation, consistent with how this brief treats other unannounced disappearances.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

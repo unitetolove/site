@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/federal.html">Federal</a> &middot; Canadian Heritage</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Canadian Heritage</h1>
@@ -71,7 +73,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (22 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (22 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2027</td><td>Departmental plan</td><td><a href="https://www.canada.ca/en/canadian-heritage/corporate/publications/plans-reports/departmental-plan-2026-2027.html">Canadian Heritage Departmental Plan 2026-27</a></td><td>archived</td><td></td></tr>
@@ -97,7 +99,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2013</td><td>Departmental plan</td><td><a href="https://web.archive.org/web/20191104190857id_/https://publications.gc.ca/collections/collection_2012/pc-ch/CH1-5-2012-eng.pdf">Canadian Heritage Report on Plans and Priorities 2012-13</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: capture-artifact-goc-interstitial</span></td></tr>
 <tr><td>2005</td><td>Departmental plan</td><td><a href="https://publications.gc.ca/collections/collection_2015/pc-ch/CH1-34-2004-eng.pdf">Canadian Heritage Report on Plans and Priorities 2004-2005</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: capture-artifact-goc-interstitial</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -122,7 +124,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>Canadian Heritage is a federal department established by the Department of Canadian Heritage Act, S.C. 1995, c. 11 (assented June 15, 1995, in force July 12, 1996 by SI/96-68). The Minister's statutory role covers "initiating, recommending, coordinating, implementing and promoting national policies, projects and programs with respect to Canadian identity and values, cultural development and heritage" (Act, s. 4), plus National Capital Region public events and funding human-rights test cases. A Deputy Minister sits as deputy head (s. 3). Current program areas span creativity/arts and culture, heritage and celebration, sport, diversity and inclusion, and official languages, with ~$1.86B total planned spending and 1,872 planned FTEs for 2026-27 (Departmental Plan 2026-27, document id fed-canadian-heritage-dp-2027, confirmed independently in this review, sha b9333b50ee0d). Any predecessor-department history (functions inherited from the former Department of Communications/Secretary of State) is flagged ⚠️ still being checked in the backgrounder and remains unresolved in this review — none of the readable documents in this series contain institutional-formation history.</p>
 <h4>Series inventory</h4>
 <p>22 documents are registered for this org: 16 departmental plans (dp) and 6 departmental results reports (drr). All 22 show extraction <code>status: ok</code> in <code>_index.json</code>, but 10 of the 16 departmental plans — everything from 2005 through 2021 — turned out on inspection to contain only a Government of Canada "Information Archived on the Web" interstitial redirect page (804 characters each), not the underlying PDF text. That gap is invisible in the index's status field and is documented in full under Residuals &amp; gaps. Table below is ordered chronologically by the fiscal year each document plans for or reports on (dp and drr sharing a year label cover the same fiscal year, plan vs. results).</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Canadian Heritage - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -288,7 +290,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h4>Priority evolution</h4>
 <p>The archived series only yields substantive, readable text starting with the FY2019-20 results report; every departmental <em>plan</em> for FY2004-05 and FY2012-13 through FY2020-21 failed to extract (see Residuals &amp; gaps). The narrative below therefore starts in FY2019-20 and is continuous from there through the FY2026-27 plan.</p>
 <p><strong>FY2019-20 (drr-2020, a7a1fecd3ee5):</strong> Baseline structure is five core responsibilities — Creativity/arts and culture, Heritage and celebration, Sport, Diversity and inclusion, Official languages. The <em>Indigenous Languages Act</em> received royal assent June 21, 2019, backed by Budget 2019 funding of "$333.7 million over five years, and $115.7 million per year thereafter." Canada's Anti-Racism Strategy and a Federal Anti-Racism Secretariat were established that year; the LGBTQ2 Secretariat (relocated into Canadian Heritage from the Privy Council Office in fall 2019) launched the LGBTQ2 Community Capacity Fund; the Local Journalism Initiative launched with $50M over five years; the Canadian High Performance Sport Strategy launched May 2019 alongside early work on a Universal Code of Conduct to Prevent and Address Maltreatment in Sport. Ministers named: Guilbeault, Chagger and Joly post-2019 election, with Rodriguez and Duncan named as having held the portfolios earlier the same fiscal year. Total actual spending $1,550,574,951; FTEs 1,843.3.</p>
@@ -344,7 +346,7 @@ No document in this series establishes a Canadian Heritage regional office, stan
 <li>⚠️ Still being checked: whether the small planned-vs-actual spending discrepancy visible in dp-2022's five-year spending chart (FY2020-21 forecast $2,019M vs. drr-2021's later-published final actual $1,961,542,247) reflects normal in-year forecast revision or something else — not material to the narrative but noted for accuracy.</li>
 <li>No further extraction failures were found among the 12 documents with substantive content (dp-2022 through dp-2027; drr-2020 through drr-2025); all read cleanly at their full extracted length.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

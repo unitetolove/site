@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; Fire Services</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Fire Services</h1>
@@ -71,7 +73,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (22 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (22 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Annual report</td><td><a href="https://www.toronto.ca/wp-content/uploads/2026/07/975e-2025-TFS-Annual-Report-07132026.pdf">Toronto Fire Services 2025 Annual Report</a></td><td>staged</td><td><span class="incompleteness-tag">⚠️ still being checked — the fetch failed on 2026-08-01; ⚠️ still being checked — the fetch failed on 2026-08-02; ⚠️ still being checked — the fetch failed on 2026-08-04; ⚠️ still being checked — the fetch failed on 2026-08-05; ⚠️ still being checked — the fetch failed on 2026-08-06</span></td></tr>
@@ -97,7 +99,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2007</td><td>Annual report</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td><strong>missing</strong></td><td></td></tr>
 <tr><td>2006</td><td>Annual report</td><td><a href="https://www.toronto.ca/legdocs/mmis/2007/cd/bgrd/backgroundfile-3992.pdf">Toronto Fire Services 2006 Annual Report</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -122,7 +124,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>Toronto Fire Services is a City of Toronto operating division under the City of Toronto Act, 2006, S.O. 2006, c. 11, Sched. A, with its specific service obligation set by the Fire Protection and Prevention Act, 1997, S.O. 1997, c. 4 (backgrounder, <code>our research file for that body</code>). The backgrounder describes TFS as "the City's only all hazards emergency response organization," Canada's largest municipal fire department, and (as of 2024) CFAI-accredited; it cites a 2026 Operating Budget of $587.874M gross / $558.902M net. This brief's archived series (2006-2023) predates that 2026 figure but independently confirms the same budget trajectory and the CFAI accreditation history the backgrounder flags. The backgrounder's ⚠️ still being checked on the specific Deputy City Manager reporting cluster and on TFS's own founding/amalgamation history is not resolved by any of the five documents read for this brief — none discusses the division's pre-2006 organizational lineage in detail beyond a passing 2021 reference to TFS having "formed from six separate departments at amalgamation" (tor-fire-services-oth-2021, d06eaf6a7c79), which corroborates but does not fully resolve the backgrounder's flagged gap.</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 5 ok / 0 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Toronto Fire Services - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -169,7 +171,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full 2023 Annual Report, 159,495 chars, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Registry (our document registry) carries 21 rows for this org spanning 2006-2025; 5 are <code>archived</code> and appear above, 4 are <code>staged</code> and 12 are <code>missing</code> — those 16 staged/missing years are not analyzable from the archive and are treated as gaps, not as disclosure choices. No detector disagreements: <code>_index.json</code> reports 5/5 <code>ok</code> and all five were independently confirmed substantive on read (no stub-suspected or extract-failed calls to evaluate in either direction for this org).</p>
 <h4>Priority evolution</h4>
 <p>The 2006 Annual Report (c5175eb5226a) is organized around divisional narrative (Operations, Fire Prevention, Professional Development, Staff Services, Communications) with response statistics and historical fatality/false-alarm/WSIB tables as its analytic core — there is no response-time-standard framework and no named strategic plan; the closest is a stated "War on Fire" framing around fatality counts. By 2016 (a9cb5b2660ed), the annual report is structured around the 2015-2019 Master Fire Plan (unanimously Council-adopted April 2, 2015) and a newly introduced TFS Transformation Plan with six objectives (Improve Service Delivery, Make Organizational Improvements, Build an Inclusive and Diverse Workforce, Enhance Training and Development, Prioritize Leadership Development and Employee Wellness, Commit to Continuous Improvement), plus systematic NFPA 1710 response-time reporting (Call Processing, Turnout, Travel, Total Response Time, Effective Firefighting Force) that does not exist in the 2006 document. By 2021 (d06eaf6a7c79), the framework has consolidated around CFAI (Commission on Fire Accreditation International) accreditation — achieved in March 2019 — and its recommendations, plus the Operations Deployment Review (ODR), the vehicle for translating CFAI/accreditation findings into concrete staffing and deployment changes. By 2022-2023 (4c98c906e957; 4f33d0b9c5cb), reporting has further formalized around ward-level (25-ward) breakdowns of Total Response Time and Effective Firefighting Force performance year-over-year, a Community Risk Assessment (completed 2022, required under Ontario Regulation 378/18), and a re-accreditation cycle (CFAI peer team assessment against 256 KPIs, described as underway in 2023).</p>
@@ -197,7 +199,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li><strong>Stub detector census: no disagreement found.</strong> All 5 archived documents were called <code>ok</code> by <code>_index.json</code> and independently confirmed substantive, full-length reports on read; no stub-suspected or extract-failed calls existed in this org's set to evaluate in either direction.</li>
 <li>Per §A5, no named private individual involved in any fire fatality, injury, or complaint is named anywhere in this brief; all named individuals above are titled officeholders (Fire Chiefs, Deputy Chiefs) referenced in their institutional capacity from the division's own organizational-chart disclosures.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/federal.html">Federal</a> &middot; Destination Canada</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Destination Canada</h1>
@@ -71,7 +73,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (33 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (33 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Strategic plan</td><td><a href="https://admin.destinationcanada.com/sites/default/files/2026-03/2026-2030%20Corporate%20Plan%20Summary.pdf">Destination Canada Corporate Plan Summary 2026-2030</a></td><td>archived</td><td></td></tr>
@@ -108,7 +110,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>1999</td><td>Annual report</td><td><a href="https://web.archive.org/web/20230506124310id_/https://publications.gc.ca/collections/collection_2021/isde-ised/Iu82-1999-eng.pdf">Canadian Tourism Commission Annual Report 1998-1999</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: capture-artifact-goc-interstitial</span></td></tr>
 <tr><td>1998</td><td>Annual report</td><td><a href="https://web.archive.org/web/20230506124322id_/https://publications.gc.ca/collections/collection_2021/isde-ised/Iu82-1998-eng.pdf">Canadian Tourism Commission Annual Report 1997-1998</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: capture-artifact-goc-interstitial</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -134,7 +136,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 19 ok / 12 no-manifest-match / 2 extract-failed (0 stub-suspected).</p>
 <p>Registry (our document registry) carries 33 rows for this org spanning 1998-2026; all 33 are marked <code>archived</code> in the registry's own <code>archive_status</code> field, but 12 of those (annual reports, 1998-2012) resolved to <code>no-manifest-match</code> — no WARC capture in this review's manifest matched the registry's URL for those years. 12 of the 33 rows carry a <code>⚠️ Still being checked: capture-artifact-goc-interstitial</code> flag, consistent with those captures having landed on a redirect/interstitial page. Two further rows (ar-2019 and sp-2020) matched a capture but failed text extraction entirely.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Destination Canada - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -272,7 +274,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td><strong>sampled</strong> (title/cover and approval dates read; not read cover-to-cover)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Full-form applied.</strong> 19 documents carry real content across 12 years of annual reports and 7 corporate-plan summaries — comfortably above the ≥3-usable-document threshold and rich enough to show a real, dated evolution across an early-2010s austerity period, the 2015 rebrand, the pandemic collapse and recovery, and a 2023-2025 sustainability pivot. Given the size of the usable set, sampling per LANE_SPEC/that batch’s own build note §A3 was applied: documents read in depth (full or targeted-but-substantial passages) are ar-2013 (oldest, full message-and-highlights section), ar-2015 (rebrand year, full rebrand/appropriations passages), ar-2020 (pandemic year, full message-and-mandate section), ar-2023 (sustainability-pivot year, structure and framing), ar-2025 and sp-2026 (most recent of each type, targeted passages), and sp-2019 (oldest strategic plan, targeted passage). Nine documents (ar-2014, ar-2016, ar-2017, ar-2018, ar-2021, ar-2022, ar-2024, sp-2021 through sp-2025) were keyword-screened but not opened; nothing in those scans contradicted the narrative below. Two documents (ar-2019, sp-2020) failed extraction entirely and were not analyzed.</p>
 <h4>Priority evolution</h4>
 <p><strong>2013 (ar-2013, 1680912105a3):</strong> Operating as the Canadian Tourism Commission (CTC). Four organizational pillars: growing the business of tourism, demonstrating value for taxpayer dollars, being an efficient organization, and leading innovation. Michele McKenzie, President &amp; CEO for 10 years, departs; Greg Klassen serves as interim President &amp; CEO. Appropriations of $61 million against a 0.8:1 partner-contribution ratio ($47.7 million in partner contributions). Attributable tourism export revenue reported at $545 million against a $687 million target — a shortfall the report attributes in part to the CTC's reduced core appropriations (see Budget &amp; mandate inflection points).</p>
@@ -313,7 +315,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: whether any GTA/Toronto-specific ICAP convention win or Business Events Canada campaign is named in strategic plans or annual reports not opened this review.</li>
 <li>Per the batch's superlative rule: ar-2013's and ar-2020's own claims about targets/records/declines (e.g., "greatest decline of all business sectors") are reported here as that document's own framing as of its publication date, not independently checked against every later document in the series.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

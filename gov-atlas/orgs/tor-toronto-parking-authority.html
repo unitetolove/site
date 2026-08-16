@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; Toronto Parking Authority</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Toronto Parking Authority</h1>
@@ -71,7 +73,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (28 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (28 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Annual report</td><td><a href="https://parking.greenp.com/app/uploads/2026/06/TPA_2025_Annual_Report.pdf">Toronto Parking Authority 2025 Annual Report</a></td><td>archived</td><td></td></tr>
@@ -103,7 +105,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2001</td><td>Annual report</td><td><a href="https://parking.greenp.com/app/uploads/2018/10/ar_00000007.pdf">Toronto Parking Authority 2001 Annual Report</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: scanned-pdf-unverified-year</span></td></tr>
 <tr><td>2000</td><td>Annual report</td><td><a href="https://parking.greenp.com/app/uploads/2018/10/ar_00000008.pdf">Toronto Parking Authority 2000 Annual Report</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: scanned-pdf-unverified-year</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -129,7 +131,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 25 ok / 1 stub-suspected / 1 extract-failed (27 rows total).</p>
 <p>Registry (our document registry) carries 27 rows for this org spanning 2000-2025; all 27 are <code>archived</code> and appear below (0 staged, 0 missing) — the gap here is a residual extraction issue on two rows, not an unarchived-row problem. This supersedes the near-total extraction failure (26 of 27 failed) recorded in the prior version of this brief: throttled re-capture at 8-second intervals on 2026-08-02 succeeded on 26 of 26 previously-failed rows; only ar-2000 remains materially unreadable (now stub-suspected at 18 characters rather than extract-failed at 0 bytes — a change in failure signature, not a recovery) and ar-2001 remains fully extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Toronto Parking Authority - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -330,7 +332,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full read, all 38 pages ("TPA Strategic Outlook: Enabling Mobility for the Next 21 Years")</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Detector disagreement, one direction:</strong> ar-2000 (<code>56adb5d7873d</code>) is labeled <code>stub-suspected</code> at 18 characters; direct inspection confirms this is correct — the extracted text is the single stray character "A" (a PDF-to-text artifact), not usable content. No disagreement with the detector. ar-2003, ar-2005, ar-2006, ar-2007, ar-2010 are marked <code>ok</code> in <code>_index.json</code> with substantial char counts (68K-110K) but were not opened in this review under the batch's sampling instruction; their <code>ok</code> status is accepted on the strength of the adjacent years' consistent formatting and char counts in the same range as years that were read, not independently verified.</p>
 <h4>Priority evolution</h4>
 <p><strong>2000-2001 (unreadable):</strong> No content recoverable.</p>
@@ -387,7 +389,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: whether TPA held any internal strategic-planning document in the 2013-2020 window that formally adopted Bike Share/EV strategy ahead of the annual reports' operational announcements; not in this archived series.</li>
 <li>Per the batch's superlative rule: multiple documents in this series claim "record," "highest," "most profitable" results as of their own publication date (2002, 2004, 2008, 2009, 2011, 2012, 2013 all use this language for that year's net income). None of these are restated above as series-wide facts; where a 2025 figure ($174.8M revenue, $1.6B cumulative) is cited as a peak, it is bounded explicitly to "the readable record" since no later document exists to test it against.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

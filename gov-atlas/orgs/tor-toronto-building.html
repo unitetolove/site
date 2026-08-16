@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; Toronto Building</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Toronto Building</h1>
@@ -71,14 +73,14 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (3 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (3 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Budget / estimates</td><td><a href="https://www.toronto.ca/wp-content/uploads/2026/03/8edb-2026-Public-Book-TB-V1.pdf">2026 Program Summary: Toronto Building</a></td><td>archived</td><td></td></tr>
 <tr><td>2026</td><td>Subject report</td><td><a href="https://www.toronto.ca/legdocs/mmis/2026/bu/bgrd/backgroundfile-261322.pdf">2026 Operating Budget Briefing Note: Toronto Building -- Building Permit Fees (incl. Appendix 1: Building Permit Fees Annual Report, 2023-2027)</a></td><td>archived</td><td></td></tr>
 <tr><td>2025</td><td>Budget / estimates</td><td><a href="https://www.toronto.ca/wp-content/uploads/2025/04/955a-2025-Public-Book-TB-V1.pdf">2025 Program Summary: Toronto Building</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -104,7 +106,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 3 ok / 0 stub-suspected / 0 extract-failed.</p>
 <p>Registry (our document registry) carries 3 rows for this org, spanning 2025-2026; all 3 are <code>archived</code> and appear below -- no <code>staged</code> or <code>missing</code> gap years for this org.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Toronto Building - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -137,7 +139,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes -- full 2026 Operating Budget Briefing Note (incl. Appendix 1: Building Permit Fees Annual Report, 2023-2027), 15,716 chars, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>SHORT-FORM RULE APPLIES (per that batch’s own build note §B1, applied as this cohort's default even though all 3 docs are usable):</strong> the three documents span only two fiscal years (2025, 2026) -- the third is a same-year briefing note, not an additional year of coverage. There is no multi-year series to trace genuine priority evolution across; the sections below state only what the 2025-vs-2026 pair itself establishes.</p>
 <h4>Priority evolution</h4>
 <p>A two-fiscal-year window (2025, 2026) cannot establish a multi-year evolution narrative. What the pair does establish: three of the six 2025 "Priority Actions" headings persist under identical names in 2026 -- Organizational Transformation, Training and Development, Fiscal Responsibility -- while the other three are renamed or restructured: 2025's "Technology" becomes 2026's "Modernization"; 2025's "Service Delivery" becomes 2026's narrower, staffing-specific "Recruitment and Retention"; and 2025's standalone "Council Priorities" heading (affordable housing, renovictions bylaw, multi-tenant housing program) does not reappear as its own heading in 2026, its content folded into 2026's "Organizational Transformation" instead (56212fc14725; e220fbc33afc).</p>
@@ -168,7 +170,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: neither Program Summary states the division's founding date or a predecessor name (see backgrounder Institutional history).</li>
 <li>The archived record begins in 2025; no pre-2025 Toronto Building budget document is captured in this batch's extraction, so any priority history predating 2025 is entirely unestablished by this archived set.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

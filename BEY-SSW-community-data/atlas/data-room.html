@@ -21,6 +21,11 @@
 <meta property="og:title" content="The data room — Beaches—East York + Scarborough Southwest — a community atlas">
 <meta property="og:description" content="Four open tables behind the community atlas: turnout by advance-poll zone, the 2021→2025 trend by neighbourhood, the canvass-coverage arithmetic for all 28 zones, and the measured street doors per zone. Sortable, downloadable, aggregate only — the finest unit anywhere is the polling division.">
 <meta property="og:type" content="article">
+<meta property="og:image" content="https://unitetolove.ca/BEY-SSW-community-data/assets/og/atlas_data-room.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Share card: the four published tables of the data room drawn at their true row and column counts.">
 <!-- og:image intentionally omitted at build time -->
 <style>
 :root {
@@ -71,10 +76,10 @@ a.card p { margin: 0; font-size: 13.5px; color: var(--theme-foreground-muted); l
 import {define} from "./_observablehq/client.f6e9c9a8.js";
 import {registerFile} from "./_observablehq/stdlib.81cd90e3.js";
 
-registerFile("./data/coverage.csv", {"name":"./data/coverage.csv","mimeType":"text/csv","path":"./_file/data/coverage.626a08b0.csv","lastModified":1786862461763,"size":983});
-registerFile("./data/door_counts.csv", {"name":"./data/door_counts.csv","mimeType":"text/csv","path":"./_file/data/door_counts.61f56761.csv","lastModified":1786862461787,"size":1293});
-registerFile("./data/trend.csv", {"name":"./data/trend.csv","mimeType":"text/csv","path":"./_file/data/trend.0036cbd4.csv","lastModified":1786862461741,"size":1906});
-registerFile("./data/zones.csv", {"name":"./data/zones.csv","mimeType":"text/csv","path":"./_file/data/zones.616d557e.csv","lastModified":1786862461718,"size":1352});
+registerFile("./data/coverage.csv", {"name":"./data/coverage.csv","mimeType":"text/csv","path":"./_file/data/coverage.626a08b0.csv","lastModified":1786918586890,"size":983});
+registerFile("./data/door_counts.csv", {"name":"./data/door_counts.csv","mimeType":"text/csv","path":"./_file/data/door_counts.61f56761.csv","lastModified":1786918586913,"size":1293});
+registerFile("./data/trend.csv", {"name":"./data/trend.csv","mimeType":"text/csv","path":"./_file/data/trend.f6a218ef.csv","lastModified":1786918586860,"size":3607});
+registerFile("./data/zones.csv", {"name":"./data/zones.csv","mimeType":"text/csv","path":"./_file/data/zones.616d557e.csv","lastModified":1786918586825,"size":1352});
 
 define({id: "e8459941", inputs: ["FileAttachment"], outputs: ["zones","trend","coverage","doors","zonesUrl","trendUrl","coverageUrl","doorsUrl"], body: async (FileAttachment) => {
 const zones = FileAttachment("./data/zones.csv").csv({typed: true});
@@ -88,12 +93,14 @@ const doorsUrl = await FileAttachment("./data/door_counts.csv").url();
 return {zones,trend,coverage,doors,zonesUrl,trendUrl,coverageUrl,doorsUrl};
 }});
 
-define({id: "7d98e0d6", inputs: ["html","trend","doors"], outputs: ["dl","trendJoinable","D_RIDING","D_ZONE","D_ELECTORS","D_STREET","D_ENTRANCES","D_POINTS","D_IMPLIED","D_RATIO"], body: (html,trend,doors) => {
+define({id: "ed5f2b9e", inputs: ["html","trend","doors"], outputs: ["dl","trendJoinable","D_RIDING","D_ZONE","D_ELECTORS","D_STREET","D_ENTRANCES","D_POINTS","D_IMPLIED","D_RATIO"], body: (html,trend,doors) => {
 const dl = (url, name, rows) =>
   html`<a href=${url} download=${name}>Download <code>${name}</code></a> · ${rows} rows · as of 2026-08-15`;
-// The trend file carries two 2021-only residue rows (a null neighbourhood and South Riverdale,
-// both outside the 2025 boundary). They stay in the download — the table shows the joinable ten.
-const trendJoinable = trend.filter((d) => d.eday_turnout_2025_pct != null);
+// The trend file carries two edge rows the redistribution left on one side or the other:
+// South Riverdale (2021 only) and Birchcliffe-Cliffside (2025 only). They stay in the download —
+// the table shows the ten neighbourhoods the riding held in BOTH years.
+const trendJoinable = trend.filter(
+  (d) => d.eday_turnout_2025_pct != null && d.eday_turnout_2021_pct != null);
 // Door-count column names are taken from the CSV's own header, in file order, so the table can
 // never drift from the file: riding, zone, electors, street addresses, structure entrances,
 // total address points, elector-implied unit doors, street-to-implied ratio.
@@ -212,11 +219,10 @@ dl(doorsUrl, "DOOR_COUNTS_by_zone.csv", 28)
 }});
 
 </script>
-<link rel="canonical" href="https://unitetolove.ca/BEY-SSW-community-data/atlas/data-room.html">
-<meta property="og:url" content="https://unitetolove.ca/BEY-SSW-community-data/atlas/data-room.html">
-<meta property="og:image" content="https://unitetolove.ca/assets/og/elections.png">
 <meta name="twitter:card" content="summary_large_image">
-<script defer src="../../../assets/analytics.js"></script>
+<link rel="canonical" href="https://unitetolove.ca/BEY-SSW-community-data/atlas/data-room.html">
+<script defer src="../../assets/analytics.js"></script>
+<meta property="og:url" content="https://unitetolove.ca/BEY-SSW-community-data/atlas/data-room.html">
 </head>
 <body>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
@@ -254,13 +260,13 @@ dl(doorsUrl, "DOOR_COUNTS_by_zone.csv", 28)
      by page path): Framework whitelists front-matter keys and drops anything it does not know,
      so a description here would be silently ignored. -->
 <div class="observablehq observablehq--block"><!--:e8459941:--></div>
-<div class="observablehq observablehq--block"><!--:7d98e0d6:--></div>
+<div class="observablehq observablehq--block"><!--:ed5f2b9e:--></div>
 <h1 id="the-data-room" tabindex="-1"><a class="observablehq-header-anchor" href="#the-data-room">The data room</a></h1>
 <p>Four tables, live off the same loaders that feed every figure on this site. Click any column
 header to sort; the download under each table is the exact file the loader read, not an export of
 what you see.</p>
 <p>The stories these tables feed: <a href="../s1_two_worlds_one_street.html">two worlds, one street</a> ·
-<a href="../s2_canyon_widened.html">the canyon widened</a> · <a href="../s3_tower_explorer.html">tower explorer</a> ·
+<a href="../s2_canyon_didnt_close.html">the canyon didn’t close</a> · <a href="../s3_tower_explorer.html">tower explorer</a> ·
 <a href="../s4_pods_vs_blankets.html">pods vs blankets</a> · <a href="../s5_who_reaches_whom.html">who reaches whom</a> ·
 <a href="../s7_ssw_same_canyon.html">the same canyon: Scarborough Southwest</a>.</p>
 <div class="honest-grain">
@@ -286,13 +292,16 @@ aggregated PD → advance zone by this project's own data pipeline · <observabl
 boundaries, so PD numbers do not carry across and are not offered as if they did. These are
 election-day figures on both sides (an advance layer comparable to 2025's does not exist for 2021
 at this grain), which is why the numbers sit ~20 points below the zone table above. Read the
-<code>delta_pp</code> column, not the levels.</p>
+<code>delta_pp</code> column, not the levels. 2021 was the pandemic election and Elections Canada merged 28
+of the riding's 183 election-day polls; a merged poll's electors are counted in the neighbourhood
+where its ballots were counted, so every denominator describes the same people as its numerator.</p>
 <div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:250f04fe:--></div>
 <div class="srcline">
 Source: Elections Canada 2021 + 2025 general election poll-by-poll results, joined to City of Toronto
 neighbourhoods by this project's own data pipeline · <observablehq-loading></observablehq-loading><!--:83ff4c28:-->
-· the download carries 12 rows: the 10 joinable neighbourhoods shown here plus two 2021-only residue
-rows (a null neighbourhood and South Riverdale) that fall outside the 2025 boundary and are kept in the
+· the download carries 12 rows: the 10 neighbourhoods the riding held in both years, shown here,
+plus the two the redistribution left on one side — South Riverdale, which the 2023-order riding no
+longer reaches, and Birchcliffe-Cliffside, which the 2013-order riding did not reach — kept in the
 file rather than silently dropped.
 </div>
 <h2 id="3-canvass-coverage-arithmetic-all-28-zones-both-ridings" tabindex="-1"><a class="observablehq-header-anchor" href="#3-canvass-coverage-arithmetic-all-28-zones-both-ridings">3 · Canvass coverage arithmetic — all 28 zones, both ridings</a></h2>

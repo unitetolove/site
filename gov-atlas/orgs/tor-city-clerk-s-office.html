@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; City Clerk&#x27;s Office</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>City Clerk&#x27;s Office</h1>
@@ -71,14 +73,14 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (3 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (3 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2024</td><td>Financial statements</td><td><a href="https://www.toronto.ca/wp-content/uploads/2025/07/97e1-2024-Consolidated-Financial-Statements-07-29-2025.pdf">The City of Toronto 2024 Consolidated Financial Statements</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: embedded-in-parent (City of Toronto 2024 Consolidated Financial Statements.)</span></td></tr>
 <tr><td>2022</td><td>Other</td><td><a href="https://www.toronto.ca/wp-content/uploads/2023/09/9025-2022-Municipal-Election-ReportAODAFINAL.pdf">Your City. Your Vote. 2022 Municipal Election Report</a></td><td>archived</td><td></td></tr>
 <tr><td>2017</td><td>Annual report</td><td><a href="https://www.toronto.ca/legdocs/clerksoffice/annualreport/2017/index.html">City Clerk&#x27;s Office 2017 Annual Report</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -103,7 +105,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>The City Clerk's Office is a division of the City of Toronto (not a separate corporation), delivering "more than 70 types of services from over 30 locations" under more than 60 pieces of legislation, and the City Clerk holds "broad and independent authority under the Municipal Elections Act to deliver elections and by-elections" (backgrounder, citing the City's 2026 Operating Budget document, p.1). The backgrounder's three organizing pillars — "Elect Government, Make Government Work, and Open Government" — are not named anywhere in either archived document read for this brief; neither the 2017 annual-report stub nor the 2022 election report uses that framing, which appears to postdate both (see Residuals &amp; gaps). The backgrounder's budget figure (~$76.1M gross 2026 approved budget, an election-year figure, declining to $61.4M for the 2027 Outlook) is relayed as such per a recorded standing decision and is not independently re-verified against either archived document in this set, since neither covers fiscal year 2026.</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 1 ok / 1 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="City Clerk&#x27;s Office - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -129,7 +131,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full "Your City. Your Vote." 2022 Municipal Election Report, 76,844 chars, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>SHORT-FORM RULE APPLIES: own read confirms only 1 usable document.</strong> The 2017 annual report survives only as its top-level landing page — a genuine, coherent piece of writing (a message from the City Clerk plus six section teasers) but well below the depth of a full annual report, and the detector's stub-suspected call is correct on independent read (see Residuals &amp; gaps for the disagreement-direction note this lane requires). That leaves a single substantive document, a 2022 post-election operational report, five years distant from the thin 2017 stub — no comparison pair exists, so no evolution narrative is possible; the sections below state only what the single usable document itself establishes.</p>
 <h4>Priority evolution</h4>
 <p>A single usable document five years removed from a thin stub cannot establish an evolution narrative. What the 2022 Municipal Election Report (3a18bddaeff0) does establish on its own terms: Toronto Elections (the City Clerk's election-delivery arm) frames its 2018–2022 term-long focus as building capacity and improving services in the two years before the election, then names four forward-looking "Key Priorities for the 2026 Election" — leveraging technology in election administration, enhancing security of election administration, exploring more flexible and accessible voting options, and supporting/advocating for amendments to the Municipal Elections Act, 1996 — as its stated post-2022 institutional agenda (3a18bddaeff0). The thin 2017 stub separately references "sharpening our strategic focus," "formalizing our role in an emergency," and a "digital first" push toward paperless reporting as that year's themes (b83d7ae29cda), but the landing-page format gives no detail to compare against 2022's fuller account.</p>
@@ -153,7 +155,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: the backgrounder's governance ⚠️ still being checked (precise reporting line — direct-to-Council vs. City Manager's office) is not resolved by either document read for this brief; neither discusses the Clerk's internal reporting structure.</li>
 <li>⚠️ Still being checked: no readable document in this set covers the 2018 general election directly (only retrospective references within the 2022 report) or any City Clerk activity 2023 onward; the office's approach heading into the 2026 municipal election — an election year per the backgrounder's own budget citation — is not established by this archived pair beyond the four forward-looking priority areas the 2022 report itself names.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

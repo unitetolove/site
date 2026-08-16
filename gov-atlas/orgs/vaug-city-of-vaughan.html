@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-vaughan.html">Municipal — Vaughan</a> &middot; City of Vaughan</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>City of Vaughan</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (5 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (5 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Budget / estimates</td><td><a href="https://www.vaughan.ca/sites/default/files/2024-11/Vaughan-Budget-Book-2025%20%5BFINAL-DIGITAL%5D.pdf">2025 Budget and 2026 Financial Plan</a></td><td>archived</td><td></td></tr>
@@ -82,7 +84,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2022</td><td>Financial statements</td><td><a href="https://www.vaughan.ca/sites/default/files/2023-08/2022-12-31%20Corp%20of%20City%20of%20Vaughan%2019837%20AUD%20Cons%20PSAS.pdf">Consolidated Financial Statements Year Ended December 31 2022</a></td><td>archived</td><td></td></tr>
 <tr><td>2018</td><td>Financial statements</td><td><a href="https://www.vaughan.ca/sites/default/files/2018%20-%20The%20Corporation%20of%20the%20City%20of%20Vaughan%20FS%20Consolidated.pdf">Consolidated Financial Statements Year Ended December 31 2018</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -108,7 +110,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 0 ok / 0 stub-suspected / 0 extract-failed. This org's extraction index is empty because no document has ever been successfully archived for it.</p>
 <p>Registry (our document registry) carries 5 rows for this org, spanning 2018-2025 (2 financial statements: FY2018, FY2022, FY2024; 2 budget books: FY2024, FY2025); all 5 are <code>archive_status: staged</code>, 0 are <code>archived</code>, 0 are <code>missing</code> (all 5 have known source URLs — this is a capture failure of known documents, not an undiscovered-source problem). <code>last checked</code> for all 5 rows is 2026-07-28, meaning the registry itself has not re-attempted these captures since before the 2026-08-02 flag this brief was asked to re-test.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="City of Vaughan - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -155,7 +157,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td><strong>failed</strong> (staged, HTTP 403 on direct live re-test of this exact URL)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h4>Priority evolution</h4>
 <p>Not determinable. No document — archived or otherwise — was successfully read for this org in this review; any priority narrative would have to be invented rather than grounded in text actually read, which this task's hard rules prohibit.</p>
 <h4>Priorities added, dropped, renamed</h4>
@@ -171,7 +173,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li><strong>Recommended remediation (not performed in this review):</strong> retry capture using a differently-configured fetch path (e.g., a user-agent or rate-limiting profile less likely to trigger vaughan.ca's WAF), consistent with how the Toronto Parking Authority's 26 previously "bot-walled" PDFs in this same corpus turned out to be resolvable once retried under different conditions.</li>
 <li>No detector disagreement to report: the stub/extract-failed detector never ran against this org, since no document was ever successfully archived for it to evaluate.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

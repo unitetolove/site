@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; Toronto Pan Am Sports Centre Inc.</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Toronto Pan Am Sports Centre Inc.</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (9 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (9 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2024</td><td>Annual report</td><td><a href="https://www.toronto.ca/legdocs/mmis/2025/ex/bgrd/backgroundfile-257056.pdf">TPASC 2024 Annual Report</a></td><td>archived</td><td></td></tr>
@@ -86,7 +88,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2016</td><td>Annual report</td><td><a href="https://www.tpasc.ca/sites/default/files/resources/tpasc_inc_2016_annual_report_web.pdf">Toronto Pan Am Sports Centre Inc. Annual Report 2016</a></td><td>archived</td><td></td></tr>
 <tr><td>2015</td><td>Annual report</td><td><a href="https://www.tpasc.ca/sites/default/files/resources/f15_tpasc_inc_annual_report_full_book_final_april7.pdf">Toronto Pan Am Sports Centre Inc. 2015 Annual Report</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -112,7 +114,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 1 ok / 1 stub-suspected / 6 extract-failed.</p>
 <p>Registry (our document registry) carries 8 rows for this org spanning 2015-2024; all 8 are <code>archived</code> and appear below (0 staged, 0 missing) — the gap here is an archive-capture failure on 6 of the 8 rows, not an unarchived-year problem.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Toronto Pan Am Sports Centre Inc. - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -180,7 +182,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full 2024 Annual Report, 97,079 chars, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>SHORT-FORM RULE APPLIES: own read confirms 1 fully usable document plus 1 thin-but-genuine stub.</strong> No 2017 or 2022 row exists in the registry at all (not a capture gap — those years are simply absent from the 8 registered rows). The stub detector's call on ar-2020 is <strong>correct in substance but worth a nuance</strong>: the document is real, dated, and on-topic (a City Council Audit Committee transmittal, dated August 12, 2021, forwarding "Toronto Pan Am Sports Centre 2020 Audited Annual Financial Statements" as Attachment 3 to a City Manager/CFO report) — not boilerplate or an interstitial gateway page like the CPPIB/BDC reference cases. But the WARC capture only contains the one-page transmittal cover memo itself; the referenced Attachment 3 (the actual audited financial statements) is not present in the captured text. The detector's char-count-floor logic (1,348 &lt; 3,000 for <code>doc_type: annual-report</code>) is the right call for this row precisely because a one-page cover memo cannot substitute for an annual report or financial statements, even though every word of the 1,348 characters is genuine, readable, on-topic City of Toronto text.</p>
 <h4>Priority evolution</h4>
 <p>A single full document (2024) plus one non-report cover memo (2020) cannot establish evolution across 2015-2024. What ar-2024 alone establishes: it names a set of "2023-2027 Strategic Goals &amp; Directions" — enhance access to and engagement in physical activity, sport and recreation; cultivate operational excellence to maintain the world-class status of the facility; maximize the impact and innovation of staff through empowerment and engagement; promote and build the reputation of TPASC's unique model of sport and recreation (aa6f5d796d48) — alongside a distinct, narrower "2024 Organizational Priorities" list of year-specific actions (e.g., open the Sports Medicine clinic; celebrate the 10-year anniversary) (aa6f5d796d48). No prior-year annual report is readable to show whether these multi-year strategic goals existed in earlier form or under different names.</p>
@@ -205,7 +207,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: the capital reserve figure "$24,373,3415" in ar-2024's Financial Summary — likely a digit concatenation artifact from PDF extraction; the true figure is probably $24,373,341 (dropping the trailing "5") but this brief does not correct source text.</li>
 </ul>
 <p><strong>Recovery route for a future capture pass:</strong> search <code>toronto.ca/legdocs/mmis/</code> for TPASC annual-report attachments to City Council Audit Committee and/or Executive Committee items by year (following the precedent of ar-2024's and ar-2020's successful City-system captures), rather than re-attempting the <code>tpasc.ca</code>-hosted PDF URLs already on record as failed.</p>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/federal.html">Federal</a> &middot; Privy Council Office</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Privy Council Office</h1>
@@ -73,13 +75,13 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (2 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (2 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2027</td><td>Departmental plan</td><td><a href="https://www.canada.ca/en/privy-council/corporate/transparency/planned-spending/departmental-plans/2026-2027.html">PCO 2026-27 Departmental Plan</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ still being checked — the fetch failed on 2026-07-30; ⚠️ still being checked — the fetch failed on 2026-07-31; ⚠️ still being checked — the fetch failed on 2026-08-01; ⚠️ still being checked — the fetch failed on 2026-08-02</span></td></tr>
 <tr><td>2025</td><td>Departmental results report</td><td><a href="https://www.canada.ca/en/privy-council/corporate/transparency/reporting-spending/departmental-results-reports/2024-2025/report.html">PCO 2024-25 Departmental Results Report</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -104,7 +106,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>PCO is a non-statutory federal department — no standalone constituent act, listed instead in the Financial Administration Act's departmental schedule — whose sole core responsibility per its 2026-27 Departmental Plan is to "Serve the Prime Minister and Cabinet" (backgrounder, citing laws-lois.justice.gc.ca/eng/acts/F-11/ and canada.ca/en/privy-council/corporate/transparency/planned-spending/departmental-plans/2026-2027.html). The backgrounder's budget figures (~$252.3M total 2026-27 planned spending, 1,246 planned FTEs, ~$151.8M/724 FTEs to the core responsibility, and CER reductions of $14.9M rising to $29.8M with ~201 FTEs by 2028-29) are all independently re-confirmed against dp-2027 below (this brief relays the registry/backgrounder framing and separately re-verifies against primary text). The backgrounder flags two ⚠️ still being checked items — the Clerk's specific statutory/prerogative basis, and PCO's founding date/reorganization history; the second is resolved by dp-2027's own Corporate Information section (see Residuals &amp; gaps).</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 2 ok / 0 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Privy Council Office - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -130,7 +132,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full 2024-25 Departmental Results Report, 91,020 chars, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>SHORT-FORM RULE APPLIES: only 2 documents total, and they do not share a fiscal year.</strong> drr-2025 reports achieved results for 2024-25; dp-2027 plans for 2026-27, skipping 2025-26 entirely (no Departmental Plan 2025-26 or Departmental Results Report 2025-26 is in this archived set). This is a two-point, non-adjacent-year comparison — real change is visible between the two snapshots, but no document establishes what happened in the intervening 2025-26 year, and no multi-year trend can be drawn. The sections below state only what these two documents themselves establish.</p>
 <h4>Priority evolution</h4>
 <p><strong>2024-25 (drr-2025, 9019fe3afdfd):</strong> Four "key priorities" are named: (1) provide non-partisan advice to the Prime Minister, the Deputy Prime Minister and Minister of Finance, Portfolio Ministers, Cabinet, and Cabinet committees; (2) support the smooth functioning of the Cabinet decision-making process; (3) ensure Canada is safe and secure and promote a fair, transparent and democratic government; (4) foster an effective, diverse, inclusive and innovative public service. Substantial reported activity centred on: the Public Inquiry into Foreign Interference in Federal Electoral Processes and Democratic Institutions (completed within the year); establishment of a Fentanyl Czar office; the December 2024 Border Plan ($1.3B); the Canadian Artificial Intelligence Safety Institute and Canadian Sovereign Artificial Intelligence Compute Strategy (both launched during the year); the Clean Growth Office and Cabinet Directive on Regulatory Permitting and Efficiency for Clean Growth Projects (July 2024); and continued PARCA behavioural-science climate research, including a Toronto Hydro/Greater Toronto Area heat-pump field trial.</p>
@@ -165,7 +167,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: the shift in GIC-appointee diversity figures between the ~730-appointee 2024-25 snapshot (drr-2025) and the ~1,754-appointee December 2025 snapshot (dp-2027) — different population sizes suggest a different measurement scope, not directly comparable without a shared methodology note.</li>
 <li>⚠️ Still being checked: no readable document in this set covers any fiscal year before 2024-25 or the 2025-26 fiscal year itself; only two adjacent-but-not-overlapping snapshots exist, so any priority changes, added/dropped programs, or budget inflection points outside the 2024-25/2026-27 window are entirely unestablished by this archived series.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

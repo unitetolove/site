@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; Communications</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Communications</h1>
@@ -73,13 +75,13 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (2 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (2 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Budget / estimates</td><td><a href="https://www.toronto.ca/wp-content/uploads/2026/03/8dff-2026-Public-Book-CMS-V1.pdf">Communications program within City Manager Services -- 2026 Program Summary</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: embedded-in-parent (City Manager Services 2026 Program Summary.)</span></td></tr>
 <tr><td>2025</td><td>Budget / estimates</td><td><a href="https://www.toronto.ca/wp-content/uploads/2025/04/8e46-2025-Public-Book-CMO-V1.pdf">Strategic Public and Employee Communications (SPEC) program within City Manager&#x27;s Office -- 2025 Program Summary</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: embedded-in-parent (City Manager&#x27;s Office 2025 Program Summary.)</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -104,7 +106,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>Communications is a division of the City of Toronto (no division-specific enabling statute; the City itself operates under the City of Toronto Act, 2006, ss.6(1), 7). It delivers public/employee communications strategy, media relations, digital communications (toronto.ca), advertising/media buying, and corporate identity management, sitting within the City Manager Services cluster alongside the City Manager's Office, People &amp; Equity, and the FIFA World Cup 2026 Secretariat. The backgrounder flags the division's own reporting line above City Manager Services and the reason for its 2025→2026 rename as unresolved (⚠️ still being checked, backgrounder); this brief does not resolve either gap.</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 2 ok / 0 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Communications - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -130,7 +132,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full 2026 Program Summary (City Manager Services), 65,523 chars — shared budget-cluster book, see below</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Both source documents are shared budget-cluster books covering multiple City Manager's Office / City Manager Services divisions, not exclusively Communications: the 2025 doc (<code>3d0b211d999c</code>) also covers the Office of the Chief of Staff, People and Equity, the Indigenous Affairs Office, and the FIFA World Cup 2026 Toronto Secretariat; the 2026 doc (<code>75474e23efd4</code>) also covers the City Manager's Office, People &amp; Equity, and the FIFA World Cup 2026 Secretariat, and per that batch’s own build note §B2 is the identical document registered to <code>tor-people-equity</code>'s sole row (byte-identical sha256, confirmed via <code>_index.json</code> — see Residuals). Analysis below is scoped to the "Strategic Public and Employee Communications (SPEC)" / "Communications" sections only (2025 pp.3, 7-8, 11, 13; 2026 pp.3, 7-8, 13-14), not the cluster book as a whole.</p>
 <p><strong>SHORT-FORM RULE APPLIES: 2 usable documents, one year apart, describing a division renamed and administratively restructured between them.</strong> This cannot support a genuine priority-evolution narrative distinct from the restructuring itself; the sections below state what the two documents establish plainly rather than manufacturing a trend.</p>
 <h4>Priority evolution</h4>
@@ -157,7 +159,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: neither document states a reason for renaming SPEC → Communications or City Manager's Office → City Manager Services; whether this reflects a substantive mandate change beyond centralization, or administrative relabeling, is not established.</li>
 <li>No document in this archived set covers years before 2025 for this org; a genuine multi-year evolution narrative is not possible from this two-document, one-year-apart record.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

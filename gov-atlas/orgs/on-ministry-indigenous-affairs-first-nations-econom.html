@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/provincial-on.html">Provincial — Ontario</a> &middot; Ministry of Indigenous Affairs and First Nations Economic Reconciliation</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Ministry of Indigenous Affairs and First Nations Economic Reconciliation</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (6 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (6 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Annual report</td><td><a href="https://www.ontario.ca/page/published-plans-and-annual-reports-2025-2026-ministry-indigenous-affairs-and-first-nations-economic-reconciliation">Published Plans and Annual Reports 2025-2026: Ministry of Indigenous Affairs and First Nations Economic Reconciliation</a></td><td>archived</td><td></td></tr>
@@ -83,7 +85,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2024</td><td>Financial statements</td><td><a href="https://www.ontario.ca/files/2024-09/tbs-2023-24-annual-report-and-consolidated-financial-statements-en-2024-09-17.pdf">Public Accounts of Ontario -- Annual Report and Consolidated Financial Statements 2023-2024, Schedule 4</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: embedded-in-parent</span></td></tr>
 <tr><td>2023</td><td>Financial statements</td><td><a href="https://files.ontario.ca/tbs-2022-23-annual-report-and-consolidated-financial-statements-en-2023-09-25.pdf">Public Accounts of Ontario -- Annual Report and Consolidated Financial Statements 2022-2023, Schedule 4</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: embedded-in-parent</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -108,7 +110,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>The Ministry (registry row <code>on-ministry-indigenous-affairs-first-nations-econom</code>) is constituted by order-in-council under the Executive Council Act, R.S.O. 1990, c. E.25, with no separate founding statute. Its mandate, per the backgrounder, is to "lead strategic Indigenous policy for Ontario by coordinating cross-government initiatives that improve outcomes for Indigenous people; lead provincial negotiations of Indigenous land claims; and support economic and community development for Indigenous partners." FY2025-26 planned expenditure is ~$144.8M total ($135.29M operating + $9.54M capital), 81% to the Indigenous Affairs vote item. The backgrounder flags the current Minister's name and institutional-history/rename timing as unverified (⚠️ still being checked).</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 3 ok / 0 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Ministry of Indigenous Affairs and First Nations Economic Reconciliation - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -141,7 +143,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full plan/report text, financial tables, org chart; genuine substantive content, not a stub</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>All three documents verified by direct read as complete, usable "Published Plans and Annual Reports" filings (~35,000-53,000 characters each) — not stubs or shells. Each pairs a forward-looking strategic plan for its named fiscal year with a backward-looking annual report on the prior fiscal year, per Ontario's standard ministry-report format. No detector disagreement to report: the <code>_index.json</code> "ok" status matches what was actually read for all three.</p>
 <h4>Priority evolution</h4>
 <p><strong>FY2023-24 plan / FY2022-23 report (ar-2024, 69e7c0cd1e12):</strong> Ministry named "Ministry of Indigenous Affairs" (IAO). Strategic direction organized around three areas: promoting Indigenous employment/economic/community development; making health and social improvements; addressing legal obligations on treaties, land claims, and Duty to Consult. Key 2023-24 priorities include $10.1M in IRS burial-site investigation funding plus $15M in IRS-related mental health/trauma support, continuation of a $25M/3-year (2022-2025) Indigenous economic development funding commitment, work on the Ring of Fire area with the Ministry of Mines, and support for Ontario's Anti-Racism Strategic Plan (2023-2027 iteration pending). Land claims scale: 9 assertions under research, 53 claims accepted for negotiation, 16 land-related matters, 20 completed settlements. Total planned expenditure $133.15M ($127.15M operating + $6.00M capital).</p>
@@ -180,7 +182,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>Some internal financial-table inconsistencies exist within the source documents themselves (e.g., ar-2024's Table 2 and Table A1 report slightly different 2021-22 sub-line actuals for "Land Claims and self-government initiatives" — $100,811,741 vote total in one table vs. a $17,390,694 sub-line elsewhere within the same document) — these are artifacts of the ministry's own published tables (likely reflecting large one-time settlement-related contingent liabilities recognized differently across summary vs. detail tables), not extraction errors, and are reproduced faithfully rather than reconciled here.</li>
 <li><strong>2026-08-02 correction (lead verification, seed 202608027):</strong> the "vote-items → four main areas" restructuring entry originally attributed the quoted phrase "four vote-items" to ar-2024; verification against the extraction text found ar-2024 carries only "by vote" summary tables (no narrative framing), the phrase is introduced in ar-2025, and the "four main areas of responsibility" reframing occurs in ar-2026. Entry rewritten to attribute each step to the correct document; the overall restructuring arc claim was directionally correct.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

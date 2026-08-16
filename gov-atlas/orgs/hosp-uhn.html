@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/bps-hospital.html">Broader public sector — Hospitals</a> &middot; University Health Network</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>University Health Network</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (12 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (12 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Financial statements</td><td><a href="https://www.uhn.ca/corporate/AboutUHN/Fiscal_Accountability/Documents/AR-Financial-2024-2025.pdf">UHN Audited Financial Statements Mar 31 2025</a></td><td>archived</td><td></td></tr>
@@ -89,7 +91,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2020</td><td>Financial statements</td><td><a href="https://www.uhn.ca/corporate/AboutUHN/Fiscal_Accountability/Documents/AR_Financial_2019_2020.pdf">UHN Audited Financial Statements Mar 31 2020</a></td><td>archived</td><td></td></tr>
 <tr><td>2019</td><td>Strategic plan</td><td><a href="https://www.uhn.ca/corporate/AboutUHN/Purpose_Performance/UHN_Strategic_Plan/Documents/Download_the_full_Strategic_Plan.pdf">UHN&#x27;s 2019-23 Strategic Plan: A Healthier World</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: plan-horizon-2023</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -114,7 +116,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>UHN is a public hospital approved and governed under the Public Hospitals Act, R.S.O. 1990, c. P.40, with the Minister of Health holding approval and directive powers over hospital operations; UHN's own stated purpose is "Transforming lives and communities through excellence in care, discovery and learning," vision "A Healthier World" (backgrounder, citing https://www.uhn.ca/corporate/AboutUHN, and confirmed independently in every strategic-plan and annual-report document read for this brief). The backgrounder's governance description — a voluntary, elected Board of Trustees including two University of Toronto appointees, board by-laws subject to Lieutenant Governor in Council approval, Ontario Health as funding/oversight parent — is independently confirmed in ar-2021 (595836200517), which lists the full FY2020-21 Board roster, and in every financial statement's funding-source language. The backgrounder's ~$3.7B FY2024-25 budget-scale figure (total revenue $3,695,663 thousand, total expenses $3,727,604 thousand, deficiency $31.9M) is independently re-verified against the fs-2025 statement of operations read for this brief (c82432c6fefd) (this brief relays, and separately re-verifies against primary text, rather than asserting independent discovery). One item the backgrounder could not anticipate: the April 2024 West Park amalgamation, first disclosed in this archived series as a subsequent event in fs-2024 (a8f3e9ace172) and executed in fs-2025 (c82432c6fefd) — outside the backgrounder's own citation window — materially updates UHN's institutional-history and site-count facts (backgrounder's four-hospital, ~10-site figure is now five hospitals as of April 1, 2024).</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 12 ok / 0 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="University Health Network - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -210,7 +212,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td><strong>stub-suspected</strong> (own read confirms: thin SharePoint landing page, 6,867 chars, mostly navigation/CMS boilerplate — the substantive content is a two-paragraph "Bold Resolve" framing statement and CEO/Chair names; the actual downloadable Strategic Plan PDF was not captured in this archive)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Detector disagreement, one direction:</strong> <code>_index.json</code> marks all 12 documents <code>status: ok</code>, and by the letter of that field the detector is correct — hosp-uhn-sp-2025 did extract 6,867 characters of real page text, not an error page or empty file. But on read, that text is almost entirely SharePoint navigation chrome and only two short paragraphs of actual "Bold Resolve" messaging with no priority list, no strategic-plan structure, and no content comparable to sp-2019's 24,292-character document. This is flagged here as a live QA signal per this library's standing editorial rule: a document can be <code>status: ok</code> (successfully extracted, not corrupted) while still being effectively a stub for evolution-comparison purposes because the underlying PDF was never fetched. It is treated as thin-but-read below, not excluded from the count, since real (if minimal) UHN-authored content was recovered.</p>
 <p>Series composition note: unlike the AECL/StatCan reference briefs, this series mixes three document types (2 strategic plans, 4 "Report to Our Community" annual reports, 6 audited financial statements) rather than one uniform annual-report type across 12 consecutive years — evolution below is read across all three types together, cross-referenced by fiscal year.</p>
 <h4>Priority evolution</h4>
@@ -257,7 +259,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>No archive_status=missing years and no era:pre-web-baseline flags apply to this series (registry flags column empty); all twelve documents extracted with real, non-error content, which the operator's spec identifies as one of the cleanest series in the corpus — confirmed on read.</li>
 <li><strong>Org-specific guardrail application (hospital class, doubled):</strong> No patient, complainant, or private individual in a case/complaint context is named anywhere in this brief. The annual reports (ar-2022, ar-2023) contain named-patient human-interest testimonials (a multiple-myeloma profile, a sickle-cell-disease case, an arthritis diagnosis story) — none reproduced; only the clinical/research substance is referenced institutionally ("UHN cured an adult of sickle cell disease with a stem cell transplant"), no patient name attached. Titled officeholders (Dr. Kevin Smith, President &amp; CEO; successive Board Chairs; Finance and Audit Committee Chairs; named research chairs quoted on published institutional work) appear only in institutional capacity. Donor-name house rule applied to donors UHN's own Report to Community materials celebrate by name in connection with named centres/gifts (Donald K. Johnson / Eye Institute; John and Myrna Daniels Foundation; Rogers Foundation / Ted Rogers Centre; Slaight and Gattuso Family Foundations; Ken and Joan Taylor / myeloma research) — retained descriptively at gift/centre resolution only, with personal medical narratives (e.g., a donor's own diagnosis quote) omitted or reduced to institutional framing.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

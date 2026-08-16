@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-aurora.html">Municipal — Aurora</a> &middot; Aurora Public Library</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Aurora Public Library</h1>
@@ -73,13 +75,13 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (2 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (2 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2024</td><td>Annual report</td><td><a href="https://aurorapl.ca/wp-content/uploads/sites/110/2025/10/Jodi-2024-Annual-Report-Final-3.pdf">Annual Report 2024</a></td><td>archived</td><td></td></tr>
 <tr><td>2024</td><td>Financial statements</td><td><a href="https://aurorapl.ca/wp-content/uploads/sites/110/2025/08/Aurora-Public-Library-Board-Financial-Statements-2024-Final.pdf">Board Financial Statements 2024</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -104,7 +106,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>Aurora Public Library is governed under the Public Libraries Act, R.S.O. 1990, c. P.44 (s. 20), by a statutory board of seven — five community members plus two sitting Town Councillors, capped at "one less than a majority" under s. 10 — supported by a Secretary-Treasurer/CEO, meeting eight times yearly (backgrounder, aurorapl.ca/library-board-and-administration/). The backgrounder flags two open items: budget scale (the 2024 financial statements PDF was already noted there as unreadable/scanned) and founding year (referenced only via a "History of APL Infographic" not independently confirmed). This brief's own read confirms the same financial-statements extraction failure independently (see Series inventory) and does not resolve the founding-year gap — the annual report contains no founding-date reference.</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 1 ok / 0 stub-suspected / 1 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Aurora Public Library - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -130,7 +132,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td><strong>failed</strong> (index note: "PDF extracted 0 bytes of text (likely scanned/image PDF)"; no <code>.txt</code> file present in the extraction directory to independently re-check — the index's own note is the only record, consistent with the backgrounder's separate, earlier account of the same document as an unreadable scanned PDF at the same URL)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>SHORT-FORM RULE APPLIES: only 1 usable document.</strong> A single annual report cannot exhibit priority evolution, additions/drops, or budget inflection points across time — there is nothing to compare it to within this archived set. The sections below state only what the one usable document itself establishes.</p>
 <h4>Priority evolution</h4>
 <p>A single document from a single year cannot establish an evolution narrative. What ar-2024 alone establishes: the Board Chair &amp; CEO message frames 2024 around "growth, connection, and innovation," names the opening of Aurora Town Square as strengthening the library's role as "a vibrant community hub," and notes a new CEO was welcomed "in the latter half of the year" (d0608ba06b6c). No prior-year annual report is readable in this set to show whether these are continuations or departures from earlier stated priorities.</p>
@@ -154,7 +156,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: whether Aurora Town Square is library-operated or a shared municipal facility the library programs into.</li>
 <li>⚠️ Still being checked: name of the CEO who succeeded the outgoing chief executive referenced mid-2024 (not stated in the readable text).</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

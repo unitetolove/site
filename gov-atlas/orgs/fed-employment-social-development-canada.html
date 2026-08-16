@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/federal.html">Federal</a> &middot; Employment and Social Development Canada</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Employment and Social Development Canada</h1>
@@ -71,7 +73,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (27 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (27 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2027</td><td>Departmental plan</td><td><a href="https://www.canada.ca/en/employment-social-development/corporate/reports/departmental-plan/2026-2027.html">Departmental Plan 2026-2027 — Employment and Social Development Canada</a></td><td>archived</td><td></td></tr>
@@ -102,7 +104,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2011</td><td>Departmental results report</td><td><a href="https://web.archive.org/web/20171130030213id_/https://publications.gc.ca/collections/collection_2011/rhdcc-hrsdc/HS1-16-2011-eng.pdf">Human Resources and Skills Development Canada Departmental Performance Report 2010-2011</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: predecessor-org-HRSDC; ⚠️ Still being checked: capture-artifact-goc-interstitial</span></td></tr>
 <tr><td>2006</td><td>Departmental results report</td><td><a href="https://web.archive.org/web/20221003122205id_/https://publications.gc.ca/collections/Collection/BT31-4-43-2006E.pdf">Human Resources and Skills Development Canada and Social Development Canada, 2005-2006 Estimates, a Departmental Performance Report</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: capture-artifact-goc-interstitial</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -127,7 +129,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>ESDC is continued by s.3 of the Department of Employment and Social Development Act, S.C. 2005, c. 34, with the Minister's powers under s.5 extending to "all matters relating to human resources and skills development in Canada or the social development of Canada over which Parliament has jurisdiction" (backgrounder, citing Justice Laws, DESD Act s.5). The backgrounder's registry-cited budget figure — $218.76 billion gross planned spending for 2026-27 — is independently re-confirmed below against dp-2027's own text (this brief relays, and separately re-verifies, rather than asserting independent discovery). The backgrounder flags ⚠️ still being checked on ESDC's prior name(s); the archived series resolves this partially: drr-2006, drr-2011, drr-2012 and drr-2013 are titled as "Human Resources and Skills Development Canada [and Social Development Canada]" reports, confirming HRSDC as the direct predecessor name in use as late as the 2012-13 fiscal year, though the exact statutory renaming date is not established by any readable document in this set (see Residuals &amp; gaps).</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 18 ok / 4 stub-suspected / 0 extract-failed. <strong>Own hand count disagrees: 19 usable / 7 unusable (3 of the 18 "ok" rows — drr-2016, drr-2017, drr-2018 — are landing-page/table-of-contents shells with no report body text, not full documents).</strong> This is a detector false-negative in one direction (small-but-real docs correctly marked <code>ok</code>... except these three are not full-text; the underlying PDF was never captured) combined with a confirmed true-positive in the other direction (the four <code>stub-suspected</code> rows). See Residuals &amp; gaps for the full reasoning.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Employment and Social Development Canada - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -293,7 +295,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full, 13,312 chars, Auditor General "Report 8 — The Benefits Delivery Modernization Programme" summary</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h4>Priority evolution</h4>
 <p><strong>Pre-web baseline (drr-2006/2011/2012/2013, stub-suspected):</strong> No content readable; the department's HRSDC-era title survives only in these documents' metadata (see Backgrounder summary).</p>
 <p><strong>2015-16 through 2017-18 (drr-2016/2017/2018, landing-page shells):</strong> No priority content readable from this archived capture; see Series inventory and Residuals &amp; gaps for the detector-QA finding.</p>
@@ -342,7 +344,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: whether the 2026-27 Comprehensive Expenditure Review's ~1,500-FTE reduction target will be additive to, or will absorb, the same category of unplanned operational overshoot that produced the 2024-25 plan-vs-actual FTE gap (34,410 planned vs. 38,219 actual) — no document in this series addresses this forward-looking tension directly.</li>
 <li><strong>Docs not reached beyond the read described above</strong>: none of the 22 registry documents were left entirely unopened; all were opened and at minimum their header/structure inspected. drr-2020, drr-2021, drr-2023 and drr-2024 received targeted (not full cover-to-cover) reads focused on core-responsibility results, service-standard tables, and spending/FTE totals per the boot message's prioritization — some secondary program-level detail in those four documents (e.g., full Working Conditions and Workplace Relations case-level detail, complete supplementary-table appendices) was not read line-by-line.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

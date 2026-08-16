@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; Employment &amp; Social Services</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Employment &amp; Social Services</h1>
@@ -73,14 +75,14 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (3 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (3 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Budget / estimates</td><td><a href="https://www.toronto.ca/legdocs/mmis/2026/bu/bgrd/backgroundfile-261683.pdf">2026 Budget Notes: Toronto Employment &amp; Social Services</a></td><td>archived</td><td></td></tr>
 <tr><td>2025</td><td>Budget / estimates</td><td><a href="https://www.toronto.ca/legdocs/mmis/2025/bu/bgrd/backgroundfile-252431.pdf">2025 Budget Notes: Toronto Employment and Social Services</a></td><td>archived</td><td></td></tr>
 <tr><td>2023</td><td>Budget / estimates</td><td><a href="https://www.toronto.ca/legdocs/mmis/2023/bu/bgrd/backgroundfile-231163.pdf">2023 Budget Notes: Toronto Employment &amp; Social Services</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -106,7 +108,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 3 ok / 0 stub-suspected / 0 extract-failed.</p>
 <p>Registry (our document registry) row count matches the archived set exactly for this extraction batch: all 3 rows captured are <code>archived</code> and appear below; no <code>staged</code> or <code>missing</code> rows were reported in this org's boot-message census. This is not evidence TESS published only 3 documents in its history — only that this capture pass located and archived exactly these 3 budget notes from the council-document system, and that no non-budget document (service plan, strategic framework) for this division was found at all.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Toronto Employment and Social Services - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -139,7 +141,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — 2026 Budget Notes, 88,996 chars; narrative sections (description, experiences/challenges/priorities, key drivers, key cost drivers, affordability measures) read in full, remaining capital/appendix tables not required for this analysis</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>No detector disagreements: all three documents were substantive and non-stub; the stub detector's <code>ok</code> calls for all three are confirmed correct by direct reading.</p>
 <h4>Priority evolution</h4>
 <p>Exactly 3 usable documents technically permits full-form treatment under the batch rule, but all three are budget notes from consecutive-ish cycles (2023, 2025, 2026 — no 2024 note in this set) — this is budget-line evolution and program-administration restructuring visible through three annual funding documents, not a multi-year strategic-plan narrative, since TESS has no service plan or strategic framework document in the archived record to compare against.</p>
@@ -169,7 +171,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: whether the Centralized Intake model's administrative-efficiency shortfall, described in near-identical terms across the 2025 and 2026 notes ("has not produced the intended administrative savings" / "anticipated efficiencies have not been realized"), has been addressed by any provincial or municipal corrective action not documented in this set.</li>
 <li><strong>Backgrounder reconciliation, 2026-08-02:</strong> this brief was written before the org's Wave-1 backgrounder existed. The backgrounder corroborated every claim; only the Backgrounder summary section was rewritten. The backgrounder carries its own unresolved ⚠️ still being checked on the division's founding date and prior organizational names, consistent with this brief's existing scope limits.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/federal.html">Federal</a> &middot; Canadian Statistics Advisory Council</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Canadian Statistics Advisory Council</h1>
@@ -71,13 +73,13 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (2 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (2 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Annual report</td><td><a href="https://www.statcan.gc.ca/en/about/relevant/CSAC/report/annual2025">CSAC 2025 Annual Report</a></td><td>archived</td><td></td></tr>
 <tr><td>2025</td><td>Financial statements</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td><strong>missing</strong></td><td><span class="incompleteness-tag">⚠️ Still being checked: searched-not-found (CSAC&#x27;s Terms of Reference specify per-diem/travel only, a Secretariat housed within Statistics Canada provides admin support, no budget/FS/audit requirement for the Council itself; the about/annual-report index has no financial content; two dork queries returned nothing.)</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -102,7 +104,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>CSAC is established under s. 8.1 of the Statistics Act, R.S.C. 1985, c. S-19, charged to "advise the Minister and Chief Statistician in a transparent manner" on referred questions about the quality of the national statistical system, and to "make public an annual report on the state of the national statistical system" (backgrounder, citing laws-lois.justice.gc.ca). Its role is advisory only, with no regulatory, enforcement, or data-collection powers. The Council is capped at 10 GIC-appointed members plus a Chairperson, with the Chief Statistician sitting ex officio. The backgrounder could not confirm a budget figure (statcan.gc.ca CSAC pages returned HTTP 500 on repeated fetch) or the exact enacting instrument behind the Council's 2017-era creation; neither gap is resolved by the ar-2025 text read for this brief — consistent with CSAC being a small advisory body with no independent budget line, and this document containing no institutional-history section (see Residuals &amp; gaps).</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 1 ok / 0 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Canadian Statistics Advisory Council - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -121,7 +123,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full 2025 Annual Report, "Towards a Framework for Official Statistics in the National Statistical System," 34,603 chars, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>SHORT-FORM RULE APPLIES: only 1 usable document.</strong> No detector disagreement to report — the single document is correctly marked <code>ok</code> and reads as genuine, substantive report content, including named Council members' signatures and detailed endnotes. A one-document record cannot show priority evolution, additions/drops, or budget inflection points across time; the three sections below state only what this single document establishes on its own, including its own backward references to prior years' work.</p>
 <h4>Priority evolution</h4>
 <p>A single document, one reporting cycle, cannot establish a full evolution narrative, but this report is unusual among one-document records in explicitly referencing its own history: it states the Council's "previous reports" have repeatedly flagged "a lack of coordination and debates over jurisdictional authorities" and cross-jurisdictional health-data-sharing challenges, and separately cites its "2024 Annual Report" discussion of AI's benefits and challenges in statistics (3c14c454d9cc). This confirms at least a 2024 predecessor report exists in CSAC's own publication history, though it is not part of this archived set. What ar-2025 alone establishes as new: the report consolidates prior scattered concerns about jurisdictional ambiguity into a single, formal recommendation — that the Minister of Industry mandate Statistics Canada to develop a framework defining and accrediting "official statistics" — presented as this year's sole headline recommendation rather than a list of several (3c14c454d9cc).</p>
@@ -143,7 +145,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: the backgrounder's unresolved question of the Council's exact enacting instrument/bill (circa 2017) is neither confirmed nor addressed by this document, which contains no institutional-history section.</li>
 <li>⚠️ Still being checked: whether the Minister of Industry or Chief Statistician acted on, rejected, or is considering the report's central "official statistics framework" recommendation — no later document is in this archived set to show outcome.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

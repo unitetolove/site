@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; Technology Services</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Technology Services</h1>
@@ -73,12 +75,12 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (1 row)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (1 row)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Budget / estimates</td><td><a href="https://www.toronto.ca/wp-content/uploads/2026/03/9753-2026-Public-Book-TSD-V1.pdf">2026 Program Summary -- Technology Services Division</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -103,7 +105,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>Technology Services Division is a division of the City of Toronto (no division-specific enabling statute; the City itself operates under the City of Toronto Act, 2006, ss.6(1), 7), whose <code>parent_org</code> field in the registry names <code>tor-deputy-city-manager-corporate-services</code> (relayed as registry data, not independently confirmed against a governance chart this review). It delivers technology services through three lines — Digital and Enterprise Business Solutions, Enterprise Services and Operations, Enterprise Strategy and Program Delivery — aligned to the City's Digital Infrastructure Strategic Framework and Auditor General recommendations. The backgrounder flags this org's institutional history as entirely unestablished (⚠️ still being checked, backgrounder), since only one document is archived.</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 1 ok / 0 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Technology Services - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -122,7 +124,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full 2026 Program Summary (Technology Services Division), 122,859 chars</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Registry (our public-body registry) carries 1 row for this org (2026); it is archived and appears above; there are no <code>staged</code> or <code>missing</code> rows to report.</p>
 <p>This document is a standalone Technology Services Division budget book, not a multi-division shared cluster book — that batch’s own build note §B2 scoping does not apply here.</p>
 <p><strong>SHORT-FORM RULE APPLIES (extreme case): a single usable document cannot exhibit evolution.</strong> The sections below state only what this one document establishes.</p>
@@ -146,7 +148,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li><strong>Sampling declared:</strong> the narrative sections (description, priorities, budget drivers, key cost drivers, capital-plan overview, SOGR backlog) were read in full; the detailed per-project capital line-item tables in Appendix 5 (pp.19-26) were sampled rather than read row-by-row, since they are itemized dollar figures per named project with no additional narrative beyond what is already summarized above. Appendix 6 (Capacity to Deliver Review) and Appendix 7 (Summary of Capital Delivery Constraints) were read in full; the glossary (Appendix 9) was not read, as it is boilerplate defined-terms text matching the glossary format used across this batch's other Toronto budget books.</li>
 <li>⚠️ Still being checked: registry carries only 1 row for this org (2026); no earlier document is registered, so nothing about this division's history, prior budgets, or prior organizational structure is establishable from this org's own archived series.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

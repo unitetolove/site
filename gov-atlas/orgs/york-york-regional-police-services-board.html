@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-york.html">Municipal — York</a> &middot; York Regional Police Services Board</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>York Regional Police Services Board</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (6 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (6 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2023</td><td>Financial statements</td><td><a href="https://yorkpublishing.escribemeetings.com/filestream.ashx?DocumentId=44073">The Regional Municipality of York -- 2023 Consolidated Financial Statements</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: embedded-in-parent (Region of York 2023 Consolidated Financial Statements.)</span></td></tr>
@@ -83,7 +85,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2018</td><td>Budget / estimates</td><td><a href="https://www.yrpsb.ca/usercontent/police-budget/2018_Operating_and_Capital_Budget.pdf">The Regional Municipality of York Police Service Board 2018 Operating and Capital Budget</a></td><td>archived</td><td></td></tr>
 <tr><td>2016</td><td>Business / corporate plan</td><td><a href="https://www.yrpsb.ca/usercontent/business-plan/Business_Plan_2014-2016.pdf">York Regional Police Business Plan 2014-2016</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -111,7 +113,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>This org now has its own backgrounder, <code>our research file for that body</code> (Wave 1, 2026-08-02), which this brief reads directly (superseding the earlier practice of reading through York Regional Police's operational backgrounder as a substitute). The backgrounder confirms YRPSB — formally "The Regional Municipality of York Police Service Board" under CSPA's updated terminology, though the registry and legacy documents use "Services" — is a municipal police service board under the Community Safety and Policing Act, 2019 (CSPA), in force April 1, 2024, replacing the Police Services Act; under CSPA s.31(1) the statutory responsibility for adequate and effective police services shifted from the Region itself to the Board. CSPA s.39 requires the Board to prepare and adopt a strategic plan and s.41 sets annual reporting requirements. The Board is composed of seven members (Regional Chair, two Council members, one Council-appointed community member, three Provincial appointees), a composition the memo notes may shift to five, seven, or nine members under CSPA. Budget scale: the Board's 2018 Operating Budget (the most recent confirmed in the backgrounder's own primary-source set) was $357,616,297 gross / $323,511,232 tax-levy funded — matching this brief's own bud-2018 figure exactly (5d897de97231). The backgrounder flags ⚠️ still being checked on a current (2026) YRPSB budget figure and on the Board's founding date/pre-amalgamation status — neither is resolved by the five documents (2016-2021) read for this brief either (see Residuals &amp; gaps).</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 5 ok / 0 stub-suspected / 0 extract-failed. Registry (our document registry) row count for this org matches the 5 archived documents below; a recorded standing decision: no additional <code>staged</code>/<code>missing</code> rows were flagged in the boot message for this org, so the archived set is treated as the full captured record, not a sampled subset — years outside 2016-2021 are simply absent from the registry, not withheld.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="York Regional Police Services Board - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -158,7 +160,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full 2021 Annual Report, 78,920 chars, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>All 5 documents are usable (≥3 threshold met); full-form brief applies. Per the boot message's org-specific note, these are mixed document types across non-adjacent years (a business plan covering 2014-2016, a single 2018 budget report, then three consecutive annual reports 2019-2021) — this brief does not manufacture a continuous multi-year trend from these different document kinds; it states what each type establishes on its own terms, and treats the 2019-2021 annual-report run as the only true year-over-year comparison window.</p>
 <h4>Priority evolution</h4>
 <p>The 2014-2016 Business Plan (bp-2016) organized YRP's objectives under four "cornerstones of success": Community Focus, Operational Excellence, Preferred Place of Employment, and Superior Quality Service, with stated priorities including "crime prevention, safe streets and safe schools, community policing and drug enforcement" (811936cbc8be). The 2019, 2020 and 2021 annual reports each report "2019/2020/2021 Business Plan Accomplishments" organized under the same four-cornerstone structure (2bd4e060cd9e; 2b46963a582a; 8179cecc6de7), indicating the cornerstone framework persisted from the 2014-2016 plan through at least the 2020-2022 Business Plan cycle referenced in ar-2020 ("2020 marked the first year of our 2020 to 2022 Business Plan," 2b46963a582a). Within that stable structure, the content shifted markedly: bp-2016's "Community Focus" actions centre on crime prevention, youth engagement and victim support (811936cbc8be), while ar-2020's equivalent section is organized under new "Equity &amp; Inclusion" and "Technology and Innovation" subheadings not present as named categories in bp-2016, including the YRP Inclusion Strategy and Positive Space Training (2b46963a582a). ar-2021 adds a further explicit thread — "Equity and Inclusion" recruiting sessions, a Hate Crime Conference, and Anti-Racism/Anti-Black Racism Working Groups (8179cecc6de7) — that does not appear in bp-2016 or bud-2018 in any form.</p>
@@ -184,7 +186,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: whether the equity/inclusion initiatives launched 2020-2021 (Inclusion Strategy, PLIO, Anti-Black Racism Working Group) produced measurable changes in the Service's own published identifying-information-collection statistics or complaint outcomes — the annual reports report these initiatives and separately report complaints/collections data (e.g., "Total Complaints" rising from 162 in 2019 to 216 in 2021; 2bd4e060cd9e, 8179cecc6de7) but never explicitly connect the two in the text read.</li>
 <li>⚠️ Still being checked: no document in this set covers 2022 to the present; any priority changes, budget inflections, or governance changes (including the CSPA transition effective April 1, 2024) in that window are entirely unestablished by this archived series.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

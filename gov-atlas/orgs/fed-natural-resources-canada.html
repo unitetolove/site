@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/federal.html">Federal</a> &middot; Natural Resources Canada</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Natural Resources Canada</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (45 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (45 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2027</td><td>Departmental plan</td><td><a href="https://natural-resources.canada.ca/corporate/planning-reporting/departmental-plan/nrcan-2026-27-departmental-plan">NRCan 2026-27 Departmental Plan</a></td><td>archived</td><td></td></tr>
@@ -122,7 +124,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2007</td><td>Financial statements</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td><strong>missing</strong></td><td><span class="incompleteness-tag">⚠️ Still being checked: searched-not-found (site-migration-loss: NRCan&#x27;s own plans-performance-reports/nrcan-financial-statements/ node series begins at FY2008-09; no FY2006-07 financial-statements node found on nrcan.gc.ca domain CDX or TBS dpr-rmr/rpp folders)</span></td></tr>
 <tr><td>2007</td><td>Departmental results report</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td><strong>missing</strong></td><td><span class="incompleteness-tag">⚠️ Still being checked: searched-not-found (site-migration-loss: TBS tbs-sct.gc.ca/dpr-rmr/ folder framework confirmed to exist for FY2005-06 (nrcan-rncan pages present) and FY2006-07/2007-08 index stubs exist, but no NRCan-specific dpr-rmr node for FY2006-07 is in Wayback&#x27;s index; nrcan.gc.ca&#x27;s own plans-performance-reports/dpr/ series only starts at FY2013-14)</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -147,7 +149,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>Natural Resources Canada (NRCan) is established under s.3(1) of the Department of Natural Resources Act, S.C. 1994, c. 41. Section 5 extends the Minister's authority to "natural resources," explosives, and technical surveys; s.6 requires regard to sustainable development, coordination of related federal policy, promotion of Canadian scientific capability, and dissemination of resource-related information. NRCan groups its work into energy (oil, gas, renewables, electricity, nuclear/uranium), minerals and mining, forestry (including wildland fire), and natural-resource science/geospatial data. It is a federal department presided over by the Minister of Energy and Natural Resources (currently Tim Hodgson), with a Deputy Minister as deputy head. Budget scale per the backgrounder: ~$4.60B total planned expenses for 2026-27 ($4,595,148 thousand), split across Innovative and Sustainable Natural Resources Development ($1,488.1M), Globally Competitive Natural Resource Sectors ($2,041.2M), Natural Resource Science and Risk Mitigation ($846.7M) and Internal Services ($219.0M), plus planned Comprehensive Expenditure Review reductions of $266.4M in 2026-27 rising to $557.9M by 2028-29. NRCan was created January 12, 1995 by the Department of Natural Resources Act, merging the former Energy, Mines and Resources and Forestry portfolios into a single department.</p>
 <h4>Series inventory</h4>
 <p>Of the 33 documents captured for this org in the archived series (matching the 33 <code>.txt</code> files in <code>gse_extract/fed-natural-resources-canada/</code>), <strong>15 (45.5%) yielded real, substantive content</strong> and <strong>18 (54.5%) are landing-page-only captures</strong> — the crawler recorded NRCan's <code>natural-resources.canada.ca</code> corporate/planning-reporting <strong>index page</strong> for the report (title, "PDF Version (X kb)", "Supplementary Information (Tables)", "Date modified") rather than following through to the actual Departmental Plan / Departmental Results Report PDF. This single failure pattern, confirmed by direct reading of every affected <code>.txt</code> file, accounts for all 7 dp-2018→dp-2024 and all 11 drr-2013→drr-2023 captures. A further 12 registry rows (<code>drr-2007</code>–<code>drr-2012</code>, <code>fs-2007</code>–<code>fs-2012</code>) are marked <code>missing</code> / <code>⚠️ still being checked — the web archive was unreachable when we looked</code> in our document registry and have <strong>no extracted text at all</strong> — a more severe gap than the landing-page captures below, and not counted in the 33.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Natural Resources Canada - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -390,7 +392,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes (OAG/CESD Report 6 — The Canadian Critical Minerals Strategy, tabled 7 Nov 2024)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Note on the task brief's preliminary 3-way split ("15 real / 3 publications.gc.ca stub / 15 landing-page"): direct grep across every <code>.txt</code> file in this org's extract for <code>"archived on the web"</code> and <code>"publications.gc.ca"</code> returns <strong>zero matches</strong>. There is no distinct ~804-char "Information Archived on the Web" interstitial anywhere in this org's series — all 18 non-real captures follow the single NRCan landing-page pattern described above. The true usable rate (15/33, ~45%) matches the task's estimate; the internal breakdown of the failure mode does not.</p>
 <h4>Priority evolution</h4>
 <p><strong>FY2016-17 baseline (fs-2017, e313617387aa):</strong> The earliest real-content document in the series is a consolidated financial statement, not a plan. Total departmental expenses were $1,349,957 thousand (~$1.35B) actual against $1,637,636 thousand planned, versus $1,243,617 thousand (~$1.24B) the prior year — the archived series' only visibility into pre-2020 NRCan activity is through this financial-statement lineage (fs-2017 through fs-2025), not through any plan or results-report narrative (those are all landing-page stubs before FY2023-24).</p>
@@ -442,7 +444,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: whether NRCan's generative-AI-assisted drafting disclosure ("Portions of this report were drafted with the assistance of generative AI tools, under human supervision...") began in FY2024-25/FY2026-27 specifically, or earlier. It appears in the two full-report captures (dp-2027, drr-2025) but not in the three abridged "at a Glance" captures (dp-2025, dp-2026, drr-2024), which omit the entire front-matter/copyright block where the disclosure sits — so its absence there is not informative about when the practice began.</li>
 <li>⚠️ Still being checked: no document in this archived series records the Government of Canada's or NRCan's formal response to the OAG/CESD's 7 November 2024 Critical Minerals Strategy audit (oth-2024, 95139e2a46a2) recommendations; the audit's parliamentary-hearing follow-up (9 October 2025, Standing Senate Committee on Energy, the Environment and Natural Resources, per the audit document's own metadata) post-dates every other document in this series except dp-2027, which does not reference the audit or the hearing.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

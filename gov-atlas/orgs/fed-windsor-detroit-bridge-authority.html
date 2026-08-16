@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/federal.html">Federal</a> &middot; Windsor-Detroit Bridge Authority</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Windsor-Detroit Bridge Authority</h1>
@@ -71,7 +73,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (21 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (21 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2030</td><td>Business / corporate plan</td><td><a href="https://gordiehoweinternationalbridge.com/wp-content/uploads/2025/11/Corporate-Plan-Summary-25-26.pdf">WDBA Corporate Plan Summary 2025-2026 to 2029-2030</a></td><td>archived</td><td></td></tr>
@@ -96,7 +98,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2015</td><td>Annual report</td><td><a href="https://gordiehoweinternationalbridge.com/wp-content/uploads/2024/11/Annual-Report-2014-2015-EN-2016-08-10-and-Statement-of-Canadian-Contributions-2014-2015-compressed.pdf">WDBA Annual Report 2014-2015</a></td><td>archived</td><td></td></tr>
 <tr><td>2015</td><td>Business / corporate plan</td><td><a href="https://gordiehoweinternationalbridge.com/wp-content/uploads/2024/11/Summary-of-the-2014-2015-to-2018-2019-Corporate-Plan-compressed.pdf">WDBA Summary of 2014-2015 to 2018-2019 Corporate Plan</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -121,7 +123,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>The Windsor-Detroit Bridge Authority (WDBA) was "established as a non-agent Crown corporation via Letters Patent under section 29(1)" of the <em>International Bridges and Tunnels Act</em> on October 9, 2012 (Order in Council P.C. 2012-1350), and is a Schedule III, Part I parent Crown corporation under Part X of the <em>Financial Administration Act</em> — both facts independently re-confirmed in every annual report's Note 1 read for this brief (e.g. fed-windsor-detroit-bridge-authority-ar-2015, 9e78371f597e; fed-windsor-detroit-bridge-authority-ar-2025, a8e45a126417). Its mandate is to fulfil the obligations of the Crossing Authority under the 2012 Canada-Michigan Crossing Agreement and to construct and/or operate the Gordie Howe International Bridge, delivered as a public-private partnership with private-sector partner Bridging North America (BNA). Construction began October 2018 (confirmed as October 5, 2018 specifically in ar-2019, 3c672827aa06) with an original target opening the backgrounder states as "Fall 2025" — the archived series shows this Fall 2025 date was itself the product of a January 2024 schedule amendment from an earlier end-of-2024/November-2024 target (see Budget &amp; mandate inflection points, below). The backgrounder's FY2024-25 figures — total appropriations $1,164.8M net of $25.7M reimbursed, total expenses $174.885M (57% of the $309.016M Corporate Plan), operating surplus $1,009.9M, net debt reduced to $644.6M from $1,241.5M, aggregate Canadian Contributions of $5,698.2M as of March 31 2025, and the $6.4B (from $5.7B) overall project budget — are all independently re-confirmed against ar-2025's own Financial Results and Statement of Canadian Contributions sections (this brief relays, and separately re-verifies against primary text, rather than asserting independent discovery).</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 21 ok / 0 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Windsor-Detroit Bridge Authority - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -280,7 +282,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full Corporate Plan Summary (2025-26 to 2029-30, most recent), 145,925 chars, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Detector agreement: no disagreements found in either direction.</strong> All 21 documents carry genuine, substantive report content — an 11-year annual-report run (FY2014-15 through FY2024-25) plus a parallel 10-document Corporate Plan Summary series covering overlapping five-year rolling windows from 2014-15 through 2029-30. This is a "clean" series in the sense the operator's addendum described: every file that opened as <code>status: ok</code> did in fact contain real, substantive report text, not boilerplate or an interstitial. The only mechanical oddity worth flagging as a live QA signal is noted above for bp-2023 (year-label vs. content-period mismatch) — this is an indexing/naming quirk, not a stub or extraction failure, and every character of the document is genuine Corporate Plan content.</p>
 <h4>Priority evolution</h4>
 <p><strong>2012-2015, pre-operational and start-up (bp-2015, 7075ffed104e; ar-2015, 9e78371f597e):</strong> WDBA's first Corporate Plan (drafted before the corporation was even operational, still calling the project the "Detroit River International Crossing"/DRIC) traces the project's full pre-history back to a 2001 bi-national Planning/Need and Feasibility study and 2005 environmental assessments, and records that the Government of Canada set aside $470M in Budget 2014 "including WDBA operations." WDBA's first President and CEO, Michael Cautillo, was appointed August 2014 and became the corporation's first employee. Its FY2014-15 inaugural year was driven by "two parallel strategic priorities: to transition and operationalize the corporation and build its capacity; and to undertake pre-procurement activities" (ar-2015). The bridge itself was not yet named — that happened May 14, 2015, when Canada and Michigan officially named it the Gordie Howe International Bridge (ar-2015; ar-2016, 0d9c3da29aa7).</p>
@@ -333,7 +335,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: <strong>scope and outcome of BNA's COVID-19 compensation claims beyond the amendment's cutoff.</strong> The January 2024 amendment released WDBA "from claims up to December 1, 2022" specifically — whether BNA has made or resolved claims for the period after that date is not addressed in any document read (the corpus's most recent financial-statement notes, in ar-2025, do not revisit this question).</li>
 <li>⚠️ Still being checked: <strong>whether WDBA's own flagged mission/values realignment (first noted as pending in bp-2023) was ever formally completed and published</strong>, beyond the value-statement refresh ("transparency, mutual respect and inclusivity") noted in bp-2029 — no document explicitly confirms a finished, board-approved realignment process distinct from the 2024-25 vision/mission update tied to the "product focus" pivot.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

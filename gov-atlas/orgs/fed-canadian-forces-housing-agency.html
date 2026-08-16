@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/federal.html">Federal</a> &middot; Canadian Forces Housing Agency</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Canadian Forces Housing Agency</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (12 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (12 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Annual report</td><td><a href="https://www.canada.ca/en/department-national-defence/corporate/reports-publications/cfha-annual-report-2024-25.html">Canadian Forces Housing Agency Annual Report 2024-25</a></td><td>archived</td><td></td></tr>
@@ -89,7 +91,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2019</td><td>Annual report</td><td><a href="https://www.canada.ca/en/department-national-defence/corporate/reports-publications/cfha-annual-report-2019.html">Canadian Forces Housing Agency Annual Report 2018-19</a></td><td>archived</td><td></td></tr>
 <tr><td>2018</td><td>Annual report</td><td><a href="https://www.canada.ca/en/department-national-defence/corporate/reports-publications/cfha-annual-report-2018.html">Canadian Forces Housing Agency Annual Report 2017-18</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -114,7 +116,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>CFHA is a non-statutory Special Operating Agency within the Department of National Defence, established 1995 and made a full SOA in 2004 under a Treasury Board-approved charter, with no founding Act of Parliament. It is "the steward of the Defence Residential Housing Program and portfolio," managing more than 11,740 residential housing units across 27 locations nationwide — described as the largest housing portfolio in the Government of Canada. Its current strategic plan, "Building our Future: CFHA Strategic Plan 2025-2030," states CFHA operates "under a revised mandate to provide housing solutions to support the current and future needs of the CAF," backed by $1.4 billion allocated through "Our North, Strong and Free" and Budget 2024 to build 1,400 and renovate 2,500 residential housing units.</p>
 <h4>Series inventory</h4>
 <p>All 9 archived captures for this org are canada.ca <strong>landing pages</strong>, not the underlying annual-report or strategic-plan PDF itself. Each capture is roughly 450-850 characters of navigation chrome and a table-of-contents heading list; the substantive report text lives in a linked PDF (visible in each page as "[PDF - N.NN MB]") that this project's archiving tool did not capture — a known limitation documented in one of this library's own build tools' docstring, which cites this org's 2026-07-31 captures as "a real example of this pattern." Nothing below reflects the reports' substantive content; every claim in this brief is about the <strong>table of contents only</strong>.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Canadian Forces Housing Agency - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -189,7 +191,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td><strong>landing-page only</strong></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h4>Priority evolution</h4>
 <p>Everything in this section describes the <strong>table of contents / heading list</strong> each landing page shows for its linked PDF — not the report's substantive priority content, which was not captured.</p>
 <p><strong>FY2017-18 (ar-2018, fd9bcb4a9b2b):</strong> Simplest TOC in the series. A single narrative section, "Delivering on our strategic objectives in fiscal year 2017-2018," follows the CEO's year-in-review, alongside "Distribution of funds," "Financial statements," "Department of National Defence housing locations in Canada," and "Agency profile." No named "priorities" or "pillars" structure of any kind — just one undifferentiated objectives section.</p>
@@ -229,7 +231,7 @@ No further inflection points can be honestly added from this org's archived seri
 - Budget and mandate inflection points could not be grounded from this series at all — the entire section relies on the backgrounder instead of the archived documents.
 - The sp-2025 "Strategic priorities" heading (89de0bc5a72d) could not be checked against ar-2025's four named pillars (af2db03ac8fa) — the landing page for sp-2025 does not expand that heading into sub-items.
 - <strong>Recommended next step:</strong> a future capture pass should fetch the linked PDFs directly (the URLs and file sizes are visible in each of these 9 landing-page captures) rather than the canada.ca landing pages, so that a substantive priority-evolution analysis becomes possible for this org.</p>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

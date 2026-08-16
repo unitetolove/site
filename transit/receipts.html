@@ -51,7 +51,7 @@ th { background: var(--code-bg); }
 
 <nav class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Why can't Toronto move?</a> / Check our work</nav>
 
-<main id="main">
+<main id="main" tabindex="-1">
   <p class="report-kicker">Why can't Toronto move? &middot; The receipts</p>
   <h1>Check our work</h1>
   <p class="lede">Every load-bearing claim in <a href="index.html">the report's summary</a> comes
@@ -88,7 +88,7 @@ th { background: var(--code-bg); }
   <p>Every load-bearing claim in the summary, with its receipt. Where a claim is our own
   measurement, it says so &mdash; that label is disclosure, not a hedge: the receipt is the
   dataset, the method, and the cross-checks above.</p>
-  <table>
+  <div class="table-scroll" tabindex="0" aria-label="The claim claims register"><table>
     <thead><tr><th>#</th><th>The claim</th><th>The receipt</th></tr></thead>
     <tbody>
       <tr><td>1</td><td>Rider fares once covered about two-thirds (65&ndash;70%) of TTC operating
@@ -170,7 +170,7 @@ th { background: var(--code-bg); }
       Kong.</td><td>Each carries its citation in the chapters; the Singapore and London examples
       were additionally spot-checked against external sources in this verification pass.</td></tr>
     </tbody>
-  </table>
+  </table></div>
 
   <h2>We attacked our own numbers first</h2>
   <p>Before publishing, the summary and its ten hardest claims went through a hostile read:

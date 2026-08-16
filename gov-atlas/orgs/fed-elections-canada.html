@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/federal.html">Federal</a> &middot; Elections Canada</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Elections Canada</h1>
@@ -71,13 +73,13 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (2 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (2 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Departmental results report</td><td><a href="https://www.elections.ca/content.aspx?section=abo&amp;dir=drr/drr2025&amp;document=index&amp;lang=e">Elections Canada 2024-25 Departmental Results Report</a></td><td>archived</td><td></td></tr>
 <tr><td>2000</td><td>Departmental results report</td><td><a href="https://publications.gc.ca/collections/Collection/BT31-4-58-2000E.pdf">Office of the Chief Electoral Officer Performance Report for the Period Ending March 31 2000</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -102,7 +104,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>Elections Canada is the operating name of the Office of the Chief Electoral Officer, governed by the Canada Elections Act, S.C. 2000, c. 9 (Part 2, beginning at section 13, establishes the Chief Electoral Officer and supporting staff). Its stated mandate: be prepared to conduct a federal general election, by-election or referendum; administer the Act's political-financing provisions; monitor compliance with electoral legislation; run public-information and student-education programs; support the independent electoral-boundary-readjustment commissions; and study/test alternative voting methods with parliamentary approval. It is "an independent, non-partisan agency that reports directly to Parliament"; the Chief Electoral Officer (currently Stéphane Perrault, per the document read below) is appointed by resolution of the House of Commons, holds office for a 10-year non-renewable term, and can be removed only for cause by the Governor General following a joint address of the House of Commons and Senate. Backgrounder-cited budget scale: ~$274.2 million total planned spending for 2026-27, 1,465 planned FTEs — election-delivery spending is not forecast in Main Estimates until the fiscal year of a fixed-date election, so multi-year figures vary sharply with the electoral cycle. The Chief Electoral Officer position traces to the 1920 Dominion Elections Act, created "largely to put an end to political partisanship in the administration of federal elections."</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 1 ok / 0 stub-suspected / 1 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Elections Canada - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -128,7 +130,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full 2024-25 Departmental Results Report (Office of the Chief Electoral Officer), 65,316 chars, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>SHORT-FORM RULE APPLIES: own read confirms only 1 usable document.</strong> A single results report from a single fiscal year cannot support any evolution narrative by construction — there is no second data point in this archived set to compare it against. The sections below state only what this one document itself establishes, plus the multi-year figures the document reports internally (it includes three prior fiscal years of comparative spending/FTE data in its own tables, cited where relevant, but this is one document's internal historical framing, not an independently archived multi-document trend).</p>
 <h4>Priority evolution</h4>
 <p>A single archived document cannot establish an evolution narrative across time. What drr-2025 itself establishes for the one fiscal year it covers: the agency organizes its work under three core responsibilities — Electoral administration, Regulatory oversight, and Electoral boundaries readjustment administration — plus Internal services, and reports 2024-25 as a readiness year ahead of the 45th general election, following the September 2023 conclusion of the decennial electoral-boundaries redistribution (6e1669502b30).</p>
@@ -156,7 +158,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: the backgrounder's ~$274.2M/1,465-FTE figure for 2026-27 planned spending was not independently re-confirmed against drr-2025's own tables this review, since drr-2025's planned-spending tables extend only to 2027-28 and are structured by core responsibility rather than matching the backgrounder's single total; the two are consistent in order of magnitude with the report's 2026-27 total of $185,647,309 plus any subsequently updated planning figures, but were not reconciled line-by-line.</li>
 <li><strong>Election-administration guardrail held throughout this review.</strong> All content in drr-2025 concerning by-elections, the general-election cycle, foreign-interference recommendations, and political-financing regulation was read and cited in strictly institutional/administrative terms — dates, delivery statistics, systems/process descriptions, and the agency's own compliance/oversight actions. No candidate or party is named in this brief in any competitive, outcome-characterizing, or advocacy-adjacent framing; the one candidate/party-adjacent content in the source text itself (financial-return filing-compliance percentages by political party/EDA, referenced only in aggregate percentage terms) was not carried into this brief beyond the aggregate compliance figures already summarized in Regulatory oversight discussion above, and no party is named there. This mirrors the Elections Ontario precedent brief's institutional-framing discipline.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

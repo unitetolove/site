@@ -107,7 +107,7 @@
 
 <nav class="crumbs"><a href="index.html">Home</a> / The Harvest</nav>
 
-<main id="main">
+<main id="main" tabindex="-1">
 <h1>The Harvest</h1>
 
 <p class="lede"><strong>One record for one Toronto.</strong> Three million of us hold the
@@ -293,14 +293,14 @@ Every submission returns a delete token that removes exactly that submission,
       <div class="stat"><b id="rec-items">–</b><span>harvest items</span></div>
       <div class="stat"><b id="rec-contributions">–</b><span>contributions</span></div>
     </div>
-    <table class="record-table" id="rec-kit-table" hidden>
+    <div class="table-scroll" tabindex="0" aria-label="The record, live"><table class="record-table" id="rec-kit-table" hidden>
       <thead><tr><th>Where conversations happened</th><th>Count</th></tr></thead>
       <tbody id="rec-kit-body"></tbody>
-    </table>
-    <table class="record-table" id="rec-week-table" hidden>
+    </table></div>
+    <div class="table-scroll" tabindex="0" aria-label="The record, live"><table class="record-table" id="rec-week-table" hidden>
       <thead><tr><th>Week</th><th>Conversations</th><th>Harvest items</th></tr></thead>
       <tbody id="rec-week-body"></tbody>
-    </table>
+    </table></div>
   </div>
   <p id="record-held" hidden><strong>The record is collecting, and the counter is held.</strong>
   Counts publish once a set number of real conversations has happened — no fake numbers, no

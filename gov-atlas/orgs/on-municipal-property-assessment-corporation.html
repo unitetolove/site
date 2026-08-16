@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/provincial-on.html">Provincial — Ontario</a> &middot; Municipal Property Assessment Corporation</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Municipal Property Assessment Corporation</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (16 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (16 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Annual report</td><td><a href="https://annualreport.mpac.ca/">MPAC Annual Report 2025 (interactive microsite - no standalone PDF)</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: pdf-gated-microsite</span></td></tr>
@@ -93,7 +95,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2001</td><td>Annual report</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td><strong>missing</strong></td><td><span class="incompleteness-tag">era:pre-web-baseline</span></td></tr>
 <tr><td>2000</td><td>Annual report</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td><strong>missing</strong></td><td><span class="incompleteness-tag">era:pre-web-baseline</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -118,7 +120,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>MPAC is a statutory corporation created and continued by the Municipal Property Assessment Corporation Act, 1997, S.O. 1997, c. 43, Sched. G, exercising its assessment function under the separate Assessment Act. Per its own site, its role is "to accurately assess and classify all properties in Ontario," maintaining an inventory of nearly 5.7 million properties valued at an estimated $3.17 trillion and describing itself as "the largest assessment jurisdiction in the world" (backgrounder, citing MPAC 2024 Annual Report/mpac.ca — this exact superlative is not found verbatim in the archived ar-2024 text; see Residuals). Assessment rolls are delivered annually to Ontario municipalities, which use them to calculate property and education tax bills. Governance runs through a 13-member Board of Directors appointed by the Minister of Finance (7 municipal, 4 taxpayer, 2 provincial representatives) under Act s.3; every Ontario municipality is a statutory member. Budget scale: ~$219.4M total 2024 municipal levy. Institutional history per the backgrounder: created effective December 31, 1997 as the Ontario Property Assessment Corporation, continued/renamed MPAC, operational December 31, 1998 (backgrounder flags this date ⚠️ still being checked) — notably, MPAC's own ar-2019 (1c2b63b1d48b) states in the archived series that "MPAC was created in 1999," a direct conflict with the backgrounder's 1997/1998 dating; see Residuals.</p>
 <h4>Series inventory</h4>
 <p>9 documents are registered for this org in <code>_index.json</code>; <strong>8 of 9 (88.9%) yielded real, substantive content on direct reading; 1 of 9 (11.1%) — ar-2025 — is a genuine capture failure</strong>, not merely a low-char-count artifact assumed from filenames. The real-content set is 7 annual reports (2018–2024, unbroken) plus 1 strategic plan (2021–2025). <code>_index.json</code>'s <code>status: "ok"</code> field is true for all 9 rows, including ar-2025 — confirming the task brief's warning that "ok" status does not mean real content was captured.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Municipal Property Assessment Corporation - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -193,7 +195,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h4>Priority evolution</h4>
 <p><strong>2018 (ar-2018, 5d3744a0392a):</strong> MPAC operates under the 2017–2020 Strategic Plan, its "five strategic outcomes": Invest in Our People, Focus on Operational Excellence/Efficiency and Operations, Build Our Customer and Stakeholder Relationships, Deliver Quality Traceable Assessments, Expand Business Development. Nicole McNeill serves her first full year as President and CAO; Dan Mathieson (Mayor of Stratford) chairs the Board. The Service Level Agreement (SLA) with municipalities, implemented in 2017, completes its first full year of measurement — 91% of service levels met. MPAC describes itself as "the largest assessment jurisdiction in North America" (not "the world"). Total assessed value $2.78 trillion across 5,293,723 properties; municipal levy revenue $206,573K. A first-for-Ontario First Nations assessment partnership (Chippewas of Kettle and Stony Point, with the First Nations Tax Commission, begun 2016) expands in 2018 to Wasauksing First Nation and Chippewas of Georgina Island First Nation.</p>
 <p><strong>2019 (ar-2019, 1c2b63b1d48b):</strong> MPAC marks its "20th anniversary," stating explicitly "MPAC was created in 1999" — a claim from the archived text itself, at odds with the backgrounder's 1997/1998 dating (see Residuals). Alan Spacek becomes Board Chair in September 2019, succeeding Dan Mathieson, who had chaired since 2010. A new Data Governance Office is established (first mention). MPAC earns ISO/IEC 27001 certification for the first time in the archived series. MPAC is named one of "Greater Toronto's Top Employers for 2020" — the first appearance of this recurring employer-branding recognition, repeated in every subsequent annual report through 2024. Total value $2.96 trillion, 5.36 million properties; municipal levy revenue $210,911K.</p>
@@ -255,7 +257,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: outcome/publication of MPAC's 2025 Annual Report content and the 2025-2028 Strategic Plan's first-year results — not covered by any archived document, since ar-2025 failed to capture and no dp/drr-style interim report exists in this registry for FY2025.</li>
 <li>⚠️ Still being checked: the Assessment Act citation and MPAC's precise operational start date, both already flagged in the backgrounder and not independently resolved by anything in the archived annual-report series (which does not discuss its own founding legislation in detail beyond the "created in 1999" statement above).</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

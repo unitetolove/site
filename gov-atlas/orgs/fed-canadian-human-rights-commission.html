@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/federal.html">Federal</a> &middot; Canadian Human Rights Commission</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Canadian Human Rights Commission</h1>
@@ -71,7 +73,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (40 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (40 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2027</td><td>Departmental plan</td><td><a href="https://www.chrc-ccdp.gc.ca/resources/publications/chrc-2026-2027-departmental-plan">CHRC Departmental Plan 2026-27</a></td><td>archived</td><td></td></tr>
@@ -115,7 +117,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2001</td><td>Annual report</td><td><a href="https://web.archive.org/web/20180214133142id_/https://publications.gc.ca/collections/Collection/HR1-2001E.pdf">Annual report / Canadian Human Rights Commission</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: capture-artifact-goc-interstitial; URL-fix 2026-08-06 (Mac capture run): direct publications.gc.ca route live-tested this review, confirmed systemically dead (307-&gt;archivee-archived.html interstitial for all 33 rows in this batch, every UA tried) -- reverted to staged on the original wayback id_ URL for a real recapture, per worklist fallback</span></td></tr>
 <tr><td>2000</td><td>Annual report</td><td><a href="https://web.archive.org/web/20200509235543id_/https://publications.gc.ca/collections/Collection/HR1-2000E.pdf">Annual report / Canadian Human Rights Commission</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: capture-artifact-goc-interstitial; URL-fix 2026-08-06 (Mac capture run): direct publications.gc.ca route live-tested this review, confirmed systemically dead (307-&gt;archivee-archived.html interstitial for all 33 rows in this batch, every UA tried) -- reverted to staged on the original wayback id_ URL for a real recapture, per worklist fallback</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -142,7 +144,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p><code>_index.json</code>: 21 ok / 13 no-manifest-match / 1 stub-suspected / 0 extract-failed (35 entries). Registry (our document registry, filtered to this org): 40 rows total — 34 archived, 6 staged. The counts differ because 5 of the 6 staged rows (arp-2015/2016/2017/2018/2020) were registered 2026-08-06 with capture still pending, so they have no extraction-dir entry at all; the sixth staged row, arp-2019, does appear in <code>_index.json</code> because a stale, pre-URL-fix landing-page capture (683 chars) remains on file even though the real PDF is not yet captured.</p>
 <p><strong>This is not two disconnected eras — it is three layers, at three different states of readability.</strong> (1) A continuous Annual Report to Parliament series running from at least 2000 to 2025, partly readable (2022-2025), partly staged pending capture (2015-2020, minus 2019's stub), partly junk-captured pending Mac recapture (2000-2012), with only 2013/2014 genuinely unlocated (no registry row exists for either year) and 2021 absent from this specific series (though FY2020-21 is separately covered by dp-2021/drr-2021 below — see Residuals). (2) The 2020-21 through 2026-27 Departmental Plan / Departmental Results Report series, fully readable, unchanged from v1.0. (3) A newly-extracted statutory-commissioner reporting layer — Pay Equity, Accessibility, and Federal Housing Advocate Annual Reports — fully readable and entirely new to this brief.</p>
 <h5>Layer 1: Annual Report to Parliament series (2000-2025)</h5>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Canadian Human Rights Commission - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -329,9 +331,9 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full text, 56,432 chars</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h5>Layer 2: Departmental Plan / Departmental Results Report series (FY2020-21 to FY2026-27) — unchanged from v1.0</h5>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Canadian Human Rights Commission - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -427,9 +429,9 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full FY2024-25 results, longest document in Layer 2, 85,752 chars</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h5>Layer 3: Statutory-commissioner report layer — new to this revision</h5>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Canadian Human Rights Commission - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -476,7 +478,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — Federal Housing Advocate's (Houle) report, FY2024-25, longest document in the entire registry, 89,167 chars</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Method note on the four largest documents (arp-2022 through arp-2025, 74,792-90,776 chars):</strong> each was read in full for its leadership message, "who we are/what we do," and "by the numbers" sections; the remaining case-narrative and international-engagement sections were read in full for arp-2022 and arp-2023, and grep-verified for key terms (budget, founding year, leadership, audits) for arp-2024 and arp-2025 after their message/numbers/employment-equity sections were read directly — the same disclosed-sampling method the CRRF v1.0 brief used for its largest documents. All other Layer 1 and Layer 3 documents (hous-2025, pe-2024, pe-2025, acc-2023, acc-2025, arp-2019) were read in full, end to end.</p>
 <h4>Priority evolution</h4>
 <h5>Departmental Plan / Results Report series, FY2020-21 to FY2026-27 (unchanged from v1.0)</h5>
@@ -541,7 +543,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li><strong>Minor same-document inconsistency, not corrected in this record</strong> (unchanged from v1.0): drr-2025 states FY2024-25 total actual spending as both $41,564,182 (Highlights section) and $41,564,092 (Table 14) — a $90 internal discrepancy (d26750dc8f18).</li>
 <li><strong>Indigenous-business contracting swing noted, not fully explained</strong> (unchanged from v1.0): drr-2023 reports "over 25%" of FY2022-23 contracts awarded to Indigenous-led businesses (1d20d9214a5c), against 7.84-7.96% reported for FY2024-25 (drr-2025/dp-2027) — a large multi-year decline the newly-read Layer 1/Layer 3 material does not address, since none of the five new documents in this revision discuss procurement statistics.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

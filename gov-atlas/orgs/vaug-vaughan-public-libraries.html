@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-vaughan.html">Municipal — Vaughan</a> &middot; Vaughan Public Libraries</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Vaughan Public Libraries</h1>
@@ -73,13 +75,13 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (2 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (2 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2024</td><td>Annual report</td><td><a href="https://vaughanpl.info/files/VPL_2024_Annual_Report.pdf">VPL 2024 Annual Report</a></td><td>archived</td><td></td></tr>
 <tr><td>2024</td><td>Financial statements</td><td><a href="https://www.vaughan.ca/sites/default/files/2025-07/2024-12-31_corp_of_city_of_vaughan_19837_aud_cons_psas_locked.pdf">Consolidated Financial Statements of The Corporation of The City of Vaughan and Independent Auditor&#x27;s Report thereon -- Year ended December 31, 2024</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: embedded-in-parent (City of Vaughan Consolidated Financial Statements, year ended Dec 31 2024. Capture failed: Akamai 403 to warc_capture.py despite Referer header; grounded via manual curl instead.) | ⚠️ Still being checked: capture-failed (see evidence — content live-confirmed, WARC capture did not succeed this review)</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -104,7 +106,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>Vaughan Public Libraries operates under the Ontario Public Libraries Act, R.S.O. 1990, c. P.44, with a stated purpose to "ensure the delivery of library services to people who live, work or study in Vaughan" (per the backgrounder, citing VPL's board page). It runs thirteen full-service branches plus one express storefront, holds a collection exceeding 550,000 items, and draws roughly 2.5 million visitors annually per its own "About" page. Governance is a sixteen-trustee board for the 2023-2026 term (Mayor, ward/regional councillors, and citizen appointees), chaired by Gary Sangha; the parent municipality is the City of Vaughan. The backgrounder flags budget scale and institutional founding history as ⚠️ still being checked, not grounded in its pass; the AR-2024 document read for this brief does not resolve either gap (no total-dollar budget figure and no founding date appear in the extracted text).</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 1 ok / 0 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Vaughan Public Libraries - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -123,7 +125,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full 2024 Annual Report, 44,748 chars, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>SHORT-FORM RULE APPLIES: one usable document.</strong> The detector's "ok" call is confirmed correct on reading — this is a genuine, content-rich annual report, not a stub. A single document cannot establish any evolution across time; the sections below state only what this one report itself establishes about the 2024 operating year, plus its forward references to 2025 openings.</p>
 <h4>Priority evolution</h4>
 <p>A single document cannot establish a priority-evolution narrative. What ar-2024 (1c7e92bd4de1) does establish for its own year: VPL frames its 2024 activity around its stated vision "Enrich, Inspire, Transform" and mission of offering "welcoming destinations that educate, excite and empower our community," with emphasis on programming breadth (early literacy, STEAM, culinary and health literacy, seniors' programming, therapy dogs) and community-impact measurement (a $1,200 per-cardholder benefit calculation) (1c7e92bd4de1).</p>
@@ -144,7 +146,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li><strong>Backgrounder gaps unresolved</strong>: budget scale (total dollar figures) and institutional founding/history are both still ⚠️ still being checked — ar-2024 does not contain either.</li>
 <li>⚠️ Still being checked: whether the Carrville and West Woodbridge branches opened as planned in 2025, and the final Woodbridge Library reopening date — both were forward-looking/in-progress as of this 2024 report and unconfirmed by any later document in this set.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

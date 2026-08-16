@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; Toronto Public Library</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Toronto Public Library</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (45 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (45 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2029</td><td>Strategic plan</td><td><a href="https://tpl.ca/wp-content/uploads/sites/164/2026/04/Strat-Plan-2025-2029.pdf">Strategic Plan 2025-2029: Creating connection and belonging for Torontonians to thrive in every neighbourhood</a></td><td>archived</td><td></td></tr>
@@ -122,7 +124,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2000</td><td>Strategic plan</td><td><a href="https://tpl.ca/wp-content/uploads/sites/164/2025/05/strat-plan-2000.pdf">Creating the Future. Treasuring the Past (2000-2003 Strategic Plan)</a></td><td>archived</td><td></td></tr>
 <tr><td>1999</td><td>Annual report</td><td><a href="https://tpl.ca/wp-content/uploads/sites/164/2025/05/1999.pdf">Toronto Public Library 1999 Annual Report</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -148,7 +150,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 40 ok / 3 stub-suspected / 0 extract-failed.</p>
 <p><strong>Registry-modelling note, confirmed by own diff:</strong> five <code>strategic-plan</code> row pairs are the <em>same underlying document</em> registered twice — once under the plan's start year and once under its end year. In each pair <code>_index.json</code> carries one shared <code>url</code> and one shared <code>sha256_12</code>, and a <code>diff</code> of the extracted text shows only the three header metadata lines (document id, year, title) differ; the document body is byte-identical. The 43 registry rows therefore resolve to <strong>38 distinct documents</strong>, of which 35 are distinct usable documents. Every row is still given its own inventory line below.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Toronto Public Library - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -461,7 +463,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — Plan 7, 2025-2029, current</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h4>Priority evolution</h4>
 <p><strong>Plan 1 — 2000-2003, "Creating the Future. Treasuring the Past" (sp-2000, cc83d6cf2acc).</strong> TPL's first plan as an amalgamated system: "The new Toronto Public Library has created its first Strategic Plan. The Plan builds upon the strong tradition of library service in the seven former municipalities." The dominant task is integration — the Board/City Librarian message reports that "During the first two years of operation of the amalgamated Toronto Public Library much of our activity focused on getting the new system up and running," citing a unified city-wide catalogue and Sunday service extended across the city. Scale at the time: "98 branches" and "a collection of 12 million items." The plan sets <strong>seven Key Areas of Focus</strong> — Begin with Children and Youth; Customizing for You: The Best in Services, the Best in Collections; Your Local Library: The Community Cornerstone; Your Global Library: Connecting You Virtually; Enriching the Service: Partnerships for a Better Library; Connecting with Our Customers; and Transforming the Organization. Its environmental scan names the "Digital Revolution" ("Death of Distance"), "Information Literacy," and "Social Polarization" — the last stating that "More and more, Toronto is being divided into 'haves' and 'have nots'... Without access to computer technology, they are trapped on the wrong side of the 'Digital Divide.'" Nine values are listed. Board Chair Rick Goldsmith, CA; City Librarian Josephine Bryant.</p>
 <p><strong>Plan 2 — 2004-2007, "Urban Stories: The Next Chapter" (sp-2004/sp-2007, 7c78296cb90d).</strong> A sharp structural narrowing: the seven largely internally-facing focus areas collapse to <strong>four population-targeted Key Priorities — 1. Books and Culture, 2. Low-Income Neighbourhoods, 3. Newcomers, 4. Youth.</strong> This is the series' first explicitly equity-segmented priority set, and it is grounded in cited local data: "Over 20 percent of Toronto households have incomes below the poverty line," "the median income in Toronto's 12 poorest neighbourhoods fell from $43,600 annually in 1990 to $36,800 in 1999," and "Half of Torontonians were born abroad, and eight in 10 new immigrants have neither English nor French as their mother tongue." Vision, mission and values are carried over verbatim from Plan 1. Board Chair Gillian Mason; City Librarian Josephine Bryant.</p>
@@ -520,7 +522,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li><strong>ar-2008 (1676444d91ae) has noticeable OCR garbling and phrase duplication in several mid-document stretches.</strong> The content is genuine and recoverable, and figures quoted above were read directly, but a future pass wanting fine detail from that year should re-extract.</li>
 <li><strong>No <code>extract-failed</code> rows and no era:pre-web-baseline gap.</strong> Unusually for a series reaching back to 1999, TPL's own web archive hosts scanned PDFs of every print annual report from 1999 forward, so the pre-web era is covered by the institution's own retrospective digitisation rather than by contemporaneous capture.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

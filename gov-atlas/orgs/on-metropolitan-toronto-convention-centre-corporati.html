@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/provincial-on.html">Provincial — Ontario</a> &middot; Metropolitan Toronto Convention Centre Corporation</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Metropolitan Toronto Convention Centre Corporation</h1>
@@ -71,7 +73,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (23 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (23 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2028</td><td>Business / corporate plan</td><td><a href="https://www.mtccc.com/wp-content/uploads/2025/11/MTCC-Business-and-Strategic-Plan-2025-2028.pdf">MTCC Business and Strategic Plan 2025-2028</a></td><td>archived</td><td></td></tr>
@@ -98,7 +100,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2007</td><td>Annual report</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td>archived</td><td></td></tr>
 <tr><td>2006</td><td>Annual report</td><td><a href="https://www.mtccc.com/wp-content/uploads/2016/10/MTCC_AnnualReport_05-06.pdf">MTCC Annual Report Fiscal Year 2005-2006</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -124,7 +126,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>Two backgrounder gaps are partially resolved by the archived series. First, the backgrounder flags the enabling Act's original enactment year as ⚠️ still being checked. Every annual report's financial-statement notes in this archived set (e.g., fs-2025, e1243332e347) identify the incorporating instrument as "Bill 141, the Metropolitan Toronto Convention Centre Corporation Act, 1988" — but the Centre itself opened in October 1984, four years <em>before</em> that incorporating Act, meaning the pre-1988 operating arrangement is not documented anywhere in this archived series; this narrows but does not close the backgrounder's open item. Second, the backgrounder does not specify who owns the land under the two buildings; the Auditor General's 2023 report (oth-2023, fcf5fe85651f) establishes that MTCC does <strong>not</strong> own the North Building, its parking lot, or the land under it — these are leased from the private landlord Oxford Properties for a nominal $1/year on a 99-year term expiring 2083 — while the South Building is owned by MTCC but its land is leased from the <strong>City of Toronto</strong>, also $1/year, also expiring 2083. This means the City of Toronto is a direct landlord to MTCC for part of its site, a more concrete relevance thread than the backgrounder's governance-only framing (see Ontario/Toronto relevance below).</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 22 ok / 0 stub-suspected / 1 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Metropolitan Toronto Convention Centre Corporation - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -297,7 +299,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — substantially (~1,650 of 2,659 lines; Summary, Ministry role, and all MTCC-specific audit findings sections 4.1-4.3.6 read in full; OCC-specific financial deep-dive sections and appendices not read — see Residuals)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>QA observation (per operator instruction, distinct from a stub-detector disagreement):</strong> the batch addendum's headline for this org reads "22 ok / 0 (1 no-manifest), 23 total — clean," describing the one non-ok document as "no-manifest." The actual <code>_index.json</code> entry for that document (<code>ar-2012</code>) carries <code>"status": "extract-failed"</code> with note <code>"PDF extracted 0 bytes of text (likely scanned/image PDF)"</code> — a different, more specific failure mode (a captured, in-manifest PDF that yielded no extractable text, most likely because it is a scanned/image-only document) than "no manifest match" (which would mean no captured document exists at all). This is a label mismatch between the addendum's summary and the machine-readable index, not a content dispute — the underlying census numbers (22 ok, 1 non-ok, 23 total) agree exactly, and there are 0 stub-suspected documents in this org's set, so there is no stub-detector disagreement to report in either direction.</p>
 <h4>Priority evolution</h4>
 <p><strong>2005/06 – 2010/11 (ar-2006 fee91f26332b through ar-2011 a5706275212f), pre-modernization growth years:</strong> Each report frames itself as breaking the prior year's record — "A RECORD YEAR" (ar-2006), "AN ALL TIME RECORD" (ar-2007, revenue $58.0M), "SECOND BEST YEAR" (ar-2008, the 2008 financial crisis trims results to $54.2M), a further dip in the 2009 recession (ar-2009, gross revenue $55.8M), and a slower recovery through 2009/10-2010/11 including hosting the 2010 G20 Summit (ar-2011, a5706275212f). Corporate priorities in this era are organized loosely around customer service, occupancy, financial performance, HR/labour relations, and environmental/recycling targets, without a stable numbered "Corporate Goals" framework until the early 2010s.</p>
@@ -340,7 +342,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: whether the Ministry has, since ar-2025's publication, made the redevelopment decision MTCC has been awaiting since 2019 — the archived series ends before any resolution is visible.</li>
 <li>No detector disagreements to report in either direction (0 stub-suspected documents in this org's set); see the QA observation under Series inventory for the one addendum/index labeling discrepancy on the extract-failed document.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

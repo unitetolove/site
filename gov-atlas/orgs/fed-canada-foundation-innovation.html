@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/federal.html">Federal</a> &middot; Canada Foundation for Innovation</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Canada Foundation for Innovation</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (47 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (47 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2028</td><td>Strategic plan</td><td><a href="https://www.innovation.ca/sites/default/files/2023-02/CFI-Strategic-Plan-2023-28.pdf">CFI Strategic Plan 2023-28</a></td><td>archived</td><td></td></tr>
@@ -124,7 +126,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>1999</td><td>Annual report</td><td><a href="https://www.innovation.ca/sites/default/files/2021-09/CFI-Annual-report-1998-1999.pdf">CFI Annual Report 1998-99</a></td><td>archived</td><td></td></tr>
 <tr><td>1998</td><td>Annual report</td><td><a href="https://www.innovation.ca/sites/default/files/2021-09/CFI-Annual-report-1997-1998.pdf">CFI Annual Report 1997-98: Innovation</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -149,7 +151,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>Per the backgrounder, CFI "was incorporated on April 25, 1997, under Part I of the Budget Implementation Act, 1997...for the purpose of making research infrastructure grants to Canadian universities, colleges, hospitals and non-profit research institutions to increase the capability for conducting high-quality research" — independently confirmed word-for-word in the archived ar-2025 financial-statement notes (6de1b11dcda7). CFI typically funds up to 40% of a project's research infrastructure costs, with institutions securing the remaining 60% through partnerships. Its Board of Directors has up to 13 members, six Governor-in-Council appointments (including the Chair) and the remainder appointed by CFI's Members. As at March 31, 2025, the Government of Canada had committed $12.36 billion in grants to CFI, of which $8.15 billion had been received; fiscal 2024-25 disbursements to eligible institutions totalled $549.64 million — both figures independently confirmed by the archived ar-2025 (6de1b11dcda7) read for this brief.</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 11 ok / 23 extract-failed / 0 stub-suspected. Registry (our document registry) carries 34 rows for this org spanning 1998-2027; all 34 are <code>archived</code> (an archival attempt exists for every row), but 23 — all 22 annual reports from 1998 through 2019 plus the 2012-17 strategic roadmap — extracted 0 bytes of text, flagged in the index as "likely scanned/image PDF." This is a genuine, large capture-pipeline gap, not a disclosure choice: CFI evidently did publish annual reports throughout this period (the archived PDFs exist and were captured), but this extraction pass could not read any of them as text. Per A1, this means the registry's 34-row count substantially overstates what this brief can actually draw on: only 11 rows (32%) are usable.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Canada Foundation for Innovation - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -399,7 +401,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Sampling note:</strong> given only 11 usable documents exist at all, the sample deliberately covers every usable doc_type at least once rather than following a strict oldest/newest/middle pattern within a single type: oldest usable annual report (ar-2020) and newest (ar-2025); the newest corporate/business plan (bp-2027, which also contains a table of the org's full funding-agreement history back to 1997); and both surviving strategic-plan generations (sp-2023, covering 2018-23, and sp-2028, covering 2023-28) to see the transition between them directly. This is 5 of 11 usable documents (45%) read in substantial part; the remaining 6 (ar-2021 through ar-2024, bp-2025, bp-2026) were not opened this review.</p>
 <h4>Priority evolution</h4>
 <p><strong>⚠️ 1998-2019 cannot be described.</strong> All 22 annual reports from this 22-year window failed extraction (scanned/image PDFs). This brief cannot say anything about CFI's priorities, funding levels, or program mix during its first 22 years of operation beyond what the 2018-23 strategic roadmap (sp-2023, read as the oldest usable document with retrospective content) states about its own predecessor.</p>
@@ -444,7 +446,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: the funding source and budget-year for the 2025 Canada Impact+ Research Infrastructure Fund (CIRIF) and whether it draws on the same cross-agency Budget 2025 International Talent Attraction envelope named in this lane's NSERC brief (fed-natural-sciences-engineering-research-canada_STRATEGY_EVOLUTION.md) — not stated explicitly in any CFI document read this review.</li>
 <li>⚠️ Still being checked: whether any Toronto-specific CFI-funded institution or facility can be identified from a document not read this review (e.g., an unread annual report's project list).</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

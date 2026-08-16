@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/federal.html">Federal</a> &middot; Library and Archives Canada</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Library and Archives Canada</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (14 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (14 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Strategic plan</td><td><a href="https://www.canada.ca/en/library-archives/corporate/transparency/reports-publications/departmental-plans/2025-2026.html">Departmental Plan 2025–2026</a></td><td>archived</td><td></td></tr>
@@ -91,7 +93,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2002</td><td>Departmental plan</td><td><a href="https://web.archive.org/web/20220917135817id_/https://publications.gc.ca/collections/Collection/BT31-2-2002-III-7E.pdf">National Archives of Canada Estimates Part III Report on Plans and Priorities 2001-2002</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: capture-artifact-goc-interstitial</span></td></tr>
 <tr><td>2001</td><td>Departmental plan</td><td><a href="https://web.archive.org/web/20220917185504id_/https://publications.gc.ca/collections/Collection/BT31-2-2001-III-7E.pdf">National Archives of Canada Estimates Part III Report on Plans and Priorities 2000-2001</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: capture-artifact-goc-interstitial</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -116,7 +118,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>LAC was established in 2004 under the <em>Library and Archives of Canada Act</em>, S.C. 2004, c. 11, merging the former National Library of Canada and National Archives of Canada into a single institution. Section 7 of the Act sets its objects: acquiring and preserving documentary heritage of national significance, making it accessible, serving as the permanent repository of government publications and records, facilitating government information management, and coordinating library services across government. LAC is presided over by the Minister of Canadian Heritage (s.4), with day-to-day leadership held by the Librarian and Archivist of Canada. It organizes its work under two core responsibilities — acquiring/preserving documentary heritage and providing access to it — and reports a ~$208.2M total departmental budget for 2025–26 ($72.9M acquiring/preserving, $91.0M access, $44.3M internal services; 1,061 planned FTEs). All figures below are traced to archived documents read for this brief, not restated from the backgrounder alone.</p>
 <h4>Series inventory</h4>
 <p>The registry holds 14 documents in two eras with a roughly 16-year gap between them: five "departmental-plan" records from the pre-LAC/early-LAC period (2001–2005, all titled as <em>National Archives of Canada</em> Reports on Plans and Priorities per their own metadata), and nine current-era LAC Departmental Plans ("strategic-plan," 5) and Departmental Results Reports ("results-report," 4) spanning 2022–2026. The table below lists documents in <strong>actual chronological reading order</strong> (Departmental Plans are tabled in Parliament each spring, before the fiscal year they cover starts; Departmental Results Reports for the same fiscal-year label are published the following autumn, after year-end) rather than strictly by the <code>year</code> field, which reflects each document's covered/publication year, not its position in the reporting cycle.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Library and Archives Canada - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -226,7 +228,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Note on the "Information Archived on the Web" text: this brief's task instructions flagged that this exact phrase has repeatedly shown up as a stub-content artifact in <em>other</em> orgs' series, and cautioned against pattern-matching blindly since it might be legitimate self-referential content for LAC's own series. Checked in context, it is <strong>not</strong> legitimate content here: all five dp-2001–2005 captures have <code>content_type: text/html</code> against target URLs ending in <code>.pdf</code> (publications.gc.ca), and their bodies are word-for-word identical bilingual gateway boilerplate ("Continuer vers la publication" / "Continue to publication") with no report content at all — a genuine capture failure, not LAC discussing its own web-archiving program.</p>
 <h4>Priority evolution</h4>
 <p>The predecessor-era documents (dp-2001 through dp-2005, covering National Archives of Canada Reports on Plans and Priorities for fiscal years 2000–01 through 2004–05) cannot be read at all — see Residuals &amp; gaps. The chronological narrative below therefore starts in 2021.</p>
@@ -281,7 +283,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>Verification sample for the 9 substantive documents: spot-checked drr-2022 (c32342fbfa94, 89,668 extracted characters), sp-2026 (3fbd429e01f5, 84,807 characters) and drr-2025 (9c0524393e9e, 113,277 characters) directly. All three contain document-specific narrative (named ministers, dated events, multi-year financial tables that are internally consistent with figures repeated across adjacent documents) rather than boilerplate or stub content. No additional stubs were found among the 9 sp/drr documents; the extraction failure in this series is fully confined to the five pre-2006 dp-YYYY records.</li>
 <li>No <code>archive_status=missing</code> years and no <code>era:pre-web-baseline</code> flags apply to this series per the registry; the 16-year gap and the five stub captures above are both extraction/coverage gaps rather than disclosed registry flags.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

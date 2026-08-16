@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; Internal Audit</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Internal Audit</h1>
@@ -73,13 +75,13 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (2 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (2 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Budget / estimates</td><td><a href="https://www.toronto.ca/wp-content/uploads/2026/03/8dd5-2026-Public-Book-CFO-V1.pdf">Office of the CFO and Treasurer -- 2026 Program Summary (Internal Audit service line)</a></td><td>archived</td><td></td></tr>
 <tr><td>2026</td><td>Other</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td><strong>missing</strong></td><td><span class="incompleteness-tag">⚠️ Still being checked: searched-not-found (Division&#x27;s own page: mandate text + 2017 staff-directory PDF only, no reports/work-plan links. Two City-site search dork queries returned nothing Internal-Audit-specific. Confirmed via text search that Internal Audit/audit does not appear in the Corporate Services Service Area Presentation or City Manager Services 2026 budget note -- unlike the separately-named Auditor General&#x27;s Office, which h...) CORRECTED 2026-08-04: real content found -- Internal Audit is budgeted under the CFO &amp; Treasurer&#x27;s own 2026 Program Summary (tor-internal-audit-bud-2026), not the Corporate Services/City Manager Services books this search checked. This row&#x27;s own negative search was accurate for the books it checked, just checked the wrong books.</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -107,7 +109,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p><code>_index.json</code>: 0 ok / 0 stub-suspected / 0 extract-failed under this org's own <code>tor-internal-audit</code> extraction directory — no document has ever been registered under this registry id.</p>
 <p>Registry (our document registry) carries 1 row for this org (<code>tor-internal-audit-oth-2026</code>, year 2026, doc_type <code>other</code>); 0 are <code>archived</code>, 0 are <code>staged</code>, and 1 is <code>missing</code>. The row's flags field (dated 2026-07-24) states: "distinct from Auditor General's Office; No public work plan/reports link found on landing page...Confirmed via text search that Internal Audit/audit does not appear in the Corporate Services Service Area Presentation or City Manager Services 2026 budget note -- unlike the separately-named Auditor General's Office."</p>
 <p><strong>That search did not check the Office of the CFO and Treasurer's own FY2026 Program Summary book</strong>, which this review did check directly, and which does name Internal Audit as a Service:</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Internal Audit (City of Toronto) - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -126,7 +128,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — Internal Audit service-line section read in full within the shared Program Summary book</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>This document is a shared budget-cluster book covering multiple CFO &amp; Treasurer services (Financial Planning, Financial Strategy and Policy, Internal Audit, Insurance and Risk Management, Capital Markets, Purchasing and Materials Management, Strategic Enterprise Integration and Modernization); analysis here is scoped strictly to the "Internal Audit" service section (that batch’s own build note §B2 handling, applied even though this org's own registry row never pointed at this document).</p>
 <h4>Priority evolution</h4>
 <p>A single service-line entry in a single fiscal year's budget book cannot establish an evolution narrative. What the one entry does establish: for FY2026, Internal Audit's stated deliverable is "business and risk consulting on policies, processes and information systems; assurance services including the performance of compliance, operational, financial, forensic and internal control reviews," serving "Council, City divisions, agencies and corporations" (sha256-12 <code>26c5d96ad4c7</code>).</p>
@@ -147,7 +149,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li><strong>Recommended remediation (not performed in this review, no git commands available to this lane):</strong> add a registry row for <code>tor-internal-audit</code> pointing at the same URL/sha256 already registered for <code>tor-finance-treasury-services-bud-2026</code>, following the precedent BATCH12 already established for other shared-omnibus Toronto divisions.</li>
 <li>⚠️ Still being checked: whether an equivalent FY2025 (not just FY2026) CFO &amp; Treasurer book exists and also names Internal Audit as a Service — not checked this review; only the FY2026 book was located and read.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

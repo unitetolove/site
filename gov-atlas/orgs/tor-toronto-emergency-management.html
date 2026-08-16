@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; Toronto Emergency Management</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Toronto Emergency Management</h1>
@@ -71,14 +73,14 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (3 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (3 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2018</td><td>Subject report</td><td><a href="https://www.toronto.ca/legdocs/mmis/2018/ex/bgrd/backgroundfile-113667.pdf">Emergency Management Program Update, 2017</a></td><td>archived</td><td></td></tr>
 <tr><td>2017</td><td>Subject report</td><td><a href="https://www.toronto.ca/legdocs/mmis/2017/ex/bgrd/backgroundfile-107622.pdf">Toronto&#x27;s Emergency Management Program and Emergency Plan</a></td><td>archived</td><td></td></tr>
 <tr><td>2014</td><td>Subject report</td><td><a href="https://www.toronto.ca/legdocs/mmis/2014/cc/bgrd/backgroundfile-65677.pdf">City of Toronto Emergency Plan</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -104,7 +106,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 3 ok / 0 stub-suspected / 0 extract-failed.</p>
 <p>Registry (our document registry equivalent — per-org seriesaudit record) carries 3 rows for this org spanning 2014-2018; all 3 are archived and appear below; 0 are staged and 0 are missing — no registry/archive gap exists for this org's three-document set. (Per this library’s standing org-facts rule: "3 rows, census 3 ok.")</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Toronto Emergency Management - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -137,7 +139,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full "Emergency Management Program Update, 2017" report, 14,097 chars, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Exactly 3 usable, non-stub documents spanning a genuine 2013-2018 window (the 2014-titled document is itself the City of Toronto Emergency Plan as revised December 2013; the 2017-titled document is an October 2017 Executive Committee report; the 2018-titled document is a March 2018 report on 2017 program activity). Per this library’s standing editorial rule, full-form treatment is applied since exactly 3 usable documents meet the threshold, and the 2013→2018 span may show genuine evolution in emergency-management framing — which the record below shows it does, within institutional/governance terms only.</p>
 <h4>Priority evolution</h4>
 <p>The 2013 Emergency Plan (the earliest document) establishes the foundational governance architecture: a Toronto Emergency Management Program Committee (TEMPC) of 28 named positions, a smaller 16-member "TEMPC Control Group" that convenes during actual emergencies, and an Emergency Management Working Group (EMWG) of Director/Manager-level representatives from 23 named Agencies, Boards, Commissions and Divisions (90cf6fb4db23). The plan's stated priority is establishing "the framework that ensures the City is prepared" through a four-phase Preparedness Cycle (Plan, Operate, Evaluate, Corrective Action) and 14 named Operational Support Functions. By 2017, the priority shifts to modernizing and rationalizing that same governance structure: the report proposes expanding TEMPC membership (adding the Toronto and Region Conservation Authority, Toronto Hydro, and a newly-created Chief Resilience Officer position), collapsing the distinction between TEMPC and its Control Group so all TEMPC members are Control Group members, and formally adopting the Incident Management System as the City's operating framework in place of the by-law's original "Joint Operations Team" concept (a5383ce3a37b). By 2018, the priority is reporting execution and compliance against that reformed structure: the OEM states it is "100% compliant" with provincial Emergency Management and Civil Protection Act requirements and reports concrete 2017 program metrics — training sessions delivered, exercises run, EOC activations — rather than proposing further structural change (a82de56553f0).</p>
@@ -162,7 +164,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: whether the 2017-approved Chapter 59 amendments (merging TEMPC/Control Group membership, delegating EMWG composition to TEMPC) were implemented as written by the time of the 2018 report, or whether the 2018 report's "100% compliant" statement refers to compliance with the pre-amendment or post-amendment structure — the 2018 document states the Emergency Plan "was updated" to reflect the 2017 Code changes but does not itself re-state the full amended TEMPC/Control Group membership list for independent verification against the 2017 proposal.</li>
 <li><strong>Backgrounder reconciliation, 2026-08-02:</strong> this brief was written before the org's Wave-1 backgrounder existed. The backgrounder corroborated every claim in this brief's OEM-era (2013-2018) document series; only the Backgrounder summary section was rewritten. The backgrounder carries two additional unresolved ⚠️ still being checked flags this brief's three-document window cannot itself resolve: (1) the current Deputy City Manager reporting cluster for this division — the registry lists no parent_org, and a 2018 report was submitted under a since-reorganized "Cluster B" structure; (2) the exact date/instrument of the rename from Office of Emergency Management to Toronto Emergency Management, which postdates this brief's 2018 document ceiling and is therefore outside what this brief's own record can confirm or deny.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

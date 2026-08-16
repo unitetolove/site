@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-brock.html">Municipal — Brock</a> &middot; Township of Brock</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Township of Brock</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (4 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (4 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Budget / estimates</td><td><a href="https://www.townshipofbrock.ca/media/juddb2np/2026-final-budget_aod.pdf">2026 Budget</a></td><td>archived</td><td></td></tr>
@@ -81,7 +83,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2021</td><td>Budget / estimates</td><td><a href="https://www.townshipofbrock.ca/media/xfcpgefw/2021-operating-budget-council-approved-reduced.pdf">2021 Operating Budget (Council Approved)</a></td><td>archived</td><td></td></tr>
 <tr><td>2019</td><td>Financial statements</td><td><a href="https://www.townshipofbrock.ca/media/qnwhb4xd/the-corporation-of-the-township-of-brock-12312019-final-fs.pdf">Consolidated Financial Statements of The Corporation of the Township of Brock, December 31, 2019</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -106,7 +108,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>Brock is a lower-tier, largely rural municipality within the Regional Municipality of Durham, governed under the Municipal Act, 2001, delivering local services (roads, parks/recreation, building permits, by-law enforcement, local planning) while Durham Region delivers region-wide services (police, transit, waste, water/wastewater, social services). Brock is led by an elected Mayor and Council; the Township's posted strategic plan was, as of the last registry check, still dated to the 2015-2020 term with no refresh recorded. Budget scale was previously estimated at ~$16M in total consolidated revenue for the most recent audited year (backgrounder flagged this ⚠️ still being checked on exact single-year total); this review confirms 2023 consolidated revenue of $16,076,197 actual against a $14,466,207 budget, resolving that flag.</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 4 ok / 0 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Township of Brock - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -146,7 +148,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes, full read</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>All four documents are genuine, substantive filings — none is a stub or shell. Both budget documents show heavy OCR/text-extraction duplication artifacts (nearly every word or number token is repeated twice, once as plain text and once wrapped in quotes, e.g. "Building Building" / "67,410" "67,410") rather than any content deficiency; the underlying figures are fully recoverable and internally consistent once the duplication pattern is accounted for. This is a text-extraction artifact, not a stub — flagging per the stub-detector instruction for transparency, but classifying both budgets as content-read, not stub-suspected.</p>
 <h4>Priority evolution</h4>
 <p><strong>2021 Operating Budget (58a0db8fc42d):</strong> A flat, single-tier "Operating Budget" covering seven functional groupings (General Administration, Protection to Persons &amp; Property, Transportation Services, Environmental Services, Health Services, Recreation &amp; Cultural Services, Planning &amp; Development), each broken into named sub-departments (e.g., Fire Department, Building Department, Roads Department). Total operating tax levy required: $8,697,660, up 10.36% over the 2020 budget ($7,880,936) — the single largest year-over-year percentage jump anywhere in this two-document series. Total operating financing (expenditures + reserve draws) for 2021: $12,651,964, down from the 2020 budget of $13,191,626. No capital plan or business-case narrative is present in this document; it is a pure numbers-by-department operating budget with a five-year actuals/budget comparison (2018-2021).</p>
@@ -178,7 +180,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: the exact single-year total consolidated revenue figure the backgrounder flagged (~$16M range) is now resolved by this review — 2023 actual consolidated revenue was $16,076,197 — but the backgrounder itself has not been updated to remove its own ⚠️ still being checked flag.</li>
 <li>No stub/shell documents were found in this series; all four archived documents are genuine, complete, substantive filings consistent with their stated <code>_index.json</code> status of "ok."</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

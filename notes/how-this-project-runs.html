@@ -14,6 +14,7 @@
 <script defer src="../assets/analytics.js"></script>
 </head>
 <body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <a href="#main" class="skip-link">Skip to main content</a>
 
 <header>
@@ -37,7 +38,7 @@
 <a href="https://unitetolove.ca/index.html">Home</a> / Working notes / How this project runs
 </nav>
 
-<main id="main">
+<main id="main" tabindex="-1">
 
 <div style="border: 1px solid; padding: 1em; margin: 1.5em 0;">
 Working notes — an internal document, published nearly verbatim with named redactions marked in place. Expect apparatus: decision codes, board references, first-person seat voice. Why we publish our working documents: <a href="../how-we-share.html">how we share</a>.
@@ -142,7 +143,7 @@ where the working directory isn't the repo root), paste prompts/SHORTHANDS.md's 
 instead — same effect. This table mirrors CLAUDE.md's live trigger list; if the two ever
 disagree, CLAUDE.md wins (it's the one auto-loaded every session).</p>
 
-<table border="1" cellpadding="6">
+<div class="table-scroll" tabindex="0" aria-label="Shortcuts — say the phrase, any Jane resolves it"><table border="1" cellpadding="6">
 <tr><th>You say</th><th>What happens</th></tr>
 <tr><td>"start jane" / "boot jane" / "new jane"</td><td>Boots the <strong>Planning</strong> track (prompts/bootstrap_jane_successor.md) — cross-track judgment, task creation. This boot file is a tombstoned pointer: Planning's real seat is now <strong>Founder</strong> (see §5)</td></tr>
 <tr><td>"start code jane" / "new code jane"</td><td>Boots the <strong>Code</strong> track (prompts/bootstrap_jane_code.md) — `tools/`, tests, CI, git/worktree hygiene, local capture/extraction tooling</td></tr>
@@ -158,7 +159,7 @@ disagree, CLAUDE.md wins (it's the one auto-loaded every session).</p>
 <tr><td>"boot build jane: develop project `&lt;name&gt;`"</td><td>Generalized project factory (prompts/bootstrap_project_factory.md) — engineering / movement-site / ops / research-program profiles</td></tr>
 <tr><td>"develop program: `&lt;name&gt;`" / "develop program `&lt;name&gt;`"</td><td>Research-only program factory (prompts/bootstrap_program_factory.md) — distinct from the line above</td></tr>
 <tr><td>"health check"</td><td>Runs `python3 tools/repo_health_check.py` directly — no prompt file needed</td></tr>
-</table>
+</table></div>
 
 <p>If a phrase doesn't map cleanly, say so rather than guessing — "did you mean X or Y" once beats
 dispatching the wrong thing.</p>
@@ -291,14 +292,14 @@ re-founding, research/content production runs on THE CANON (strategy/canon/CANON
 its LAYER4_ENGINE prompt family is the working roster for that spine, at
 `strategy/canon/LAYER4_ENGINE/`:</p>
 
-<table border="1" cellpadding="6">
+<div class="table-scroll" tabindex="0" aria-label="5. Who&#x27;s who (roles)"><table border="1" cellpadding="6">
 <tr><th>Seat</th><th>What it does</th><th>Boots via</th></tr>
 <tr><td><strong>FOUNDER</strong></td><td>The judgment seat — orchestrates the other four, holds ratification walks, architecture/firewall calls, render-class approvals. Runs on the higher-effort tier (thinking on).</td><td>"boot founder"</td></tr>
 <tr><td><strong>CLOSURE_TRAIN</strong></td><td>Production — takes a scoped issue/piece from open to closed through the canon's method.</td><td>dispatched by Founder</td></tr>
 <tr><td><strong>independent verification</strong></td><td>Independent verification/seal pass — the canon's version of the old Lane-V discipline.</td><td>dispatched by Founder</td></tr>
 <tr><td><strong>RENDER</strong></td><td>Turns ratified CORE substance into an audience-tuned door (public page, candidate brief, org letter, etc.) — never disagrees with CORE.</td><td>dispatched by Founder</td></tr>
 <tr><td><strong>CURATOR</strong></td><td>Regenerates the scoreboard (`LAYER2_MAP.md`), sweeps for stranded work, keeps registries honest.</td><td>dispatched by Founder</td></tr>
-</table>
+</table></div>
 
 <p>Each of the five reads only GOAL/CORE + MAP + METHOD to orient — they're deliberately narrow.
 "Boot founder" is now the real Planning-track boot; the old prompts/bootstrap_jane_successor.md
@@ -307,22 +308,22 @@ somewhere sane.</p>
 
 <p><strong>The Jane tracks — day-to-day scope, still real and still separate from the canon seats:</strong></p>
 
-<table border="1" cellpadding="6">
+<div class="table-scroll" tabindex="0" aria-label="5. Who&#x27;s who (roles)"><table border="1" cellpadding="6">
 <tr><th>Role</th><th>What it does</th><th>Where it writes</th></tr>
 <tr><td><strong>Jane — Planning</strong></td><td>Cross-track judgment: architecture, firewall/fairness/legal flags, task creation, project intake. Rulings PROPOSED until you ratify. Its trigger now routes to Founder above.</td><td>state/NOW.md, state/DECISIONS.md, state/PROJECTS.md</td></tr>
 <tr><td><strong>Jane — Code</strong></td><td>Owns `tools/`, tests, CI, git/worktree hygiene, Desktop Orchestrator infrastructure.</td><td>state/NOW_CODE.md, `tools/`</td></tr>
 <tr><td><strong>Jane — Research</strong></td><td>Owns the content pipeline: Atlas → Ledger → Data → Backgrounders → Briefs. Day-to-day production order is absorbed into CLOSURE_TRAIN above; this track still owns the connector/data layer underneath it.</td><td>state/NOW_RESEARCH.md, `research/`</td></tr>
 <tr><td><strong>Jane — Movement</strong></td><td>Movement-facing content and outreach execution: charter support, contribution pipeline, coordinator kits, tribe map, engagement capture, press kit, distribution.</td><td>state/NOW_MOVEMENT.md</td></tr>
 <tr><td><strong>Jane — Strategy</strong></td><td>The high-level thinker seat: whole-board review, assumption-testing, independent reviews of any artifact/plan/pivot. <strong>Non-execution by constitution</strong> — proposes memos and state/DECISION_QUEUE.md §0 card drafts, never fires a lane, mints a decision, or edits canon/state/production files. Explicitly NOT Founder.</td><td>its own dated `strategy/` memo + state/OPERATOR_LOG.md verbatim bank + one `SESSIONS.md` line</td></tr>
-</table>
+</table></div>
 
 <p><strong>Supporting roles, unchanged in kind:</strong></p>
 
-<table border="1" cellpadding="6">
+<div class="table-scroll" tabindex="0" aria-label="5. Who&#x27;s who (roles)"><table border="1" cellpadding="6">
 <tr><th>Role</th><th>What it does</th><th>Where it writes</th></tr>
 <tr><td><strong>Kimi (CLI)</strong></td><td>A second model/tool in the fleet, same repo conventions. Has run dev-execution (review/merge supervision) and its own self-directed engineering roadmap.</td><td>wherever its assigned task lands, same as any executor</td></tr>
 <tr><td><strong>Gate / Merge</strong></td><td>Standing roles (not yet fully automated) — PR review and merge discipline as multi-agent PRs scale up.</td><td>GitHub PRs</td></tr>
-</table>
+</table></div>
 
 <p>Full architecture: strategy/V3_VERDICT_AND_ARCHITECTURE_2026-07-11.md. Full track-split
 rationale: state/DECISIONS.md a recorded standing decision. Full canon architecture: strategy/canon/CANON_README.md.</p>

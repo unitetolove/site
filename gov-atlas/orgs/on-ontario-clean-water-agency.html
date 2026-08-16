@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/provincial-on.html">Provincial — Ontario</a> &middot; Ontario Clean Water Agency</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Ontario Clean Water Agency</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (20 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (20 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2024</td><td>Annual report</td><td><a href="https://www.ocwa.com/wp-content/uploads/2025/07/OCWA-AR2025-FULL-Final-ENG-tagged-1.pdf">OCWA Annual Report 2024</a></td><td>archived</td><td></td></tr>
@@ -97,7 +99,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2003</td><td>Annual report</td><td><a href="https://archive.org/details/micro_IA40243311_1184">Ontario. Clean Water Agency : Annual report / Rapport annuel</a></td><td>archived</td><td></td></tr>
 <tr><td>2000</td><td>Other</td><td><a href="https://archive.org/details/micro_IA40243302_2739">The Ontario Clean Water Agency&#x27;s report to the Walkerton Public Utilities Commission on the operational measures taken to address the E. coli water contamination in the town of Walkerton</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -122,7 +124,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>OCWA is a corporation without share capital established under the Capital Investment Plan Act, 1993, S.O. 1993, c. 23, with objects (s. 49(1)) to assist municipalities and government "by financing, planning, developing, building and operating" water and sewage works in a manner that protects human health and the environment. It operates, maintains and manages water and wastewater treatment facilities for municipal, industrial and First Nation clients across Ontario, and sells engineering, advisory and training services commercially. Created in 1993 when the province transferred direct ownership/operation of municipal water and sewage plants from the Ministry of the Environment to the new Agency, OCWA is a Tier 1 Crown corporation governed by a Lieutenant-Governor-in-Council-appointed board and reporting through the Minister of the Environment, Conservation and Parks. Its current strategy instrument is the OCWA Business Plan 2026-2028; the backgrounder records ~$335.6M total revenue for 2024, with total operating revenue growing 16.5% year over year and the precise fiscal-year boundary flagged as unverified.</p>
 <h4>Series inventory</h4>
 <p>20 documents span 2000-2024: 19 annual reports plus one 2000 incident report. Extraction status is "ok" for all 20 per <code>_index.json</code>, but the depth of recoverable content varies sharply by era: the four earliest documents (2000, 2003-2005) yielded only Internet Archive item-page navigation chrome with no report content; ten more (2006-2016, excluding gap years) yielded a short Internet Archive catalog-description paragraph plus bibliographic metadata; six (2017, 2019-2022, 2024) yielded full PDF report text. No document failed extraction outright.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Ontario Clean Water Agency - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -274,7 +276,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full PDF text (158,967 chars)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>No document in the registry for 2001, 2002, 2012, 2018 or 2023 — these years are simply absent from the 20-document set, not extraction failures.</p>
 <h4>Priority evolution</h4>
 <p><strong>2000 (oth-2000, <code>0b491dd78f17</code>):</strong> OCWA's report to the Walkerton Public Utilities Commission "on the operational measures taken to address the E. coli water contamination in the town of Walkerton," published in Toronto. This is the earliest document in the series. Only the title, publisher ("Toronto: the Agency") and bibliographic record were recoverable on this review; the report's actual content is unread. ⚠️ still being checked substantive content.</p>
@@ -337,7 +339,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: precise fiscal-year definition (calendar vs. April-March) underlying the revenue and net-income figures cited across years; this brief reports figures as stated in each year's own narrative or financial statements ($205M/2018 narrative reference; $213.6M/2019; $222.639M/2020 Total Operating Revenues; $241.376M/2021; $260.684M/2022; $335.6M/2024) without independently reconciling differing "total revenue" vs. "Total Operating Revenues" conventions used across years — this matches the ⚠️ still being checked already flagged in the backgrounder.</li>
 <li>No archive_status=missing years and no era:pre-web-baseline flags apply to this series in the registry; all gaps identified above stem from (a) registry non-coverage of specific years or (b) shallow web-archive capture of Internet Archive item pages rather than underlying document text.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

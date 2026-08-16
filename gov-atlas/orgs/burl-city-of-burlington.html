@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-burlington.html">Municipal — Burlington</a> &middot; City of Burlington</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>City of Burlington</h1>
@@ -73,14 +75,14 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (3 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (3 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Budget / estimates</td><td><a href="https://www.burlington.ca/en/council-and-city-administration/resources/Budget-and-Finances/Approved-Budget-Book/2026/2026%20Approved-Budget-Book-00-Complete.pdf">City of Burlington 2026 Approved Budget Book (complete + 11 sections)</a></td><td>archived</td><td></td></tr>
 <tr><td>2024</td><td>Financial statements</td><td><a href="https://www.burlington.ca/en/council-and-city-administration/resources/Budget-and-Finances/Financial-Statements/2024-City-of-Burlington-Financial-Statement.pdf">Consolidated Financial Statements Dec 31 2024</a></td><td>archived</td><td></td></tr>
 <tr><td>2021</td><td>Strategic plan</td><td><a href="https://www.burlington.ca/en/council-and-city-administration/resources/Plans-Reports-and-Studies/Strategic-Plan-2015-2040.pdf">Vision 2040 Strategic Plan 2015-2040</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: plan-horizon-2040</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -105,7 +107,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>The City of Burlington is a lower-tier municipality within the Regional Municipality of Halton, governed under the Municipal Act, 2001, S.O. 2001, c. 25, delivering local services (roads, parks/recreation, building permits, by-law enforcement, local land-use planning) while Halton Region delivers region-wide services (police, waste, water/wastewater, social services). Burlington is led by an elected Mayor (Marianne Meed Ward) and City Council. Its living long-range plan, Vision 2040: Burlington's Strategic Plan, was refreshed in 2022 per the backgrounder's registry citation; the archived sp-2021 document itself is dated "Updated May 2021" (see Series inventory — this is a minor dating discrepancy, addressed in Residuals &amp; gaps). Backgrounder-cited budget scale: ~$493M total approved budget for 2026, with a net tax levy base of $279,981,597 plus $867,799 in key investments — both figures independently re-confirmed against the extracted bud-2026 text below (this brief relays, and separately re-verifies against primary text, rather than asserting independent discovery). The backgrounder flags Burlington's exact founding/incorporation year and any town-to-city renaming as ⚠️ still being checked; this archived set does not resolve that question (see Residuals &amp; gaps).</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 3 ok / 0 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="City of Burlington - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -138,7 +140,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full "Vision 2040" Strategic Plan 2015-2040 (May 2021 update), substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>SHORT-FORM RULE APPLIES: own read confirms only 3 usable documents, spanning a single strategic-plan era (2021-2026) now itself ending.</strong> Vision 2040 (2021 update) is the outgoing plan, fs-2024 is the most recent audited actuals, and bud-2026 is the final budget cycle under Vision 2040 before its planned replacement. This is not a multi-cycle series capable of showing plan-to-plan evolution in the conventional sense — instead it captures the tail end of one 25-year plan and the announced but not-yet-adopted arrival of its successor. The sections below state only what these three documents themselves establish.</p>
 <h4>Priority evolution</h4>
 <p>sp-2021 (bbec5b485e68) presents Vision 2040 as reorganized (not re-visioned) in its 2021 update: the same four Key Strategic Directions from the original 2016-published plan are retained unchanged — "A City that Grows," "A City that Moves," "A Healthy and Greener City," and "An Engaging City" — with the 2021 update's stated purpose being to streamline the 25-year visionary document and push specific initiatives down into four-year workplans and dashboards rather than revise the vision itself (bbec5b485e68). bud-2026 (7e82b007765c) does not organize its own structure around these four directions by name; instead, its "Strategic Alignment with Vision to Focus Plan" section (referenced under Mayor and Council) lists four different-but-related alignment statements — "Designing and delivering complete communities," "Providing the best services and experiences," "Protecting and improving the natural environment and taking action on climate change," "Driving organizational performance" — tied to a medium-term document called "Burlington's Plan: From Vision to Focus," which sp-2021 itself names as a companion medium-term policy document distinct from the 25-year Vision 2040 (bbec5b485e68; 7e82b007765c). Most significantly, bud-2026's Corporate Affairs department section discloses that Council is currently leading "a revised 25-year Community Strategic Plan aligned to a refreshed 25-year long term City Vision and Principles," with a February 2026 target completion for Council approval, and elsewhere names this successor plan directly: "Horizon 2050" (7e82b007765c). Vision 2040 is thus shown transitioning to Horizon 2050 within the window itself, rather than showing a completed multi-cycle evolution.</p>
@@ -172,7 +174,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>The 1,170,306-character bud-2026 document was skimmed strategically per the org-specific budget-document guidance (front matter, budget summary, tax/levy tables, capital-summary framing, and the Mayor &amp; Council / Corporate Affairs departmental sections read in full, given their direct relevance to the Horizon 2050 finding; the remaining ~500 pages of departmental and per-project capital line items were sampled rather than read exhaustively). A future pass wanting granular departmental or capital-project detail should read those sections directly.</li>
 <li>Council members (Mayor Marianne Meed Ward and named Councillors/Deputy Mayors) appear in bud-2026 in official capacity only (City-published organizational materials) — titled officeholders, consistent with the private-individual guardrail.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

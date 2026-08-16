@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; Sankofa Square</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Sankofa Square</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (19 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (19 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2024</td><td>Financial statements</td><td><a href="https://www.toronto.ca/legdocs/mmis/2025/au/bgrd/backgroundfile-256878.pdf">Sankofa Square (formerly Yonge-Dundas Square) Financial Statements 2024</a></td><td>archived</td><td></td></tr>
@@ -96,7 +98,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2007</td><td>Financial statements</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td><strong>missing</strong></td><td><span class="incompleteness-tag">⚠️ Still being checked: searched-not-found (site-migration-loss: series lives at City of Toronto Audit Committee legdocs/mmis/&lt;year&gt;/au/bgrd/backgroundfile-*.pdf, not the org&#x27;s own domain; 150-280 candidate PDFs per meeting-year with no title index, agenda search UI blocked (secure.toronto.ca 403), brute-force beyond budget)</span></td></tr>
 <tr><td>2004</td><td>Financial statements</td><td><a href="https://www.toronto.ca/legdocs/2005/agendas/council/cc050719/au3rpt/cl011.pdf">2004 Audited Financial Statements - Yonge-Dundas Square (Audit Committee Report 3 Clause 11)</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: inline-council-clause</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -121,7 +123,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>The Sankofa Square Board of Management (formerly the Yonge-Dundas Square Board of Management) is a City of Toronto agency established by Council By-law 1001-2001 (Dec. 6, 2001) under City of Toronto Act, 2006 authority, with its powers and structure set out in Toronto Municipal Code Chapter 636 ("Public Squares"), Article II. The Board manages, operates, and maintains the one-acre public square on the City's behalf, in partnership with the Downtown Yonge Business Improvement Area, delivering event production, event coordination, and public-space amenities. It has 15 members (the Ward 13 Councillor, 10 public appointees, and non-voting City/agency staff). The Square was renamed from Yonge-Dundas Square to Sankofa Square by Council on Dec. 14, 2023 (MM13.29), enacted via By-law 675-2024 (June 26, 2024). The backgrounder cites a ~$3.803M gross 2026 operating budget. Per the backgrounder's own flag, there is an unresolved discrepancy between the Board's 2001 by-law establishment date and the registry/org-site's references to a 2004 "establishment" (likely the physical square's public opening rather than the Board's creation) — this brief does not resolve it either.</p>
 <h4>Series inventory</h4>
 <p>The archived series for this org consists of four financial-statements documents only (no annual reports, strategic plans, or corporate-plan-summary documents are registered). All four were read in full for this brief.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Sankofa Square - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -161,7 +163,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Detector QA note (tor-sankofa-square-fs-2004, 75b72d9aa266):</strong> the <code>stub-suspected</code> flag (below char-count floor: 1,254 chars) is confirmed CORRECT on direct reading. The extracted text is not the 2004 audited financial statements themselves; it is a City Clerk's consolidated Audit Committee Report 3 clause recording that Council "received" the 2004 financial statements of several agencies (Exhibition Place, TTC, Toronto Coach Terminal, Toronto Public Library, Toronto Zoo, Yonge-Dundas Square, Heritage Toronto) "submitted under separate cover" — i.e., a transmittal/receipt cover document, not the underlying financial statements. No revenue, expense, or balance-sheet figures for Yonge-Dundas Square appear anywhere in this file. The detector worked as intended here.</p>
 <h4>Priority evolution</h4>
 <p>Because the archived series is financials-only (no annual reports, business plans, or strategic-priority documents), there is no direct textual record of stated strategic priorities across the four documents. What the financial statements do show is a consistent, narrow operating scope across two decades — facilities management, administration, and event management/event support as the three standing expense categories (tor-sankofa-square-fs-2021, af555ae68bd3; tor-sankofa-square-fs-2024, 8242e086dc42) — with the following observable inflections:</p>
@@ -198,7 +200,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: whether the ~$3.803M gross 2026 operating budget cited in the backgrounder (from a document outside this extraction set) is consistent with the growth trajectory visible here (2021 actual revenue $2,352,507; 2024 actual revenue $4,194,464) — plausible on trend but not independently confirmed by any document read for this brief.</li>
 <li>The 2004 and 2017 documents, while not "financial statements" in substance (a receipt clause and a management representation letter respectively), are correctly filed under <code>doc_type: financials</code> in that they are audit-related documents associated with those fiscal years — this is a labeling/completeness issue for the source archive rather than a detector error, since the detector's job is to flag likely-stub extraction, not to validate that the correct document type was archived in the first place.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/federal.html">Federal</a> &middot; Military Police Complaints Commission of Canada</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Military Police Complaints Commission of Canada</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (65 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (65 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Departmental plan</td><td><a href="https://www.mpcc-cppm.gc.ca/corporate-organisation/reports-rapports/departmental-plan-ministeriel/departmental-plan-ministeriel-2025-2026-eng.html">Departmental Plan 2025–2026</a></td><td>archived</td><td></td></tr>
@@ -142,7 +144,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2007</td><td>Departmental plan</td><td><a href="https://web.archive.org/web/20131016225820id_/http:/www.tbs-sct.gc.ca/rpp/2006-2007/MPCC-CEPCPM/mpcc-cepcpm-eng.pdf">Report on Plans and Priorities 2006-2007 - Military Police Complaints Commission</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: capture-artifact-goc-interstitial</span></td></tr>
 <tr><td>2007</td><td>Departmental results report</td><td><a href="https://web.archive.org/web/20131016225820id_/http:/www.tbs-sct.gc.ca/dpr-rmr/2006-2007/inst/cpm/cpm-eng.pdf">Departmental Performance Report 2006-2007 - Military Police Complaints Commission of Canada</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: capture-artifact-goc-interstitial</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -167,7 +169,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>The Military Police Complaints Commission of Canada (MPCC) is created under Part IV of the National Defence Act and describes itself as an independent civilian oversight agency for military police conduct and interference complaints, delivering a single core responsibility ("Independent Oversight of the Military Police") through monitoring, review, investigation, public interest investigations, and public interest hearings. It reports to Parliament through the Minister of National Defence, within the National Defence Portfolio, while remaining administratively and legally independent of the Department of National Defence and the Canadian Armed Forces. It is a small federal micro-organization — low-tens of FTEs and a budget in the mid-single-digit millions — whose governing National Defence Act framework the Commission's own reporting describes as "remained largely unchanged" since its creation.</p>
 <h4>Series inventory</h4>
 <p>The archived series covers four MPCC doc-type series: annual reports (ar-2018 through ar-2025, 8 documents, ~75K–136K characters each, the main narrative source and read most fully here), departmental plans (dp-2020 through dp-2026, 7 documents, ~30K–52K characters, forward-looking priorities), departmental results reports (drr-2019 through drr-2025, 7 documents, ~33K–53K characters, retrospective on whether priorities were met), and financial statements (fs-2019 through fs-2025, 7 documents, ~24K–27K characters, numeric statements skimmed only for budget inflection points). this library's government-document registry additionally lists 36 rows for this org — ar-2007 through ar-2017 (11 rows), dp-2007 through dp-2019 (13 rows), and drr-2007 through drr-2018 (12 rows) — all with <code>archive_status=missing</code> and <code>flags=⚠️ still being checked — the web archive was unreachable when we looked</code>. This means the grounded window in this brief effectively runs from ar-2018 (the earliest successfully archived annual report) forward, even though MPCC has existed since 1998/1999; see Residuals &amp; gaps for why this is a capture-tool limitation, not evidence the Commission withheld or failed to table earlier reports.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Military Police Complaints Commission of Canada - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -382,7 +384,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>skimmed (figures only)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>36 additional rows (ar-2007–2017, dp-2007–2019, drr-2007–2018) are listed in our document registry with <code>archive_status=missing</code>, <code>flags=⚠️ still being checked — the web archive was unreachable when we looked</code>, and no sha256/warc reference — not reproduced here as a table since none carry any retrievable content; see Residuals &amp; gaps.</p>
 <h4>Priority evolution</h4>
 <p><strong>2018 (ar-2018, dd5275c501e1):</strong> Annual report theme "Public Trust and Confidence." MPCC frames its work around an "Internal Review on Timeliness" begun in 2016, continuing through 2017 and 2018 with investigator-pool replenishment, an organizational-structure update, and a September 2018 Operations Workshop. A four-year comparative statistics table shows Total Files Carried Over rising from 57 (2015) to 68 (2016), dipping to 49 (2017), then climbing to 71 (2018), with Conduct Complaints Carried Over rising from 31 to 53 over the same span. The report already flags redaction and information-disclosure friction with the Canadian Forces Provost Marshal (CFPM) as a drag on timeliness and references "legislative gaps" and "calls for legislative improvements made in previous annual reports."</p>
@@ -430,7 +432,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: the apparent jump in FY2026-27 planned spending. dp-2026's own three-year outlook (94d1d930f3be) projects FY2026-27 planned spending of $5,580,864, whereas the backgrounder cites a separate, more recent 2026-27 Departmental Plan (fetched live, not part of this archived series) showing $6,239,645 planned for that same fiscal year. These are two different documents from two different planning cycles — the newer one is not in this archived series — and their figures should not be treated as directly comparable without locating and archiving the 2026-27 Departmental Plan itself.</li>
 <li>Two 2025 Public Interest Hearings and one 2024 Public Interest Investigation decision are identified by case/hearing name in the underlying source documents; per house style for this org's sensitive subject matter, this brief describes them only by general subject matter and omits those names.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/federal.html">Federal</a> &middot; Canadian Centre for Occupational Health and Safety</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Canadian Centre for Occupational Health and Safety</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (14 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (14 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Annual report</td><td><a href="https://www.ccohs.ca/ccohs/reports/annual/2024/annual2425.html">CCOHS Annual Report: April 1, 2024 to March 31, 2025</a></td><td>archived</td><td></td></tr>
@@ -91,7 +93,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2013</td><td>Annual report</td><td><a href="https://www.ccohs.ca/ccohs/reports/annual/2012/annual1213.html">CCOHS Annual Report 2012-2013</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: pattern-inferred</span></td></tr>
 <tr><td>1999</td><td>Annual report</td><td><a href="https://www.ccohs.ca/ccohs/reports/1998_1999_annual_report.pdf">CCOHS Annual Report 1998-1999</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -116,7 +118,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>The Canadian Centre for Occupational Health and Safety (CCOHS) was established in 1978 by the Canadian Centre for Occupational Health and Safety Act, R.S.C. 1985, c. C-13, to "promote the fundamental right of Canadians to a healthy and safe working environment" through a national OH&amp;S research institute. Under section 5, it advances workplace health and mental wellness, facilitates federal/provincial/territorial cooperation, develops hazard-elimination policy, and serves as Canada's national repository of OH&amp;S statistics and information. It is governed by a tripartite Council of roughly 22 members (Chair, 13 provincial/territorial governors, 4 worker-nominated, 4 employer-nominated) plus a President/CEO; the Council must submit an annual report to the responsible Minister within four months of fiscal year-end for tabling in Parliament. The 2026-27 Departmental Plan names Anne Tennier, P.Eng., as President and CEO and lists the reporting minister as the Minister of Jobs and Families and Minister Responsible for the Federal Economic Development Agency for Northern Ontario, with ~$15.5M total planned spending and 110.7 planned FTEs for FY2026-27. Registry lists <code>org_type</code> as "agency" with no parent.</p>
 <h4>Series inventory</h4>
 <p>The registry holds 14 rows for this org, all <code>doc_type: annual-report</code>. <strong>13 of the 14 were successfully archived and extracted</strong>; the 14th (<code>ar-2014</code>, FY2013-14) has <code>archive_status: missing</code> with flag <code>⚠️ still being checked — the web archive was unreachable when we looked</code> and was never captured — it is a distinct archiving gap, not part of the "13 registered documents" this brief's extraction-rate claim covers. All 13 extracted <code>.txt</code> files were opened and read directly (not inferred from filenames): none contain the ~804-char publications.gc.ca "Information Archived on the Web" stub, a 404 page, or any other content-free interstitial — a full-text grep for stub/error markers across all 13 files returned zero matches, and financial-statement figures cross-check cleanly year-over-year (each year's prior-year comparative column matches the adjoining document's current-year figure exactly, e.g. Total expenses FY2016-17 $11,167,506 in ar-2018's own prior-year column and again as ar-2019's prior-year column). <strong>True usable-content rate: 13 of 13 extracted documents (100%) yielded real, substantive report content.</strong> The series runs FY1998-99 and FY2012-13, then continuously FY2014-15 through FY2024-25 (no FY2013-14 document, per the registry gap above); no document type other than "Annual Report of the Council" is registered for this org — no Departmental Plan or Departmental Results Report is present here (see Residuals &amp; gaps).</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Canadian Centre for Occupational Health and Safety - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -219,7 +221,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h4>Priority evolution</h4>
 <p><strong>FY1998-99 (ar-1999, 127ce4994969):</strong> The earliest document in the series shows no formal named "strategic plan" or numbered priorities — the President's message (S. Len Hong) frames the mission simply as helping "everyone in our field attain our collective OH&amp;S goals and objectives," under the Act's 1978 mandate "to promote health and safety in the workplace." The Council of Governors is already tripartite (Chair, labour, employer, provincial/territorial seats). Financials: Total expenditures $6,898,172 (vs. $6,724,454 prior year); Total non-tax revenue $4,239,754; Net cost of operations $2,658,418. Audited by the Office of the Auditor General of Canada (Richard Flageole, Assistant Auditor General).</p>
 <p><strong>FY2012-13 (ar-2013, e81b8988e2ec):</strong> President and CEO Steve Horvath, one year into his term, frames the year as one of "transformation" toward becoming "more effective as a customer-centric organization." No formal numbered strategic-priorities framework is present. Total expenses: $10,230,279 (planned) / $10,271,966 (actual) vs. $10,759,236 (prior actual). CCOHS spoke at the NAOSH Week national launch in Toronto, Ontario (May 7, 2012).</p>
@@ -276,7 +278,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: the registry's <code>org_type</code> field lists "agency," while every Annual Report from at least ar-2020 (85e87ef4247a) onward self-describes CCOHS as "a federal departmental corporation." This may be a difference in classification granularity (departmental corporation is a specific Financial Administration Act Schedule II sub-type, and "agency" may be a broader registry bucket) rather than a factual conflict, but it is not resolved by anything read in this series.</li>
 <li>⚠️ Still being checked: the exact date(s) the Council of Governors grew from the smaller roster explicitly named in ar-1999 (127ce4994969) — roughly 16 named seats across chair/labour/employer/provincial-territorial categories — to the ~22-member structure described in the current backgrounder. No document in this series states a numeric target or transition date for Council size; only individual appointments/departures are reported year to year.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

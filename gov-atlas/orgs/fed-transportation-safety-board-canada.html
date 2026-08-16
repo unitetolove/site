@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/federal.html">Federal</a> &middot; Transportation Safety Board of Canada</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Transportation Safety Board of Canada</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (12 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (12 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Departmental plan</td><td><a href="https://www.tsb.gc.ca/eng/publications/priorites-priorities/2025/full-2025.html">TSB 2025-26 Departmental Plan</a></td><td>archived</td><td></td></tr>
@@ -89,7 +91,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2001</td><td>Annual report</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td><strong>missing</strong></td><td><span class="incompleteness-tag">era:pre-web-baseline</span></td></tr>
 <tr><td>2000</td><td>Annual report</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td><strong>missing</strong></td><td><span class="incompleteness-tag">era:pre-web-baseline</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -114,7 +116,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>The TSB is established under the Canadian Transportation Accident Investigation and Safety Board Act, S.C. 1989, c. 3, with a statutory object of conducting independent investigations into air, marine, rail, and pipeline occurrences to identify causes and contributing factors and report publicly, explicitly excluding fault-finding or liability determination (s.7, Act). It is governed by up to five Governor-in-Council-appointed members (at least three full-time) with a GIC-designated Chairperson serving as CEO, reporting to Parliament via its Departmental Plan and Departmental Results Report. The backgrounder's budget figure — ~$43.0 million actual spending for 2024-25 ($42,977,085: $29,947,826 core investigations across 179 FTEs, $13,029,259 internal services across 54 FTEs, 233 FTEs total), with $41,516,756 planned for 2026-27 and 245 planned FTEs — is independently re-confirmed against the extracted drr-2025 and dp-2026 text below (this brief relays, and separately re-verifies against primary text, rather than asserting independent discovery). The backgrounder flags predecessor-body history as ⚠️ still being checked; the dp-2026 corporate-information section read for this brief adds a "Year of incorporation / commencement: 1990" data point but does not resolve the predecessor-body question, so that flag stands.</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 2 ok / 4 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Transportation Safety Board of Canada - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -168,7 +170,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full 2024-25 Departmental Results Report, 54,273 chars, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>SHORT-FORM RULE APPLIES: own read confirms only 2 usable documents.</strong> Four Annual Reports to Parliament (2001-02, 2002-03, 2004-05, 2005-06) survive only as identical-length LAC archival-interstitial pages, not as report content — the stub detector's calls on all four are correct (see Residuals &amp; gaps). That leaves one Departmental Plan (2025-26, forward-looking, document id labelled dp-2026) and one Departmental Results Report (2024-25, backward-looking) — a single one-year "planned vs. achieved" pairing, not a multi-year trend series. A two-document, single-year-pair record cannot support a genuine priority-evolution narrative across time; the sections below state only what these two documents themselves establish.</p>
 <h4>Priority evolution</h4>
 <p>A two-document window one year apart cannot establish an evolution narrative across the 1989-2026 span the org has existed. What the two documents <em>do</em> establish: both name the same institutional priorities in near-identical language — conducting independent investigations into occurrences to identify causes and contributing factors and safety deficiencies, making recommendations and reporting publicly, and following up with stakeholders to ensure safety actions are taken (dc1b4ced4f56; a9c8d72f20ea) — indicating these core priorities were stable across the one year the archived pair covers. drr-2025 additionally frames 2024-25 as a 35th-anniversary year for the TSB (a9c8d72f20ea), consistent with the "Year of incorporation / commencement: 1990" the backgrounder flags as needing verification and dp-2026 states directly (dc1b4ced4f56).</p>
@@ -193,7 +195,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: whether the sharp decline in investigation-timeliness performance (13% of class 1-4 investigations on-target in 2024-25, down from 28% and 32% in the two prior years) is primarily attributable to the Budget 2023/2024 Refocusing Government Spending reductions, the transition to the new Safety Analysis System, rising occurrence complexity, or some combination — neither document disaggregates this.</li>
 <li>⚠️ Still being checked: no readable document in this set covers fiscal years 2006-07 through 2023-24 for this org at all; any priority changes, added/dropped programs, or budget inflection points in that ~17-year span are entirely unestablished by this archived series.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

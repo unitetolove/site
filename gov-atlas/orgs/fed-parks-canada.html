@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/federal.html">Federal</a> &middot; Parks Canada</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Parks Canada</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (19 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (19 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2027</td><td>Departmental plan</td><td><a href="https://parks.canada.ca/agence-agency/bib-lib/plans/dp/plan-ministeriel-2026-2027-departmental-plan">Parks Canada Plan ministériel 2026-2027 Departmental Plan</a></td><td>archived</td><td></td></tr>
@@ -96,7 +98,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2002</td><td>Annual report</td><td><a href="https://web.archive.org/web/20230502102725id_/https://publications.gc.ca/collections/collection_2021/pc/R61-115-2002-eng.pdf">Parks Canada Agency Annual Report 2001-2002</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: capture-artifact-goc-interstitial</span></td></tr>
 <tr><td>2000</td><td>Annual report</td><td><a href="https://web.archive.org/web/20230502102731id_/https://publications.gc.ca/collections/collection_2021/pc/R61-115-2000-eng.pdf">Parks Canada Agency Annual Report 1999-2000</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: capture-artifact-goc-interstitial</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -121,7 +123,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>Parks Canada Agency is a departmental (service) agency under the Financial Administration Act, established under s.3 of the Parks Canada Agency Act, S.C. 1998, c. 31, "a body corporate ... that may exercise powers and perform duties and functions only as an agent of Her Majesty in right of Canada." It implements the Canada National Parks Act, Canada National Marine Conservation Areas Act, and Historic Sites and Monuments Act, protecting and presenting nationally significant natural and cultural heritage through national parks, national historic sites and national marine conservation areas, and managing heritage canals, railway stations and lighthouses. It traces institutionally to the Dominion Parks Branch (1911). A Chief Executive Officer (Ron Hallman since 2019) reports to the Minister responsible — currently the Minister of Environment, Climate Change and Nature (Julie Dabrusin). Planned spending for 2025-26 was ~$1.27B ($1,267,895,970 incl. internal services) per the backgrounder's citation of the Departmental Plan.</p>
 <h4>Series inventory</h4>
 <p>16 documents are registered: 6 annual/business-plan-era documents (2000-2006) and 10 Departmental Plans (2018-2027, one per fiscal year, continuous). No annual reports or corporate/business plans were archived for the intervening 2006-2017 period — that is a registry gap, not an extraction failure.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Parks Canada - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -245,7 +247,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Critical caveat on the six "stub" rows</strong>: all six carry <code>_index.json</code> <code>status: "ok"</code> with a non-trivial byte count (804 chars each). Every one of them, on direct reading, is an identical (near-verbatim, bilingual) publications.gc.ca "Information Archived on the Web / Information archivée dans le Web" interstitial redirect page — a landing notice that points to a PDF publication but contains none of that publication's actual text. None of the 1999-2006 period is substantively documented in this archive. See Residuals &amp; gaps.</p>
 <h4>Priority evolution</h4>
 <p>Real, substantive priority-evolution evidence in this archive begins only at FY2017-18 (dp-2018) and runs continuously through FY2026-27 (dp-2027) — ten consecutive annual Departmental Plans. Nothing before FY2017-18 is grounded (see Series inventory).</p>
@@ -306,7 +308,7 @@ discovery-verification pass (our discovery-verification log)</li>
 - ⚠️ still being checked Rouge National Urban Park's geographic relationship to the City of Toronto boundary independently — the archived text never uses the word "Toronto" and does not itself establish this.
 - ⚠️ still being checked 2026-27 (the current registry/backgrounder year) exact total departmental-plan figure against the backgrounder's own flagged ⚠️ still being checked on that point — this brief did not attempt to reconcile the backgrounder's uncertainty about the 2026-27 total against dp-2027's disclosed $1,293,436,573 planned-spending figure, since the backgrounder and this series may be using different accounting scopes (see Budget &amp; mandate inflection points note on accounting bases).
 - No <code>archive_status: missing</code> or <code>era: pre-web-baseline</code> flags appear anywhere in this registry's rows (all sixteen say <code>status: "ok"</code>); both the 2000-2006 stub problem and the 2006-2017 registry gap are invisible to that status field.</p>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

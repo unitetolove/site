@@ -1,2 +1,6 @@
+# --- PROJ-0159 community-data surface (tools/wire_site_redirects.py) ---
+/BEY-SSW-community-data/s2_canyon_widened.html  /BEY-SSW-community-data/s2_canyon_didnt_close.html  301
+/elections/community-data/s2_canyon_widened.html  /BEY-SSW-community-data/s2_canyon_didnt_close.html  301
+/BEY-SSW-community-data/assets/og/s2_canyon_widened.png  /BEY-SSW-community-data/assets/og/s2_canyon_didnt_close.png  301
 /elections/community-data /BEY-SSW-community-data/ 301
 /elections/community-data/* /BEY-SSW-community-data/:splat 301

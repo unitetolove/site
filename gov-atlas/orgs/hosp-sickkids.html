@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/bps-hospital.html">Broader public sector — Hospitals</a> &middot; The Hospital for Sick Children</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>The Hospital for Sick Children</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (10 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (10 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Annual report</td><td><a href="https://microsite.sickkidsfoundation.com/annual-report-2024/">SickKids Annual Report 2024-2025</a></td><td>archived</td><td></td></tr>
@@ -87,7 +89,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2020</td><td>Annual report</td><td><a href="https://www.sickkids.ca/siteassets/about/about-sickkids/sickkids-annual-report-2019-2020.pdf">SickKids Annual Report 2019-2020</a></td><td>archived</td><td></td></tr>
 <tr><td>2020</td><td>Strategic plan</td><td><a href="https://2025.sickkids.ca/wp-content/uploads/2020/03/SK2025_Full-strategic-plan.pdf">SickKids 2025: Five-Year Strategic Plan (2020-2025)</a></td><td>staged</td><td><span class="incompleteness-tag">⚠️ Still being checked: plan-horizon-2025;intermittent-5xx; ⚠️ still being checked — the fetch failed on 2026-08-01; ⚠️ still being checked — the fetch failed on 2026-08-02; ⚠️ still being checked — the fetch failed on 2026-08-04; ⚠️ still being checked — the fetch failed on 2026-08-05; ⚠️ still being checked — the fetch failed on 2026-08-06</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -112,7 +114,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>SickKids operates as an approved public hospital under the Public Hospitals Act, R.S.O. 1990, c. P.40, governed by a Board of Trustees, with Ontario Health as its funding/oversight parent per the registry (backgrounder, citing hosp-sickkids-fs-2025, not independently re-read this review — see Series inventory). Backgrounder-cited FY2025 budget scale: ~$1.419B total revenue against ~$1.480B total expenses, a $4.2M deficiency of revenue over expenses. a recorded standing decision: this figure is relayed from the backgrounder as-is; it could not be independently re-verified against primary text this review because the FY2025 financial-statements document (hosp-sickkids-fs-2025) is extract-failed in this archived set (see Series inventory) — the backgrounder's own citation notes it was retrieved via r.jina.ai text rendering after a direct PDF fetch was blocked, a different capture path than this lane's WARC extraction. The backgrounder's institutional-history and governance ⚠️ still being checked items are not resolved by any document read this review; no document in the readable set addresses the incorporating instrument or founding history beyond what the annual reports' leadership messages already imply.</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 3 ok / 0 stub-suspected / 6 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="The Hospital for Sick Children - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -187,7 +189,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full "SickKids 2030" strategy microsite, 15,984 chars, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Detector-vs-read note:</strong> all 6 extract-failed documents were listed as <code>status: extract-failed</code> (not <code>stub-suspected</code>) by <code>_index.json</code> itself, with a "HTML extracted 0 bytes of text" note; no <code>.txt</code> file exists on disk for any of the six, consistent with that claim. No stub-suspected documents appear in this org's set at all — no detector disagreement to report in either direction, because the detector made no stub-suspected calls to check. This is a straightforward extraction-failure profile (four annual-report years 2022-2025 plus two financial-statement years, both from microsite.sickkidsfoundation.com sources), distinct from the interstitial-stub pattern seen in other orgs' briefs.</p>
 <p><strong>SHORT-FORM RULE, partial applicability:</strong> three usable documents clear the &lt;3 floor, but they are two annual reports one year apart (FY2019-20, FY2020-21) plus a single point-in-time strategic-plan microsite five years later (2025), with no FY2021-22 through FY2024-25 annual report or financial statement readable at all. This supports a real but narrow evolution comparison — two adjacent years plus one later snapshot — not a multi-year trend line. The sections below state only what these three specific documents establish, and are explicit about the five-year gap between ar-2021 and sp-2025.</p>
 <h4>Priority evolution</h4>
@@ -225,7 +227,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: whether "Project Horizon" is formally the successor/rebrand of the Patient Support Centre/Peter Gilgan Family Patient Care Tower capital program named in ar-2020/ar-2021, or a distinct, later-initiated redevelopment effort — not resolved by any document read this review.</li>
 <li>⚠️ Still being checked: the backgrounder's FY2025 financial figures (revenue ~$1.419B, expenses ~$1.480B) are relayed from the backgrounder per a recorded standing decision but could not be independently re-confirmed against primary text this review, since hosp-sickkids-fs-2025 is extract-failed in this archived set.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

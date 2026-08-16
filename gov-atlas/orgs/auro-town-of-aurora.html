@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-aurora.html">Municipal — Aurora</a> &middot; Town of Aurora</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Town of Aurora</h1>
@@ -73,14 +75,14 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (3 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (3 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Budget / estimates</td><td><a href="https://www.aurora.ca/media/tcucmcjd/tab-01-executive-summary.pdf">2026 Budget - Executive Summary</a></td><td>archived</td><td></td></tr>
 <tr><td>2024</td><td>Financial statements</td><td><a href="https://www.aurora.ca/media/b2aa5qxn/signed-consolidated-financial-statements.pdf">Consolidated Financial Statements 2024</a></td><td>archived</td><td></td></tr>
 <tr><td>2018</td><td>Strategic plan</td><td><a href="https://www.aurora.ca/media/ah1nvimq/strategic-plan.pdf">Today, Tomorrow, Our Future Together</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: plan-horizon-2031</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -105,7 +107,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>The Town of Aurora is a lower-tier municipality within York Region, governed under the Municipal Act, 2001, S.O. 2001, c. 25, delivering local services (roads, parks/recreation, building permits, by-law enforcement, local land-use planning) while York Region delivers police, transit, waste, water/wastewater and social services. Aurora is led by an elected Mayor and Council supported by an Office of the CAO. Backgrounder-cited budget scale: ~$132M gross operating spending for 2026 ("increases from $126 million in 2025 to $131.7 million in 2026") — independently re-confirmed against the extracted bud-2026 text below (this brief relays, and separately re-verifies against primary text, rather than asserting independent discovery). The backgrounder's registry-listed current strategic plan is "Strategic Plan 2011 to 2031"; the sp-2018 document read for this brief is a 2017-updated republication of that same plan (see Series inventory).</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 2 ok / 1 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Town of Aurora - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -138,7 +140,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full "Today, Tomorrow, Our Future Together" 2011-2031 plan (2017 update, republished/printed 2018), 21 pages, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>SHORT-FORM RULE APPLIES: own read confirms only 2 usable documents.</strong> One 2018-dated strategic-plan republication (itself describing a 2012-approved, 2017-updated plan) and one 2026 budget executive summary, eight years apart, with no intervening document — not a multi-year trend series. The third document (fs-2024) is confirmed correctly flagged: it contains only a single orphaned note table, not the financial statements themselves. The sections below state only what the two usable documents themselves establish.</p>
 <h4>Priority evolution</h4>
 <p>A single strategic-plan document (as of its 2017/2018 state) and a single later-year budget document, eight years apart, cannot establish a genuine priority-evolution narrative. What the two documents <em>do</em> establish: sp-2018 (3cf7d6d64149) organizes Aurora's 2011-2031 vision around three "Pillars of Success" — Community (transportation/mobility, sustainable infrastructure, culture, active/healthy lifestyle, community fabric, service accountability), Economy (business growth, small-business support), and Natural Environment (stewardship, green initiatives) — with a stated five-year review/update cadence. bud-2026 (de2002a34fb9) does not restate or reference this pillar structure at all; instead it frames the 2026 year around a named "People's Budget" emphasis on tax-levy moderation, inflation/tariff cost pressure, and a small set of capital investments (playgrounds, pickleball courts, trails, Yonge Street streetscape). Whether this is a genuine reframing away from the three-pillar structure or simply a budget-document's narrower focus (vs. a strategic plan's broader scope) cannot be determined from two documents of different types.</p>
@@ -162,7 +164,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li><strong>No document in this archived set covers fiscal years 2019 through 2025</strong> for this org — any priority changes, program additions/drops, or budget inflection points in that six-year span (including the 2021 Fiscal Strategy's original adoption, which bud-2026 only references retrospectively) are unestablished by this archived series.</li>
 <li>Council-member names appear in sp-2018 in official capacity only (2014-2018 Town of Aurora Council, listed by name/title/contact per the Town's own public-facing document) — titled officeholders, consistent with the private-individual guardrail.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

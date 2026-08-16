@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; Toronto Paramedic Services</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Toronto Paramedic Services</h1>
@@ -71,7 +73,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (13 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (13 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Annual report</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td><strong>missing</strong></td><td></td></tr>
@@ -88,7 +90,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2017</td><td>Annual report</td><td><a href="https://www.toronto.ca/wp-content/uploads/2018/03/9730-Toronto-Paramedic-Services-Annual-Report-2017-sm.pdf">Toronto Paramedic Services Annual Report 2017</a></td><td>archived</td><td></td></tr>
 <tr><td>2016</td><td>Annual report</td><td><a href="https://www.toronto.ca/wp-content/uploads/2017/12/95a1-Annual-Report-2016-1.0.compressed.pdf">Toronto Paramedic Services Annual Report 2016</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -113,7 +115,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>Toronto Paramedic Services is an operating division of the City of Toronto, delivering 24/7 pre-hospital emergency and non-emergency medical care, patient transportation to hospitals, and public education as "the largest municipal Paramedic Service in Canada." It operates under the City of Toronto Act, 2006 (general divisional authority) and the province's Ambulance Act, R.S.O. 1990, c. A.19 (service-delivery mandate, base-hospital medical-oversight framework). It is led by a Chief (Bikram Chawla as of the backgrounder's pass) and its 2026 Operating Budget is $451.3M gross / $175.2M net, with a $443.5M gross 2026–2035 capital plan. The registry records no parent Deputy City Manager cluster for this division, and institutional history (founding date, pre-amalgamation predecessor) is flagged ⚠️ still being checked — not grounded in the sources fetched for the backgrounder.</p>
 <h4>Series inventory</h4>
 <p>Five documents: three annual reports (2016–2018) and two "other" governance/oversight documents (2024 Auditor General audit; 2025 Multi-Year Staffing Plan report to Executive Committee). All five extracted successfully and all five were read in full; none were flagged <code>stub-suspected</code> by the detector, and that flagging is confirmed correct — all five are substantive, on-topic documents (annual reports of ~70,000–125,000 characters with real narrative/data content; the two "other" documents are full City of Toronto legislative background files of ~90,000–150,000 characters with tables, findings, and management responses).</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Toronto Paramedic Services - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -160,7 +162,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h4>Priority evolution</h4>
 <p><strong>2016 (ar-2016, c4e9f21d6f16):</strong> Strategic direction framed under the City's Strategic Actions 2013–2018, organized into five pillars: Organizational Effectiveness and Excellence, Clinical Excellence, Strengthening Organizational Excellence, Optimizing Staffing, and Improving Response Time / Maximizing Infrastructure Efficiencies. Headline goal: improve response times for life-threatening emergency calls to 8:59 minutes 90% of the time "by 2020." Reports response times "now at their lowest in over a decade" despite rising call volume (222,538 emergency transports, +44% since 2006). Construction beginning on the division's first multifunction ambulance station. A Psychological Health and Wellness Plan is under development in response to City Ombudsman recommendations, to launch February 2017 (c4e9f21d6f16).</p>
 <p><strong>2017 (ar-2017, 2b7a61503246):</strong> Same five-pillar "Strategic Direction" framing retained, now explicitly spanning 2013–2018 and 2017–2025 (infrastructure capital plan horizon). Psychological Health and Wellness Plan formally launched February 2017. First multifunction station (1300 Wilson Avenue) opens October 2017. Chief position shown as "Acting Chief" (Gord McEachen). New language appears: exploring "alternative care" models for 911 callers (treat-and-release, palliative care, alternate destination protocols) in consultation with the Ministry of Health and Long-Term Care — an early precursor of the "new patient care models" later formalized by 2023 legislative change (2b7a61503246).</p>
@@ -203,7 +205,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>No archive_status=missing or era:pre-web-baseline flags were noted for this registry row in the materials reviewed for this review.</li>
 <li><strong>2026-08-02 correction (K3 outside review):</strong> the $52.6M gross / $26.3M net figures were attached to a "2025–2028" window in two places; corrected to 2025–2029. Verified against Table 1 (oth-2025, 0b32e7a0bc15): the 331-position hiring plan itself completes by 2028 (112/94/86/70 hires by year, 2025–2028, totaling 331), but Table 1's dollar columns include a fifth year (2029: $2.7M gross / $0.7M net) and the report's own prose states the total is "$52.6 million gross ($26.3 million net) over 2025-2029." Note the source itself is internally inconsistent — Table 1's header literally reads "Total 2025-2028" while its adjacent "2029" column is included in that total — so the correction follows the prose statement and the actual summed figures rather than the (apparently mislabeled) table header.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

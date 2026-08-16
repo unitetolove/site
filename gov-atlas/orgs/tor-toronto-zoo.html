@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; Toronto Zoo</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Toronto Zoo</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (20 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (20 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2024</td><td>Annual report</td><td><a href="https://web.archive.org/web/20250531164030id_/https://www.torontozoo.com/!/pdfs/general/TorontoZoo-Impact_Report_2024.pdf">Toronto Zoo Impact Report 2024</a></td><td>archived</td><td></td></tr>
@@ -97,7 +99,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2008</td><td>Annual report</td><td><a href="https://www.torontozoo.com/pdfs/Toronto%20Zoo%202008%20Annual%20Report.pdf">Toronto Zoo 2008 Annual Report</a></td><td>archived</td><td></td></tr>
 <tr><td>2007</td><td>Annual report</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td><strong>missing</strong></td><td><span class="incompleteness-tag">⚠️ Still being checked: searched-not-found (never-published-this-type: earliest torontozoo.com annual-report PDF in Wayback is 2008; no 2007 report found on-domain, on publications.gc.ca, or via legdocs.toronto.ca which returned 403 to all fetch attempts)</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -123,7 +125,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <h4>Series inventory</h4>
 <p>Registry our document registry carries <strong>20 total rows</strong> for <code>registry id==tor-toronto-zoo</code>: <strong>10 with <code>archive_status: archived</code></strong> (all 10 appear in <code>_index.json</code> and as <code>.txt</code> files in <code>gse_extract/</code>) and <strong>10 with <code>archive_status: missing</code></strong>, each flagged <code>⚠️ still being checked — the web archive was unreachable when we looked</code> (dated 2026-07-23) — annual reports for 2007, 2012, 2016, 2017, 2018, 2019, 2020, 2021, 2022, and 2024 were never fetched at all, not merely extracted-and-failed. These 10 missing rows are not part of the archived series and carry no sha256; they are addressed further in Residuals &amp; gaps.</p>
 <p>All 10 archived documents were opened and read in full. All 10 yielded real, substantive, on-topic content — no 404 stubs or blank captures were found in this org's set.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Toronto Zoo - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -205,7 +207,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Caveat on ar-2023: this capture is a Framer-hosted microsite (<code>torontozoo-2023.framer.website</code>), and its extracted text contains extensive verbatim triplication of many passages (scroll-triggered animation sections rendering the same text multiple times in the underlying DOM) — a source-site artifact, not a corruption of the actual content, which was legible and coherent everywhere sampled. Its embedded Statement of Operations table, however, has genuinely corrupted column alignment (see Residuals &amp; gaps) and was not used for line-item figures.</p>
 <h4>Priority evolution</h4>
 <p><strong>2008 (ar-2008, 5085cc1c3aee):</strong> The Zoo frames itself around a "Green Plan," described as a "bold commitment to making a difference in conservation and environmental stewardship" launched in 2007, covering greenhouse-gas reduction, green purchasing, green education programming, and local ecosystem work in Rouge Park. The vision statement of record is "The Toronto Zoo is Canada's premier zoo, known for its interactive education and conservation activities." In 2008 the Board restructured fundraising onto a "development model used commonly in other zoos, cultural institutions and universities," assuming the fundraising programs previously run by the separately incorporated Toronto Zoo Foundation. City of Toronto general appropriation was $11,720,153 against total revenue of $40,828,836 (28.7% of revenue).</p>
@@ -264,7 +266,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: current Board of Management composition and appointment process, and the specific by-law/date that first constituted the Board — both already flagged as unresolved in the backgrounder and not further resolved by this reading pass.</li>
 <li>A pension-plan deficit of $2.9 billion cited in fs-2024 (64925b743447, note on employee future benefits) belongs to the province-wide OMERS multi-employer pension plan, not to the Toronto Zoo specifically — noted here so it is not mistaken for a Zoo-specific budget signal.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

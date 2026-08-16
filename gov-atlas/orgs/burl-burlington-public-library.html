@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-burlington.html">Municipal — Burlington</a> &middot; Burlington Public Library</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Burlington Public Library</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (4 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (4 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Strategic plan</td><td><a href="https://www.bpl.on.ca/sites/default/files/_content_files/page/PDF/BPL-StrategicPlan_2026-2027.pdf">Strategic Plan 2026-2027</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: plan-horizon-2027</span></td></tr>
@@ -81,7 +83,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2024</td><td>Financial statements</td><td><a href="https://www.burlington.ca/en/council-and-city-administration/resources/Budget-and-Finances/Financial-Statements/2024-City-of-Burlington-Financial-Statement.pdf">Consolidated financial statements of The Corporation of the City of Burlington, December 31, 2024</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: embedded-in-parent (City of Burlington Consolidated Financial Statements, December 31, 2024 (burlington.ca))</span></td></tr>
 <tr><td>2022</td><td>Financial statements</td><td><a href="https://www.burlington.ca/en/council-and-city-administration/resources/Budget-and-Finances/Financial-Statements/2022-City-of-Burlington-Financial-Statement.pdf">Consolidated financial statements of The Corporation of the City of Burlington, December 31, 2022</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: embedded-in-parent (City of Burlington Consolidated Financial Statements, December 31, 2022 (burlington.ca))</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -106,7 +108,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>Burlington Public Library is governed under the Public Libraries Act, R.S.O. 1990, c. P.44 (s. 20 requiring "a comprehensive and efficient public library service"), by a seven-member statutory board (one City Councillor, six community volunteers) serving four-year terms and reporting its budget to Burlington City Council for approval (backgrounder, bpl.on.ca/about/bpl/board). The backgrounder flags two open items — budget scale and founding year — neither ⚠️ still being checked resolved by this review: the two archived documents report annual operating-line figures (see Budget &amp; mandate inflection points below) but not a full board-approved budget total, and neither document states a founding year (the annual report's cover footer reads "Annual Report-2022," an apparent leftover template artifact from a prior year's file, not a founding-date reference).</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 2 ok / 0 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Burlington Public Library - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -132,7 +134,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full 2026-2027 Strategic Plan, 34,579 chars, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>SHORT-FORM RULE APPLIES: only 2 usable documents, both from the same 2025-26 window.</strong> One annual report (looking back at 2025) and one forward-looking strategic plan (2026-2027) is not a multi-year trend series; both detector calls are correct (no stub or failure disagreement — see Residuals &amp; gaps). The sections below state only what these two documents themselves establish.</p>
 <h4>Priority evolution</h4>
 <p>Two documents from the same year cannot establish a genuine evolution narrative. What they <em>do</em> establish: the 2025 Annual Report describes 2025 as a year of service expansion (new maker spaces, more free meeting rooms, a relocated and enlarged New Appleby Branch, expanded digital lending) (df6fc60fdb35), while the 2026-2027 Strategic Plan — explicitly informed by "more than 500 comments" on the draft plan and stated to have "launched in fall 2025" — reframes the library's forward priorities around three headings: "Enhance community well-being," "Inspire discovery," and "Nurture a workforce culture driven by our organizational values" (9bf369b563b1). The plan states these are "new goals and objectives" under the three priorities but does not reproduce the prior 2021-2025 plan's own priority list for direct comparison.</p>
@@ -155,7 +157,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: library founding year (backgrounder gap, not resolved; the annual report's "Annual Report-2022" footer text appears to be a template artifact, not a dateable founding reference, and is not treated as evidence of anything here).</li>
 <li>⚠️ Still being checked: whether the "polarization, isolation, and affordability" framing in the 2026-2027 plan is a genuinely new emphasis versus continuous with unarchived 2021-2025 plan language.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

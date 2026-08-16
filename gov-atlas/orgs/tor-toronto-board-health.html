@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; Toronto Board of Health</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Toronto Board of Health</h1>
@@ -71,7 +73,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (5 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (5 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Subject report</td><td><a href="https://www.toronto.ca/legdocs/mmis/2026/hl/bgrd/backgroundfile-285292.pdf">2025: A Year-in-Review of Toronto Public Health (report to the Board of Health)</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: checked-2026-08-06-probed-backgroundfile-range-around-cover-memo-no-confident-per-org-attachment-match-found-cover-memo-retained</span></td></tr>
@@ -80,7 +82,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2016</td><td>Annual report</td><td><a href="https://www.toronto.ca/legdocs/mmis/2017/hl/bgrd/backgroundfile-103495.pdf">A Healthy City for All: Toronto Public Health 2016 Annual Report (Item HL19.4, Board of Health)</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: checked-2026-08-06-probed-backgroundfile-range-around-cover-memo-no-confident-per-org-attachment-match-found-cover-memo-retained</span></td></tr>
 <tr><td>2012</td><td>Subject report</td><td><a href="https://www.toronto.ca/legdocs/mmis/2012/hl/bgrd/backgroundfile-44275.pdf">A Healthy City for All - Staff Report to Board of Health (Item HL10.6)</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -106,7 +108,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 4 ok / 0 stub-suspected / 0 extract-failed.</p>
 <p>Registry (our document registry) carries 4 rows for this org, spanning 2012-2025; all 4 are <code>archived</code> and appear below. No <code>staged</code> or <code>missing</code> rows are recorded for this org in the registry pull behind this batch — the prior "no series" status was a location/access failure (the Board of Health does not maintain a standalone publications site the way a departmental agency does; its documents live inside the City's council-agenda/legdocs system under Board of Health committee items, which an earlier pass evidently did not search), not a disclosure gap.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Toronto Board of Health - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -146,7 +148,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — "2025: A Year-in-Review of Toronto Public Health" (MOH report to the Board), 16,709 chars, full text read</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>All four documents were read in full; none was sampled. TRUE usable rate: 4/4 (100%), matching <code>_index.json</code> exactly — no stub-detector disagreement in either direction for this org.</p>
 <p><strong>FULL-FORM APPLIED, WITH SCOPING DISCIPLINE.</strong> Four usable documents clears the ≥3 threshold, but they cluster at three distinct dates (2012, 2016, and two documents from 2025) with a 9-year and a 13-year gap between them and no continuous run. The two 2025 documents (sr-2025 and sr-2025-2) are contemporaneous but address different subject matter — a general year-in-review versus a dedicated mental-health/substance-use strategy update — so together they still describe only a single point in time, not a trend across 2025 itself.</p>
 <h4>Priority evolution</h4>
@@ -186,7 +188,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ still being checked (carried from backgrounder): the Board's current member count and public/Council appointee split was not independently confirmed from a current Toronto.ca primary source in the backgrounder pass (public reporting suggests 13 members: six public, one education representative, six Council members); none of the four documents read for this brief establish or contradict this figure.</li>
 <li><strong>Backgrounder reconciliation, 2026-08-02:</strong> this brief was written before the org's Wave-1 backgrounder existed, and had substituted Toronto Public Health's divisional backgrounder as its lens. The Board's own backgrounder now exists and corroborated every claim already in this brief's body — the brief's governance framing already correctly distinguished the Board (governs, approves, receives MOH reports) from TPH/the MOH (operates, drafts, delivers) throughout, so no correction to the brief body was needed. Only the Backgrounder summary section was rewritten to cite and summarize the org's own backgrounder.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

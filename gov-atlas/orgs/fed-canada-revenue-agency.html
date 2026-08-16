@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/federal.html">Federal</a> &middot; Canada Revenue Agency</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Canada Revenue Agency</h1>
@@ -71,7 +73,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (32 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (32 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Departmental plan</td><td><a href="https://www.canada.ca/en/revenue-agency/corporate/about-canada-revenue-agency-cra/departmental-plan/2025-26-cra-departmental-plan.html">2025–26 CRA Departmental Plan</a></td><td>archived</td><td></td></tr>
@@ -107,7 +109,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2002</td><td>Annual report</td><td><a href="https://web.archive.org/web/20220927025426id_/https://publications.gc.ca/collections/collection_2016/arc-cra/Rv1-14-2002-1-eng.pdf">Canada Customs and Revenue Agency Annual Report to Parliament 2001-2002</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: capture-artifact-goc-interstitial</span></td></tr>
 <tr><td>2001</td><td>Annual report</td><td><a href="https://web.archive.org/web/20220927025438id_/https://publications.gc.ca/collections/collection_2012/arc-cra/Rv1-14-2001-eng.pdf">Canada Customs and Revenue Agency Annual Report to Parliament 2000-2001</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: capture-artifact-goc-interstitial</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -132,7 +134,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>CRA is established by the Canada Revenue Agency Act, S.C. 1999, c. 17, which continues the Agency, defines its Board of Management, and grants authority to administer federal (and, by agreement, provincial/territorial) tax and benefit programs (backgrounder, citing https://laws-lois.justice.gc.ca/eng/acts/C-10.11/index.html). CRA delivers two core responsibilities — Tax and Benefits — plus Internal Services, and reports to Parliament through the Minister of National Revenue under a statutory Board of Management, with the Commissioner (Bob Hamilton per the backgrounder's 2026-27 DP citation) as chief executive. The backgrounder cites 2026-27 planned spending of $6,273,543,680 ($4,572,025,864 Tax / $659,834,747 Benefits / $1,037,073,110 Internal Services); this brief's own read of dp-2026 (8b1aeb760280) separately confirms the 2026-27 total planned/net spending figures are consistent with the sharply lower post-fuel-charge-elimination scale described below (relaying the backgrounder's registry-sourced figures as such, re-verified against primary text where the archived series overlaps). The backgrounder flags one unresolved item — the commonly cited 2003 renaming from "Canada Customs and Revenue Agency" when customs functions moved to the new Canada Border Services Agency — which this brief's own read confirms independently: the archived ar-2001 through ar-2005 documents (2000-01 through 2003-04) are titled "Canada Customs and Revenue Agency," while ar-2006 (2005-06) is titled "Canada Revenue Agency," consistent with the 2003 rename (aacfe0ff76f8 through b6937bb2d6ad, titles only — see Series inventory for content-access caveats).</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 16 ok / 13 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Canada Revenue Agency - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -347,7 +349,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full read/spot-verified (18%/17% accuracy findings confirmed verbatim)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Detector performance note:</strong> all 13 stub-suspected calls are correct, but they represent <strong>two distinct stub patterns</strong>, both confirmed by direct read on representative samples (ar-2001, drr-2012, drr-2015): (1) the <code>ar-2001</code>–<code>ar-2006</code> series are genuine publications.gc.ca/LAC "Information Archived on the Web" bilingual interstitials (804 chars each, no report text behind the "Continue to publication" link); (2) the <code>drr-2012</code>–<code>drr-2018</code> series are a different failure mode — live canada.ca pages that captured only the navigation/table-of-contents shell (1,252–2,609 chars) with no section body text, i.e., the capture stopped at a TOC page rather than following through to content, distinct from an archival-interstitial block. No detector disagreement found in either direction.</p>
 <p><strong>Usable rate:</strong> 16 of 29 (55%) match <code>_index.json</code>'s ok/stub split exactly; own read confirms all 16 "ok" docs are genuinely substantive and both sampled-stub categories are genuinely non-substantive.</p>
 <h4>Priority evolution</h4>
@@ -391,7 +393,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: whether CRA's contact-centre agent headcount and telephony-contract-cost figures in the AG audit (7,782 to 4,547; $50M to $190M) appear verbatim at the exact figures cited — these were read via the pre-digest's account of oth-2025 rather than independently located in this review's direct reads of that document (which focused on the 18%/17%-accuracy passage).</li>
 <li>The archived series has a real gap between 2006 (last readable annual report, pre-rename-era format) and 2018-19 (first readable Departmental Results Report) — twelve fiscal years (2006-07 through 2017-18) are entirely unestablished by usable content in this set, though <code>_index.json</code> shows stub-suspected placeholders exist for most of those years under the drr series.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

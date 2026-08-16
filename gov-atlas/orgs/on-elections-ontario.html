@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/provincial-on.html">Provincial — Ontario</a> &middot; Elections Ontario</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Elections Ontario</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (6 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (6 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2024</td><td>Financial statements</td><td><a href="https://www.elections.on.ca/content/dam/NGW/sitecontent/2026/reports/2023-2024%20Annual%20Report.pdf">Elections Ontario 2023-2024 Annual Report, incl. Election Act and Election Finances Act audited financial statements for year ended March 31, 2024</a></td><td>archived</td><td></td></tr>
@@ -83,7 +85,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2000</td><td>Annual report</td><td><a href="https://archive.org/details/31761115472839">Annual Report of the Chief Election Officer of Ontario under the Election Finances Act for the year 2000</a></td><td>archived</td><td></td></tr>
 <tr><td>1999</td><td>Annual report</td><td><a href="https://archive.org/details/31761115472631">Annual Report of the Chief Election Officer of Ontario under the Election Finances Act for the year 1999</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -108,7 +110,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>Elections Ontario is the operating name of the Office of the Chief Electoral Officer, an independent, non-partisan office of the Legislative Assembly of Ontario governed by the Election Act, R.S.O. 1990, c. E.6, which provides that the Chief Electoral Officer is "responsible for the administration of this Act." It administers provincial general elections, by-elections and referendums; maintains the Permanent Register of Electors; and, since January 1, 2024, supplies preliminary elector lists to municipal clerks for municipal, DSSAB and some school-board elections it does not itself administer. The current Chief Electoral Officer, Greg Essensa, was appointed in June 2008 and is the seventh person to hold the position; the office traces to 1919. No standalone operating-budget figure was grounded in the backgrounder pass.</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 2 ok / 2 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Elections Ontario - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -148,7 +150,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — "2024-2030 Strategic Plan: Accelerating Excellence," full text read, 38,088 chars</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Detector check: the stub-suspected call is correct for both 1999 and 2000. Both extracted <code>.txt</code> files are verbatim Internet Archive "Free Download, Borrow, and Streaming" wrapper pages (site navigation, download-format menus, OCR/scan metadata for the underlying scanned PDF) with zero lines of actual Chief Election Officer report content — the archived captures reached the archive.org item-detail page rather than the PDF or its OCR text layer. No detector disagreement to report; the char counts (7,374 and 7,371) are consistent with a wrapper page, not a 24-to-356-page scanned annual report.</p>
 <h4>Priority evolution</h4>
 <p>Two usable documents 22 years apart cannot support a trend line. What they establish: in 2022, Elections Ontario frames its work around a named "2019-23 strategic plan" built on five priorities (integrity/public trust, team collaboration, election readiness, "measured and principled" modernization, and elector engagement/communication), developed in the wake of the 2018 election's first-time deployment of vote tabulators and ePoll books, and executed under sustained COVID-19 disruption. By 2024, the successor plan restructures around four differently-named pillars (People, Processes, Technology, Innovation) with a formal risk-management framework as a named strategy for the first time and a substantially widened list of named external pressure factors (extreme weather, AI/misinformation, declining institutional trust, demographic shift, changing nature of work). No archived document from the intervening years (2019-23 annual reports, a stated-but-not-archived "2019-2023 Strategic Plan," or the "2018 General Election Post-Event Report" cited within the 2022 report) is in this set, so the mechanism of that restructuring cannot be traced.</p>
@@ -175,7 +177,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: Budget scale for the office overall (as opposed to a single election's delivery cost) remains ungrounded, consistent with the backgrounder's own flag; Officers of the Legislature are typically funded through the Legislative Assembly's Estimates rather than a ministry vote, but no such Estimates figure was located in either document read this review.</li>
 <li>Short-form rule applied per spec: with only 2 of 4 registry documents usable, the three evolution sections above are held to single honest sentences describing what a 2-document, non-adjacent-year record can and cannot support, rather than a manufactured multi-point trend.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

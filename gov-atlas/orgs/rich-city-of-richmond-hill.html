@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-richmond-hill.html">Municipal — Richmond Hill</a> &middot; City of Richmond Hill</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>City of Richmond Hill</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (5 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (5 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2027</td><td>Strategic plan</td><td><a href="https://www.richmondhill.ca/en/resources/Strat-Plan-2024-2027-W057-Accessible.pdf">Richmond Hill Strategic Plan 2024-2027</a></td><td>archived</td><td></td></tr>
@@ -82,7 +84,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2021</td><td>Financial statements</td><td><a href="https://www.richmondhill.ca/en/shared-content/resources/Consolidated-financial-statement-remediated-final-2021.pdf">Consolidated Financial Statements Year Ended December 31 2021</a></td><td>archived</td><td></td></tr>
 <tr><td>2020</td><td>Budget / estimates</td><td><a href="https://www.richmondhill.ca/en/shared-content/resources/documents/Budgets/2020-Operating-Budget-Corporate-Overview.pdf">2020 Draft Operating Budget Corporate Overview</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -107,7 +109,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>Richmond Hill is a lower-tier municipality under the Municipal Act, 2001, sitting within the upper-tier Regional Municipality of York; it delivers local services (parks/recreation, local roads, planning/building, fire, community programming) while York Region delivers region-wide services (regional roads, water/wastewater, waste, transit, paramedic/social services). It is governed by an elected Mayor and ward-based Council and does not report administratively to York Region. Per the backgrounder, the city's current strategy document is the "Strategic Plan 2024-2027," and its budget scale is $257.9M 2026 Operating Budget plus $121.1M Capital Budget (adopted December 10, 2025, 3.46% combined tax increase) — figures the archived series here does not directly cover, since the newest budget document in this set is the 2025 Budget Book (see Budget &amp; mandate inflection points). Richmond Hill was incorporated as a village in 1873 and changed its designation from "Town" to "City" in March 2019.</p>
 <h4>Series inventory</h4>
 <p>The registry provides 5 documents for this org spanning 2020-2027 (strategic-plan, budget x2, financials x2). All 5 extracted with <code>"ok"</code> status per <code>_index.json</code>; this review's own read confirms all 5 as genuinely readable, substantive content — no detector disagreements found in either direction for this org.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="City of Richmond Hill - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -154,7 +156,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes (full statements, notes 1-14 of ~18; remaining notes are boilerplate commitment-schedule continuations of the same pattern already captured)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h4>Priority evolution</h4>
 <p><strong>2020 (bud-2020, a4c757f99e41):</strong> Budget strategy adopted under a "maintain existing service levels" mandate with a capped 1% tax rate increase target. 2020 priorities centre on infrastructure/asset management (city-wide Enterprise Asset Management System rollout), service delivery modernization (PRM system go-live, Comprehensive Zoning By-law engagement, Official Plan update), and organizational efficiency (Service Innovation Framework, Lean program continuation, Audit and Accountability Report). Budget framed around discrete "pressure categories" (Base, Legislated, Annualization, New/Growth) — the same four-category taxonomy is still in use in the 2025 budget (bud-2025, b351c37174f6), indicating structural continuity in budget presentation across at least five years.</p>
 <p><strong>2021 (fs-2021, 35d339a03fe8):</strong> Consolidated financial statements show accumulated surplus growing from $1,229.1M (2020) to $1,291.3M (2021); total revenues $312.6M vs. budgeted $312.6M, actual expenses $280.2M against a budgeted $328.5M (a large positive variance driven mainly by lower-than-budgeted Recreation and cultural services and Transportation services spending — plausibly a residual COVID-19-era service-delivery gap, though the statements themselves do not state a reason; ⚠️ still being checked). Segment disclosure shows Environmental services (largely water/wastewater, user-fee funded) running the largest annual surplus by segment ($57.8M) while Protection to persons and property and Recreation and cultural services ran segment deficits, consistent with a property-tax-subsidized service model for those areas.</p>
@@ -191,7 +193,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: direct comparison of the pre-2024 strategic plan ("A Plan for People, A Plan for Change," in effect since 2009) against the 2024-2027 plan's three Pillars — the prior plan document is not part of this archived set, so specific priorities added/dropped/renamed relative to it (beyond what sp-2027's own framing narrative states) cannot be confirmed from these documents alone.</li>
 <li>The 2026 Operating/Capital Budget figures cited in the backgrounder ($257.9M operating, $121.1M capital, adopted December 10, 2025) are relayed from the registry/backgrounder per a recorded standing decision and are not independently verified against an archived 2026 budget document, since none is present in this org's extraction set.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

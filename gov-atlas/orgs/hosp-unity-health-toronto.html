@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/bps-hospital.html">Broader public sector — Hospitals</a> &middot; Unity Health Toronto</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Unity Health Toronto</h1>
@@ -71,7 +73,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (7 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (7 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Annual report</td><td><a href="https://unityhealth.to/about-unity-health/media-room/publications/annual-report-2024-25/">Annual Report 2024-25</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: tls-untrusted-cert-use-curl-k; ⚠️ still being checked — the fetch failed on 2026-08-01; ⚠️ still being checked — the fetch failed on 2026-08-02; ⚠️ still being checked — the fetch failed on 2026-08-04</span></td></tr>
@@ -82,7 +84,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2021</td><td>Financial statements</td><td><a href="https://unityhealth.to/wp-content/uploads/2021/06/financial-statements-200401-210331.pdf">Unity Health Financial Statements Apr 2020-Mar 2021</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: tls-untrusted-cert-use-curl-k; ⚠️ still being checked — the fetch failed on 2026-08-01; ⚠️ still being checked — the fetch failed on 2026-08-02; ⚠️ still being checked — the fetch failed on 2026-08-04</span></td></tr>
 <tr><td>2020</td><td>Financial statements</td><td><a href="https://unityhealth.to/wp-content/uploads/2021/01/financial-statements-190401-200331.pdf">Unity Health Financial Statements Apr 2019-Mar 2020</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: tls-untrusted-cert-use-curl-k; ⚠️ still being checked — the fetch failed on 2026-08-01; ⚠️ still being checked — the fetch failed on 2026-08-02; ⚠️ still being checked — the fetch failed on 2026-08-04</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -108,7 +110,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 6 ok / 1 stub-suspected / 0 extract-failed.</p>
 <p>Registry (our document registry) carries 7 rows for this org, spanning FY2020-FY2025; all 7 are now <code>archive_status: archived</code> (0 staged, 0 missing) — a change from the zero-archived state a 2026-08-02 session recorded. All 7 rows carry historical <code>⚠️ Still being checked: fetch-failed</code> flags from 2026-08-01/08-02/08-04 alongside a <code>tls-untrusted-cert-use-curl-k</code> flag, indicating unityhealth.to requires a TLS-certificate workaround that standard verification checks do not apply — but the underlying archival captures themselves succeeded and are readable.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Unity Health Toronto - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -169,7 +171,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — "Summary of Financial Reporting 2024-25," 5,353 chars — a short management-commentary + top-line statement of operations, not full audited notes (see Residuals &amp; gaps)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Detector call confirmed correct</strong> for ar-2025 (below the 3,000-char floor for <code>annual-report</code>, flagged stub-suspected): read in full, it is genuinely a thin landing page. No detector disagreement in either direction for this org's 7-document set.</p>
 <h4>Priority evolution</h4>
 <p><strong>FY2020 (fs-2020, e87f51d354e9), year ended March 31, 2020:</strong> The network describes itself as spanning three hospitals, one long-term care home, seven family health team locations, two withdrawal management centres, two community-based dialysis sites, one ambulatory care building and one this library's internal records facility — "1,205 beds" and "more than 360,000" annual patients. The year closed with a $101,455K deficit, driven substantially by one-time HOOPP pension-merger transition costs (the three legacy hospitals' pension plans had merged into the Healthcare of Ontario Pension Plan in 2019, just before this fiscal year) and the onset of COVID-19, disclosed as a subsequent/in-year risk ("the duration and impact of the COVID-19 pandemic is unknown at this time").</p>
@@ -206,7 +208,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: whether the FY2025 deficit is a one-year event or the start of a sustained structural trend — no FY2026 document exists yet in this archived series to check, and per this batch's superlative-bounding rule, this brief does not characterize FY2025 as any kind of "worst" or "record" deficit without a longer comparison series than FY2020-2025 provides.</li>
 <li>Exact board-chair transition date (Colleen Johnston → Nora Aufreiter) is bounded only approximately: Johnston is Chair as of the fs-2022 signature (year ended March 31, 2022), Aufreiter as of the fs-2024 signature (year ended March 31, 2024); fs-2023's signature block did not capture board-member names in extraction, so the transition could have occurred in either FY2023 or FY2024.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

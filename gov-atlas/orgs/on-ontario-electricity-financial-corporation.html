@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/provincial-on.html">Provincial — Ontario</a> &middot; Ontario Electricity Financial Corporation</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Ontario Electricity Financial Corporation</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (26 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (26 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Annual report</td><td><a href="https://www.oefc.on.ca/pdf/oefc_ar_2025_e.pdf">OEFC 2025 Annual Report</a></td><td>archived</td><td></td></tr>
@@ -103,7 +105,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2001</td><td>Annual report</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td><strong>missing</strong></td><td><span class="incompleteness-tag">era:pre-web-baseline</span></td></tr>
 <tr><td>2000</td><td>Annual report</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td><strong>missing</strong></td><td><span class="incompleteness-tag">era:pre-web-baseline</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -128,7 +130,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>The Ontario Electricity Financial Corporation (OEFC) was established under the Electricity Act, 1998, S.O. 1998, c. 15, Sched. A (backgrounder, citing https://www.ontario.ca/laws/statute/98e15), initially named Ontario Hydro Financial Corporation and changed by regulation to its current name effective April 1, 1999. OEFC manages, services and retires the residual "stranded debt" and other liabilities left over from the 1999 breakup of the former Ontario Hydro, funded by dedicated revenues — payments-in-lieu of taxes, an amount equal to Hydro One Inc.'s provincial corporate income taxes, the gross revenue charge, and, at the Province's discretion, any Electricity Sector Dedicated Income. It is an agency of the provincial Crown, governed by a Board of Directors appointed by the Lieutenant Governor in Council on the recommendation of the Minister of Finance, accountable to the Minister through the Chair and, through the Minister, to the Legislative Assembly, under a Memorandum of Understanding with the Minister of Finance. Per the backgrounder's citation of the OEFC 2025 Annual Report: total debt and other liabilities of $11.9 billion as at fiscal year-end 2024-25, down from $38.1 billion inherited at establishment; FY2024-25 operating surplus of $273 million; year-end accumulated deficit of $2,884 million (vs. $3,149 million at March 31, 2024); initial 1999 unfunded liability of $19.4 billion, itself the $20.9 billion "stranded debt" shortfall (determined by the Ministry of Finance) adjusted for $1.5 billion in retained assets.</p>
 <h4>Series inventory</h4>
 <p>23 documents are registered, all annual reports, matching the registry's own count (this library's government-document registry shows 23 rows with <code>archive_status: archived</code> for this registry id, plus 3 additional rows for 2000-2002 flagged <code>archive_status: missing</code> / <code>flags: era:pre-web-baseline</code> that were never part of this extracted set and are not addressed further here). Of the 23 extracted files, only <strong>19 yielded OEFC's actual report text</strong>; the four earliest (2003, 2004, 2005, 2006) resolved to Internet Archive item-landing pages (<code>content_type: text/html; charset=utf-8</code>), not the underlying scanned report content — the exact "status ok but not real content" failure mode this task was warned to check for, and one the "no thin/stub files detected" first-pass scan missed because these landing pages run 6,600-7,500 characters each, well above any thin-file threshold. Continuous readable coverage begins with the 2007 report (<code>content_type: application/pdf</code>, native OEFC website PDFs from this point forward) and runs unbroken through 2025.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Ontario Electricity Financial Corporation - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -301,7 +303,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>True extraction/usable-content rate: 19 of 23 documents (82.6%)</strong> yielded real, substantive OEFC report text; the remaining 4 (17.4%) are Internet Archive wrapper pages, not report content, despite each showing <code>status: "ok"</code> and a non-trivial character count in <code>_index.json</code>.</p>
 <h4>Priority evolution</h4>
 <p><strong>2003-2006 (3e677423b576; 0c9a68df4e4b; d4a35a23dfab; fc6b97dfa4dd):</strong> No priority content is recoverable from this era. All four captures resolve to Internet Archive's generic item-preview template (navigation chrome, "Bookreader Item Preview," download-format lists, scan-technician metadata). The single exception is ar-2006 (fc6b97dfa4dd), whose IA catalog page includes a one-paragraph abstract stating OEFC's "mandate is to ensure that the outstanding debt and derivatives and certain other assets and liabilities of the former Ontario Hydro are managed efficiently and prudently and are ultimately retired" — an Internet Archive/WorldCat cataloging abstract, not OEFC's own report language, and not treated below as a substantive priority claim.</p>
@@ -364,7 +366,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>Registry rows for FY1999-2000 through FY2001-02 (<code>on-ontario-electricity-financial-corporation-ar-2000/2001/2002</code>) are flagged <code>archive_status: missing</code> / <code>flags: era:pre-web-baseline</code> in this library's government-document registry and were never part of this extracted set of 23; no claim is made about their content here.</li>
 <li>No document type other than "annual report" is present in this registry for this org (no business plans, corporate-plan summaries, or subject-specific reports); all real content comes from the single annual-report series.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

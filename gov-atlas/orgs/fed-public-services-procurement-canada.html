@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/federal.html">Federal</a> &middot; Public Services and Procurement Canada</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Public Services and Procurement Canada</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (16 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (16 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Departmental plan</td><td><a href="https://www.canada.ca/en/public-services-procurement/corporate/transparency/departmental-plan/2025-2026.html">PSPC 2025-26 Departmental Plan</a></td><td>archived</td><td></td></tr>
@@ -93,7 +95,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2002</td><td>Departmental plan</td><td><a href="https://web.archive.org/web/20220917135601id_/https://publications.gc.ca/collections/Collection/BT31-2-2002-III-60E.pdf">Public Works and Government Services Canada Estimates Part III Report on Plans and Priorities 2001-2002</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: capture-artifact-goc-interstitial</span></td></tr>
 <tr><td>2001</td><td>Departmental plan</td><td><a href="https://web.archive.org/web/20220917185007id_/https://publications.gc.ca/collections/Collection/BT31-2-2001-III-60E.pdf">Public Works and Government Services Canada Estimates Part III Report on Plans and Priorities 2000-2001</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: capture-artifact-goc-interstitial</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -118,7 +120,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>PSPC was established by the Department of Public Works and Government Services Act, S.C. 1996, c. 16, which creates a Governor-in-Council-appointed department under a Deputy Minister; the applied title "Public Services and Procurement Canada" replaced "Public Works and Government Services Canada" through a 2015 administrative redesignation, not a statutory rename. It functions as the federal government's central purchasing agent, real-property manager, pay and pension administrator, and linguistic (translation) authority, with ~$5.929B in planned FY2026-27 spending. The responsible minister as of the 2026-27 Departmental Plan is the Honourable Joël Lightbound, Minister of Government Transformation, Public Works and Procurement.</p>
 <h4>Series inventory</h4>
 <p>16 documents are registered: 15 departmental-plan/RPP-type documents spanning 2001-2026 and one 2024-25 Departmental Results Report. Nine of the sixteen are archived-interstitial redirect stubs; four more are table-of-contents/erratum shells with no plan body text — both categories are marked <code>status: "ok"</code> in <code>_index.json</code> despite containing no substantive content. Only three documents contain real, substantive priority/budget narrative.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Public Services and Procurement Canada - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -242,7 +244,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td><strong>yes</strong> — substantive (full results report, ~24,900 words)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h4>Priority evolution</h4>
 <p><strong>2000-01 through 2015-16 (dp-2001 through dp-2016, nine documents, sha256-12 listed above):</strong> No substantive text recoverable — see Residuals &amp; gaps. The one usable fact from this span is metadata, not body text: the document <em>title</em> field changes from "Public Works and Government Services Canada Report on Plans and Priorities 2014-15" (dp-2015, 8768e90a9730) to "Public Services and Procurement Canada Report on Plans and Priorities 2015-16" (dp-2016, 267ccfc77776) — consistent with the backgrounder's account of a 2015 administrative name change from PWGSC to PSPC, though this is drawn from the archived-record title field only, not from any readable plan content. ⚠️ still being checked beyond this single metadata point — no priority, mandate, or budget content from 2001-2020 could be confirmed.</p>
 <p><strong>FY2020-21 through FY2023-24 (dp-2021 589e08ee76bf, dp-2022 99da70fef654, dp-2023 fbf7bacf41ae, dp-2024 795c638c16cd):</strong> Only table-of-contents and erratum-notice text survived extraction, not the plan bodies. What this confirms: PSPC's five-core-responsibility structure (Purchase of goods and services; Payments and accounting; Property and infrastructure; Government-wide support; Procurement Ombudsman) plus Internal Services was already stable by FY2020-21 and unchanged through FY2023-24. The dp-2024 table of contents (795c638c16cd) is the first to list "Details on transfer payment programs of $5 million or more," "Gender-based analysis plus," and "United Nations 2030 agenda for sustainable development and the sustainable development goals" as distinct supplementary sections — a reporting-framework expansion visible only in the section list, since none of the underlying content survived extraction. Isolated erratum facts recovered: a GHG-reduction target date for PSPC's Crown-owned building portfolio was corrected from March 2021 to March 2030 (dp-2021, 589e08ee76bf); an SME contracting target was revised to "at least 2.5" qualified bidders on complex procurements (dp-2022, 99da70fef654).</p>
@@ -285,7 +287,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: the exact reasons/decision dates behind the Indigenous-business (5% target missed) and SME (20%→5%) contract-share shortfalls beyond the single-year explanation given in drr-2025; no prior-year (pre-2024-25) comparison is possible given the extraction gaps.</li>
 <li>No archive_status=missing flags or era:pre-web-baseline flags apply within the registry rows actually present; the stub/shell problem here is a content-extraction failure on documents the registry otherwise marks fully successful, not a disclosed missing-document flag.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

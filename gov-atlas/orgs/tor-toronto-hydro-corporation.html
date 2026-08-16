@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; Toronto Hydro Corporation</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Toronto Hydro Corporation</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (41 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (41 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2024</td><td>Annual report</td><td><a href="https://www.torontohydro.com/documents/20143/204243691/2024-annual-report">Toronto Hydro 2024 Annual Report</a></td><td>archived</td><td></td></tr>
@@ -118,7 +120,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2002</td><td>Financial statements</td><td><a href="https://www.toronto.ca/legdocs/2003/agendas/council/cc030722/au3rpt/cl006.pdf">2002 Audited Financial Statements - Toronto Hydro Corporation (Audit Committee Report 3 Clause 6)</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: inline-council-clause; ⚠️ Still being checked: checked-2026-08-06-pre-MMIS-clause-text-says-statements-&quot;submitted/forwarded-under-separate-cover&quot;-no-separate-attachment-PDF-found-clause-is-correct-citation</span></td></tr>
 <tr><td>2001</td><td>Financial statements</td><td><a href="https://www.toronto.ca/legdocs/2002/agendas/council/cc021126/au9rpt/cl006.pdf">2001 Audited Financial Statements - Toronto Hydro (Audit Committee Report 9 Clause 6)</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: inline-council-clause</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -143,7 +145,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>Toronto Hydro Corporation (THC) is a holding company incorporated under the Business Corporations Act (Ontario) on June 23, 1999, as required for municipal electricity utilities by the Electricity Act, 1998; the City of Toronto is its sole shareholder, directing it through a Shareholder Direction. Its subsidiary, Toronto Hydro-Electric System Limited (LDC), distributes electricity within the City of Toronto and is regulated by the Ontario Energy Board (OEB), independent of the City. The Board comprises 11 members: 8 public members and 3 City Council members (one the Mayor or a designate). Reported budget scale: ~$937.8M in distribution revenue for the year ended December 31, 2024, up $98.3M from 2023. The archived series independently corroborates this exact figure and its year-over-year delta (ar-2024, 29ba63386028; see Budget &amp; mandate inflection points). Institutional history: incorporated 1999 as successor to the Toronto Hydro-Electric Commission, itself formed January 1, 1998 by amalgamating six former municipalities' electricity commissions following the 1998 City of Toronto amalgamation — the archived series corroborates this independently and in more detail than the backgrounder's own sourcing (see Priority evolution, 1999-2003 era).</p>
 <h4>Series inventory</h4>
 <p>The registry (this library's government-document registry, registry id <code>tor-toronto-hydro-corporation</code>) carries 41 total rows; 4 (ar-2007, ar-2008, ar-2009, ar-2010) are flagged <code>archive_status: missing</code> / <code>⚠️ still being checked — the web archive was unreachable when we looked</code> and were never archived or extracted. The 37 rows below are all the archived/extracted documents (all <code>status: "ok"</code> in <code>_index.json</code>); all 37 were directly opened and read (in full, or via targeted deep reads guided by grep for the largest filings) as part of this brief, not inferred from filename or char count.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Toronto Hydro Corporation - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -414,7 +416,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>True extraction/usable-content rate</strong>: all 37 archived documents were opened and read; 35 of 37 (94.6%) yielded genuine, substantial, Toronto-Hydro-specific strategic and/or financial content proportionate to their reported size — not merely a repetition of <code>_index.json</code>'s "ok" status. The two exceptions are named explicitly: <strong>fs-2010</strong> is a real, non-stub capture but is only a one-page City Clerk transmittal memo — the substantive financial statements it forwards were never captured — and <strong>fs-2001</strong>, despite a superficially healthy 16,240-byte size that would have passed a char-count-only screen, contains essentially zero Toronto-Hydro-specific commentary or figures (it is an omnibus City Audit Committee report on 11 different city agencies/boards/commissions in which Toronto Hydro is named only in a list). This is a materially different finding than a size-only scan would produce, since fs-2001 would not have been flagged by char count alone. Additionally, two document id pairs (ar-2003/fs-2003 and ar-2004/fs-2004) are byte-identical captures of the same two underlying City Council committee-clause PDFs, so the 37 registered doc_ids represent 35 unique underlying source documents.</p>
 <h4>Priority evolution</h4>
 <p><strong>1999-2003 — incorporation and first strategic framework (ar-2003/fs-2003, 888dc7b65197):</strong> Toronto Hydro-Electric Commission was formed January 1, 1998 by amalgamating the electricity commissions of six former municipalities following the City of Toronto's own amalgamation; the Commission's successor, Toronto Hydro Corporation, was incorporated under the OBCA on June 23, 1999, with assets transferred at book value effective July 1, 1999 (book value $1,548,048,000; a $980,231,000 long-term promissory note to the City plus $567,817,000 of common shares issued to the City) (ar-2003/fs-2003, 888dc7b65197; fs-2006, d6aab0dc87ab). The original Shareholder Direction (approved by Council July 1, 1999) set the City's objectives — value maintenance, an income stream comparable to a going-concern sale, protecting consumers through the transition, and improved environmental impacts — and required a dividend of 40% of the distribution company's net income and a minimum A- credit rating (ar-2003/fs-2003, 888dc7b65197). The Corporation's first stated corporate vision was <strong>"Top 10 utility providing a necessity of life,"</strong> organized around five strategic-pillar areas: Operational Excellence and Manage/Grow Assets; Customer Service; Developing Employees; and Building Shareholder Value (ar-2003/fs-2003, 888dc7b65197). Provincial Bill 210 (Electricity Pricing, Conservation and Supply Act, 2002) capped commodity prices and effectively froze the retail electricity market from November 2002, and the Corporation responded by exiting energy retailing entirely — ceasing new contracts and selling off its natural gas book by mid-2003 — "to reduce business risk and maintain the credit rating as per the Shareholder Direction" (ar-2003/fs-2003, 888dc7b65197). The August 14, 2003 Northeast Blackout is documented as a significant operational test: the Corporation restored power to parts of the City within 7 hours and to the entire City within 27 hours (ar-2003/fs-2003, 888dc7b65197). The OEB renewed the distribution licence for a 20-year term on October 17, 2003 (ar-2003/fs-2003, 888dc7b65197).</p>
@@ -499,7 +501,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>The Corporation's President and CEO role is documented as transitioning effective October 1, 2009 (fs-2009, 28cab88d8d95); a different individual is named in that same role in the fs-2010 cover memo dated April 2011 (0d24f8086e9f) — evidencing at least one further leadership transition in that role that is otherwise entirely undocumented in this archived series. ⚠️ still being checked — not determinable from the archived series when exactly this transition occurred or whether intervening transitions also occurred. (Per this brief's identity-firewall convention, individuals are identified by role/title only, not by name, throughout this document.)</li>
 <li><strong>Method note on sp-2015 (78b0c71d294a)</strong>: at approximately 3.9 million characters, this document is a full OEB regulatory-filing bundle (cover correspondence, an Executive Summary, a full Distribution System Plan, third-party expert/benchmarking reports, a customer-facing discussion guide, the Code of Business Conduct, and extensive rate-design schedules) rather than a single narrative document. It was read via table-of-contents-guided targeted extraction (locating and reading the Executive Summary's explicit strategy section, the capital-plan tables, and the customer/reliability metrics) rather than sequentially end-to-end; this is disclosed so the brief's sp-2015 citations are understood as drawn from confirmed, directly-read sections of a genuine, non-stub filing, not as a claim of exhaustive coverage of every schedule in a document of that size.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

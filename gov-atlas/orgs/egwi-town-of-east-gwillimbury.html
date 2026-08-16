@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-east-gwillimbury.html">Municipal — East Gwillimbury</a> &middot; Town of East Gwillimbury</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Town of East Gwillimbury</h1>
@@ -73,14 +75,14 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (3 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (3 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2025</td><td>Budget / estimates</td><td><a href="https://www.eastgwillimbury.ca/en/Budget/2025-Business-Plan-and-Budget.pdf">2025 Business Plan and Budget</a></td><td>archived</td><td></td></tr>
 <tr><td>2024</td><td>Financial statements</td><td><a href="https://www.eastgwillimbury.ca/en/Council-and-Administration/Finance/2024-Annual-Financial-Report.pdf">2024 Annual Financial Report</a></td><td>archived</td><td></td></tr>
 <tr><td>2022</td><td>Strategic plan</td><td><a href="https://www.eastgwillimbury.ca/en/government/resources/Documents/2022-2026-Strategic-Plan/2022-2026-Official-Strategic-Plan-AODA.pdf">Strategic Plan 2022-2026</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: plan-horizon-2026</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -105,7 +107,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>The Town of East Gwillimbury is a lower-tier municipal corporation under the Municipal Act, 2001, governed by an elected Mayor and Council within the upper-tier Regional Municipality of York. It delivers local services (fire/emergency, water/wastewater, parks, planning, roads, libraries) but not electricity distribution (Hydro One serves that role). Its current strategic direction is set by the 2022-2026 Strategic Plan. The backgrounder cites a total approved 2025 budget of $73.5 million ($16.7M capital / $38.6M tax-supported / $12.8M water services / $5.4M development-fee-funded) sourced from a Town news release rather than the budget document itself; the budget document read for this brief gives closely aligned but not identical figures (see Budget &amp; mandate inflection points).</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 3 ok / 0 stub-suspected / 0 extract-failed.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Town of East Gwillimbury - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -138,7 +140,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes, strategically — introduction, budget summary/tax-levy/revenue/transfer narrative, and the "Core Programs and Services" / "Projects and Strategic Initiatives" tables for Office of the CAO, Corporate Services, Development Services, and Fire and Emergency Services departments read in full; the remaining departments (Finance, Legal, Parks/Recreation/Culture, Engineering/Public Works, Library) and the full capital line-item appendix (492,057 chars / 7,372 lines total) were sampled by structure/keyword rather than read end-to-end — no stub or extraction defect found in any part sampled</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>All three documents are genuine, substantive files matching their stated doc_type — no stub/shell content detected on this review. The strategic plan is a complete 10-page plan; the financial report and budget are large, fully-formed documents, not truncated captures.</p>
 <h4>Priority evolution</h4>
 <p><strong>2022-2026 Strategic Plan (sp-2022, 1a62747d497d), adopted May 2023 per the 2024 financial report:</strong> Sets a single vision ("a resilient, sustainable, and welcoming community") and core purpose ("deliver value for tax dollars, while providing quality services") operationalized through a "sustainability lens" (economic/environmental/social) applied to five Strategic Priorities, each with named key deliverables: (1) <strong>Quality Programs and Services</strong> — healthy/active living programs, inclusive/affordable/accessible services, community safety (traffic calming, Emergency Services review), service modernization; (2) <strong>Responsible Growth</strong> — Official Plan/Allocation Policy/Master Plan updates, AdvantageEG investment attraction, heritage conservation districts, housing-options advocacy; (3) <strong>Environmental Stewardship</strong> — environmental this library's internal records action plan/community energy plan, waste diversion, LED streetlight conversion, tree preservation; (4) <strong>Build Complete Communities</strong> — Health and Active Living Plaza, Holland Landing/Mount Albert downtown revitalization, key parks/trails projects (Emily Park, Simcoe Trail, Soldiers Bay pier, Nokiidaa Trail, Oriole Wilderness Park), broadband access; (5) <strong>Culture of Municipal Excellence</strong> — sound financial management, EDI Framework embedding, Customer Service Excellence Strategy, governance/partnership with York Region and the "northern six" municipalities.</p>
@@ -178,7 +180,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>The full capital line-item program (Tab 4, hundreds of individual project rows) was not enumerated; only the top-level capital summary (by department and funding source) is captured in this brief. The single largest identified capital item is the $100M HALP; no claim is made that it is the single largest 2025-specific capital allocation without checking the itemized capital appendix.</li>
 <li>No archive_status=missing or era:pre-web-baseline flags apply to this series; all three documents in <code>_index.json</code> are genuinely "ok," and no stub/shell content was found on this review — the "new stub detector" mentioned in the task brief did not surface any disagreement here because none of the three files warranted flagging.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

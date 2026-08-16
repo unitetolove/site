@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/provincial-on.html">Provincial — Ontario</a> &middot; Metrolinx</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Metrolinx</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (21 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (21 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Business / corporate plan</td><td><a href="https://assets.metrolinx.com/image/upload/v1764160191/Documents/2025-26_Business_Plan_English.pdf">Metrolinx Business Plan 2025-26</a></td><td>archived</td><td></td></tr>
@@ -98,7 +100,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2001</td><td>Annual report</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td><strong>missing</strong></td><td><span class="incompleteness-tag">era:pre-web-baseline</span></td></tr>
 <tr><td>2000</td><td>Annual report</td><td><span class="incompleteness-tag">missing &mdash; searched, not found</span></td><td><strong>missing</strong></td><td><span class="incompleteness-tag">era:pre-web-baseline</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -123,7 +125,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>Metrolinx is a Crown-agency corporation without share capital, created under the Metrolinx Act, 2006, S.O. 2006, c. 16, continuing the former Greater Toronto Transportation Authority (Act s. 2(1)). Section 5 sets its objects around leadership of an integrated regional transit network conforming to provincial growth-plan and transportation policy; ss. 6-8.2 assign duties over regional-transit integration, a unified fare system (PRESTO), procurement, and operation of the regional transit system. Operationally it runs GO Transit, UP Express and PRESTO across the Greater Toronto and Hamilton Area. Governance: a board of up to 15 directors appointed by the Lieutenant Governor in Council on the Minister of Transportation's recommendation (Act s. 9); the Minister may issue binding directives (s. 31); the board must adopt an annual business plan for the Minister's approval (s. 32) and deliver an annual report within 120 days of fiscal year-end (s. 33). The 2025-26 Business Plan describes a Memorandum of Understanding between the Minister and Metrolinx and an annual mandate letter under the government's Agencies and Appointments Directive. Budget scale (2025-26 plan): ~$2,041.2 million planned operating expense, ~$838.2 million revenue, ~$1,180.1 million provincial operating-subsidy requirement, and an ~$8.9 billion capital budget. Institutional history: established 2006, renamed and absorbed GO Transit under 2009 amendments (ss. 43-45), amended further as recently as 2026.</p>
 <h4>Series inventory</h4>
 <p>All 14 documents registered for this org (of 21 total registry rows; the other 7 — <code>ar-2000</code> through <code>ar-2006</code> — are flagged <code>missing</code>/<code>era:pre-web-baseline</code> and were never in scope for extraction) were successfully extracted, and <strong>all 14 (100%) contain real, substantive, non-stub content</strong> — confirmed by direct reading across the full length of each file (not inferred from <code>_index.json</code>'s "ok" status or char counts alone; a full-text scan for 404/error-page/"access denied" boilerplate across all 14 files turned up only unrelated numeric coincidences, e.g. dollar figures or Highway 404 references). This is a markedly cleaner extraction than some other series in this batch, where "ok" status has previously concealed content-free stubs. The set spans three strategic plans (2008, 2013, 2018), eight annual reports (fiscal years 2017-18 through 2024-25), one business plan (2025-26), and two project-specific business cases (2023, 2024).</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Metrolinx - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -233,7 +235,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>The registry carries <code>⚠️ Still being checked: plan-horizon-2033</code>, <code>⚠️ Still being checked: plan-horizon-2018</code> and <code>⚠️ Still being checked: plan-horizon-2041</code> flags on the three strategic plans. All three are confirmed accurate against the source text itself: sp-2008 (The Big Move) states its capital expansion program "will be completed by 2033" (3e346702a99a); sp-2013 is explicitly titled and scoped as the "Metrolinx Five Year Strategy 2013-2018" (cd4d5b9a876a); sp-2018 is the "2041 Regional Transportation Plan," targeting a GTHA population of "more than 10 million people by 2041" (764e4c6130c1).</p>
 <h4>Priority evolution</h4>
 <p><strong>2008 — The Big Move (sp-2008, 3e346702a99a):</strong> Adopted unanimously by the Metrolinx Board on November 28, 2008 and forwarded to the Minister of Transportation under the Greater Toronto Transportation Authority Act s. 6(2), under then-Chair Rob MacIsaac. The plan set a 25-year horizon (2008-2033) organized around nine "Big Moves": (1) a comprehensive regional rapid transit network, (2) high-order transit connectivity to the Pearson Airport district, (3) an expanded Union Station, (4) complete walking/cycling networks, (5) a traveller information system, (6) a region-wide integrated transit fare system (targeted for 2012 — the seed of what became PRESTO), (7) a system of connected mobility hubs, (8) a goods-movement strategy, and (9) an Investment Strategy for stable funding. It was underwritten by the province's MoveOntario 2020 commitment of $11.5 billion, against a total 25-year capital cost estimated at approximately $50 billion, with combined capital/rehabilitation/operating cash expenditure of roughly $3 billion/year for most of the plan's life.</p>
@@ -295,7 +297,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li><strong>Financial-fare-structure options (Variations A-D) in oth-2023 (1910b0a086f6) were not resolved to a named final choice within that document</strong> — it is explicitly an "Initial Business Case," the first stage of a multi-stage process; the connection to the eventual One Fare Program (ar-2024, e5fad5ab1f9b) is inferential (same subject area, sequential timing) rather than a stated continuity in either document.</li>
 <li>No document in this series discusses the organization's finances, priorities, or projects prior to fiscal year 2007-08; the backgrounder's account of 2009 GO Transit absorption and other pre-2017 institutional history is not independently verifiable against any document in this archived series (the earliest document, sp-2008, predates that 2009 amendment).</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

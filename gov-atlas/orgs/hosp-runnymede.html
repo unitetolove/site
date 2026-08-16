@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/bps-hospital.html">Broader public sector — Hospitals</a> &middot; Runnymede Healthcare Centre</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Runnymede Healthcare Centre</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (8 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (8 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Financial statements</td><td><a href="https://runnymedehc.ca/wp-content/uploads/2026/07/Audited-Financial-Statements-2026.pdf">Runnymede Audited Financial Statements Mar 31 2026</a></td><td>archived</td><td></td></tr>
@@ -85,7 +87,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2020</td><td>Financial statements</td><td><a href="https://runnymedehc.ca/wp-content/uploads/2024/02/20200331_Signed_Runnymede_Audited_Financial_Statements.pdf">Runnymede Audited Financial Statements Mar 31 2020</a></td><td>archived</td><td></td></tr>
 <tr><td>2020</td><td>Strategic plan</td><td><a href="http://runnymedehc.ca/newsroom/strategic-plan/">Runnymede Strategic Plan 2020-2024</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: plan-horizon-2024</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -110,7 +112,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>Runnymede Healthcare Centre is an approved public hospital under the Public Hospitals Act, R.S.O. 1990, c. P.40, operating as "a corporation without share capital under the Corporations Act (Ontario)" that "provides inpatient rehabilitative and complex continuing care to the residents of Toronto" (hosp-runnymede-fs-2026, b9b720cc9f92). It is funded and overseen by Ontario Health, successor to the Toronto Central Local Health Integration Network (LHIN) effective April 1, 2021 (hosp-runnymede-fs-2022, 28a849942ad1), under a Hospital Service Accountability Agreement. For the year ended March 31, 2026 it reported approximately $60.5M total revenue, of which $49.0M came from the Ministry of Health, against approximately $60.4M total expenses before undernoted items (hosp-runnymede-fs-2026, b9b720cc9f92). This brief's own reading of the archived series confirms and extends that figure across a seven-year window (FY2020-FY2026, with FY2021 unreadable).</p>
 <h4>Series inventory</h4>
 <p>8 documents are registered for this org: 6 audited-financial-statement years (fs-2020 through fs-2026, with fs-2021 failing extraction) plus one strategic-plan document (sp-2020). True usable-content rate: <strong>6 of 8 registered documents (75%)</strong> yielded real, substantive content. 1 of 8 (fs-2021) is a genuine extraction failure (confirmed 0-byte/scanned-PDF outcome, no .txt file present in the extraction directory). 1 of 8 (sp-2020) is a genuine stub — confirmed by direct reading, not just the detector flag (see Residuals &amp; gaps).</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Runnymede Healthcare Centre - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -178,7 +180,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>stub-suspected: confirmed — 812-character landing page announcing the 2020-2024 Strategic Plan's launch, with the actual plan content behind an unfetched "click the image below to enlarge" graphic; no goals, priorities, or measures are present in the archived text</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h4>Priority evolution</h4>
 <p>This registry contains no Corporate Plan, annual report, or standalone strategic-planning document with readable substantive content for any year — the archived series is entirely audited consolidated financial statements plus one confirmed-stub strategic-plan landing page. Consequently there is no "priorities" table or year-over-year mandate narrative comparable to organizations with annual-report series; what follows is a reconstruction of organizational and financial-strategy change visible only through the notes and structure of the audited financial statements themselves.</p>
 <p><strong>FY2020 (fs-2020, 5d7711905553):</strong> "Runnymede Healthcare Centre (the 'Corporation')...provides complex continuing care to the residents of Toronto." Reporting entity comprises the Corporation and "Runnymede Healthcare Centre Charitable Corporation (the 'Foundation')," consolidated. Revenue $47.8M (LHIN $40.6M), expenses $45.5M, excess of revenue over expenses $2.16M. Note 14 records the just-declared COVID-19 pandemic and states its financial impact "is unknown at this time."</p>
@@ -224,7 +226,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: final funding structure and completion outcome of the First Responder Wellness and Rehabilitation Services project (targeted 2030) — first disclosed in the series' final entry, fs-2026, with no later document available to confirm progress.</li>
 <li>No archive_status=missing years and no era:pre-web-baseline flags apply to this series; both non-"ok" documents in this set (fs-2021, sp-2020) are extraction-pipeline outcomes on documents that do have known source URLs, not registry-level absence.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

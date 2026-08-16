@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/federal.html">Federal</a> &middot; Shared Services Canada</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Shared Services Canada</h1>
@@ -73,7 +75,7 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (21 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (21 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2027</td><td>Departmental plan</td><td><a href="https://www.canada.ca/en/shared-services/corporate/about-us/transparency/departmental-plan/2026-27/shared-services-canada-2026-27-departmental-plan.html">Shared Services Canada 2026-27 Departmental Plan</a></td><td>archived</td><td></td></tr>
@@ -98,7 +100,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <tr><td>2013</td><td>Departmental plan</td><td><a href="https://web.archive.org/web/20191104192237id_/https://publications.gc.ca/collections/collection_2013/spc-ssc/P115-1-2013-eng.pdf">Report on Plans and Priorities 2013-14</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: capture-artifact-goc-interstitial</span></td></tr>
 <tr><td>2012</td><td>Departmental plan</td><td><a href="https://web.archive.org/web/20141114201633id_/https://publications.gc.ca/collections/collection_2012/spc-scc/P115-1-2012-eng.pdf">Shared Services Canada Report on Plans and Priorities 2012-13 (first report)</a></td><td>archived</td><td><span class="incompleteness-tag">⚠️ Still being checked: capture-artifact-goc-interstitial</span></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -123,7 +125,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <p>Shared Services Canada operates under the Shared Services Canada Act (effective August 4, 2011), consolidating IT infrastructure services — email, data centre, network/telecommunications — previously run separately across dozens of federal departments into "the GC's centralized digital service provider." SSC reports to Parliament through the Minister of Government Transformation, Public Works and Procurement (the backgrounder flags a minor title-wording ⚠️ still being checked against a secondary source, not resolved here either — none of the five read documents restates the exact current portfolio title). The backgrounder's FY2024-25 figures — Total Actual Spending $2,617,013,300 ($2,275,814,878 core / $341,198,422 internal services), 9,346 FTE (7,516 core / 1,830 internal) — are independently re-confirmed below against the extracted drr-2025 text (relay + re-verify): drr-2025 states "Total actual spending (including internal services): $2,617,013,300" and "Total full-time equivalent staff (including internal services): 9,346" directly, matching the backgrounder exactly.</p>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 5 ok / 1 stub-suspected / 0 extract-failed / 15 no-manifest-match (21 total registered).</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Shared Services Canada - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -282,7 +284,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full text, 123,216 chars</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>5 usable documents, real but genuinely thin.</strong> This is more than the SHORT-FORM rule's &lt;3-usable-doc threshold, and the five documents do support real (if incompletely-dated) evolution claims — but the shape of the gap matters as much as the count: one isolated early document (2019-20) and a four-consecutive-document recent cluster (2023-24 through 2026-27 planning), with a hard four-fiscal-year silence in between. This brief treats it as thin full-form rather than strict SHORT-FORM, consistent with the batch addendum's instruction not to force SHORT-FORM where the usable docs do support a narrative.</p>
 <h4>Priority evolution</h4>
 <p><strong>2019-20 (drr-2020, 749583b93893):</strong> SSC's mandate is stated as delivering "email, data centre and telecommunications services to federal departments and agencies," plus cyber/IT security and workplace technology device purchasing, with additional cost-recovery optional services. The year is framed around "SSC 3.0," in effect "since July 2019" — the belief that "the GC needs to make decisions differently for IT investments, projects, and prioritization," aiming to "consolidate, modernize and simplify the GC's approach to digital services." The report explicitly frames SSC's COVID-19 pandemic response as validating this: "a coordinated, government-wide corporate approach to IT is fundamental to sustaining GC operations in times of crisis." Named project work includes IT support for the Canadian Space Agency's RADARSAT Constellation Mission (three-satellite launch, a new Long-Term Archive System data-storage build in an SSC Enterprise Data Centre). Total actual spending $1,973,596,487; total actual FTE 7,057. President: Paul Glover.</p>
@@ -315,7 +317,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: the cause of the $2,790.8M (2023-24) → $2,617,013,300 (2024-25) total-spending decline — no named reduction program (CER, Refocusing Government Spending, or otherwise) appears in either drr-2024 or drr-2025 for this org, unlike the pattern seen in ATSSC's and Statistics Canada's most recent documents; this may mean SSC's own 2026-27 or later planning documents (not yet captured/registered) name a cause this brief cannot see.</li>
 <li>⚠️ Still being checked: the exact current Minister of Government Transformation, Public Works and Procurement portfolio title — not restated in any of the five documents read for this brief; carried here only from the backgrounder's own ⚠️ still being checked.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">

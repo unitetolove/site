@@ -14,6 +14,7 @@
 <script defer src="../../assets/analytics.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
 <header class="site-header">
 <div class="header-inner">
@@ -38,6 +39,7 @@
 </ul>
 </nav>
 </header>
+<main id="main" tabindex="-1">
 <nav class="crumbs"><a href="../index.html">Index</a> &middot; <a href="../levels/municipal-toronto.html">Municipal — Toronto</a> &middot; Court Services</nav>
 <div class="library-banner" role="note">Mechanically generated from the GOV-ATLAS registry (our public-body and document registries); every field is a direct read of a registry cell, re-derived on each run &mdash; nothing here is hand-written analysis.</div>
 <h1>Court Services</h1>
@@ -73,13 +75,13 @@ discovery-verification pass (our discovery-verification log)</li>
 </ul>
 
 <h2>Document shelf (2 rows)</h2>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Document shelf (2 rows)"><table>
 <thead><tr><th>Year</th><th>Type</th><th>Title</th><th>Archive status</th><th>Flags</th></tr></thead>
 <tbody>
 <tr><td>2026</td><td>Budget / estimates</td><td><a href="https://www.toronto.ca/wp-content/uploads/2026/03/8ef8-2026-Public-Book-Court-V1.pdf">Court Services -- 2026 Program Summary</a></td><td>archived</td><td></td></tr>
 <tr><td>2025</td><td>Budget / estimates</td><td><a href="https://www.toronto.ca/wp-content/uploads/2025/04/9521-2025-Public-Book-Court-V1.pdf">Court Services -- 2025 Program Summary</a></td><td>archived</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Backgrounder</h2>
 <p class="source-note">Source: this library's internal records &mdash; a mechanical research draft, not independently reviewed for publication; reproduced as-is.</p>
@@ -105,7 +107,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <h4>Series inventory</h4>
 <p><code>_index.json</code>: 2 ok / 0 stub-suspected / 0 extract-failed.</p>
 <p>Registry (our document registry) carries 2 rows for this org, both 2025 and 2026; both are <code>archived</code> and appear below — 0 <code>staged</code>, 0 <code>missing</code>. Both are single-division dedicated budget books (<code>...Public-Book-Court-V1.pdf</code>), not one of the shared multi-program cluster books flagged elsewhere in this batch (that batch’s own build note §B2) — confirmed via our document registry, each URL/sha256 registered exactly once across the whole registry.</p>
-<table>
+<div class="table-scroll" tabindex="0" aria-label="Court Services - strategy evolution"><table>
 <thead>
 <tr>
 <th>document id</th>
@@ -131,7 +133,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <td>yes — full 2026 Operating Budget and 2026-2035 Capital Budget and Plan, 43,293 chars, substantive</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>SHORT-FORM RULE APPLIES: 2 usable documents, one year apart.</strong> This is a legitimate before/after snapshot around a named legislative event (Bill 56), not a multi-year trend; treated accordingly below.</p>
 <h4>Priority evolution</h4>
 <p>A two-document, one-year-apart pair cannot establish a genuine multi-year evolution narrative. What the pair <em>does</em> establish: the same three named services (Provincial Offences and Tribunal Dispute Resolution, Default Fine Collection Management, Court Case Management) are stable across both years (54d19a5eed8b; 257e3d46f2da), while the division's Tribunal portfolio grew from four to six City Tribunals between the two readings, and the division stood up its first 10-Year Capital Budget and Plan in 2026 (257e3d46f2da) — the 2025 document states plainly "Court Services does not have a 10-Year Capital Budget and Plan" (54d19a5eed8b).</p>
@@ -159,7 +161,7 @@ discovery-verification pass (our discovery-verification log)</li>
 <li>⚠️ Still being checked: exact Deputy City Manager cluster/reporting line above the Director — registry carries no <code>parent_org</code> value for this division and no primary org chart was consulted (see backgrounder).</li>
 <li>⚠️ Still being checked: whether the "Adjudicative Information Management System" capital project (completed 2024, per the 2026 document's Capacity to Deliver narrative) appeared in any earlier budget document — unresolvable since no pre-2025 document is archived for this org.</li>
 </ul>
-
+</main>
 <footer class="site-footer">
 <nav aria-label="Footer">
 <div class="footer-cols">
