@@ -76,10 +76,10 @@ a.card p { margin: 0; font-size: 13.5px; color: var(--theme-foreground-muted); l
 import {define} from "./_observablehq/client.f6e9c9a8.js";
 import {registerFile} from "./_observablehq/stdlib.81cd90e3.js";
 
-registerFile("./data/coverage.csv", {"name":"./data/coverage.csv","mimeType":"text/csv","path":"./_file/data/coverage.626a08b0.csv","lastModified":1786918586890,"size":983});
-registerFile("./data/door_counts.csv", {"name":"./data/door_counts.csv","mimeType":"text/csv","path":"./_file/data/door_counts.61f56761.csv","lastModified":1786918586913,"size":1293});
-registerFile("./data/trend.csv", {"name":"./data/trend.csv","mimeType":"text/csv","path":"./_file/data/trend.f6a218ef.csv","lastModified":1786918586860,"size":3607});
-registerFile("./data/zones.csv", {"name":"./data/zones.csv","mimeType":"text/csv","path":"./_file/data/zones.616d557e.csv","lastModified":1786918586825,"size":1352});
+registerFile("./data/coverage.csv", {"name":"./data/coverage.csv","mimeType":"text/csv","path":"./_file/data/coverage.626a08b0.csv","lastModified":1786921339588,"size":983});
+registerFile("./data/door_counts.csv", {"name":"./data/door_counts.csv","mimeType":"text/csv","path":"./_file/data/door_counts.61f56761.csv","lastModified":1786921339610,"size":1293});
+registerFile("./data/trend.csv", {"name":"./data/trend.csv","mimeType":"text/csv","path":"./_file/data/trend.f6a218ef.csv","lastModified":1786921339566,"size":3607});
+registerFile("./data/zones.csv", {"name":"./data/zones.csv","mimeType":"text/csv","path":"./_file/data/zones.616d557e.csv","lastModified":1786921339542,"size":1352});
 
 define({id: "e8459941", inputs: ["FileAttachment"], outputs: ["zones","trend","coverage","doors","zonesUrl","trendUrl","coverageUrl","doorsUrl"], body: async (FileAttachment) => {
 const zones = FileAttachment("./data/zones.csv").csv({typed: true});
