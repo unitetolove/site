@@ -60,7 +60,10 @@
   --atlas-red: #b2182b; --atlas-red-2: #ef8a62; --atlas-red-3: #fddbc7;
   --atlas-blue-3: #d1e5f0; --atlas-blue-2: #67a9cf; --atlas-blue: #2166ac;
   --atlas-sand: #c9b99a;
+  /* serif stack hardened — see the note above this template in observablehq.config.js */
+  --serif: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", "Droid Serif", Times, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+body { font-family: var(--serif); }
 .public-banner {
   background: var(--theme-background-alt); color: var(--theme-foreground);
   border: 1px solid var(--theme-foreground-faintest); border-left: 4px solid var(--atlas-blue);
@@ -101,7 +104,7 @@ a.card p { margin: 0; font-size: 13.5px; color: var(--theme-foreground-muted); l
 import {define} from "./_observablehq/client.f6e9c9a8.js";
 import {registerFile} from "./_observablehq/stdlib.81cd90e3.js";
 
-registerFile("./data/zones.csv", {"name":"./data/zones.csv","mimeType":"text/csv","path":"./_file/data/zones.616d557e.csv","lastModified":1786860188340,"size":1352});
+registerFile("./data/zones.csv", {"name":"./data/zones.csv","mimeType":"text/csv","path":"./_file/data/zones.616d557e.csv","lastModified":1786862461718,"size":1352});
 
 define({id: "38614dd1", inputs: ["FileAttachment"], outputs: ["zones","zonesUrl"], body: async (FileAttachment) => {
 // ── data ──────────────────────────────────────────────────────────────────────
