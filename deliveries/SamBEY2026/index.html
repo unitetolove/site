@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Delivery — SamBEY2026</title>
+<!-- Analytics: no beacon is active on this site build. To count views/unlocks/downloads:
+     Option A (zero code): enable Cloudflare Web Analytics in the CF dashboard — per-path pageviews
+     and per-URL request counts (the zip's request count ≈ downloads).
+     Option B: uncomment and set your umami site-id; the event hooks below fire automatically.
+<script defer src="https://cloud.umami.is/script.js" data-website-id="YOUR-ID"></script> -->
+<style>
+  body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;background:#101418;color:#e8e8e8;
+       display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0}
+  .card{background:#1a2028;border:1px solid #2b3442;border-radius:12px;padding:2.2rem;max-width:430px;width:90%}
+  h1{font-size:1.15rem;margin:0 0 .4rem} p{font-size:.88rem;line-height:1.5;color:#aab4c0}
+  input{width:100%;box-sizing:border-box;padding:.65rem .8rem;border-radius:8px;border:1px solid #2b3442;
+        background:#0d1116;color:#e8e8e8;font-size:1rem;margin:.8rem 0 .5rem}
+  button{width:100%;padding:.7rem;border:0;border-radius:8px;background:#3b82f6;color:#fff;
+         font-size:.95rem;cursor:pointer} button:hover{background:#2f6fd6}
+  #files{display:none} .dl{display:block;text-align:center;text-decoration:none;background:#16a34a;
+        color:#fff;border-radius:8px;padding:.75rem;margin-top:.7rem;font-size:.95rem}
+  .dl:hover{background:#128a3e} #err{color:#f87171;font-size:.85rem;display:none;margin-top:.3rem}
+  .note{font-size:.78rem;color:#7c8794;margin-top:1rem}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>File delivery — SamBEY2026</h1>
+  <p>Enter the passphrase you were given to access this delivery.</p>
+  <div id="gate">
+    <input id="pw" type="password" placeholder="Passphrase" autocomplete="off"
+           onkeydown="if(event.key==='Enter')unlock()">
+    <button onclick="unlock()">Unlock</button>
+    <div id="err">That passphrase isn't right.</div>
+  </div>
+  <div id="files">
+    <p><strong>The package + the full walk-packet set</strong> — everything layered L0&rarr;L4; start with the main package.</p>
+<a class="dl" href="delivery_encrypted.zip" onclick="track('delivery_download')">THE PACKAGE — briefing, playbooks, toolkits, maps, posters (6.2&nbsp;MB)</a>
+<details style="margin-top:.7rem"><summary style="cursor:pointer;color:#aab4c0">Beaches–East York walk packets, per zone (15 files)</summary><a class="dl" href="walk_packets/BEY_zone_600.zip" onclick="track('delivery_download')">BEY zone 600 (7.6&nbsp;MB)</a><a class="dl" href="walk_packets/BEY_zone_601.zip" onclick="track('delivery_download')">BEY zone 601 (9.2&nbsp;MB)</a><a class="dl" href="walk_packets/BEY_zone_602.zip" onclick="track('delivery_download')">BEY zone 602 (8.9&nbsp;MB)</a><a class="dl" href="walk_packets/BEY_zone_603.zip" onclick="track('delivery_download')">BEY zone 603 (3.5&nbsp;MB)</a><a class="dl" href="walk_packets/BEY_zone_604.zip" onclick="track('delivery_download')">BEY zone 604 (9.5&nbsp;MB)</a><a class="dl" href="walk_packets/BEY_zone_605.zip" onclick="track('delivery_download')">BEY zone 605 (8.6&nbsp;MB)</a><a class="dl" href="walk_packets/BEY_zone_606.zip" onclick="track('delivery_download')">BEY zone 606 (10.9&nbsp;MB)</a><a class="dl" href="walk_packets/BEY_zone_607.zip" onclick="track('delivery_download')">BEY zone 607 (9.6&nbsp;MB)</a><a class="dl" href="walk_packets/BEY_zone_608.zip" onclick="track('delivery_download')">BEY zone 608 (9.4&nbsp;MB)</a><a class="dl" href="walk_packets/BEY_zone_609.zip" onclick="track('delivery_download')">BEY zone 609 (9.2&nbsp;MB)</a><a class="dl" href="walk_packets/BEY_zone_610.zip" onclick="track('delivery_download')">BEY zone 610 (10.3&nbsp;MB)</a><a class="dl" href="walk_packets/BEY_zone_611.zip" onclick="track('delivery_download')">BEY zone 611 (9.7&nbsp;MB)</a><a class="dl" href="walk_packets/BEY_zone_612.zip" onclick="track('delivery_download')">BEY zone 612 (8.5&nbsp;MB)</a><a class="dl" href="walk_packets/BEY_zone_613.zip" onclick="track('delivery_download')">BEY zone 613 (8.8&nbsp;MB)</a><a class="dl" href="walk_packets/BEY_zone_614.zip" onclick="track('delivery_download')">BEY zone 614 (7.2&nbsp;MB)</a></details>
+<details style="margin-top:.4rem"><summary style="cursor:pointer;color:#aab4c0">Scarborough Southwest walk packets, per zone (13 files)</summary><a class="dl" href="walk_packets/SSW_zone_600.zip" onclick="track('delivery_download')">SSW zone 600 (8.4&nbsp;MB)</a><a class="dl" href="walk_packets/SSW_zone_601.zip" onclick="track('delivery_download')">SSW zone 601 (8.5&nbsp;MB)</a><a class="dl" href="walk_packets/SSW_zone_602.zip" onclick="track('delivery_download')">SSW zone 602 (9.5&nbsp;MB)</a><a class="dl" href="walk_packets/SSW_zone_603.zip" onclick="track('delivery_download')">SSW zone 603 (0.0&nbsp;MB)</a><a class="dl" href="walk_packets/SSW_zone_604.zip" onclick="track('delivery_download')">SSW zone 604 (8.7&nbsp;MB)</a><a class="dl" href="walk_packets/SSW_zone_605.zip" onclick="track('delivery_download')">SSW zone 605 (10.5&nbsp;MB)</a><a class="dl" href="walk_packets/SSW_zone_606.zip" onclick="track('delivery_download')">SSW zone 606 (9.4&nbsp;MB)</a><a class="dl" href="walk_packets/SSW_zone_607.zip" onclick="track('delivery_download')">SSW zone 607 (8.9&nbsp;MB)</a><a class="dl" href="walk_packets/SSW_zone_608.zip" onclick="track('delivery_download')">SSW zone 608 (9.4&nbsp;MB)</a><a class="dl" href="walk_packets/SSW_zone_609.zip" onclick="track('delivery_download')">SSW zone 609 (11.0&nbsp;MB)</a><a class="dl" href="walk_packets/SSW_zone_610.zip" onclick="track('delivery_download')">SSW zone 610 (6.5&nbsp;MB)</a><a class="dl" href="walk_packets/SSW_zone_611.zip" onclick="track('delivery_download')">SSW zone 611 (9.7&nbsp;MB)</a><a class="dl" href="walk_packets/SSW_zone_612.zip" onclick="track('delivery_download')">SSW zone 612 (8.3&nbsp;MB)</a></details>
+    <p class="note">The archive is AES-256 encrypted: opening it asks for the <em>same passphrase</em>
+    you just entered (macOS: use The Unarchiver or <code>unzip</code>/Keka; the built-in Archive
+    Utility can't read AES zips). Please don't redistribute the passphrase.</p>
+  </div>
+  <p class="note">Private delivery · not for publication · this page is unlisted and noindexed.</p>
+</div>
+<script>
+function track(ev){ if(window.umami&&umami.track){umami.track(ev)} }
+track('delivery_view');
+const HASH='938d390ecef1e53c27a02deed2032cc997f6f0e10d73c2ebf1d2607043839ad7';
+async function unlock(){
+  const v=document.getElementById('pw').value.trim();
+  const buf=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(v));
+  const hex=[...new Uint8Array(buf)].map(b=>b.toString(16).padStart(2,'0')).join('');
+  if(hex===HASH){document.getElementById('gate').style.display='none';
+    document.getElementById('files').style.display='block';track('delivery_unlock');}
+  else{document.getElementById('err').style.display='block';}
+}
+</script>
+</body>
+</html>
