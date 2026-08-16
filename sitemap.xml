@@ -2,30 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://unitetolove.ca/</loc></url>
   <url><loc>https://unitetolove.ca/2slgbtq-inclusion-protection.html</loc></url>
-  <url><loc>https://unitetolove.ca/BEY-SSW-community-data/atlas/data-room.html</loc></url>
-  <url><loc>https://unitetolove.ca/BEY-SSW-community-data/atlas/index.html</loc></url>
-  <url><loc>https://unitetolove.ca/BEY-SSW-community-data/index.html</loc></url>
-  <url><loc>https://unitetolove.ca/BEY-SSW-community-data/s1_two_worlds_one_street.html</loc></url>
-  <url><loc>https://unitetolove.ca/BEY-SSW-community-data/s2_canyon_didnt_close.html</loc></url>
-  <url><loc>https://unitetolove.ca/BEY-SSW-community-data/s3_tower_explorer.html</loc></url>
-  <url><loc>https://unitetolove.ca/BEY-SSW-community-data/s4_pods_vs_blankets.html</loc></url>
-  <url><loc>https://unitetolove.ca/BEY-SSW-community-data/s5_who_reaches_whom.html</loc></url>
-  <url><loc>https://unitetolove.ca/BEY-SSW-community-data/s7_ssw_same_canyon.html</loc></url>
   <url><loc>https://unitetolove.ca/accessibility-public-space-aoda.html</loc></url>
   <url><loc>https://unitetolove.ca/act/</loc></url>
-  <url><loc>https://unitetolove.ca/act/mutual-aid/</loc></url>
-  <url><loc>https://unitetolove.ca/act/mutual-aid/block-circle.html</loc></url>
-  <url><loc>https://unitetolove.ca/act/mutual-aid/directory.html</loc></url>
-  <url><loc>https://unitetolove.ca/act/mutual-aid/give-help.html</loc></url>
-  <url><loc>https://unitetolove.ca/act/mutual-aid/guides/candidate-team-playbook.html</loc></url>
-  <url><loc>https://unitetolove.ca/act/mutual-aid/guides/mutual-aid-101.html</loc></url>
-  <url><loc>https://unitetolove.ca/act/mutual-aid/guides/no-money-rule.html</loc></url>
-  <url><loc>https://unitetolove.ca/act/mutual-aid/guides/pull-together-strategy.html</loc></url>
-  <url><loc>https://unitetolove.ca/act/mutual-aid/receipts.html</loc></url>
-  <url><loc>https://unitetolove.ca/act/mutual-aid/research.html</loc></url>
-  <url><loc>https://unitetolove.ca/act/mutual-aid/research/foundation.html</loc></url>
-  <url><loc>https://unitetolove.ca/act/mutual-aid/research/reading-and-resources.html</loc></url>
-  <url><loc>https://unitetolove.ca/act/mutual-aid/research/toronto-verified.html</loc></url>
   <url><loc>https://unitetolove.ca/act/volunteer.html</loc></url>
   <url><loc>https://unitetolove.ca/active-transportation-cycling.html</loc></url>
   <url><loc>https://unitetolove.ca/aging-well-home-care.html</loc></url>
@@ -248,6 +226,7 @@
   <url><loc>https://unitetolove.ca/egaming-esports-strategy.html</loc></url>
   <url><loc>https://unitetolove.ca/elections/beaches-east-york/federal.html</loc></url>
   <url><loc>https://unitetolove.ca/elections/beaches-east-york/index.html</loc></url>
+  <url><loc>https://unitetolove.ca/elections/beaches-east-york/neighbourhood.html</loc></url>
   <url><loc>https://unitetolove.ca/elections/beaches-east-york/platforms.html</loc></url>
   <url><loc>https://unitetolove.ca/elections/beaches-east-york/provincial.html</loc></url>
   <url><loc>https://unitetolove.ca/elections/events/index.html</loc></url>
@@ -3609,7 +3588,6 @@
   <url><loc>https://unitetolove.ca/ontario-works-rate-history-erosion.html</loc></url>
   <url><loc>https://unitetolove.ca/open-data.html</loc></url>
   <url><loc>https://unitetolove.ca/opioid-crisis-public-health-response.html</loc></url>
-  <url><loc>https://unitetolove.ca/orgs</loc></url>
   <url><loc>https://unitetolove.ca/parking-policy-management.html</loc></url>
   <url><loc>https://unitetolove.ca/parks-recreation-access.html</loc></url>
   <url><loc>https://unitetolove.ca/participatory-budgeting-outcomes.html</loc></url>
@@ -4230,9 +4208,12 @@
   <url><loc>https://unitetolove.ca/transit/ch20-what-one-year-could-do.html</loc></url>
   <url><loc>https://unitetolove.ca/transit/index.html</loc></url>
   <url><loc>https://unitetolove.ca/transit/receipts.html</loc></url>
+  <url><loc>https://unitetolove.ca/tribes/directory.html</loc></url>
+  <url><loc>https://unitetolove.ca/tribes/find.html</loc></url>
   <url><loc>https://unitetolove.ca/tribes/index.html</loc></url>
-  <url><loc>https://unitetolove.ca/tribes/platforms.html</loc></url>
-  <url><loc>https://unitetolove.ca/tribes/reddit.html</loc></url>
+  <url><loc>https://unitetolove.ca/tribes/media.html</loc></url>
+  <url><loc>https://unitetolove.ca/tribes/shelf.html</loc></url>
+  <url><loc>https://unitetolove.ca/tribes/tech.html</loc></url>
   <url><loc>https://unitetolove.ca/turnout.html</loc></url>
   <url><loc>https://unitetolove.ca/urban-agriculture-food-systems.html</loc></url>
   <url><loc>https://unitetolove.ca/urban-beautification-public-art.html</loc></url>

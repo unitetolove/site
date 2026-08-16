@@ -113,15 +113,17 @@ read, fork, and cite. Corrections and improvements: see
   with attribution. See <a href="#license">License</a> below.
   </div>
 
-  <p>This page replaces the earlier &ldquo;coming soon&rdquo; placeholder. Six datasets are live
-  below, each one CSV file: the same structured local statistics &mdash; populations, municipal
-  finances, rental markets, homelessness counts, collisions, and municipal council resolutions
-  &mdash; that back the claims made elsewhere on this site. Every row is keyed to a geography
-  (Statistics Canada&rsquo;s Standard Geographical Classification, where the dataset uses one) and
-  a period, so the same figure can be checked against its original publisher independently of
-  anything we say about it here. Files were assembled for this page on 2026-08-05; each
-  dataset&rsquo;s own retrieval date is stated in its section below and, for five of the six
-  files, repeated on every row (<code>retrieved_date</code> column).</p>
+  <p>This page replaces the earlier &ldquo;coming soon&rdquo; placeholder. Seven datasets are
+  live below, each one CSV file. Six of them share the same structured local-statistics shape
+  &mdash; populations, municipal finances, rental markets, homelessness counts, collisions, and
+  municipal council resolutions &mdash; that back the claims made elsewhere on this site: every
+  row in those six is keyed to a geography (Statistics Canada&rsquo;s Standard Geographical
+  Classification, where the dataset uses one) and a period, so the same figure can be checked
+  against its original publisher independently of anything we say about it here. Files were
+  assembled for this page on 2026-08-05; each of those six datasets&rsquo; own retrieval date is
+  stated in its section below and, for five of the six files, repeated on every row
+  (<code>retrieved_date</code> column). The seventh, added 2026-08-16, is different in kind
+  &mdash; an entity registry, not a statistical series &mdash; see #7 below.</p>
 
   <div class="deck" role="note">
   <strong>Jump to a dataset:</strong>
@@ -136,14 +138,15 @@ read, fork, and cite. Corrections and improvements: see
   <a href="#collisions">Police-reported collisions</a>
   &nbsp;&middot;&nbsp;
   <a href="#asks">Municipal council asks</a>
+  &nbsp;&middot;&nbsp;
+  <a href="#orgs">Toronto organization registry</a>
   </div>
 
-  <p><strong>Not included here:</strong> this page covers six structured statistical datasets
-  only. A separate internal working folder also contains quote-verification logs used to
-  fact-check narrative pages elsewhere on the site (matching quoted text back to its source
-  paragraph). Those logs are an editorial QA tool for our own writing, not a civic dataset in
-  the sense of the six below, aren&rsquo;t documented in the schema record these six draw on, and
-  aren&rsquo;t published here for that reason.</p>
+  <p><strong>Not included here:</strong> this page covers seven datasets only. A separate
+  internal working folder also contains quote-verification logs used to fact-check narrative
+  pages elsewhere on the site (matching quoted text back to its source paragraph). Those logs
+  are an editorial QA tool for our own writing, not a civic dataset in the sense of the seven
+  below, and aren&rsquo;t published here for that reason.</p>
 
   <h2 id="population">1. Ontario population by census division, 2001&ndash;2025</h2>
   <p><strong>What it is:</strong> Annual population estimates for every county- or region-level
@@ -390,6 +393,78 @@ read, fork, and cite. Corrections and improvements: see
       <tr><td><code>addressee_institution</code></td><td>The institution the ask is directed at (e.g. a named ministry) &mdash; never an individual official by name.</td></tr>
       <tr><td><code>source_url</code></td><td>Link to the original resolution, council record, or news coverage of it.</td></tr>
       <tr><td><code>tier</code></td><td><code>1</code> = source directly fetched and confirmed; <code>1-search-verified</code> = corroborated via search, not a direct fetch of the primary document.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 id="orgs">7. Toronto civil-society organization registry</h2>
+  <p><strong>What it is:</strong> A directory-style registry of Toronto-area civil-society
+  organizations &mdash; neighbourhood and tenant associations, shelters and settlement agencies,
+  faith and cultural umbrellas, fraternal orders and service clubs, hubs and funders, and dozens
+  of other categories &mdash; behind this site&rsquo;s <a href="tribes/directory.html">Organization
+  Directory</a>. This is a different kind of file from the six above: an entity list, one row per
+  organization, not a statistical time series.</p>
+  <ul class="leaf-list">
+    <li><strong>Geographic coverage:</strong> Toronto and the wider Greater Toronto Area,
+    unevenly &mdash; most rows are Toronto proper. Province- or nationwide bodies with a Toronto
+    presence are included and flagged as such in the <code>area</code> column rather than left
+    out.</li>
+    <li><strong>Temporal coverage:</strong> not applicable in the sense the six datasets above
+    use it. Each row instead carries its own <code>last_verified</code> date where a
+    verification pass has actually touched it; rows added but not yet individually re-checked
+    carry no date.</li>
+    <li><strong>Vintage / as of:</strong> 2026-08-16.</li>
+    <li><strong>Source &amp; provenance:</strong> this is our own original field research, not a
+    re-publication of an existing directory. Rows were assembled from roughly 55 documented
+    sources &mdash; city and provincial open-data portals, community-hub and grant-recipient
+    lists, umbrella-organization member rosters, and direct web verification &mdash; catalogued
+    in this project&rsquo;s own source inventory. Each organization is minted once into a single
+    central registry with a permanent <code>org_id</code>, through a single-writer process (no
+    parallel or duplicate lists), so the same organization is never counted twice under two
+    different names.</li>
+    <li><strong>Known caveats:</strong> coverage is partial and uneven by category. We track how
+    complete each category is against an estimated citywide total and keep closing gaps as we
+    find them &mdash; some categories (established fraternal lodges, city-run community hubs)
+    are close to fully counted; others remain order-of-magnitude estimates with real, acknowledged
+    gaps still open. <code>area</code> is free text, not a structured ward or riding join &mdash;
+    values range from a ward name to a full qualifying sentence, and there is no dedicated
+    Toronto geography dataset behind it yet. Verification dates vary widely: most rows are marked
+    <code>verified-live</code> with a recent date, and the rest are seed-quality (added but not
+    yet individually re-checked) or already known to be dormant, unreachable, or defunct &mdash;
+    each labelled by its own <code>verification_status</code> rather than smoothed over.
+    <strong>This download is not the whole register, and here is exactly what is missing.</strong>
+    Behind these 1,607 published rows sit a further 835 organizations we have recorded but are not
+    publishing: 685 found through a weaker verification path and not yet individually re-checked,
+    61 we could not reach, 37 we believe have closed, 29 named but unconfirmed, 17 apparently
+    dormant, and 6 confirmed closed with no successor. We hold those back deliberately.
+    Publishing &ldquo;this organization has shut down&rdquo; about a group that is in fact still
+    running would be a claim we could never take back once this file has been copied elsewhere,
+    and our confidence in those rows is not yet high enough to make it. So this file carries only
+    what we have confirmed directly, and matches the <a href="tribes/directory.html">Organization
+    Directory</a> page row for row &mdash; the two can never disagree about what we claim to know.
+    This is a
+    snapshot of a living city &mdash; organizations open, close, move, and rename continuously,
+    and this file will always be somewhat behind that reality.</li>
+    <li><strong>Licence:</strong> the same as every dataset on this page &mdash; CC BY 4.0 (see
+    <a href="#license">License</a> below). This is our own original research, so there is no
+    separate upstream licence to reconcile.</li>
+    <li><strong>Download:</strong> <a href="data/tribes_orgs.csv">tribes_orgs.csv</a> &mdash;
+    1,607 rows &times; 8 columns.</li>
+    <li><strong>Query it without downloading:</strong>
+    <a href="https://lite.datasette.io/?csv=https://unitetolove.ca/data/tribes_orgs.csv">open in
+    Datasette&nbsp;Lite</a> &mdash; it runs entirely in your browser (WebAssembly), so there is
+    no server and no account, and it is safe to click.</li>
+  </ul>
+  <div class="table-scroll" tabindex="0" aria-label="7. Toronto civil-society organization registry"><table>
+    <thead><tr><th>Field</th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><td><code>org_id</code></td><td>Permanent registry identifier, <code>ORG-#####</code> &mdash; minted once, in insertion order, and never reused or reassigned.</td></tr>
+      <tr><td><code>name</code></td><td>The organization&rsquo;s name.</td></tr>
+      <tr><td><code>category</code></td><td>Top-level category from this registry&rsquo;s own controlled vocabulary (e.g. &ldquo;base-of-pyramid,&rdquo; &ldquo;neighbourhood-association-federation&rdquo;), left as the raw label rather than reformatted.</td></tr>
+      <tr><td><code>subcategory</code></td><td>A more specific subcategory; free text, so specificity varies row to row.</td></tr>
+      <tr><td><code>area</code></td><td>Free-text geography note &mdash; not a ward/riding lookup. See known caveats above.</td></tr>
+      <tr><td><code>website</code></td><td>The organization&rsquo;s public website, where one is on file. Blank where none is published; never an email address or phone number.</td></tr>
+      <tr><td><code>verification_status</code></td><td><code>verified-live</code>, <code>seed-web-verified</code>, <code>seed-unverified</code>, <code>dormant</code>, <code>unreachable</code>, <code>defunct</code>, or <code>dead-no-successor</code> &mdash; see known caveats above for what each means.</td></tr>
+      <tr><td><code>last_verified</code></td><td>Date (<code>YYYY-MM-DD</code>) this row was last checked, where the registry recorded one. Blank where not yet checked &mdash; never guessed.</td></tr>
     </tbody>
   </table></div>
 
