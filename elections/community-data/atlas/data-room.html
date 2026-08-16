@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.4">
+<title>The data room | Beaches—East York + Scarborough Southwest — a community atlas</title>
+
+<link rel="preload" as="style" href="./_observablehq/theme-parchment.8506113b.css">
+<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.f7bf0e12.css">
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-parchment.8506113b.css">
+<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.f7bf0e12.css">
+<link rel="modulepreload" href="./_observablehq/client.f6e9c9a8.js">
+<link rel="modulepreload" href="./_observablehq/runtime.607a8173.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.81cd90e3.js">
+<link rel="modulepreload" href="./_npm/htl@1.0.0/11521f02.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/inputs.8ddbf299.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/097745a2.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/604cb63b.js">
+<meta name="description" content="Four open tables behind the community atlas: turnout by advance-poll zone, the 2021→2025 trend by neighbourhood, the canvass-coverage arithmetic for all 28 zones, and the measured street doors per zone. Sortable, downloadable, aggregate only — the finest unit anywhere is the polling division.">
+<meta property="og:title" content="The data room — Beaches—East York + Scarborough Southwest — a community atlas">
+<meta property="og:description" content="Four open tables behind the community atlas: turnout by advance-poll zone, the 2021→2025 trend by neighbourhood, the canvass-coverage arithmetic for all 28 zones, and the measured street doors per zone. Sortable, downloadable, aggregate only — the finest unit anywhere is the polling division.">
+<meta property="og:type" content="article">
+<!-- og:image intentionally omitted at build time -->
+<style>
+:root {
+  --atlas-red: #b2182b; --atlas-red-2: #ef8a62; --atlas-red-3: #fddbc7;
+  --atlas-blue-3: #d1e5f0; --atlas-blue-2: #67a9cf; --atlas-blue: #2166ac;
+  --atlas-sand: #c9b99a;
+}
+.public-banner {
+  background: var(--theme-background-alt); color: var(--theme-foreground);
+  border: 1px solid var(--theme-foreground-faintest); border-left: 4px solid var(--atlas-blue);
+  text-align: center; font-size: 13.5px; letter-spacing: .01em; padding: 8px 14px;
+  margin: 0 0 6px; border-radius: 4px; font-weight: 500;
+}
+#observablehq-footer .np-floor {
+  font-weight: 500; color: var(--theme-foreground); border-top: 2px solid var(--theme-foreground);
+  padding-top: 10px; margin-bottom: 6px; max-width: none;
+}
+#observablehq-footer .footer-meta { font-size: 12.5px; line-height: 1.5; }
+.figure-law {
+  background: var(--theme-background); border: 1px solid var(--theme-foreground-faintest);
+  border-radius: 8px; padding: 16px 18px 12px; margin: 28px 0;
+}
+.figure-law h2 { font-size: 21px; line-height: 1.25; margin: 0 0 2px; max-width: none; }
+.figure-law .sub { font-size: 14px; color: var(--theme-foreground-muted); margin: 2px 0 12px; }
+.figure-law .srcline {
+  font-size: 12px; color: var(--theme-foreground-muted); margin: 12px 0 0;
+  border-top: 1px solid var(--theme-foreground-faintest); padding-top: 8px;
+}
+.figure-law details { font-size: 12.5px; color: var(--theme-foreground-muted); margin-top: 6px; }
+.figure-law details summary { cursor: pointer; }
+.swatch { display: inline-block; width: 11px; height: 11px; border-radius: 2px; vertical-align: -1px; margin-right: 3px; }
+a.card { display: block; text-decoration: none; color: inherit; }
+a.card:hover { border-color: var(--atlas-blue); }
+a.card h3 { margin: 0 0 4px; font-size: 16px; line-height: 1.25; }
+a.card .story-n { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--atlas-blue); }
+a.card p { margin: 0; font-size: 13.5px; color: var(--theme-foreground-muted); line-height: 1.45; }
+.honest-grain {
+  font-size: 13.5px; background: var(--theme-background-alt); border-left: 3px solid var(--atlas-red-2);
+  padding: 10px 14px; margin: 20px 0; border-radius: 0 4px 4px 0;
+}
+.srcline { font-size: 12px; color: var(--theme-foreground-muted); margin: 10px 0 0; }
+</style>
+<script type="module">
+
+import {define} from "./_observablehq/client.f6e9c9a8.js";
+import {registerFile} from "./_observablehq/stdlib.81cd90e3.js";
+
+registerFile("./data/coverage.csv", {"name":"./data/coverage.csv","mimeType":"text/csv","path":"./_file/data/coverage.626a08b0.csv","lastModified":1786860188387,"size":983});
+registerFile("./data/door_counts.csv", {"name":"./data/door_counts.csv","mimeType":"text/csv","path":"./_file/data/door_counts.61f56761.csv","lastModified":1786860188412,"size":1293});
+registerFile("./data/trend.csv", {"name":"./data/trend.csv","mimeType":"text/csv","path":"./_file/data/trend.0036cbd4.csv","lastModified":1786860188366,"size":1906});
+registerFile("./data/zones.csv", {"name":"./data/zones.csv","mimeType":"text/csv","path":"./_file/data/zones.616d557e.csv","lastModified":1786860188340,"size":1352});
+
+define({id: "e8459941", inputs: ["FileAttachment"], outputs: ["zones","trend","coverage","doors","zonesUrl","trendUrl","coverageUrl","doorsUrl"], body: async (FileAttachment) => {
+const zones = FileAttachment("./data/zones.csv").csv({typed: true});
+const trend = FileAttachment("./data/trend.csv").csv({typed: true});
+const coverage = FileAttachment("./data/coverage.csv").csv({typed: true});
+const doors = FileAttachment("./data/door_counts.csv").csv({typed: true});
+const zonesUrl = await FileAttachment("./data/zones.csv").url();
+const trendUrl = await FileAttachment("./data/trend.csv").url();
+const coverageUrl = await FileAttachment("./data/coverage.csv").url();
+const doorsUrl = await FileAttachment("./data/door_counts.csv").url();
+return {zones,trend,coverage,doors,zonesUrl,trendUrl,coverageUrl,doorsUrl};
+}});
+
+define({id: "7d98e0d6", inputs: ["html","trend","doors"], outputs: ["dl","trendJoinable","D_RIDING","D_ZONE","D_ELECTORS","D_STREET","D_ENTRANCES","D_POINTS","D_IMPLIED","D_RATIO"], body: (html,trend,doors) => {
+const dl = (url, name, rows) =>
+  html`<a href=${url} download=${name}>Download <code>${name}</code></a> · ${rows} rows · as of 2026-08-15`;
+// The trend file carries two 2021-only residue rows (a null neighbourhood and South Riverdale,
+// both outside the 2025 boundary). They stay in the download — the table shows the joinable ten.
+const trendJoinable = trend.filter((d) => d.eday_turnout_2025_pct != null);
+// Door-count column names are taken from the CSV's own header, in file order, so the table can
+// never drift from the file: riding, zone, electors, street addresses, structure entrances,
+// total address points, elector-implied unit doors, street-to-implied ratio.
+const [D_RIDING, D_ZONE, D_ELECTORS, D_STREET, D_ENTRANCES, D_POINTS, D_IMPLIED, D_RATIO] = doors.columns;
+return {dl,trendJoinable,D_RIDING,D_ZONE,D_ELECTORS,D_STREET,D_ENTRANCES,D_POINTS,D_IMPLIED,D_RATIO};
+}});
+
+define({id: "2783a940", inputs: ["Inputs","zones","display"], body: async (Inputs,zones,display) => {
+display(await(
+Inputs.table(zones, {
+  columns: ["advance_zone", "main_neighbourhoods", "electors", "eday_votes", "advance_votes", "total_votes", "total_turnout_pct", "advance_share_pct", "member_pds"],
+  header: {
+    advance_zone: "Zone",
+    main_neighbourhoods: "Main neighbourhoods (PDs)",
+    electors: "Electors",
+    eday_votes: "E-day votes",
+    advance_votes: "Advance votes",
+    total_votes: "Total votes",
+    total_turnout_pct: "Total turnout %",
+    advance_share_pct: "Advance share %",
+    member_pds: "PDs"
+  },
+  width: {main_neighbourhoods: 300},
+  sort: "total_turnout_pct",
+  reverse: false,
+  rows: 16,
+  layout: "auto"
+})
+))
+}});
+
+define({id: "792e7773", mode: "inline", inputs: ["dl","zonesUrl","display"], body: async (dl,zonesUrl,display) => {
+display(await(
+dl(zonesUrl, "2025GE_bey_turnout_by_advance_zone.csv", 15)
+))
+}});
+
+define({id: "250f04fe", inputs: ["Inputs","trendJoinable","display"], body: async (Inputs,trendJoinable,display) => {
+display(await(
+Inputs.table(trendJoinable, {
+  columns: ["neighbourhood", "eday_turnout_2021_pct", "eday_turnout_2025_pct", "delta_pp", "electors_2025"],
+  header: {
+    neighbourhood: "Neighbourhood",
+    eday_turnout_2021_pct: "E-day turnout 2021 %",
+    eday_turnout_2025_pct: "E-day turnout 2025 %",
+    delta_pp: "Δ (pp)",
+    electors_2025: "Electors 2025"
+  },
+  sort: "delta_pp",
+  reverse: true,
+  rows: 12,
+  layout: "auto"
+})
+))
+}});
+
+define({id: "83ff4c28", mode: "inline", inputs: ["dl","trendUrl","display"], body: async (dl,trendUrl,display) => {
+display(await(
+dl(trendUrl, "2021_2025_bey_turnout_trend_by_neighbourhood.csv", 12)
+))
+}});
+
+define({id: "4b11a569", inputs: ["Inputs","coverage","display"], body: async (Inputs,coverage,display) => {
+display(await(
+Inputs.table(coverage, {
+  columns: ["riding", "zone", "total_turnout_2025_pct", "electors", "est_doors(electors/1.9)", "pair_hours@25doors/hr", "2h_pair_shifts_to_cover"],
+  header: {
+    riding: "Riding",
+    zone: "Zone",
+    total_turnout_2025_pct: "Total turnout %",
+    electors: "Electors",
+    "est_doors(electors/1.9)": "Est. doors",
+    "pair_hours@25doors/hr": "Pair-hours",
+    "2h_pair_shifts_to_cover": "2h pair-shifts"
+  },
+  sort: "2h_pair_shifts_to_cover",
+  reverse: true,
+  rows: 15,
+  layout: "auto"
+})
+))
+}});
+
+define({id: "7460af95", mode: "inline", inputs: ["dl","coverageUrl","display"], body: async (dl,coverageUrl,display) => {
+display(await(
+dl(coverageUrl, "ANALYSIS_COVERAGE.csv", 28)
+))
+}});
+
+define({id: "f4b5cd7b", inputs: ["Inputs","doors","D_RIDING","D_ZONE","D_ELECTORS","D_STREET","D_ENTRANCES","D_POINTS","D_IMPLIED","D_RATIO","display"], body: async (Inputs,doors,D_RIDING,D_ZONE,D_ELECTORS,D_STREET,D_ENTRANCES,D_POINTS,D_IMPLIED,D_RATIO,display) => {
+display(await(
+Inputs.table(doors, {
+  columns: [D_RIDING, D_ZONE, D_ELECTORS, D_STREET, D_ENTRANCES, D_POINTS, D_IMPLIED, D_RATIO],
+  header: {
+    [D_RIDING]: "Riding",
+    [D_ZONE]: "Zone",
+    [D_ELECTORS]: "Electors",
+    [D_STREET]: "Street addresses (measured)",
+    [D_ENTRANCES]: "Extra structure entrances",
+    [D_POINTS]: "All address points",
+    [D_IMPLIED]: "Implied unit-doors (electors/1.9)",
+    [D_RATIO]: "Street ÷ implied"
+  },
+  sort: D_RATIO,
+  reverse: false,
+  rows: 28,
+  layout: "auto"
+})
+))
+}});
+
+define({id: "57f64f8a", mode: "inline", inputs: ["dl","doorsUrl","display"], body: async (dl,doorsUrl,display) => {
+display(await(
+dl(doorsUrl, "DOOR_COUNTS_by_zone.csv", 28)
+))
+}});
+
+</script>
+<link rel="canonical" href="https://unitetolove.ca/elections/community-data/atlas/data-room.html">
+<meta property="og:url" content="https://unitetolove.ca/elections/community-data/atlas/data-room.html">
+<meta property="og:image" content="https://unitetolove.ca/assets/og/elections.png">
+<meta name="twitter:card" content="summary_large_image">
+<script defer src="../../../assets/analytics.js"></script>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">Beaches—East York + Scarborough Southwest — a community atlas</a></li>
+  </ol>
+  <ol>
+    <li class="observablehq-link"><a href="./">The atlas</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./data-room.html">The data room</a></li>
+  </ol>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<header id="observablehq-header">
+<div class="public-banner">A neighbours' data project — participation only, never a vote for anyone.</div>
+</header>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+<div>On this page</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#1-beaches-east-york-turnout-by-advance-zone-the-true-total-turnout-layer">1 · Beaches—East York turnout by advance zone — the true-total-turnout layer</a></li>
+<li class="observablehq-secondary-link"><a href="#2-beaches-east-york-election-day-turnout-trend-2021-2025-by-neighbourhood">2 · Beaches—East York election-day turnout trend, 2021 → 2025, by neighbourhood</a></li>
+<li class="observablehq-secondary-link"><a href="#3-canvass-coverage-arithmetic-all-28-zones-both-ridings">3 · Canvass coverage arithmetic — all 28 zones, both ridings</a></li>
+<li class="observablehq-secondary-link"><a href="#4-measured-street-doors-per-zone-4-948-electors-behind-143-doors-in-one-of-them">4 · Measured street doors per zone — 4,948 electors behind 143 doors in one of them</a></li>
+<li class="observablehq-secondary-link"><a href="#how-to-reproduce-any-of-this">How to reproduce any of this</a></li>
+</ol>
+</nav>
+</aside>
+<main id="observablehq-main" class="observablehq">
+<!-- The page description + Open Graph copy live in observablehq.config.js (DESCRIPTIONS, keyed
+     by page path): Framework whitelists front-matter keys and drops anything it does not know,
+     so a description here would be silently ignored. -->
+<div class="observablehq observablehq--block"><!--:e8459941:--></div>
+<div class="observablehq observablehq--block"><!--:7d98e0d6:--></div>
+<h1 id="the-data-room" tabindex="-1"><a class="observablehq-header-anchor" href="#the-data-room">The data room</a></h1>
+<p>Four tables, live off the same loaders that feed every figure on this site. Click any column
+header to sort; the download under each table is the exact file the loader read, not an export of
+what you see.</p>
+<p>The stories these tables feed: <a href="../s1_two_worlds_one_street.html">two worlds, one street</a> ·
+<a href="../s2_canyon_widened.html">the canyon widened</a> · <a href="../s3_tower_explorer.html">tower explorer</a> ·
+<a href="../s4_pods_vs_blankets.html">pods vs blankets</a> · <a href="../s5_who_reaches_whom.html">who reaches whom</a> ·
+<a href="../s7_ssw_same_canyon.html">the same canyon: Scarborough Southwest</a>.</p>
+<div class="honest-grain">
+<p><strong>The grain, stated once.</strong>
+Per-PD figures are election-day only; zone figures are true total turnout (the honest grain).
+Scarborough Southwest turnout geography = federal 35096 substitution.</p>
+</div>
+<p>Everything below is aggregate. The finest unit anywhere in this room is the polling division;
+there is no candidate, party, or individual-level field in any file.</p>
+<h2 id="1-beaches-east-york-turnout-by-advance-zone-the-true-total-turnout-layer" tabindex="-1"><a class="observablehq-header-anchor" href="#1-beaches-east-york-turnout-by-advance-zone-the-true-total-turnout-layer">1 · Beaches—East York turnout by advance zone — the true-total-turnout layer</a></h2>
+<p>The 15 advance-poll zones of Beaches—East York with advance and election-day votes added
+together, which is the only grain at which "turnout" means what a reader assumes it means.
+<code>advance_share_pct</code> is the share of each zone's own votes cast before election day — it moves with
+the same geography as turnout itself.</p>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:2783a940:--></div>
+<div class="srcline">
+Source: Elections Canada, 2025 general election poll-by-poll results (Beaches—East York, 35007),
+aggregated PD → advance zone by this project's own data pipeline · <observablehq-loading></observablehq-loading><!--:792e7773:-->
+</div>
+<h2 id="2-beaches-east-york-election-day-turnout-trend-2021-2025-by-neighbourhood" tabindex="-1"><a class="observablehq-header-anchor" href="#2-beaches-east-york-election-day-turnout-trend-2021-2025-by-neighbourhood">2 · Beaches—East York election-day turnout trend, 2021 → 2025, by neighbourhood</a></h2>
+<p>The comparable unit across the two elections is the <strong>neighbourhood, not the polling division</strong> —
+2021 PDs were drawn on the 2013 representation order and were joined here via 2021 Elections Canada
+boundaries, so PD numbers do not carry across and are not offered as if they did. These are
+election-day figures on both sides (an advance layer comparable to 2025's does not exist for 2021
+at this grain), which is why the numbers sit ~20 points below the zone table above. Read the
+<code>delta_pp</code> column, not the levels.</p>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:250f04fe:--></div>
+<div class="srcline">
+Source: Elections Canada 2021 + 2025 general election poll-by-poll results, joined to City of Toronto
+neighbourhoods by this project's own data pipeline · <observablehq-loading></observablehq-loading><!--:83ff4c28:-->
+· the download carries 12 rows: the 10 joinable neighbourhoods shown here plus two 2021-only residue
+rows (a null neighbourhood and South Riverdale) that fall outside the 2025 boundary and are kept in the
+file rather than silently dropped.
+</div>
+<h2 id="3-canvass-coverage-arithmetic-all-28-zones-both-ridings" tabindex="-1"><a class="observablehq-header-anchor" href="#3-canvass-coverage-arithmetic-all-28-zones-both-ridings">3 · Canvass coverage arithmetic — all 28 zones, both ridings</a></h2>
+<p>What it would actually cost, in human hours, to knock every door in a zone: electors ÷ 1.9 to get
+doors, 25 doors per pair-hour, expressed as two-hour pair shifts. Full-riding coverage is ≈864
+pair-shifts in Beaches—East York and ≈913 in Scarborough Southwest — which is the argument, in one
+number, for pods and partners over blanket canvassing. The four Beaches—East York canyon zones alone
+(608 + 603 + 602 + 600) are ≈224 shifts: the achievable classic-field play.</p>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:4b11a569:--></div>
+<div class="srcline">
+Source: derived by this project's own data pipeline from the two ridings' zone turnout layers; canvass-rate
+assumptions (1.9 electors/door, 25 doors/pair-hour) are stated with the figures and are the only
+non-observed numbers in this room · <observablehq-loading></observablehq-loading><!--:7460af95:-->
+</div>
+<h2 id="4-measured-street-doors-per-zone-4-948-electors-behind-143-doors-in-one-of-them" tabindex="-1"><a class="observablehq-header-anchor" href="#4-measured-street-doors-per-zone-4-948-electors-behind-143-doors-in-one-of-them">4 · Measured street doors per zone — 4,948 electors behind 143 doors in one of them</a></h2>
+<p>The table above estimates doors from electors. This one <strong>counts</strong> them. Every civic address point
+in both ridings was taken from the City of Toronto's address repository and located inside its
+advance-poll zone, which gives the number of street addresses a canvasser can actually walk up to —
+and the gap between that count and the elector-implied estimate is the tower geography, measured
+rather than inferred. Beaches—East York zone 603 (Crescent Town) is the extreme case: <strong>143 street
+addresses for 4,948 electors</strong>, a ratio of 0.05 to its implied unit-doors, because a 500-unit tower
+is one address point on the map and one locked lobby door on the ground.</p>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:f4b5cd7b:--></div>
+<div class="srcline">
+Source: City of Toronto Open Data — "Address Points (Municipal) — Toronto One Address Repository"
+(fetched 2026-08-16), point-in-polygon against the committed advance-zone boundaries × Elections
+Canada 45th general election electors · as of 2026-08-16 ·
+<observablehq-loading></observablehq-loading><!--:57f64f8a:-->
+</div>
+<div class="honest-grain">
+<p><strong>Read this table with its three caveats.</strong>
+<strong>One:</strong> a tower is <strong>one address point</strong>. "Street addresses" counts front doors on the street, not
+dwelling units — which is exactly why the ratio column finds the high-rise corridors, and exactly why
+this column must never be read as a population count.
+<strong>Two:</strong> the source's <code>GENERAL_USE_CODE</code> field is unpopulated ("Unknown" on every fetched row,
+checked 2026-08-16), so no residential/commercial split is possible here; the split shown is
+<code>ADDRESS_CLASS</code> only — parcel addresses (L/LE) versus additional structure entrances (S/SE).
+<strong>Three:</strong> the riding codes are the source file's own — BEY = Beaches—East York, SSW = Scarborough
+Southwest — and the elector counts on the SSW rows are the federal 35096 substitution, as everywhere else
+on this site, and "implied unit-doors" is the 1.9-electors-per-door assumption, not an observation.</p>
+</div>
+<h2 id="how-to-reproduce-any-of-this" tabindex="-1"><a class="observablehq-header-anchor" href="#how-to-reproduce-any-of-this">How to reproduce any of this</a></h2>
+<p>Each table above is produced by a committed data loader that copies the committed CSV to the page
+unchanged — no reshaping, no rounding, no hand-typed numbers. That is why the download under each
+table is byte-for-byte the file the figure was drawn from: if you disagree with a chart, you can
+check it against the same bytes we did, and every figure regenerates from those files the day new
+results land.</p>
+</main>
+<footer id="observablehq-footer">
+<div><div class="np-floor">Non-partisan: this site maps participation only — no candidate, party, or individual-level data appears anywhere. Offered identically to every neighbour of every politics.</div>
+<div class="footer-meta">Beaches—East York + Scarborough Southwest · as of 2026-08-15 (data) · published 2026-08-16 ·
+<a href="https://unitetolove.ca" target="_blank" rel="noopener noreferrer">unitetolove.ca</a><br>
+Sources: Elections Canada 2021 + 2025 poll-by-poll results · City of Toronto Neighbourhood Profiles (2021 Census) ·
+City of Toronto One Address Repository (fetched 2026-08-16). Every figure is drawn by a committed loader from the
+CSV you can download beneath it — nothing on this site is typed in by hand.</div></div>
+</footer>
+</div>
+</body>
+</html>

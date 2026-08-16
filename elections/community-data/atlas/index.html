@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.4">
+<title>The atlas | Beaches—East York + Scarborough Southwest — a community atlas</title>
+
+<link rel="preload" as="style" href="./_observablehq/theme-parchment.8506113b.css">
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-parchment.8506113b.css">
+<link rel="modulepreload" href="./_observablehq/client.f6e9c9a8.js">
+<link rel="modulepreload" href="./_observablehq/runtime.607a8173.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.81cd90e3.js">
+<link rel="modulepreload" href="./_npm/htl@1.0.0/11521f02.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/93ce672e.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/097745a2.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/080cf928.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/604cb63b.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/f53f17b2.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/b8e751b6.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/c662ea05.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/d162d8c6.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/5cedd0be.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/65d51007.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/c576a91a.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/8b43826d.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/3fb06f14.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/20b76948.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/8683b012.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/5c319046.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/33924f3e.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.2/8d67a1ae.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/8037bd0b.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/a9ba0229.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/e0a47f97.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/f9e9e0ab.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/2da8eb3b.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/09002e01.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/5108797c.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/c9f2571b.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/f3c78e0d.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/28717d05.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/7c6e2a50.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/3d1d57c6.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/643581a8.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/e99232db.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/bd07fd9a.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/d09f7cc9.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/5f640032.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/af036d7e.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.1.0/7b06abe7.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.3/b42f30a7.js">
+<meta name="description" content="A 20-point participation canyon separates the tower corridor from the lake in Beaches—East York. Six data stories and an open data room, built from Elections Canada's poll-by-poll returns and the City of Toronto's census profiles — participation only, no candidate, party or individual-level data anywhere.">
+<meta property="og:title" content="The atlas — Beaches—East York + Scarborough Southwest — a community atlas">
+<meta property="og:description" content="A 20-point participation canyon separates the tower corridor from the lake in Beaches—East York. Six data stories and an open data room, built from Elections Canada's poll-by-poll returns and the City of Toronto's census profiles — participation only, no candidate, party or individual-level data anywhere.">
+<meta property="og:type" content="article">
+<!-- og:image intentionally omitted at build time -->
+<style>
+:root {
+  --atlas-red: #b2182b; --atlas-red-2: #ef8a62; --atlas-red-3: #fddbc7;
+  --atlas-blue-3: #d1e5f0; --atlas-blue-2: #67a9cf; --atlas-blue: #2166ac;
+  --atlas-sand: #c9b99a;
+}
+.public-banner {
+  background: var(--theme-background-alt); color: var(--theme-foreground);
+  border: 1px solid var(--theme-foreground-faintest); border-left: 4px solid var(--atlas-blue);
+  text-align: center; font-size: 13.5px; letter-spacing: .01em; padding: 8px 14px;
+  margin: 0 0 6px; border-radius: 4px; font-weight: 500;
+}
+#observablehq-footer .np-floor {
+  font-weight: 500; color: var(--theme-foreground); border-top: 2px solid var(--theme-foreground);
+  padding-top: 10px; margin-bottom: 6px; max-width: none;
+}
+#observablehq-footer .footer-meta { font-size: 12.5px; line-height: 1.5; }
+.figure-law {
+  background: var(--theme-background); border: 1px solid var(--theme-foreground-faintest);
+  border-radius: 8px; padding: 16px 18px 12px; margin: 28px 0;
+}
+.figure-law h2 { font-size: 21px; line-height: 1.25; margin: 0 0 2px; max-width: none; }
+.figure-law .sub { font-size: 14px; color: var(--theme-foreground-muted); margin: 2px 0 12px; }
+.figure-law .srcline {
+  font-size: 12px; color: var(--theme-foreground-muted); margin: 12px 0 0;
+  border-top: 1px solid var(--theme-foreground-faintest); padding-top: 8px;
+}
+.figure-law details { font-size: 12.5px; color: var(--theme-foreground-muted); margin-top: 6px; }
+.figure-law details summary { cursor: pointer; }
+.swatch { display: inline-block; width: 11px; height: 11px; border-radius: 2px; vertical-align: -1px; margin-right: 3px; }
+a.card { display: block; text-decoration: none; color: inherit; }
+a.card:hover { border-color: var(--atlas-blue); }
+a.card h3 { margin: 0 0 4px; font-size: 16px; line-height: 1.25; }
+a.card .story-n { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--atlas-blue); }
+a.card p { margin: 0; font-size: 13.5px; color: var(--theme-foreground-muted); line-height: 1.45; }
+.honest-grain {
+  font-size: 13.5px; background: var(--theme-background-alt); border-left: 3px solid var(--atlas-red-2);
+  padding: 10px 14px; margin: 20px 0; border-radius: 0 4px 4px 0;
+}
+.srcline { font-size: 12px; color: var(--theme-foreground-muted); margin: 10px 0 0; }
+</style>
+<script type="module">
+
+import {define} from "./_observablehq/client.f6e9c9a8.js";
+import {registerFile} from "./_observablehq/stdlib.81cd90e3.js";
+
+registerFile("./data/zones.csv", {"name":"./data/zones.csv","mimeType":"text/csv","path":"./_file/data/zones.616d557e.csv","lastModified":1786860188340,"size":1352});
+
+define({id: "38614dd1", inputs: ["FileAttachment"], outputs: ["zones","zonesUrl"], body: async (FileAttachment) => {
+// ── data ──────────────────────────────────────────────────────────────────────
+// Every figure on this site is fed by a committed loader in src/data/, which reads the
+// committed CSV in the data layer. Nothing is typed in by hand.
+const zones = FileAttachment("./data/zones.csv").csv({typed: true});
+const zonesUrl = await FileAttachment("./data/zones.csv").url();
+return {zones,zonesUrl};
+}});
+
+define({id: "b561ba68", outputs: ["RED","BLUE","SAND","CANYON","bandOf","fillOf","tagOf","rowLabel"], body: () => {
+// ── the palette (colourblind-safe RdBu, the standing figure law) ──────────────
+const RED = "#b2182b";   // the canyon floor
+const BLUE = "#2166ac";  // the lake end
+const SAND = "#c9b99a";  // everything between
+const CANYON = new Set(["608", "603", "602", "600"]);
+const bandOf = (d) =>
+  CANYON.has(String(d.advance_zone)) ? "canyon"
+  : d.total_turnout_pct >= 71 ? "lake"
+  : "middle";
+const fillOf = (d) => ({canyon: RED, lake: BLUE, middle: SAND})[bandOf(d)];
+// Short neighbourhood tag for the axis, from the CSV's own main_neighbourhoods column.
+const tagOf = (d) => String(d.main_neighbourhoods).split(";")[0].replace(/\s*\(\d+\)\s*$/, "").trim();
+const rowLabel = (d) => `${d.advance_zone} · ${tagOf(d)}`;
+return {RED,BLUE,SAND,CANYON,bandOf,fillOf,tagOf,rowLabel};
+}});
+
+define({id: "db9ead92", inputs: ["Plot","width","zones","rowLabel","fillOf"], outputs: ["canyonChart"], body: (Plot,width,zones,rowLabel,fillOf) => {
+const canyonChart = Plot.plot({
+  width,
+  height: 30 * zones.length + 58,
+  marginLeft: 168,
+  marginRight: 56,
+  marginTop: 8,
+  marginBottom: 36,
+  style: {fontSize: "13px"},
+  x: {
+    domain: [0, 82],
+    label: "Total turnout — advance + election day (% of electors) →",
+    grid: true,
+    ticks: 9,
+    tickFormat: (t) => `${t}%`
+  },
+  y: {label: null, domain: zones.slice().sort((a, b) => a.total_turnout_pct - b.total_turnout_pct).map(rowLabel)},
+  marks: [
+    Plot.barX(zones, {
+      x: "total_turnout_pct",
+      y: rowLabel,
+      fill: fillOf,
+      rx1: 0, rx2: 2,
+      title: (d) => `Zone ${d.advance_zone} — ${d.total_turnout_pct}% total turnout\n${d.electors.toLocaleString()} electors · ${d.total_votes.toLocaleString()} votes cast\n${d.advance_share_pct}% of those votes came in advance\n${d.main_neighbourhoods}`
+    }),
+    Plot.text(zones, {
+      x: "total_turnout_pct",
+      y: rowLabel,
+      text: (d) => `${d.total_turnout_pct.toFixed(1)}%`,
+      dx: 6,
+      textAnchor: "start",
+      fontWeight: 600,
+      fill: "currentColor"
+    }),
+    Plot.ruleX([0])
+  ],
+  ariaLabel: "Total turnout by advance-poll zone, Beaches—East York, 2025 general election",
+  ariaDescription:
+    "Horizontal bar chart of 15 advance-poll zones ordered from lowest to highest total turnout. " +
+    "The four lowest — zones 608, 603, 602 and 600, covering the Taylor-Massey, O'Connor-Parkview " +
+    "and East End-Danforth tower corridor — run from 55.9 to 59.0 per cent. The six highest — " +
+    "zones 614, 611, 612, 606, 613 and 609, covering The Beaches, Woodbine Corridor and Danforth " +
+    "East York — run from 71.4 to 75.7 per cent. The gap between the lowest and highest zone is " +
+    "19.8 percentage points."
+});
+return {canyonChart};
+}});
+
+define({id: "31dddf52", inputs: ["html","RED","SAND","BLUE","zonesUrl"], outputs: ["legend","zonesDownload"], body: (html,RED,SAND,BLUE,zonesUrl) => {
+const legend = html`<div style="font-size:12.5px;color:var(--theme-foreground-muted);margin:2px 0 10px">
+  <span class="swatch" style="background:${RED}"></span>the canyon — zones 608 · 603 · 602 · 600 &nbsp;
+  <span class="swatch" style="background:${SAND}"></span>the middle &nbsp;
+  <span class="swatch" style="background:${BLUE}"></span>71%+ — the lake end
+</div>`;
+const zonesDownload = html`<a href=${zonesUrl} download="2025GE_bey_turnout_by_advance_zone.csv">Download this figure's data (CSV, 15 rows)</a>`;
+return {legend,zonesDownload};
+}});
+
+define({id: "56638136", inputs: ["legend","display"], body: async (legend,display) => {
+display(await(
+legend
+))
+}});
+
+define({id: "01e88761", inputs: ["canyonChart","display"], body: async (canyonChart,display) => {
+display(await(
+canyonChart
+))
+}});
+
+define({id: "5300c565", mode: "inline", inputs: ["zonesDownload","display"], body: async (zonesDownload,display) => {
+display(await(
+zonesDownload
+))
+}});
+
+</script>
+<link rel="canonical" href="https://unitetolove.ca/elections/community-data/atlas/index.html">
+<meta property="og:url" content="https://unitetolove.ca/elections/community-data/atlas/index.html">
+<meta property="og:image" content="https://unitetolove.ca/assets/og/elections.png">
+<meta name="twitter:card" content="summary_large_image">
+<script defer src="../../../assets/analytics.js"></script>
+</head>
+<body>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "uniteTOlove", "alternateName": "The Unknown Soldier", "url": "https://unitetolove.ca/", "logo": "https://unitetolove.ca/assets/logo_v1/unitetolove_mark_master_light_v1.svg", "description": "A citizen-built, AI-assisted civic knowledge project for Toronto's 2026 municipal election and beyond — backgrounders, an open government registry, and open data, published under the byline The Unknown Soldier. No donations asked for anywhere.", "sameAs": ["https://github.com/unitetolove/commons"]}</script>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link observablehq-link-active"><a href="./">Beaches—East York + Scarborough Southwest — a community atlas</a></li>
+  </ol>
+  <ol>
+    <li class="observablehq-link observablehq-link-active"><a href="./">The atlas</a></li>
+    <li class="observablehq-link"><a href="./data-room.html">The data room</a></li>
+  </ol>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<header id="observablehq-header">
+<div class="public-banner">A neighbours' data project — participation only, never a vote for anyone.</div>
+</header>
+<main id="observablehq-main" class="observablehq">
+<!-- The page description + Open Graph copy live in observablehq.config.js (DESCRIPTIONS, keyed
+     by page path): Framework whitelists front-matter keys and drops anything it does not know,
+     so a description here would be silently ignored. -->
+<div class="observablehq observablehq--block"><!--:38614dd1:--></div>
+<div class="observablehq observablehq--block"><!--:b561ba68:--></div>
+<div class="observablehq observablehq--block"><!--:db9ead92:--></div>
+<div class="observablehq observablehq--block"><!--:31dddf52:--></div>
+<h1 id="the-community-told-through-data" tabindex="-1"><a class="observablehq-header-anchor" href="#the-community-told-through-data">The community, told through data</a></h1>
+<p>Two neighbourhoods vote on the same day and behave like two different countries — sometimes on the
+same street. This atlas is the evidence layer behind that sentence: six data stories built from
+Elections Canada's own poll-by-poll returns, the City of Toronto's 2021 neighbourhood profiles, the
+City's own address repository, and a registry of the institutions that actually hold these
+neighbourhoods together. It maps <strong>participation</strong> — who gets reached, who gets counted, and where
+the invitation never arrives — and nothing else. Start with the chart below: it is the finding the
+stories unfold.</p>
+<div class="figure-law">
+<h2 id="a-20-point-participation-canyon-separates-the-tower-corridor-from-the-lake" tabindex="-1"><a class="observablehq-header-anchor" href="#a-20-point-participation-canyon-separates-the-tower-corridor-from-the-lake">A 20-point participation canyon separates the tower corridor from the lake</a></h2>
+<div class="sub">Total turnout — advance polls plus election day, as a share of registered electors —
+in each of the 15 advance-poll zones of Beaches—East York, 2025 general election.</div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:56638136:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:01e88761:--></div>
+<div class="srcline">
+Source: Elections Canada, 2025 general election poll-by-poll results (Beaches—East York, 35007),
+aggregated from polling divisions to advance-poll zones by this project's own data pipeline · as of 2026-08-15 ·
+<observablehq-loading></observablehq-loading><!--:5300c565:-->
+</div>
+<details>
+<summary>This figure described in words (alt text)</summary>
+Horizontal bar chart of the 15 advance-poll zones of Beaches—East York, ordered from lowest to
+highest total turnout. The four lowest zones — 608 (East End-Danforth), 603 (Taylor-Massey),
+602 (O'Connor-Parkview) and 600 (O'Connor-Parkview/Victoria Village), the riding's tower corridor —
+run from 55.9% to 59.0%. The six highest — 614, 611, 612, 606, 613 and 609, covering The Beaches,
+the Woodbine Corridor and Danforth East York — run from 71.4% to 75.7%. The distance from the
+lowest zone to the highest is 19.8 percentage points, and the low end is a contiguous block of
+high-rise geography rather than a scatter.
+</details>
+</div>
+<div class="honest-grain">
+<p><strong>Read it this way.</strong> The canyon is not apathy and not a mystery: it is tenure, tower geography
+and language, and it tracks them closely enough to plan around. The four red zones hold roughly
+21,000 electors between them. Nothing here identifies a person, a household, or a vote — the
+smallest unit anywhere on this site is a polling division.</p>
+</div>
+<h2 id="the-stories" tabindex="-1"><a class="observablehq-header-anchor" href="#the-stories">The stories</a></h2>
+<div class="grid grid-cols-2">
+  <a class="card" href="../s1_two_worlds_one_street.html">
+    <div class="story-n">Story one · scrollytelling map</div>
+    <h3>Two worlds, one street</h3>
+    <p>The same street, two participation regimes. A scrolling map walks the boundary where a
+    20-point gap opens between neighbours who share a bus stop.</p>
+  </a>
+  <a class="card" href="../s2_canyon_widened.html">
+    <div class="story-n">Story two · 2021 → 2025</div>
+    <h3>The canyon widened</h3>
+    <p>The recovery after 2021 was not shared. Where tenure is stable, turnout climbed as much as
+    13 points; in the towers it moved 3.</p>
+  </a>
+  <a class="card" href="../s3_tower_explorer.html">
+    <div class="story-n">Story three · interactive</div>
+    <h3>Tower explorer</h3>
+    <p>Every single-building poll in both ridings, ranked lowest-turnout first, each with the
+    three nearest partner institutions that could open the door.</p>
+  </a>
+  <a class="card" href="../s4_pods_vs_blankets.html">
+    <div class="story-n">Story four · the arithmetic</div>
+    <h3>Pods vs blankets</h3>
+    <p>What full-riding canvass coverage actually costs in human hours — and why the relational
+    model is the only one the arithmetic permits.</p>
+  </a>
+  <a class="card" href="../s5_who_reaches_whom.html">
+    <div class="story-n">Story five · matrix</div>
+    <h3>Who reaches whom</h3>
+    <p>Three information ecosystems that barely touch, and the population no local channel
+    reaches at all.</p>
+  </a>
+  <a class="card" href="../s7_ssw_same_canyon.html">
+    <div class="story-n">Story seven · Scarborough Southwest</div>
+    <h3>The same canyon: Scarborough Southwest</h3>
+    <p>Scarborough Southwest's mirror geography, drawn at the same grain: the zone bars, the tower strip, and the
+    measured street doors. Turnout there is the federal 35096 substitution, stated on every
+    figure.</p>
+  </a>
+  <a class="card" href="./data-room.html">
+    <div class="story-n">The evidence layer</div>
+    <h3>The data room →</h3>
+    <p>Every dataset behind the stories, sortable and downloadable, with the grain and the
+    caveats stated on the page.</p>
+  </a>
+</div>
+<h2 id="what-this-is-and-what-it-is-not" tabindex="-1"><a class="observablehq-header-anchor" href="#what-this-is-and-what-it-is-not">What this is, and what it is not</a></h2>
+<p>It <strong>is</strong> a participation map: turnout by zone, by neighbourhood, by building; the demographic
+layer that explains it; the measured street doors behind the arithmetic; and the coverage maths
+that says what a volunteer base can actually reach. It <strong>is not</strong> a targeting product. There is no
+candidate data, no party data, no individual-level record, and no persuasion model anywhere in it —
+by construction, not by policy. Every figure carries its source, its as-of date, and a download link
+to the same CSV the figure was drawn from, so anyone can check the claim against the data instead of
+trusting the chart.</p>
+</main>
+<footer id="observablehq-footer">
+<div><div class="np-floor">Non-partisan: this site maps participation only — no candidate, party, or individual-level data appears anywhere. Offered identically to every neighbour of every politics.</div>
+<div class="footer-meta">Beaches—East York + Scarborough Southwest · as of 2026-08-15 (data) · published 2026-08-16 ·
+<a href="https://unitetolove.ca" target="_blank" rel="noopener noreferrer">unitetolove.ca</a><br>
+Sources: Elections Canada 2021 + 2025 poll-by-poll results · City of Toronto Neighbourhood Profiles (2021 Census) ·
+City of Toronto One Address Repository (fetched 2026-08-16). Every figure is drawn by a committed loader from the
+CSV you can download beneath it — nothing on this site is typed in by hand.</div></div>
+</footer>
+</div>
+</body>
+</html>
