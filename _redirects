@@ -1,4 +1,8 @@
 # --- PROJ-0159 community-data surface (tools/wire_site_redirects.py) ---
+/elections/beaches-east-york/neighbourhood.html  /wards/ward-19-beaches-east-york.html  301
+/elections/beaches-east-york/  /elections/east-end-byelections/  301
+/elections/beaches-east-york/*  /elections/east-end-byelections/:splat  301
+# --- PROJ-0159 community-data surface (tools/wire_site_redirects.py) ---
 /BEY-SSW-community-data/s2_canyon_widened.html  /BEY-SSW-community-data/s2_canyon_didnt_close.html  301
 /elections/community-data/s2_canyon_widened.html  /BEY-SSW-community-data/s2_canyon_didnt_close.html  301
 /BEY-SSW-community-data/assets/og/s2_canyon_widened.png  /BEY-SSW-community-data/assets/og/s2_canyon_didnt_close.png  301
