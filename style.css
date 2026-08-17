@@ -1,3 +1,31 @@
+/* Skip link (added 2026-08-16). tools/wire_skip_link.py has been stamping
+   <a class="skip-link"> onto every rendered page on the assumption that ".skip-link" and
+   ".skip-link:focus" were "already correct in site/style.css" — they were not present in this
+   file, so the link was rendering as visible body text at the top of every page on the site.
+   This is the standard pattern the tool's docstring describes: off-screen until focused, then
+   visible for keyboard users.
+   2026-08-17: re-confirmed correct (operator saw the link as visible text in a reader). The
+   fix for that symptom is this rule reaching the page, never deleting the link — the link is
+   the whole keyboard-accessibility affordance. Kept verbatim, and moved into CSS_CONTENT so a
+   full render can no longer drop it. `left: -9999px` (not display:none / visibility:hidden)
+   is deliberate: the element must stay focusable and in the accessibility tree. */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--bg);
+  color: var(--accent);
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--accent);
+  border-radius: 0 0 6px 0;
+  z-index: 100;
+}
+.skip-link:focus {
+  left: 0;
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 :root {
   color-scheme: light dark;
   --fg: #1a1a1a;
@@ -17,19 +45,32 @@
     --code-bg: #26292e;
   }
 }
+/* Sitewide measure + type scale (2026-08-17, operator order: wider and bigger).
+   max-width 52rem -> 62rem and an explicit body font-size of 1.0625rem (17px, up from the
+   browser default 16px). Two knock-on rules move WITH this and must not drift from it:
+     * header.site-header .header-inner's own max-width (it centres the chrome on the same
+       measure as the body; leaving it at 52rem would inset the nav inside the text column);
+     * the footer .footer-cols grid, which needs 59rem of content width to fit six columns on
+       one row -- 62rem - 2*1.25rem padding = 59.5rem is what makes that fit (see
+       tools/site_nav.py's Mutual Aid note).
+   Heading scale re-balanced against the bigger body, not left alone: at 17px body, the old
+   h3 (1.05rem = 16.8px) was SMALLER than body text -- a heading that reads as de-emphasis.
+   New scale is 30.4 / 22.4 / 18.4 / 17px. Every element that overrides these (footer h2/h3,
+   .doc-footer-meta h2, .section-hub h1/h2, .card h3) sets its own size and is unaffected. */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   color: var(--fg);
   background: var(--bg);
-  max-width: 52rem;
+  max-width: 62rem;
   margin: 0 auto;
   padding: 1.5rem 1.25rem 4rem;
+  font-size: 1.0625rem;
   line-height: 1.55;
 }
 h1, h2, h3 { line-height: 1.25; }
-h1 { font-size: 1.7rem; margin-top: 0; }
-h2 { font-size: 1.3rem; border-bottom: 1px solid var(--border); padding-bottom: 0.2rem; margin-top: 2rem; }
-h3 { font-size: 1.05rem; margin-top: 1.5rem; }
+h1 { font-size: 1.9rem; margin-top: 0; }
+h2 { font-size: 1.4rem; border-bottom: 1px solid var(--border); padding-bottom: 0.2rem; margin-top: 2rem; }
+h3 { font-size: 1.15rem; margin-top: 1.5rem; }
 a { color: var(--accent); }
 code { background: var(--code-bg); padding: 0.1em 0.35em; border-radius: 3px; font-size: 0.9em; }
 blockquote {
@@ -162,12 +203,13 @@ header.site-header {
   margin: 0 -1.25rem 1.5rem;
 }
 header.site-header .header-inner {
-  max-width: 52rem;
+  /* moves with body's max-width -- see the body rule's note. */
+  max-width: 62rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.5rem 1rem;
   flex-wrap: wrap;
 }
 header.site-header a.wordmark-link {
@@ -181,10 +223,15 @@ header.site-header a.wordmark-link .tld {
   font-weight: 600;
   color: var(--muted);
 }
+/* Nine doors (2026-08-17: Tribes joins) have to wrap without turning into a wall. The nav is
+   a flex row that already wraps; what it lacked was a row-gap (wrapped rows collided at
+   0.9rem column gap only) and a rule for the middle widths where the wordmark and nine doors
+   no longer share a line -- there the nav takes the full second row and aligns left with the
+   wordmark rather than hanging ragged-right. */
 nav.primary-nav ul {
   list-style: none;
   display: flex;
-  gap: 0.9rem;
+  gap: 0.4rem 0.9rem;
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
@@ -192,6 +239,12 @@ nav.primary-nav ul {
 }
 nav.primary-nav a { color: var(--muted); text-decoration: none; }
 nav.primary-nav a:hover { color: var(--accent); }
+nav.primary-nav a[aria-current="page"] { color: var(--accent); font-weight: 600; }
+@media (max-width: 60rem) {
+  header.site-header .header-inner { justify-content: flex-start; }
+  nav.primary-nav { flex: 1 0 100%; }
+  nav.primary-nav ul { gap: 0.35rem 0.8rem; }
+}
 footer.site-footer nav ul {
   list-style: none;
   padding: 0;
@@ -251,48 +304,76 @@ ul.issue-index-list { padding-left: 1.1rem; }
 ul.issue-index-list li { margin-bottom: 0.3rem; }
 p.small-note { font-size: 0.88em; color: var(--muted); }
 
+/* .two-col — the reusable two-column utility for content pages (2026-08-17). The 62rem
+   measure gives room for side-by-side blocks that 52rem did not; this is the ONE way to take
+   it, so pages stop inventing their own inline grids (the bug class that left .card-grid and
+   .footer-cols undesigned on live pages until 2026-08-13).
+   Usage: <div class="two-col"> with exactly the blocks you want beside each other as direct
+   children — two columns at >=720px, one below, and it degrades to a plain stack anywhere
+   CSS grid is unsupported. If a child must span both columns, give it class="two-col-full".
+   720px is the breakpoint, not 640px: at 640 a two-up split inside a 17px measure produces
+   ~19em columns, which is under the readable minimum for prose. */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1.1rem 0 1.6rem;
+}
+.two-col > * { min-width: 0; }
+.two-col > .two-col-full { grid-column: 1 / -1; }
+@media (min-width: 720px) {
+  .two-col { grid-template-columns: 1fr 1fr; gap: 1.1rem 1.4rem; }
+}
+
 /* Section-hub pattern (2026-08-13 elections re-presentation): opt-in via
    <main id="main" class="section-hub">. Ledger DNA — numbered action steps, scale doors
    with big counts, left-rule cards, editions timeline, counts as badges. First consumers:
-   elections/ + elections/wards/; any section hub may adopt by adding the class. */
-main.section-hub h1 { font-size: 2rem; font-weight: 800; margin: 0 0 0.5rem; }
-main.section-hub .lede { color: var(--muted); margin: 0 0 1.4rem; }
-main.section-hub .sh-steps-label { font-size: 0.78em; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.5rem; }
-main.section-hub .sh-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; counter-reset: step; margin: 0 0 1.8rem; }
-main.section-hub .sh-step { position: relative; display: block; border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 0.8rem 1rem 0.8rem 3.1rem; text-decoration: none; color: var(--fg); }
-main.section-hub .sh-step:hover { background: var(--code-bg); }
-main.section-hub .sh-step:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-main.section-hub .sh-step::before { counter-increment: step; content: counter(step); position: absolute; left: 0.85rem; top: 0.75rem; font-size: 1.5rem; font-weight: 800; color: var(--accent); font-variant-numeric: tabular-nums; }
-main.section-hub .sh-step strong { display: block; margin-bottom: 0.15rem; }
-main.section-hub .sh-step span { color: var(--muted); font-size: 0.88em; }
-main.section-hub .sh-scales { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin: 0 0 2rem; }
-main.section-hub .sh-scale { display: block; border: 1.5px solid var(--border); border-radius: 8px; padding: 1rem 1.15rem; text-decoration: none; color: var(--fg); }
-main.section-hub .sh-scale:hover { border-color: var(--accent); }
-main.section-hub .sh-scale:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-main.section-hub .sh-scale-name { display: block; font-size: 0.78em; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
-main.section-hub .sh-scale-count { display: block; font-size: 1.9rem; font-weight: 800; color: var(--accent); font-variant-numeric: tabular-nums; line-height: 1.25; }
-main.section-hub .sh-scale-what { color: var(--muted); font-size: 0.88em; }
-main.section-hub .sh-section-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem 0.6rem; margin-top: 2.2rem; border-bottom: 2px solid var(--fg); padding-bottom: 0.25rem; }
-main.section-hub .sh-section-head h2 { border: none; margin: 0; padding: 0; font-size: 1.15rem; font-weight: 800; }
-main.section-hub .sh-count { font-size: 0.75em; font-weight: 700; color: var(--fg); background: var(--code-bg); border: 1px solid var(--border); border-radius: 4px; padding: 0.08em 0.55em; font-variant-numeric: tabular-nums; }
-main.section-hub .sh-section-intro { color: var(--muted); margin: 0.5rem 0 0.9rem; font-size: 0.95em; }
-main.section-hub .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.7rem; margin: 0 0 0.6rem; }
-main.section-hub .card { display: block; border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 0 6px 6px 0; padding: 0.75rem 0.95rem; text-decoration: none; color: var(--fg); }
-main.section-hub .card:hover { background: var(--code-bg); }
-main.section-hub .card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-main.section-hub .card h3 { margin: 0 0 0.3rem; font-size: 0.99rem; color: var(--accent); }
-main.section-hub .card p { margin: 0; color: var(--muted); font-size: 0.9em; }
-main.section-hub .sh-timeline { list-style: none; margin: 0.4rem 0 0; padding: 0 0 0 1.2rem; border-left: 2px solid var(--border); }
-main.section-hub .sh-timeline li { position: relative; padding: 0 0 1rem 1rem; }
-main.section-hub .sh-timeline li::before { content: ""; position: absolute; left: -1.45rem; top: 0.4em; width: 0.55rem; height: 0.55rem; border-radius: 50%; background: var(--border); }
-main.section-hub .sh-timeline li.sh-live::before { background: var(--accent); }
-main.section-hub .sh-timeline h3 { margin: 0 0 0.25rem; font-size: 1rem; }
-main.section-hub .sh-timeline p { margin: 0; color: var(--muted); font-size: 0.92em; }
-main.section-hub .placeholder-label { display: inline-block; font-size: 0.72em; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; border: 1px solid var(--border); border-radius: 4px; padding: 0.1em 0.5em; margin-bottom: 0.3rem; color: var(--muted); }
-main.section-hub .deck { border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 4px; padding: 0.6rem 0.9rem; font-size: 0.9em; color: var(--muted); margin-top: 2rem; }
+   elections/ + elections/wards/; any section hub may adopt by adding the class.
+   2026-08-17: selectors generalized from `main.section-hub X` to `.section-hub X` so the
+   pattern can be taken by a SECTION of a page, not only by a whole <main> — the front page
+   needed the two-card .sh-scales grid for the Toronto/Ontario SOTE records without turning
+   the entire manifesto into a hub. Strict superset: every element that matched before still
+   matches, so no live page loses a rule. Pages carrying their own inline copy of this block
+   (site/tribes/*, tools/commons_map_site_gen.py) keep the higher-specificity `main.` form and
+   are untouched either way. */
+.section-hub h1 { font-size: 2rem; font-weight: 800; margin: 0 0 0.5rem; }
+.section-hub .lede { color: var(--muted); margin: 0 0 1.4rem; }
+.section-hub .sh-steps-label { font-size: 0.78em; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.5rem; }
+.section-hub .sh-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; counter-reset: step; margin: 0 0 1.8rem; }
+.section-hub .sh-step { position: relative; display: block; border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 0.8rem 1rem 0.8rem 3.1rem; text-decoration: none; color: var(--fg); }
+.section-hub .sh-step:hover { background: var(--code-bg); }
+.section-hub .sh-step:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.section-hub .sh-step::before { counter-increment: step; content: counter(step); position: absolute; left: 0.85rem; top: 0.75rem; font-size: 1.5rem; font-weight: 800; color: var(--accent); font-variant-numeric: tabular-nums; }
+.section-hub .sh-step strong { display: block; margin-bottom: 0.15rem; }
+.section-hub .sh-step span { color: var(--muted); font-size: 0.88em; }
+.section-hub .sh-scales { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin: 0 0 2rem; }
+.section-hub .sh-scale { display: block; border: 1.5px solid var(--border); border-radius: 8px; padding: 1rem 1.15rem; text-decoration: none; color: var(--fg); }
+.section-hub .sh-scale:hover { border-color: var(--accent); }
+.section-hub .sh-scale:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.section-hub .sh-scale-name { display: block; font-size: 0.78em; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+.section-hub .sh-scale-count { display: block; font-size: 1.9rem; font-weight: 800; color: var(--accent); font-variant-numeric: tabular-nums; line-height: 1.25; }
+.section-hub .sh-scale-what { color: var(--muted); font-size: 0.88em; }
+.section-hub .sh-section-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem 0.6rem; margin-top: 2.2rem; border-bottom: 2px solid var(--fg); padding-bottom: 0.25rem; }
+.section-hub .sh-section-head h2 { border: none; margin: 0; padding: 0; font-size: 1.15rem; font-weight: 800; }
+.section-hub .sh-count { font-size: 0.75em; font-weight: 700; color: var(--fg); background: var(--code-bg); border: 1px solid var(--border); border-radius: 4px; padding: 0.08em 0.55em; font-variant-numeric: tabular-nums; }
+.section-hub .sh-section-intro { color: var(--muted); margin: 0.5rem 0 0.9rem; font-size: 0.95em; }
+.section-hub .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.7rem; margin: 0 0 0.6rem; }
+.section-hub .card { display: block; border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 0 6px 6px 0; padding: 0.75rem 0.95rem; text-decoration: none; color: var(--fg); }
+.section-hub .card:hover { background: var(--code-bg); }
+.section-hub .card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.section-hub .card h3 { margin: 0 0 0.3rem; font-size: 0.99rem; color: var(--accent); }
+.section-hub .card p { margin: 0; color: var(--muted); font-size: 0.9em; }
+.section-hub .sh-timeline { list-style: none; margin: 0.4rem 0 0; padding: 0 0 0 1.2rem; border-left: 2px solid var(--border); }
+.section-hub .sh-timeline li { position: relative; padding: 0 0 1rem 1rem; }
+.section-hub .sh-timeline li::before { content: ""; position: absolute; left: -1.45rem; top: 0.4em; width: 0.55rem; height: 0.55rem; border-radius: 50%; background: var(--border); }
+.section-hub .sh-timeline li.sh-live::before { background: var(--accent); }
+.section-hub .sh-timeline h3 { margin: 0 0 0.25rem; font-size: 1rem; }
+.section-hub .sh-timeline p { margin: 0; color: var(--muted); font-size: 0.92em; }
+.section-hub .placeholder-label { display: inline-block; font-size: 0.72em; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; border: 1px solid var(--border); border-radius: 4px; padding: 0.1em 0.5em; margin-bottom: 0.3rem; color: var(--muted); }
+.section-hub .deck { border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 4px; padding: 0.6rem 0.9rem; font-size: 0.9em; color: var(--muted); margin-top: 2rem; }
 @media (max-width: 640px) {
-  main.section-hub .sh-steps { grid-template-columns: 1fr; }
-  main.section-hub .sh-scales { grid-template-columns: 1fr; }
+  .section-hub .sh-steps { grid-template-columns: 1fr; }
+  .section-hub .sh-scales { grid-template-columns: 1fr; }
 }
 
 /* Footer columns (2026-08-13): tools/site_nav.py's site_footer() has emitted
@@ -300,10 +381,13 @@ main.section-hub .deck { border: 1px solid var(--border); border-left: 3px solid
    ever shipped -- the six IA groups (Act/Plan/Library/Connect/Elections 2026/More) were
    rendering as one stacked column on every page, live included. Operator flagged live
    ("reverted back") while reviewing the mirror-repair pass. Same undesigned-not-badly-
-   designed bug class as main.section-hub's .card-grid, fixed the same way this sitting.
+   designed bug class as .section-hub's .card-grid, fixed the same way this sitting.
    Same-sitting follow-up (operator, in-chat): "The Plan" folded into "Act" as a nested
    <h3> sub-heading (site_nav.py's (None, label) marker) -- five top-level columns now
-   fit one clean row at 9rem/col instead of six wrapping a lone one. */
+   fit one clean row at 9rem/col instead of six wrapping a lone one.
+   2026-08-17: six top-level columns again (Mutual Aid promoted out of Act) and they fit,
+   because the body measure went 52rem -> 62rem the same sitting: 6*9rem + 5*1rem = 59rem
+   against 59.5rem of content width. Those two numbers are coupled -- see site_nav.py. */
 footer.site-footer .footer-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: 1.25rem 1rem; }
 footer.site-footer .footer-col h2, footer.site-footer .footer-col h3 { font-size: 0.82em; text-transform: uppercase; letter-spacing: 0.04em; color: var(--fg); margin: 0 0 0.4rem; }
 footer.site-footer .footer-col h3 { margin-top: 0.75rem; }
