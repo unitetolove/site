@@ -426,16 +426,26 @@ read, fork, and cite. Corrections and improvements: see
     find them &mdash; some categories (established fraternal lodges, city-run community hubs)
     are close to fully counted; others remain order-of-magnitude estimates with real, acknowledged
     gaps still open. <code>area</code> is free text, not a structured ward or riding join &mdash;
-    values range from a ward name to a full qualifying sentence, and there is no dedicated
-    Toronto geography dataset behind it yet. Verification dates vary widely: most rows are marked
+    values range from a ward name to a full qualifying sentence. Behind the register there is now
+    a separate structured geography table that resolves 63% of all recorded organizations to a
+    specific Toronto ward, but it is not published in this file and only about 8% of the rows
+    <em>in</em> this file are placed that way, so the free-text column is still the honest thing
+    to hand you. Verification dates vary widely: most rows are marked
     <code>verified-live</code> with a recent date, and the rest are seed-quality (added but not
     yet individually re-checked) or already known to be dormant, unreachable, or defunct &mdash;
     each labelled by its own <code>verification_status</code> rather than smoothed over.
     <strong>This download is not the whole register, and here is exactly what is missing.</strong>
-    Behind these 2,070 published rows sit a further 931 organizations we have recorded but are not
-    publishing: 781 found through a weaker verification path and not yet individually re-checked,
-    61 we could not reach, 37 we believe have closed, 29 named but unconfirmed, 17 apparently
-    dormant, and 6 confirmed closed with no successor. We hold those back deliberately.
+    Behind these 2,118 published rows sit a further 6,562 organizations we have recorded but are
+    not publishing: 6,412 found through a weaker verification path and not yet individually
+    re-checked, 61 we could not reach, 37 we believe have closed, 29 named but unconfirmed, 17
+    apparently dormant, and 6 confirmed closed with no successor. That withheld number grew
+    sevenfold on 16 August 2026, and the reason is worth stating plainly: we pulled eleven of the
+    City of Toronto&rsquo;s own open-data registers &mdash; every licensed child-care centre,
+    every EarlyON site, every shelter location, every music venue, every community-grant
+    recipient, and a 2006 survey of places of worship &mdash; and added 5,679 organizations to
+    the register in a single day. Almost none of them are run by the City itself, so the City&rsquo;s
+    register tells us the organization was listed, not that it is open today. Until we check each
+    one directly, it stays recorded and unpublished. We hold those back deliberately.
     Publishing &ldquo;this organization has shut down&rdquo; about a group that is in fact still
     running would be a claim we could never take back once this file has been copied elsewhere,
     and our confidence in those rows is not yet high enough to make it. So this file carries only
@@ -448,7 +458,7 @@ read, fork, and cite. Corrections and improvements: see
     <a href="#license">License</a> below). This is our own original research, so there is no
     separate upstream licence to reconcile.</li>
     <li><strong>Download:</strong> <a href="data/tribes_orgs.csv">tribes_orgs.csv</a> &mdash;
-    2,070 rows &times; 8 columns.</li>
+    2,118 rows &times; 8 columns.</li>
     <li><strong>Query it without downloading:</strong>
     <a href="https://lite.datasette.io/?csv=https://unitetolove.ca/data/tribes_orgs.csv">open in
     Datasette&nbsp;Lite</a> &mdash; it runs entirely in your browser (WebAssembly), so there is
@@ -563,6 +573,7 @@ read, fork, and cite. Corrections and improvements: see
 <h2>Elections 2026</h2>
 <ul>
 <li><a href="/elections/">State of the Election</a></li>
+<li><a href="/wards/ward-19-beaches-east-york.html">Beaches&ndash;East York</a></li>
 <li><a href="/elections/wards/">Ward math cards</a></li>
 <li><a href="/ontario-the-empty-ballot.html">Ontario: the empty ballot</a></li>
 <li><a href="/run/index.html">For candidates</a></li>
