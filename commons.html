@@ -435,30 +435,34 @@ read, fork, and cite. Corrections and improvements: see
     yet individually re-checked) or already known to be dormant, unreachable, or defunct &mdash;
     each labelled by its own <code>verification_status</code> rather than smoothed over.
     <strong>This download is not the whole register, and here is exactly what is missing.</strong>
-    Behind these 2,118 published rows sit a further 6,562 organizations we have recorded but are
-    not publishing: 6,412 found through a weaker verification path and not yet individually
-    re-checked, 61 we could not reach, 37 we believe have closed, 29 named but unconfirmed, 17
-    apparently dormant, and 6 confirmed closed with no successor. That withheld number grew
-    sevenfold on 16 August 2026, and the reason is worth stating plainly: we pulled eleven of the
-    City of Toronto&rsquo;s own open-data registers &mdash; every licensed child-care centre,
-    every EarlyON site, every shelter location, every music venue, every community-grant
-    recipient, and a 2006 survey of places of worship &mdash; and added 5,679 organizations to
-    the register in a single day. Almost none of them are run by the City itself, so the City&rsquo;s
-    register tells us the organization was listed, not that it is open today. Until we check each
-    one directly, it stays recorded and unpublished. We hold those back deliberately.
-    Publishing &ldquo;this organization has shut down&rdquo; about a group that is in fact still
-    running would be a claim we could never take back once this file has been copied elsewhere,
-    and our confidence in those rows is not yet high enough to make it. So this file carries only
-    what we have confirmed directly, and matches the <a href="tribes/directory.html">Organization
-    Directory</a> page row for row &mdash; the two can never disagree about what we claim to know.
-    This is a
+    Behind these 3,015 published rows sit a further 6,460 organizations we have recorded but are
+    not publishing: 6,229 found through a weaker verification path and not yet individually
+    re-checked, 142 we could not reach, 37 we believe have closed, 29 named but unconfirmed, 17
+    apparently dormant, and 6 confirmed closed with no successor. The published count grew by 897
+    on 16 August 2026 &mdash; not from new discovery, but from direct verification: we fetched
+    every recorded organization's own website directly and moved the 897 that answered from
+    &ldquo;found but unconfirmed&rdquo; to &ldquo;confirmed live,&rdquo; and moved 81 more that
+    did not answer (a dead domain or a confirmed page-not-found, checked twice) to
+    &ldquo;unreachable,&rdquo; without publishing that latter claim either &mdash; it just stays
+    withheld like everything else in this section. The rest of the withheld total is still mostly
+    the eleven City of Toronto open-data registers pulled two days earlier &mdash; every licensed
+    child-care centre, every EarlyON site, every shelter location, every music venue, every
+    community-grant recipient, and a 2006 survey of places of worship. Almost none of them are run
+    by the City itself, so the City&rsquo;s register tells us the organization was listed, not
+    that it is open today. Until we check each one directly, it stays recorded and unpublished.
+    We hold those back deliberately. Publishing &ldquo;this organization has shut down&rdquo;
+    about a group that is in fact still running would be a claim we could never take back once
+    this file has been copied elsewhere, and our confidence in those rows is not yet high enough
+    to make it. So this file carries only what we have confirmed directly, and matches the
+    <a href="tribes/directory.html">Organization Directory</a> page row for row &mdash; the two
+    can never disagree about what we claim to know. This is a
     snapshot of a living city &mdash; organizations open, close, move, and rename continuously,
     and this file will always be somewhat behind that reality.</li>
     <li><strong>Licence:</strong> the same as every dataset on this page &mdash; CC BY 4.0 (see
     <a href="#license">License</a> below). This is our own original research, so there is no
     separate upstream licence to reconcile.</li>
     <li><strong>Download:</strong> <a href="data/tribes_orgs.csv">tribes_orgs.csv</a> &mdash;
-    2,118 rows &times; 8 columns.</li>
+    3,015 rows &times; 8 columns.</li>
     <li><strong>Query it without downloading:</strong>
     <a href="https://lite.datasette.io/?csv=https://unitetolove.ca/data/tribes_orgs.csv">open in
     Datasette&nbsp;Lite</a> &mdash; it runs entirely in your browser (WebAssembly), so there is
