@@ -412,7 +412,7 @@ read, fork, and cite. Corrections and improvements: see
     use it. Each row instead carries its own <code>last_verified</code> date where a
     verification pass has actually touched it; rows added but not yet individually re-checked
     carry no date.</li>
-    <li><strong>Vintage / as of:</strong> 2026-08-16.</li>
+    <li><strong>Vintage / as of:</strong> 2026-08-17.</li>
     <li><strong>Source &amp; provenance:</strong> this is our own original field research, not a
     re-publication of an existing directory. Rows were assembled from roughly 55 documented
     sources &mdash; city and provincial open-data portals, community-hub and grant-recipient
@@ -435,9 +435,9 @@ read, fork, and cite. Corrections and improvements: see
     yet individually re-checked) or already known to be dormant, unreachable, or defunct &mdash;
     each labelled by its own <code>verification_status</code> rather than smoothed over.
     <strong>This download is not the whole register, and here is exactly what is missing.</strong>
-    Behind these 2,751 published rows sit a further 6,929 organizations we have recorded but are
-    not publishing: 6,698 found through a weaker verification path and not yet individually
-    re-checked, 142 we could not reach, 37 we believe have closed, 29 named but unconfirmed, 17
+    Behind these 2,809 published rows sit a further 15,146 organizations we have recorded but are
+    not publishing: 14,914 found through a weaker verification path and not yet individually
+    re-checked, 143 we could not reach, 37 we believe have closed, 29 named but unconfirmed, 17
     apparently dormant, and 6 confirmed closed with no successor. On 16 August 2026 we ran a
     direct-verification pass, fetching every recorded organization's own listed website, and
     promoted 897 rows that answered to &ldquo;confirmed live.&rdquo; Checking our own work the
@@ -458,7 +458,7 @@ read, fork, and cite. Corrections and improvements: see
     today. Until we check each one directly, it stays recorded and unpublished. We hold those back
     deliberately. Publishing &ldquo;this organization has shut down&rdquo; about a group that is
     in fact still running would be a claim we could never take back once this file has been copied
-    elsewhere, and our confidence in those rows is not yet high enough to make it. So this file
+    elsewhere, and our confidence in those rows is not yet high enough to make it. On 17 August 2026 the register grew again, this time mostly from research rather than verification: a Canada Revenue Agency charity-register pull added 8,264 GTA-registered charities in one pass — by a wide margin the largest single addition since this project began — plus 13 more older-adult centres found through a sector association’s own member directory. Every one of those rows enters the registry exactly the way most of it always has: captured and catalogued, not yet individually verified, so none of them move the published count on their own. That is also why the withheld total jumped so much faster than the published one today — it is a research wave, not a verification failure. Separately, the same day, we re-ran the 16 August correction’s own logic against the 264 plus 96 rows it had left unresolved, this time requiring that the organization’s own name actually appear on the page its record points to, not just that the page loads — the exact test whose absence caused the 16 August mistake in the first place. 58 more rows cleared that bar and are now published; 1 was confirmed dead; 278 stayed withheld, unchanged, because the page was real but was not proof of that specific organization; 21 remain genuinely unresolved, mostly automated bot-blocking we will not get past by solving a CAPTCHA, which we do not do. So this file
     carries only what we have confirmed directly, and matches the
     <a href="tribes/directory.html">Organization Directory</a> page row for row &mdash; the two
     can never disagree about what we claim to know. This is a
@@ -468,7 +468,7 @@ read, fork, and cite. Corrections and improvements: see
     <a href="#license">License</a> below). This is our own original research, so there is no
     separate upstream licence to reconcile.</li>
     <li><strong>Download:</strong> <a href="data/tribes_orgs.csv">tribes_orgs.csv</a> &mdash;
-    2,751 rows &times; 8 columns.</li>
+    2,809 rows &times; 8 columns.</li>
     <li><strong>Query it without downloading:</strong>
     <a href="https://lite.datasette.io/?csv=https://unitetolove.ca/data/tribes_orgs.csv">open in
     Datasette&nbsp;Lite</a> &mdash; it runs entirely in your browser (WebAssembly), so there is
