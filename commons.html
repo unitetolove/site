@@ -435,25 +435,31 @@ read, fork, and cite. Corrections and improvements: see
     yet individually re-checked) or already known to be dormant, unreachable, or defunct &mdash;
     each labelled by its own <code>verification_status</code> rather than smoothed over.
     <strong>This download is not the whole register, and here is exactly what is missing.</strong>
-    Behind these 3,015 published rows sit a further 6,460 organizations we have recorded but are
-    not publishing: 6,229 found through a weaker verification path and not yet individually
+    Behind these 2,751 published rows sit a further 6,929 organizations we have recorded but are
+    not publishing: 6,698 found through a weaker verification path and not yet individually
     re-checked, 142 we could not reach, 37 we believe have closed, 29 named but unconfirmed, 17
-    apparently dormant, and 6 confirmed closed with no successor. The published count grew by 897
-    on 16 August 2026 &mdash; not from new discovery, but from direct verification: we fetched
-    every recorded organization's own website directly and moved the 897 that answered from
-    &ldquo;found but unconfirmed&rdquo; to &ldquo;confirmed live,&rdquo; and moved 81 more that
-    did not answer (a dead domain or a confirmed page-not-found, checked twice) to
-    &ldquo;unreachable,&rdquo; without publishing that latter claim either &mdash; it just stays
-    withheld like everything else in this section. The rest of the withheld total is still mostly
-    the eleven City of Toronto open-data registers pulled two days earlier &mdash; every licensed
-    child-care centre, every EarlyON site, every shelter location, every music venue, every
-    community-grant recipient, and a 2006 survey of places of worship. Almost none of them are run
-    by the City itself, so the City&rsquo;s register tells us the organization was listed, not
-    that it is open today. Until we check each one directly, it stays recorded and unpublished.
-    We hold those back deliberately. Publishing &ldquo;this organization has shut down&rdquo;
-    about a group that is in fact still running would be a claim we could never take back once
-    this file has been copied elsewhere, and our confidence in those rows is not yet high enough
-    to make it. So this file carries only what we have confirmed directly, and matches the
+    apparently dormant, and 6 confirmed closed with no successor. On 16 August 2026 we ran a
+    direct-verification pass, fetching every recorded organization's own listed website, and
+    promoted 897 rows that answered to &ldquo;confirmed live.&rdquo; Checking our own work the
+    same day, we found 264 of those 897 rested on a URL shared by many unrelated organizations
+    &mdash; a school board's general program page, a City facility listing &mdash; which confirms
+    that page loads, not that any one specific organization on it is still active. We reversed all
+    264 back to unpublished rather than let a page-load stand in for organization-specific
+    verification, which is the same reason a page like this one exists at all. Net effect of the
+    day's pass: 633 more rows published than the day began with, and a public description of
+    exactly what &ldquo;verified&rdquo; had to stop meaning to survive our own check. 81 rows that
+    did not answer (a dead domain or a confirmed page-not-found, checked twice) moved to
+    &ldquo;unreachable,&rdquo; without publishing that claim either &mdash; it stays withheld like
+    everything else in this section. The rest of the withheld total is still mostly the eleven
+    City of Toronto open-data registers pulled two days earlier &mdash; every licensed child-care
+    centre, every EarlyON site, every shelter location, every music venue, every community-grant
+    recipient, and a 2006 survey of places of worship. Almost none of them are run by the City
+    itself, so the City&rsquo;s register tells us the organization was listed, not that it is open
+    today. Until we check each one directly, it stays recorded and unpublished. We hold those back
+    deliberately. Publishing &ldquo;this organization has shut down&rdquo; about a group that is
+    in fact still running would be a claim we could never take back once this file has been copied
+    elsewhere, and our confidence in those rows is not yet high enough to make it. So this file
+    carries only what we have confirmed directly, and matches the
     <a href="tribes/directory.html">Organization Directory</a> page row for row &mdash; the two
     can never disagree about what we claim to know. This is a
     snapshot of a living city &mdash; organizations open, close, move, and rename continuously,
@@ -462,7 +468,7 @@ read, fork, and cite. Corrections and improvements: see
     <a href="#license">License</a> below). This is our own original research, so there is no
     separate upstream licence to reconcile.</li>
     <li><strong>Download:</strong> <a href="data/tribes_orgs.csv">tribes_orgs.csv</a> &mdash;
-    3,015 rows &times; 8 columns.</li>
+    2,751 rows &times; 8 columns.</li>
     <li><strong>Query it without downloading:</strong>
     <a href="https://lite.datasette.io/?csv=https://unitetolove.ca/data/tribes_orgs.csv">open in
     Datasette&nbsp;Lite</a> &mdash; it runs entirely in your browser (WebAssembly), so there is
