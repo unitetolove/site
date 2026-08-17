@@ -171,7 +171,7 @@ ORG-00157,Toronto Area Interfaith Council (TAIC),faith-spiritual,Interfaith coun
 ORG-00158,Islamic Foundation of Toronto,faith-spiritual,"Large Scarborough mosque/community hub since 1969; social-action programs incl. $10M+ Zakat distributed, 400,000+ meals distributed, refugee sponsorship, tax clinic",Toronto,https://islamicfoundation.ca/,verified-live,2026-07-30
 ORG-00160,Muslim Association of Canada (MAC),faith-spiritual,"National Muslim umbrella org headquartered in Mississauga; 14 chapters, 22 centres/masajid, 28 schools nationally; strong GTA presence with multiple schools and centres",GTA-wide,https://www.macnet.ca/,verified-live,2026-07-30
 ORG-00161,"Jaffari Community Centre (Islamic Shia Ithna-Asheri Jamaat of Toronto, ISIJ)",faith-spiritual,"Largest Shia Islamic centre in North America (165,000 sq ft, Thornhill); administers three additional GTA-area mosques (Barrie, Brampton, Hamilton); food bank, funeral, health/wellness services",York,https://jaffari.org/jcc/,verified-live,2026-07-30
-ORG-00162,BAPS Shri Swaminarayan Mandir Toronto,faith-spiritual,"Largest mandir of its kind in Canada (Etobicoke), includes Heritage Museum; open to all faiths and backgrounds year-round",Toronto,https://www.baps.org/Global-Network/North-America/Toronto.aspx,verified-live,2026-07-30
+ORG-00162,BAPS Shri Swaminarayan Mandir Toronto,faith-spiritual,"Largest mandir of its kind in Canada (Etobicoke), includes Heritage Museum; open to all faiths and backgrounds year-round",Ward 1 (Etobicoke North),https://www.baps.org/Global-Network/North-America/Toronto.aspx,verified-live,2026-07-30
 ORG-00163,Hindu Sabha Temple Brampton,faith-spiritual,"Largest Hindu temple in North America (34,000 sq ft), established 1975; food bank and women's empowerment programs",Peel,https://hindusabhatemple.com/,verified-live,2026-07-30
 ORG-00164,Toronto Board of Rabbis,faith-spiritual,"Multi-denominational rabbinic council (Orthodox, Conservative, Reform, Reconstructionist) — Ontario's oldest such body; hospital chaplaincy, crisis response, food drives",Toronto,https://www.torontoboardofrabbis.org/,verified-live,2026-07-30
 ORG-00165,Tzu Chi Foundation Canada (Buddhist Compassion Relief Tzu Chi Foundation),faith-spiritual,"Buddhist humanitarian relief organization with Toronto branch office; UN ECOSOC special consultative NGO status; charity, medical (incl. TCM clinics), education and environmental programs",Toronto,https://tzuchi.ca/,verified-live,2026-07-30
@@ -542,7 +542,7 @@ ORG-00560,Warden Woods Community Centre,civil-society-advocacy,neighbourhood mul
 ORG-00561,North York Community House (NYCH),civil-society-advocacy,neighbourhood multi-service centre — Northwest Toronto (North York),Toronto,https://www.nych.ca/about,verified-live,2026-07-30
 ORG-00562,Working Women Community Centre,civil-society-advocacy,neighbourhood multi-service centre — Davenport/Gladstone & citywide women's hubs,Toronto,https://www.workingwomencc.org/,verified-live,2026-07-30
 ORG-00563,Davenport-Perth Neighbourhood and Community Health Centre,civil-society-advocacy,neighbourhood multi-service centre — Davenport-Perth (West End Toronto),Toronto,https://www.dpnchc.ca/about,verified-live,2026-07-30
-ORG-00564,Rexdale Community Hub,civil-society-advocacy,neighbourhood multi-service centre — Rexdale/North Etobicoke,Toronto,https://www.rexdalehub.org/,verified-live,2026-07-30
+ORG-00564,Rexdale Community Hub,civil-society-advocacy,neighbourhood multi-service centre — Rexdale/North Etobicoke,Ward 1 (Etobicoke North),https://www.rexdalehub.org/,verified-live,2026-07-30
 ORG-00565,Dixie Bloor Neighbourhood Centre,civil-society-advocacy,neighbourhood multi-service centre — Dixie-Bloor (Mississauga),Peel,https://www.dixiebloor.ca/,verified-live,2026-07-30
 ORG-00566,Ghanaian Canadian Association of Ontario (GCAO),ethnocultural-diaspora,Ghanaian diaspora — cultural/community umbrella association,Toronto,https://gcaocanada.org/about-us/,verified-live,2026-07-30
 ORG-00567,Nigerian Canadian Association GTA (NCA-GTA),ethnocultural-diaspora,Nigerian diaspora — cultural/community association,Toronto,https://www.ncagta.com/about-us/,verified-live,2026-07-30
@@ -2003,7 +2003,7 @@ ORG-07123,Toronto Public Library — Yorkville Branch,third-fourth-places,public
 ORG-07124,Toronto Public Library — York Woods Branch,third-fourth-places,public-library-branch,Ward 7 (Humber River-Black Creek),,verified-live,2026-08-16
 ORG-07125,Dovercourt Village BIA,business-improvement-area,,,,verified-live,2026-08-16
 ORG-07126,Korea Town BIA,business-improvement-area,,,,verified-live,2026-08-16
-ORG-07127,Albion Islington Square BIA,business-improvement-area,,,,verified-live,2026-08-16
+ORG-07127,Albion Islington Square BIA,business-improvement-area,,Ward 1 (Etobicoke North),,verified-live,2026-08-16
 ORG-07128,Dupont by the Castle BIA,business-improvement-area,,,,verified-live,2026-08-16
 ORG-07129,Humber Bay Shores BIA,business-improvement-area,,,,verified-live,2026-08-16
 ORG-07130,Upper Village BIA,business-improvement-area,,,,verified-live,2026-08-16
@@ -2122,7 +2122,7 @@ ORG-07333,East Bayfront Community Recreation Centre,third-fourth-places,recreati
 ORG-07334,Rouge Valley Community Recreation Centre,third-fourth-places,recreation-centre,,https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3858,verified-live,2026-08-16
 ORG-07335,Old Fire Hall 30,third-fourth-places,hall,,https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3861,verified-live,2026-08-16
 ORG-07337,Frankland Community Centre,third-fourth-places,community-centre,,https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=39,verified-live,2026-08-16
-ORG-07338,West Acres Seniors Centre,third-fourth-places,older-adult-centre,,https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=396,verified-live,2026-08-16
+ORG-07338,West Acres Seniors Centre,third-fourth-places,older-adult-centre,Ward 1 (Etobicoke North),https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=396,verified-live,2026-08-16
 ORG-07339,Milliken Park Community Recreation Centre,third-fourth-places,recreation-centre,,https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=405,verified-live,2026-08-16
 ORG-07340,Antibes Community Centre,third-fourth-places,community-centre,,https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=42,verified-live,2026-08-16
 ORG-07341,Edgehill House,third-fourth-places,other-facility,,https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=428,verified-live,2026-08-16
@@ -2166,10 +2166,10 @@ ORG-07378,Oakridge Community Recreation Centre,third-fourth-places,recreation-ce
 ORG-07379,Pleasantview Community Centre,third-fourth-places,community-centre,,https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=732,verified-live,2026-08-16
 ORG-07380,Scarborough Village Recreation Centre,third-fourth-places,recreation-centre,,https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=743,verified-live,2026-08-16
 ORG-07381,Roding Community Centre,third-fourth-places,community-centre,,https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=744,verified-live,2026-08-16
-ORG-07382,North Kipling Community Centre,third-fourth-places,community-centre,,https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=749,verified-live,2026-08-16
-ORG-07383,Elmbank Community Centre,third-fourth-places,community-centre,,https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=750,verified-live,2026-08-16
+ORG-07382,North Kipling Community Centre,third-fourth-places,community-centre,Ward 1 (Etobicoke North),https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=749,verified-live,2026-08-16
+ORG-07383,Elmbank Community Centre,third-fourth-places,community-centre,Ward 1 (Etobicoke North),https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=750,verified-live,2026-08-16
 ORG-07384,Seneca Village Community Centre,third-fourth-places,community-centre,,https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=751,verified-live,2026-08-16
-ORG-07385,Humberwood Community Centre,third-fourth-places,community-centre,,https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=755,verified-live,2026-08-16
+ORG-07385,Humberwood Community Centre,third-fourth-places,community-centre,Ward 1 (Etobicoke North),https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=755,verified-live,2026-08-16
 ORG-07386,Domenico Diluca Community Recreation Centre,third-fourth-places,recreation-centre,,https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=760,verified-live,2026-08-16
 ORG-07387,Victoria Village Arena,third-fourth-places,arena-stadium,,https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=771,verified-live,2026-08-16
 ORG-07388,York Mills Arena,third-fourth-places,arena-stadium,,https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=778,verified-live,2026-08-16
@@ -2791,7 +2791,7 @@ ORG-10708,Centre for Immigrant and Community Services,newcomer/immigrant-serving
 ORG-10709,Catholic Crosscultural Services,newcomer/immigrant-serving,settlement-service-agency,,http://www.cathcrosscultural.org,verified-live,2026-08-16
 ORG-10710,Jewish Family & Child,newcomer/immigrant-serving,settlement-service-agency,,http://www.jfandcs.com,verified-live,2026-08-16
 ORG-10711,Toronto Catholic District School Board,newcomer/immigrant-serving,settlement-service-agency,,http://www.tcdsb.org,verified-live,2026-08-16
-ORG-10712,Rexdale Women's Centre,newcomer/immigrant-serving,settlement-service-agency,,http://www.rexdalewomen.org,verified-live,2026-08-16
+ORG-10712,Rexdale Women's Centre,newcomer/immigrant-serving,settlement-service-agency,Ward 1 (Etobicoke North),http://www.rexdalewomen.org,verified-live,2026-08-16
 ORG-10713,Riverdale Immigrant Women's Centre,newcomer/immigrant-serving,settlement-service-agency,,http://www.riwc.ca,verified-live,2026-08-16
 ORG-10714,Cross-Cultural Community Services Association,newcomer/immigrant-serving,settlement-service-agency,,http://www.tccsa.on.ca,verified-live,2026-08-16
 ORG-10715,Youth Assisting Youth,newcomer/immigrant-serving,settlement-service-agency,,http://www.yay.org,verified-live,2026-08-16
@@ -2821,3 +2821,11 @@ ORG-23526,Bluffs Monitor,community-media,media-online — 9 Whitecap Blvd (Cliff
 ORG-23527,Wheels on the Danforth (festival),festival-events,arts-sports-festivals — Crossroads BIA territory + Oakridge Park,Ward 20 (Scarborough Southwest),http://www.wheelsonthedanforth.com/,verified-live,2026-08-17
 ORG-23530,Bluffs Food Bank,food-systems-land,"food-systems — 33 East Rd (Birchcliff Bluffs United Church), Warden x Kingston Rd",Ward 20 (Scarborough Southwest),https://bluffsfoodbank.com/,verified-live,2026-08-17
 ORG-23533,WWCC English Conversation Circle,newcomer/immigrant-serving,newcomer-infrastructure — 74 Firvalley Ct,Ward 20 (Scarborough Southwest),https://wardenwoods.com/,verified-live,2026-08-17
+ORG-24313,TCHC Tenant Community Action Table (TCAT),tenant-housing-advocacy,tchc-tenant-engagement-body,City of Toronto (TCHC portfolio),https://www.torontohousing.ca/programs-and-tenant-engagement/tenant-engagement/tenant-community-action-table-tcat,verified-live,2026-08-17
+ORG-24314,TCHC Tenant Advisory Committee,tenant-housing-advocacy,tchc-tenant-engagement-body,City of Toronto (TCHC portfolio),https://www.torontohousing.ca/programs-and-tenant-engagement/tenant-engagement/tenant-advisory-committee,verified-live,2026-08-17
+ORG-24315,TCHC Youth Tenant Advisory Committee,tenant-housing-advocacy,tchc-tenant-engagement-body,City of Toronto (TCHC portfolio),https://www.torontohousing.ca/youth-tenant-advisory-committee,verified-live,2026-08-17
+ORG-24316,TCHC Local Initiative Funding for Tenants (LIFT),tenant-housing-advocacy,tchc-tenant-engagement-body,City of Toronto (TCHC portfolio),https://www.torontohousing.ca/node/1752,verified-live,2026-08-17
+ORG-24320,Somali Canadian Association (SCA),ethnocultural-diaspora,ethnocultural,Ward 1 (Etobicoke North),https://somalicanadian.com/,verified-live,2026-08-17
+ORG-24325,Royal Canadian Legion — Etobicoke Branch 286 (Coronation Rexdale),fraternal-chambers,service-club,Ward 1 (Etobicoke North),,verified-live,2026-08-17
+ORG-24337,Maurice Coulter Housing Co-operative,housing-cooperative,housing-coop,Ward 1 (Etobicoke North),https://mauricecoulterco-op.ca,verified-live,2026-08-17
+ORG-24345,Rexdale Soccer League (Rexdale Rebels/Knights),sport-recreation,movement-play,Ward 1 (Etobicoke North),https://rexdalesoccer.com,verified-live,2026-08-17
