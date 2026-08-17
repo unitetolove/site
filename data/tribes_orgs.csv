@@ -11,7 +11,7 @@ ORG-00016,The Salvation Army (Toronto — Harbour Light / Homestead / The Gatewa
 ORG-00017,The Scott Mission,base-of-pyramid,shelter/homelessness + food security,,https://scottmission.com/,verified-live,2026-07-30
 ORG-00018,Yonge Street Mission,base-of-pyramid,shelter/homelessness + youth,,https://www.ysm.ca/,verified-live,2026-07-30
 ORG-00019,Daily Bread Food Bank,base-of-pyramid,food security,,https://www.dailybread.ca/,verified-live,2026-07-30
-ORG-00020,North York Harvest Food Bank,base-of-pyramid,food security,,https://northyorkharvest.com/,verified-live,2026-07-30
+ORG-00020,North York Harvest Food Bank,base-of-pyramid,food security,Ward 6 (York Centre),https://northyorkharvest.com/,verified-live,2026-07-30
 ORG-00021,The Stop Community Food Centre,base-of-pyramid,food security,,https://www.thestop.org/,verified-live,2026-07-30
 ORG-00022,FoodShare Toronto,base-of-pyramid,food security,,https://foodshare.net/,verified-live,2026-07-30
 ORG-00023,Fort York Food Bank,base-of-pyramid,food security,,https://fyfb.com/,verified-live,2026-07-30
@@ -834,6 +834,7 @@ ORG-01033,Lakeshore Village BIA,business-improvement-area,BIA — Lakeshore Vill
 ORG-01034,Crossroads of the Danforth BIA,business-improvement-area,BIA — Oakridge / Scarborough Southwest (Danforth Ave),Toronto,https://crossroadsbia.ca/,verified-live,2026-07-30
 ORG-01035,Toronto Humane Society,environment-climate,"companion animal shelter, adoption & veterinary care",Toronto,https://www.torontohumanesociety.com/support-us/membership/,verified-live,2026-07-30
 ORG-01036,Ontario SPCA and Humane Society,environment-climate,provincial animal welfare society & shelter network,Ontario,https://ontariospca.ca/,verified-live,2026-07-30
+ORG-01037,Toronto Wildlife Centre,environment-climate,wildlife rescue hotline & rehabilitation,Ward 6 (York Centre),https://www.torontowildlifecentre.com/contact/,verified-live,2026-08-17
 ORG-01038,Toronto Cat Rescue,environment-climate,"volunteer-run, no-kill cat rescue & fostering",GTA-wide,https://www.torontocatrescue.ca/who-we-are,verified-live,2026-07-30
 ORG-01040,World Animal Protection Canada,environment-climate,"international animal welfare NGO, Canadian office",Toronto,https://www.worldanimalprotection.ca/about-us/contact-us,verified-live,2026-07-30
 ORG-01041,"Humane Society of Oakville, Milton & Halton",environment-climate,"municipal animal shelter, control & adoption services",Halton,https://hsomh.ca/contact/,verified-live,2026-07-30
@@ -1156,7 +1157,7 @@ ORG-01454,Royal Canadian Legion Branch 66 (North York),fraternal-chambers,"legio
 ORG-01455,Royal Canadian Legion Branch 344 (Queen's Own Rifles),fraternal-chambers,"legion — Royal Canadian Legion — branch (District D, Zone 3)",Toronto (Lakeshore/South Etobicoke),https://on.legion.ca/search/,verified-live,2026-08-15
 ORG-01456,Royal Canadian Legion Branch 1/42 (Baron Byng Beaches),fraternal-chambers,"legion — Royal Canadian Legion — branch (District D, Zone 3)",Toronto (the Beaches),https://on.legion.ca/search/,verified-live,2026-08-15
 ORG-01457,Royal Canadian Legion Branch 75 (Fairbank),fraternal-chambers,"legion — Royal Canadian Legion — branch (District D, Zone 3)",Toronto (Fairbank),https://on.legion.ca/search/,verified-live,2026-08-15
-ORG-01458,Royal Canadian Legion Branch 527 (Wilson),fraternal-chambers,"legion — Royal Canadian Legion — branch (District D, Zone 3)",Toronto (North York — Sheppard/Wilson),https://on.legion.ca/search/,verified-live,2026-08-15
+ORG-01458,Royal Canadian Legion Branch 527 (Wilson),fraternal-chambers,"legion — Royal Canadian Legion — branch (District D, Zone 3)",Ward 6 (York Centre),https://on.legion.ca/search/,verified-live,2026-08-15
 ORG-01459,Royal Canadian Legion Branch 621 (General W. Anders),fraternal-chambers,"legion — Royal Canadian Legion — branch (District D, Zone 3)",Toronto,https://on.legion.ca/search/,verified-live,2026-08-15
 ORG-01460,Royal Canadian Legion Branch 13,fraternal-chambers,"legion — Royal Canadian Legion — branch (District D, Zone 5)",Toronto (east end),https://on.legion.ca/search/,verified-live,2026-08-15
 ORG-01461,Royal Canadian Legion Branch 73,fraternal-chambers,"legion — Royal Canadian Legion — branch (District D, Zone 5)",Toronto (east end),https://on.legion.ca/search/,verified-live,2026-08-15
@@ -1690,7 +1691,7 @@ ORG-06671,Frenchman's Bay Yacht Club,sport-recreation,[yacht-club] yacht club,Du
 ORG-06672,Newcastle Yacht Club,sport-recreation,[yacht-club] yacht club,Durham (Newcastle),,verified-live,2026-08-16
 ORG-06673,Whitby Yacht Club,sport-recreation,[yacht-club] yacht club,Durham (Whitby),,verified-live,2026-08-16
 ORG-06674,CrossFit SMASHBOX (Performance & Fitness),sport-recreation,[fitness-community] CrossFit/HYROX affiliate gym,"Toronto (Corktown, Yorkville, Islington/Lake Shore, Junction — 4 locations)",https://www.smashboxfit.ca/,verified-live,2026-08-16
-ORG-06676,Downsview parkrun,sport-recreation,[fitness-community] free weekly timed 5K,"Toronto (Downsview Park, North York)",https://www.parkrun.ca/downsview/,verified-live,2026-08-16
+ORG-06676,Downsview parkrun,sport-recreation,[fitness-community] free weekly timed 5K,Ward 6 (York Centre),https://www.parkrun.ca/downsview/,verified-live,2026-08-16
 ORG-06677,20s Run Club,sport-recreation,"[fitness-community] run club (informal, weekly)",York Region (Richmond Hill),https://runclubs.ca/toronto/20s-run-club,verified-live,2026-08-16
 ORG-06678,261 Fearless Club Toronto,sport-recreation,"[fitness-community] run club (women-only, informal)",Toronto (Ramsden Park),https://runclubs.ca/toronto/261-fearless-club-toronto,verified-live,2026-08-16
 ORG-06679,3K Run Club,sport-recreation,"[fitness-community] run club (informal, weekly)",Toronto (Scarborough — Milliken Rec),https://runclubs.ca/toronto/3k-run-club,verified-live,2026-08-16
@@ -2019,7 +2020,7 @@ ORG-07139,Cedarbrae Markham Lawrence Village BIA,business-improvement-area,,,,ve
 ORG-07140,Sheppard East Village BIA,business-improvement-area,,,,verified-live,2026-08-16
 ORG-07141,Broadview Danforth BIA,business-improvement-area,,,,verified-live,2026-08-16
 ORG-07142,Lawrence Ingram Keele BIA,business-improvement-area,,,,verified-live,2026-08-16
-ORG-07143,Wilson Village BIA,business-improvement-area,,,,verified-live,2026-08-16
+ORG-07143,Wilson Village BIA,business-improvement-area,,Ward 6 (York Centre),,verified-live,2026-08-16
 ORG-07144,Hillcrest Village BIA,business-improvement-area,,,,verified-live,2026-08-16
 ORG-07145,College Promenade BIA,business-improvement-area,,,,verified-live,2026-08-16
 ORG-07146,Danforth Village BIA,business-improvement-area,,,,verified-live,2026-08-16
@@ -2829,3 +2830,11 @@ ORG-24320,Somali Canadian Association (SCA),ethnocultural-diaspora,ethnocultural
 ORG-24325,Royal Canadian Legion — Etobicoke Branch 286 (Coronation Rexdale),fraternal-chambers,service-club,Ward 1 (Etobicoke North),,verified-live,2026-08-17
 ORG-24337,Maurice Coulter Housing Co-operative,housing-cooperative,housing-coop,Ward 1 (Etobicoke North),https://mauricecoulterco-op.ca,verified-live,2026-08-17
 ORG-24345,Rexdale Soccer League (Rexdale Rebels/Knights),sport-recreation,movement-play,Ward 1 (Etobicoke North),https://rexdalesoccer.com,verified-live,2026-08-17
+ORG-24384,Thistletown Lions Club,fraternal-chambers,service-club,Ward 1 (Etobicoke North),,verified-live,2026-08-17
+ORG-24462,Russian House Toronto (Русский Дом Торонто),ethnocultural-diaspora,ethnocultural,Ward 6 (York Centre),,verified-live,2026-08-17
+ORG-24463,Downsview Park Merchants Market,food-systems-land,market,Ward 6 (York Centre),https://www.dpmarket.com/,verified-live,2026-08-17
+ORG-24464,Taste of Manila,festival-events,festival,Ward 6 (York Centre),,verified-live,2026-08-17
+ORG-24465,CBA for Downsview (Downsview Community Benefits Committee),deliberation-civic-tech,civic-tech,Ward 6 (York Centre),https://www.cbafordownsview.ca/,verified-live,2026-08-17
+ORG-24466,House of Combat (Krav Maga & BJJ),sport-recreation,movement-play,Ward 6 (York Centre),https://houseofcombat.ca/,verified-live,2026-08-17
+ORG-24467,The Black Belt Institute — Downsview (Hangar Sports Complex),sport-recreation,movement-play,Ward 6 (York Centre),https://www.theblackbeltinstitute.com/locations/downsview,verified-live,2026-08-17
+ORG-24468,North York Ski Centre (Earl Bales Ski and Snowboard Centre),sport-recreation,movement-play,Ward 6 (York Centre),,verified-live,2026-08-17

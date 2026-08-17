@@ -366,11 +366,11 @@
     {
       "name": "tribes_orgs.csv",
       "title": "Toronto civil-society organization registry",
-      "description": "One row per organization in the Toronto civil-society registry behind unitetolove.ca's Organization Directory, each holding a permanent org_id. This download carries only rows we have confirmed directly (verification_status 'verified-live'), and matches the live directory page at https://unitetolove.ca/tribes/directory.html row for row. A further 16,932 organizations are recorded in the underlying registry but withheld from publication because our verification of them is weaker: publishing a 'closed' or 'unreachable' claim about a named third-party organization is not retractable once copied, so we publish only what we have checked. The withheld counts are disclosed by status at https://unitetolove.ca/commons.html#orgs. Coverage is partial and uneven across categories; assembled from the project's own original field research, not a re-publication. As of 2026-08-16.",
+      "description": "One row per organization in the Toronto civil-society registry behind unitetolove.ca's Organization Directory, each holding a permanent org_id. This download carries only rows we have confirmed directly (verification_status 'verified-live'), and matches the live directory page at https://unitetolove.ca/tribes/directory.html row for row. A further 17,044 organizations are recorded in the underlying registry but withheld from publication because our verification of them is weaker: publishing a 'closed' or 'unreachable' claim about a named third-party organization is not retractable once copied, so we publish only what we have checked. The withheld counts are disclosed by status at https://unitetolove.ca/commons.html#orgs. Coverage is partial and uneven across categories; assembled from the project's own original field research, not a re-publication. As of 2026-08-16.",
       "path": "data/tribes_orgs.csv",
       "format": "csv",
       "encoding": "utf-8",
-      "rowCount": 2830,
+      "rowCount": 2839,
       "schema": {
         "fields": [
           {
