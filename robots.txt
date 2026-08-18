@@ -10,7 +10,6 @@
 
 User-agent: *
 Allow: /
-Disallow: /deliveries/
 Crawl-delay: 1
 
 # IETF Content Signals draft convention (content-signal.org) — explicit opt-in,
