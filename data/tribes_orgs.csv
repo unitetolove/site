@@ -5,7 +5,7 @@ ORG-00005,YWCA Toronto,base-of-pyramid,shelter/homelessness (women),,https://www
 ORG-00006,COSTI Immigrant Services,newcomer/immigrant-serving,settlement,,https://www.costi.org/,verified-live,2026-07-30
 ORG-00007,Good Shepherd Centres,base-of-pyramid,shelter/homelessness,,https://goodshepherdcentres.ca/,verified-live,2026-07-30
 ORG-00008,Good Shepherd Ministries,base-of-pyramid,shelter/homelessness,,https://goodshepherd.ca/,verified-live,2026-07-30
-ORG-00013,Na-Me-Res (Native Men's Residence),base-of-pyramid,shelter/homelessness (Indigenous),,https://www.nameres.org/,verified-live,2026-07-30
+ORG-00013,Na-Me-Res (Native Men's Residence),base-of-pyramid,shelter/homelessness (Indigenous),Toronto-St. Paul's,https://www.nameres.org/,verified-live,2026-07-30
 ORG-00015,Street Haven at the Crossroads,base-of-pyramid,shelter/homelessness (women),,https://streethaven.org/,verified-live,2026-07-30
 ORG-00016,The Salvation Army (Toronto — Harbour Light / Homestead / The Gateway),base-of-pyramid,shelter/homelessness,,https://thegateway.ca/,verified-live,2026-07-30
 ORG-00017,The Scott Mission,base-of-pyramid,shelter/homelessness + food security,,https://scottmission.com/,verified-live,2026-07-30
@@ -49,8 +49,8 @@ ORG-00054,Centre francophone du Grand Toronto (CFGT),ethnocultural-diaspora,Fran
 ORG-00055,Bangladeshi-Canadian Community Services,ethnocultural-diaspora,Bangladeshi community,,https://bangladeshi.ca/,verified-live,2026-07-30
 ORG-00056,Punjabi Community Health Services (PCHS),ethnocultural-diaspora,Punjabi/South Asian community,,https://pchs4u.com/,verified-live,2026-07-30
 ORG-00057,The Arab Community Centre of Toronto (ACCT),ethnocultural-diaspora,Arab community,,https://acctonline.ca/,verified-live,2026-07-30
-ORG-00058,Council Fire Native Cultural Centre,ethnocultural-diaspora,Indigenous community centre,,https://www.councilfire.ca/,verified-live,2026-07-30
-ORG-00059,Native Women's Resource Centre of Toronto (NWRCT),ethnocultural-diaspora,Indigenous women,,https://nwrct.ca/,verified-live,2026-07-30
+ORG-00058,Council Fire Native Cultural Centre,ethnocultural-diaspora,Indigenous community centre,Toronto Centre,https://www.councilfire.ca/,verified-live,2026-07-30
+ORG-00059,Native Women's Resource Centre of Toronto (NWRCT),ethnocultural-diaspora,Indigenous women,Toronto Centre,https://nwrct.ca/,verified-live,2026-07-30
 ORG-00060,Anishnawbe Health Toronto (AHT),ethnocultural-diaspora,Indigenous health,,https://aht.ca/,verified-live,2026-07-30
 ORG-00061,Miziwe Biik,ethnocultural-diaspora,Indigenous employment/training,,https://www.miziwebiik.com/,verified-live,2026-07-30
 ORG-00062,ISKCON Toronto (Hare Krishna Temple),faith-spiritual,Hindu/Vaishnava,,https://torontokrishna.com/,verified-live,2026-07-30
@@ -537,7 +537,7 @@ ORG-00555,TNO - The Neighbourhood Organization,civil-society-advocacy,neighbourh
 ORG-00556,East Scarborough Storefront,civil-society-advocacy,neighbourhood multi-service centre — Kingston-Galloway-Orton Park,Toronto,https://www.thestorefront.org/,verified-live,2026-07-30
 ORG-00557,Jane/Finch Centre,civil-society-advocacy,neighbourhood multi-service centre — Jane-Finch/Black Creek,Toronto,https://www.janefinchcentre.org/,verified-live,2026-07-30
 ORG-00558,ACSA Community Services (Agincourt Community Services Association),civil-society-advocacy,neighbourhood multi-service centre — Agincourt/Scarborough,Toronto,https://acsa.ca/about,verified-live,2026-07-30
-ORG-00559,Malvern Family Resource Centre,civil-society-advocacy,neighbourhood multi-service centre — Malvern/Scarborough,Toronto,https://www.mfrc.org/,verified-live,2026-07-30
+ORG-00559,Malvern Family Resource Centre,civil-society-advocacy,neighbourhood multi-service centre — Malvern/Scarborough,Ward 23 (Scarborough North),https://www.mfrc.org/,verified-live,2026-07-30
 ORG-00560,Warden Woods Community Centre,civil-society-advocacy,neighbourhood multi-service centre — Southwest Scarborough (Warden Woods),Toronto,https://wardenwoods.com/,verified-live,2026-07-30
 ORG-00561,North York Community House (NYCH),civil-society-advocacy,neighbourhood multi-service centre — Northwest Toronto (North York),Toronto,https://www.nych.ca/about,verified-live,2026-07-30
 ORG-00562,Working Women Community Centre,civil-society-advocacy,neighbourhood multi-service centre — Davenport/Gladstone & citywide women's hubs,Toronto,https://www.workingwomencc.org/,verified-live,2026-07-30
@@ -1042,7 +1042,7 @@ ORG-01253,Sunnyside Community Association,neighbourhood-association-federation,"
 ORG-01254,Old Mill Residents Association,neighbourhood-association-federation,"resident/ratepayer/tenants association — Old Mill, Toronto Ward 4 (Parkdale-High Park)",Toronto,,verified-live,2026-08-16
 ORG-01255,Crossways Tenants Association,neighbourhood-association-federation,"resident/ratepayer/tenants association — Crossways (Jameson/King St W), Toronto Ward 4 (Parkdale-High Park)",Toronto,,verified-live,2026-08-16
 ORG-01256,ABC Residents' Association,neighbourhood-association-federation,"resident/ratepayer association — Yorkville, Toronto (FoNTRA member)",Toronto,https://www.abcra.ca/,verified-live,2026-08-16
-ORG-01259,Bayview Village Association,neighbourhood-association-federation,"resident/ratepayer association — Bayview Village, Toronto (FoNTRA member)",Toronto,https://www.bayviewvillage.org/,verified-live,2026-08-16
+ORG-01259,Bayview Village Association,neighbourhood-association-federation,"resident/ratepayer association — Bayview Village, Toronto (FoNTRA member)",Ward 17 (Don Valley North),https://www.bayviewvillage.org/,verified-live,2026-08-16
 ORG-01264,Deer Park Residents' Group Inc.,neighbourhood-association-federation,"resident/ratepayer association — Deer Park, Toronto (FoNTRA member)",Toronto,https://deerparkresidents.ca/,verified-live,2026-08-16
 ORG-01300,Edwards Gardens Neighbourhood Association,neighbourhood-association-federation,"resident/ratepayer association — Edwards Gardens (Leslie St/Lawrence Ave E, near Toronto Botanical Garden), Toronto (FoNTRA member)",Toronto,,verified-live,2026-08-16
 ORG-01302,Forest Hill Homeowners' Association,neighbourhood-association-federation,"resident/ratepayer association — Forest Hill, Toronto (FoNTRA member)",Toronto,,verified-live,2026-08-16
@@ -1735,7 +1735,7 @@ ORG-06716,Patagonia Toronto,sport-recreation,"[fitness-community] run club (reta
 ORG-06717,Piccolo Run Club,sport-recreation,"[fitness-community] run club (cafe-affiliated, weekly)",Toronto (Piccolo Caffe e Vino),https://runclubs.ca/toronto/piccolo-run-club,verified-live,2026-08-16
 ORG-06718,Portland Runners Toronto,sport-recreation,"[fitness-community] run club (informal, weekly)",Toronto (Ace Hotel),https://runclubs.ca/toronto/portland-runners-toronto,verified-live,2026-08-16
 ORG-06719,Queer Run Club (QRC),sport-recreation,"[fitness-community] run club (queer/trans/NB-centred, weekly)",Toronto (Ethica Coffee Roaster),https://runclubs.ca/toronto/queer-run-club-qrc,verified-live,2026-08-16
-ORG-06720,Raeden Run Club,sport-recreation,"[fitness-community] run club (informal, weekly)",Toronto (Scarborough — Midland Ave),https://runclubs.ca/toronto/raeden-run-club,verified-live,2026-08-16
+ORG-06720,Raeden Run Club,sport-recreation,"[fitness-community] run club (informal, weekly)",Ward 21 (Scarborough Centre),https://runclubs.ca/toronto/raeden-run-club,verified-live,2026-08-16
 ORG-06721,Ravers Run Club,sport-recreation,"[fitness-community] run club (music/DJ-themed, weekly)",Toronto (Union Station),https://runclubs.ca/toronto/ravers-run-club,verified-live,2026-08-16
 ORG-06722,Riverdale Park 5K,sport-recreation,"[fitness-community] run/walk/jog club (informal, weekly)",Toronto (Riverdale Park East),https://runclubs.ca/toronto/riverdale-park-5k,verified-live,2026-08-16
 ORG-06723,Running Rats Run Club,sport-recreation,"[fitness-community] run club (downtown, weekly)",Toronto (CF Eaton Centre),https://runclubs.ca/toronto/running-rats-run-club,verified-live,2026-08-16
@@ -1860,7 +1860,7 @@ ORG-06931,Vietnamese Women's Association of Toronto (VWAT / VWAT Family Services
 ORG-06936,Palestine House — Toronto,ethnocultural-diaspora,[cultural-centre] community: palestinian — Independent non-profit connecting Palestinians in Canada; newcomer/settlement support and Arab community-centre programming,Mississauga/GTA,https://palestinehouse-toronto.ca/,verified-live,2026-08-16
 ORG-06959,Hamazkayin Armenian Educational & Cultural Society — Toronto ('Klatsor' Chapter),ethnocultural-diaspora,"[arts-ensemble] community: armenian — Armenian educational/cultural society, Toronto chapter est. 1969",Toronto (hosted at Armenian Community Centre),https://www.acctoronto.ca/organizations/hamazkayin-armenian-educational-cultural-society/,verified-live,2026-08-16
 ORG-06960,Homenetmen Armenian General Athletic Union & Scouts — Toronto Chapter,ethnocultural-diaspora,"[youth-wing] community: armenian — Armenian athletic union + scouting organization, Toronto chapter",Toronto (hosted at Armenian Community Centre),https://www.acctoronto.ca/organizations/homenetmen-armenian-general-athletic-union-scouts/,verified-live,2026-08-16
-ORG-06961,Armenian Relief Society — Toronto ('Roubina' Chapter),ethnocultural-diaspora,"[womens-org] community: armenian — Armenian women's social-service organization, Toronto chapter founded 1924; 400+ members",Toronto (hosted at Armenian Community Centre),https://www.acctoronto.ca/organizations/armenian-relief-society/,verified-live,2026-08-16
+ORG-06961,Armenian Relief Society — Toronto ('Roubina' Chapter),ethnocultural-diaspora,"[womens-org] community: armenian — Armenian women's social-service organization, Toronto chapter founded 1924; 400+ members",Ward 17 (Don Valley North),https://www.acctoronto.ca/organizations/armenian-relief-society/,verified-live,2026-08-16
 ORG-06962,Armenian Youth Federation of Canada — Toronto ('Simon Zavarian' Chapter),ethnocultural-diaspora,"[youth-wing] community: armenian — Armenian youth organization, ages 16-26",Toronto (hosted at Armenian Community Centre),https://www.acctoronto.ca/organizations/armenian-youth-federation-of-canada/,verified-live,2026-08-16
 ORG-06963,ARF Junior Organization of Canada — Toronto ('Rosdom' & 'Chrisdapor' Chapters),ethnocultural-diaspora,[youth-wing] community: armenian — Armenian junior youth organization,Toronto (hosted at Armenian Community Centre),https://www.acctoronto.ca/organizations/arf-junior-organization-of-canada/,verified-live,2026-08-16
 ORG-06964,Armenian Senior Citizens Club (ASCC),ethnocultural-diaspora,"[seniors-group] community: armenian — Armenian-Canadian seniors' association, Toronto",Toronto (hosted at Armenian Community Centre),https://www.acctoronto.ca/organizations/armenian-senior-citizens-club/,verified-live,2026-08-16
@@ -1911,7 +1911,7 @@ ORG-07030,Toronto Public Library — Annette Street Branch,third-fourth-places,p
 ORG-07031,Toronto Public Library — Amesbury Park Branch,third-fourth-places,public-library-branch,Ward 5 (York South-Weston),,verified-live,2026-08-16
 ORG-07032,Toronto Public Library — Brookbanks Branch,third-fourth-places,public-library-branch,Ward 16 (Don Valley East),,verified-live,2026-08-16
 ORG-07033,Toronto Public Library — Black Creek Branch,third-fourth-places,public-library-branch,Ward 7 (Humber River-Black Creek),,verified-live,2026-08-16
-ORG-07034,Toronto Public Library — Bendale Branch,third-fourth-places,public-library-branch,Ward 21 (Scarborough Centre),,verified-live,2026-08-16
+ORG-07034,Toronto Public Library — Bendale Branch,third-fourth-places,public-library-branch,,,verified-live,2026-08-16
 ORG-07035,Toronto Public Library — Beaches Branch,third-fourth-places,public-library-branch,Ward 19 (Beaches-East York),,verified-live,2026-08-16
 ORG-07036,Toronto Public Library — Barbara Frum Branch,third-fourth-places,public-library-branch,Ward 8 (Eglinton-Lawrence),,verified-live,2026-08-16
 ORG-07037,Toronto Public Library — Bloor/Gladstone Branch,third-fourth-places,public-library-branch,Ward 9 (Davenport),,verified-live,2026-08-16
@@ -1953,7 +1953,7 @@ ORG-07072,Toronto Public Library — Humberwood Branch,third-fourth-places,publi
 ORG-07073,Toronto Public Library — Jones Branch,third-fourth-places,public-library-branch,Ward 14 (Toronto-Danforth),,verified-live,2026-08-16
 ORG-07074,Toronto Public Library — Jane/Sheppard Branch,third-fourth-places,public-library-branch,Ward 7 (Humber River-Black Creek),,verified-live,2026-08-16
 ORG-07075,Toronto Public Library — Junction Triangle (formerly Perth/Dupont) Branch,third-fourth-places,public-library-branch,,,verified-live,2026-08-16
-ORG-07076,Toronto Public Library — Kennedy/Eglinton Branch,third-fourth-places,public-library-branch,Ward 21 (Scarborough Centre),,verified-live,2026-08-16
+ORG-07076,Toronto Public Library — Kennedy/Eglinton Branch,third-fourth-places,public-library-branch,,,verified-live,2026-08-16
 ORG-07077,Toronto Public Library — Long Branch,third-fourth-places,public-library-branch,Ward 3 (Etobicoke-Lakeshore),,verified-live,2026-08-16
 ORG-07078,Toronto Public Library — Leaside Branch,third-fourth-places,public-library-branch,Ward 15 (Don Valley West),,verified-live,2026-08-16
 ORG-07079,Toronto Public Library — Locke Branch,third-fourth-places,public-library-branch,Ward 15 (Don Valley West),,verified-live,2026-08-16
@@ -1961,11 +1961,11 @@ ORG-07080,Toronto Public Library — Lillian H. Smith Branch,third-fourth-places
 ORG-07081,Toronto Public Library — Main Street Branch,third-fourth-places,public-library-branch,Ward 19 (Beaches-East York),,verified-live,2026-08-16
 ORG-07082,Toronto Public Library — Malvern Branch,third-fourth-places,public-library-branch,Ward 25 (Scarborough-Rouge Park),,verified-live,2026-08-16
 ORG-07083,Toronto Public Library — Maria A. Shchuka Branch,third-fourth-places,public-library-branch,Ward 12 (Toronto-St. Paul's),,verified-live,2026-08-16
-ORG-07084,Toronto Public Library — McGregor Park Branch,third-fourth-places,public-library-branch,Ward 21 (Scarborough Centre),,verified-live,2026-08-16
+ORG-07084,Toronto Public Library — McGregor Park Branch,third-fourth-places,public-library-branch,,,verified-live,2026-08-16
 ORG-07085,Toronto Public Library — Mount Dennis Branch,third-fourth-places,public-library-branch,Ward 5 (York South-Weston),,verified-live,2026-08-16
 ORG-07086,Toronto Public Library — Mimico Centennial Branch,third-fourth-places,public-library-branch,Ward 3 (Etobicoke-Lakeshore),,verified-live,2026-08-16
 ORG-07087,Toronto Public Library — Mount Pleasant Branch,third-fourth-places,public-library-branch,Ward 15 (Don Valley West),,verified-live,2026-08-16
-ORG-07088,Toronto Public Library — Maryvale Branch,third-fourth-places,public-library-branch,Ward 21 (Scarborough Centre),,verified-live,2026-08-16
+ORG-07088,Toronto Public Library — Maryvale Branch,third-fourth-places,public-library-branch,,,verified-live,2026-08-16
 ORG-07089,Toronto Public Library — Morningside Branch,third-fourth-places,public-library-branch,Ward 25 (Scarborough-Rouge Park),,verified-live,2026-08-16
 ORG-07090,Toronto Public Library — Northern District Branch,third-fourth-places,public-library-branch,Ward 8 (Eglinton-Lawrence),,verified-live,2026-08-16
 ORG-07091,Toronto Public Library — Northern Elms Branch,third-fourth-places,public-library-branch,Ward 1 (Etobicoke North),,verified-live,2026-08-16
@@ -2063,7 +2063,7 @@ ORG-07256,Beaches Recreation Centre,third-fourth-places,recreation-centre,,https
 ORG-07257,Parkdale Community Recreation Centre,third-fourth-places,recreation-centre,,https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=243,verified-live,2026-08-16
 ORG-07258,David Appleton Community Centre,third-fourth-places,community-centre,,https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=25,verified-live,2026-08-16
 ORG-07259,Toronto Pan Am Sports Centre,third-fourth-places,other-facility,,https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2773,verified-live,2026-08-16
-ORG-07262,Parkway Forest Community Centre,third-fourth-places,community-centre,,https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2791,verified-live,2026-08-16
+ORG-07262,Parkway Forest Community Centre,third-fourth-places,community-centre,Ward 17 (Don Valley North),https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2791,verified-live,2026-08-16
 ORG-07263,Swansea Community Recreation Centre,third-fourth-places,recreation-centre,,https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=282,verified-live,2026-08-16
 ORG-07267,Trinity Community Recreation Centre,third-fourth-places,recreation-centre,,https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=287,verified-live,2026-08-16
 ORG-07268,Birkdale Community Centre,third-fourth-places,community-centre,,https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=289,verified-live,2026-08-16
@@ -2809,6 +2809,9 @@ ORG-10727,La Passerelle IDE,newcomer/immigrant-serving,settlement-service-agency
 ORG-10728,World Education Services,newcomer/immigrant-serving,settlement-service-agency,,http://www.wes.org/ca,verified-live,2026-08-16
 ORG-10732,Neighbourhood Link Support Services,newcomer/immigrant-serving,settlement-service-agency,,http://www.neighbourhoodlink.org,verified-live,2026-08-16
 ORG-10734,Conseil scolaire de district catholique Centre-Sud,newcomer/immigrant-serving,settlement-service-agency,,http://www.csdccs.edu.on.ca,verified-live,2026-08-16
+ORG-11235,Native Child and Family Services of Toronto,civil-society-advocacy,community-partnership-investment-grantee,Toronto Centre,https://nativechild.org/,verified-live,2026-08-17
+ORG-11236,Native Earth Performing Arts Inc.,arts-culture,toronto-arts-council-grantee,Toronto Centre,https://www.nativeearth.ca/,verified-live,2026-08-17
+ORG-13171,Toronto Aboriginal Support Services Council (TASSC),civil-society-advocacy,community-partnership-investment-grantee,University-Rosedale,https://tassc.ca/,verified-live,2026-08-17
 ORG-23487,Taylor-Massey Residents Wellness Council (ETHP),neighbourhood-association,residents-association — meets in Taylor-Massey (Health Access Taylor-Massey),Ward 19 (Beaches-East York),https://ethp.ca/get-involved/taylor-massey-residents-wellness-council/,verified-live,2026-08-17
 ORG-23491,Beach United Church,faith-spiritual,faith — 140 Wineva Ave (at Queen St E),Ward 19 (Beaches-East York),https://beachunitedchurch.com/,verified-live,2026-08-17
 ORG-23497,East Lynn Park Farmers' Market,food-systems-land,market — 1949 Danforth Ave,Ward 19 (Beaches-East York),https://www.eastlynnparkfarmersmarket.ca/,verified-live,2026-08-17
@@ -2838,3 +2841,5 @@ ORG-24465,CBA for Downsview (Downsview Community Benefits Committee),deliberatio
 ORG-24466,House of Combat (Krav Maga & BJJ),sport-recreation,movement-play,Ward 6 (York Centre),https://houseofcombat.ca/,verified-live,2026-08-17
 ORG-24467,The Black Belt Institute — Downsview (Hangar Sports Complex),sport-recreation,movement-play,Ward 6 (York Centre),https://www.theblackbeltinstitute.com/locations/downsview,verified-live,2026-08-17
 ORG-24468,North York Ski Centre (Earl Bales Ski and Snowboard Centre),sport-recreation,movement-play,Ward 6 (York Centre),,verified-live,2026-08-17
+ORG-24597,Parkway Forest Community (Facebook page),digital-native-community,neighbourhood-facebook-group,Ward 17 (Don Valley North),https://www.facebook.com/ParkwayForestCommunity/,verified-live,2026-08-17
+ORG-24603,Scarborough Mutual Aid,mutual-aid-network,digital-native-mutual-aid,Scarborough,https://linktr.ee/scarboroughmutualaid,verified-live,2026-08-17
