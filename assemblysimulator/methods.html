@@ -12,7 +12,6 @@
 <meta property="og:url" content="https://unitetolove.ca/assemblysimulator/methods.html">
 <meta name="twitter:card" content="summary_large_image">
 <script defer src="/assets/analytics.js"></script>
-<meta property="og:image" content="https://unitetolove.ca/assets/og/library.png">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
@@ -46,7 +45,7 @@
 <nav class="crumbs"><a href="/index.html">Home</a> / <a href="/assemblysimulator/index.html">The Toronto Assembly</a> / Methods and limits — the simulated assembly</nav>
 <main id="main" tabindex="-1">
 <div class="library-banner" role="note"><strong>SIMULATED.</strong> Everything on this page concerns a simulation of deliberation by AI agents. No real residents were surveyed, and nothing here measures actual public opinion. No results from the system&rsquo;s one full run are published anywhere on this site &mdash; our own review found the prompts colored the deliberations, and results publish only after a redesigned re-run clears our <a href="/assemblysimulator/methods.html">validity bar</a>.</div>
-<h1>Methods page preface — /assembly/methods.html opening section</h1>
+<h1 id="methods-page-preface-assemblymethodshtml-opening-section">Methods page preface — /assembly/methods.html opening section</h1>
 <p><em>Committed page source (old-estate fires dispatch Leg 1, 2026-08-12): the opening section of the
 methods/limits page, rendered by <code>tools/assembly_site_gen.py</code> ABOVE the imported METHODS and
 VALIDITY memos (<code>archived-imports/phase0-pilot/</code>). Exists as a file so page substance lives in
@@ -54,11 +53,11 @@ markdown sources, never inside a generator (five-verbs law). The H1–H3 stateme
 condensed from the engine's own <code>research/assembly/phase0_pilot_import/CODE_REVIEW.md</code> — update
 them only against that source. Everything above the first <code>---</code> is stripped at render.</em></p>
 <hr />
-<h2>How the simulation works — and where it honestly falls short</h2>
+<h2 id="how-the-simulation-works-and-where-it-honestly-falls-short">How the simulation works — and where it honestly falls short</h2>
 <p>This page publishes the engine's own methods documentation and its threats-to-validity memo,
 unedited, exactly as the project's internal review wrote them. Read the limits before the
 methods: no number this system produces is a measurement of what real Torontonians think.</p>
-<h3>The three open validity issues (H1–H3)</h3>
+<h3 id="the-three-open-validity-issues-h1h3">The three open validity issues (H1–H3)</h3>
 <p>Our own code review found three high-severity issues that remain open. They are the core of why
 run-1 results are unpublished, and any future results will state how each was addressed:</p>
 <ul>
@@ -79,12 +78,12 @@ run-1 results are unpublished, and any future results will state how each was ad
   exact — a limit for any calibration story that assumes a run is a deterministic function of
   its inputs.</li>
 </ul>
-<h3>What follows</h3>
+<h3 id="what-follows">What follows</h3>
 <p>The two documents below are published verbatim from the project archive: <strong>Methods</strong> (what the
 system does, precisely enough to reproduce) and <strong>Threats to validity</strong> (what its outputs can and
 cannot support, with the published failure modes of simulating people with language models).</p>
 <hr />
-<h1>Methods</h1>
+<h1 id="methods">Methods</h1>
 <p><strong>System:</strong> a simulated deliberative mini-public ("Citizens' Assembly") in which a
 statistically representative population of LLM-backed agents deliberates a policy
 question, votes on statements, authors proposals, and (optionally) requests expert
@@ -95,12 +94,12 @@ a measurement of public opinion. It is designed to (a) pressure-test the design 
 real assembly (agenda, framing, materials, process) cheaply and repeatably, and (b)
 generate <em>testable</em> hypotheses about where a population might find common ground.
 Every output is labelled SIMULATED. Threats to validity are documented separately in
-<a href="VALIDITY.md">VALIDITY.md</a>; this file documents <em>what the system does</em>, precisely
+<a href="#threats-to-validity-and-honest-limitations">VALIDITY.md</a>; this file documents <em>what the system does</em>, precisely
 enough to reproduce.</p>
 <p>This document describes the Phase-0 reference implementation (single machine, ≤ a few
 hundred agents). Section 12 notes what changes at population scale.</p>
 <hr />
-<h2>1. Pipeline overview</h2>
+<h2 id="1-pipeline-overview">1. Pipeline overview</h2>
 <p>A run is a deterministic function of <code>(seed, config, agenda, model)</code> over seven stages:</p>
 <ol>
 <li><strong>Sampling</strong> — draw a roster of <em>N</em> agent profiles matched to target population
@@ -116,8 +115,8 @@ hundred agents). Section 12 notes what changes at population scale.</p>
 <li><strong>Reporting</strong> — report, opinion map, dashboard, and machine-readable artifacts (§10).</li>
 </ol>
 <hr />
-<h2>2. Precedents (what each component reproduces)</h2>
-<div class="table-scroll" tabindex="0" aria-label="2. Precedents (what each component reproduces)"><table>
+<h2 id="2-precedents-what-each-component-reproduces">2. Precedents (what each component reproduces)</h2>
+<table>
 <thead>
 <tr>
 <th>Component</th>
@@ -152,16 +151,16 @@ hundred agents). Section 12 notes what changes at population scale.</p>
 <td>stratification on demographic + attitudinal strata</td>
 </tr>
 </tbody>
-</table></div>
-<p>Full citations in <a href="VALIDITY.md">VALIDITY.md</a>. The implementation is original; these are
+</table>
+<p>Full citations in <a href="#threats-to-validity-and-honest-limitations">VALIDITY.md</a>. The implementation is original; these are
 the conceptual sources.</p>
 <hr />
-<h2>3. Population data and provenance</h2>
+<h2 id="3-population-data-and-provenance">3. Population data and provenance</h2>
 <p>Population data lives in <strong>swappable region datasheets</strong> (<code>regions/&lt;id&gt;.json</code>; default
 <code>toronto.json</code>). The reference population is the <strong>City of Toronto</strong> (CSD 3520005, 2021
 Census). Each datasheet declares one-way <strong>marginals</strong>, pairwise <strong>affinities</strong>, and
 <strong>supplementary populations</strong> (below). Full figures, sources, and census-vs-illustrative
-flags are in <a href="DATA_PROVENANCE.md">DATA_PROVENANCE.md</a>. <code>region_tool.py</code> scaffolds/validates
+flags are in DATA_PROVENANCE.md (not separately published on this site). <code>region_tool.py</code> scaffolds/validates
 new places; <code>--region &lt;id&gt;</code> selects one. Ontario and Canada datasheets ship as scaling
 examples.</p>
 <ul>
@@ -180,7 +179,7 @@ the modelled population means changing only <code>MARGINALS</code> (+ <code>AFFI
 is hard-coded elsewhere. Illustrative vs census-grounded status is documented in
 <code>census.py</code> and must be re-stated in any published result.</p>
 <hr />
-<h2>4. Sampling: marginal-exact quota + targeted-swap raking</h2>
+<h2 id="4-sampling-marginal-exact-quota-targeted-swap-raking">4. Sampling: marginal-exact quota + targeted-swap raking</h2>
 <p><strong>Goal.</strong> Produce <em>N</em> profiles that (i) match every target marginal <em>exactly</em> (up to
 integer rounding, eliminating small-sample drift) and (ii) exhibit realistic <em>joint</em>
 structure (e.g., seniors tend to be retired and owners), all <em>without</em> a full joint
@@ -211,7 +210,7 @@ endpoint remains true <strong>iterative proportional fitting (IPF)</strong> agai
 StatCan custom cross-tabulation. <code>method="independent"</code> reproduces naïve per-variable
 sampling for ablation.</p>
 <hr />
-<h2>5. Agent construction</h2>
+<h2 id="5-agent-construction">5. Agent construction</h2>
 <p>For each profile, <code>agents.py::build_agents</code> computes, in order:</p>
 <ol>
 <li><strong>Values</strong> — three ranked priorities sampled (without replacement) from 12 value
@@ -235,7 +234,7 @@ the largest single fidelity gap (see VALIDITY.md). The architecture deliberately
 Park et al.'s narrative-grounding so that real interview transcripts can be substituted
 in Phase 2 with no interface change.</p>
 <hr />
-<h2>6. Agenda and seed statements</h2>
+<h2 id="6-agenda-and-seed-statements">6. Agenda and seed statements</h2>
 <p>The agenda is a question plus <em>balanced, two-sided</em> seed statements grouped by theme
 (<code>agenda.py</code>). The default is a regenerative-Toronto agenda (22 statements / 11 themes);
 arbitrary agendas load from a human-readable Markdown file (<code>--agenda</code>, <code>agenda_tool.py</code>),
@@ -243,7 +242,7 @@ with <code>check</code> warning on any one-sided theme. Two-sidedness is a delib
 a leading instrument. In mock mode, statements missing latent coordinates receive a
 keyword-estimated position (<code>estimate_xy</code>); in LLM mode only the text is used.</p>
 <hr />
-<h2>7. Deliberation protocol</h2>
+<h2 id="7-deliberation-protocol">7. Deliberation protocol</h2>
 <p>Each of <em>R</em> rounds (<code>deliberation.py::run_round</code>):</p>
 <ol>
 <li><strong>Routing.</strong> Each agent is shown a subset of statements (default 12), preferring
@@ -265,7 +264,7 @@ keyword-estimated position (<code>estimate_xy</code>); in LLM mode only the text
    opinion movement over rounds.</li>
 </ol>
 <hr />
-<h2>8. Opinion analysis (Pol.is math)</h2>
+<h2 id="8-opinion-analysis-polis-math">8. Opinion analysis (Pol.is math)</h2>
 <p>Let <strong>M</strong> be the <em>agents × statements</em> vote matrix (entries in {+1,−1,0}, missing = NaN).</p>
 <ul>
 <li><strong>Projection.</strong> Missing/pass entries are treated as 0; <strong>PCA</strong> reduces to 2 dimensions
@@ -289,7 +288,7 @@ keyword-estimated position (<code>estimate_xy</code>); in LLM mode only the text
   exact Pol.is engine (<code>red-dwarf</code>) is a drop-in replacement for this module.</li>
 </ul>
 <hr />
-<h2>9. Expert panel and knowledge base</h2>
+<h2 id="9-expert-panel-and-knowledge-base">9. Expert panel and knowledge base</h2>
 <p>Evidence requests are cleaned (junk/bare-id removal, near-duplicate collapse, cap) and
 served <strong>knowledge-base-first</strong>:</p>
 <ul>
@@ -313,7 +312,7 @@ served <strong>knowledge-base-first</strong>:</p>
 advocates) and explicitly fixes the Habermas Machine's acknowledged lack of a
 fact-finding phase.</p>
 <hr />
-<h2>10. Backends, determinism, transparency</h2>
+<h2 id="10-backends-determinism-transparency">10. Backends, determinism, transparency</h2>
 <ul>
 <li><strong>Mock backend</strong> (<code>llm.py</code>): a transparent generative model with <strong>no network</strong> — vote
   probability <code>= σ(2.1·align + 1.4·issue_bias·sign(stmt_x))</code> where <code>align</code> is the
@@ -335,24 +334,24 @@ fact-finding phase.</p>
   the rendered report/map/dashboard. Nothing is hidden; any result is re-inspectable.</li>
 </ul>
 <hr />
-<h2>11. Software environment</h2>
+<h2 id="11-software-environment">11. Software environment</h2>
 <p>Python 3.10+. Core: <code>numpy</code>, <code>scikit-learn</code> (PCA, k-means, silhouette, TF-IDF). Optional:
 <code>openai</code> (LLM backends), <code>anthropic</code> (Opus briefings), <code>matplotlib</code> (static map). Exact
 versions for any run are captured in that run's <code>metadata.json.environment.packages</code>.
 The verification suite is <code>tests.py</code> (<code>python tests.py</code>, exit 0 ⇔ all pass).</p>
 <hr />
-<h2>12. What changes at population scale (forward note)</h2>
+<h2 id="12-what-changes-at-population-scale-forward-note">12. What changes at population scale (forward note)</h2>
 <p>Scaling toward millions of agents across languages/regions changes <em>engineering</em>, not the
 <em>method</em>: (i) sampling generalizes to any region given its marginals + affinities (or a
 real joint table + IPF); (ii) personas and prompts are language-agnostic given a
 localized template and a multilingual model; (iii) clustering must move from in-memory
 k-means to streaming/approximate methods, and routing to the real information-gain
 weighting; (iv) the KB becomes a shared multilingual evidence base with embedding-based
-lookup. The validity threats in <a href="VALIDITY.md">VALIDITY.md</a> do <strong>not</strong> shrink with scale —
+lookup. The validity threats in <a href="#threats-to-validity-and-honest-limitations">VALIDITY.md</a> do <strong>not</strong> shrink with scale —
 several (caricature of under-represented groups, language/cultural skew) <strong>grow</strong> — and
 must gate any scale-up. Scope for scaling is deferred until the present system is
 independently reviewed.</p>
-<h2>Neighbourhood-conditioned sampling</h2>
+<h2 id="neighbourhood-conditioned-sampling">Neighbourhood-conditioned sampling</h2>
 <p>When a region datasheet declares a <code>neighbourhoods</code> array (each with a <code>population</code> and its
 own <code>marginals</code>), sampling is two-stage:</p>
 <ol>
@@ -368,7 +367,7 @@ own <code>marginals</code>), sampling is two-stage:</p>
 <p>Each agent records its <code>neighbourhood</code>, which flows into the persona narrative, <code>agents.json</code>,
 and the dashboard. The citywide (single-stratum) path is unchanged when no <code>neighbourhoods</code> are
 declared. Construction and validity caveats: DATA_PROVENANCE.md (neighbourhood section).</p>
-<h2>Persona localization &amp; standard geography codes</h2>
+<h2 id="persona-localization-standard-geography-codes">Persona localization &amp; standard geography codes</h2>
 <p>Place-coded persona prose (the place name, dwelling phrasings, commute framings, the
 "new here / watched it change" lines, and the Indigenous-relationship line) lives in a
 per-region <code>locale</code> block. The built-in default reproduces the Toronto wording exactly, so
@@ -384,11 +383,11 @@ neighbourhoods) and electoral districts as parallel administrative options. Each
 <code>geo_level</code> and <code>geo_code</code>, which is what lets regional maps nest/federate (DA→CT→CSD→CD→PR)
 and translate internationally (GADM admin 0–3 / OECD TL2–TL3).</p>
 <hr />
-<h1>Threats to validity and honest limitations</h1>
+<h1 id="threats-to-validity-and-honest-limitations">Threats to validity and honest limitations</h1>
 <p>This document states, as plainly as possible, what the simulated assembly can and
 cannot support, and the threats that any reviewer should weigh. It is deliberately
 conservative. Read it before treating any number from this system as a finding.</p>
-<h2>0. What is and is not claimed</h2>
+<h2 id="0-what-is-and-is-not-claimed">0. What is and is not claimed</h2>
 <p><strong>Claimed.</strong> The system is a <em>rehearsal and hypothesis-generation instrument</em>: it
 lets us (a) design and stress-test the agenda, framing, evidence, and process of a
 real deliberation cheaply and repeatably, and (b) produce <em>testable hypotheses</em> about
@@ -403,7 +402,7 @@ representation real human-subjects deliberation exists to provide — we accept 
 correct (Agnew et al. 2024). The simulation informs and de-risks the real thing; it
 does not replace it.</p>
 <hr />
-<h2>1. Construct validity — do the agents represent humans?</h2>
+<h2 id="1-construct-validity-do-the-agents-represent-humans">1. Construct validity — do the agents represent humans?</h2>
 <p><strong>1.1 Synthetic personas, not real interviews.</strong> Park et al. (2024) achieved high
 fidelity by grounding agents in <em>two-hour interviews of the real individuals they
 simulate</em>. Our personas are <strong>synthesized from demographics</strong>. This is the single
@@ -425,7 +424,7 @@ time and must be demonstrated case-by-case. We have <strong>not</strong> validat
 any real Toronto survey or assembly. Until we do, agreement levels are internal to the
 simulation.</p>
 <hr />
-<h2>2. Documented failure modes of simulating people with LLMs</h2>
+<h2 id="2-documented-failure-modes-of-simulating-people-with-llms">2. Documented failure modes of simulating people with LLMs</h2>
 <p>These are established in the literature and apply directly:</p>
 <ul>
 <li>
@@ -462,7 +461,7 @@ simulation.</p>
 </li>
 </ul>
 <hr />
-<h2>3. Internal validity (run-to-run, design artifacts)</h2>
+<h2 id="3-internal-validity-run-to-run-design-artifacts">3. Internal validity (run-to-run, design artifacts)</h2>
 <ul>
 <li><strong>Mode collapse (mitigated, not eliminated).</strong> LLM agents tend to re-phrase one safe
   idea many times. We added TF-IDF semantic de-duplication (verified, <code>tests.py</code> §4),
@@ -487,7 +486,7 @@ simulation.</p>
   choices; results should be reported with the exact config (it is saved per run).</li>
 </ul>
 <hr />
-<h2>4. External validity (generalization)</h2>
+<h2 id="4-external-validity-generalization">4. External validity (generalization)</h2>
 <ul>
 <li>One city (Toronto), one default agenda, one model at a time. Generalization to other
   populations, topics, languages, or models is <strong>unestablished</strong>.</li>
@@ -498,7 +497,7 @@ simulation.</p>
   must not be read as increased reliability.</li>
 </ul>
 <hr />
-<h2>5. Statistical-conclusion validity</h2>
+<h2 id="5-statistical-conclusion-validity">5. Statistical-conclusion validity</h2>
 <ul>
 <li><strong>Group-informed consensus is a <em>product</em> across groups</strong> and shrinks mechanically as
   the number of clusters grows; compare "floors" (minimum per-group support) across runs
@@ -511,7 +510,7 @@ simulation.</p>
   as descriptive of the simulation only.</li>
 </ul>
 <hr />
-<h2>6. Ethics and honesty safeguards</h2>
+<h2 id="6-ethics-and-honesty-safeguards">6. Ethics and honesty safeguards</h2>
 <ul>
 <li>Radical transparency: every model call, vote, and briefing is logged; the full config,
   prompts, and roster are saved; results are reproducible and re-inspectable.</li>
@@ -522,7 +521,7 @@ simulation.</p>
   they are not authoritative data.</li>
 </ul>
 <hr />
-<h2>7. What would raise validity (mitigation roadmap, in priority order)</h2>
+<h2 id="7-what-would-raise-validity-mitigation-roadmap-in-priority-order">7. What would raise validity (mitigation roadmap, in priority order)</h2>
 <ol>
 <li><strong>Calibration against ground truth</strong> — compare simulated agreement to a real Toronto
    survey and/or a real mini-public on the same items; report the gap. (Highest value.)</li>
@@ -537,8 +536,8 @@ simulation.</p>
 <li><strong>Pre-registration</strong> of agenda, config, and analysis before any externally-reported run.</li>
 </ol>
 <hr />
-<h2>8. Claims ledger</h2>
-<div class="table-scroll" tabindex="0" aria-label="8. Claims ledger"><table>
+<h2 id="8-claims-ledger">8. Claims ledger</h2>
+<table>
 <thead>
 <tr>
 <th>Claim</th>
@@ -603,9 +602,9 @@ simulation.</p>
 <td>single-model, single-city tested</td>
 </tr>
 </tbody>
-</table></div>
+</table>
 <hr />
-<h2>References</h2>
+<h2 id="references">References</h2>
 <ul>
 <li>Argyle et al. (2023). <em>Out of One, Many: Using Language Models to Simulate Human
   Samples.</em> Political Analysis 31(3). https://arxiv.org/abs/2209.06899</li>
@@ -637,9 +636,9 @@ simulation.</p>
 <li>Flanigan et al. (2021). <em>Fair algorithms for selecting citizens' assemblies.</em> Nature.
   https://www.nature.com/articles/s41586-021-03788-6</li>
 </ul>
-<h2>Augment, do not replace (Part D framing)</h2>
+<h2 id="augment-do-not-replace-part-d-framing">Augment, do not replace (Part D framing)</h2>
 <p>The Pol.is team's own analysis of LLMs for deliberation (Small et al., <em>Opportunities and Risks of LLMs for Scalable Deliberation with Polis</em>, 2023) warns that using LLMs to <strong>replace</strong> participants "could be catastrophic for deliberation at scale." Accordingly this system is positioned as an <strong>augmentation</strong> instrument: it designs and de-risks a real Pol.is/assembly, stress-tests framings, and generates testable hypotheses about where bridges lie - and it can include census-undercounted voices the self-selected real tool misses - but it is <strong>not</strong> a substitute for a real deliberation with real people, and every artifact is labelled SIMULATED.</p>
-<div class="meta page-provenance">Part of the Toronto Assembly project · updated 2026-08-12 · corrections welcome — <a href="/corrections.html">tell us where we’re wrong</a>.</div>
+<div class="meta page-provenance">Part of the Toronto Assembly project · updated 2026-08-17 · corrections welcome — <a href="/corrections.html">tell us where we’re wrong</a>.</div>
 </main>
 <footer class="site-footer">
 <nav aria-label="Footer">

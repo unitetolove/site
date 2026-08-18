@@ -12,7 +12,6 @@
 <meta property="og:url" content="https://unitetolove.ca/research/old/v1-library/corrections-log.html">
 <meta name="twitter:card" content="summary_large_image">
 <script defer src="/assets/analytics.js"></script>
-<meta property="og:image" content="https://unitetolove.ca/assets/og/library.png">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
@@ -57,7 +56,7 @@
 <p><strong>For the verifying LLM:</strong> Append your findings under a new dated <code>## PASS N — [Model name] — [Date]</code> heading using the numbered format below. Do not restate what's already correct. Do not duplicate items already logged here unless your pass found something new about them.</p>
 <hr />
 <h2>PASS LOG REF_001_Index</h2>
-<div class="table-scroll" tabindex="0" aria-label="PASS LOG REF_001_Index"><table>
+<table>
 <thead>
 <tr>
 <th>Pass #</th>
@@ -104,7 +103,7 @@
 <td>13 failures found and fixed: 15 duplicate CL-IDs (real collision), 10 malformed CSV rows, 26 blank URLs, 2 malformed status fields, a removed \$48M figure silently feeding a live \$599M→\$563M total (propagated to 5 docs), 5 unstandardized '50%/causal' framing instances, 1 stale '26%' table row, stale REF_001_Index claim count (110 vs actual 269), 10 missing Document IDs. See <code>MAIN_PROC_008_Test_Suite_Documentation.md</code> for full methodology.</td>
 </tr>
 </tbody>
-</table></div>
+</table>
 <hr />
 <h2>OPEN ITEMS</h2>
 <p><strong>This section has been superseded.</strong> All open items are now tracked centrally in <code>MAIN_TRACK_001_Master_Issues.md</code> — do not maintain a parallel list here. This log's job is the PASS LOG above (what was found and fixed, when) — not tracking what remains outstanding.</p>
@@ -1390,7 +1389,7 @@
 <p>The more important piece was going back to where the $1.5M figure actually came from. It would have been enough to fix the one asset about to ship. Instead traced it to its root — a "campaign headline" line in HMK-001 carrying an instruction to future writers to "always include this caveat" for a number that was never sourced in the first place. Fixed there directly, with the correction explaining what was wrong and why, so the next piece of content built from that headline doesn't inherit the same bad number the way this one almost did. Found one more live copy of the same stale figure sitting in an earlier "first fix" section of the asset file itself — a leftover from before REVIEW-012's pass, easy to miss because it wasn't in the section that actually gets used. Fixed that too, with an honest note about why it's marked rather than silently altered, since a draft's own revision history is worth keeping visible.</p>
 <p>Two new propagation-manifest entries lock both fixes in going forward — the Sunshine List framing and the $1.5M figure specifically — so neither can quietly reappear in a future pass without the gate catching it.</p>
 <p><strong>Registry, RAG export, and stats synced via the toolchain across every file touched. Final state: 67/67 tests passing.</strong></p>
-<div class="meta page-provenance">Frozen v1 edition (July 2026) · published 2026-08-13 · corrections to the living library are welcome — <a href="/corrections.html">tell us where we’re wrong</a>.</div>
+<div class="meta page-provenance">Frozen v1 edition (July 2026) · published 2026-08-17 · corrections to the living library are welcome — <a href="/corrections.html">tell us where we’re wrong</a>.</div>
 </main>
 <footer class="site-footer">
 <nav aria-label="Footer">
