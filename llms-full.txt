@@ -19,90 +19,73 @@ This is a fuller INDEX, not the site's full text. Concatenating every rendered p
 
 ## By the numbers (live, this run)
 
-- 818 Government Atlas org/level pages — https://unitetolove.ca/gov-atlas/
-- 454 candidate starter-kit pages (every Ontario municipality) — https://unitetolove.ca/run/
+- 820 Government Atlas org/level pages — https://unitetolove.ca/gov-atlas/
+- 453 candidate starter-kit pages (every Ontario municipality) — https://unitetolove.ca/run/
+- 146 issue briefs, one per jurisdiction slice — https://unitetolove.ca/briefs/
 - 145 recommendation cards — https://unitetolove.ca/cards/
-- 80 wiki issue pages — https://unitetolove.ca/wiki/
+- 13 wiki issue pages — https://unitetolove.ca/wiki/
 - 40 Free Toronto guide pages — https://unitetolove.ca/guides/
 - 29 transit report chapters — https://unitetolove.ca/transit/
-- 1 Explained Simply pages — https://unitetolove.ca/explainers/
+- 18 Explained Simply pages — https://unitetolove.ca/explainers/
 - 14 candidate question pages — https://unitetolove.ca/questions/
 
 ## Every section
 
-### Act
+### Start here
 
 - [Join the conversation](https://unitetolove.ca/join.html): Sign up for updates; nothing to join, nothing for sale.
-- [The Harvest — bring what you know](https://unitetolove.ca/harvest.html): The public data harvest.
-- [The whole ladder](https://unitetolove.ca/act/)
 - [Next actions](https://unitetolove.ca/now.html): The next-actions ladder.
-- [Music & dance](https://unitetolove.ca/music-dance/)
-- [Meditation, yoga & prayer](https://unitetolove.ca/meditation-yoga-prayer/)
-- [The Civic Hour](https://unitetolove.ca/civic-hour.html)
-
-### Mutual Aid
-
-- [Get help](https://unitetolove.ca/act/mutual-aid/)
-- [Give help](https://unitetolove.ca/act/mutual-aid/give-help.html)
-- [The directory](https://unitetolove.ca/act/mutual-aid/directory.html)
-- [Start a block circle](https://unitetolove.ca/act/mutual-aid/block-circle.html)
-- [The research](https://unitetolove.ca/act/mutual-aid/research.html)
-- [The receipts](https://unitetolove.ca/act/mutual-aid/receipts.html)
-
-### Elections 2026
-
-- [Beaches–East York — Aug 31](https://unitetolove.ca/wards/ward-19-beaches-east-york.html)
-- [Scarborough Southwest — Sept 3](https://unitetolove.ca/wards/ward-20-scarborough-southwest.html)
-- [The community, in data](https://unitetolove.ca/BEY-SSW-community-data/)
-- [State of the Election](https://unitetolove.ca/elections/): The 2026 Toronto municipal election, biweekly editions.
-- [For candidates — run](https://unitetolove.ca/run/index.html): Candidate starter kit — every municipality, the deadline, the cost.
-- [How to vote](https://unitetolove.ca/turnout.html): How to vote.
-- [Ward math cards](https://unitetolove.ca/elections/wards/): Ward math cards.
-- [Ontario: the empty ballot](https://unitetolove.ca/ontario-the-empty-ballot.html)
-- [Find your municipality](https://unitetolove.ca/run/municipalities/index.html)
-- [Vision for candidates](https://unitetolove.ca/vision/candidates.html)
-
-### The Plan
-
-- [One year, all-out](https://unitetolove.ca/plan/): The one-year sprint plan.
-- [The vision](https://unitetolove.ca/vision.html): The full vision.
-- [The strategy](https://unitetolove.ca/strategy.html): The mobilization strategy.
-- [Day 7 — the newest letter](https://unitetolove.ca/new/2026-08-17-day-seven.html)
-- [The letter of introduction](https://unitetolove.ca/letter.html)
-- [The letters](https://unitetolove.ca/letters/)
-- [New — blog & writings](https://unitetolove.ca/new/)
-- [The Unknown Soldier](https://unitetolove.ca/who.html)
-- [Invite me in](https://unitetolove.ca/invite-me.html)
-
-### Library
-
-- [Backgrounders](https://unitetolove.ca/library.html): Backgrounders & briefs index.
-- [Ending homelessness](https://unitetolove.ca/homelessness/index.html)
-- [Transit](https://unitetolove.ca/transit/): Why can't Toronto move? — a receipt-backed report.
-- [Surveillance pricing](https://unitetolove.ca/surveillance-pricing.html)
-- [Permanent Culture 3.0](https://unitetolove.ca/permanent-culture.html): Permanent Culture 3.0.
-- [The Futures](https://unitetolove.ca/futures/): The Futures Library.
-- [The Common Shelf](https://unitetolove.ca/tribes/shelf.html)
-- [Government Atlas](https://unitetolove.ca/gov-atlas/index.html): Registry of government & broader-public-sector organizations.
-- [Toronto’s Questions](https://unitetolove.ca/problems/)
-- [The programs](https://unitetolove.ca/programs/index.html): The Programs.
-- [V1 edition (July 2026)](https://unitetolove.ca/research/old/v1-library/)
-- [Research agenda](https://unitetolove.ca/research-agenda.html): What we're researching next.
-
-### Connect
-
-- [Find your people](https://unitetolove.ca/connect/)
-- [Tribes](https://unitetolove.ca/tribes/)
-- [The Unity Lexicon](https://unitetolove.ca/unity-lexicon.html)
-- [Platforms & consensus](https://unitetolove.ca/tribes/platforms.html)
-- [Reddit map](https://unitetolove.ca/tribes/reddit.html)
-- [The Simulator](https://unitetolove.ca/assemblysimulator/)
-- [Kits](https://unitetolove.ca/kits/): Practical action kits.
-- [Free Toronto](https://unitetolove.ca/free-toronto/)
-- [Full list](https://unitetolove.ca/free-toronto/full-list.html)
-- [Question Bank](https://unitetolove.ca/questions/citizen-question-bank.html)
 - [Find — search this site](https://unitetolove.ca/find.html): Search this site.
-- [Sitemap](https://unitetolove.ca/sitemap.html): Every page, by door.
-- [Our commitment](https://unitetolove.ca/commitment.html): Our commitment — rules, verification, corrections.
-- [The commons](https://unitetolove.ca/commons.html)
+- [The Kits](https://unitetolove.ca/kits/): Practical action kits.
+- [The Harvest](https://unitetolove.ca/harvest.html): The public data harvest.
+- [Invite me into your room](https://unitetolove.ca/invite-me.html)
+- [The Civic Hour](https://unitetolove.ca/civic-hour.html)
+- [Code & data](https://github.com/unitetolove/commons)
+- [For builders & agents](https://unitetolove.ca/commons.html)
+
+### The vision
+
+- [The whole strategy in one read](https://unitetolove.ca/strategy/start-here.html)
+- [The full vision](https://unitetolove.ca/vision.html): The full vision.
+- [The plan — one year, all-out](https://unitetolove.ca/plan/): The one-year sprint plan.
+- [The sprint covenant](https://unitetolove.ca/plan/covenant.html): The sprint covenant.
+- [The strategy](https://unitetolove.ca/strategy.html): The mobilization strategy.
+- [Who is the Unknown Soldier](https://unitetolove.ca/who.html)
+- [Our constitution](https://unitetolove.ca/constitution.html): Our constitution.
+- [Permanent Culture 3.0](https://unitetolove.ca/permanent-culture.html): Permanent Culture 3.0.
+- [The Futures Library](https://unitetolove.ca/futures/): The Futures Library.
+- [What we’re researching next](https://unitetolove.ca/research-agenda.html): What we're researching next.
+- [For organizations](https://unitetolove.ca/vision/organizations.html)
+- [For candidates](https://unitetolove.ca/vision/candidates.html)
+- [For newcomers](https://unitetolove.ca/vision/newcomers.html)
+
+### The library
+
+- [Backgrounders & briefs](https://unitetolove.ca/library.html): Backgrounders & briefs index.
+- [The Map — by issue](https://unitetolove.ca/map/): The issue map.
+- [By project](https://unitetolove.ca/projects/index.html)
+- [What’s built, and what’s coming](https://unitetolove.ca/whats-built.html): What's built, and what's coming.
+- [The Wiki](https://unitetolove.ca/wiki/): The Wiki — issue pages.
+- [Explainers](https://unitetolove.ca/category-explainers/)
+- [The Programs](https://unitetolove.ca/programs/index.html): The Programs.
+- [Candidate questions](https://unitetolove.ca/questions/index.html): Candidate questions.
+- [Free Toronto guides](https://unitetolove.ca/guides/): Free Toronto resource guides.
+- [Why can’t Toronto move?](https://unitetolove.ca/transit/): Why can't Toronto move? — a receipt-backed report.
+- [Free Toronto Resource Atlas](https://unitetolove.ca/free-toronto.html): Free Toronto Resource Atlas.
+- [Open data](https://unitetolove.ca/open-data.html): Downloadable CSVs, schema + provenance for every file.
+
+### Registries & tools
+
+- [The Government Atlas](https://unitetolove.ca/gov-atlas/index.html): Registry of government & broader-public-sector organizations.
+- [State of the Election](https://unitetolove.ca/elections/): The 2026 Toronto municipal election, biweekly editions.
+- [Ward math cards](https://unitetolove.ca/elections/wards/): Ward math cards.
+- [So you’re thinking of running](https://unitetolove.ca/run/index.html): Candidate starter kit — every municipality, the deadline, the cost.
+- [How to vote](https://unitetolove.ca/turnout.html): How to vote.
+
+### How to trust this
+
+- [How this was made](https://unitetolove.ca/how-this-was-made.html): How this was made.
+- [How we verify](https://unitetolove.ca/how-we-verify.html): How we verify.
+- [Corrections & improvements](https://unitetolove.ca/corrections.html): Corrections & improvements.
 - [Press kit](https://unitetolove.ca/press.html)
+- [Sitemap — every page](https://unitetolove.ca/sitemap.html): Every page, by door.

@@ -19,15 +19,16 @@ This file follows the llms.txt convention (llmstxt.org). It points AI agents and
 
 ## Key pages (live site)
 
-- [Act](https://unitetolove.ca/act/)
-- [New](https://unitetolove.ca/new/)
-- [The Plan](https://unitetolove.ca/plan/): The one-year sprint plan.
-- [Tribes](https://unitetolove.ca/tribes/)
+- [Start](https://unitetolove.ca/join.html): Sign up for updates; nothing to join, nothing for sale.
+- [Now](https://unitetolove.ca/now.html): The next-actions ladder.
+- [Start here](https://unitetolove.ca/strategy/start-here.html)
+- [Vision](https://unitetolove.ca/vision.html): The full vision.
+- [Plan](https://unitetolove.ca/plan/): The one-year sprint plan.
+- [Kits](https://unitetolove.ca/kits/): Practical action kits.
 - [Library](https://unitetolove.ca/library.html): Backgrounders & briefs index.
-- [Connect](https://unitetolove.ca/connect/)
-- [Elections 2026](https://unitetolove.ca/elections/): The 2026 Toronto municipal election, biweekly editions.
-- [End Homelessness](https://unitetolove.ca/homelessness/index.html)
-- [Harvest](https://unitetolove.ca/harvest.html): The public data harvest.
+- [Elections](https://unitetolove.ca/elections/): The 2026 Toronto municipal election, biweekly editions.
+- [Gov Atlas](https://unitetolove.ca/gov-atlas/index.html): Registry of government & broader-public-sector organizations.
+- [Run](https://unitetolove.ca/run/index.html): Candidate starter kit — every municipality, the deadline, the cost.
 
 ## Machine surfaces
 
@@ -37,6 +38,8 @@ This file follows the llms.txt convention (llmstxt.org). It points AI agents and
 
 ## How to trust this
 
-- [Sitemap](https://unitetolove.ca/sitemap.html): Every page, by door.
-- [Our commitment](https://unitetolove.ca/commitment.html): Our commitment — rules, verification, corrections.
+- [How this was made](https://unitetolove.ca/how-this-was-made.html): How this was made.
+- [How we verify](https://unitetolove.ca/how-we-verify.html): How we verify.
+- [Corrections & improvements](https://unitetolove.ca/corrections.html): Corrections & improvements.
 - [Press kit](https://unitetolove.ca/press.html)
+- [Sitemap — every page](https://unitetolove.ca/sitemap.html): Every page, by door.
