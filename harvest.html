@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Harvest — add your three lines — uniteTOlove</title>
-<meta name="description" content="The Harvest — one record for one Toronto. Add a vision for 2030, a complaint about what's broken, or a nomination of a neighbourhood superhero, right here. The record is live and grows in public.">
+<meta name="description" content="The Harvest — one record for one Toronto. Add a vision for 2030, a complaint about what's broken, or a nomination of a neighbourhood superhero, right here. The record is live and grows in public. It is also our front door — reach us about anything, any project, right here.">
 <link rel="stylesheet" href="style.css">
 <link rel="canonical" href="https://unitetolove.ca/harvest.html">
 <style>
@@ -75,6 +75,8 @@
 .record-table th, .record-table td { text-align: left; padding: 0.25rem 0.8rem 0.25rem 0; border-bottom: 1px solid var(--border); font-size: 0.95em; }
 .record-table th { color: var(--muted); font-weight: 600; }
 #record-status { color: var(--muted); font-size: 0.92em; }
+#context-chip { font-weight: 400; color: var(--muted); font-size: 0.88em; margin: 0.6rem 0; }
+#context-chip a { color: var(--muted); margin-left: 0.4rem; text-decoration: none; }
 </style>
 <script defer src="assets/analytics.js"></script>
 <meta property="og:title" content="The Harvest — add your three lines — uniteTOlove">
@@ -124,7 +126,9 @@
 answers between us &mdash; what this city should become, what&rsquo;s broken, and who is
 already quietly fixing it. The Harvest collects those answers, three lines at a time, from
 dinner tables, block circles, classrooms, congregations, assemblies &mdash; and from you,
-right now, in about thirty seconds.</p>
+right now, in about thirty seconds.
+<strong>And this is our front door for everything:</strong> any question, offer,
+correction, or idea, about any of our projects and activities — one box, right below.</p>
 
 <div class="harvest-banner">
   Three lines, each optional &mdash; fill at least one: a <strong>vision</strong>
@@ -149,6 +153,11 @@ Every submission returns a delete token that removes exactly that submission,
   <form id="solo-form" class="harvest-form" novalidate="">
     <fieldset>
       <legend>The thirty seconds</legend>
+      <label class="field-label" for="solo-message">Anything at all
+        <span class="hint">(optional — a question, an offer, a correction, an idea, any
+        reason, ≤2000 characters; add your email below if you'd like a reply)</span>
+        <textarea id="solo-message" maxlength="2000"></textarea>
+      </label>
       <label class="field-label" for="solo-vision-short">Vision one-liner <span class="hint">(optional — "Toronto in 2030 should ___", ≤280 characters)</span>
         <input type="text" id="solo-vision-short" maxlength="280">
       </label>
@@ -176,13 +185,17 @@ Every submission returns a delete token that removes exactly that submission,
     </fieldset>
 
     <details class="deeper-door">
-      <summary><strong>I have more than a line.</strong> <span class="hint">An expert opinion, a research report, or a longer futures statement — depth, welcomed on its own track; it joins the record as its own "contributions" line.</span></summary>
+      <summary><strong>I have more than a line.</strong> <span class="hint">An expert opinion, a research report, or a longer futures statement — or a correction, a resource, an idea, or an offer of help. Depth and doing, on their own track.</span></summary>
       <label class="field-label" for="solo-contrib-class">What kind of contribution?
         <select id="solo-contrib-class">
           <option value="">— none —</option>
           <option value="expert_opinion">Expert opinion</option>
           <option value="research_report">Research report</option>
           <option value="futures_statement">A longer futures statement (≤1000 words)</option>
+          <option value="correction">A correction — something on this site is wrong</option>
+          <option value="resource">A resource Toronto should know about</option>
+          <option value="idea">An idea or improvement — any project</option>
+          <option value="offer_of_help">An offer of help — what you can do</option>
         </select>
       </label>
       <label class="field-label" for="solo-contrib-body">The contribution itself
@@ -194,7 +207,7 @@ Every submission returns a delete token that removes exactly that submission,
       <label class="field-label" for="solo-contrib-scope">Offered scope / horizon <span class="hint">(expert opinion: review, interview, or authorship — futures statement: 2030, 2040, or a lifetime)</span>
         <input type="text" id="solo-contrib-scope">
       </label>
-      <label class="field-label" for="solo-contrib-email">Email <span class="hint">(required for expert opinion, so we can follow up; optional otherwise)</span>
+      <label class="field-label" for="solo-contrib-email">Email <span class="hint">(required for expert opinion and offers of help, so we can follow up; optional otherwise)</span>
         <input type="email" id="solo-contrib-email">
       </label>
       <label class="field-label" for="solo-contrib-credit">Credit preference <span class="hint">(how you'd like to be credited, if your input is used)</span>
@@ -302,6 +315,7 @@ Every submission returns a delete token that removes exactly that submission,
       <div class="stat"><b id="rec-conversations">–</b><span>conversations</span></div>
       <div class="stat"><b id="rec-items">–</b><span>harvest items</span></div>
       <div class="stat"><b id="rec-contributions">–</b><span>contributions</span></div>
+      <div class="stat"><b id="rec-messages">–</b><span>messages</span></div>
     </div>
     <div class="table-scroll" tabindex="0" aria-label="The record, live"><table class="record-table" id="rec-kit-table" hidden>
       <thead><tr><th>Where conversations happened</th><th>Count</th></tr></thead>
@@ -359,6 +373,23 @@ remove exactly that submission — nothing else.</p>
   var DELETE_ENDPOINT = "/harvest/delete";
   var COUNT_ENDPOINT = "/harvest/count";
 
+  var PAGE_CONTEXT = (function () {
+    var p = new URLSearchParams(window.location.search);
+    var ctx = { from: p.get("from") || "", topic: p.get("topic") || "" };
+    if (ctx.from || ctx.topic) {
+      var chip = document.createElement("p");
+      chip.id = "context-chip";
+      chip.textContent = "about: " + (ctx.topic || ctx.from) + " ";
+      var x = document.createElement("a");
+      x.href = "#"; x.textContent = "×";
+      x.setAttribute("aria-label", "clear context");
+      x.onclick = function (e) { e.preventDefault(); ctx.from = ""; ctx.topic = ""; chip.remove(); };
+      chip.appendChild(x);
+      document.getElementById("solo-form").insertAdjacentElement("beforebegin", chip);
+    }
+    return ctx;
+  })();
+
   function turnstileToken(form) {
     var field = form.querySelector('[name="cf-turnstile-response"]');
     return field ? field.value : "";
@@ -392,6 +423,7 @@ remove exactly that submission — nothing else.</p>
     document.getElementById("rec-conversations").textContent = data.total_conversations;
     document.getElementById("rec-items").textContent = data.total_harvest_items;
     document.getElementById("rec-contributions").textContent = data.total_contributions;
+    if (data.by_item_type) { document.getElementById("rec-messages").textContent = data.by_item_type.message; }
     var kitBody = document.getElementById("rec-kit-body");
     var anyKit = false;
     Object.keys(KIT_LABELS).forEach(function (k) {
@@ -476,6 +508,25 @@ remove exactly that submission — nothing else.</p>
     var token = turnstileToken(soloForm);
     if (!token) { showStatus(status, "Please complete the verification widget above.", false); return; }
 
+    var contribClass = val("solo-contrib-class");
+    if (contribClass) {
+      var contribBody = val("solo-contrib-body");
+      var contribLinks = val("solo-contrib-links");
+      var contribEmail = val("solo-contrib-email");
+      if ((contribClass === "correction" || contribClass === "idea") && !contribBody) {
+        showStatus(status, "Please say a bit more in the contribution field for a correction or an idea.", false);
+        return;
+      }
+      if (contribClass === "resource" && !contribBody && !contribLinks) {
+        showStatus(status, "Please add a description or a link for a resource.", false);
+        return;
+      }
+      if (contribClass === "offer_of_help" && (!contribBody || !contribEmail)) {
+        showStatus(status, "An offer of help needs both a description and an email so we can follow up.", false);
+        return;
+      }
+    }
+
     var payload = {
       vision_short: val("solo-vision-short") || undefined,
       vision_long: val("solo-vision-long") || undefined,
@@ -486,7 +537,9 @@ remove exactly that submission — nothing else.</p>
       fsa_or_ward: val("solo-fsa") || undefined,
       submitter_email: val("solo-email") || undefined,
       contribution: buildContribution("solo"),
-      source_page: window.location.pathname,
+      message_text: val("solo-message") || undefined,
+      topic: PAGE_CONTEXT.topic || undefined,
+      source_page: PAGE_CONTEXT.from || window.location.pathname,
       turnstile_token: token,
     };
 
