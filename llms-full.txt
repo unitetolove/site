@@ -82,7 +82,7 @@ This is a fuller INDEX, not the site's full text. Concatenating every rendered p
 - [Surveillance pricing](https://unitetolove.ca/surveillance-pricing.html)
 - [Permanent Culture 3.0](https://unitetolove.ca/permanent-culture.html): Permanent Culture 3.0.
 - [The Futures](https://unitetolove.ca/futures/): The Futures Library.
-- [The Common Shelf](https://unitetolove.ca/shelf/index.html)
+- [The Common Shelf](https://unitetolove.ca/tribes/shelf.html)
 - [Government Atlas](https://unitetolove.ca/gov-atlas/index.html): Registry of government & broader-public-sector organizations.
 - [Toronto’s Questions](https://unitetolove.ca/problems/)
 - [The programs](https://unitetolove.ca/programs/index.html): The Programs.
